@@ -1,0 +1,22 @@
+# ByteNova: caché del navegador para recursos estáticos
+
+/images/*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+/docs/*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+/css/*
+  Cache-Control: public, max-age=604800, must-revalidate
+
+/js/*
+  Cache-Control: public, max-age=604800, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/pages/*.html
+  Cache-Control: public, max-age=0, must-revalidate
