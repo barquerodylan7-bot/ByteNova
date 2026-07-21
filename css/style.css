@@ -7032,4 +7032,28 @@ li code{
         contain-intrinsic-size:auto 700px;
     }
 }
+/* =========================================
+   CORRECCIÓN FINAL DE CONTRASTE
+========================================= */
 
+.etiqueta{
+    color:#1e40af !important;
+}
+
+.objetivo-numero{
+    color:#475569 !important;
+}
+
+.cursos > p,
+.tarjeta-curso p{
+    color:#475569 !important;
+}
+/* Mejora de contraste del correo en el footer */
+.footer-social a{
+    color:#bfdbfe !important;
+    font-weight:600;
+}
+
+.footer-social a:hover{
+    color:#ffffff !important;
+}
