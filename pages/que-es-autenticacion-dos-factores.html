@@ -1,367 +1,258 @@
 <!DOCTYPE html>
+
 <html lang="es">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>¿Qué es la autenticación de dos factores? | ByteNova</title>
-
-    <meta
-        name="description"
-        content="Aprende qué es la autenticación de dos factores, cómo protege tus cuentas, qué métodos existen y cómo configurarla correctamente."
-    >
-
-    <meta name="author" content="ByteNova">
-    <meta name="robots" content="index, follow">
-
-    <meta
-        name="theme-color"
-        content="#ffffff"
-        media="(prefers-color-scheme: light)"
-    >
-
-    <meta
-        name="theme-color"
-        content="#0f172a"
-        media="(prefers-color-scheme: dark)"
-    >
-
-    <meta property="og:type" content="article">
-    <meta property="og:locale" content="es_CR">
-    <meta property="og:site_name" content="ByteNova">
-
-    <meta
-        property="og:title"
-        content="¿Qué es la autenticación de dos factores?"
-    >
-
-    <meta
-        property="og:description"
-        content="Descubre cómo la autenticación de dos factores protege tus cuentas, qué métodos existen y cómo configurarla de forma segura."
-    >
-
-    <meta
-        property="og:url"
-        content="https://bytenova.app/pages/que-es-autenticacion-dos-factores.html"
-    >
-
-    <meta
-        property="article:published_time"
-        content="2026-07-17"
-    >
-
-    <meta
-        property="article:modified_time"
-        content="2026-07-21"
-    >
-
-    <meta
-        property="article:section"
-        content="Ciberseguridad"
-    >
-
-    <meta name="twitter:card" content="summary">
-
-    <meta
-        name="twitter:title"
-        content="¿Qué es la autenticación de dos factores?"
-    >
-
-    <meta
-        name="twitter:description"
-        content="Aprende cómo 2FA agrega una segunda verificación para proteger tus cuentas."
-    >
-
-    <link
-        rel="canonical"
-        href="https://bytenova.app/pages/que-es-autenticacion-dos-factores.html"
-    >
-
-    <link
-        rel="icon"
-        type="image/svg+xml"
-        href="../images/favicon.svg"
-    >
-
-    <link rel="stylesheet" href="../css/style.css">
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "Article",
-                "@id": "https://bytenova.app/pages/que-es-autenticacion-dos-factores.html#article",
-                "headline": "¿Qué es la autenticación de dos factores?",
-                "description": "Aprende qué es la autenticación de dos factores, cómo protege tus cuentas, qué métodos existen y cómo configurarla correctamente.",
-                "url": "https://bytenova.app/pages/que-es-autenticacion-dos-factores.html",
-                "datePublished": "2026-07-17",
-                "dateModified": "2026-07-21",
-                "inLanguage": "es",
-                "articleSection": "Ciberseguridad",
-                "isAccessibleForFree": true,
-                "author": {
-                    "@type": "Organization",
-                    "name": "ByteNova",
-                    "url": "https://bytenova.app/pages/sobre.html"
-                },
-                "publisher": {
-                    "@type": "Organization",
-                    "name": "ByteNova",
-                    "url": "https://bytenova.app/"
-                },
-                "isPartOf": {
-                    "@id": "https://bytenova.app/#website"
-                },
-                "mainEntityOfPage": {
-                    "@id": "https://bytenova.app/pages/que-es-autenticacion-dos-factores.html#webpage"
-                },
-                "about": [
-                    {
-                        "@type": "Thing",
-                        "name": "Autenticación de dos factores"
-                    },
-                    {
-                        "@type": "Thing",
-                        "name": "2FA"
-                    },
-                    {
-                        "@type": "Thing",
-                        "name": "Seguridad de cuentas"
-                    },
-                    {
-                        "@type": "Thing",
-                        "name": "Ciberseguridad"
-                    }
-                ]
-            },
-            {
-                "@type": "WebPage",
-                "@id": "https://bytenova.app/pages/que-es-autenticacion-dos-factores.html#webpage",
-                "url": "https://bytenova.app/pages/que-es-autenticacion-dos-factores.html",
-                "name": "¿Qué es la autenticación de dos factores?",
-                "description": "Artículo sobre el funcionamiento, los métodos, las ventajas y la configuración de la autenticación de dos factores.",
-                "inLanguage": "es",
-                "datePublished": "2026-07-17",
-                "dateModified": "2026-07-21",
-                "isPartOf": {
-                    "@id": "https://bytenova.app/#website"
-                },
-                "breadcrumb": {
-                    "@id": "https://bytenova.app/pages/que-es-autenticacion-dos-factores.html#breadcrumb"
-                },
-                "mainEntity": {
-                    "@id": "https://bytenova.app/pages/que-es-autenticacion-dos-factores.html#article"
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>¿Qué es la autenticación de dos factores? | ByteNova</title>
+<meta content="Aprende qué es la autenticación de dos factores, cómo protege tus cuentas, qué métodos existen y cómo configurarla correctamente." name="description"/>
+<meta content="ByteNova" name="author"/>
+<meta content="index, follow" name="robots"/>
+<meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
+<meta content="#0f172a" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<meta content="article" property="og:type"/>
+<meta content="es_CR" property="og:locale"/>
+<meta content="ByteNova" property="og:site_name"/>
+<meta content="¿Qué es la autenticación de dos factores?" property="og:title"/>
+<meta content="Descubre cómo la autenticación de dos factores protege tus cuentas, qué métodos existen y cómo configurarla de forma segura." property="og:description"/>
+<meta content="https://bytenova.app/pages/que-es-autenticacion-dos-factores.html" property="og:url"/><meta content="https://bytenova.app/images/bytenova-social.png" property="og:image"/><meta content="https://bytenova.app/images/bytenova-social.png" property="og:image:secure_url"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="image/png" property="og:image:type"/><meta content="¿Qué es la autenticación de dos factores? | ByteNova" property="og:image:alt"/><meta content="https://bytenova.app/images/bytenova-social.png" name="twitter:image"/><meta content="¿Qué es la autenticación de dos factores? | ByteNova" name="twitter:image:alt"/>
+<meta content="2026-07-17" property="article:published_time"/>
+<meta content="2026-07-21" property="article:modified_time"/>
+<meta content="Ciberseguridad" property="article:section"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="¿Qué es la autenticación de dos factores?" name="twitter:title"/>
+<meta content="Aprende cómo 2FA agrega una segunda verificación para proteger tus cuentas." name="twitter:description"/>
+<link href="https://bytenova.app/pages/que-es-autenticacion-dos-factores.html" rel="canonical"/>
+<link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../css/style.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "@id": "https://bytenova.app/pages/que-es-autenticacion-dos-factores.html#article",
+            "headline": "¿Qué es la autenticación de dos factores?",
+            "description": "Aprende qué es la autenticación de dos factores, cómo protege tus cuentas, qué métodos existen y cómo configurarla correctamente.",
+            "url": "https://bytenova.app/pages/que-es-autenticacion-dos-factores.html",
+            "datePublished": "2026-07-17",
+            "dateModified": "2026-07-21",
+            "inLanguage": "es",
+            "articleSection": "Ciberseguridad",
+            "isAccessibleForFree": true,
+            "author": {
+                "@type": "Organization",
+                "name": "ByteNova",
+                "url": "https://bytenova.app/pages/sobre.html",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://bytenova.app/images/bytenova-social.png",
+                    "width": 1200,
+                    "height": 630
                 }
             },
-            {
-                "@type": "BreadcrumbList",
-                "@id": "https://bytenova.app/pages/que-es-autenticacion-dos-factores.html#breadcrumb",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Inicio",
-                        "item": "https://bytenova.app/"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Artículos",
-                        "item": "https://bytenova.app/pages/articulos.html"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "Autenticación de dos factores",
-                        "item": "https://bytenova.app/pages/que-es-autenticacion-dos-factores.html"
-                    }
-                ]
+            "publisher": {
+                "@type": "Organization",
+                "name": "ByteNova",
+                "url": "https://bytenova.app/",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://bytenova.app/images/bytenova-social.png",
+                    "width": 1200,
+                    "height": 630
+                }
             },
-            {
-                "@type": "FAQPage",
-                "@id": "https://bytenova.app/pages/que-es-autenticacion-dos-factores.html#faq",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "¿La autenticación de dos pasos y 2FA son lo mismo?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Con frecuencia se utilizan como términos equivalentes. Técnicamente, 2FA implica utilizar factores de categorías diferentes."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "¿El código por SMS es seguro?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Es mejor que utilizar solamente una contraseña, pero puede ser menos resistente que una aplicación autenticadora o una llave física."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "¿Qué pasa si pierdo el teléfono?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Puedes utilizar códigos de recuperación, otro dispositivo registrado o el proceso oficial de recuperación de la plataforma."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "¿Debo activarla en todas mis cuentas?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Es especialmente recomendable en correo, banca, redes sociales, almacenamiento, trabajo y cualquier cuenta con información importante."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "¿La autenticación de dos factores reemplaza una contraseña segura?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "No. Debe utilizarse junto con contraseñas únicas, seguras y diferentes para cada servicio."
-                        }
-                    }
-                ]
+            "isPartOf": {
+                "@id": "https://bytenova.app/#website"
+            },
+            "mainEntityOfPage": {
+                "@id": "https://bytenova.app/pages/que-es-autenticacion-dos-factores.html#webpage"
+            },
+            "about": [
+                {
+                    "@type": "Thing",
+                    "name": "Autenticación de dos factores"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "2FA"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "Seguridad de cuentas"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "Ciberseguridad"
+                }
+            ],
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://bytenova.app/images/bytenova-social.png",
+                "width": 1200,
+                "height": 630
             }
-        ]
-    }
-    </script>
-
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://bytenova.app/pages/que-es-autenticacion-dos-factores.html#webpage",
+            "url": "https://bytenova.app/pages/que-es-autenticacion-dos-factores.html",
+            "name": "¿Qué es la autenticación de dos factores?",
+            "description": "Artículo sobre el funcionamiento, los métodos, las ventajas y la configuración de la autenticación de dos factores.",
+            "inLanguage": "es",
+            "datePublished": "2026-07-17",
+            "dateModified": "2026-07-21",
+            "isPartOf": {
+                "@id": "https://bytenova.app/#website"
+            },
+            "breadcrumb": {
+                "@id": "https://bytenova.app/pages/que-es-autenticacion-dos-factores.html#breadcrumb"
+            },
+            "mainEntity": {
+                "@id": "https://bytenova.app/pages/que-es-autenticacion-dos-factores.html#article"
+            },
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://bytenova.app/images/bytenova-social.png",
+                "width": 1200,
+                "height": 630
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://bytenova.app/pages/que-es-autenticacion-dos-factores.html#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Inicio",
+                    "item": "https://bytenova.app/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Artículos",
+                    "item": "https://bytenova.app/pages/articulos.html"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Autenticación de dos factores",
+                    "item": "https://bytenova.app/pages/que-es-autenticacion-dos-factores.html"
+                }
+            ]
+        },
+        {
+            "@type": "FAQPage",
+            "@id": "https://bytenova.app/pages/que-es-autenticacion-dos-factores.html#faq",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "¿La autenticación de dos pasos y 2FA son lo mismo?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Con frecuencia se utilizan como términos equivalentes. Técnicamente, 2FA implica utilizar factores de categorías diferentes."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿El código por SMS es seguro?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Es mejor que utilizar solamente una contraseña, pero puede ser menos resistente que una aplicación autenticadora o una llave física."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Qué pasa si pierdo el teléfono?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Puedes utilizar códigos de recuperación, otro dispositivo registrado o el proceso oficial de recuperación de la plataforma."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Debo activarla en todas mis cuentas?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Es especialmente recomendable en correo, banca, redes sociales, almacenamiento, trabajo y cualquier cuenta con información importante."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿La autenticación de dos factores reemplaza una contraseña segura?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. Debe utilizarse junto con contraseñas únicas, seguras y diferentes para cada servicio."
+                    }
+                }
+            ]
+        }
+    ]
+}
+</script>
 </head>
-
 <body>
-
-    <a
-        class="saltar-contenido"
-        href="#contenido-principal"
-    >
+<a class="saltar-contenido" href="#contenido-principal">
         Saltar al contenido principal
     </a>
-
-    <header>
-
-        <a
-            href="../index.html#inicio"
-            class="marca-bytenova"
-            aria-label="Ir al inicio de ByteNova"
-        >
-
-            <span
-                class="marca-icono"
-                aria-hidden="true"
-            >
+<header>
+<a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio">
+<span aria-hidden="true" class="marca-icono">
                 &lt;/&gt;
             </span>
-
-            <span class="marca-texto">
+<span class="marca-texto">
                 ByteNova
             </span>
-
-        </a>
-
-        <button
-            type="button"
-            class="menu-toggle"
-            id="menu-toggle"
-            aria-label="Abrir menú"
-            aria-expanded="false"
-            aria-controls="menu-principal"
-        >
-            <span aria-hidden="true">☰</span>
-        </button>
-
-        <nav
-            id="menu-principal"
-            aria-label="Navegación principal"
-        >
-
-            <a href="../index.html#inicio">Inicio</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="../index.html#tecnologias">Aprender</a>
-            <a href="rutas.html">Rutas</a>
-            <a href="retos.html">Retos</a>
-            <a href="material.html">Guías</a>
-
-            <a
-                href="articulos.html"
-                aria-current="page"
-            >
+</a>
+<button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle" type="button">
+<span aria-hidden="true">☰</span>
+</button>
+<nav aria-label="Navegación principal" id="menu-principal">
+<a href="../index.html#inicio">Inicio</a>
+<a href="sobre.html">Sobre</a>
+<a href="../index.html#tecnologias">Aprender</a>
+<a href="rutas.html">Rutas</a>
+<a href="retos.html">Retos</a>
+<a href="material.html">Guías</a>
+<a aria-current="page" href="articulos.html">
                 Artículos
             </a>
-
-            <a href="glosario.html">Glosario</a>
-            <a href="../index.html#contacto">Contacto</a>
-
-            <button
-                type="button"
-                id="btn-modo"
-                class="btn-modo"
-                aria-label="Activar modo oscuro"
-            >
-                <span aria-hidden="true">🌙</span>
-            </button>
-
-        </nav>
-
-    </header>
-
-    <main
-        class="sobre articulo"
-        id="contenido-principal"
-    >
-
-        <article
-            class="sobre-contenido"
-            aria-labelledby="titulo-autenticacion-dos-factores"
-        >
-
-            <nav
-                class="migas-navegacion"
-                aria-label="Ruta de navegación"
-            >
-
-                <a href="../index.html">
+<a href="glosario.html">Glosario</a>
+<a href="../index.html#contacto">Contacto</a>
+<button aria-label="Activar modo oscuro" class="btn-modo" id="btn-modo" type="button">
+<span aria-hidden="true">🌙</span>
+</button>
+</nav>
+</header>
+<main class="sobre articulo" id="contenido-principal">
+<article aria-labelledby="titulo-autenticacion-dos-factores" class="sobre-contenido">
+<nav aria-label="Ruta de navegación" class="migas-navegacion">
+<a href="../index.html">
                     Inicio
                 </a>
-
-                <span aria-hidden="true">›</span>
-
-                <a href="articulos.html">
+<span aria-hidden="true">›</span>
+<a href="articulos.html">
                     Artículos
                 </a>
-
-                <span aria-hidden="true">›</span>
-
-                <span aria-current="page">
+<span aria-hidden="true">›</span>
+<span aria-current="page">
                     Autenticación de dos factores
                 </span>
-
-            </nav>
-
-            <span class="seccion-etiqueta">
-
-                <span aria-hidden="true">🔐</span>
+</nav>
+<span class="seccion-etiqueta">
+<span aria-hidden="true">🔐</span>
 
                 Ciberseguridad
 
             </span>
-
-            <h1 id="titulo-autenticacion-dos-factores">
+<h1 id="titulo-autenticacion-dos-factores">
 
                 ¿Qué es la autenticación de dos factores?
 
                 <span aria-hidden="true">🔐</span>
-
-            </h1>
-
-            <p class="articulo-meta">
+</h1>
+<p class="articulo-meta">
 
                 Publicado por ByteNova ·
 
@@ -374,1167 +265,759 @@
                 <time datetime="2026-07-21">
                     21 de julio de 2026
                 </time>
-
-            </p>
-
-            <div class="articulo-resumen">
-
-                <strong>En este artículo aprenderás:</strong>
-
-                <p>
+</p>
+<div class="articulo-resumen">
+<strong>En este artículo aprenderás:</strong>
+<p>
                     Qué es la autenticación de dos factores, cómo añade una
                     capa adicional de seguridad, qué métodos existen y cómo
                     proteger los códigos de recuperación.
                 </p>
-
-            </div>
-
-            <div class="articulo-layout">
-
-                <details class="indice-articulo">
-
-                    <summary>
-
-                        <span aria-hidden="true">📑</span>
+</div>
+<div class="articulo-layout">
+<details class="indice-articulo">
+<summary>
+<span aria-hidden="true">📑</span>
 
                         Contenido del artículo
 
                     </summary>
-
-                    <nav aria-label="Contenido del artículo">
-
-                        <a href="#que-es">
+<nav aria-label="Contenido del artículo">
+<a href="#que-es">
                             1. ¿Qué es la autenticación de dos factores?
                         </a>
-
-                        <a href="#como-funciona">
+<a href="#como-funciona">
                             2. ¿Cómo funciona?
                         </a>
-
-                        <a href="#factores">
+<a href="#factores">
                             3. Tipos de factores
                         </a>
-
-                        <a href="#metodos">
+<a href="#metodos">
                             4. Métodos disponibles
                         </a>
-
-                        <a href="#ventajas">
+<a href="#ventajas">
                             5. Ventajas de utilizarla
                         </a>
-
-                        <a href="#limitaciones">
+<a href="#limitaciones">
                             6. Limitaciones y riesgos
                         </a>
-
-                        <a href="#configurar">
+<a href="#configurar">
                             7. Cómo configurarla
                         </a>
-
-                        <a href="#recuperacion">
+<a href="#recuperacion">
                             8. Códigos de recuperación
                         </a>
-
-                        <a href="#ataques">
+<a href="#ataques">
                             9. Ataques que todavía pueden ocurrir
                         </a>
-
-                        <a href="#errores">
+<a href="#errores">
                             10. Errores frecuentes
                         </a>
-
-                        <a href="#preguntas">
+<a href="#preguntas">
                             11. Preguntas frecuentes
                         </a>
-
-                        <a href="#conclusion">
+<a href="#conclusion">
                             12. Conclusión
                         </a>
-
-                    </nav>
-
-                </details>
-
-                <div
-                    class="articulo-cuerpo"
-                    aria-label="Contenido principal del artículo"
-                >
-
-                    <p class="articulo-introduccion">
+</nav>
+</details>
+<div aria-label="Contenido principal del artículo" class="articulo-cuerpo">
+<p class="articulo-introduccion">
                         La autenticación de dos factores agrega una segunda
                         verificación al proceso de inicio de sesión para reducir
                         el riesgo de que una contraseña robada permita acceder
                         directamente a una cuenta.
                     </p>
-
-                    <p>
+<p>
                         Además de escribir la contraseña, la persona debe
                         confirmar su identidad mediante otro método, como una
                         aplicación autenticadora, una llave física o un código
                         temporal.
                     </p>
-
-                    <h2 id="que-es">
+<h2 id="que-es">
                         ¿Qué es la autenticación de dos factores?
                     </h2>
-
-                    <p>
+<p>
                         La autenticación de dos factores, también conocida como
                         2FA, es un sistema de seguridad que solicita dos pruebas
                         diferentes para verificar la identidad de una persona.
                     </p>
-
-                    <p>
+<p>
                         La contraseña representa normalmente el primer factor.
                         El segundo puede ser un código generado por una
                         aplicación, una llave de seguridad o una característica
                         biométrica.
                     </p>
-
-                    <div class="recuadro-ejemplo">
-
-                        <strong>Ejemplo sencillo</strong>
-
-                        <p>
+<div class="recuadro-ejemplo">
+<strong>Ejemplo sencillo</strong>
+<p>
                             Una persona escribe su correo y contraseña.
                             Después, la plataforma solicita un código temporal
                             generado en su teléfono.
                         </p>
-
-                        <p>
+<p>
                             Aunque otra persona conozca la contraseña, todavía
                             necesitaría el segundo factor para completar el acceso.
                         </p>
-
-                    </div>
-
-                    <h2 id="como-funciona">
+</div>
+<h2 id="como-funciona">
                         ¿Cómo funciona?
                     </h2>
-
-                    <div
-                        class="pasos-articulo"
-                        role="list"
-                    >
-
-                        <div
-                            class="paso-articulo"
-                            role="listitem"
-                        >
-
-                            <span>1</span>
-
-                            <div>
-
-                                <h3>
+<div class="pasos-articulo" role="list">
+<div class="paso-articulo" role="listitem">
+<span>1</span>
+<div>
+<h3>
                                     Se introduce la contraseña
                                 </h3>
-
-                                <p>
+<p>
                                     El usuario escribe sus credenciales
                                     habituales dentro del sitio oficial.
                                 </p>
-
-                            </div>
-
-                        </div>
-
-                        <div
-                            class="paso-articulo"
-                            role="listitem"
-                        >
-
-                            <span>2</span>
-
-                            <div>
-
-                                <h3>
+</div>
+</div>
+<div class="paso-articulo" role="listitem">
+<span>2</span>
+<div>
+<h3>
                                     La plataforma solicita otra prueba
                                 </h3>
-
-                                <p>
+<p>
                                     Puede pedir un código, una confirmación
                                     desde otro dispositivo o una llave física.
                                 </p>
-
-                            </div>
-
-                        </div>
-
-                        <div
-                            class="paso-articulo"
-                            role="listitem"
-                        >
-
-                            <span>3</span>
-
-                            <div>
-
-                                <h3>
+</div>
+</div>
+<div class="paso-articulo" role="listitem">
+<span>3</span>
+<div>
+<h3>
                                     Se verifica el segundo factor
                                 </h3>
-
-                                <p>
+<p>
                                     El sistema comprueba que la prueba sea
                                     correcta y todavía esté vigente.
                                 </p>
-
-                            </div>
-
-                        </div>
-
-                        <div
-                            class="paso-articulo"
-                            role="listitem"
-                        >
-
-                            <span>4</span>
-
-                            <div>
-
-                                <h3>
+</div>
+</div>
+<div class="paso-articulo" role="listitem">
+<span>4</span>
+<div>
+<h3>
                                     Se permite o rechaza el acceso
                                 </h3>
-
-                                <p>
+<p>
                                     La cuenta solamente se abre cuando ambas
                                     verificaciones son aceptadas.
                                 </p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <h2 id="factores">
+</div>
+</div>
+</div>
+<h2 id="factores">
                         Tipos de factores de autenticación
                     </h2>
-
-                    <p>
+<p>
                         Los métodos de autenticación pueden organizarse según
                         el tipo de prueba utilizada.
                     </p>
-
-                    <div class="lista-tarjetas-articulo">
-
-                        <div>
-
-                            <strong>Algo que sabes</strong>
-
-                            <p>
+<div class="lista-tarjetas-articulo">
+<div>
+<strong>Algo que sabes</strong>
+<p>
                                 Una contraseña, un PIN o una respuesta secreta.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Algo que tienes</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Algo que tienes</strong>
+<p>
                                 Un teléfono, una aplicación autenticadora,
                                 una tarjeta o una llave de seguridad.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Algo que eres</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Algo que eres</strong>
+<p>
                                 Una característica biométrica como una huella
                                 digital o el reconocimiento facial.
                             </p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="recuadro-aviso">
-
-                        <strong>
+</div>
+</div>
+<div class="recuadro-aviso">
+<strong>
                             Dos contraseñas no siempre son dos factores
                         </strong>
-
-                        <p>
+<p>
                             Para considerarse autenticación multifactor, las
                             verificaciones deberían pertenecer a categorías
                             diferentes.
                         </p>
-
-                    </div>
-
-                    <h2 id="metodos">
+</div>
+<h2 id="metodos">
                         Métodos de autenticación disponibles
                     </h2>
-
-                    <div class="lista-tarjetas-articulo">
-
-                        <div>
-
-                            <strong>
+<div class="lista-tarjetas-articulo">
+<div>
+<strong>
                                 Aplicación autenticadora
                             </strong>
-
-                            <p>
+<p>
                                 Genera códigos temporales que cambian
                                 automáticamente después de unos segundos.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>
+</div>
+<div>
+<strong>
                                 Notificación de aprobación
                             </strong>
-
-                            <p>
+<p>
                                 Envía una solicitud a un dispositivo para
                                 aprobar o rechazar el inicio de sesión.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>
+</div>
+<div>
+<strong>
                                 Llave de seguridad
                             </strong>
-
-                            <p>
+<p>
                                 Es un dispositivo físico que debe conectarse
                                 o acercarse al equipo para confirmar el acceso.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>
+</div>
+<div>
+<strong>
                                 Código por mensaje
                             </strong>
-
-                            <p>
+<p>
                                 Envía un código temporal mediante SMS o
                                 una aplicación de mensajería.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>
+</div>
+<div>
+<strong>
                                 Correo electrónico
                             </strong>
-
-                            <p>
+<p>
                                 Envía un código o enlace de confirmación a una
                                 cuenta de correo previamente registrada.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>
+</div>
+<div>
+<strong>
                                 Biometría
                             </strong>
-
-                            <p>
+<p>
                                 Utiliza características físicas para confirmar
                                 el acceso desde un dispositivo.
                             </p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="recuadro-consejo">
-
-                        <strong>
+</div>
+</div>
+<div class="recuadro-consejo">
+<strong>
                             Métodos recomendados
                         </strong>
-
-                        <p>
+<p>
                             Las aplicaciones autenticadoras y las llaves físicas
                             suelen ofrecer mayor protección que los códigos
                             enviados por SMS.
                         </p>
-
-                    </div>
-
-                    <h2 id="ventajas">
+</div>
+<h2 id="ventajas">
                         Ventajas de utilizar autenticación de dos factores
                     </h2>
-
-                    <ul class="lista-articulo lista-ventajas">
-
-                        <li>
+<ul class="lista-articulo lista-ventajas">
+<li>
                             Reduce el riesgo causado por contraseñas robadas.
                         </li>
-
-                        <li>
+<li>
                             Dificulta accesos desde dispositivos desconocidos.
                         </li>
-
-                        <li>
+<li>
                             Agrega protección contra reutilización de contraseñas.
                         </li>
-
-                        <li>
+<li>
                             Puede alertar sobre intentos de acceso.
                         </li>
-
-                        <li>
+<li>
                             Protege correos, redes sociales y cuentas bancarias.
                         </li>
-
-                        <li>
+<li>
                             Ayuda a proteger información personal y empresarial.
                         </li>
-
-                        <li>
+<li>
                             Reduce el impacto de algunas filtraciones de datos.
                         </li>
-
-                        <li>
+<li>
                             Es fácil de activar en muchas plataformas.
                         </li>
-
-                    </ul>
-
-                    <p>
+</ul>
+<p>
                         La autenticación adicional es especialmente importante
                         en el correo electrónico, porque muchas otras cuentas
                         utilizan el correo para recuperar contraseñas.
                     </p>
-
-                    <h2 id="limitaciones">
+<h2 id="limitaciones">
                         Limitaciones y riesgos
                     </h2>
-
-                    <p>
+<p>
                         La autenticación de dos factores mejora la seguridad,
                         pero no elimina todos los riesgos.
                     </p>
-
-                    <ul class="lista-articulo lista-riesgos">
-
-                        <li>
+<ul class="lista-articulo lista-riesgos">
+<li>
                             Los códigos pueden ser solicitados mediante phishing.
                         </li>
-
-                        <li>
+<li>
                             Un teléfono puede perderse o dañarse.
                         </li>
-
-                        <li>
+<li>
                             Una notificación puede aprobarse por accidente.
                         </li>
-
-                        <li>
+<li>
                             Los mensajes SMS pueden ser interceptados en algunos
                             ataques.
                         </li>
-
-                        <li>
+<li>
                             Una cuenta de recuperación también puede ser
                             comprometida.
                         </li>
-
-                        <li>
+<li>
                             Los códigos de respaldo pueden quedar expuestos.
                         </li>
-
-                        <li>
+<li>
                             Un dispositivo infectado puede representar un riesgo.
                         </li>
-
-                    </ul>
-
-                    <div class="recuadro-aviso">
-
-                        <strong>
+</ul>
+<div class="recuadro-aviso">
+<strong>
                             Nunca compartas un código temporal
                         </strong>
-
-                        <p>
+<p>
                             Una empresa legítima no debería pedirte por llamada,
                             mensaje o correo que le entregues el código utilizado
                             para iniciar sesión.
                         </p>
-
-                    </div>
-
-                    <p>
+</div>
+<p>
                         Aprende más sobre este tipo de engaño en el artículo
                         sobre
                         <a href="que-es-phishing.html">
                             qué es el phishing
                         </a>.
                     </p>
-
-                    <h2 id="configurar">
+<h2 id="configurar">
                         ¿Cómo configurar la autenticación de dos factores?
                     </h2>
-
-                    <div
-                        class="pasos-articulo"
-                        role="list"
-                    >
-
-                        <div
-                            class="paso-articulo"
-                            role="listitem"
-                        >
-
-                            <span>1</span>
-
-                            <div>
-
-                                <h3>
+<div class="pasos-articulo" role="list">
+<div class="paso-articulo" role="listitem">
+<span>1</span>
+<div>
+<h3>
                                     Entra desde el sitio oficial
                                 </h3>
-
-                                <p>
+<p>
                                     Abre directamente la aplicación o escribe
                                     manualmente la dirección del servicio.
                                 </p>
-
-                            </div>
-
-                        </div>
-
-                        <div
-                            class="paso-articulo"
-                            role="listitem"
-                        >
-
-                            <span>2</span>
-
-                            <div>
-
-                                <h3>
+</div>
+</div>
+<div class="paso-articulo" role="listitem">
+<span>2</span>
+<div>
+<h3>
                                     Abre la configuración de seguridad
                                 </h3>
-
-                                <p>
+<p>
                                     Busca opciones como seguridad, inicio de
                                     sesión, verificación o autenticación.
                                 </p>
-
-                            </div>
-
-                        </div>
-
-                        <div
-                            class="paso-articulo"
-                            role="listitem"
-                        >
-
-                            <span>3</span>
-
-                            <div>
-
-                                <h3>
+</div>
+</div>
+<div class="paso-articulo" role="listitem">
+<span>3</span>
+<div>
+<h3>
                                     Selecciona el método
                                 </h3>
-
-                                <p>
+<p>
                                     Elige una aplicación autenticadora, una llave
                                     física u otra opción disponible.
                                 </p>
-
-                            </div>
-
-                        </div>
-
-                        <div
-                            class="paso-articulo"
-                            role="listitem"
-                        >
-
-                            <span>4</span>
-
-                            <div>
-
-                                <h3>
+</div>
+</div>
+<div class="paso-articulo" role="listitem">
+<span>4</span>
+<div>
+<h3>
                                     Completa la verificación
                                 </h3>
-
-                                <p>
+<p>
                                     Escanea el código, registra el dispositivo
                                     o confirma el método seleccionado.
                                 </p>
-
-                            </div>
-
-                        </div>
-
-                        <div
-                            class="paso-articulo"
-                            role="listitem"
-                        >
-
-                            <span>5</span>
-
-                            <div>
-
-                                <h3>
+</div>
+</div>
+<div class="paso-articulo" role="listitem">
+<span>5</span>
+<div>
+<h3>
                                     Guarda los códigos de recuperación
                                 </h3>
-
-                                <p>
+<p>
                                     Conserva una copia en un lugar seguro y
                                     separado del dispositivo principal.
                                 </p>
-
-                            </div>
-
-                        </div>
-
-                        <div
-                            class="paso-articulo"
-                            role="listitem"
-                        >
-
-                            <span>6</span>
-
-                            <div>
-
-                                <h3>
+</div>
+</div>
+<div class="paso-articulo" role="listitem">
+<span>6</span>
+<div>
+<h3>
                                     Comprueba el funcionamiento
                                 </h3>
-
-                                <p>
+<p>
                                     Cierra sesión y verifica que puedas completar
                                     correctamente el nuevo proceso de acceso.
                                 </p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <h2 id="recuperacion">
+</div>
+</div>
+</div>
+<h2 id="recuperacion">
                         ¿Qué son los códigos de recuperación?
                     </h2>
-
-                    <p>
+<p>
                         Los códigos de recuperación son claves de emergencia que
                         permiten entrar a una cuenta cuando no tienes acceso al
                         método principal de autenticación.
                     </p>
-
-                    <p>
+<p>
                         Generalmente, cada código puede utilizarse una sola vez.
                     </p>
-
-                    <ul class="lista-articulo lista-ventajas">
-
-                        <li>
+<ul class="lista-articulo lista-ventajas">
+<li>
                             Guárdalos fuera del teléfono principal.
                         </li>
-
-                        <li>
+<li>
                             No los envíes por mensajes sin protección.
                         </li>
-
-                        <li>
+<li>
                             No los publiques en capturas de pantalla.
                         </li>
-
-                        <li>
+<li>
                             No los compartas con otras personas.
                         </li>
-
-                        <li>
+<li>
                             Genera códigos nuevos si sospechas que fueron
                             expuestos.
                         </li>
-
-                        <li>
+<li>
                             Comprueba que todavía puedas acceder a ellos.
                         </li>
-
-                    </ul>
-
-                    <div class="recuadro-aviso">
-
-                        <strong>
+</ul>
+<div class="recuadro-aviso">
+<strong>
                             Evita guardar una única copia
                         </strong>
-
-                        <p>
+<p>
                             Si los códigos están solamente dentro del mismo
                             teléfono que utilizas para autenticarte, podrías
                             perder ambos accesos al mismo tiempo.
                         </p>
-
-                    </div>
-
-                    <h2 id="ataques">
+</div>
+<h2 id="ataques">
                         Ataques que todavía pueden ocurrir
                     </h2>
-
-                    <p>
+<p>
                         Incluso con autenticación de dos factores, debes
                         mantener hábitos seguros.
                     </p>
-
-                    <div class="lista-tarjetas-articulo">
-
-                        <div>
-
-                            <strong>
+<div class="lista-tarjetas-articulo">
+<div>
+<strong>
                                 Phishing en tiempo real
                             </strong>
-
-                            <p>
+<p>
                                 Una página falsa puede pedir la contraseña y
                                 después solicitar el código temporal.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>
+</div>
+<div>
+<strong>
                                 Aprobación accidental
                             </strong>
-
-                            <p>
+<p>
                                 Un atacante puede enviar muchas notificaciones
                                 esperando que una sea aceptada.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>
+</div>
+<div>
+<strong>
                                 Robo de sesión
                             </strong>
-
-                            <p>
+<p>
                                 Una sesión ya autenticada puede quedar expuesta
                                 mediante malware o dispositivos inseguros.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>
+</div>
+<div>
+<strong>
                                 Recuperación de cuenta
                             </strong>
-
-                            <p>
+<p>
                                 Un proceso de recuperación débil puede permitir
                                 evitar el segundo factor.
                             </p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="recuadro-consejo">
-
-                        <strong>
+</div>
+</div>
+<div class="recuadro-consejo">
+<strong>
                             Rechaza solicitudes inesperadas
                         </strong>
-
-                        <p>
+<p>
                             Si recibes una notificación de inicio de sesión que
                             no solicitaste, recházala y cambia la contraseña
                             desde la plataforma oficial.
                         </p>
-
-                    </div>
-
-                    <h2 id="errores">
+</div>
+<h2 id="errores">
                         Errores frecuentes
                     </h2>
-
-                    <ul class="lista-articulo lista-riesgos">
-
-                        <li>
+<ul class="lista-articulo lista-riesgos">
+<li>
                             Compartir códigos temporales con otra persona.
                         </li>
-
-                        <li>
+<li>
                             Aprobar notificaciones sin leerlas.
                         </li>
-
-                        <li>
+<li>
                             No guardar los códigos de recuperación.
                         </li>
-
-                        <li>
+<li>
                             Guardar los códigos únicamente en el teléfono.
                         </li>
-
-                        <li>
+<li>
                             Utilizar solamente SMS cuando hay métodos más
                             seguros.
                         </li>
-
-                        <li>
+<li>
                             No proteger el correo de recuperación.
                         </li>
-
-                        <li>
+<li>
                             Desactivar la función por considerarla incómoda.
                         </li>
-
-                        <li>
+<li>
                             Registrar dispositivos públicos como confiables.
                         </li>
-
-                        <li>
+<li>
                             No eliminar dispositivos antiguos de la cuenta.
                         </li>
-
-                    </ul>
-
-                    <h2 id="preguntas">
+</ul>
+<h2 id="preguntas">
                         Preguntas frecuentes
                     </h2>
-
-                    <section
-                        class="faq-articulo"
-                        aria-labelledby="preguntas"
-                    >
-
-                        <details>
-
-                            <summary>
+<section aria-labelledby="preguntas" class="faq-articulo">
+<details>
+<summary>
                                 ¿La autenticación de dos pasos y 2FA son lo mismo?
                             </summary>
-
-                            <p>
+<p>
                                 Con frecuencia se utilizan como términos
                                 equivalentes. Técnicamente, 2FA implica utilizar
                                 factores de categorías diferentes.
                             </p>
-
-                        </details>
-
-                        <details>
-
-                            <summary>
+</details>
+<details>
+<summary>
                                 ¿El código por SMS es seguro?
                             </summary>
-
-                            <p>
+<p>
                                 Es mejor que utilizar solamente una contraseña,
                                 pero puede ser menos resistente que una aplicación
                                 autenticadora o una llave física.
                             </p>
-
-                        </details>
-
-                        <details>
-
-                            <summary>
+</details>
+<details>
+<summary>
                                 ¿Qué pasa si pierdo el teléfono?
                             </summary>
-
-                            <p>
+<p>
                                 Puedes utilizar códigos de recuperación,
                                 otro dispositivo registrado o el proceso oficial
                                 de recuperación de la plataforma.
                             </p>
-
-                        </details>
-
-                        <details>
-
-                            <summary>
+</details>
+<details>
+<summary>
                                 ¿Debo activarla en todas mis cuentas?
                             </summary>
-
-                            <p>
+<p>
                                 Es especialmente recomendable en correo,
                                 banca, redes sociales, almacenamiento, trabajo
                                 y cualquier cuenta con información importante.
                             </p>
-
-                        </details>
-
-                        <details>
-
-                            <summary>
+</details>
+<details>
+<summary>
                                 ¿La autenticación de dos factores reemplaza una contraseña segura?
                             </summary>
-
-                            <p>
+<p>
                                 No. Debe utilizarse junto con contraseñas únicas,
                                 seguras y diferentes para cada servicio.
                             </p>
-
-                        </details>
-
-                    </section>
-
-                    <h2 id="conclusion">
+</details>
+</section>
+<h2 id="conclusion">
                         Conclusión
                     </h2>
-
-                    <p>
+<p>
                         La autenticación de dos factores agrega una segunda
                         verificación para proteger una cuenta incluso cuando
                         la contraseña ha sido descubierta.
                     </p>
-
-                    <p>
+<p>
                         Las aplicaciones autenticadoras y las llaves de seguridad
                         ofrecen opciones resistentes, mientras que los códigos
                         de recuperación permiten recuperar el acceso en una
                         emergencia.
                     </p>
-
-                    <p>
+<p>
                         Para obtener una protección adecuada, también debes
                         evitar el phishing, utilizar contraseñas únicas y revisar
                         cuidadosamente cualquier solicitud de inicio de sesión.
                     </p>
-
-                    <section
-                        class="autor-articulo"
-                        aria-label="Información del autor"
-                    >
-
-                        <div
-                            class="autor-icono"
-                            aria-hidden="true"
-                        >
+<section aria-label="Información del autor" class="autor-articulo">
+<div aria-hidden="true" class="autor-icono">
                             &lt;/&gt;
                         </div>
-
-                        <div class="autor-informacion">
-
-                            <span>
+<div class="autor-informacion">
+<span>
                                 Artículo creado por
                             </span>
-
-                            <h2>
+<h2>
                                 ByteNova
                             </h2>
-
-                            <p>
+<p>
                                 Plataforma educativa dedicada a explicar
                                 programación, desarrollo web, inteligencia
                                 artificial y ciberseguridad de manera clara.
                             </p>
-
-                            <a href="sobre.html">
+<a href="sobre.html">
                                 Conoce más sobre ByteNova →
                             </a>
-
-                        </div>
-
-                    </section>
-
-                    <aside
-                        class="articulos-relacionados"
-                        aria-labelledby="titulo-articulos-relacionados"
-                    >
-
-                        <h2 id="titulo-articulos-relacionados">
+</div>
+</section>
+<aside aria-labelledby="titulo-articulos-relacionados" class="articulos-relacionados">
+<h2 id="titulo-articulos-relacionados">
                             Continúa aprendiendo
                         </h2>
-
-                        <div class="relacionados-grid">
-
-                            <a href="que-es-phishing.html">
-
-                                <span aria-hidden="true">🎣</span>
-
-                                <strong>
+<div class="relacionados-grid">
+<a href="que-es-phishing.html">
+<span aria-hidden="true">🎣</span>
+<strong>
                                     ¿Qué es el phishing?
                                 </strong>
-
-                                <small>
+<small>
                                     Aprende a reconocer mensajes y páginas falsas.
                                 </small>
-
-                            </a>
-
-                            <a href="ciberseguridad-estudiantes.html">
-
-                                <span aria-hidden="true">🛡️</span>
-
-                                <strong>
+</a>
+<a href="ciberseguridad-estudiantes.html">
+<span aria-hidden="true">🛡️</span>
+<strong>
                                     Consejos de ciberseguridad
                                 </strong>
-
-                                <small>
+<small>
                                     Protege tus cuentas y dispositivos.
                                 </small>
-
-                            </a>
-
-                            <a href="conceptos-ciberseguridad.html">
-
-                                <span aria-hidden="true">🔐</span>
-
-                                <strong>
+</a>
+<a href="conceptos-ciberseguridad.html">
+<span aria-hidden="true">🔐</span>
+<strong>
                                     Conceptos de ciberseguridad
                                 </strong>
-
-                                <small>
+<small>
                                     Comprende los fundamentos de la seguridad digital.
                                 </small>
-
-                            </a>
-
-                        </div>
-
-                    </aside>
-
-                </div>
-
-            </div>
-
-        </article>
-
-    </main>
-
-    <footer class="footer">
-
-        <div class="contenedor-footer">
-
-            <div class="footer-logo">
-
-                <a
-                    href="../index.html#inicio"
-                    class="marca-bytenova"
-                    aria-label="Ir al inicio de ByteNova"
-                >
-
-                    <span
-                        class="marca-icono"
-                        aria-hidden="true"
-                    >
+</a>
+</div>
+</aside>
+</div>
+</div>
+</article>
+</main>
+<footer class="footer">
+<div class="contenedor-footer">
+<div class="footer-logo">
+<a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio">
+<span aria-hidden="true" class="marca-icono">
                         &lt;/&gt;
                     </span>
-
-                    <span class="marca-texto">
+<span class="marca-texto">
                         ByteNova
                     </span>
-
-                </a>
-
-                <p>
+</a>
+<p>
                     Aprende tecnología desde cero con artículos, rutas,
                     retos, guías y recursos gratuitos.
                 </p>
-
-            </div>
-
-            <nav
-                class="footer-enlaces"
-                aria-label="Enlaces de aprendizaje del pie de página"
-            >
-
-                <h3>Aprender</h3>
-
-                <a href="../index.html#tecnologias">
+</div>
+<nav aria-label="Enlaces de aprendizaje del pie de página" class="footer-enlaces">
+<h3>Aprender</h3>
+<a href="../index.html#tecnologias">
                     Tecnologías
                 </a>
-
-                <a href="rutas.html">
+<a href="rutas.html">
                     Rutas
                 </a>
-
-                <a href="retos.html">
+<a href="retos.html">
                     Retos
                 </a>
-
-                <a href="material.html">
+<a href="material.html">
                     Guías
                 </a>
-
-                <a
-                    href="articulos.html"
-                    aria-current="page"
-                >
+<a aria-current="page" href="articulos.html">
                     Artículos
                 </a>
-
-                <a href="glosario.html">
+<a href="glosario.html">
                     Glosario
                 </a>
-
-            </nav>
-
-            <nav
-                class="footer-enlaces"
-                aria-label="Enlaces informativos del pie de página"
-            >
-
-                <h3>ByteNova</h3>
-
-                <a href="sobre.html">
+</nav>
+<nav aria-label="Enlaces informativos del pie de página" class="footer-enlaces">
+<h3>ByteNova</h3>
+<a href="sobre.html">
                     Sobre ByteNova
                 </a>
-
-                <a href="../index.html#contacto">
+<a href="../index.html#contacto">
                     Contacto
                 </a>
-
-                <a href="privacidad.html">
+<a href="privacidad.html">
                     Privacidad
                 </a>
-
-                <a href="terminos.html">
+<a href="terminos.html">
                     Términos
                 </a>
-
-                <a href="cookies.html">
+<a href="cookies.html">
                     Cookies
                 </a>
-
-            </nav>
-
-            <address class="footer-social">
-
-                <h3>Contacto</h3>
-
-                <p>
+</nav>
+<address class="footer-social">
+<h3>Contacto</h3>
+<p>
                     Preguntas, sugerencias o comentarios sobre nuestros
                     contenidos educativos.
                 </p>
-
-                <a href="mailto:bytenova339@gmail.com">
+<a href="mailto:bytenova339@gmail.com">
                     bytenova339@gmail.com
                 </a>
-
-            </address>
-
-        </div>
-
-        <div class="footer-copy">
-
-            <p>
+</address>
+</div>
+<div class="footer-copy">
+<p>
                 © 2026 ByteNova. Todos los derechos reservados.
             </p>
-
-            <p>
+<p>
                 Creado por Dylan Estrada.
             </p>
-
-        </div>
-
-    </footer>
-
-    <script src="../js/script.js"></script>
-
+</div>
+</footer>
+<script src="../js/script.js"></script>
 </body>
-
 </html>

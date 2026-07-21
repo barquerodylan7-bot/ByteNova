@@ -1,365 +1,251 @@
 <!DOCTYPE html>
+
 <html lang="es">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>Guía de ciberseguridad para principiantes | ByteNova</title>
-
-    <meta
-        name="description"
-        content="Aprende ciberseguridad desde cero: contraseñas, autenticación, phishing, malware, actualizaciones, copias de seguridad, redes seguras y protección de datos."
-    >
-
-    <meta name="author" content="ByteNova">
-    <meta name="robots" content="index, follow">
-
-    <meta
-        name="theme-color"
-        content="#ffffff"
-        media="(prefers-color-scheme: light)"
-    >
-
-    <meta
-        name="theme-color"
-        content="#0f172a"
-        media="(prefers-color-scheme: dark)"
-    >
-
-    <meta property="og:type" content="article">
-    <meta property="og:locale" content="es_CR">
-    <meta property="og:site_name" content="ByteNova">
-
-    <meta
-        property="og:title"
-        content="Guía de ciberseguridad para principiantes"
-    >
-
-    <meta
-        property="og:description"
-        content="Aprende a proteger cuentas, dispositivos y datos mediante contraseñas seguras, autenticación, copias de seguridad y prevención de amenazas."
-    >
-
-    <meta
-        property="og:url"
-        content="https://bytenova.app/pages/conceptos-ciberseguridad.html"
-    >
-
-    <meta
-        property="article:published_time"
-        content="2026-07-19"
-    >
-
-    <meta
-        property="article:modified_time"
-        content="2026-07-20"
-    >
-
-    <meta
-        property="article:section"
-        content="Ciberseguridad"
-    >
-
-    <meta name="twitter:card" content="summary">
-
-    <meta
-        name="twitter:title"
-        content="Guía de ciberseguridad para principiantes"
-    >
-
-    <meta
-        name="twitter:description"
-        content="Aprende los fundamentos para proteger cuentas, dispositivos, redes e información."
-    >
-
-    <link
-        rel="canonical"
-        href="https://bytenova.app/pages/conceptos-ciberseguridad.html"
-    >
-
-    <link
-        rel="icon"
-        type="image/svg+xml"
-        href="../images/favicon.svg"
-    >
-
-    <link rel="stylesheet" href="../css/style.css">
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "LearningResource",
-                "@id": "https://bytenova.app/pages/conceptos-ciberseguridad.html#learning-resource",
-                "name": "Guía de ciberseguridad para principiantes",
-                "description": "Guía gratuita para aprender conceptos fundamentales de ciberseguridad y proteger cuentas, dispositivos e información.",
-                "url": "https://bytenova.app/pages/conceptos-ciberseguridad.html",
-                "datePublished": "2026-07-19",
-                "dateModified": "2026-07-20",
-                "inLanguage": "es",
-                "learningResourceType": "Guide",
-                "educationalLevel": "Beginner",
-                "isAccessibleForFree": true,
-                "author": {
-                    "@type": "Organization",
-                    "name": "ByteNova",
-                    "url": "https://bytenova.app/pages/sobre.html"
-                },
-                "publisher": {
-                    "@type": "Organization",
-                    "name": "ByteNova",
-                    "url": "https://bytenova.app/"
-                },
-                "isPartOf": {
-                    "@id": "https://bytenova.app/#website"
-                },
-                "mainEntityOfPage": {
-                    "@id": "https://bytenova.app/pages/conceptos-ciberseguridad.html#webpage"
-                },
-                "about": [
-                    {
-                        "@type": "Thing",
-                        "name": "Ciberseguridad"
-                    },
-                    {
-                        "@type": "Thing",
-                        "name": "Seguridad digital"
-                    },
-                    {
-                        "@type": "Thing",
-                        "name": "Protección de datos"
-                    }
-                ]
-            },
-            {
-                "@type": "WebPage",
-                "@id": "https://bytenova.app/pages/conceptos-ciberseguridad.html#webpage",
-                "url": "https://bytenova.app/pages/conceptos-ciberseguridad.html",
-                "name": "Guía de ciberseguridad para principiantes",
-                "description": "Guía gratuita sobre contraseñas, autenticación, phishing, malware, actualizaciones, copias de seguridad, redes y privacidad.",
-                "inLanguage": "es",
-                "datePublished": "2026-07-19",
-                "dateModified": "2026-07-20",
-                "isPartOf": {
-                    "@id": "https://bytenova.app/#website"
-                },
-                "breadcrumb": {
-                    "@id": "https://bytenova.app/pages/conceptos-ciberseguridad.html#breadcrumb"
-                },
-                "mainEntity": {
-                    "@id": "https://bytenova.app/pages/conceptos-ciberseguridad.html#learning-resource"
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Guía de ciberseguridad para principiantes | ByteNova</title>
+<meta content="Aprende ciberseguridad desde cero: contraseñas, autenticación, phishing, malware, actualizaciones, copias de seguridad, redes seguras y protección de datos." name="description"/>
+<meta content="ByteNova" name="author"/>
+<meta content="index, follow" name="robots"/>
+<meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
+<meta content="#0f172a" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<meta content="article" property="og:type"/>
+<meta content="es_CR" property="og:locale"/>
+<meta content="ByteNova" property="og:site_name"/>
+<meta content="Guía de ciberseguridad para principiantes" property="og:title"/>
+<meta content="Aprende a proteger cuentas, dispositivos y datos mediante contraseñas seguras, autenticación, copias de seguridad y prevención de amenazas." property="og:description"/>
+<meta content="https://bytenova.app/pages/conceptos-ciberseguridad.html" property="og:url"/><meta content="https://bytenova.app/images/bytenova-social.png" property="og:image"/><meta content="https://bytenova.app/images/bytenova-social.png" property="og:image:secure_url"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="image/png" property="og:image:type"/><meta content="Guía de ciberseguridad para principiantes | ByteNova" property="og:image:alt"/><meta content="https://bytenova.app/images/bytenova-social.png" name="twitter:image"/><meta content="Guía de ciberseguridad para principiantes | ByteNova" name="twitter:image:alt"/>
+<meta content="2026-07-19" property="article:published_time"/>
+<meta content="2026-07-20" property="article:modified_time"/>
+<meta content="Ciberseguridad" property="article:section"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Guía de ciberseguridad para principiantes" name="twitter:title"/>
+<meta content="Aprende los fundamentos para proteger cuentas, dispositivos, redes e información." name="twitter:description"/>
+<link href="https://bytenova.app/pages/conceptos-ciberseguridad.html" rel="canonical"/>
+<link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../css/style.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "LearningResource",
+            "@id": "https://bytenova.app/pages/conceptos-ciberseguridad.html#learning-resource",
+            "name": "Guía de ciberseguridad para principiantes",
+            "description": "Guía gratuita para aprender conceptos fundamentales de ciberseguridad y proteger cuentas, dispositivos e información.",
+            "url": "https://bytenova.app/pages/conceptos-ciberseguridad.html",
+            "datePublished": "2026-07-19",
+            "dateModified": "2026-07-20",
+            "inLanguage": "es",
+            "learningResourceType": "Guide",
+            "educationalLevel": "Beginner",
+            "isAccessibleForFree": true,
+            "author": {
+                "@type": "Organization",
+                "name": "ByteNova",
+                "url": "https://bytenova.app/pages/sobre.html",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://bytenova.app/images/bytenova-social.png",
+                    "width": 1200,
+                    "height": 630
                 }
             },
-            {
-                "@type": "BreadcrumbList",
-                "@id": "https://bytenova.app/pages/conceptos-ciberseguridad.html#breadcrumb",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Inicio",
-                        "item": "https://bytenova.app/"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Guías",
-                        "item": "https://bytenova.app/pages/material.html"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "Ciberseguridad",
-                        "item": "https://bytenova.app/pages/conceptos-ciberseguridad.html"
-                    }
-                ]
+            "publisher": {
+                "@type": "Organization",
+                "name": "ByteNova",
+                "url": "https://bytenova.app/",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://bytenova.app/images/bytenova-social.png",
+                    "width": 1200,
+                    "height": 630
+                }
             },
-            {
-                "@type": "FAQPage",
-                "@id": "https://bytenova.app/pages/conceptos-ciberseguridad.html#faq",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "¿Un antivirus elimina todos los riesgos?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "No. Ayuda a detectar amenazas, pero debe acompañarse de actualizaciones y buenas prácticas."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "¿Debo cambiar todas mis contraseñas frecuentemente?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Debes cambiarlas cuando sean débiles, repetidas, expuestas o exista una sospecha de acceso."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "¿La autenticación en dos pasos es necesaria?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Es una protección muy recomendable, especialmente para correo, servicios financieros y cuentas importantes."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "¿Una red Wi-Fi pública es segura?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Puede presentar mayores riesgos. Evita operaciones sensibles y revisa cuidadosamente las conexiones."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "¿Qué cuenta debo proteger primero?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "El correo principal, porque suele utilizarse para recuperar el acceso a otras cuentas."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "¿Qué hago si abrí un enlace sospechoso?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "No ingreses datos, cierra la página, revisa el dispositivo y cambia las credenciales si compartiste información."
-                        }
-                    }
-                ]
+            "isPartOf": {
+                "@id": "https://bytenova.app/#website"
+            },
+            "mainEntityOfPage": {
+                "@id": "https://bytenova.app/pages/conceptos-ciberseguridad.html#webpage"
+            },
+            "about": [
+                {
+                    "@type": "Thing",
+                    "name": "Ciberseguridad"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "Seguridad digital"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "Protección de datos"
+                }
+            ]
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://bytenova.app/pages/conceptos-ciberseguridad.html#webpage",
+            "url": "https://bytenova.app/pages/conceptos-ciberseguridad.html",
+            "name": "Guía de ciberseguridad para principiantes",
+            "description": "Guía gratuita sobre contraseñas, autenticación, phishing, malware, actualizaciones, copias de seguridad, redes y privacidad.",
+            "inLanguage": "es",
+            "datePublished": "2026-07-19",
+            "dateModified": "2026-07-20",
+            "isPartOf": {
+                "@id": "https://bytenova.app/#website"
+            },
+            "breadcrumb": {
+                "@id": "https://bytenova.app/pages/conceptos-ciberseguridad.html#breadcrumb"
+            },
+            "mainEntity": {
+                "@id": "https://bytenova.app/pages/conceptos-ciberseguridad.html#learning-resource"
+            },
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://bytenova.app/images/bytenova-social.png",
+                "width": 1200,
+                "height": 630
             }
-        ]
-    }
-    </script>
-
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://bytenova.app/pages/conceptos-ciberseguridad.html#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Inicio",
+                    "item": "https://bytenova.app/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Guías",
+                    "item": "https://bytenova.app/pages/material.html"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Ciberseguridad",
+                    "item": "https://bytenova.app/pages/conceptos-ciberseguridad.html"
+                }
+            ]
+        },
+        {
+            "@type": "FAQPage",
+            "@id": "https://bytenova.app/pages/conceptos-ciberseguridad.html#faq",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "¿Un antivirus elimina todos los riesgos?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. Ayuda a detectar amenazas, pero debe acompañarse de actualizaciones y buenas prácticas."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Debo cambiar todas mis contraseñas frecuentemente?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Debes cambiarlas cuando sean débiles, repetidas, expuestas o exista una sospecha de acceso."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿La autenticación en dos pasos es necesaria?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Es una protección muy recomendable, especialmente para correo, servicios financieros y cuentas importantes."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Una red Wi-Fi pública es segura?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Puede presentar mayores riesgos. Evita operaciones sensibles y revisa cuidadosamente las conexiones."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Qué cuenta debo proteger primero?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "El correo principal, porque suele utilizarse para recuperar el acceso a otras cuentas."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Qué hago si abrí un enlace sospechoso?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No ingreses datos, cierra la página, revisa el dispositivo y cambia las credenciales si compartiste información."
+                    }
+                }
+            ]
+        }
+    ]
+}
+</script>
 </head>
-
 <body>
-
-    <a class="saltar-contenido" href="#contenido-principal">
+<a class="saltar-contenido" href="#contenido-principal">
         Saltar al contenido principal
     </a>
-
-
-    <header>
-
-        <a
-            href="../index.html#inicio"
-            class="marca-bytenova"
-            aria-label="Ir al inicio de ByteNova"
-        >
-
-            <span
-                class="marca-icono"
-                aria-hidden="true"
-            >
+<header>
+<a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio">
+<span aria-hidden="true" class="marca-icono">
                 &lt;/&gt;
             </span>
-
-            <span class="marca-texto">
+<span class="marca-texto">
                 ByteNova
             </span>
-
-        </a>
-
-
-        <button
-            type="button"
-            class="menu-toggle"
-            id="menu-toggle"
-            aria-label="Abrir menú"
-            aria-expanded="false"
-            aria-controls="menu-principal"
-        >
-            <span aria-hidden="true">☰</span>
-        </button>
-
-
-        <nav
-            id="menu-principal"
-            aria-label="Navegación principal"
-        >
-
-            <a href="../index.html#inicio">Inicio</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="../index.html#tecnologias">Aprender</a>
-            <a href="rutas.html">Rutas</a>
-            <a href="retos.html">Retos</a>
-
-            <a
-                href="material.html"
-                aria-current="page"
-            >
+</a>
+<button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle" type="button">
+<span aria-hidden="true">☰</span>
+</button>
+<nav aria-label="Navegación principal" id="menu-principal">
+<a href="../index.html#inicio">Inicio</a>
+<a href="sobre.html">Sobre</a>
+<a href="../index.html#tecnologias">Aprender</a>
+<a href="rutas.html">Rutas</a>
+<a href="retos.html">Retos</a>
+<a aria-current="page" href="material.html">
                 Guías
             </a>
-
-            <a href="articulos.html">Artículos</a>
-            <a href="glosario.html">Glosario</a>
-            <a href="../index.html#contacto">Contacto</a>
-
-            <button
-                type="button"
-                id="btn-modo"
-                class="btn-modo"
-                aria-label="Activar modo oscuro"
-            >
-                <span aria-hidden="true">🌙</span>
-            </button>
-
-        </nav>
-
-    </header>
-
-
-    <main
-        class="sobre articulo"
-        id="contenido-principal"
-    >
-
-        <article
-            class="sobre-contenido"
-            aria-labelledby="titulo-guia-ciberseguridad"
-        >
-
-            <nav
-                class="migas-navegacion"
-                aria-label="Ruta de navegación"
-            >
-
-                <a href="../index.html">Inicio</a>
-                <span aria-hidden="true">›</span>
-
-                <a href="material.html">
+<a href="articulos.html">Artículos</a>
+<a href="glosario.html">Glosario</a>
+<a href="../index.html#contacto">Contacto</a>
+<button aria-label="Activar modo oscuro" class="btn-modo" id="btn-modo" type="button">
+<span aria-hidden="true">🌙</span>
+</button>
+</nav>
+</header>
+<main class="sobre articulo" id="contenido-principal">
+<article aria-labelledby="titulo-guia-ciberseguridad" class="sobre-contenido">
+<nav aria-label="Ruta de navegación" class="migas-navegacion">
+<a href="../index.html">Inicio</a>
+<span aria-hidden="true">›</span>
+<a href="material.html">
                     Guías
                 </a>
-
-                <span aria-hidden="true">›</span>
-
-                <span aria-current="page">
+<span aria-hidden="true">›</span>
+<span aria-current="page">
                     Ciberseguridad
                 </span>
-
-            </nav>
-
-
-            <span class="seccion-etiqueta">
-                <span aria-hidden="true">🛡️</span>
+</nav>
+<span class="seccion-etiqueta">
+<span aria-hidden="true">🛡️</span>
                 Guía de seguridad digital
             </span>
-
-            <h1 id="titulo-guia-ciberseguridad">
+<h1 id="titulo-guia-ciberseguridad">
                 Ciberseguridad para principiantes: guía desde cero
                 <span aria-hidden="true">🛡️</span>
-            </h1>
-
-            <p class="articulo-meta">
+</h1>
+<p class="articulo-meta">
 
                 Publicado por ByteNova ·
 
@@ -372,1538 +258,960 @@
                 <time datetime="2026-07-20">
                     20 de julio de 2026
                 </time>
-
-            </p>
-
-
-            <div class="articulo-resumen">
-
-                <strong>En esta guía aprenderás:</strong>
-
-                <p>
+</p>
+<div class="articulo-resumen">
+<strong>En esta guía aprenderás:</strong>
+<p>
                     Cómo proteger cuentas, dispositivos e información mediante
                     contraseñas seguras, autenticación en dos pasos,
                     actualizaciones, copias de seguridad y prevención de
                     amenazas digitales.
                 </p>
-
-            </div>
-
-
-            <div class="articulo-layout">
-
-                <details class="indice-articulo">
-
-                    <summary>
-                        <span aria-hidden="true">📑</span>
+</div>
+<div class="articulo-layout">
+<details class="indice-articulo">
+<summary>
+<span aria-hidden="true">📑</span>
                         Contenido de la guía
                     </summary>
-
-                    <nav aria-label="Contenido de la guía">
-
-                        <a href="#que-es">
+<nav aria-label="Contenido de la guía">
+<a href="#que-es">
                             1. ¿Qué es la ciberseguridad?
                         </a>
-
-                        <a href="#principios">
+<a href="#principios">
                             2. Principios de seguridad
                         </a>
-
-                        <a href="#amenazas">
+<a href="#amenazas">
                             3. Amenazas digitales
                         </a>
-
-                        <a href="#contrasenas">
+<a href="#contrasenas">
                             4. Contraseñas seguras
                         </a>
-
-                        <a href="#gestor">
+<a href="#gestor">
                             5. Gestores de contraseñas
                         </a>
-
-                        <a href="#autenticacion">
+<a href="#autenticacion">
                             6. Autenticación en dos pasos
                         </a>
-
-                        <a href="#phishing">
+<a href="#phishing">
                             7. Phishing
                         </a>
-
-                        <a href="#malware">
+<a href="#malware">
                             8. Malware
                         </a>
-
-                        <a href="#actualizaciones">
+<a href="#actualizaciones">
                             9. Actualizaciones
                         </a>
-
-                        <a href="#copias">
+<a href="#copias">
                             10. Copias de seguridad
                         </a>
-
-                        <a href="#redes">
+<a href="#redes">
                             11. Redes y Wi-Fi
                         </a>
-
-                        <a href="#navegacion">
+<a href="#navegacion">
                             12. Navegación segura
                         </a>
-
-                        <a href="#privacidad">
+<a href="#privacidad">
                             13. Privacidad y datos personales
                         </a>
-
-                        <a href="#dispositivos">
+<a href="#dispositivos">
                             14. Protección de dispositivos
                         </a>
-
-                        <a href="#incidente">
+<a href="#incidente">
                             15. Qué hacer ante un incidente
                         </a>
-
-                        <a href="#practicas">
+<a href="#practicas">
                             16. Ejercicios
                         </a>
-
-                        <a href="#preguntas">
+<a href="#preguntas">
                             17. Preguntas frecuentes
                         </a>
-
-                        <a href="#conclusion">
+<a href="#conclusion">
                             18. Conclusión
                         </a>
-
-                    </nav>
-
-                </details>
-
-
-                <div
-                    class="articulo-cuerpo"
-                    aria-label="Contenido principal de la guía"
-                >
-
-                    <p class="articulo-introduccion">
+</nav>
+</details>
+<div aria-label="Contenido principal de la guía" class="articulo-cuerpo">
+<p class="articulo-introduccion">
                         La ciberseguridad reúne conocimientos, herramientas y
                         buenas prácticas para proteger información, cuentas,
                         dispositivos, redes y sistemas digitales.
                     </p>
-
-                    <p>
+<p>
                         No se limita a empresas o especialistas. Cualquier
                         persona que utilice Internet necesita aplicar medidas
                         básicas de seguridad.
                     </p>
-
-
-                    <h2 id="que-es">
+<h2 id="que-es">
                         ¿Qué es la ciberseguridad?
                     </h2>
-
-                    <p>
+<p>
                         La ciberseguridad busca reducir riesgos como accesos no
                         autorizados, robo de información, fraude, pérdida de
                         archivos, interrupción de servicios y suplantación de
                         identidad.
                     </p>
-
-                    <p>
+<p>
                         Su objetivo es proteger:
                     </p>
-
-                    <div class="lista-tarjetas-articulo">
-
-                        <div>
-
-                            <strong>Cuentas</strong>
-
-                            <p>
+<div class="lista-tarjetas-articulo">
+<div>
+<strong>Cuentas</strong>
+<p>
                                 Correos, redes sociales, servicios financieros y
                                 plataformas de trabajo.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Dispositivos</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Dispositivos</strong>
+<p>
                                 Computadoras, teléfonos, tabletas y equipos
                                 conectados.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Información</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Información</strong>
+<p>
                                 Documentos, fotografías, mensajes, contraseñas y
                                 datos personales.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Sistemas</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Sistemas</strong>
+<p>
                                 Aplicaciones, páginas web, servidores y redes.
                             </p>
-
-                        </div>
-
-                    </div>
-
-                    <p>
+</div>
+</div>
+<p>
                         Continúa con:
                         <a href="ciberseguridad-estudiantes.html">
                             Ciberseguridad para estudiantes
                         </a>
-                    </p>
-
-
-                    <h2 id="principios">
+</p>
+<h2 id="principios">
                         Principios fundamentales de seguridad
                     </h2>
-
-                    <p>
+<p>
                         La protección de la información se relaciona con tres
                         principios principales.
                     </p>
-
-                    <div class="lista-tarjetas-articulo">
-
-                        <div>
-
-                            <strong>Confidencialidad</strong>
-
-                            <p>
+<div class="lista-tarjetas-articulo">
+<div>
+<strong>Confidencialidad</strong>
+<p>
                                 Solamente las personas autorizadas deben acceder
                                 a la información.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Integridad</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Integridad</strong>
+<p>
                                 Los datos no deben modificarse sin autorización.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Disponibilidad</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Disponibilidad</strong>
+<p>
                                 La información y los servicios deben estar
                                 accesibles cuando se necesiten.
                             </p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="recuadro-ejemplo">
-
-                        <strong>Ejemplo práctico</strong>
-
-                        <p>
+</div>
+</div>
+<div class="recuadro-ejemplo">
+<strong>Ejemplo práctico</strong>
+<p>
                             Un documento debe permanecer privado, conservar su
                             contenido correcto y poder abrirse cuando su
                             propietario lo necesite.
                         </p>
-
-                    </div>
-
-
-                    <h2 id="amenazas">
+</div>
+<h2 id="amenazas">
                         Amenazas digitales comunes
                     </h2>
-
-                    <div class="lista-tarjetas-articulo">
-
-                        <div>
-
-                            <strong>Phishing</strong>
-
-                            <p>
+<div class="lista-tarjetas-articulo">
+<div>
+<strong>Phishing</strong>
+<p>
                                 Mensajes o páginas falsas que intentan robar
                                 datos.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Malware</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Malware</strong>
+<p>
                                 Software diseñado para dañar, espiar o controlar
                                 dispositivos.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Robo de contraseñas</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Robo de contraseñas</strong>
+<p>
                                 Obtención de credenciales mediante engaños,
                                 filtraciones o contraseñas débiles.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Suplantación</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Suplantación</strong>
+<p>
                                 Uso de una identidad ajena para engañar a otras
                                 personas.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Pérdida de datos</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Pérdida de datos</strong>
+<p>
                                 Eliminación accidental, fallos del equipo o
                                 ataques.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Acceso no autorizado</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Acceso no autorizado</strong>
+<p>
                                 Entrada a una cuenta, red o sistema sin permiso.
                             </p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="recuadro-consejo">
-
-                        <strong>
+</div>
+</div>
+<div class="recuadro-consejo">
+<strong>
                             La seguridad comienza con reconocer el riesgo
                         </strong>
-
-                        <p>
+<p>
                             Antes de abrir un enlace, instalar un programa o
                             compartir información, detente y revisa la situación.
                         </p>
-
-                    </div>
-
-
-                    <h2 id="contrasenas">
+</div>
+<h2 id="contrasenas">
                         Cómo crear contraseñas seguras
                     </h2>
-
-                    <p>
+<p>
                         Una contraseña debe ser difícil de adivinar y diferente
                         para cada servicio.
                     </p>
-
-                    <ul class="lista-articulo lista-ventajas">
-
-                        <li>Utiliza contraseñas largas.</li>
-                        <li>Combina varias palabras sin relación evidente.</li>
-                        <li>Evita nombres, fechas y datos personales.</li>
-                        <li>No reutilices la misma contraseña.</li>
-                        <li>No compartas contraseñas por mensajes.</li>
-                        <li>Cámbiala si sospechas que fue expuesta.</li>
-
-                    </ul>
-
-                    <div class="lista-tarjetas-articulo">
-
-                        <div>
-
-                            <strong>Contraseña débil</strong>
-
-                            <pre><code>maria123</code></pre>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Frase más resistente</strong>
-
-                            <pre><code>Nube-Rio-Cafe-27-Luna</code></pre>
-
-                        </div>
-
-                    </div>
-
-                    <div class="recuadro-aviso">
-
-                        <strong>No copies el ejemplo literalmente</strong>
-
-                        <p>
+<ul class="lista-articulo lista-ventajas">
+<li>Utiliza contraseñas largas.</li>
+<li>Combina varias palabras sin relación evidente.</li>
+<li>Evita nombres, fechas y datos personales.</li>
+<li>No reutilices la misma contraseña.</li>
+<li>No compartas contraseñas por mensajes.</li>
+<li>Cámbiala si sospechas que fue expuesta.</li>
+</ul>
+<div class="lista-tarjetas-articulo">
+<div>
+<strong>Contraseña débil</strong>
+<pre><code>maria123</code></pre>
+</div>
+<div>
+<strong>Frase más resistente</strong>
+<pre><code>Nube-Rio-Cafe-27-Luna</code></pre>
+</div>
+</div>
+<div class="recuadro-aviso">
+<strong>No copies el ejemplo literalmente</strong>
+<p>
                             Crea tu propia combinación y no la publiques dentro
                             de una página o documento.
                         </p>
-
-                    </div>
-
-
-                    <h2 id="gestor">
+</div>
+<h2 id="gestor">
                         Gestores de contraseñas
                     </h2>
-
-                    <p>
+<p>
                         Un gestor de contraseñas permite guardar credenciales de
                         forma organizada y protegida.
                     </p>
-
-                    <p>
+<p>
                         Sus principales beneficios son:
                     </p>
-
-                    <ul class="lista-articulo lista-ventajas">
-
-                        <li>Generar contraseñas largas y únicas.</li>
-                        <li>Evitar memorizar todas las credenciales.</li>
-                        <li>Reducir la reutilización de contraseñas.</li>
-                        <li>Identificar credenciales débiles o repetidas.</li>
-                        <li>Sincronizar accesos entre dispositivos.</li>
-
-                    </ul>
-
-                    <div class="recuadro-consejo">
-
-                        <strong>Protege la contraseña principal</strong>
-
-                        <p>
+<ul class="lista-articulo lista-ventajas">
+<li>Generar contraseñas largas y únicas.</li>
+<li>Evitar memorizar todas las credenciales.</li>
+<li>Reducir la reutilización de contraseñas.</li>
+<li>Identificar credenciales débiles o repetidas.</li>
+<li>Sincronizar accesos entre dispositivos.</li>
+</ul>
+<div class="recuadro-consejo">
+<strong>Protege la contraseña principal</strong>
+<p>
                             La contraseña del gestor debe ser larga, única y
                             acompañarse de autenticación adicional cuando esté
                             disponible.
                         </p>
-
-                    </div>
-
-
-                    <h2 id="autenticacion">
+</div>
+<h2 id="autenticacion">
                         Autenticación en dos pasos
                     </h2>
-
-                    <p>
+<p>
                         La autenticación en dos pasos solicita una segunda
                         verificación además de la contraseña.
                     </p>
-
-                    <div class="lista-tarjetas-articulo">
-
-                        <div>
-
-                            <strong>Aplicación de autenticación</strong>
-
-                            <p>
+<div class="lista-tarjetas-articulo">
+<div>
+<strong>Aplicación de autenticación</strong>
+<p>
                                 Genera códigos temporales dentro del dispositivo.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Llave de seguridad</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Llave de seguridad</strong>
+<p>
                                 Dispositivo físico utilizado para confirmar el
                                 acceso.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Código por mensaje</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Código por mensaje</strong>
+<p>
                                 Envía una verificación al número registrado.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Confirmación en otro dispositivo</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Confirmación en otro dispositivo</strong>
+<p>
                                 Solicita aprobar el acceso desde una sesión
                                 confiable.
                             </p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="recuadro-aviso">
-
-                        <strong>Nunca compartas los códigos</strong>
-
-                        <p>
+</div>
+</div>
+<div class="recuadro-aviso">
+<strong>Nunca compartas los códigos</strong>
+<p>
                             Una empresa legítima no debería pedirte un código de
                             acceso para entregárselo a otra persona.
                         </p>
-
-                    </div>
-
-
-                    <h2 id="phishing">
+</div>
+<h2 id="phishing">
                         Cómo reconocer el phishing
                     </h2>
-
-                    <p>
+<p>
                         El phishing intenta engañar a una persona para que
                         entregue contraseñas, datos financieros u otra
                         información sensible.
                     </p>
-
-                    <h3>Señales de alerta</h3>
-
-                    <ul class="lista-articulo lista-riesgos">
-
-                        <li>Mensajes que crean urgencia o miedo.</li>
-                        <li>Premios inesperados.</li>
-                        <li>Solicitudes de contraseñas o códigos.</li>
-                        <li>Remitentes desconocidos o alterados.</li>
-                        <li>Errores extraños en el texto.</li>
-                        <li>Enlaces que no coinciden con la empresa.</li>
-                        <li>Archivos adjuntos inesperados.</li>
-                        <li>Solicitudes de pagos poco habituales.</li>
-
-                    </ul>
-
-                    <div class="pasos-articulo" role="list">
-
-                        <div
-                            class="paso-articulo"
-                            role="listitem"
-                        >
-
-                            <span>1</span>
-
-                            <div>
-
-                                <h3>No abras el enlace</h3>
-
-                                <p>
+<h3>Señales de alerta</h3>
+<ul class="lista-articulo lista-riesgos">
+<li>Mensajes que crean urgencia o miedo.</li>
+<li>Premios inesperados.</li>
+<li>Solicitudes de contraseñas o códigos.</li>
+<li>Remitentes desconocidos o alterados.</li>
+<li>Errores extraños en el texto.</li>
+<li>Enlaces que no coinciden con la empresa.</li>
+<li>Archivos adjuntos inesperados.</li>
+<li>Solicitudes de pagos poco habituales.</li>
+</ul>
+<div class="pasos-articulo" role="list">
+<div class="paso-articulo" role="listitem">
+<span>1</span>
+<div>
+<h3>No abras el enlace</h3>
+<p>
                                     Evita interactuar con el mensaje sospechoso.
                                 </p>
-
-                            </div>
-
-                        </div>
-
-                        <div
-                            class="paso-articulo"
-                            role="listitem"
-                        >
-
-                            <span>2</span>
-
-                            <div>
-
-                                <h3>Revisa el remitente</h3>
-
-                                <p>
+</div>
+</div>
+<div class="paso-articulo" role="listitem">
+<span>2</span>
+<div>
+<h3>Revisa el remitente</h3>
+<p>
                                     Comprueba cuidadosamente la dirección.
                                 </p>
-
-                            </div>
-
-                        </div>
-
-                        <div
-                            class="paso-articulo"
-                            role="listitem"
-                        >
-
-                            <span>3</span>
-
-                            <div>
-
-                                <h3>Entra por la vía oficial</h3>
-
-                                <p>
+</div>
+</div>
+<div class="paso-articulo" role="listitem">
+<span>3</span>
+<div>
+<h3>Entra por la vía oficial</h3>
+<p>
                                     Abre la aplicación o escribe directamente el
                                     dominio conocido.
                                 </p>
-
-                            </div>
-
-                        </div>
-
-                        <div
-                            class="paso-articulo"
-                            role="listitem"
-                        >
-
-                            <span>4</span>
-
-                            <div>
-
-                                <h3>Confirma la solicitud</h3>
-
-                                <p>
+</div>
+</div>
+<div class="paso-articulo" role="listitem">
+<span>4</span>
+<div>
+<h3>Confirma la solicitud</h3>
+<p>
                                     Contacta a la organización mediante sus
                                     canales oficiales.
                                 </p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <h2 id="malware">
+</div>
+</div>
+</div>
+<h2 id="malware">
                         ¿Qué es el malware?
                     </h2>
-
-                    <p>
+<p>
                         Malware es un término utilizado para describir programas
                         maliciosos.
                     </p>
-
-                    <div class="lista-tarjetas-articulo">
-
-                        <div>
-
-                            <strong>Virus</strong>
-
-                            <p>
+<div class="lista-tarjetas-articulo">
+<div>
+<strong>Virus</strong>
+<p>
                                 Puede adjuntarse a archivos y propagarse al
                                 ejecutarlos.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Gusano</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Gusano</strong>
+<p>
                                 Puede propagarse automáticamente entre sistemas.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Troyano</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Troyano</strong>
+<p>
                                 Se presenta como un programa legítimo para
                                 engañar al usuario.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Ransomware</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Ransomware</strong>
+<p>
                                 Bloquea o cifra información para exigir un pago.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Spyware</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Spyware</strong>
+<p>
                                 Intenta recopilar información sin autorización.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Adware malicioso</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Adware malicioso</strong>
+<p>
                                 Muestra publicidad invasiva y puede alterar el
                                 navegador.
                             </p>
-
-                        </div>
-
-                    </div>
-
-                    <h3>Cómo reducir el riesgo</h3>
-
-                    <ul class="lista-articulo lista-ventajas">
-
-                        <li>Descarga programas desde fuentes confiables.</li>
-                        <li>No abras archivos inesperados.</li>
-                        <li>Mantén el sistema actualizado.</li>
-                        <li>Utiliza protección de seguridad activa.</li>
-                        <li>Revisa los permisos solicitados.</li>
-                        <li>Crea copias de seguridad.</li>
-
-                    </ul>
-
-
-                    <h2 id="actualizaciones">
+</div>
+</div>
+<h3>Cómo reducir el riesgo</h3>
+<ul class="lista-articulo lista-ventajas">
+<li>Descarga programas desde fuentes confiables.</li>
+<li>No abras archivos inesperados.</li>
+<li>Mantén el sistema actualizado.</li>
+<li>Utiliza protección de seguridad activa.</li>
+<li>Revisa los permisos solicitados.</li>
+<li>Crea copias de seguridad.</li>
+</ul>
+<h2 id="actualizaciones">
                         Actualizaciones de seguridad
                     </h2>
-
-                    <p>
+<p>
                         Las actualizaciones corrigen errores, mejoran funciones
                         y solucionan vulnerabilidades conocidas.
                     </p>
-
-                    <p>
+<p>
                         Debes mantener actualizados:
                     </p>
-
-                    <ul class="lista-articulo">
-
-                        <li>El sistema operativo.</li>
-                        <li>El navegador.</li>
-                        <li>Las aplicaciones.</li>
-                        <li>El router.</li>
-                        <li>Los complementos del navegador.</li>
-                        <li>Las herramientas de seguridad.</li>
-
-                    </ul>
-
-                    <div class="recuadro-consejo">
-
-                        <strong>Activa las actualizaciones automáticas</strong>
-
-                        <p>
+<ul class="lista-articulo">
+<li>El sistema operativo.</li>
+<li>El navegador.</li>
+<li>Las aplicaciones.</li>
+<li>El router.</li>
+<li>Los complementos del navegador.</li>
+<li>Las herramientas de seguridad.</li>
+</ul>
+<div class="recuadro-consejo">
+<strong>Activa las actualizaciones automáticas</strong>
+<p>
                             Esto reduce el tiempo durante el cual una
                             vulnerabilidad conocida permanece sin corregir.
                         </p>
-
-                    </div>
-
-
-                    <h2 id="copias">
+</div>
+<h2 id="copias">
                         Copias de seguridad
                     </h2>
-
-                    <p>
+<p>
                         Una copia de seguridad permite recuperar información
                         después de una pérdida, daño o incidente.
                     </p>
-
-                    <div class="lista-tarjetas-articulo">
-
-                        <div>
-
-                            <strong>Copia local</strong>
-
-                            <p>
+<div class="lista-tarjetas-articulo">
+<div>
+<strong>Copia local</strong>
+<p>
                                 Se guarda en un disco externo u otro dispositivo.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Copia remota</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Copia remota</strong>
+<p>
                                 Se guarda en una ubicación diferente o servicio
                                 en la nube.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Copia automática</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Copia automática</strong>
+<p>
                                 Se realiza siguiendo una programación definida.
                             </p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="recuadro-aviso">
-
-                        <strong>Una copia debe poder restaurarse</strong>
-
-                        <p>
+</div>
+</div>
+<div class="recuadro-aviso">
+<strong>Una copia debe poder restaurarse</strong>
+<p>
                             Revisa periódicamente que los archivos de respaldo
                             puedan abrirse y recuperarse.
                         </p>
-
-                    </div>
-
-
-                    <h2 id="redes">
+</div>
+<h2 id="redes">
                         Seguridad en redes y Wi-Fi
                     </h2>
-
-                    <ul class="lista-articulo lista-ventajas">
-
-                        <li>Cambia la contraseña predeterminada del router.</li>
-                        <li>Utiliza una contraseña Wi-Fi larga y única.</li>
-                        <li>Mantén actualizado el router.</li>
-                        <li>Revisa los dispositivos conectados.</li>
-                        <li>Desactiva funciones que no utilices.</li>
-                        <li>Crea una red separada para invitados.</li>
-                        <li>Evita compartir públicamente la contraseña.</li>
-
-                    </ul>
-
-                    <div class="recuadro-aviso">
-
-                        <strong>Ten cuidado con redes públicas</strong>
-
-                        <p>
+<ul class="lista-articulo lista-ventajas">
+<li>Cambia la contraseña predeterminada del router.</li>
+<li>Utiliza una contraseña Wi-Fi larga y única.</li>
+<li>Mantén actualizado el router.</li>
+<li>Revisa los dispositivos conectados.</li>
+<li>Desactiva funciones que no utilices.</li>
+<li>Crea una red separada para invitados.</li>
+<li>Evita compartir públicamente la contraseña.</li>
+</ul>
+<div class="recuadro-aviso">
+<strong>Ten cuidado con redes públicas</strong>
+<p>
                             Evita realizar operaciones sensibles desde una red
                             desconocida. Utiliza conexiones seguras y verifica
                             siempre el sitio que visitas.
                         </p>
-
-                    </div>
-
-                    <p>
+</div>
+<p>
                         Continúa aprendiendo en:
                         <a href="guia-internet-redes.html">
                             Guía de Internet y redes
                         </a>
-                    </p>
-
-
-                    <h2 id="navegacion">
+</p>
+<h2 id="navegacion">
                         Navegación segura
                     </h2>
-
-                    <ul class="lista-articulo lista-ventajas">
-
-                        <li>Revisa el dominio antes de ingresar datos.</li>
-                        <li>Evita páginas con nombres extraños o imitaciones.</li>
-                        <li>No ignores las advertencias del navegador.</li>
-                        <li>Descarga archivos solamente desde sitios confiables.</li>
-                        <li>Elimina extensiones que no utilices.</li>
-                        <li>Revisa los permisos de cámara y micrófono.</li>
-                        <li>Cierra sesión en equipos compartidos.</li>
-
-                    </ul>
-
-                    <h3>HTTPS</h3>
-
-                    <p>
+<ul class="lista-articulo lista-ventajas">
+<li>Revisa el dominio antes de ingresar datos.</li>
+<li>Evita páginas con nombres extraños o imitaciones.</li>
+<li>No ignores las advertencias del navegador.</li>
+<li>Descarga archivos solamente desde sitios confiables.</li>
+<li>Elimina extensiones que no utilices.</li>
+<li>Revisa los permisos de cámara y micrófono.</li>
+<li>Cierra sesión en equipos compartidos.</li>
+</ul>
+<h3>HTTPS</h3>
+<p>
                         HTTPS protege la comunicación entre el navegador y el
                         sitio mediante cifrado.
                     </p>
-
-                    <div class="recuadro-aviso">
-
-                        <strong>
+<div class="recuadro-aviso">
+<strong>
                             HTTPS no significa que todo el sitio sea legítimo
                         </strong>
-
-                        <p>
+<p>
                             Una página falsa también puede usar una conexión
                             cifrada. Revisa siempre el dominio y el contenido.
                         </p>
-
-                    </div>
-
-                    <p>
+</div>
+<p>
                         Consulta:
                         <a href="que-son-http-y-https.html">
                             ¿Qué son HTTP y HTTPS?
                         </a>
-                    </p>
-
-
-                    <h2 id="privacidad">
+</p>
+<h2 id="privacidad">
                         Privacidad y datos personales
                     </h2>
-
-                    <p>
+<p>
                         Antes de compartir información, considera quién podrá
                         verla, para qué será utilizada y durante cuánto tiempo
                         permanecerá disponible.
                     </p>
-
-                    <h3>Datos que debes proteger</h3>
-
-                    <ul class="lista-articulo lista-riesgos">
-
-                        <li>Contraseñas y códigos de seguridad.</li>
-                        <li>Documentos de identidad.</li>
-                        <li>Información financiera.</li>
-                        <li>Dirección y ubicación frecuente.</li>
-                        <li>Datos médicos.</li>
-                        <li>Fotografías privadas.</li>
-                        <li>Información laboral confidencial.</li>
-
-                    </ul>
-
-                    <div class="recuadro-consejo">
-
-                        <strong>Comparte solamente lo necesario</strong>
-
-                        <p>
+<h3>Datos que debes proteger</h3>
+<ul class="lista-articulo lista-riesgos">
+<li>Contraseñas y códigos de seguridad.</li>
+<li>Documentos de identidad.</li>
+<li>Información financiera.</li>
+<li>Dirección y ubicación frecuente.</li>
+<li>Datos médicos.</li>
+<li>Fotografías privadas.</li>
+<li>Información laboral confidencial.</li>
+</ul>
+<div class="recuadro-consejo">
+<strong>Comparte solamente lo necesario</strong>
+<p>
                             Una vez publicada, una información puede copiarse,
                             almacenarse o distribuirse fuera de tu control.
                         </p>
-
-                    </div>
-
-
-                    <h2 id="dispositivos">
+</div>
+<h2 id="dispositivos">
                         Protección de dispositivos
                     </h2>
-
-                    <div class="lista-tarjetas-articulo">
-
-                        <div>
-
-                            <strong>Bloqueo de pantalla</strong>
-
-                            <p>
+<div class="lista-tarjetas-articulo">
+<div>
+<strong>Bloqueo de pantalla</strong>
+<p>
                                 Utiliza contraseña, PIN u otro método seguro.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Cifrado</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Cifrado</strong>
+<p>
                                 Protege los datos almacenados frente a accesos no
                                 autorizados.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Localización</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Localización</strong>
+<p>
                                 Puede ayudar a encontrar o bloquear un equipo
                                 perdido.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Aplicaciones confiables</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Aplicaciones confiables</strong>
+<p>
                                 Instala programas desde tiendas o sitios
                                 oficiales.
                             </p>
-
-                        </div>
-
-                    </div>
-
-                    <ul class="lista-articulo lista-ventajas">
-
-                        <li>No dejes el dispositivo desbloqueado.</li>
-                        <li>Evita conectar memorias desconocidas.</li>
-                        <li>Revisa los permisos de las aplicaciones.</li>
-                        <li>Elimina programas que no utilices.</li>
-                        <li>No desactives protecciones sin una razón clara.</li>
-
-                    </ul>
-
-
-                    <h2 id="incidente">
+</div>
+</div>
+<ul class="lista-articulo lista-ventajas">
+<li>No dejes el dispositivo desbloqueado.</li>
+<li>Evita conectar memorias desconocidas.</li>
+<li>Revisa los permisos de las aplicaciones.</li>
+<li>Elimina programas que no utilices.</li>
+<li>No desactives protecciones sin una razón clara.</li>
+</ul>
+<h2 id="incidente">
                         Qué hacer ante un incidente
                     </h2>
-
-                    <div class="pasos-articulo" role="list">
-
-                        <div
-                            class="paso-articulo"
-                            role="listitem"
-                        >
-
-                            <span>1</span>
-
-                            <div>
-
-                                <h3>Desconecta el dispositivo</h3>
-
-                                <p>
+<div class="pasos-articulo" role="list">
+<div class="paso-articulo" role="listitem">
+<span>1</span>
+<div>
+<h3>Desconecta el dispositivo</h3>
+<p>
                                     Si sospechas una infección, evita que siga
                                     comunicándose con la red.
                                 </p>
-
-                            </div>
-
-                        </div>
-
-                        <div
-                            class="paso-articulo"
-                            role="listitem"
-                        >
-
-                            <span>2</span>
-
-                            <div>
-
-                                <h3>Cambia las contraseñas</h3>
-
-                                <p>
+</div>
+</div>
+<div class="paso-articulo" role="listitem">
+<span>2</span>
+<div>
+<h3>Cambia las contraseñas</h3>
+<p>
                                     Hazlo desde un dispositivo confiable,
                                     comenzando por el correo principal.
                                 </p>
-
-                            </div>
-
-                        </div>
-
-                        <div
-                            class="paso-articulo"
-                            role="listitem"
-                        >
-
-                            <span>3</span>
-
-                            <div>
-
-                                <h3>Cierra sesiones activas</h3>
-
-                                <p>
+</div>
+</div>
+<div class="paso-articulo" role="listitem">
+<span>3</span>
+<div>
+<h3>Cierra sesiones activas</h3>
+<p>
                                     Revoca accesos que no reconozcas.
                                 </p>
-
-                            </div>
-
-                        </div>
-
-                        <div
-                            class="paso-articulo"
-                            role="listitem"
-                        >
-
-                            <span>4</span>
-
-                            <div>
-
-                                <h3>Activa autenticación adicional</h3>
-
-                                <p>
+</div>
+</div>
+<div class="paso-articulo" role="listitem">
+<span>4</span>
+<div>
+<h3>Activa autenticación adicional</h3>
+<p>
                                     Protege nuevamente las cuentas afectadas.
                                 </p>
-
-                            </div>
-
-                        </div>
-
-                        <div
-                            class="paso-articulo"
-                            role="listitem"
-                        >
-
-                            <span>5</span>
-
-                            <div>
-
-                                <h3>Revisa el dispositivo</h3>
-
-                                <p>
+</div>
+</div>
+<div class="paso-articulo" role="listitem">
+<span>5</span>
+<div>
+<h3>Revisa el dispositivo</h3>
+<p>
                                     Ejecuta las herramientas de seguridad y
                                     elimina programas sospechosos.
                                 </p>
-
-                            </div>
-
-                        </div>
-
-                        <div
-                            class="paso-articulo"
-                            role="listitem"
-                        >
-
-                            <span>6</span>
-
-                            <div>
-
-                                <h3>Contacta a la organización</h3>
-
-                                <p>
+</div>
+</div>
+<div class="paso-articulo" role="listitem">
+<span>6</span>
+<div>
+<h3>Contacta a la organización</h3>
+<p>
                                     Informa al banco, empresa o servicio cuando
                                     exista riesgo de fraude.
                                 </p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="recuadro-aviso">
-
-                        <strong>No pagues ni respondas impulsivamente</strong>
-
-                        <p>
+</div>
+</div>
+</div>
+<div class="recuadro-aviso">
+<strong>No pagues ni respondas impulsivamente</strong>
+<p>
                             Conserva evidencias y solicita ayuda especializada
                             cuando el incidente sea grave.
                         </p>
-
-                    </div>
-
-
-                    <h2 id="practicas">
+</div>
+<h2 id="practicas">
                         Ejercicios para practicar
                     </h2>
-
-                    <div class="lista-tarjetas-articulo">
-
-                        <div>
-
-                            <strong>Revisa tus contraseñas</strong>
-
-                            <p>
+<div class="lista-tarjetas-articulo">
+<div>
+<strong>Revisa tus contraseñas</strong>
+<p>
                                 Identifica cuáles están repetidas o son
                                 demasiado cortas.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Activa la verificación</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Activa la verificación</strong>
+<p>
                                 Configura autenticación adicional en tu correo.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Analiza un mensaje</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Analiza un mensaje</strong>
+<p>
                                 Busca señales de urgencia, enlaces falsos o
                                 solicitudes de datos.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Revisa actualizaciones</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Revisa actualizaciones</strong>
+<p>
                                 Comprueba el sistema, navegador y aplicaciones.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Crea un respaldo</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Crea un respaldo</strong>
+<p>
                                 Copia documentos importantes en otra ubicación.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Audita los permisos</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Audita los permisos</strong>
+<p>
                                 Revisa qué aplicaciones acceden a cámara,
                                 micrófono y ubicación.
                             </p>
-
-                        </div>
-
-                    </div>
-
-                    <p>
+</div>
+</div>
+<p>
                         También puedes descargar el checklist desde:
                         <a href="material.html">
                             Guías y materiales gratuitos
                         </a>.
                     </p>
-
-
-                    <h2 id="preguntas">
+<h2 id="preguntas">
                         Preguntas frecuentes
                     </h2>
-
-                    <section
-                        class="faq-articulo"
-                        aria-labelledby="preguntas"
-                    >
-
-                        <details>
-
-                            <summary>
+<section aria-labelledby="preguntas" class="faq-articulo">
+<details>
+<summary>
                                 ¿Un antivirus elimina todos los riesgos?
                             </summary>
-
-                            <p>
+<p>
                                 No. Ayuda a detectar amenazas, pero debe
                                 acompañarse de actualizaciones y buenas
                                 prácticas.
                             </p>
-
-                        </details>
-
-                        <details>
-
-                            <summary>
+</details>
+<details>
+<summary>
                                 ¿Debo cambiar todas mis contraseñas frecuentemente?
                             </summary>
-
-                            <p>
+<p>
                                 Debes cambiarlas cuando sean débiles, repetidas,
                                 expuestas o exista una sospecha de acceso.
                             </p>
-
-                        </details>
-
-                        <details>
-
-                            <summary>
+</details>
+<details>
+<summary>
                                 ¿La autenticación en dos pasos es necesaria?
                             </summary>
-
-                            <p>
+<p>
                                 Es una protección muy recomendable,
                                 especialmente para correo, servicios financieros
                                 y cuentas importantes.
                             </p>
-
-                        </details>
-
-                        <details>
-
-                            <summary>
+</details>
+<details>
+<summary>
                                 ¿Una red Wi-Fi pública es segura?
                             </summary>
-
-                            <p>
+<p>
                                 Puede presentar mayores riesgos. Evita
                                 operaciones sensibles y revisa cuidadosamente
                                 las conexiones.
                             </p>
-
-                        </details>
-
-                        <details>
-
-                            <summary>
+</details>
+<details>
+<summary>
                                 ¿Qué cuenta debo proteger primero?
                             </summary>
-
-                            <p>
+<p>
                                 El correo principal, porque suele utilizarse
                                 para recuperar el acceso a otras cuentas.
                             </p>
-
-                        </details>
-
-                        <details>
-
-                            <summary>
+</details>
+<details>
+<summary>
                                 ¿Qué hago si abrí un enlace sospechoso?
                             </summary>
-
-                            <p>
+<p>
                                 No ingreses datos, cierra la página, revisa el
                                 dispositivo y cambia las credenciales si
                                 compartiste información.
                             </p>
-
-                        </details>
-
-                    </section>
-
-
-                    <h2 id="conclusion">
+</details>
+</section>
+<h2 id="conclusion">
                         Conclusión
                     </h2>
-
-                    <p>
+<p>
                         La ciberseguridad depende tanto de herramientas
                         tecnológicas como de las decisiones de las personas.
                     </p>
-
-                    <p>
+<p>
                         Utilizar contraseñas únicas, activar autenticación
                         adicional, reconocer mensajes falsos, instalar
                         actualizaciones y crear copias de seguridad reduce una
                         gran cantidad de riesgos.
                     </p>
-
-                    <p>
+<p>
                         La protección digital no es una acción única. Es un
                         hábito que debe mantenerse y revisarse continuamente.
                     </p>
-
-
-                    <section
-                        class="autor-articulo"
-                        aria-label="Información del autor"
-                    >
-
-                        <div
-                            class="autor-icono"
-                            aria-hidden="true"
-                        >
+<section aria-label="Información del autor" class="autor-articulo">
+<div aria-hidden="true" class="autor-icono">
                             &lt;/&gt;
                         </div>
-
-                        <div class="autor-informacion">
-
-                            <span>
+<div class="autor-informacion">
+<span>
                                 Guía creada por
                             </span>
-
-                            <h2>
+<h2>
                                 ByteNova
                             </h2>
-
-                            <p>
+<p>
                                 Plataforma educativa dedicada a explicar
                                 programación, desarrollo web, inteligencia
                                 artificial y ciberseguridad de manera clara.
                             </p>
-
-                            <a href="sobre.html">
+<a href="sobre.html">
                                 Conoce más sobre ByteNova →
                             </a>
-
-                        </div>
-
-                    </section>
-
-
-                    <aside
-                        class="articulos-relacionados"
-                        aria-labelledby="titulo-articulos-relacionados"
-                    >
-
-                        <h2 id="titulo-articulos-relacionados">
+</div>
+</section>
+<aside aria-labelledby="titulo-articulos-relacionados" class="articulos-relacionados">
+<h2 id="titulo-articulos-relacionados">
                             Continúa aprendiendo
                         </h2>
-
-                        <div class="relacionados-grid">
-
-                            <a href="ciberseguridad-estudiantes.html">
-
-                                <span aria-hidden="true">🛡️</span>
-
-                                <strong>
+<div class="relacionados-grid">
+<a href="ciberseguridad-estudiantes.html">
+<span aria-hidden="true">🛡️</span>
+<strong>
                                     Seguridad para estudiantes
                                 </strong>
-
-                                <small>
+<small>
                                     Protege tus cuentas y dispositivos.
                                 </small>
-
-                            </a>
-
-                            <a href="que-es-un-firewall.html">
-
-                                <span aria-hidden="true">🔥</span>
-
-                                <strong>
+</a>
+<a href="que-es-un-firewall.html">
+<span aria-hidden="true">🔥</span>
+<strong>
                                     ¿Qué es un firewall?
                                 </strong>
-
-                                <small>
+<small>
                                     Comprende cómo se controla el tráfico.
                                 </small>
-
-                            </a>
-
-                            <a href="que-es-una-vpn.html">
-
-                                <span aria-hidden="true">🔐</span>
-
-                                <strong>
+</a>
+<a href="que-es-una-vpn.html">
+<span aria-hidden="true">🔐</span>
+<strong>
                                     ¿Qué es una VPN?
                                 </strong>
-
-                                <small>
+<small>
                                     Aprende cómo protege una conexión.
                                 </small>
-
-                            </a>
-
-                        </div>
-
-                    </aside>
-
-                </div>
-
-            </div>
-
-        </article>
-
-    </main>
-
-
-    <footer class="footer">
-
-        <div class="contenedor-footer">
-
-            <div class="footer-logo">
-
-                <a
-                    href="../index.html#inicio"
-                    class="marca-bytenova"
-                    aria-label="Ir al inicio de ByteNova"
-                >
-
-                    <span
-                        class="marca-icono"
-                        aria-hidden="true"
-                    >
+</a>
+</div>
+</aside>
+</div>
+</div>
+</article>
+</main>
+<footer class="footer">
+<div class="contenedor-footer">
+<div class="footer-logo">
+<a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio">
+<span aria-hidden="true" class="marca-icono">
                         &lt;/&gt;
                     </span>
-
-                    <span class="marca-texto">
+<span class="marca-texto">
                         ByteNova
                     </span>
-
-                </a>
-
-                <p>
+</a>
+<p>
                     Aprende tecnología desde cero con artículos, rutas,
                     retos, guías y recursos gratuitos.
                 </p>
-
-            </div>
-
-
-            <nav
-                class="footer-enlaces"
-                aria-label="Enlaces de aprendizaje del pie de página"
-            >
-
-                <h3>Aprender</h3>
-
-                <a href="../index.html#tecnologias">
+</div>
+<nav aria-label="Enlaces de aprendizaje del pie de página" class="footer-enlaces">
+<h3>Aprender</h3>
+<a href="../index.html#tecnologias">
                     Tecnologías
                 </a>
-
-                <a href="rutas.html">
+<a href="rutas.html">
                     Rutas
                 </a>
-
-                <a href="retos.html">
+<a href="retos.html">
                     Retos
                 </a>
-
-                <a
-                    href="material.html"
-                    aria-current="page"
-                >
+<a aria-current="page" href="material.html">
                     Guías
                 </a>
-
-                <a href="articulos.html">
+<a href="articulos.html">
                     Artículos
                 </a>
-
-                <a href="glosario.html">
+<a href="glosario.html">
                     Glosario
                 </a>
-
-            </nav>
-
-
-            <nav
-                class="footer-enlaces"
-                aria-label="Enlaces informativos del pie de página"
-            >
-
-                <h3>ByteNova</h3>
-
-                <a href="sobre.html">
+</nav>
+<nav aria-label="Enlaces informativos del pie de página" class="footer-enlaces">
+<h3>ByteNova</h3>
+<a href="sobre.html">
                     Sobre ByteNova
                 </a>
-
-                <a href="../index.html#contacto">
+<a href="../index.html#contacto">
                     Contacto
                 </a>
-
-                <a href="privacidad.html">
+<a href="privacidad.html">
                     Privacidad
                 </a>
-
-                <a href="terminos.html">
+<a href="terminos.html">
                     Términos
                 </a>
-
-                <a href="cookies.html">
+<a href="cookies.html">
                     Cookies
                 </a>
-
-            </nav>
-
-
-            <address class="footer-social">
-
-                <h3>Contacto</h3>
-
-                <p>
+</nav>
+<address class="footer-social">
+<h3>Contacto</h3>
+<p>
                     Preguntas, sugerencias o comentarios sobre nuestros
                     contenidos educativos.
                 </p>
-
-                <a href="mailto:bytenova339@gmail.com">
+<a href="mailto:bytenova339@gmail.com">
                     bytenova339@gmail.com
                 </a>
-
-            </address>
-
-        </div>
-
-
-        <div class="footer-copy">
-
-            <p>
+</address>
+</div>
+<div class="footer-copy">
+<p>
                 © 2026 ByteNova. Todos los derechos reservados.
             </p>
-
-            <p>
+<p>
                 Creado por Dylan Estrada.
             </p>
-
-        </div>
-
-    </footer>
-
-    <script src="../js/script.js"></script>
-
+</div>
+</footer>
+<script src="../js/script.js"></script>
 </body>
-
 </html>

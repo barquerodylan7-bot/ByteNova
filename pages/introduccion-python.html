@@ -1,355 +1,251 @@
 <!DOCTYPE html>
+
 <html lang="es">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>Guía de Python para principiantes | ByteNova</title>
-
-    <meta
-        name="description"
-        content="Aprende Python desde cero con ejemplos sencillos sobre variables, tipos de datos, condiciones, bucles, funciones, listas y proyectos para principiantes."
-    >
-
-    <meta name="author" content="ByteNova">
-    <meta name="robots" content="index, follow">
-
-    <meta
-        name="theme-color"
-        content="#ffffff"
-        media="(prefers-color-scheme: light)"
-    >
-
-    <meta
-        name="theme-color"
-        content="#0f172a"
-        media="(prefers-color-scheme: dark)"
-    >
-
-    <meta property="og:type" content="article">
-    <meta property="og:locale" content="es_CR">
-    <meta property="og:site_name" content="ByteNova">
-
-    <meta
-        property="og:title"
-        content="Guía de Python para principiantes"
-    >
-
-    <meta
-        property="og:description"
-        content="Aprende Python desde cero con ejemplos sobre variables, condiciones, bucles, funciones, listas, diccionarios y proyectos."
-    >
-
-    <meta
-        property="og:url"
-        content="https://bytenova.app/pages/introduccion-python.html"
-    >
-
-    <meta
-        property="article:published_time"
-        content="2026-07-19"
-    >
-
-    <meta
-        property="article:modified_time"
-        content="2026-07-20"
-    >
-
-    <meta
-        property="article:section"
-        content="Programación"
-    >
-
-    <meta name="twitter:card" content="summary">
-
-    <meta
-        name="twitter:title"
-        content="Guía de Python para principiantes"
-    >
-
-    <meta
-        name="twitter:description"
-        content="Aprende los fundamentos de Python con explicaciones y ejemplos sencillos."
-    >
-
-    <link
-        rel="canonical"
-        href="https://bytenova.app/pages/introduccion-python.html"
-    >
-
-    <link
-        rel="icon"
-        type="image/svg+xml"
-        href="../images/favicon.svg"
-    >
-
-    <link rel="stylesheet" href="../css/style.css">
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "LearningResource",
-                "@id": "https://bytenova.app/pages/introduccion-python.html#learning-resource",
-                "name": "Guía de Python para principiantes",
-                "description": "Guía gratuita para aprender los fundamentos de programación con Python.",
-                "url": "https://bytenova.app/pages/introduccion-python.html",
-                "datePublished": "2026-07-19",
-                "dateModified": "2026-07-20",
-                "inLanguage": "es",
-                "learningResourceType": "Guide",
-                "educationalLevel": "Beginner",
-                "isAccessibleForFree": true,
-                "author": {
-                    "@type": "Organization",
-                    "name": "ByteNova",
-                    "url": "https://bytenova.app/pages/sobre.html"
-                },
-                "publisher": {
-                    "@type": "Organization",
-                    "name": "ByteNova",
-                    "url": "https://bytenova.app/"
-                },
-                "isPartOf": {
-                    "@id": "https://bytenova.app/#website"
-                },
-                "mainEntityOfPage": {
-                    "@id": "https://bytenova.app/pages/introduccion-python.html#webpage"
-                },
-                "about": [
-                    {
-                        "@type": "Thing",
-                        "name": "Python"
-                    },
-                    {
-                        "@type": "Thing",
-                        "name": "Programación"
-                    },
-                    {
-                        "@type": "Thing",
-                        "name": "Fundamentos de programación"
-                    }
-                ]
-            },
-            {
-                "@type": "WebPage",
-                "@id": "https://bytenova.app/pages/introduccion-python.html#webpage",
-                "url": "https://bytenova.app/pages/introduccion-python.html",
-                "name": "Guía de Python para principiantes",
-                "description": "Guía gratuita sobre variables, tipos de datos, condiciones, bucles, listas, diccionarios, funciones y módulos en Python.",
-                "inLanguage": "es",
-                "datePublished": "2026-07-19",
-                "dateModified": "2026-07-20",
-                "isPartOf": {
-                    "@id": "https://bytenova.app/#website"
-                },
-                "breadcrumb": {
-                    "@id": "https://bytenova.app/pages/introduccion-python.html#breadcrumb"
-                },
-                "mainEntity": {
-                    "@id": "https://bytenova.app/pages/introduccion-python.html#learning-resource"
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Guía de Python para principiantes | ByteNova</title>
+<meta content="Aprende Python desde cero con ejemplos sencillos sobre variables, tipos de datos, condiciones, bucles, funciones, listas y proyectos para principiantes." name="description"/>
+<meta content="ByteNova" name="author"/>
+<meta content="index, follow" name="robots"/>
+<meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
+<meta content="#0f172a" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<meta content="article" property="og:type"/>
+<meta content="es_CR" property="og:locale"/>
+<meta content="ByteNova" property="og:site_name"/>
+<meta content="Guía de Python para principiantes" property="og:title"/>
+<meta content="Aprende Python desde cero con ejemplos sobre variables, condiciones, bucles, funciones, listas, diccionarios y proyectos." property="og:description"/>
+<meta content="https://bytenova.app/pages/introduccion-python.html" property="og:url"/><meta content="https://bytenova.app/images/bytenova-social.png" property="og:image"/><meta content="https://bytenova.app/images/bytenova-social.png" property="og:image:secure_url"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="image/png" property="og:image:type"/><meta content="Guía de Python para principiantes | ByteNova" property="og:image:alt"/><meta content="https://bytenova.app/images/bytenova-social.png" name="twitter:image"/><meta content="Guía de Python para principiantes | ByteNova" name="twitter:image:alt"/>
+<meta content="2026-07-19" property="article:published_time"/>
+<meta content="2026-07-20" property="article:modified_time"/>
+<meta content="Programación" property="article:section"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Guía de Python para principiantes" name="twitter:title"/>
+<meta content="Aprende los fundamentos de Python con explicaciones y ejemplos sencillos." name="twitter:description"/>
+<link href="https://bytenova.app/pages/introduccion-python.html" rel="canonical"/>
+<link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../css/style.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "LearningResource",
+            "@id": "https://bytenova.app/pages/introduccion-python.html#learning-resource",
+            "name": "Guía de Python para principiantes",
+            "description": "Guía gratuita para aprender los fundamentos de programación con Python.",
+            "url": "https://bytenova.app/pages/introduccion-python.html",
+            "datePublished": "2026-07-19",
+            "dateModified": "2026-07-20",
+            "inLanguage": "es",
+            "learningResourceType": "Guide",
+            "educationalLevel": "Beginner",
+            "isAccessibleForFree": true,
+            "author": {
+                "@type": "Organization",
+                "name": "ByteNova",
+                "url": "https://bytenova.app/pages/sobre.html",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://bytenova.app/images/bytenova-social.png",
+                    "width": 1200,
+                    "height": 630
                 }
             },
-            {
-                "@type": "BreadcrumbList",
-                "@id": "https://bytenova.app/pages/introduccion-python.html#breadcrumb",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Inicio",
-                        "item": "https://bytenova.app/"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Guías",
-                        "item": "https://bytenova.app/pages/material.html"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "Python para principiantes",
-                        "item": "https://bytenova.app/pages/introduccion-python.html"
-                    }
-                ]
+            "publisher": {
+                "@type": "Organization",
+                "name": "ByteNova",
+                "url": "https://bytenova.app/",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://bytenova.app/images/bytenova-social.png",
+                    "width": 1200,
+                    "height": 630
+                }
             },
-            {
-                "@type": "FAQPage",
-                "@id": "https://bytenova.app/pages/introduccion-python.html#faq",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "¿Python es recomendable para principiantes?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Sí. Su sintaxis clara permite concentrarse en aprender lógica y resolución de problemas."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "¿Python es gratuito?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Sí. Puede descargarse y utilizarse gratuitamente."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "¿Necesito conocimientos previos?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "No. Puedes comenzar aprendiendo variables, condiciones, bucles y funciones."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "¿Python sirve para inteligencia artificial?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Sí. Es ampliamente utilizado en análisis de datos, aprendizaje automático e inteligencia artificial."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "¿Debo memorizar todos los comandos?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "No. Lo importante es comprender los conceptos y saber consultar documentación cuando sea necesario."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "¿Qué debo aprender después de Python básico?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Puedes continuar con archivos, manejo de errores, programación orientada a objetos, bases de datos y proyectos prácticos."
-                        }
-                    }
-                ]
+            "isPartOf": {
+                "@id": "https://bytenova.app/#website"
+            },
+            "mainEntityOfPage": {
+                "@id": "https://bytenova.app/pages/introduccion-python.html#webpage"
+            },
+            "about": [
+                {
+                    "@type": "Thing",
+                    "name": "Python"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "Programación"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "Fundamentos de programación"
+                }
+            ]
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://bytenova.app/pages/introduccion-python.html#webpage",
+            "url": "https://bytenova.app/pages/introduccion-python.html",
+            "name": "Guía de Python para principiantes",
+            "description": "Guía gratuita sobre variables, tipos de datos, condiciones, bucles, listas, diccionarios, funciones y módulos en Python.",
+            "inLanguage": "es",
+            "datePublished": "2026-07-19",
+            "dateModified": "2026-07-20",
+            "isPartOf": {
+                "@id": "https://bytenova.app/#website"
+            },
+            "breadcrumb": {
+                "@id": "https://bytenova.app/pages/introduccion-python.html#breadcrumb"
+            },
+            "mainEntity": {
+                "@id": "https://bytenova.app/pages/introduccion-python.html#learning-resource"
+            },
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://bytenova.app/images/bytenova-social.png",
+                "width": 1200,
+                "height": 630
             }
-        ]
-    }
-    </script>
-
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://bytenova.app/pages/introduccion-python.html#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Inicio",
+                    "item": "https://bytenova.app/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Guías",
+                    "item": "https://bytenova.app/pages/material.html"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Python para principiantes",
+                    "item": "https://bytenova.app/pages/introduccion-python.html"
+                }
+            ]
+        },
+        {
+            "@type": "FAQPage",
+            "@id": "https://bytenova.app/pages/introduccion-python.html#faq",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "¿Python es recomendable para principiantes?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Sí. Su sintaxis clara permite concentrarse en aprender lógica y resolución de problemas."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Python es gratuito?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Sí. Puede descargarse y utilizarse gratuitamente."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Necesito conocimientos previos?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. Puedes comenzar aprendiendo variables, condiciones, bucles y funciones."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Python sirve para inteligencia artificial?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Sí. Es ampliamente utilizado en análisis de datos, aprendizaje automático e inteligencia artificial."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Debo memorizar todos los comandos?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. Lo importante es comprender los conceptos y saber consultar documentación cuando sea necesario."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Qué debo aprender después de Python básico?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Puedes continuar con archivos, manejo de errores, programación orientada a objetos, bases de datos y proyectos prácticos."
+                    }
+                }
+            ]
+        }
+    ]
+}
+</script>
 </head>
-
 <body>
-
-    <a class="saltar-contenido" href="#contenido-principal">
+<a class="saltar-contenido" href="#contenido-principal">
         Saltar al contenido principal
     </a>
-
-    <header>
-
-        <a
-            href="../index.html#inicio"
-            class="marca-bytenova"
-            aria-label="Ir al inicio de ByteNova"
-        >
-            <span
-                class="marca-icono"
-                aria-hidden="true"
-            >
+<header>
+<a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio">
+<span aria-hidden="true" class="marca-icono">
                 &lt;/&gt;
             </span>
-
-            <span class="marca-texto">
+<span class="marca-texto">
                 ByteNova
             </span>
-        </a>
-
-        <button
-            type="button"
-            class="menu-toggle"
-            id="menu-toggle"
-            aria-label="Abrir menú"
-            aria-expanded="false"
-            aria-controls="menu-principal"
-        >
-            <span aria-hidden="true">☰</span>
-        </button>
-
-        <nav
-            id="menu-principal"
-            aria-label="Navegación principal"
-        >
-            <a href="../index.html#inicio">Inicio</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="../index.html#tecnologias">Aprender</a>
-            <a href="rutas.html">Rutas</a>
-            <a href="retos.html">Retos</a>
-
-            <a
-                href="material.html"
-                aria-current="page"
-            >
+</a>
+<button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle" type="button">
+<span aria-hidden="true">☰</span>
+</button>
+<nav aria-label="Navegación principal" id="menu-principal">
+<a href="../index.html#inicio">Inicio</a>
+<a href="sobre.html">Sobre</a>
+<a href="../index.html#tecnologias">Aprender</a>
+<a href="rutas.html">Rutas</a>
+<a href="retos.html">Retos</a>
+<a aria-current="page" href="material.html">
                 Guías
             </a>
-
-            <a href="articulos.html">Artículos</a>
-            <a href="glosario.html">Glosario</a>
-            <a href="../index.html#contacto">Contacto</a>
-
-            <button
-                type="button"
-                id="btn-modo"
-                class="btn-modo"
-                aria-label="Activar modo oscuro"
-            >
-                <span aria-hidden="true">🌙</span>
-            </button>
-
-        </nav>
-
-    </header>
-
-    <main
-        class="sobre articulo"
-        id="contenido-principal"
-    >
-
-        <article
-            class="sobre-contenido"
-            aria-labelledby="titulo-guia-python"
-        >
-
-            <nav
-                class="migas-navegacion"
-                aria-label="Ruta de navegación"
-            >
-                <a href="../index.html">Inicio</a>
-                <span aria-hidden="true">›</span>
-
-                <a href="material.html">
+<a href="articulos.html">Artículos</a>
+<a href="glosario.html">Glosario</a>
+<a href="../index.html#contacto">Contacto</a>
+<button aria-label="Activar modo oscuro" class="btn-modo" id="btn-modo" type="button">
+<span aria-hidden="true">🌙</span>
+</button>
+</nav>
+</header>
+<main class="sobre articulo" id="contenido-principal">
+<article aria-labelledby="titulo-guia-python" class="sobre-contenido">
+<nav aria-label="Ruta de navegación" class="migas-navegacion">
+<a href="../index.html">Inicio</a>
+<span aria-hidden="true">›</span>
+<a href="material.html">
                     Guías
                 </a>
-
-                <span aria-hidden="true">›</span>
-
-                <span aria-current="page">
+<span aria-hidden="true">›</span>
+<span aria-current="page">
                     Python para principiantes
                 </span>
-            </nav>
-
-            <span class="seccion-etiqueta">
-                <span aria-hidden="true">🐍</span>
+</nav>
+<span class="seccion-etiqueta">
+<span aria-hidden="true">🐍</span>
                 Guía de programación
             </span>
-
-            <h1 id="titulo-guia-python">
+<h1 id="titulo-guia-python">
                 Python para principiantes: guía desde cero
                 <span aria-hidden="true">🐍</span>
-            </h1>
-
-            <p class="articulo-meta">
+</h1>
+<p class="articulo-meta">
                 Publicado por ByteNova ·
 
                 <time datetime="2026-07-19">
@@ -361,464 +257,320 @@
                 <time datetime="2026-07-20">
                     20 de julio de 2026
                 </time>
-            </p>
-
-            <div class="articulo-resumen">
-
-                <strong>En esta guía aprenderás:</strong>
-
-                <p>
+</p>
+<div class="articulo-resumen">
+<strong>En esta guía aprenderás:</strong>
+<p>
                     Qué es Python, cómo escribir tus primeros programas y cómo
                     utilizar variables, tipos de datos, condiciones, bucles,
                     funciones, listas y diccionarios.
                 </p>
-
-            </div>
-
-            <div class="articulo-layout">
-
-                <details class="indice-articulo">
-
-                    <summary>
-                        <span aria-hidden="true">📑</span>
+</div>
+<div class="articulo-layout">
+<details class="indice-articulo">
+<summary>
+<span aria-hidden="true">📑</span>
                         Contenido de la guía
                     </summary>
-
-                    <nav aria-label="Contenido de la guía">
-                        <a href="#que-es-python">1. ¿Qué es Python?</a>
-                        <a href="#para-que-sirve">2. ¿Para qué sirve?</a>
-                        <a href="#primer-programa">3. Primer programa</a>
-                        <a href="#comentarios">4. Comentarios</a>
-                        <a href="#variables">5. Variables</a>
-                        <a href="#tipos-datos">6. Tipos de datos</a>
-                        <a href="#entrada-datos">7. Entrada de datos</a>
-                        <a href="#operadores">8. Operadores</a>
-                        <a href="#condiciones">9. Condiciones</a>
-                        <a href="#bucles">10. Bucles</a>
-                        <a href="#listas">11. Listas</a>
-                        <a href="#diccionarios">12. Diccionarios</a>
-                        <a href="#funciones">13. Funciones</a>
-                        <a href="#modulos">14. Módulos</a>
-                        <a href="#errores">15. Errores frecuentes</a>
-                        <a href="#proyecto">16. Proyecto práctico</a>
-                        <a href="#practicas">17. Ejercicios</a>
-                        <a href="#preguntas">18. Preguntas frecuentes</a>
-                        <a href="#conclusion">19. Conclusión</a>
-                    </nav>
-
-                </details>
-
-                <div
-                    class="articulo-cuerpo"
-                    aria-label="Contenido principal de la guía"
-                >
-
-                    <p class="articulo-introduccion">
+<nav aria-label="Contenido de la guía">
+<a href="#que-es-python">1. ¿Qué es Python?</a>
+<a href="#para-que-sirve">2. ¿Para qué sirve?</a>
+<a href="#primer-programa">3. Primer programa</a>
+<a href="#comentarios">4. Comentarios</a>
+<a href="#variables">5. Variables</a>
+<a href="#tipos-datos">6. Tipos de datos</a>
+<a href="#entrada-datos">7. Entrada de datos</a>
+<a href="#operadores">8. Operadores</a>
+<a href="#condiciones">9. Condiciones</a>
+<a href="#bucles">10. Bucles</a>
+<a href="#listas">11. Listas</a>
+<a href="#diccionarios">12. Diccionarios</a>
+<a href="#funciones">13. Funciones</a>
+<a href="#modulos">14. Módulos</a>
+<a href="#errores">15. Errores frecuentes</a>
+<a href="#proyecto">16. Proyecto práctico</a>
+<a href="#practicas">17. Ejercicios</a>
+<a href="#preguntas">18. Preguntas frecuentes</a>
+<a href="#conclusion">19. Conclusión</a>
+</nav>
+</details>
+<div aria-label="Contenido principal de la guía" class="articulo-cuerpo">
+<p class="articulo-introduccion">
                         Python es un lenguaje de programación conocido por su
                         sintaxis clara y fácil de leer. Es una de las opciones
                         más recomendadas para comenzar a aprender programación.
                     </p>
-
-                    <p>
+<p>
                         Con Python puedes crear programas, automatizaciones,
                         aplicaciones web, análisis de datos, herramientas de
                         inteligencia artificial y proyectos de ciberseguridad.
                     </p>
-
-                    <h2 id="que-es-python">
+<h2 id="que-es-python">
                         ¿Qué es Python?
                     </h2>
-
-                    <p>
+<p>
                         Python es un lenguaje de programación de propósito
                         general. Esto significa que puede utilizarse para crear
                         muchos tipos diferentes de proyectos.
                     </p>
-
-                    <p>
+<p>
                         Su código suele ser más fácil de leer que el de otros
                         lenguajes porque utiliza una estructura limpia y evita
                         símbolos innecesarios.
                     </p>
-
-                    <div class="recuadro-ejemplo">
-
-                        <strong>Ejemplo sencillo</strong>
-
-                        <pre><code>print("Hola, ByteNova")</code></pre>
-
-                    </div>
-
-                    <p>
+<div class="recuadro-ejemplo">
+<strong>Ejemplo sencillo</strong>
+<pre><code>print("Hola, ByteNova")</code></pre>
+</div>
+<p>
                         Esta instrucción muestra un mensaje en pantalla.
                     </p>
-
-                    <p>
+<p>
                         Amplía este tema en:
                         <a href="python-para-principiantes.html">
                             ¿Qué es Python y por qué es ideal para principiantes?
                         </a>
-                    </p>
-
-                    <h2 id="para-que-sirve">
+</p>
+<h2 id="para-que-sirve">
                         ¿Para qué sirve Python?
                     </h2>
-
-                    <div class="lista-tarjetas-articulo">
-
-                        <div>
-
-                            <strong>Automatización</strong>
-
-                            <p>
+<div class="lista-tarjetas-articulo">
+<div>
+<strong>Automatización</strong>
+<p>
                                 Permite realizar tareas repetitivas de forma
                                 automática.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Desarrollo web</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Desarrollo web</strong>
+<p>
                                 Puede utilizarse para crear aplicaciones,
                                 servicios y sistemas del lado del servidor.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Análisis de datos</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Análisis de datos</strong>
+<p>
                                 Ayuda a organizar, procesar y analizar grandes
                                 cantidades de información.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Inteligencia artificial</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Inteligencia artificial</strong>
+<p>
                                 Se utiliza en aprendizaje automático, visión
                                 artificial y procesamiento de datos.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Ciberseguridad</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Ciberseguridad</strong>
+<p>
                                 Permite crear herramientas para analizar redes,
                                 registros y procesos.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Educación</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Educación</strong>
+<p>
                                 Es utilizado para enseñar lógica y fundamentos
                                 de programación.
                             </p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="recuadro-consejo">
-
-                        <strong>
+</div>
+</div>
+<div class="recuadro-consejo">
+<strong>
                             Python es una herramienta, no una solución automática
                         </strong>
-
-                        <p>
+<p>
                             Para crear proyectos útiles también debes aprender
                             lógica, resolución de problemas y buenas prácticas.
                         </p>
-
-                    </div>
-
-                    <h2 id="primer-programa">
+</div>
+<h2 id="primer-programa">
                         Tu primer programa en Python
                     </h2>
-
-                    <p>
+<p>
                         Una de las primeras instrucciones que puedes aprender es
                         <code>print()</code>.
                     </p>
-
-                    <div class="recuadro-ejemplo">
-
-                        <pre><code>print("Estoy aprendiendo Python")</code></pre>
-
-                    </div>
-
-                    <p>
+<div class="recuadro-ejemplo">
+<pre><code>print("Estoy aprendiendo Python")</code></pre>
+</div>
+<p>
                         El texto que está entre comillas aparecerá en la
                         terminal.
                     </p>
-
-                    <h3>Mostrar varios mensajes</h3>
-
-                    <pre><code>print("Hola")
+<h3>Mostrar varios mensajes</h3>
+<pre><code>print("Hola")
 print("Bienvenido a ByteNova")
 print("Comencemos a programar")</code></pre>
-
-                    <h3>Mostrar números</h3>
-
-                    <pre><code>print(10)
+<h3>Mostrar números</h3>
+<pre><code>print(10)
 print(25 + 5)</code></pre>
-
-                    <p>
+<p>
                         El segundo ejemplo realiza la suma antes de mostrar el
                         resultado.
                     </p>
-
-                    <h2 id="comentarios">
+<h2 id="comentarios">
                         Comentarios en Python
                     </h2>
-
-                    <p>
+<p>
                         Los comentarios permiten escribir explicaciones dentro
                         del código sin que Python las ejecute.
                     </p>
-
-                    <div class="recuadro-ejemplo">
-
-                        <pre><code># Este comentario explica la siguiente línea
+<div class="recuadro-ejemplo">
+<pre><code># Este comentario explica la siguiente línea
 
 print("Hola")</code></pre>
-
-                    </div>
-
-                    <p>
+</div>
+<p>
                         Los comentarios deben utilizarse para aclarar decisiones
                         importantes, no para explicar cada línea evidente.
                     </p>
-
-                    <h2 id="variables">
+<h2 id="variables">
                         Variables
                     </h2>
-
-                    <p>
+<p>
                         Una variable guarda un valor que puede utilizarse dentro
                         del programa.
                     </p>
-
-                    <div class="recuadro-ejemplo">
-
-                        <pre><code>nombre = "Ana"
+<div class="recuadro-ejemplo">
+<pre><code>nombre = "Ana"
 edad = 20
 
 print(nombre)
 print(edad)</code></pre>
-
-                    </div>
-
-                    <h3>Nombres recomendados</h3>
-
-                    <pre><code>nombre_usuario = "Carlos"
+</div>
+<h3>Nombres recomendados</h3>
+<pre><code>nombre_usuario = "Carlos"
 precio_producto = 1500
 usuario_activo = True</code></pre>
-
-                    <div class="recuadro-consejo">
-
-                        <strong>Utiliza nombres descriptivos</strong>
-
-                        <p>
+<div class="recuadro-consejo">
+<strong>Utiliza nombres descriptivos</strong>
+<p>
                             Un nombre como <code>precio_total</code> es más
                             claro que utilizar solamente <code>x</code>.
                         </p>
-
-                    </div>
-
-                    <h3>Reglas básicas</h3>
-
-                    <ul class="lista-articulo">
-
-                        <li>No pueden comenzar con un número.</li>
-                        <li>No deben contener espacios.</li>
-                        <li>Pueden utilizar guion bajo.</li>
-                        <li>Distinguen entre mayúsculas y minúsculas.</li>
-                        <li>No deben utilizar palabras reservadas.</li>
-
-                    </ul>
-
-                    <h2 id="tipos-datos">
+</div>
+<h3>Reglas básicas</h3>
+<ul class="lista-articulo">
+<li>No pueden comenzar con un número.</li>
+<li>No deben contener espacios.</li>
+<li>Pueden utilizar guion bajo.</li>
+<li>Distinguen entre mayúsculas y minúsculas.</li>
+<li>No deben utilizar palabras reservadas.</li>
+</ul>
+<h2 id="tipos-datos">
                         Tipos de datos básicos
                     </h2>
-
-                    <div class="lista-tarjetas-articulo">
-
-                        <div>
-
-                            <strong>str</strong>
-
-                            <p>
+<div class="lista-tarjetas-articulo">
+<div>
+<strong>str</strong>
+<p>
                                 Representa texto.
                             </p>
-
-                            <pre><code>nombre = "ByteNova"</code></pre>
-
-                        </div>
-
-                        <div>
-
-                            <strong>int</strong>
-
-                            <p>
+<pre><code>nombre = "ByteNova"</code></pre>
+</div>
+<div>
+<strong>int</strong>
+<p>
                                 Representa números enteros.
                             </p>
-
-                            <pre><code>edad = 25</code></pre>
-
-                        </div>
-
-                        <div>
-
-                            <strong>float</strong>
-
-                            <p>
+<pre><code>edad = 25</code></pre>
+</div>
+<div>
+<strong>float</strong>
+<p>
                                 Representa números decimales.
                             </p>
-
-                            <pre><code>precio = 19.99</code></pre>
-
-                        </div>
-
-                        <div>
-
-                            <strong>bool</strong>
-
-                            <p>
+<pre><code>precio = 19.99</code></pre>
+</div>
+<div>
+<strong>bool</strong>
+<p>
                                 Representa verdadero o falso.
                             </p>
-
-                            <pre><code>activo = True</code></pre>
-
-                        </div>
-
-                    </div>
-
-                    <h3>Consultar el tipo de un dato</h3>
-
-                    <div class="recuadro-ejemplo">
-
-                        <pre><code>edad = 20
+<pre><code>activo = True</code></pre>
+</div>
+</div>
+<h3>Consultar el tipo de un dato</h3>
+<div class="recuadro-ejemplo">
+<pre><code>edad = 20
 
 print(type(edad))</code></pre>
-
-                    </div>
-
-                    <h3>Convertir datos</h3>
-
-                    <pre><code>numero_texto = "25"
+</div>
+<h3>Convertir datos</h3>
+<pre><code>numero_texto = "25"
 numero = int(numero_texto)
 
 print(numero + 5)</code></pre>
-
-                    <div class="recuadro-aviso">
-
-                        <strong>No todos los textos pueden convertirse</strong>
-
-                        <p>
+<div class="recuadro-aviso">
+<strong>No todos los textos pueden convertirse</strong>
+<p>
                             Intentar convertir una palabra como
                             <code>"hola"</code> en un número generará un error.
                         </p>
-
-                    </div>
-
-                    <h2 id="entrada-datos">
+</div>
+<h2 id="entrada-datos">
                         Recibir datos del usuario
                     </h2>
-
-                    <p>
+<p>
                         La función <code>input()</code> permite recibir texto
                         desde el teclado.
                     </p>
-
-                    <div class="recuadro-ejemplo">
-
-                        <pre><code>nombre = input("Escribe tu nombre: ")
+<div class="recuadro-ejemplo">
+<pre><code>nombre = input("Escribe tu nombre: ")
 
 print("Hola", nombre)</code></pre>
-
-                    </div>
-
-                    <h3>Recibir un número</h3>
-
-                    <p>
+</div>
+<h3>Recibir un número</h3>
+<p>
                         El resultado de <code>input()</code> es texto. Para
                         realizar operaciones debes convertirlo.
                     </p>
-
-                    <pre><code>edad = int(input("Escribe tu edad: "))
+<pre><code>edad = int(input("Escribe tu edad: "))
 
 print(edad + 1)</code></pre>
-
-                    <div class="recuadro-ejemplo">
-
-                        <strong>Texto con variables</strong>
-
-                        <pre><code>nombre = "Laura"
+<div class="recuadro-ejemplo">
+<strong>Texto con variables</strong>
+<pre><code>nombre = "Laura"
 edad = 22
 
 print(f"{nombre} tiene {edad} años")</code></pre>
-
-                    </div>
-
-                    <h2 id="operadores">
+</div>
+<h2 id="operadores">
                         Operadores
                     </h2>
-
-                    <h3>Operadores matemáticos</h3>
-
-                    <div class="lista-tarjetas-articulo">
-
-                        <div>
-                            <strong>+</strong>
-                            <p>Suma.</p>
-                        </div>
-
-                        <div>
-                            <strong>-</strong>
-                            <p>Resta.</p>
-                        </div>
-
-                        <div>
-                            <strong>*</strong>
-                            <p>Multiplicación.</p>
-                        </div>
-
-                        <div>
-                            <strong>/</strong>
-                            <p>División.</p>
-                        </div>
-
-                        <div>
-                            <strong>//</strong>
-                            <p>División entera.</p>
-                        </div>
-
-                        <div>
-                            <strong>%</strong>
-                            <p>Resto de una división.</p>
-                        </div>
-
-                    </div>
-
-                    <div class="recuadro-ejemplo">
-
-                        <pre><code>numero_uno = 10
+<h3>Operadores matemáticos</h3>
+<div class="lista-tarjetas-articulo">
+<div>
+<strong>+</strong>
+<p>Suma.</p>
+</div>
+<div>
+<strong>-</strong>
+<p>Resta.</p>
+</div>
+<div>
+<strong>*</strong>
+<p>Multiplicación.</p>
+</div>
+<div>
+<strong>/</strong>
+<p>División.</p>
+</div>
+<div>
+<strong>//</strong>
+<p>División entera.</p>
+</div>
+<div>
+<strong>%</strong>
+<p>Resto de una división.</p>
+</div>
+</div>
+<div class="recuadro-ejemplo">
+<pre><code>numero_uno = 10
 numero_dos = 3
 
 print(numero_uno + numero_dos)
@@ -826,57 +578,42 @@ print(numero_uno - numero_dos)
 print(numero_uno * numero_dos)
 print(numero_uno / numero_dos)
 print(numero_uno % numero_dos)</code></pre>
-
-                    </div>
-
-                    <h3>Operadores de comparación</h3>
-
-                    <pre><code>10 == 10
+</div>
+<h3>Operadores de comparación</h3>
+<pre><code>10 == 10
 10 != 5
 10 &gt; 5
 10 &lt; 20
 10 &gt;= 10
 10 &lt;= 15</code></pre>
-
-                    <p>
+<p>
                         Estas comparaciones producen un resultado verdadero o
                         falso.
                     </p>
-
-                    <h2 id="condiciones">
+<h2 id="condiciones">
                         Condiciones
                     </h2>
-
-                    <p>
+<p>
                         Las condiciones permiten que el programa tome decisiones.
                     </p>
-
-                    <div class="recuadro-ejemplo">
-
-                        <pre><code>edad = 18
+<div class="recuadro-ejemplo">
+<pre><code>edad = 18
 
 if edad &gt;= 18:
     print("Eres mayor de edad")
 else:
     print("Eres menor de edad")</code></pre>
-
-                    </div>
-
-                    <div class="recuadro-aviso">
-
-                        <strong>La indentación es obligatoria</strong>
-
-                        <p>
+</div>
+<div class="recuadro-aviso">
+<strong>La indentación es obligatoria</strong>
+<p>
                             Python utiliza espacios al inicio de las líneas para
                             identificar qué instrucciones pertenecen a una
                             condición, función o bucle.
                         </p>
-
-                    </div>
-
-                    <h3>Utilizar elif</h3>
-
-                    <pre><code>nota = 85
+</div>
+<h3>Utilizar elif</h3>
+<pre><code>nota = 85
 
 if nota &gt;= 90:
     print("Excelente")
@@ -884,334 +621,230 @@ elif nota &gt;= 70:
     print("Aprobado")
 else:
     print("Debes continuar practicando")</code></pre>
-
-                    <h3>Operadores lógicos</h3>
-
-                    <pre><code>edad = 20
+<h3>Operadores lógicos</h3>
+<pre><code>edad = 20
 tiene_identificacion = True
 
 if edad &gt;= 18 and tiene_identificacion:
     print("Acceso permitido")</code></pre>
-
-                    <ul class="lista-articulo">
-
-                        <li>
-                            <code>and</code>: ambas condiciones deben cumplirse.
+<ul class="lista-articulo">
+<li>
+<code>and</code>: ambas condiciones deben cumplirse.
                         </li>
-
-                        <li>
-                            <code>or</code>: al menos una debe cumplirse.
+<li>
+<code>or</code>: al menos una debe cumplirse.
                         </li>
-
-                        <li>
-                            <code>not</code>: invierte un valor booleano.
+<li>
+<code>not</code>: invierte un valor booleano.
                         </li>
-
-                    </ul>
-
-                    <h2 id="bucles">
+</ul>
+<h2 id="bucles">
                         Bucles
                     </h2>
-
-                    <p>
+<p>
                         Los bucles permiten repetir instrucciones.
                     </p>
-
-                    <h3>Bucle for</h3>
-
-                    <div class="recuadro-ejemplo">
-
-                        <pre><code>for numero in range(5):
+<h3>Bucle for</h3>
+<div class="recuadro-ejemplo">
+<pre><code>for numero in range(5):
     print(numero)</code></pre>
-
-                    </div>
-
-                    <p>
+</div>
+<p>
                         Este ejemplo muestra los números del 0 al 4.
                     </p>
-
-                    <h3>Definir inicio y final</h3>
-
-                    <pre><code>for numero in range(1, 6):
+<h3>Definir inicio y final</h3>
+<pre><code>for numero in range(1, 6):
     print(numero)</code></pre>
-
-                    <h3>Bucle while</h3>
-
-                    <div class="recuadro-ejemplo">
-
-                        <pre><code>contador = 1
+<h3>Bucle while</h3>
+<div class="recuadro-ejemplo">
+<pre><code>contador = 1
 
 while contador &lt;= 5:
     print(contador)
     contador += 1</code></pre>
-
-                    </div>
-
-                    <div class="recuadro-aviso">
-
-                        <strong>Evita los bucles infinitos</strong>
-
-                        <p>
+</div>
+<div class="recuadro-aviso">
+<strong>Evita los bucles infinitos</strong>
+<p>
                             La condición de un bucle <code>while</code> debe
                             cambiar hasta convertirse en falsa.
                         </p>
-
-                    </div>
-
-                    <h2 id="listas">
+</div>
+<h2 id="listas">
                         Listas
                     </h2>
-
-                    <p>
+<p>
                         Una lista permite guardar varios valores dentro de una
                         sola variable.
                     </p>
-
-                    <div class="recuadro-ejemplo">
-
-                        <pre><code>tecnologias = ["HTML", "CSS", "Python"]
+<div class="recuadro-ejemplo">
+<pre><code>tecnologias = ["HTML", "CSS", "Python"]
 
 print(tecnologias)</code></pre>
-
-                    </div>
-
-                    <h3>Acceder a un elemento</h3>
-
-                    <pre><code>print(tecnologias[0])</code></pre>
-
-                    <p>
+</div>
+<h3>Acceder a un elemento</h3>
+<pre><code>print(tecnologias[0])</code></pre>
+<p>
                         Las posiciones comienzan en cero.
                     </p>
-
-                    <h3>Agregar elementos</h3>
-
-                    <pre><code>tecnologias.append("JavaScript")</code></pre>
-
-                    <h3>Eliminar elementos</h3>
-
-                    <pre><code>tecnologias.remove("CSS")</code></pre>
-
-                    <h3>Recorrer una lista</h3>
-
-                    <div class="recuadro-ejemplo">
-
-                        <pre><code>for tecnologia in tecnologias:
+<h3>Agregar elementos</h3>
+<pre><code>tecnologias.append("JavaScript")</code></pre>
+<h3>Eliminar elementos</h3>
+<pre><code>tecnologias.remove("CSS")</code></pre>
+<h3>Recorrer una lista</h3>
+<div class="recuadro-ejemplo">
+<pre><code>for tecnologia in tecnologias:
     print(tecnologia)</code></pre>
-
-                    </div>
-
-                    <h3>Consultar la cantidad</h3>
-
-                    <pre><code>print(len(tecnologias))</code></pre>
-
-                    <h2 id="diccionarios">
+</div>
+<h3>Consultar la cantidad</h3>
+<pre><code>print(len(tecnologias))</code></pre>
+<h2 id="diccionarios">
                         Diccionarios
                     </h2>
-
-                    <p>
+<p>
                         Un diccionario guarda información mediante pares de
                         claves y valores.
                     </p>
-
-                    <div class="recuadro-ejemplo">
-
-                        <pre><code>estudiante = {
+<div class="recuadro-ejemplo">
+<pre><code>estudiante = {
     "nombre": "Ana",
     "edad": 20,
     "activo": True
 }
 
 print(estudiante["nombre"])</code></pre>
-
-                    </div>
-
-                    <h3>Modificar un valor</h3>
-
-                    <pre><code>estudiante["edad"] = 21</code></pre>
-
-                    <h3>Agregar una propiedad</h3>
-
-                    <pre><code>estudiante["curso"] = "Python"</code></pre>
-
-                    <h3>Recorrer un diccionario</h3>
-
-                    <pre><code>for clave, valor in estudiante.items():
+</div>
+<h3>Modificar un valor</h3>
+<pre><code>estudiante["edad"] = 21</code></pre>
+<h3>Agregar una propiedad</h3>
+<pre><code>estudiante["curso"] = "Python"</code></pre>
+<h3>Recorrer un diccionario</h3>
+<pre><code>for clave, valor in estudiante.items():
     print(clave, valor)</code></pre>
-
-                    <h2 id="funciones">
+<h2 id="funciones">
                         Funciones
                     </h2>
-
-                    <p>
+<p>
                         Una función agrupa instrucciones que pueden utilizarse
                         varias veces.
                     </p>
-
-                    <div class="recuadro-ejemplo">
-
-                        <pre><code>def saludar():
+<div class="recuadro-ejemplo">
+<pre><code>def saludar():
     print("Hola desde ByteNova")
 
 saludar()</code></pre>
-
-                    </div>
-
-                    <h3>Funciones con parámetros</h3>
-
-                    <pre><code>def saludar(nombre):
+</div>
+<h3>Funciones con parámetros</h3>
+<pre><code>def saludar(nombre):
     print(f"Hola, {nombre}")
 
 saludar("Carlos")</code></pre>
-
-                    <h3>Devolver un resultado</h3>
-
-                    <div class="recuadro-ejemplo">
-
-                        <pre><code>def sumar(numero_uno, numero_dos):
+<h3>Devolver un resultado</h3>
+<div class="recuadro-ejemplo">
+<pre><code>def sumar(numero_uno, numero_dos):
     resultado = numero_uno + numero_dos
     return resultado
 
 total = sumar(10, 5)
 
 print(total)</code></pre>
-
-                    </div>
-
-                    <div class="recuadro-consejo">
-
-                        <strong>Crea funciones pequeñas</strong>
-
-                        <p>
+</div>
+<div class="recuadro-consejo">
+<strong>Crea funciones pequeñas</strong>
+<p>
                             Cada función debería tener una responsabilidad
                             clara y fácil de comprender.
                         </p>
-
-                    </div>
-
-                    <h2 id="modulos">
+</div>
+<h2 id="modulos">
                         Módulos
                     </h2>
-
-                    <p>
+<p>
                         Un módulo contiene funciones y herramientas que pueden
                         utilizarse dentro de un programa.
                     </p>
-
-                    <div class="recuadro-ejemplo">
-
-                        <pre><code>import random
+<div class="recuadro-ejemplo">
+<pre><code>import random
 
 numero = random.randint(1, 10)
 
 print(numero)</code></pre>
-
-                    </div>
-
-                    <p>
+</div>
+<p>
                         Este ejemplo genera un número aleatorio entre 1 y 10.
                     </p>
-
-                    <h3>Módulo math</h3>
-
-                    <pre><code>import math
+<h3>Módulo math</h3>
+<pre><code>import math
 
 resultado = math.sqrt(25)
 
 print(resultado)</code></pre>
-
-                    <h3>Importar una función específica</h3>
-
-                    <pre><code>from random import randint
+<h3>Importar una función específica</h3>
+<pre><code>from random import randint
 
 numero = randint(1, 5)
 
 print(numero)</code></pre>
-
-                    <h2 id="errores">
+<h2 id="errores">
                         Errores frecuentes
                     </h2>
-
-                    <ul class="lista-articulo lista-riesgos">
-
-                        <li>Olvidar los dos puntos en una condición.</li>
-                        <li>Utilizar una indentación incorrecta.</li>
-                        <li>Escribir mal el nombre de una variable.</li>
-                        <li>Confundir texto con números.</li>
-                        <li>Intentar acceder a una posición inexistente.</li>
-                        <li>Crear un bucle que nunca termina.</li>
-                        <li>No cerrar comillas o paréntesis.</li>
-                        <li>Utilizar una variable antes de crearla.</li>
-                        <li>No leer el mensaje de error.</li>
-                        <li>Copiar código sin comprenderlo.</li>
-
-                    </ul>
-
-                    <h3>SyntaxError</h3>
-
-                    <p>
+<ul class="lista-articulo lista-riesgos">
+<li>Olvidar los dos puntos en una condición.</li>
+<li>Utilizar una indentación incorrecta.</li>
+<li>Escribir mal el nombre de una variable.</li>
+<li>Confundir texto con números.</li>
+<li>Intentar acceder a una posición inexistente.</li>
+<li>Crear un bucle que nunca termina.</li>
+<li>No cerrar comillas o paréntesis.</li>
+<li>Utilizar una variable antes de crearla.</li>
+<li>No leer el mensaje de error.</li>
+<li>Copiar código sin comprenderlo.</li>
+</ul>
+<h3>SyntaxError</h3>
+<p>
                         Indica que Python no puede interpretar la forma en que
                         está escrito el código.
                     </p>
-
-                    <div class="recuadro-ejemplo">
-
-                        <pre><code>if edad &gt;= 18
+<div class="recuadro-ejemplo">
+<pre><code>if edad &gt;= 18
     print("Acceso permitido")</code></pre>
-
-                    </div>
-
-                    <p>
+</div>
+<p>
                         Falta colocar los dos puntos después de la condición.
                     </p>
-
-                    <h3>NameError</h3>
-
-                    <p>
+<h3>NameError</h3>
+<p>
                         Puede aparecer cuando se utiliza una variable que no
                         existe.
                     </p>
-
-                    <pre><code>print(nombre_usuario)</code></pre>
-
-                    <h3>TypeError</h3>
-
-                    <p>
+<pre><code>print(nombre_usuario)</code></pre>
+<h3>TypeError</h3>
+<p>
                         Puede aparecer cuando se intentan combinar tipos de
                         datos incompatibles.
                     </p>
-
-                    <pre><code>edad = 20
+<pre><code>edad = 20
 
 print("Edad: " + edad)</code></pre>
-
-                    <p>
+<p>
                         Una forma correcta sería:
                     </p>
-
-                    <pre><code>print(f"Edad: {edad}")</code></pre>
-
-                    <div class="recuadro-consejo">
-
-                        <strong>Lee la última línea del error</strong>
-
-                        <p>
+<pre><code>print(f"Edad: {edad}")</code></pre>
+<div class="recuadro-consejo">
+<strong>Lee la última línea del error</strong>
+<p>
                             Generalmente contiene el tipo de problema y una
                             explicación que ayuda a localizarlo.
                         </p>
-
-                    </div>
-
-                    <h2 id="proyecto">
+</div>
+<h2 id="proyecto">
                         Proyecto práctico: calculadora sencilla
                     </h2>
-
-                    <p>
+<p>
                         Este proyecto solicita dos números y una operación.
                     </p>
-
-                    <div class="recuadro-ejemplo">
-
-                        <pre><code>numero_uno = float(
+<div class="recuadro-ejemplo">
+<pre><code>numero_uno = float(
     input("Escribe el primer número: ")
 )
 
@@ -1243,437 +876,278 @@ else:
     resultado = "Operación no válida"
 
 print("Resultado:", resultado)</code></pre>
-
-                    </div>
-
-                    <p>
+</div>
+<p>
                         Este proyecto utiliza:
                     </p>
-
-                    <ul class="lista-articulo lista-ventajas">
-
-                        <li>Variables.</li>
-                        <li>Conversión de datos.</li>
-                        <li>Entrada de información.</li>
-                        <li>Operadores matemáticos.</li>
-                        <li>Condiciones.</li>
-                        <li>Validación básica.</li>
-
-                    </ul>
-
-                    <h2 id="practicas">
+<ul class="lista-articulo lista-ventajas">
+<li>Variables.</li>
+<li>Conversión de datos.</li>
+<li>Entrada de información.</li>
+<li>Operadores matemáticos.</li>
+<li>Condiciones.</li>
+<li>Validación básica.</li>
+</ul>
+<h2 id="practicas">
                         Ejercicios para practicar
                     </h2>
-
-                    <div class="lista-tarjetas-articulo">
-
-                        <div>
-
-                            <strong>Saludo personalizado</strong>
-
-                            <p>
+<div class="lista-tarjetas-articulo">
+<div>
+<strong>Saludo personalizado</strong>
+<p>
                                 Solicita el nombre y muestra un mensaje de
                                 bienvenida.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Conversor de edad</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Conversor de edad</strong>
+<p>
                                 Convierte una edad aproximada de años a meses.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Número par o impar</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Número par o impar</strong>
+<p>
                                 Utiliza el operador de resto para analizar un
                                 número.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Tabla de multiplicar</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Tabla de multiplicar</strong>
+<p>
                                 Utiliza un bucle para mostrar una tabla.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Lista de compras</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Lista de compras</strong>
+<p>
                                 Guarda productos y recórrelos con un bucle.
                             </p>
-
-                        </div>
-
-                        <div>
-
-                            <strong>Registro de estudiante</strong>
-
-                            <p>
+</div>
+<div>
+<strong>Registro de estudiante</strong>
+<p>
                                 Guarda nombre, edad y curso en un diccionario.
                             </p>
-
-                        </div>
-
-                    </div>
-
-                    <p>
+</div>
+</div>
+<p>
                         También puedes descargar las prácticas desde:
                         <a href="material.html">
                             Guías y materiales gratuitos
                         </a>.
                     </p>
-
-                    <h2 id="preguntas">
+<h2 id="preguntas">
                         Preguntas frecuentes
                     </h2>
-
-                    <section
-                        class="faq-articulo"
-                        aria-labelledby="preguntas"
-                    >
-
-                        <details>
-
-                            <summary>
+<section aria-labelledby="preguntas" class="faq-articulo">
+<details>
+<summary>
                                 ¿Python es recomendable para principiantes?
                             </summary>
-
-                            <p>
+<p>
                                 Sí. Su sintaxis clara permite concentrarse en
                                 aprender lógica y resolución de problemas.
                             </p>
-
-                        </details>
-
-                        <details>
-
-                            <summary>
+</details>
+<details>
+<summary>
                                 ¿Python es gratuito?
                             </summary>
-
-                            <p>
+<p>
                                 Sí. Puede descargarse y utilizarse gratuitamente.
                             </p>
-
-                        </details>
-
-                        <details>
-
-                            <summary>
+</details>
+<details>
+<summary>
                                 ¿Necesito conocimientos previos?
                             </summary>
-
-                            <p>
+<p>
                                 No. Puedes comenzar aprendiendo variables,
                                 condiciones, bucles y funciones.
                             </p>
-
-                        </details>
-
-                        <details>
-
-                            <summary>
+</details>
+<details>
+<summary>
                                 ¿Python sirve para inteligencia artificial?
                             </summary>
-
-                            <p>
+<p>
                                 Sí. Es ampliamente utilizado en análisis de
                                 datos, aprendizaje automático e inteligencia
                                 artificial.
                             </p>
-
-                        </details>
-
-                        <details>
-
-                            <summary>
+</details>
+<details>
+<summary>
                                 ¿Debo memorizar todos los comandos?
                             </summary>
-
-                            <p>
+<p>
                                 No. Lo importante es comprender los conceptos y
                                 saber consultar documentación cuando sea
                                 necesario.
                             </p>
-
-                        </details>
-
-                        <details>
-
-                            <summary>
+</details>
+<details>
+<summary>
                                 ¿Qué debo aprender después?
                             </summary>
-
-                            <p>
+<p>
                                 Puedes continuar con archivos, manejo de errores,
                                 programación orientada a objetos, bases de datos
                                 y proyectos prácticos.
                             </p>
-
-                        </details>
-
-                    </section>
-
-                    <h2 id="conclusion">
+</details>
+</section>
+<h2 id="conclusion">
                         Conclusión
                     </h2>
-
-                    <p>
+<p>
                         Python es un lenguaje flexible, poderoso y accesible
                         para quienes comienzan en programación.
                     </p>
-
-                    <p>
+<p>
                         Comprender variables, condiciones, bucles, listas,
                         diccionarios y funciones proporciona una base sólida
                         para desarrollar programas más completos.
                     </p>
-
-                    <p>
+<p>
                         Practica con ejercicios pequeños, revisa los errores y
                         mejora cada proyecto de forma progresiva.
                     </p>
-
-                    <section
-                        class="autor-articulo"
-                        aria-label="Información del autor"
-                    >
-
-                        <div
-                            class="autor-icono"
-                            aria-hidden="true"
-                        >
+<section aria-label="Información del autor" class="autor-articulo">
+<div aria-hidden="true" class="autor-icono">
                             &lt;/&gt;
                         </div>
-
-                        <div class="autor-informacion">
-
-                            <span>
+<div class="autor-informacion">
+<span>
                                 Guía creada por
                             </span>
-
-                            <h2>
+<h2>
                                 ByteNova
                             </h2>
-
-                            <p>
+<p>
                                 Plataforma educativa dedicada a explicar
                                 programación, desarrollo web, inteligencia
                                 artificial y ciberseguridad de manera clara.
                             </p>
-
-                            <a href="sobre.html">
+<a href="sobre.html">
                                 Conoce más sobre ByteNova →
                             </a>
-
-                        </div>
-
-                    </section>
-
-                    <aside
-                        class="articulos-relacionados"
-                        aria-labelledby="titulo-articulos-relacionados"
-                    >
-
-                        <h2 id="titulo-articulos-relacionados">
+</div>
+</section>
+<aside aria-labelledby="titulo-articulos-relacionados" class="articulos-relacionados">
+<h2 id="titulo-articulos-relacionados">
                             Continúa aprendiendo
                         </h2>
-
-                        <div class="relacionados-grid">
-
-                            <a href="python-para-principiantes.html">
-
-                                <span aria-hidden="true">🐍</span>
-
-                                <strong>
+<div class="relacionados-grid">
+<a href="python-para-principiantes.html">
+<span aria-hidden="true">🐍</span>
+<strong>
                                     ¿Qué es Python?
                                 </strong>
-
-                                <small>
+<small>
                                     Conoce sus características principales.
                                 </small>
-
-                            </a>
-
-                            <a href="que-es-programacion.html">
-
-                                <span aria-hidden="true">💻</span>
-
-                                <strong>
+</a>
+<a href="que-es-programacion.html">
+<span aria-hidden="true">💻</span>
+<strong>
                                     ¿Qué es la programación?
                                 </strong>
-
-                                <small>
+<small>
                                     Comprende cómo se construyen los programas.
                                 </small>
-
-                            </a>
-
-                            <a href="guia-git-github.html">
-
-                                <span aria-hidden="true">🔄</span>
-
-                                <strong>
+</a>
+<a href="guia-git-github.html">
+<span aria-hidden="true">🔄</span>
+<strong>
                                     Git y GitHub
                                 </strong>
-
-                                <small>
+<small>
                                     Organiza y conserva tus proyectos.
                                 </small>
-
-                            </a>
-
-                        </div>
-
-                    </aside>
-
-                </div>
-
-            </div>
-
-        </article>
-
-    </main>
-
-    <footer class="footer">
-
-        <div class="contenedor-footer">
-
-            <div class="footer-logo">
-
-                <a
-                    href="../index.html#inicio"
-                    class="marca-bytenova"
-                    aria-label="Ir al inicio de ByteNova"
-                >
-                    <span
-                        class="marca-icono"
-                        aria-hidden="true"
-                    >
+</a>
+</div>
+</aside>
+</div>
+</div>
+</article>
+</main>
+<footer class="footer">
+<div class="contenedor-footer">
+<div class="footer-logo">
+<a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio">
+<span aria-hidden="true" class="marca-icono">
                         &lt;/&gt;
                     </span>
-
-                    <span class="marca-texto">
+<span class="marca-texto">
                         ByteNova
                     </span>
-                </a>
-
-                <p>
+</a>
+<p>
                     Aprende tecnología desde cero con artículos, rutas,
                     retos, guías y recursos gratuitos.
                 </p>
-
-            </div>
-
-            <nav
-                class="footer-enlaces"
-                aria-label="Enlaces de aprendizaje del pie de página"
-            >
-                <h3>Aprender</h3>
-
-                <a href="../index.html#tecnologias">
+</div>
+<nav aria-label="Enlaces de aprendizaje del pie de página" class="footer-enlaces">
+<h3>Aprender</h3>
+<a href="../index.html#tecnologias">
                     Tecnologías
                 </a>
-
-                <a href="rutas.html">
+<a href="rutas.html">
                     Rutas
                 </a>
-
-                <a href="retos.html">
+<a href="retos.html">
                     Retos
                 </a>
-
-                <a
-                    href="material.html"
-                    aria-current="page"
-                >
+<a aria-current="page" href="material.html">
                     Guías
                 </a>
-
-                <a href="articulos.html">
+<a href="articulos.html">
                     Artículos
                 </a>
-
-                <a href="glosario.html">
+<a href="glosario.html">
                     Glosario
                 </a>
-            </nav>
-
-            <nav
-                class="footer-enlaces"
-                aria-label="Enlaces informativos del pie de página"
-            >
-                <h3>ByteNova</h3>
-
-                <a href="sobre.html">
+</nav>
+<nav aria-label="Enlaces informativos del pie de página" class="footer-enlaces">
+<h3>ByteNova</h3>
+<a href="sobre.html">
                     Sobre ByteNova
                 </a>
-
-                <a href="../index.html#contacto">
+<a href="../index.html#contacto">
                     Contacto
                 </a>
-
-                <a href="privacidad.html">
+<a href="privacidad.html">
                     Privacidad
                 </a>
-
-                <a href="terminos.html">
+<a href="terminos.html">
                     Términos
                 </a>
-
-                <a href="cookies.html">
+<a href="cookies.html">
                     Cookies
                 </a>
-            </nav>
-
-            <address class="footer-social">
-
-                <h3>Contacto</h3>
-
-                <p>
+</nav>
+<address class="footer-social">
+<h3>Contacto</h3>
+<p>
                     Preguntas, sugerencias o comentarios sobre nuestros
                     contenidos educativos.
                 </p>
-
-                <a href="mailto:bytenova339@gmail.com">
+<a href="mailto:bytenova339@gmail.com">
                     bytenova339@gmail.com
                 </a>
-
-            </address>
-
-        </div>
-
-        <div class="footer-copy">
-
-            <p>
+</address>
+</div>
+<div class="footer-copy">
+<p>
                 © 2026 ByteNova. Todos los derechos reservados.
             </p>
-
-            <p>
+<p>
                 Creado por Dylan Estrada.
             </p>
-
-        </div>
-
-    </footer>
-
-    <script src="../js/script.js"></script>
-
+</div>
+</footer>
+<script src="../js/script.js"></script>
 </body>
-
 </html>
