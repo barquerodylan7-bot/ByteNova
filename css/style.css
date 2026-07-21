@@ -7061,3 +7061,31 @@ li code{
 .footer .marca-bytenova .marca-texto{
     color:#ddd6fe !important;
 }
+/* =========================================
+   CONTRASTE DEL FOOTER EN CELULAR
+========================================= */
+
+@media (max-width: 768px){
+
+    footer.footer .footer-enlaces a{
+        color:#f8fafc !important;
+    }
+
+    footer.footer .footer-social h3{
+        color:#ffffff !important;
+    }
+
+    footer.footer .footer-social p{
+        color:#e2e8f0 !important;
+    }
+
+    footer.footer .footer-social a{
+        color:#bfdbfe !important;
+        font-weight:600;
+        text-decoration:underline;
+    }
+
+    footer.footer .footer-copy p{
+        color:#e2e8f0 !important;
+    }
+}
