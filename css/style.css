@@ -7057,3 +7057,7 @@ li code{
 .footer-social a:hover{
     color:#ffffff !important;
 }
+/* Contraste accesible del logo en el footer */
+.footer .marca-bytenova .marca-texto{
+    color:#ddd6fe !important;
+}
