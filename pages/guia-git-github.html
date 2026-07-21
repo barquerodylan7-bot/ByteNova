@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Guía de Git y GitHub para principiantes | ByteNova</title>
+
+    <meta
+        name="description"
+        content="Aprende Git y GitHub desde cero: repositorios, commits, ramas, GitHub, clone, push, pull, README y flujo de trabajo para proyectos."
+    >
+
+    <meta name="author" content="ByteNova">
+    <meta name="robots" content="index, follow">
+
+    <meta
+        name="theme-color"
+        content="#ffffff"
+        media="(prefers-color-scheme: light)"
+    >
+
+    <meta
+        name="theme-color"
+        content="#0f172a"
+        media="(prefers-color-scheme: dark)"
+    >
+
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="es_CR">
+    <meta property="og:site_name" content="ByteNova">
+
+    <meta
+        property="og:title"
+        content="Guía de Git y GitHub para principiantes"
+    >
+
+    <meta
+        property="og:description"
+        content="Aprende Git y GitHub desde cero: repositorios, commits, ramas, clone, pull, push, README y flujo de trabajo."
+    >
+
+    <meta
+        property="og:url"
+        content="https://bytenova.app/pages/guia-git-github.html"
+    >
+
+    <meta
+        property="article:published_time"
+        content="2026-07-19"
+    >
+
+    <meta
+        property="article:modified_time"
+        content="2026-07-20"
+    >
+
+    <meta
+        property="article:section"
+        content="Control de versiones"
+    >
+
+    <meta name="twitter:card" content="summary">
+
+    <meta
+        name="twitter:title"
+        content="Guía de Git y GitHub para principiantes"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Aprende a controlar versiones y administrar proyectos con Git y GitHub."
+    >
+
+    <link
+        rel="canonical"
+        href="https://bytenova.app/pages/guia-git-github.html"
+    >
+
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="../images/favicon.svg"
+    >
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "LearningResource",
+                "@id": "https://bytenova.app/pages/guia-git-github.html#learning-resource",
+                "name": "Guía de Git y GitHub para principiantes",
+                "description": "Guía gratuita para aprender control de versiones con Git y administrar proyectos en GitHub.",
+                "url": "https://bytenova.app/pages/guia-git-github.html",
+                "datePublished": "2026-07-19",
+                "dateModified": "2026-07-20",
+                "inLanguage": "es",
+                "learningResourceType": "Guide",
+                "educationalLevel": "Beginner",
+                "isAccessibleForFree": true,
+                "author": {
+                    "@type": "Organization",
+                    "name": "ByteNova",
+                    "url": "https://bytenova.app/pages/sobre.html"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "ByteNova",
+                    "url": "https://bytenova.app/"
+                },
+                "isPartOf": {
+                    "@id": "https://bytenova.app/#website"
+                },
+                "mainEntityOfPage": {
+                    "@id": "https://bytenova.app/pages/guia-git-github.html#webpage"
+                },
+                "about": [
+                    {
+                        "@type": "Thing",
+                        "name": "Git"
+                    },
+                    {
+                        "@type": "Thing",
+                        "name": "GitHub"
+                    },
+                    {
+                        "@type": "Thing",
+                        "name": "Control de versiones"
+                    },
+                    {
+                        "@type": "Thing",
+                        "name": "Repositorios"
+                    }
+                ]
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://bytenova.app/pages/guia-git-github.html#webpage",
+                "url": "https://bytenova.app/pages/guia-git-github.html",
+                "name": "Guía de Git y GitHub para principiantes",
+                "description": "Guía gratuita sobre repositorios, commits, ramas, repositorios remotos, clone, pull, push, README y .gitignore.",
+                "inLanguage": "es",
+                "datePublished": "2026-07-19",
+                "dateModified": "2026-07-20",
+                "isPartOf": {
+                    "@id": "https://bytenova.app/#website"
+                },
+                "breadcrumb": {
+                    "@id": "https://bytenova.app/pages/guia-git-github.html#breadcrumb"
+                },
+                "mainEntity": {
+                    "@id": "https://bytenova.app/pages/guia-git-github.html#learning-resource"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://bytenova.app/pages/guia-git-github.html#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Inicio",
+                        "item": "https://bytenova.app/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Guías",
+                        "item": "https://bytenova.app/pages/material.html"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Git y GitHub",
+                        "item": "https://bytenova.app/pages/guia-git-github.html"
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://bytenova.app/pages/guia-git-github.html#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "¿Necesito GitHub para utilizar Git?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. Git puede administrar versiones localmente sin estar conectado a una plataforma."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Necesito Git para utilizar GitHub?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Algunas acciones pueden realizarse desde la web, pero Git permite trabajar profesionalmente desde la computadora."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Qué es un commit?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Es una versión guardada del proyecto acompañada de un mensaje descriptivo."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Qué es una rama?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Es una línea separada de desarrollo que permite trabajar sin modificar inmediatamente la rama principal."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Un repositorio debe ser público?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. GitHub permite crear repositorios públicos y privados."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿GitHub sirve como copia de seguridad?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Puede conservar una copia remota del proyecto, pero los archivos importantes deberían tener una estrategia adicional de respaldo."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+
+</head>
+
+<body>
+
+    <a
+        class="saltar-contenido"
+        href="#contenido-principal"
+    >
+        Saltar al contenido principal
+    </a>
+
+    <header>
+
+        <a
+            href="../index.html#inicio"
+            class="marca-bytenova"
+            aria-label="Ir al inicio de ByteNova"
+        >
+            <span
+                class="marca-icono"
+                aria-hidden="true"
+            >
+                &lt;/&gt;
+            </span>
+
+            <span class="marca-texto">
+                ByteNova
+            </span>
+        </a>
+
+        <button
+            type="button"
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="menu-principal"
+        >
+            <span aria-hidden="true">☰</span>
+        </button>
+
+        <nav
+            id="menu-principal"
+            aria-label="Navegación principal"
+        >
+            <a href="../index.html#inicio">Inicio</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="../index.html#tecnologias">Aprender</a>
+            <a href="rutas.html">Rutas</a>
+            <a href="retos.html">Retos</a>
+
+            <a
+                href="material.html"
+                aria-current="page"
+            >
+                Guías
+            </a>
+
+            <a href="articulos.html">Artículos</a>
+            <a href="glosario.html">Glosario</a>
+            <a href="../index.html#contacto">Contacto</a>
+
+            <button
+                type="button"
+                id="btn-modo"
+                class="btn-modo"
+                aria-label="Activar modo oscuro"
+            >
+                <span aria-hidden="true">🌙</span>
+            </button>
+        </nav>
+
+    </header>
+
+    <main
+        class="sobre articulo"
+        id="contenido-principal"
+    >
+
+        <article
+            class="sobre-contenido"
+            aria-labelledby="titulo-guia-git-github"
+        >
+
+            <nav
+                class="migas-navegacion"
+                aria-label="Ruta de navegación"
+            >
+                <a href="../index.html">Inicio</a>
+                <span aria-hidden="true">›</span>
+
+                <a href="material.html">
+                    Guías
+                </a>
+
+                <span aria-hidden="true">›</span>
+
+                <span aria-current="page">
+                    Git y GitHub
+                </span>
+            </nav>
+
+            <span class="seccion-etiqueta">
+                <span aria-hidden="true">🔄</span>
+                Guía de control de versiones
+            </span>
+
+            <h1 id="titulo-guia-git-github">
+                Git y GitHub para principiantes: guía desde cero
+                <span aria-hidden="true">🔄</span>
+            </h1>
+
+            <p class="articulo-meta">
+                Publicado por ByteNova ·
+
+                <time datetime="2026-07-19">
+                    19 de julio de 2026
+                </time>
+
+                · Actualizado el
+
+                <time datetime="2026-07-20">
+                    20 de julio de 2026
+                </time>
+            </p>
+
+            <div class="articulo-resumen">
+
+                <strong>En esta guía aprenderás:</strong>
+
+                <p>
+                    Qué son Git y GitHub, cómo crear un repositorio, guardar
+                    versiones de un proyecto, trabajar con ramas y subir tus
+                    archivos a GitHub.
+                </p>
+
+            </div>
+
+            <div class="articulo-layout">
+
+                <details class="indice-articulo">
+
+                    <summary>
+                        <span aria-hidden="true">📑</span>
+                        Contenido de la guía
+                    </summary>
+
+                    <nav aria-label="Contenido de la guía">
+                        <a href="#control-versiones">1. Control de versiones</a>
+                        <a href="#que-es-git">2. ¿Qué es Git?</a>
+                        <a href="#que-es-github">3. ¿Qué es GitHub?</a>
+                        <a href="#diferencias">4. Diferencias entre Git y GitHub</a>
+                        <a href="#instalacion">5. Instalación y configuración</a>
+                        <a href="#repositorio">6. Crear un repositorio</a>
+                        <a href="#estado">7. Revisar el estado</a>
+                        <a href="#commit">8. Crear un commit</a>
+                        <a href="#historial">9. Consultar el historial</a>
+                        <a href="#ramas">10. Trabajar con ramas</a>
+                        <a href="#fusionar">11. Fusionar cambios</a>
+                        <a href="#github">12. Crear un repositorio en GitHub</a>
+                        <a href="#remoto">13. Conectar el repositorio remoto</a>
+                        <a href="#clone-pull">14. Clone, pull y push</a>
+                        <a href="#readme">15. README y .gitignore</a>
+                        <a href="#flujo">16. Flujo de trabajo recomendado</a>
+                        <a href="#errores">17. Errores frecuentes</a>
+                        <a href="#practica">18. Práctica guiada</a>
+                        <a href="#preguntas">19. Preguntas frecuentes</a>
+                        <a href="#conclusion">20. Conclusión</a>
+                    </nav>
+
+                </details>
+
+                <div
+                    class="articulo-cuerpo"
+                    aria-label="Contenido principal de la guía"
+                >
+
+                    <p class="articulo-introduccion">
+                        Git permite guardar el historial de un proyecto,
+                        comparar cambios y regresar a versiones anteriores.
+                        GitHub permite almacenar repositorios en Internet y
+                        colaborar con otras personas.
+                    </p>
+
+                    <p>
+                        Estas herramientas son muy utilizadas en programación,
+                        desarrollo web y proyectos tecnológicos.
+                    </p>
+
+                    <h2 id="control-versiones">
+                        ¿Qué es el control de versiones?
+                    </h2>
+
+                    <p>
+                        El control de versiones es un sistema que registra los
+                        cambios realizados en los archivos de un proyecto.
+                    </p>
+
+                    <p>Permite saber:</p>
+
+                    <ul class="lista-articulo lista-ventajas">
+                        <li>Qué archivos fueron modificados.</li>
+                        <li>Cuándo se realizó cada cambio.</li>
+                        <li>Quién realizó una modificación.</li>
+                        <li>Qué contenía una versión anterior.</li>
+                        <li>Cómo recuperar una versión estable.</li>
+                        <li>Cómo combinar el trabajo de varias personas.</li>
+                    </ul>
+
+                    <div class="recuadro-ejemplo">
+
+                        <strong>Ejemplo sencillo</strong>
+
+                        <p>
+                            En lugar de crear archivos como
+                            <code>proyecto-final.html</code>,
+                            <code>proyecto-final-2.html</code> y
+                            <code>proyecto-final-ahora-si.html</code>,
+                            Git conserva un historial organizado.
+                        </p>
+
+                    </div>
+
+                    <h2 id="que-es-git">
+                        ¿Qué es Git?
+                    </h2>
+
+                    <p>
+                        Git es un sistema de control de versiones distribuido.
+                        Se instala en la computadora y permite registrar los
+                        cambios de un proyecto.
+                    </p>
+
+                    <p>
+                        Git puede funcionar sin conexión a Internet porque el
+                        historial se guarda localmente.
+                    </p>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+                            <strong>Historial</strong>
+                            <p>Conserva versiones importantes del proyecto.</p>
+                        </div>
+
+                        <div>
+                            <strong>Ramas</strong>
+                            <p>Permite desarrollar cambios separados.</p>
+                        </div>
+
+                        <div>
+                            <strong>Comparación</strong>
+                            <p>Ayuda a revisar qué líneas fueron modificadas.</p>
+                        </div>
+
+                        <div>
+                            <strong>Recuperación</strong>
+                            <p>Facilita volver a estados anteriores.</p>
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Consulta también:
+                        <a href="que-son-git-y-github.html">
+                            ¿Qué son Git y GitHub?
+                        </a>
+                    </p>
+
+                    <h2 id="que-es-github">
+                        ¿Qué es GitHub?
+                    </h2>
+
+                    <p>
+                        GitHub es una plataforma en línea que permite alojar
+                        repositorios Git.
+                    </p>
+
+                    <p>También incluye herramientas para:</p>
+
+                    <ul class="lista-articulo lista-ventajas">
+                        <li>Compartir proyectos.</li>
+                        <li>Colaborar con otras personas.</li>
+                        <li>Revisar cambios.</li>
+                        <li>Informar errores o tareas.</li>
+                        <li>Documentar proyectos.</li>
+                        <li>Mostrar trabajos dentro de un portafolio.</li>
+                        <li>Automatizar procesos de desarrollo.</li>
+                    </ul>
+
+                    <div class="recuadro-consejo">
+
+                        <strong>GitHub no reemplaza a Git</strong>
+
+                        <p>
+                            Git controla las versiones. GitHub almacena y
+                            facilita la colaboración sobre repositorios Git.
+                        </p>
+
+                    </div>
+
+                    <h2 id="diferencias">
+                        Diferencias entre Git y GitHub
+                    </h2>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+                            <strong>Git</strong>
+
+                            <p>
+                                Es un programa instalado en la computadora.
+                            </p>
+
+                            <p>
+                                Controla versiones y funciona localmente.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>GitHub</strong>
+
+                            <p>
+                                Es una plataforma disponible en Internet.
+                            </p>
+
+                            <p>
+                                Aloja repositorios y facilita la colaboración.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="recuadro-ejemplo">
+
+                        <strong>Comparación sencilla</strong>
+
+                        <p>
+                            Git es la herramienta que organiza el historial.
+                            GitHub es el lugar donde puedes guardar y compartir
+                            una copia remota del repositorio.
+                        </p>
+
+                    </div>
+
+                    <h2 id="instalacion">
+                        Instalar y configurar Git
+                    </h2>
+
+                    <p>
+                        Después de instalar Git, puedes comprobar su versión
+                        desde la terminal:
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+                        <pre><code>git --version</code></pre>
+                    </div>
+
+                    <h3>Configurar el nombre</h3>
+
+                    <pre><code>git config --global user.name "Tu nombre"</code></pre>
+
+                    <h3>Configurar el correo</h3>
+
+                    <pre><code>git config --global user.email "correo@ejemplo.com"</code></pre>
+
+                    <p>
+                        Esta información se asocia con los commits creados desde
+                        tu computadora.
+                    </p>
+
+                    <h3>Consultar la configuración</h3>
+
+                    <div class="recuadro-ejemplo">
+                        <pre><code>git config --list</code></pre>
+                    </div>
+
+                    <div class="recuadro-aviso">
+
+                        <strong>Utiliza un correo apropiado</strong>
+
+                        <p>
+                            El correo puede quedar registrado dentro del
+                            historial del repositorio.
+                        </p>
+
+                    </div>
+
+                    <h2 id="repositorio">
+                        Crear un repositorio Git
+                    </h2>
+
+                    <p>
+                        Primero abre la terminal dentro de la carpeta de tu
+                        proyecto.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+                        <pre><code>cd mi-proyecto</code></pre>
+                    </div>
+
+                    <p>Después ejecuta:</p>
+
+                    <div class="recuadro-ejemplo">
+                        <pre><code>git init</code></pre>
+                    </div>
+
+                    <p>Git creará una carpeta oculta llamada:</p>
+
+                    <pre><code>.git</code></pre>
+
+                    <p>
+                        Esa carpeta contiene la información necesaria para
+                        administrar el historial.
+                    </p>
+
+                    <div class="recuadro-aviso">
+
+                        <strong>No elimines la carpeta .git</strong>
+
+                        <p>
+                            Si la borras, el proyecto dejará de estar conectado
+                            con su historial local.
+                        </p>
+
+                    </div>
+
+                    <h2 id="estado">
+                        Revisar el estado del proyecto
+                    </h2>
+
+                    <p>El comando más importante para comenzar es:</p>
+
+                    <div class="recuadro-ejemplo">
+                        <pre><code>git status</code></pre>
+                    </div>
+
+                    <p>Este comando puede mostrar:</p>
+
+                    <ul class="lista-articulo">
+                        <li>Archivos nuevos.</li>
+                        <li>Archivos modificados.</li>
+                        <li>Archivos preparados para guardar.</li>
+                        <li>La rama actual.</li>
+                        <li>El estado respecto al repositorio remoto.</li>
+                    </ul>
+
+                    <div class="recuadro-consejo">
+
+                        <strong>Utiliza git status frecuentemente</strong>
+
+                        <p>
+                            Te ayuda a comprender qué cambios serán incluidos
+                            antes de crear un commit.
+                        </p>
+
+                    </div>
+
+                    <h2 id="commit">
+                        Preparar archivos y crear un commit
+                    </h2>
+
+                    <p>
+                        Un commit representa una versión guardada del proyecto.
+                    </p>
+
+                    <h3>Preparar un archivo</h3>
+
+                    <div class="recuadro-ejemplo">
+                        <pre><code>git add index.html</code></pre>
+                    </div>
+
+                    <h3>Preparar todos los cambios</h3>
+
+                    <pre><code>git add .</code></pre>
+
+                    <div class="recuadro-aviso">
+
+                        <strong>Revisa antes de utilizar git add .</strong>
+
+                        <p>
+                            Este comando prepara todos los cambios dentro de la
+                            carpeta actual.
+                        </p>
+
+                    </div>
+
+                    <h3>Crear el commit</h3>
+
+                    <div class="recuadro-ejemplo">
+                        <pre><code>git commit -m "Agregar sección de contacto"</code></pre>
+                    </div>
+
+                    <p>
+                        El mensaje debe explicar brevemente qué cambio contiene
+                        la versión.
+                    </p>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+                            <strong>Mensaje poco claro</strong>
+                            <pre><code>git commit -m "cambios"</code></pre>
+                        </div>
+
+                        <div>
+                            <strong>Mensaje más útil</strong>
+                            <pre><code>git commit -m "Corregir menú móvil"</code></pre>
+                        </div>
+
+                    </div>
+
+                    <h2 id="historial">
+                        Consultar el historial
+                    </h2>
+
+                    <p>Para ver los commits realizados:</p>
+
+                    <div class="recuadro-ejemplo">
+                        <pre><code>git log</code></pre>
+                    </div>
+
+                    <p>Para obtener una vista resumida:</p>
+
+                    <pre><code>git log --oneline</code></pre>
+
+                    <p>El resultado puede verse así:</p>
+
+                    <pre><code>a12bc34 Agregar sección de contacto
+83df210 Crear estructura inicial
+4a9ce10 Iniciar proyecto</code></pre>
+
+                    <h3>Consultar cambios sin guardar</h3>
+
+                    <div class="recuadro-ejemplo">
+                        <pre><code>git diff</code></pre>
+                    </div>
+
+                    <p>
+                        Este comando muestra diferencias entre los archivos
+                        modificados y la última versión guardada.
+                    </p>
+
+                    <h2 id="ramas">
+                        Trabajar con ramas
+                    </h2>
+
+                    <p>
+                        Una rama permite desarrollar cambios separados sin
+                        modificar inmediatamente la versión principal.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <strong>Crear una rama</strong>
+
+                        <pre><code>git branch nueva-seccion</code></pre>
+
+                    </div>
+
+                    <div class="recuadro-ejemplo">
+
+                        <strong>Cambiar de rama</strong>
+
+                        <pre><code>git switch nueva-seccion</code></pre>
+
+                    </div>
+
+                    <p>
+                        También puedes crear y cambiar de rama al mismo tiempo:
+                    </p>
+
+                    <pre><code>git switch -c nueva-seccion</code></pre>
+
+                    <h3>Consultar las ramas</h3>
+
+                    <div class="recuadro-ejemplo">
+                        <pre><code>git branch</code></pre>
+                    </div>
+
+                    <p>Un asterisco indica la rama actual.</p>
+
+                    <div class="recuadro-ejemplo">
+                        <pre><code>* nueva-seccion
+  main</code></pre>
+                    </div>
+
+                    <h2 id="fusionar">
+                        Fusionar cambios
+                    </h2>
+
+                    <p>
+                        Cuando el trabajo de una rama esté terminado, puede
+                        combinarse con la rama principal.
+                    </p>
+
+                    <div
+                        class="pasos-articulo"
+                        role="list"
+                    >
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+                            <span>1</span>
+
+                            <div>
+                                <h3>Guarda los cambios</h3>
+
+                                <pre><code>git add .
+git commit -m "Crear nueva sección"</code></pre>
+                            </div>
+                        </div>
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+                            <span>2</span>
+
+                            <div>
+                                <h3>Regresa a la rama principal</h3>
+                                <pre><code>git switch main</code></pre>
+                            </div>
+                        </div>
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+                            <span>3</span>
+
+                            <div>
+                                <h3>Fusiona la rama</h3>
+                                <pre><code>git merge nueva-seccion</code></pre>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h3>Conflictos</h3>
+
+                    <p>
+                        Un conflicto puede ocurrir cuando dos versiones
+                        modifican la misma parte de un archivo.
+                    </p>
+
+                    <div class="recuadro-aviso">
+
+                        <strong>
+                            Git no decide automáticamente qué contenido conservar
+                        </strong>
+
+                        <p>
+                            Debes abrir el archivo, revisar las versiones,
+                            elegir el contenido correcto y guardar nuevamente.
+                        </p>
+
+                    </div>
+
+                    <h2 id="github">
+                        Crear un repositorio en GitHub
+                    </h2>
+
+                    <p>
+                        Después de iniciar sesión en GitHub, crea un repositorio
+                        nuevo.
+                    </p>
+
+                    <p>Normalmente deberás definir:</p>
+
+                    <ul class="lista-articulo">
+                        <li>Nombre del repositorio.</li>
+                        <li>Descripción opcional.</li>
+                        <li>Visibilidad pública o privada.</li>
+                        <li>Archivo README opcional.</li>
+                        <li>Archivo .gitignore opcional.</li>
+                        <li>Licencia opcional.</li>
+                    </ul>
+
+                    <div class="recuadro-aviso">
+
+                        <strong>No publiques información privada</strong>
+
+                        <p>
+                            Revisa que el proyecto no contenga contraseñas,
+                            claves de API, archivos personales o datos sensibles.
+                        </p>
+
+                    </div>
+
+                    <h2 id="remoto">
+                        Conectar el proyecto local con GitHub
+                    </h2>
+
+                    <p>
+                        Git utiliza el concepto de repositorio remoto para
+                        conectarse con una copia alojada en Internet.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+                        <pre><code>git remote add origin URL-DEL-REPOSITORIO</code></pre>
+                    </div>
+
+                    <p>Puedes comprobar la conexión mediante:</p>
+
+                    <pre><code>git remote -v</code></pre>
+
+                    <p>Para establecer el nombre de la rama principal:</p>
+
+                    <pre><code>git branch -M main</code></pre>
+
+                    <h3>Enviar el proyecto por primera vez</h3>
+
+                    <div class="recuadro-ejemplo">
+                        <pre><code>git push -u origin main</code></pre>
+                    </div>
+
+                    <p>
+                        La opción <code>-u</code> establece la relación entre
+                        la rama local y la rama remota.
+                    </p>
+
+                    <h2 id="clone-pull">
+                        Clone, pull y push
+                    </h2>
+
+                    <h3>git clone</h3>
+
+                    <p>
+                        Descarga una copia completa de un repositorio.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+                        <pre><code>git clone URL-DEL-REPOSITORIO</code></pre>
+                    </div>
+
+                    <h3>git pull</h3>
+
+                    <p>
+                        Descarga e integra cambios del repositorio remoto.
+                    </p>
+
+                    <pre><code>git pull</code></pre>
+
+                    <h3>git push</h3>
+
+                    <p>
+                        Envía los commits locales hacia el repositorio remoto.
+                    </p>
+
+                    <pre><code>git push</code></pre>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+                            <strong>Clone</strong>
+
+                            <p>
+                                Descarga el repositorio completo por primera vez.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>Pull</strong>
+
+                            <p>
+                                Obtiene cambios nuevos del repositorio remoto.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>Push</strong>
+
+                            <p>
+                                Envía los commits locales hacia GitHub.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <h2 id="readme">
+                        README y .gitignore
+                    </h2>
+
+                    <h3>README.md</h3>
+
+                    <p>
+                        El archivo README explica el objetivo y funcionamiento
+                        del proyecto.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code># Mi proyecto
+
+Página creada para practicar HTML, CSS y JavaScript.
+
+## Funciones
+
+- Diseño responsive
+- Modo oscuro
+- Formulario de contacto</code></pre>
+
+                    </div>
+
+                    <p>
+                        GitHub interpreta archivos Markdown y los muestra dentro
+                        de la página principal del repositorio.
+                    </p>
+
+                    <h3>.gitignore</h3>
+
+                    <p>
+                        El archivo <code>.gitignore</code> indica qué archivos
+                        o carpetas Git no debe registrar.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>node_modules/
+.env
+archivos-temporales/
+*.log</code></pre>
+
+                    </div>
+
+                    <div class="recuadro-aviso">
+
+                        <strong>No confíes únicamente en .gitignore</strong>
+
+                        <p>
+                            Si un archivo privado ya fue agregado al historial,
+                            incluirlo después en .gitignore no elimina las
+                            versiones anteriores.
+                        </p>
+
+                    </div>
+
+                    <h2 id="flujo">
+                        Flujo de trabajo recomendado
+                    </h2>
+
+                    <div
+                        class="pasos-articulo"
+                        role="list"
+                    >
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+                            <span>1</span>
+
+                            <div>
+                                <h3>Revisa el estado</h3>
+                                <pre><code>git status</code></pre>
+                            </div>
+                        </div>
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+                            <span>2</span>
+
+                            <div>
+                                <h3>Trabaja en cambios pequeños</h3>
+
+                                <p>
+                                    Evita modificar demasiadas funciones al
+                                    mismo tiempo.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+                            <span>3</span>
+
+                            <div>
+                                <h3>Revisa las diferencias</h3>
+                                <pre><code>git diff</code></pre>
+                            </div>
+                        </div>
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+                            <span>4</span>
+
+                            <div>
+                                <h3>Prepara los archivos</h3>
+                                <pre><code>git add archivo.html</code></pre>
+                            </div>
+                        </div>
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+                            <span>5</span>
+
+                            <div>
+                                <h3>Crea un commit claro</h3>
+                                <pre><code>git commit -m "Mejorar diseño móvil"</code></pre>
+                            </div>
+                        </div>
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+                            <span>6</span>
+
+                            <div>
+                                <h3>Sincroniza el repositorio</h3>
+
+                                <pre><code>git pull
+git push</code></pre>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h2 id="errores">
+                        Errores frecuentes
+                    </h2>
+
+                    <ul class="lista-articulo lista-riesgos">
+                        <li>No ejecutar Git dentro de la carpeta correcta.</li>
+                        <li>Olvidar guardar los archivos antes del commit.</li>
+                        <li>No revisar el resultado de git status.</li>
+                        <li>Crear commits con mensajes poco claros.</li>
+                        <li>Agregar archivos privados al repositorio.</li>
+                        <li>Realizar demasiados cambios en un solo commit.</li>
+                        <li>Trabajar siempre directamente en la rama principal.</li>
+                        <li>Enviar cambios sin descargar primero las actualizaciones.</li>
+                        <li>Eliminar la carpeta .git accidentalmente.</li>
+                        <li>Confundir Git con GitHub.</li>
+                    </ul>
+
+                    <h3>Error: no es un repositorio Git</h3>
+
+                    <div class="recuadro-ejemplo">
+                        <pre><code>fatal: not a git repository</code></pre>
+                    </div>
+
+                    <p>
+                        Puede ocurrir porque la terminal no está ubicada dentro
+                        de una carpeta inicializada con Git.
+                    </p>
+
+                    <h3>Cambios no incluidos en el commit</h3>
+
+                    <p>
+                        Un archivo modificado debe prepararse antes de crear el
+                        commit:
+                    </p>
+
+                    <pre><code>git add archivo.html</code></pre>
+
+                    <h3>Push rechazado</h3>
+
+                    <p>
+                        Puede ocurrir cuando el repositorio remoto contiene
+                        cambios que todavía no existen localmente.
+                    </p>
+
+                    <div class="recuadro-consejo">
+
+                        <strong>Revisa antes de combinar cambios</strong>
+
+                        <p>
+                            Utiliza <code>git pull</code> con cuidado y resuelve
+                            los posibles conflictos antes de volver a enviar.
+                        </p>
+
+                    </div>
+
+                    <h2 id="practica">
+                        Práctica guiada
+                    </h2>
+
+                    <p>
+                        Crea una carpeta nueva para practicar sin afectar un
+                        proyecto importante.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>mkdir practica-git
+
+cd practica-git
+
+git init
+
+echo "# Práctica de Git" &gt; README.md
+
+git status
+
+git add README.md
+
+git commit -m "Crear archivo README"
+
+git log --oneline</code></pre>
+
+                    </div>
+
+                    <h3>Agregar un archivo HTML</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>touch index.html
+
+git status
+
+git add index.html
+
+git commit -m "Agregar página principal"</code></pre>
+
+                    </div>
+
+                    <h3>Crear una rama</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>git switch -c agregar-estilos
+
+touch style.css
+
+git add style.css
+
+git commit -m "Agregar hoja de estilos"
+
+git switch main
+
+git merge agregar-estilos</code></pre>
+
+                    </div>
+
+                    <div class="recuadro-consejo">
+
+                        <strong>Practica cada comando por separado</strong>
+
+                        <p>
+                            Después de cada acción, utiliza
+                            <code>git status</code> para observar cómo cambia el
+                            estado del repositorio.
+                        </p>
+
+                    </div>
+
+                    <h2 id="preguntas">
+                        Preguntas frecuentes
+                    </h2>
+
+                    <section
+                        class="faq-articulo"
+                        aria-labelledby="preguntas"
+                    >
+
+                        <details>
+
+                            <summary>
+                                ¿Necesito GitHub para utilizar Git?
+                            </summary>
+
+                            <p>
+                                No. Git puede administrar versiones localmente
+                                sin estar conectado a una plataforma.
+                            </p>
+
+                        </details>
+
+                        <details>
+
+                            <summary>
+                                ¿Necesito Git para utilizar GitHub?
+                            </summary>
+
+                            <p>
+                                Algunas acciones pueden realizarse desde la web,
+                                pero Git permite trabajar profesionalmente desde
+                                la computadora.
+                            </p>
+
+                        </details>
+
+                        <details>
+
+                            <summary>
+                                ¿Qué es un commit?
+                            </summary>
+
+                            <p>
+                                Es una versión guardada del proyecto acompañada
+                                de un mensaje descriptivo.
+                            </p>
+
+                        </details>
+
+                        <details>
+
+                            <summary>
+                                ¿Qué es una rama?
+                            </summary>
+
+                            <p>
+                                Es una línea separada de desarrollo que permite
+                                trabajar sin modificar inmediatamente la rama
+                                principal.
+                            </p>
+
+                        </details>
+
+                        <details>
+
+                            <summary>
+                                ¿Un repositorio debe ser público?
+                            </summary>
+
+                            <p>
+                                No. GitHub permite crear repositorios públicos y
+                                privados.
+                            </p>
+
+                        </details>
+
+                        <details>
+
+                            <summary>
+                                ¿GitHub sirve como copia de seguridad?
+                            </summary>
+
+                            <p>
+                                Puede conservar una copia remota del proyecto,
+                                pero los archivos importantes deberían tener una
+                                estrategia adicional de respaldo.
+                            </p>
+
+                        </details>
+
+                    </section>
+
+                    <h2 id="conclusion">
+                        Conclusión
+                    </h2>
+
+                    <p>
+                        Git permite registrar versiones, comparar cambios,
+                        trabajar con ramas y mantener organizado el historial
+                        de un proyecto.
+                    </p>
+
+                    <p>
+                        GitHub permite almacenar repositorios en Internet,
+                        compartirlos y colaborar con otras personas.
+                    </p>
+
+                    <p>
+                        Comienza practicando con los comandos
+                        <code>status</code>, <code>add</code>,
+                        <code>commit</code> y <code>log</code>. Después avanza
+                        hacia ramas, repositorios remotos y colaboración.
+                    </p>
+
+                    <section
+                        class="autor-articulo"
+                        aria-label="Información del autor"
+                    >
+
+                        <div
+                            class="autor-icono"
+                            aria-hidden="true"
+                        >
+                            &lt;/&gt;
+                        </div>
+
+                        <div class="autor-informacion">
+
+                            <span>
+                                Guía creada por
+                            </span>
+
+                            <h2>
+                                ByteNova
+                            </h2>
+
+                            <p>
+                                Plataforma educativa dedicada a explicar
+                                programación, desarrollo web, inteligencia
+                                artificial y ciberseguridad de manera clara.
+                            </p>
+
+                            <a href="sobre.html">
+                                Conoce más sobre ByteNova →
+                            </a>
+
+                        </div>
+
+                    </section>
+
+                    <aside
+                        class="articulos-relacionados"
+                        aria-labelledby="titulo-articulos-relacionados"
+                    >
+
+                        <h2 id="titulo-articulos-relacionados">
+                            Continúa aprendiendo
+                        </h2>
+
+                        <div class="relacionados-grid">
+
+                            <a href="que-son-git-y-github.html">
+
+                                <span aria-hidden="true">🔄</span>
+
+                                <strong>
+                                    ¿Qué son Git y GitHub?
+                                </strong>
+
+                                <small>
+                                    Repasa sus conceptos fundamentales.
+                                </small>
+
+                            </a>
+
+                            <a href="guia-linux.html">
+
+                                <span aria-hidden="true">🐧</span>
+
+                                <strong>
+                                    Linux para principiantes
+                                </strong>
+
+                                <small>
+                                    Aprende a utilizar la terminal.
+                                </small>
+
+                            </a>
+
+                            <a href="que-es-programacion.html">
+
+                                <span aria-hidden="true">💻</span>
+
+                                <strong>
+                                    ¿Qué es la programación?
+                                </strong>
+
+                                <small>
+                                    Comprende cómo se construyen los programas.
+                                </small>
+
+                            </a>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="contenedor-footer">
+
+            <div class="footer-logo">
+
+                <a
+                    href="../index.html#inicio"
+                    class="marca-bytenova"
+                    aria-label="Ir al inicio de ByteNova"
+                >
+                    <span
+                        class="marca-icono"
+                        aria-hidden="true"
+                    >
+                        &lt;/&gt;
+                    </span>
+
+                    <span class="marca-texto">
+                        ByteNova
+                    </span>
+                </a>
+
+                <p>
+                    Aprende tecnología desde cero con artículos, rutas,
+                    retos, guías y recursos gratuitos.
+                </p>
+
+            </div>
+
+            <nav
+                class="footer-enlaces"
+                aria-label="Enlaces de aprendizaje del pie de página"
+            >
+                <h3>Aprender</h3>
+
+                <a href="../index.html#tecnologias">
+                    Tecnologías
+                </a>
+
+                <a href="rutas.html">
+                    Rutas
+                </a>
+
+                <a href="retos.html">
+                    Retos
+                </a>
+
+                <a
+                    href="material.html"
+                    aria-current="page"
+                >
+                    Guías
+                </a>
+
+                <a href="articulos.html">
+                    Artículos
+                </a>
+
+                <a href="glosario.html">
+                    Glosario
+                </a>
+            </nav>
+
+            <nav
+                class="footer-enlaces"
+                aria-label="Enlaces informativos del pie de página"
+            >
+                <h3>ByteNova</h3>
+
+                <a href="sobre.html">
+                    Sobre ByteNova
+                </a>
+
+                <a href="../index.html#contacto">
+                    Contacto
+                </a>
+
+                <a href="privacidad.html">
+                    Privacidad
+                </a>
+
+                <a href="terminos.html">
+                    Términos
+                </a>
+
+                <a href="cookies.html">
+                    Cookies
+                </a>
+            </nav>
+
+            <address class="footer-social">
+
+                <h3>Contacto</h3>
+
+                <p>
+                    Preguntas, sugerencias o comentarios sobre nuestros
+                    contenidos educativos.
+                </p>
+
+                <a href="mailto:bytenova339@gmail.com">
+                    bytenova339@gmail.com
+                </a>
+
+            </address>
+
+        </div>
+
+        <div class="footer-copy">
+
+            <p>
+                © 2026 ByteNova. Todos los derechos reservados.
+            </p>
+
+            <p>
+                Creado por Dylan Estrada.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

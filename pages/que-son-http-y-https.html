@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   ¿Qué son HTTP y HTTPS y cómo funcionan? | ByteNova
+  </title>
+  <meta content="Aprende qué son HTTP y HTTPS, cómo se comunican el navegador y el servidor y por qué el cifrado es importante para una página web." name="description"/>
+  <meta content="ByteNova" name="author"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
+  <meta content="#0f172a" media="(prefers-color-scheme: dark)" name="theme-color"/>
+  <meta content="article" property="og:type"/>
+  <meta content="es_CR" property="og:locale"/>
+  <meta content="ByteNova" property="og:site_name"/>
+  <meta content="¿Qué son HTTP y HTTPS y cómo funcionan?" property="og:title"/>
+  <meta content="Aprende qué son HTTP y HTTPS, cómo se comunican el navegador y el servidor y por qué el cifrado es importante para una página web." property="og:description"/>
+  <meta content="https://bytenova.app/pages/que-son-http-y-https.html" property="og:url"/>
+  <meta content="2026-07-17" property="article:published_time"/>
+  <meta content="2026-07-21" property="article:modified_time"/>
+  <meta content="Internet y seguridad web" property="article:section"/>
+  <meta content="summary" name="twitter:card"/>
+  <meta content="¿Qué son HTTP y HTTPS y cómo funcionan?" name="twitter:title"/>
+  <meta content="Aprende qué son HTTP y HTTPS, cómo se comunican el navegador y el servidor y por qué el cifrado protege una página web." name="twitter:description"/>
+  <link href="https://bytenova.app/pages/que-son-http-y-https.html" rel="canonical"/>
+  <link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="../css/style.css" rel="stylesheet"/>
+  <script type="application/ld+json">
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "@id": "https://bytenova.app/pages/que-son-http-y-https.html#article",
+            "headline": "¿Qué son HTTP y HTTPS y cómo funcionan?",
+            "description": "Aprende qué son HTTP y HTTPS, cómo se comunican el navegador y el servidor y por qué el cifrado es importante para una página web.",
+            "url": "https://bytenova.app/pages/que-son-http-y-https.html",
+            "datePublished": "2026-07-17",
+            "dateModified": "2026-07-21",
+            "inLanguage": "es",
+            "articleSection": "Internet y seguridad web",
+            "isAccessibleForFree": true,
+            "author": {
+                "@type": "Organization",
+                "name": "ByteNova",
+                "url": "https://bytenova.app/pages/sobre.html"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "ByteNova",
+                "url": "https://bytenova.app/"
+            },
+            "isPartOf": {
+                "@id": "https://bytenova.app/#website"
+            },
+            "mainEntityOfPage": {
+                "@id": "https://bytenova.app/pages/que-son-http-y-https.html#webpage"
+            },
+            "about": [
+                {
+                    "@type": "Thing",
+                    "name": "HTTP"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "HTTPS"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "Protocolos web"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "Seguridad web"
+                }
+            ]
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://bytenova.app/pages/que-son-http-y-https.html#webpage",
+            "url": "https://bytenova.app/pages/que-son-http-y-https.html",
+            "name": "¿Qué son HTTP y HTTPS y cómo funcionan?",
+            "description": "Aprende qué son HTTP y HTTPS, cómo se comunican el navegador y el servidor y por qué el cifrado es importante para una página web.",
+            "inLanguage": "es",
+            "datePublished": "2026-07-17",
+            "dateModified": "2026-07-21",
+            "isPartOf": {
+                "@id": "https://bytenova.app/#website"
+            },
+            "breadcrumb": {
+                "@id": "https://bytenova.app/pages/que-son-http-y-https.html#breadcrumb"
+            },
+            "mainEntity": {
+                "@id": "https://bytenova.app/pages/que-son-http-y-https.html#article"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://bytenova.app/pages/que-son-http-y-https.html#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Inicio",
+                    "item": "https://bytenova.app/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Artículos",
+                    "item": "https://bytenova.app/pages/articulos.html"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "HTTP y HTTPS",
+                    "item": "https://bytenova.app/pages/que-son-http-y-https.html"
+                }
+            ]
+        },
+        {
+            "@type": "FAQPage",
+            "@id": "https://bytenova.app/pages/que-son-http-y-https.html#faq",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "¿HTTP y HTTPS son lenguajes de programación?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. Son protocolos de comunicación utilizados para intercambiar información en la web."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿HTTPS hace que una página sea completamente segura?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. Protege la transmisión de información, pero la página también necesita código seguro, actualizaciones, permisos y buenas prácticas."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Un certificado SSL es gratuito?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Existen certificados gratuitos y de pago. Muchos servicios de hosting incluyen certificados automáticos sin costo adicional."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Qué significa el error 404?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Significa que el servidor no encontró el recurso solicitado en esa dirección."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Qué significa el error 500?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Indica que ocurrió un problema interno en el servidor al intentar procesar la solicitud."
+                    }
+                }
+            ]
+        }
+    ]
+}
+  </script>
+ </head>
+ <body>
+  <a class="saltar-contenido" href="#contenido-principal">
+   Saltar al contenido principal
+  </a>
+  <header>
+   <a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio">
+    <span aria-hidden="true" class="marca-icono">
+     &lt;/&gt;
+    </span>
+    <span class="marca-texto">
+     ByteNova
+    </span>
+   </a>
+   <button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle" type="button">
+    <span aria-hidden="true">
+     ☰
+    </span>
+   </button>
+   <nav aria-label="Navegación principal" id="menu-principal">
+    <a href="../index.html#inicio">
+     Inicio
+    </a>
+    <a href="sobre.html">
+     Sobre
+    </a>
+    <a href="../index.html#tecnologias">
+     Aprender
+    </a>
+    <a href="rutas.html">
+     Rutas
+    </a>
+    <a href="retos.html">
+     Retos
+    </a>
+    <a href="material.html">
+     Guías
+    </a>
+    <a aria-current="page" href="articulos.html">
+     Artículos
+    </a>
+    <a href="glosario.html">
+     Glosario
+    </a>
+    <a href="../index.html#contacto">
+     Contacto
+    </a>
+    <button aria-label="Activar modo oscuro" class="btn-modo" id="btn-modo" type="button">
+     <span aria-hidden="true">
+      🌙
+     </span>
+    </button>
+   </nav>
+  </header>
+  <main class="sobre articulo" id="contenido-principal">
+   <article aria-labelledby="titulo-que-son-http-y-https" class="sobre-contenido">
+    <nav aria-label="Ruta de navegación" class="migas-navegacion">
+     <a href="../index.html">
+      Inicio
+     </a>
+     <span aria-hidden="true">
+      ›
+     </span>
+     <a href="articulos.html">
+      Artículos
+     </a>
+     <span aria-hidden="true">
+      ›
+     </span>
+     <span aria-current="page">
+      HTTP y HTTPS
+     </span>
+    </nav>
+    <span class="seccion-etiqueta">
+     <span aria-hidden="true">
+      🔒
+     </span>
+     Internet y seguridad web
+    </span>
+    <h1 id="titulo-que-son-http-y-https">
+     ¿Qué son HTTP y HTTPS y cómo funcionan?
+     <span aria-hidden="true">
+      🔒
+     </span>
+    </h1>
+    <p class="articulo-meta">
+     Publicado por ByteNova ·
+     <time datetime="2026-07-17">
+      17 de julio de 2026
+     </time>
+     · Actualizado el
+     <time datetime="2026-07-21">
+      21 de julio de 2026
+     </time>
+    </p>
+    <div class="articulo-resumen">
+     <strong>
+      En este artículo aprenderás:
+     </strong>
+     <p>
+      Qué significan HTTP y HTTPS, cómo se comunican el navegador
+                    y el servidor, qué función cumple el cifrado y por qué una
+                    conexión segura es importante.
+     </p>
+    </div>
+    <div class="articulo-layout">
+     <details class="indice-articulo">
+      <summary>
+       <span aria-hidden="true">
+        📑
+       </span>
+       Contenido del artículo
+      </summary>
+      <nav aria-label="Contenido del artículo">
+       <a href="#que-es-http">
+        1. ¿Qué es HTTP?
+       </a>
+       <a href="#como-funciona">
+        2. ¿Cómo funciona?
+       </a>
+       <a href="#solicitud-respuesta">
+        3. Solicitud y respuesta
+       </a>
+       <a href="#metodos">
+        4. Métodos HTTP
+       </a>
+       <a href="#codigos">
+        5. Códigos de estado
+       </a>
+       <a href="#que-es-https">
+        6. ¿Qué es HTTPS?
+       </a>
+       <a href="#cifrado">
+        7. Cifrado y certificados
+       </a>
+       <a href="#diferencias">
+        8. Diferencias
+       </a>
+       <a href="#importancia">
+        9. ¿Por qué es importante?
+       </a>
+       <a href="#errores">
+        10. Errores frecuentes
+       </a>
+       <a href="#preguntas">
+        11. Preguntas frecuentes
+       </a>
+       <a href="#conclusion">
+        12. Conclusión
+       </a>
+      </nav>
+     </details>
+     <div aria-label="Contenido principal del artículo" class="articulo-cuerpo">
+      <p class="articulo-introduccion">
+       HTTP y HTTPS son protocolos utilizados para intercambiar
+                        información entre un navegador y el servidor donde se
+                        encuentra una página web.
+      </p>
+      <p>
+       Cada vez que visitas un sitio, el navegador realiza
+                        solicitudes y el servidor responde enviando archivos,
+                        datos o mensajes relacionados con el resultado.
+      </p>
+      <h2 id="que-es-http">
+       ¿Qué es HTTP?
+      </h2>
+      <p>
+       HTTP son las siglas de
+       <em>
+        Hypertext Transfer Protocol
+       </em>
+       , que en español
+                        significa protocolo de transferencia de hipertexto.
+      </p>
+      <p>
+       Es un conjunto de reglas que permite la comunicación
+                        entre clientes y servidores en la web.
+      </p>
+      <div class="recuadro-ejemplo">
+       <strong>
+        Ejemplo sencillo
+       </strong>
+       <p>
+        Cuando escribes una dirección en el navegador,
+                            este solicita la página al servidor. El servidor
+                            procesa la solicitud y devuelve el contenido.
+       </p>
+      </div>
+      <p>
+       El navegador suele actuar como cliente y el sistema que
+                        almacena o genera la página funciona como servidor.
+      </p>
+      <h2 id="como-funciona">
+       ¿Cómo funciona HTTP?
+      </h2>
+      <div class="pasos-articulo" role="list">
+       <div class="paso-articulo" role="listitem">
+        <span>
+         1
+        </span>
+        <div>
+         <h3>
+          El usuario abre una dirección
+         </h3>
+         <p>
+          El navegador identifica el dominio y el
+                                    recurso solicitado.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         2
+        </span>
+        <div>
+         <h3>
+          El navegador envía una solicitud
+         </h3>
+         <p>
+          La solicitud indica qué recurso necesita y
+                                    puede incluir información adicional.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         3
+        </span>
+        <div>
+         <h3>
+          El servidor procesa la petición
+         </h3>
+         <p>
+          Busca el archivo, consulta información o
+                                    ejecuta la operación correspondiente.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         4
+        </span>
+        <div>
+         <h3>
+          El servidor envía una respuesta
+         </h3>
+         <p>
+          Devuelve contenido y un código que indica
+                                    el resultado de la solicitud.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         5
+        </span>
+        <div>
+         <h3>
+          El navegador muestra la página
+         </h3>
+         <p>
+          Interpreta HTML, CSS, JavaScript, imágenes
+                                    y otros recursos recibidos.
+         </p>
+        </div>
+       </div>
+      </div>
+      <p>
+       Puedes conocer más sobre este proceso en el artículo
+                        acerca de
+       <a href="que-es-una-pagina-web.html">
+        cómo funciona una página web
+       </a>
+       .
+      </p>
+      <h2 id="solicitud-respuesta">
+       Solicitudes y respuestas HTTP
+      </h2>
+      <p>
+       Una solicitud HTTP contiene información que permite al
+                        servidor comprender qué necesita el cliente.
+      </p>
+      <p>
+       Puede incluir:
+      </p>
+      <ul class="lista-articulo">
+       <li>
+        La dirección del recurso solicitado.
+       </li>
+       <li>
+        El método que indica la operación.
+       </li>
+       <li>
+        Información sobre el navegador.
+       </li>
+       <li>
+        El tipo de contenido aceptado.
+       </li>
+       <li>
+        Datos enviados mediante un formulario.
+       </li>
+       <li>
+        Cookies o información de sesión.
+       </li>
+      </ul>
+      <p>
+       La respuesta del servidor puede incluir:
+      </p>
+      <ul class="lista-articulo">
+       <li>
+        Un código de estado.
+       </li>
+       <li>
+        El tipo de contenido enviado.
+       </li>
+       <li>
+        Archivos HTML, CSS o JavaScript.
+       </li>
+       <li>
+        Imágenes o documentos.
+       </li>
+       <li>
+        Datos en formato JSON.
+       </li>
+       <li>
+        Mensajes de error.
+       </li>
+      </ul>
+      <h2 id="metodos">
+       Métodos HTTP principales
+      </h2>
+      <p>
+       Los métodos indican qué tipo de operación quiere
+                        realizar el cliente.
+      </p>
+      <div class="lista-tarjetas-articulo">
+       <div>
+        <strong>
+         GET
+        </strong>
+        <p>
+         Solicita información o un recurso al servidor.
+        </p>
+       </div>
+       <div>
+        <strong>
+         POST
+        </strong>
+        <p>
+         Envía información para crear o procesar un recurso.
+        </p>
+       </div>
+       <div>
+        <strong>
+         PUT
+        </strong>
+        <p>
+         Sustituye o actualiza completamente un recurso.
+        </p>
+       </div>
+       <div>
+        <strong>
+         PATCH
+        </strong>
+        <p>
+         Actualiza una parte específica de un recurso.
+        </p>
+       </div>
+       <div>
+        <strong>
+         DELETE
+        </strong>
+        <p>
+         Solicita la eliminación de un recurso.
+        </p>
+       </div>
+      </div>
+      <div class="recuadro-aviso">
+       <strong>
+        El servidor debe validar cada solicitud
+       </strong>
+       <p>
+        Utilizar un método determinado no garantiza que
+                            una operación sea segura. También deben comprobarse
+                            identidad, permisos y datos recibidos.
+       </p>
+      </div>
+      <p>
+       Estos métodos también son frecuentes al trabajar con
+       <a href="que-es-una-api.html">
+        API
+       </a>
+       .
+      </p>
+      <h2 id="codigos">
+       Códigos de estado HTTP
+      </h2>
+      <p>
+       Un código de estado permite conocer el resultado de una
+                        solicitud.
+      </p>
+      <div class="lista-tarjetas-articulo">
+       <div>
+        <strong>
+         200 — Correcto
+        </strong>
+        <p>
+         La solicitud se completó correctamente.
+        </p>
+       </div>
+       <div>
+        <strong>
+         301 — Redirección permanente
+        </strong>
+        <p>
+         El recurso fue trasladado a otra dirección.
+        </p>
+       </div>
+       <div>
+        <strong>
+         400 — Solicitud incorrecta
+        </strong>
+        <p>
+         La solicitud contiene datos o un formato inválido.
+        </p>
+       </div>
+       <div>
+        <strong>
+         401 — No autenticado
+        </strong>
+        <p>
+         Es necesario identificarse para acceder.
+        </p>
+       </div>
+       <div>
+        <strong>
+         403 — Acceso prohibido
+        </strong>
+        <p>
+         El servidor comprendió la solicitud, pero no
+                                permite el acceso.
+        </p>
+       </div>
+       <div>
+        <strong>
+         404 — No encontrado
+        </strong>
+        <p>
+         El servidor no encontró el recurso solicitado.
+        </p>
+       </div>
+       <div>
+        <strong>
+         500 — Error del servidor
+        </strong>
+        <p>
+         Ocurrió un problema interno al procesar la petición.
+        </p>
+       </div>
+      </div>
+      <div class="recuadro-ejemplo">
+       <strong>
+        Ejemplo
+       </strong>
+       <p>
+        Cuando visitas un enlace hacia una página eliminada
+                            o cuya dirección está mal escrita, el servidor puede
+                            responder con el código 404.
+       </p>
+      </div>
+      <h2 id="que-es-https">
+       ¿Qué es HTTPS?
+      </h2>
+      <p>
+       HTTPS significa
+       <em>
+        Hypertext Transfer Protocol Secure
+       </em>
+       .
+                        Es la versión protegida de HTTP.
+      </p>
+      <p>
+       Utiliza cifrado para proteger la información que viaja
+                        entre el navegador y el servidor.
+      </p>
+      <pre><code>https://bytenova.app/</code></pre>
+      <p>
+       En los navegadores modernos, una conexión HTTPS suele
+                        identificarse mediante un icono de controles o seguridad
+                        junto a la dirección.
+      </p>
+      <h2 id="cifrado">
+       Cifrado y certificados digitales
+      </h2>
+      <p>
+       HTTPS utiliza protocolos de seguridad para cifrar la
+                        comunicación.
+      </p>
+      <p>
+       Esto ayuda a proteger tres aspectos importantes:
+      </p>
+      <div class="lista-tarjetas-articulo">
+       <div>
+        <strong>
+         Confidencialidad
+        </strong>
+        <p>
+         Reduce la posibilidad de que terceros puedan
+                                leer la información transmitida.
+        </p>
+       </div>
+       <div>
+        <strong>
+         Integridad
+        </strong>
+        <p>
+         Ayuda a detectar modificaciones realizadas
+                                durante la transmisión.
+        </p>
+       </div>
+       <div>
+        <strong>
+         Autenticación
+        </strong>
+        <p>
+         Permite verificar que el certificado corresponde
+                                al dominio visitado.
+        </p>
+       </div>
+      </div>
+      <p>
+       El certificado digital vincula el dominio con información
+                        criptográfica utilizada para establecer la conexión segura.
+      </p>
+      <div class="recuadro-aviso">
+       <strong>
+        El certificado debe estar vigente
+       </strong>
+       <p>
+        Un certificado vencido, mal configurado o perteneciente
+                            a otro dominio puede generar una advertencia en el
+                            navegador.
+       </p>
+      </div>
+      <h2 id="diferencias">
+       Diferencias entre HTTP y HTTPS
+      </h2>
+      <div class="lista-tarjetas-articulo">
+       <div>
+        <strong>
+         HTTP
+        </strong>
+        <p>
+         Transmite información sin la protección adicional
+                                proporcionada por el cifrado de HTTPS.
+        </p>
+       </div>
+       <div>
+        <strong>
+         HTTPS
+        </strong>
+        <p>
+         Protege la comunicación mediante cifrado y un
+                                certificado digital.
+        </p>
+       </div>
+      </div>
+      <p>
+       En una dirección, la diferencia puede observarse al inicio:
+      </p>
+      <pre><code>http://ejemplo.com
+https://ejemplo.com</code></pre>
+      <div class="recuadro-consejo">
+       <strong>
+        Utiliza siempre HTTPS
+       </strong>
+       <p>
+        Una página moderna debería redirigir automáticamente
+                            las visitas desde HTTP hacia su versión HTTPS.
+       </p>
+      </div>
+      <h2 id="importancia">
+       ¿Por qué HTTPS es importante?
+      </h2>
+      <ul class="lista-articulo lista-ventajas">
+       <li>
+        Protege formularios y datos enviados.
+       </li>
+       <li>
+        Ayuda a evitar alteraciones durante la conexión.
+       </li>
+       <li>
+        Reduce advertencias de seguridad del navegador.
+       </li>
+       <li>
+        Es necesario para varias funciones modernas.
+       </li>
+       <li>
+        Mejora la confianza del visitante.
+       </li>
+       <li>
+        Forma parte de una configuración web profesional.
+       </li>
+       <li>
+        Es especialmente importante en inicios de sesión y pagos.
+       </li>
+      </ul>
+      <p>
+       Muchos servicios de hosting, incluido Netlify, permiten
+                        activar HTTPS automáticamente al publicar una página y
+                        conectar correctamente su dominio.
+      </p>
+      <p>
+       Puedes ampliar este tema en el artículo sobre
+       <a href="que-es-dominio-y-hosting.html">
+        dominio y hosting
+       </a>
+       .
+      </p>
+      <h2>
+       ¿HTTPS significa que un sitio es confiable?
+      </h2>
+      <p>
+       No necesariamente. HTTPS protege la conexión, pero no
+                        garantiza que el contenido, la empresa o la oferta
+                        presentada sean legítimos.
+      </p>
+      <p>
+       Una página fraudulenta también puede conseguir un
+                        certificado válido.
+      </p>
+      <div class="recuadro-aviso">
+       <strong>
+        Revisa también el dominio
+       </strong>
+       <p>
+        Antes de ingresar contraseñas o datos bancarios,
+                            comprueba que la dirección corresponda exactamente
+                            al servicio que deseas utilizar.
+       </p>
+      </div>
+      <p>
+       Aprende a reconocer páginas engañosas en el artículo
+                        sobre
+       <a href="que-es-phishing.html">
+        phishing
+       </a>
+       .
+      </p>
+      <h2 id="errores">
+       Errores frecuentes
+      </h2>
+      <ul class="lista-articulo lista-riesgos">
+       <li>
+        Publicar un sitio únicamente mediante HTTP.
+       </li>
+       <li>
+        No redirigir HTTP hacia HTTPS.
+       </li>
+       <li>
+        Utilizar un certificado vencido.
+       </li>
+       <li>
+        Configurar el certificado para un dominio diferente.
+       </li>
+       <li>
+        Cargar imágenes o archivos inseguros mediante HTTP.
+       </li>
+       <li>
+        Creer que HTTPS elimina todos los riesgos.
+       </li>
+       <li>
+        Ignorar códigos de error del servidor.
+       </li>
+       <li>
+        No crear una página personalizada para el error 404.
+       </li>
+       <li>
+        Enviar contraseñas mediante conexiones inseguras.
+       </li>
+      </ul>
+      <h2 id="preguntas">
+       Preguntas frecuentes
+      </h2>
+      <section aria-labelledby="preguntas" class="faq-articulo">
+       <details>
+        <summary>
+         ¿HTTP y HTTPS son lenguajes de programación?
+        </summary>
+        <p>
+         No. Son protocolos de comunicación utilizados
+                                para intercambiar información en la web.
+        </p>
+       </details>
+       <details>
+        <summary>
+         ¿HTTPS hace que una página sea completamente segura?
+        </summary>
+        <p>
+         No. Protege la transmisión de información, pero
+                                la página también necesita código seguro,
+                                actualizaciones, permisos y buenas prácticas.
+        </p>
+       </details>
+       <details>
+        <summary>
+         ¿Un certificado SSL es gratuito?
+        </summary>
+        <p>
+         Existen certificados gratuitos y de pago.
+                                Muchos servicios de hosting incluyen certificados
+                                automáticos sin costo adicional.
+        </p>
+       </details>
+       <details>
+        <summary>
+         ¿Qué significa el error 404?
+        </summary>
+        <p>
+         Significa que el servidor no encontró el recurso
+                                solicitado en esa dirección.
+        </p>
+       </details>
+       <details>
+        <summary>
+         ¿Qué significa el error 500?
+        </summary>
+        <p>
+         Indica que ocurrió un problema interno en el
+                                servidor al intentar procesar la solicitud.
+        </p>
+       </details>
+      </section>
+      <h2 id="conclusion">
+       Conclusión
+      </h2>
+      <p>
+       HTTP permite que el navegador y el servidor intercambien
+                        solicitudes y respuestas.
+      </p>
+      <p>
+       HTTPS agrega cifrado y utiliza certificados digitales para
+                        proteger la comunicación durante la visita.
+      </p>
+      <p>
+       Toda página profesional debería utilizar HTTPS, redirigir
+                        correctamente desde HTTP y mantener una configuración de
+                        seguridad adecuada.
+      </p>
+      <section aria-label="Información del autor" class="autor-articulo">
+       <div aria-hidden="true" class="autor-icono">
+        &lt;/&gt;
+       </div>
+       <div class="autor-informacion">
+        <span>
+         Artículo creado por
+        </span>
+        <h2>
+         ByteNova
+        </h2>
+        <p>
+         Plataforma educativa dedicada a explicar
+                                programación, desarrollo web, inteligencia
+                                artificial y ciberseguridad de manera clara.
+        </p>
+        <a href="sobre.html">
+         Conoce más sobre ByteNova →
+        </a>
+       </div>
+      </section>
+      <aside aria-labelledby="titulo-articulos-relacionados" class="articulos-relacionados">
+       <h2 id="titulo-articulos-relacionados">
+        Continúa aprendiendo
+       </h2>
+       <div class="relacionados-grid">
+        <a href="que-es-dominio-y-hosting.html">
+         <span aria-hidden="true">
+          🌍
+         </span>
+         <strong>
+          Dominio y hosting
+         </strong>
+         <small>
+          Aprende cómo se publica una página en Internet.
+         </small>
+        </a>
+        <a href="que-es-una-pagina-web.html">
+         <span aria-hidden="true">
+          🌐
+         </span>
+         <strong>
+          ¿Qué es una página web?
+         </strong>
+         <small>
+          Comprende cómo funciona un sitio web.
+         </small>
+        </a>
+        <a href="que-es-phishing.html">
+         <span aria-hidden="true">
+          🎣
+         </span>
+         <strong>
+          ¿Qué es el phishing?
+         </strong>
+         <small>
+          Aprende a reconocer páginas y mensajes falsos.
+         </small>
+        </a>
+       </div>
+      </aside>
+     </div>
+    </div>
+   </article>
+  </main>
+  <footer class="footer">
+   <div class="contenedor-footer">
+    <div class="footer-logo">
+     <a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio">
+      <span aria-hidden="true" class="marca-icono">
+       &lt;/&gt;
+      </span>
+      <span class="marca-texto">
+       ByteNova
+      </span>
+     </a>
+     <p>
+      Aprende tecnología desde cero con artículos, rutas,
+                retos, guías y recursos gratuitos.
+     </p>
+    </div>
+    <nav aria-label="Enlaces de aprendizaje del pie de página" class="footer-enlaces">
+     <h3>
+      Aprender
+     </h3>
+     <a href="../index.html#tecnologias">
+      Tecnologías
+     </a>
+     <a href="rutas.html">
+      Rutas
+     </a>
+     <a href="retos.html">
+      Retos
+     </a>
+     <a href="material.html">
+      Guías
+     </a>
+     <a aria-current="page" href="articulos.html">
+      Artículos
+     </a>
+     <a href="glosario.html">
+      Glosario
+     </a>
+    </nav>
+    <nav aria-label="Enlaces informativos del pie de página" class="footer-enlaces">
+     <h3>
+      ByteNova
+     </h3>
+     <a href="sobre.html">
+      Sobre ByteNova
+     </a>
+     <a href="../index.html#contacto">
+      Contacto
+     </a>
+     <a href="privacidad.html">
+      Privacidad
+     </a>
+     <a href="terminos.html">
+      Términos
+     </a>
+     <a href="cookies.html">
+      Cookies
+     </a>
+    </nav>
+    <address class="footer-social">
+     <h3>
+      Contacto
+     </h3>
+     <p>
+      Preguntas, sugerencias o comentarios sobre nuestros
+                contenidos educativos.
+     </p>
+     <a href="mailto:bytenova339@gmail.com">
+      bytenova339@gmail.com
+     </a>
+    </address>
+   </div>
+   <div class="footer-copy">
+    <p>
+     © 2026 ByteNova. Todos los derechos reservados.
+    </p>
+    <p>
+     Creado por Dylan Estrada.
+    </p>
+   </div>
+  </footer>
+  <script src="../js/script.js">
+  </script>
+ </body>
+</html>

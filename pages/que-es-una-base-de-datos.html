@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   ¿Qué es una base de datos y cómo funciona? | ByteNova
+  </title>
+  <meta content="Aprende qué es una base de datos, cómo almacena información, cuáles son sus tipos y cómo se utiliza en páginas y aplicaciones web." name="description"/>
+  <meta content="ByteNova" name="author"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
+  <meta content="#0f172a" media="(prefers-color-scheme: dark)" name="theme-color"/>
+  <meta content="article" property="og:type"/>
+  <meta content="es_CR" property="og:locale"/>
+  <meta content="ByteNova" property="og:site_name"/>
+  <meta content="¿Qué es una base de datos y cómo funciona?" property="og:title"/>
+  <meta content="Aprende qué es una base de datos, cómo almacena información, cuáles son sus tipos y cómo se utiliza en páginas y aplicaciones web." property="og:description"/>
+  <meta content="https://bytenova.app/pages/que-es-una-base-de-datos.html" property="og:url"/>
+  <meta content="2026-07-17" property="article:published_time"/>
+  <meta content="2026-07-21" property="article:modified_time"/>
+  <meta content="Desarrollo y datos" property="article:section"/>
+  <meta content="summary" name="twitter:card"/>
+  <meta content="¿Qué es una base de datos y cómo funciona?" name="twitter:title"/>
+  <meta content="Aprende qué es una base de datos, cómo organiza la información, qué diferencias existen entre SQL y NoSQL y cómo se conecta con una aplicación." name="twitter:description"/>
+  <link href="https://bytenova.app/pages/que-es-una-base-de-datos.html" rel="canonical"/>
+  <link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="../css/style.css" rel="stylesheet"/>
+  <script type="application/ld+json">
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "@id": "https://bytenova.app/pages/que-es-una-base-de-datos.html#article",
+            "headline": "¿Qué es una base de datos y cómo funciona?",
+            "description": "Aprende qué es una base de datos, cómo almacena información, cuáles son sus tipos y cómo se utiliza en páginas y aplicaciones web.",
+            "url": "https://bytenova.app/pages/que-es-una-base-de-datos.html",
+            "datePublished": "2026-07-17",
+            "dateModified": "2026-07-21",
+            "inLanguage": "es",
+            "articleSection": "Desarrollo y datos",
+            "isAccessibleForFree": true,
+            "author": {
+                "@type": "Organization",
+                "name": "ByteNova",
+                "url": "https://bytenova.app/pages/sobre.html"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "ByteNova",
+                "url": "https://bytenova.app/"
+            },
+            "isPartOf": {
+                "@id": "https://bytenova.app/#website"
+            },
+            "mainEntityOfPage": {
+                "@id": "https://bytenova.app/pages/que-es-una-base-de-datos.html#webpage"
+            },
+            "about": [
+                {
+                    "@type": "Thing",
+                    "name": "Bases de datos"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "SQL"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "NoSQL"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "Desarrollo backend"
+                }
+            ]
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://bytenova.app/pages/que-es-una-base-de-datos.html#webpage",
+            "url": "https://bytenova.app/pages/que-es-una-base-de-datos.html",
+            "name": "¿Qué es una base de datos y cómo funciona?",
+            "description": "Aprende qué es una base de datos, cómo almacena información, cuáles son sus tipos y cómo se utiliza en páginas y aplicaciones web.",
+            "inLanguage": "es",
+            "datePublished": "2026-07-17",
+            "dateModified": "2026-07-21",
+            "isPartOf": {
+                "@id": "https://bytenova.app/#website"
+            },
+            "breadcrumb": {
+                "@id": "https://bytenova.app/pages/que-es-una-base-de-datos.html#breadcrumb"
+            },
+            "mainEntity": {
+                "@id": "https://bytenova.app/pages/que-es-una-base-de-datos.html#article"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://bytenova.app/pages/que-es-una-base-de-datos.html#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Inicio",
+                    "item": "https://bytenova.app/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Artículos",
+                    "item": "https://bytenova.app/pages/articulos.html"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Bases de datos",
+                    "item": "https://bytenova.app/pages/que-es-una-base-de-datos.html"
+                }
+            ]
+        },
+        {
+            "@type": "FAQPage",
+            "@id": "https://bytenova.app/pages/que-es-una-base-de-datos.html#faq",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "¿Una hoja de cálculo es una base de datos?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Puede almacenar información organizada, pero no sustituye necesariamente a un gestor de bases de datos diseñado para aplicaciones y consultas complejas."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Toda página web necesita una base de datos?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. Una página informativa puede funcionar sin ella. Se necesita cuando deben guardarse usuarios, mensajes, pedidos u otra información dinámica."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿SQL es un lenguaje de programación?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "SQL es un lenguaje especializado en consultar y administrar información dentro de bases de datos relacionales."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Cuál base de datos debería aprender primero?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Para comenzar puedes practicar con SQLite, MySQL o PostgreSQL. La elección depende del proyecto y las herramientas disponibles."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Puedo guardar contraseñas directamente?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No deben guardarse como texto visible. Las aplicaciones deben utilizar métodos seguros de procesamiento y protección de contraseñas."
+                    }
+                }
+            ]
+        }
+    ]
+}
+  </script>
+ </head>
+ <body>
+  <a class="saltar-contenido" href="#contenido-principal">
+   Saltar al contenido principal
+  </a>
+  <header>
+   <a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio">
+    <span aria-hidden="true" class="marca-icono">
+     &lt;/&gt;
+    </span>
+    <span class="marca-texto">
+     ByteNova
+    </span>
+   </a>
+   <button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle" type="button">
+    <span aria-hidden="true">
+     ☰
+    </span>
+   </button>
+   <nav aria-label="Navegación principal" id="menu-principal">
+    <a href="../index.html#inicio">
+     Inicio
+    </a>
+    <a href="sobre.html">
+     Sobre
+    </a>
+    <a href="../index.html#tecnologias">
+     Aprender
+    </a>
+    <a href="rutas.html">
+     Rutas
+    </a>
+    <a href="retos.html">
+     Retos
+    </a>
+    <a href="material.html">
+     Guías
+    </a>
+    <a aria-current="page" href="articulos.html">
+     Artículos
+    </a>
+    <a href="glosario.html">
+     Glosario
+    </a>
+    <a href="../index.html#contacto">
+     Contacto
+    </a>
+    <button aria-label="Activar modo oscuro" class="btn-modo" id="btn-modo" type="button">
+     <span aria-hidden="true">
+      🌙
+     </span>
+    </button>
+   </nav>
+  </header>
+  <main class="sobre articulo" id="contenido-principal">
+   <article aria-labelledby="titulo-que-es-una-base-de-datos" class="sobre-contenido">
+    <nav aria-label="Ruta de navegación" class="migas-navegacion">
+     <a href="../index.html">
+      Inicio
+     </a>
+     <span aria-hidden="true">
+      ›
+     </span>
+     <a href="articulos.html">
+      Artículos
+     </a>
+     <span aria-hidden="true">
+      ›
+     </span>
+     <span aria-current="page">
+      Bases de datos
+     </span>
+    </nav>
+    <span class="seccion-etiqueta">
+     <span aria-hidden="true">
+      🗄️
+     </span>
+     Desarrollo y datos
+    </span>
+    <h1 id="titulo-que-es-una-base-de-datos">
+     ¿Qué es una base de datos y cómo funciona?
+     <span aria-hidden="true">
+      🗄️
+     </span>
+    </h1>
+    <p class="articulo-meta">
+     Publicado por ByteNova ·
+     <time datetime="2026-07-17">
+      17 de julio de 2026
+     </time>
+     · Actualizado el
+     <time datetime="2026-07-21">
+      21 de julio de 2026
+     </time>
+    </p>
+    <div class="articulo-resumen">
+     <strong>
+      En este artículo aprenderás:
+     </strong>
+     <p>
+      Qué es una base de datos, cómo organiza la información,
+                    cuáles son sus tipos principales y cómo se conecta con
+                    una página o aplicación web.
+     </p>
+    </div>
+    <div class="articulo-layout">
+     <details class="indice-articulo">
+      <summary>
+       <span aria-hidden="true">
+        📑
+       </span>
+       Contenido del artículo
+      </summary>
+      <nav aria-label="Contenido del artículo">
+       <a href="#que-es">
+        1. ¿Qué es una base de datos?
+       </a>
+       <a href="#para-que-sirve">
+        2. ¿Para qué sirve?
+       </a>
+       <a href="#como-funciona">
+        3. ¿Cómo funciona?
+       </a>
+       <a href="#tablas">
+        4. Tablas, filas y columnas
+       </a>
+       <a href="#gestor">
+        5. Gestores de bases de datos
+       </a>
+       <a href="#sql-nosql">
+        6. SQL y NoSQL
+       </a>
+       <a href="#operaciones">
+        7. Operaciones CRUD
+       </a>
+       <a href="#aplicacion-web">
+        8. Uso en una aplicación web
+       </a>
+       <a href="#seguridad">
+        9. Seguridad y respaldos
+       </a>
+       <a href="#aprender">
+        10. Cómo comenzar
+       </a>
+       <a href="#preguntas">
+        11. Preguntas frecuentes
+       </a>
+       <a href="#conclusion">
+        12. Conclusión
+       </a>
+      </nav>
+     </details>
+     <div aria-label="Contenido principal del artículo" class="articulo-cuerpo">
+      <p class="articulo-introduccion">
+       Una base de datos es un sistema que permite almacenar,
+                        organizar, consultar y actualizar información de manera
+                        estructurada.
+      </p>
+      <p>
+       Las bases de datos se utilizan en páginas web,
+                        aplicaciones móviles, tiendas en línea, bancos,
+                        hospitales, centros educativos y prácticamente cualquier
+                        sistema que necesite conservar información.
+      </p>
+      <h2 id="que-es">
+       ¿Qué es una base de datos?
+      </h2>
+      <p>
+       Una base de datos es una colección organizada de
+                        información que puede ser consultada, modificada y
+                        administrada mediante un sistema informático.
+      </p>
+      <p>
+       En lugar de guardar todos los datos de forma desordenada,
+                        una base de datos utiliza estructuras que facilitan
+                        encontrar y relacionar la información.
+      </p>
+      <div class="recuadro-ejemplo">
+       <strong>
+        Ejemplo sencillo
+       </strong>
+       <p>
+        Una tienda en línea puede utilizar una base de datos
+                            para guardar productos, precios, usuarios, pedidos,
+                            direcciones y cantidades disponibles.
+       </p>
+      </div>
+      <h2 id="para-que-sirve">
+       ¿Para qué sirve una base de datos?
+      </h2>
+      <p>
+       Una base de datos permite conservar información para
+                        utilizarla posteriormente.
+      </p>
+      <ul class="lista-articulo lista-ventajas">
+       <li>
+        Registrar usuarios y cuentas.
+       </li>
+       <li>
+        Guardar productos y precios.
+       </li>
+       <li>
+        Administrar pedidos y reservas.
+       </li>
+       <li>
+        Organizar estudiantes y calificaciones.
+       </li>
+       <li>
+        Almacenar publicaciones y comentarios.
+       </li>
+       <li>
+        Consultar inventarios.
+       </li>
+       <li>
+        Guardar configuraciones personales.
+       </li>
+       <li>
+        Generar informes y estadísticas.
+       </li>
+       <li>
+        Actualizar información sin crear archivos nuevos.
+       </li>
+      </ul>
+      <p>
+       Su utilidad principal consiste en facilitar el acceso a
+                        grandes cantidades de datos de forma organizada.
+      </p>
+      <h2 id="como-funciona">
+       ¿Cómo funciona una base de datos?
+      </h2>
+      <p>
+       Una aplicación envía instrucciones al sistema encargado
+                        de administrar la base de datos.
+      </p>
+      <div class="pasos-articulo" role="list">
+       <div class="paso-articulo" role="listitem">
+        <span>
+         1
+        </span>
+        <div>
+         <h3>
+          La aplicación recibe información
+         </h3>
+         <p>
+          Por ejemplo, una persona completa un
+                                    formulario de registro.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         2
+        </span>
+        <div>
+         <h3>
+          El backend valida los datos
+         </h3>
+         <p>
+          El servidor comprueba que la información
+                                    tenga un formato válido y cumpla las reglas.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         3
+        </span>
+        <div>
+         <h3>
+          La información se almacena
+         </h3>
+         <p>
+          El backend solicita a la base de datos que
+                                    guarde el nuevo registro.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         4
+        </span>
+        <div>
+         <h3>
+          Los datos pueden consultarse
+         </h3>
+         <p>
+          La aplicación puede buscar o actualizar la
+                                    información cuando sea necesario.
+         </p>
+        </div>
+       </div>
+      </div>
+      <h2 id="tablas">
+       Tablas, filas y columnas
+      </h2>
+      <p>
+       En una base de datos relacional, la información suele
+                        organizarse mediante tablas.
+      </p>
+      <div class="lista-tarjetas-articulo">
+       <div>
+        <strong>
+         Tabla
+        </strong>
+        <p>
+         Agrupa información relacionada, como usuarios,
+                                productos o pedidos.
+        </p>
+       </div>
+       <div>
+        <strong>
+         Columna
+        </strong>
+        <p>
+         Representa una característica, como nombre,
+                                correo, precio o fecha.
+        </p>
+       </div>
+       <div>
+        <strong>
+         Fila
+        </strong>
+        <p>
+         Representa un registro completo dentro de la
+                                tabla.
+        </p>
+       </div>
+      </div>
+      <div class="recuadro-ejemplo">
+       <strong>
+        Ejemplo de una tabla de usuarios
+       </strong>
+       <pre><code>id | nombre        | correo
+1  | Ana Rodríguez | ana@ejemplo.com
+2  | Carlos Gómez  | carlos@ejemplo.com
+3  | Laura Mora    | laura@ejemplo.com</code></pre>
+      </div>
+      <p>
+       Cada usuario ocupa una fila y cada tipo de dato se
+                        almacena dentro de una columna.
+      </p>
+      <h2 id="gestor">
+       ¿Qué es un gestor de bases de datos?
+      </h2>
+      <p>
+       Un sistema gestor de bases de datos es un programa que
+                        permite crear, administrar y consultar bases de datos.
+      </p>
+      <p>
+       Algunos ejemplos conocidos son:
+      </p>
+      <ul class="lista-articulo">
+       <li>
+        MySQL.
+       </li>
+       <li>
+        PostgreSQL.
+       </li>
+       <li>
+        SQLite.
+       </li>
+       <li>
+        MariaDB.
+       </li>
+       <li>
+        Microsoft SQL Server.
+       </li>
+       <li>
+        Oracle Database.
+       </li>
+       <li>
+        MongoDB.
+       </li>
+      </ul>
+      <p>
+       Cada opción tiene características diferentes. La elección
+                        depende del proyecto, la cantidad de información y las
+                        necesidades del sistema.
+      </p>
+      <h2 id="sql-nosql">
+       Diferencia entre SQL y NoSQL
+      </h2>
+      <div class="lista-tarjetas-articulo">
+       <div>
+        <strong>
+         Bases de datos SQL
+        </strong>
+        <p>
+         Organizan la información principalmente mediante
+                                tablas relacionadas y utilizan un lenguaje de
+                                consulta estructurado.
+        </p>
+       </div>
+       <div>
+        <strong>
+         Bases de datos NoSQL
+        </strong>
+        <p>
+         Pueden organizar la información mediante
+                                documentos, claves y valores, gráficos u otras
+                                estructuras.
+        </p>
+       </div>
+      </div>
+      <p>
+       Las bases de datos SQL son frecuentes en sistemas que
+                        necesitan relaciones claras y operaciones estructuradas.
+      </p>
+      <p>
+       Algunas bases NoSQL pueden ser útiles cuando los datos
+                        cambian con frecuencia o requieren estructuras más
+                        flexibles.
+      </p>
+      <div class="recuadro-aviso">
+       <strong>
+        No existe una opción perfecta para todos los proyectos
+       </strong>
+       <p>
+        La elección entre SQL y NoSQL depende de los datos,
+                            las relaciones, la escala y el funcionamiento de la
+                            aplicación.
+       </p>
+      </div>
+      <h2 id="operaciones">
+       ¿Qué significa CRUD?
+      </h2>
+      <p>
+       CRUD representa cuatro operaciones básicas que pueden
+                        realizarse con la información.
+      </p>
+      <div class="lista-tarjetas-articulo">
+       <div>
+        <strong>
+         Create
+        </strong>
+        <p>
+         Crear o guardar un nuevo registro.
+        </p>
+       </div>
+       <div>
+        <strong>
+         Read
+        </strong>
+        <p>
+         Leer, buscar o consultar información.
+        </p>
+       </div>
+       <div>
+        <strong>
+         Update
+        </strong>
+        <p>
+         Actualizar un registro existente.
+        </p>
+       </div>
+       <div>
+        <strong>
+         Delete
+        </strong>
+        <p>
+         Eliminar información cuando corresponda.
+        </p>
+       </div>
+      </div>
+      <p>
+       Una aplicación de tareas, por ejemplo, permite crear,
+                        consultar, modificar y eliminar tareas.
+      </p>
+      <h2>
+       Ejemplos básicos con SQL
+      </h2>
+      <p>
+       SQL permite escribir instrucciones para trabajar con
+                        bases de datos relacionales.
+      </p>
+      <h3>
+       Crear un registro
+      </h3>
+      <pre><code>INSERT INTO usuarios (nombre, correo)
+VALUES ('Ana Rodríguez', 'ana@ejemplo.com');</code></pre>
+      <h3>
+       Consultar registros
+      </h3>
+      <pre><code>SELECT nombre, correo
+FROM usuarios;</code></pre>
+      <h3>
+       Actualizar un registro
+      </h3>
+      <pre><code>UPDATE usuarios
+SET correo = 'nuevo@ejemplo.com'
+WHERE id = 1;</code></pre>
+      <h3>
+       Eliminar un registro
+      </h3>
+      <pre><code>DELETE FROM usuarios
+WHERE id = 1;</code></pre>
+      <div class="recuadro-aviso">
+       <strong>
+        Utiliza condiciones cuidadosamente
+       </strong>
+       <p>
+        Una instrucción de actualización o eliminación sin
+                            una condición adecuada puede modificar muchos
+                            registros de forma accidental.
+       </p>
+      </div>
+      <h2 id="aplicacion-web">
+       ¿Cómo se conecta una base de datos con una aplicación web?
+      </h2>
+      <p>
+       Normalmente, el navegador no debe conectarse directamente
+                        con la base de datos.
+      </p>
+      <p>
+       La comunicación suele realizarse de esta manera:
+      </p>
+      <div class="pasos-articulo" role="list">
+       <div class="paso-articulo" role="listitem">
+        <span>
+         1
+        </span>
+        <div>
+         <h3>
+          El frontend envía una solicitud
+         </h3>
+         <p>
+          La página solicita guardar, consultar o
+                                    actualizar información.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         2
+        </span>
+        <div>
+         <h3>
+          El backend procesa la solicitud
+         </h3>
+         <p>
+          Verifica al usuario, valida los datos y
+                                    controla los permisos.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         3
+        </span>
+        <div>
+         <h3>
+          El backend consulta la base de datos
+         </h3>
+         <p>
+          El servidor ejecuta la operación necesaria.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         4
+        </span>
+        <div>
+         <h3>
+          La aplicación recibe una respuesta
+         </h3>
+         <p>
+          El resultado puede mostrarse al usuario
+                                    mediante el frontend.
+         </p>
+        </div>
+       </div>
+      </div>
+      <p>
+       Puedes ampliar este proceso en los artículos sobre
+       <a href="frontend-y-backend.html">
+        frontend y backend
+       </a>
+       y
+       <a href="que-es-una-api.html">
+        qué es una API
+       </a>
+       .
+      </p>
+      <h2 id="seguridad">
+       Seguridad y copias de respaldo
+      </h2>
+      <p>
+       Una base de datos puede guardar información sensible.
+                        Por eso necesita medidas de protección.
+      </p>
+      <ul class="lista-articulo lista-riesgos">
+       <li>
+        Controlar quién puede acceder.
+       </li>
+       <li>
+        Asignar solamente los permisos necesarios.
+       </li>
+       <li>
+        Validar los datos recibidos.
+       </li>
+       <li>
+        Proteger las contraseñas correctamente.
+       </li>
+       <li>
+        Evitar publicar credenciales de conexión.
+       </li>
+       <li>
+        Mantener actualizado el gestor.
+       </li>
+       <li>
+        Registrar actividades sospechosas.
+       </li>
+       <li>
+        Crear copias de seguridad frecuentes.
+       </li>
+       <li>
+        Probar que los respaldos puedan recuperarse.
+       </li>
+      </ul>
+      <div class="recuadro-aviso">
+       <strong>
+        Una copia de seguridad que nunca se prueba puede fallar
+       </strong>
+       <p>
+        Además de crear respaldos, es importante comprobar
+                            periódicamente que la información pueda restaurarse.
+       </p>
+      </div>
+      <h2 id="aprender">
+       ¿Cómo comenzar a aprender bases de datos?
+      </h2>
+      <div class="pasos-articulo" role="list">
+       <div class="paso-articulo" role="listitem">
+        <span>
+         1
+        </span>
+        <div>
+         <h3>
+          Comprende los datos
+         </h3>
+         <p>
+          Aprende a identificar entidades,
+                                    características y relaciones.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         2
+        </span>
+        <div>
+         <h3>
+          Practica con tablas
+         </h3>
+         <p>
+          Crea tablas sencillas para usuarios,
+                                    productos o tareas.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         3
+        </span>
+        <div>
+         <h3>
+          Aprende operaciones CRUD
+         </h3>
+         <p>
+          Practica cómo crear, consultar, actualizar
+                                    y eliminar registros.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         4
+        </span>
+        <div>
+         <h3>
+          Conecta un proyecto pequeño
+         </h3>
+         <p>
+          Construye una aplicación de tareas, notas,
+                                    inventario o reservas.
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="recuadro-consejo">
+       <strong>
+        Consejo para principiantes
+       </strong>
+       <p>
+        Empieza con una base de datos pequeña. Es más
+                            importante comprender la organización de los datos
+                            que memorizar muchas instrucciones.
+       </p>
+      </div>
+      <h2 id="preguntas">
+       Preguntas frecuentes
+      </h2>
+      <section aria-labelledby="preguntas" class="faq-articulo">
+       <details>
+        <summary>
+         ¿Una hoja de cálculo es una base de datos?
+        </summary>
+        <p>
+         Puede almacenar información organizada, pero no
+                                sustituye necesariamente a un gestor de bases de
+                                datos diseñado para aplicaciones y consultas
+                                complejas.
+        </p>
+       </details>
+       <details>
+        <summary>
+         ¿Toda página web necesita una base de datos?
+        </summary>
+        <p>
+         No. Una página informativa puede funcionar sin
+                                ella. Se necesita cuando deben guardarse usuarios,
+                                mensajes, pedidos u otra información dinámica.
+        </p>
+       </details>
+       <details>
+        <summary>
+         ¿SQL es un lenguaje de programación?
+        </summary>
+        <p>
+         SQL es un lenguaje especializado en consultar y
+                                administrar información dentro de bases de datos
+                                relacionales.
+        </p>
+       </details>
+       <details>
+        <summary>
+         ¿Cuál base de datos debería aprender primero?
+        </summary>
+        <p>
+         Para comenzar puedes practicar con SQLite,
+                                MySQL o PostgreSQL. La elección depende del
+                                proyecto y las herramientas disponibles.
+        </p>
+       </details>
+       <details>
+        <summary>
+         ¿Puedo guardar contraseñas directamente?
+        </summary>
+        <p>
+         No deben guardarse como texto visible. Las
+                                aplicaciones deben utilizar métodos seguros de
+                                procesamiento y protección de contraseñas.
+        </p>
+       </details>
+      </section>
+      <h2 id="conclusion">
+       Conclusión
+      </h2>
+      <p>
+       Una base de datos permite almacenar y organizar
+                        información para que una aplicación pueda consultarla
+                        y modificarla.
+      </p>
+      <p>
+       Las bases de datos pueden utilizar tablas, documentos u
+                        otras estructuras, dependiendo de las necesidades del
+                        proyecto.
+      </p>
+      <p>
+       Comprender tablas, operaciones CRUD, seguridad y
+                        comunicación con el backend es un paso importante para
+                        desarrollar aplicaciones web completas.
+      </p>
+      <section aria-label="Información del autor" class="autor-articulo">
+       <div aria-hidden="true" class="autor-icono">
+        &lt;/&gt;
+       </div>
+       <div class="autor-informacion">
+        <span>
+         Artículo creado por
+        </span>
+        <h2>
+         ByteNova
+        </h2>
+        <p>
+         Plataforma educativa dedicada a explicar
+                                programación, desarrollo web, inteligencia
+                                artificial y ciberseguridad de manera clara.
+        </p>
+        <a href="sobre.html">
+         Conoce más sobre ByteNova →
+        </a>
+       </div>
+      </section>
+      <aside aria-labelledby="titulo-articulos-relacionados" class="articulos-relacionados">
+       <h2 id="titulo-articulos-relacionados">
+        Continúa aprendiendo
+       </h2>
+       <div class="relacionados-grid">
+        <a href="frontend-y-backend.html">
+         <span aria-hidden="true">
+          🌐
+         </span>
+         <strong>
+          Frontend y backend
+         </strong>
+         <small>
+          Comprende las partes principales de una aplicación.
+         </small>
+        </a>
+        <a href="que-es-una-api.html">
+         <span aria-hidden="true">
+          🔗
+         </span>
+         <strong>
+          ¿Qué es una API?
+         </strong>
+         <small>
+          Aprende cómo se comunican diferentes sistemas.
+         </small>
+        </a>
+        <a href="que-es-programacion.html">
+         <span aria-hidden="true">
+          💻
+         </span>
+         <strong>
+          ¿Qué es la programación?
+         </strong>
+         <small>
+          Descubre cómo se crean instrucciones y programas.
+         </small>
+        </a>
+       </div>
+      </aside>
+     </div>
+    </div>
+   </article>
+  </main>
+  <footer class="footer">
+   <div class="contenedor-footer">
+    <div class="footer-logo">
+     <a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio">
+      <span aria-hidden="true" class="marca-icono">
+       &lt;/&gt;
+      </span>
+      <span class="marca-texto">
+       ByteNova
+      </span>
+     </a>
+     <p>
+      Aprende tecnología desde cero con artículos, rutas,
+                retos, guías y recursos gratuitos.
+     </p>
+    </div>
+    <nav aria-label="Enlaces de aprendizaje del pie de página" class="footer-enlaces">
+     <h3>
+      Aprender
+     </h3>
+     <a href="../index.html#tecnologias">
+      Tecnologías
+     </a>
+     <a href="rutas.html">
+      Rutas
+     </a>
+     <a href="retos.html">
+      Retos
+     </a>
+     <a href="material.html">
+      Guías
+     </a>
+     <a aria-current="page" href="articulos.html">
+      Artículos
+     </a>
+     <a href="glosario.html">
+      Glosario
+     </a>
+    </nav>
+    <nav aria-label="Enlaces informativos del pie de página" class="footer-enlaces">
+     <h3>
+      ByteNova
+     </h3>
+     <a href="sobre.html">
+      Sobre ByteNova
+     </a>
+     <a href="../index.html#contacto">
+      Contacto
+     </a>
+     <a href="privacidad.html">
+      Privacidad
+     </a>
+     <a href="terminos.html">
+      Términos
+     </a>
+     <a href="cookies.html">
+      Cookies
+     </a>
+    </nav>
+    <address class="footer-social">
+     <h3>
+      Contacto
+     </h3>
+     <p>
+      Preguntas, sugerencias o comentarios sobre nuestros
+                contenidos educativos.
+     </p>
+     <a href="mailto:bytenova339@gmail.com">
+      bytenova339@gmail.com
+     </a>
+    </address>
+   </div>
+   <div class="footer-copy">
+    <p>
+     © 2026 ByteNova. Todos los derechos reservados.
+    </p>
+    <p>
+     Creado por Dylan Estrada.
+    </p>
+   </div>
+  </footer>
+  <script src="../js/script.js">
+  </script>
+ </body>
+</html>

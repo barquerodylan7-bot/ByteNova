@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Guía de Internet y redes para principiantes | ByteNova</title>
+
+    <meta
+        name="description"
+        content="Aprende cómo funciona Internet y conoce los fundamentos de redes, direcciones IP, DNS, TCP/IP, servidores, routers, HTTP, HTTPS y seguridad."
+    >
+
+    <meta name="author" content="ByteNova">
+    <meta name="robots" content="index, follow">
+
+    <meta
+        name="theme-color"
+        content="#ffffff"
+        media="(prefers-color-scheme: light)"
+    >
+
+    <meta
+        name="theme-color"
+        content="#0f172a"
+        media="(prefers-color-scheme: dark)"
+    >
+
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="es_CR">
+    <meta property="og:site_name" content="ByteNova">
+
+    <meta
+        property="og:title"
+        content="Guía de Internet y redes para principiantes"
+    >
+
+    <meta
+        property="og:description"
+        content="Comprende Internet, redes, direcciones IP, DNS, TCP/IP, servidores, routers, HTTP, HTTPS y seguridad básica."
+    >
+
+    <meta
+        property="og:url"
+        content="https://bytenova.app/pages/guia-internet-redes.html"
+    >
+
+    <meta
+        property="article:published_time"
+        content="2026-07-19"
+    >
+
+    <meta
+        property="article:modified_time"
+        content="2026-07-20"
+    >
+
+    <meta
+        property="article:section"
+        content="Internet y redes"
+    >
+
+    <meta name="twitter:card" content="summary">
+
+    <meta
+        name="twitter:title"
+        content="Guía de Internet y redes para principiantes"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Aprende cómo funcionan Internet y las redes informáticas desde cero."
+    >
+
+    <link
+        rel="canonical"
+        href="https://bytenova.app/pages/guia-internet-redes.html"
+    >
+
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="../images/favicon.svg"
+    >
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "LearningResource",
+                "@id": "https://bytenova.app/pages/guia-internet-redes.html#learning-resource",
+                "name": "Guía de Internet y redes para principiantes",
+                "description": "Guía gratuita para comprender cómo funciona Internet y conocer los fundamentos de redes informáticas.",
+                "url": "https://bytenova.app/pages/guia-internet-redes.html",
+                "datePublished": "2026-07-19",
+                "dateModified": "2026-07-20",
+                "inLanguage": "es",
+                "learningResourceType": "Guide",
+                "educationalLevel": "Beginner",
+                "isAccessibleForFree": true,
+                "author": {
+                    "@type": "Organization",
+                    "name": "ByteNova",
+                    "url": "https://bytenova.app/pages/sobre.html"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "ByteNova",
+                    "url": "https://bytenova.app/"
+                },
+                "isPartOf": {
+                    "@id": "https://bytenova.app/#website"
+                },
+                "mainEntityOfPage": {
+                    "@id": "https://bytenova.app/pages/guia-internet-redes.html#webpage"
+                },
+                "about": [
+                    {
+                        "@type": "Thing",
+                        "name": "Internet"
+                    },
+                    {
+                        "@type": "Thing",
+                        "name": "Redes informáticas"
+                    },
+                    {
+                        "@type": "Thing",
+                        "name": "TCP/IP"
+                    },
+                    {
+                        "@type": "Thing",
+                        "name": "DNS"
+                    }
+                ]
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://bytenova.app/pages/guia-internet-redes.html#webpage",
+                "url": "https://bytenova.app/pages/guia-internet-redes.html",
+                "name": "Guía de Internet y redes para principiantes",
+                "description": "Guía sobre Internet, redes informáticas, IP, DNS, TCP/IP, servidores, URL, HTTP, HTTPS y seguridad.",
+                "inLanguage": "es",
+                "datePublished": "2026-07-19",
+                "dateModified": "2026-07-20",
+                "isPartOf": {
+                    "@id": "https://bytenova.app/#website"
+                },
+                "breadcrumb": {
+                    "@id": "https://bytenova.app/pages/guia-internet-redes.html#breadcrumb"
+                },
+                "mainEntity": {
+                    "@id": "https://bytenova.app/pages/guia-internet-redes.html#learning-resource"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://bytenova.app/pages/guia-internet-redes.html#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Inicio",
+                        "item": "https://bytenova.app/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Guías",
+                        "item": "https://bytenova.app/pages/material.html"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Internet y redes",
+                        "item": "https://bytenova.app/pages/guia-internet-redes.html"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+
+<body>
+
+    <a
+        class="saltar-contenido"
+        href="#contenido-principal"
+    >
+        Saltar al contenido principal
+    </a>
+
+    <header>
+
+        <a
+            href="../index.html#inicio"
+            class="marca-bytenova"
+            aria-label="Ir al inicio de ByteNova"
+        >
+            <span
+                class="marca-icono"
+                aria-hidden="true"
+            >
+                &lt;/&gt;
+            </span>
+
+            <span class="marca-texto">
+                ByteNova
+            </span>
+        </a>
+
+        <button
+            type="button"
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="menu-principal"
+        >
+            <span aria-hidden="true">☰</span>
+        </button>
+
+        <nav
+            id="menu-principal"
+            aria-label="Navegación principal"
+        >
+            <a href="../index.html#inicio">Inicio</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="../index.html#tecnologias">Aprender</a>
+            <a href="rutas.html">Rutas</a>
+            <a href="retos.html">Retos</a>
+
+            <a
+                href="material.html"
+                aria-current="page"
+            >
+                Guías
+            </a>
+
+            <a href="articulos.html">Artículos</a>
+            <a href="glosario.html">Glosario</a>
+            <a href="../index.html#contacto">Contacto</a>
+
+            <button
+                type="button"
+                id="btn-modo"
+                class="btn-modo"
+                aria-label="Activar modo oscuro"
+            >
+                <span aria-hidden="true">🌙</span>
+            </button>
+        </nav>
+
+    </header>
+
+    <main
+        class="sobre articulo"
+        id="contenido-principal"
+    >
+
+        <article
+            class="sobre-contenido"
+            aria-labelledby="titulo-guia-internet-redes"
+        >
+
+            <nav
+                class="migas-navegacion"
+                aria-label="Ruta de navegación"
+            >
+                <a href="../index.html">Inicio</a>
+                <span aria-hidden="true">›</span>
+
+                <a href="material.html">
+                    Guías
+                </a>
+
+                <span aria-hidden="true">›</span>
+
+                <span aria-current="page">
+                    Internet y redes
+                </span>
+            </nav>
+
+            <span class="seccion-etiqueta">
+                <span aria-hidden="true">🌐</span>
+                Guía de redes y sistemas
+            </span>
+
+            <h1 id="titulo-guia-internet-redes">
+                Internet y redes para principiantes
+                <span aria-hidden="true">🌐</span>
+            </h1>
+
+            <p class="articulo-meta">
+                Publicado por ByteNova ·
+
+                <time datetime="2026-07-19">
+                    19 de julio de 2026
+                </time>
+
+                · Actualizado el
+
+                <time datetime="2026-07-20">
+                    20 de julio de 2026
+                </time>
+            </p>
+
+            <div class="articulo-resumen">
+
+                <strong>En esta guía aprenderás:</strong>
+
+                <p>
+                    Cómo se conectan los dispositivos, qué función cumplen las
+                    direcciones IP, el DNS, los routers, los servidores y los
+                    protocolos que permiten navegar por Internet.
+                </p>
+
+            </div>
+
+            <div class="articulo-layout">
+
+                <details class="indice-articulo">
+
+                    <summary>
+                        <span aria-hidden="true">📑</span>
+                        Contenido de la guía
+                    </summary>
+
+                    <nav aria-label="Contenido de la guía">
+                        <a href="#que-es-internet">1. ¿Qué es Internet?</a>
+                        <a href="#red-informatica">2. ¿Qué es una red informática?</a>
+                        <a href="#tipos-redes">3. Tipos de redes</a>
+                        <a href="#dispositivos">4. Dispositivos de red</a>
+                        <a href="#direccion-ip">5. Direcciones IP</a>
+                        <a href="#dns">6. Sistema DNS</a>
+                        <a href="#tcp-ip">7. TCP/IP</a>
+                        <a href="#servidores">8. Servidores y clientes</a>
+                        <a href="#url">9. Direcciones URL</a>
+                        <a href="#http-https">10. HTTP y HTTPS</a>
+                        <a href="#viaje-pagina">11. Cómo llega una página al navegador</a>
+                        <a href="#wifi">12. Redes Wi-Fi</a>
+                        <a href="#seguridad">13. Seguridad básica</a>
+                        <a href="#diagnostico">14. Diagnóstico de conexión</a>
+                        <a href="#practicas">15. Ejercicios</a>
+                        <a href="#conclusion">16. Conclusión</a>
+                    </nav>
+
+                </details>
+
+                <div
+                    class="articulo-cuerpo"
+                    aria-label="Contenido principal de la guía"
+                >
+
+                    <p class="articulo-introduccion">
+                        Internet es una enorme red formada por dispositivos,
+                        cables, servidores, routers y protocolos que permiten
+                        intercambiar información a escala mundial.
+                    </p>
+
+                    <p>
+                        Cuando visitas una página web, varios sistemas trabajan
+                        juntos en pocos segundos para localizar el sitio,
+                        solicitar sus archivos y mostrarlos en el navegador.
+                    </p>
+
+                    <h2 id="que-es-internet">
+                        ¿Qué es Internet?
+                    </h2>
+
+                    <p>
+                        Internet es una red mundial de redes informáticas
+                        conectadas entre sí.
+                    </p>
+
+                    <p>
+                        Permite que computadoras, teléfonos, servidores y otros
+                        dispositivos compartan información utilizando reglas
+                        de comunicación comunes.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <strong>Ejemplo sencillo</strong>
+
+                        <p>
+                            Cuando envías un mensaje, tu dispositivo transmite
+                            datos por una red hasta llegar al servicio que los
+                            entrega al destinatario.
+                        </p>
+
+                    </div>
+
+                    <p>Internet permite utilizar servicios como:</p>
+
+                    <ul class="lista-articulo lista-ventajas">
+                        <li>Páginas y aplicaciones web.</li>
+                        <li>Correo electrónico.</li>
+                        <li>Mensajería instantánea.</li>
+                        <li>Videollamadas.</li>
+                        <li>Almacenamiento en la nube.</li>
+                        <li>Transmisión de audio y video.</li>
+                        <li>Juegos en línea.</li>
+                        <li>Servicios financieros.</li>
+                    </ul>
+
+                    <h2 id="red-informatica">
+                        ¿Qué es una red informática?
+                    </h2>
+
+                    <p>
+                        Una red informática es un conjunto de dispositivos
+                        conectados para intercambiar datos y compartir recursos.
+                    </p>
+
+                    <p>Una red puede incluir:</p>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+                            <strong>Computadoras</strong>
+                            <p>Envían, reciben y procesan información.</p>
+                        </div>
+
+                        <div>
+                            <strong>Teléfonos</strong>
+
+                            <p>
+                                Acceden a servicios mediante Wi-Fi o datos
+                                móviles.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>Impresoras</strong>
+
+                            <p>
+                                Pueden compartirse entre varios usuarios.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>Servidores</strong>
+
+                            <p>
+                                Ofrecen páginas, archivos, aplicaciones y otros
+                                servicios.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Amplía este tema en:
+                        <a href="que-es-una-red-informatica.html">
+                            ¿Qué es una red informática?
+                        </a>
+                    </p>
+
+                    <h2 id="tipos-redes">
+                        Tipos de redes
+                    </h2>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+                            <strong>LAN</strong>
+
+                            <p>
+                                Red local que conecta dispositivos dentro de una
+                                casa, oficina o edificio.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>WLAN</strong>
+
+                            <p>
+                                Red local inalámbrica que normalmente utiliza
+                                Wi-Fi.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>WAN</strong>
+
+                            <p>
+                                Red extensa que conecta ubicaciones separadas
+                                por grandes distancias.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>PAN</strong>
+
+                            <p>
+                                Red personal de corto alcance, como una conexión
+                                Bluetooth.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="recuadro-consejo">
+
+                        <strong>Internet es una red de redes</strong>
+
+                        <p>
+                            Conecta muchas redes locales y extensas mediante
+                            proveedores, cables terrestres, fibra óptica y otros
+                            sistemas de comunicación.
+                        </p>
+
+                    </div>
+
+                    <h2 id="dispositivos">
+                        Dispositivos principales de una red
+                    </h2>
+
+                    <h3>Router</h3>
+
+                    <p>
+                        El router dirige la información entre diferentes redes.
+                        En una casa, normalmente conecta la red local con el
+                        proveedor de Internet.
+                    </p>
+
+                    <h3>Switch</h3>
+
+                    <p>
+                        Un switch conecta varios dispositivos dentro de una
+                        misma red local y dirige los datos hacia el destino
+                        correspondiente.
+                    </p>
+
+                    <h3>Módem</h3>
+
+                    <p>
+                        El módem establece la comunicación con la tecnología
+                        utilizada por el proveedor de Internet.
+                    </p>
+
+                    <h3>Punto de acceso</h3>
+
+                    <p>
+                        Permite que dispositivos inalámbricos se conecten a una
+                        red mediante Wi-Fi.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <strong>En equipos domésticos</strong>
+
+                        <p>
+                            Un mismo aparato puede integrar módem, router,
+                            switch y punto de acceso inalámbrico.
+                        </p>
+
+                    </div>
+
+                    <h2 id="direccion-ip">
+                        ¿Qué es una dirección IP?
+                    </h2>
+
+                    <p>
+                        Una dirección IP identifica un dispositivo o interfaz
+                        dentro de una red.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <strong>Ejemplo de IPv4</strong>
+
+                        <pre><code>192.168.1.25</code></pre>
+
+                    </div>
+
+                    <div class="recuadro-ejemplo">
+
+                        <strong>Ejemplo simplificado de IPv6</strong>
+
+                        <pre><code>2001:db8::25</code></pre>
+
+                    </div>
+
+                    <h3>Dirección pública</h3>
+
+                    <p>
+                        Identifica una conexión o servicio frente a otras redes
+                        de Internet.
+                    </p>
+
+                    <h3>Dirección privada</h3>
+
+                    <p>
+                        Se utiliza dentro de redes locales y normalmente no es
+                        accesible directamente desde Internet.
+                    </p>
+
+                    <div class="recuadro-consejo">
+
+                        <strong>Las direcciones pueden cambiar</strong>
+
+                        <p>
+                            Muchos dispositivos reciben una dirección
+                            automáticamente durante un tiempo determinado.
+                        </p>
+
+                    </div>
+
+                    <p>
+                        Continúa con:
+                        <a href="que-es-una-direccion-ip.html">
+                            ¿Qué es una dirección IP?
+                        </a>
+                    </p>
+
+                    <h2 id="dns">
+                        ¿Qué es el DNS?
+                    </h2>
+
+                    <p>
+                        El DNS permite utilizar nombres fáciles de recordar en
+                        lugar de escribir direcciones IP.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <strong>Nombre de dominio</strong>
+
+                        <pre><code>bytenova.app</code></pre>
+
+                    </div>
+
+                    <p>
+                        Cuando escribes un dominio, el sistema DNS busca la
+                        dirección necesaria para localizar el servicio.
+                    </p>
+
+                    <div
+                        class="pasos-articulo"
+                        role="list"
+                    >
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+                            <span>1</span>
+
+                            <div>
+                                <h3>Escribes el dominio</h3>
+
+                                <p>
+                                    El navegador recibe el nombre del sitio.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+                            <span>2</span>
+
+                            <div>
+                                <h3>Se consulta el DNS</h3>
+
+                                <p>
+                                    El sistema busca la dirección relacionada.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+                            <span>3</span>
+
+                            <div>
+                                <h3>Se obtiene una dirección</h3>
+
+                                <p>
+                                    El navegador puede localizar el servidor.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Aprende más en:
+                        <a href="que-es-dns.html">
+                            ¿Qué es el DNS?
+                        </a>
+                    </p>
+
+                    <h2 id="tcp-ip">
+                        ¿Qué es TCP/IP?
+                    </h2>
+
+                    <p>
+                        TCP/IP es un conjunto de protocolos utilizado para
+                        organizar la comunicación entre dispositivos.
+                    </p>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+                            <strong>IP</strong>
+
+                            <p>
+                                Ayuda a identificar el origen, el destino y la
+                                ruta de los paquetes.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>TCP</strong>
+
+                            <p>
+                                Ayuda a entregar los datos correctamente y en el
+                                orden esperado.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <p>
+                        La información puede dividirse en pequeñas unidades
+                        llamadas paquetes.
+                    </p>
+
+                    <p>
+                        Cada paquete puede viajar por diferentes rutas antes de
+                        llegar al destino y ser reconstruido.
+                    </p>
+
+                    <p>
+                        Continúa con:
+                        <a href="que-es-tcp-ip.html">
+                            ¿Qué es TCP/IP?
+                        </a>
+                    </p>
+
+                    <h2 id="servidores">
+                        Clientes y servidores
+                    </h2>
+
+                    <p>
+                        En muchos servicios de Internet existe una relación
+                        entre un cliente y un servidor.
+                    </p>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+                            <strong>Cliente</strong>
+
+                            <p>
+                                Solicita información o una función. Un navegador
+                                puede actuar como cliente.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>Servidor</strong>
+
+                            <p>
+                                Recibe la solicitud, la procesa y devuelve una
+                                respuesta.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="recuadro-ejemplo">
+
+                        <strong>Ejemplo</strong>
+
+                        <p>
+                            El navegador solicita una página y el servidor
+                            responde enviando los archivos necesarios.
+                        </p>
+
+                    </div>
+
+                    <p>
+                        Consulta:
+                        <a href="que-es-un-servidor.html">
+                            ¿Qué es un servidor?
+                        </a>
+                    </p>
+
+                    <h2 id="url">
+                        ¿Qué es una URL?
+                    </h2>
+
+                    <p>
+                        Una URL es la dirección utilizada para localizar un
+                        recurso dentro de la web.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>https://bytenova.app/pages/articulos.html</code></pre>
+
+                    </div>
+
+                    <h3>Partes principales</h3>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+                            <strong>Protocolo</strong>
+
+                            <p>
+                                En el ejemplo es <code>https</code>.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>Dominio</strong>
+
+                            <p>
+                                En el ejemplo es
+                                <code>bytenova.app</code>.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>Ruta</strong>
+
+                            <p>
+                                Indica el recurso solicitado dentro del sitio.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Aprende más en:
+                        <a href="que-es-una-url.html">
+                            ¿Qué es una URL?
+                        </a>
+                    </p>
+
+                    <h2 id="http-https">
+                        HTTP y HTTPS
+                    </h2>
+
+                    <p>
+                        HTTP es un protocolo utilizado para intercambiar
+                        recursos entre navegadores y servidores web.
+                    </p>
+
+                    <p>
+                        HTTPS agrega protección mediante cifrado durante la
+                        comunicación.
+                    </p>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+                            <strong>HTTP</strong>
+
+                            <p>
+                                Transfiere solicitudes y respuestas web.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>HTTPS</strong>
+
+                            <p>
+                                Protege la comunicación frente a observación y
+                                modificaciones durante el tránsito.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="recuadro-aviso">
+
+                        <strong>
+                            HTTPS no garantiza que el sitio sea confiable
+                        </strong>
+
+                        <p>
+                            Una página fraudulenta también puede utilizar una
+                            conexión cifrada. Siempre debes revisar el dominio y
+                            el contenido.
+                        </p>
+
+                    </div>
+
+                    <p>
+                        Continúa con:
+                        <a href="que-son-http-y-https.html">
+                            ¿Qué son HTTP y HTTPS?
+                        </a>
+                    </p>
+
+                    <h2 id="viaje-pagina">
+                        Cómo llega una página hasta el navegador
+                    </h2>
+
+                    <div
+                        class="pasos-articulo"
+                        role="list"
+                    >
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+                            <span>1</span>
+
+                            <div>
+                                <h3>Escribes una dirección</h3>
+                                <p>El navegador interpreta la URL.</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+                            <span>2</span>
+
+                            <div>
+                                <h3>Se consulta el DNS</h3>
+
+                                <p>
+                                    Se busca la dirección asociada al dominio.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+                            <span>3</span>
+
+                            <div>
+                                <h3>Se establece la conexión</h3>
+
+                                <p>
+                                    El cliente se comunica con el servidor.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+                            <span>4</span>
+
+                            <div>
+                                <h3>Se envía una solicitud</h3>
+
+                                <p>
+                                    El navegador solicita el recurso mediante
+                                    HTTP o HTTPS.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+                            <span>5</span>
+
+                            <div>
+                                <h3>El servidor responde</h3>
+
+                                <p>
+                                    Envía HTML, CSS, JavaScript, imágenes u
+                                    otros archivos.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+                            <span>6</span>
+
+                            <div>
+                                <h3>El navegador construye la página</h3>
+
+                                <p>
+                                    Interpreta los archivos y muestra el
+                                    resultado.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h2 id="wifi">
+                        ¿Cómo funciona una red Wi-Fi?
+                    </h2>
+
+                    <p>
+                        Wi-Fi permite conectar dispositivos de forma
+                        inalámbrica dentro del alcance de un punto de acceso.
+                    </p>
+
+                    <p>
+                        El dispositivo envía y recibe datos mediante ondas de
+                        radio en lugar de utilizar un cable directo.
+                    </p>
+
+                    <h3>Factores que afectan la conexión</h3>
+
+                    <ul class="lista-articulo lista-riesgos">
+                        <li>Distancia respecto al punto de acceso.</li>
+                        <li>Paredes y obstáculos.</li>
+                        <li>Interferencia de otros equipos.</li>
+                        <li>Cantidad de dispositivos conectados.</li>
+                        <li>Capacidad del router.</li>
+                        <li>Velocidad contratada con el proveedor.</li>
+                        <li>Estado del dispositivo.</li>
+                    </ul>
+
+                    <div class="recuadro-consejo">
+
+                        <strong>
+                            Wi-Fi y velocidad de Internet no son lo mismo
+                        </strong>
+
+                        <p>
+                            Puedes tener un buen servicio contratado, pero una
+                            señal inalámbrica débil dentro de la casa.
+                        </p>
+
+                    </div>
+
+                    <h2 id="seguridad">
+                        Seguridad básica de una red
+                    </h2>
+
+                    <ul class="lista-articulo lista-ventajas">
+                        <li>Cambia la contraseña predeterminada del router.</li>
+                        <li>Utiliza una contraseña Wi-Fi larga y única.</li>
+                        <li>Mantén actualizado el firmware.</li>
+                        <li>Utiliza un cifrado moderno disponible.</li>
+                        <li>Desactiva funciones que no necesites.</li>
+                        <li>No compartas la contraseña públicamente.</li>
+                        <li>Revisa los dispositivos conectados.</li>
+                        <li>Crea una red separada para invitados.</li>
+                    </ul>
+
+                    <h3>Firewall</h3>
+
+                    <p>
+                        Un firewall controla conexiones según reglas de
+                        seguridad.
+                    </p>
+
+                    <p>
+                        Consulta:
+                        <a href="que-es-un-firewall.html">
+                            ¿Qué es un firewall?
+                        </a>
+                    </p>
+
+                    <h3>VPN</h3>
+
+                    <p>
+                        Una VPN puede crear una conexión cifrada entre el
+                        dispositivo y un servicio remoto.
+                    </p>
+
+                    <p>
+                        No evita contraseñas débiles, malware ni páginas falsas.
+                    </p>
+
+                    <p>
+                        Consulta:
+                        <a href="que-es-una-vpn.html">
+                            ¿Qué es una VPN?
+                        </a>
+                    </p>
+
+                    <h2 id="diagnostico">
+                        Diagnóstico básico de una conexión
+                    </h2>
+
+                    <p>
+                        Cuando Internet no funciona, comprueba el problema de
+                        forma ordenada.
+                    </p>
+
+                    <div
+                        class="pasos-articulo"
+                        role="list"
+                    >
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+                            <span>1</span>
+
+                            <div>
+                                <h3>Revisa la conexión física</h3>
+
+                                <p>
+                                    Comprueba cables, luces y alimentación de
+                                    los equipos.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+                            <span>2</span>
+
+                            <div>
+                                <h3>Prueba otro dispositivo</h3>
+
+                                <p>
+                                    Ayuda a determinar si el problema es general
+                                    o solamente afecta a un equipo.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+                            <span>3</span>
+
+                            <div>
+                                <h3>Reinicia la conexión</h3>
+
+                                <p>
+                                    Desconecta y vuelve a conectar el Wi-Fi o el
+                                    cable.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+                            <span>4</span>
+
+                            <div>
+                                <h3>Comprueba otros sitios</h3>
+
+                                <p>
+                                    El problema podría afectar solamente a un
+                                    servicio.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+                            <span>5</span>
+
+                            <div>
+                                <h3>Reinicia el router</h3>
+
+                                <p>
+                                    Espera unos segundos antes de volver a
+                                    encenderlo.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+                            <span>6</span>
+
+                            <div>
+                                <h3>Contacta al proveedor</h3>
+
+                                <p>
+                                    Hazlo cuando la conexión general continúe
+                                    sin funcionar.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h3>Comandos básicos de diagnóstico</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <strong>
+                            Consultar configuración en Windows
+                        </strong>
+
+                        <pre><code>ipconfig</code></pre>
+
+                    </div>
+
+                    <div class="recuadro-ejemplo">
+
+                        <strong>
+                            Consultar interfaces en Linux
+                        </strong>
+
+                        <pre><code>ip address</code></pre>
+
+                    </div>
+
+                    <div class="recuadro-ejemplo">
+
+                        <strong>Comprobar comunicación</strong>
+
+                        <pre><code>ping bytenova.app</code></pre>
+
+                    </div>
+
+                    <div class="recuadro-aviso">
+
+                        <strong>
+                            Un resultado fallido no identifica siempre la causa
+                        </strong>
+
+                        <p>
+                            Algunos servidores bloquean ciertas pruebas y una
+                            falla puede relacionarse con DNS, el proveedor, el
+                            dispositivo o la red local.
+                        </p>
+
+                    </div>
+
+                    <h2 id="practicas">
+                        Ejercicios para practicar
+                    </h2>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+                            <strong>Dibuja tu red</strong>
+
+                            <p>
+                                Representa el router y los dispositivos
+                                conectados en tu hogar.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>Analiza una URL</strong>
+
+                            <p>
+                                Identifica protocolo, dominio y ruta.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>Consulta tu IP local</strong>
+
+                            <p>
+                                Utiliza las opciones del sistema sin publicar
+                                el resultado.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>Revisa el dominio</strong>
+
+                            <p>
+                                Comprueba cuidadosamente el dominio de tres
+                                páginas conocidas.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>Prueba la conexión</strong>
+
+                            <p>
+                                Utiliza un comando de diagnóstico y analiza su
+                                resultado.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>Audita el Wi-Fi</strong>
+
+                            <p>
+                                Revisa contraseña, actualización y dispositivos
+                                conectados.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <h2 id="conclusion">
+                        Conclusión
+                    </h2>
+
+                    <p>
+                        Internet funciona gracias a redes, dispositivos,
+                        direcciones y protocolos que permiten localizar y
+                        transportar información.
+                    </p>
+
+                    <p>
+                        Comprender conceptos como IP, DNS, TCP/IP, servidores,
+                        URL y HTTPS ayuda a utilizar la tecnología con mayor
+                        seguridad y resolver problemas básicos de conexión.
+                    </p>
+
+                    <p>
+                        Continúa practicando mediante la ruta de redes y sistemas
+                        de ByteNova.
+                    </p>
+
+                    <section
+                        class="autor-articulo"
+                        aria-label="Información del autor"
+                    >
+
+                        <div
+                            class="autor-icono"
+                            aria-hidden="true"
+                        >
+                            &lt;/&gt;
+                        </div>
+
+                        <div class="autor-informacion">
+
+                            <span>
+                                Guía creada por
+                            </span>
+
+                            <h2>ByteNova</h2>
+
+                            <p>
+                                Plataforma educativa dedicada a explicar
+                                programación, desarrollo web, inteligencia
+                                artificial y ciberseguridad de manera clara.
+                            </p>
+
+                            <a href="sobre.html">
+                                Conoce más sobre ByteNova →
+                            </a>
+
+                        </div>
+
+                    </section>
+
+                    <aside
+                        class="articulos-relacionados"
+                        aria-labelledby="titulo-articulos-relacionados"
+                    >
+
+                        <h2 id="titulo-articulos-relacionados">
+                            Continúa aprendiendo
+                        </h2>
+
+                        <div class="relacionados-grid">
+
+                            <a href="que-es-una-red-informatica.html">
+
+                                <span aria-hidden="true">🖧</span>
+
+                                <strong>
+                                    Redes informáticas
+                                </strong>
+
+                                <small>
+                                    Comprende cómo se conectan los dispositivos.
+                                </small>
+
+                            </a>
+
+                            <a href="que-es-dns.html">
+
+                                <span aria-hidden="true">📖</span>
+
+                                <strong>
+                                    Sistema DNS
+                                </strong>
+
+                                <small>
+                                    Descubre cómo se resuelven los dominios.
+                                </small>
+
+                            </a>
+
+                            <a href="que-es-tcp-ip.html">
+
+                                <span aria-hidden="true">📡</span>
+
+                                <strong>
+                                    TCP/IP
+                                </strong>
+
+                                <small>
+                                    Aprende cómo viajan los datos por la red.
+                                </small>
+
+                            </a>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="contenedor-footer">
+
+            <div class="footer-logo">
+
+                <a
+                    href="../index.html#inicio"
+                    class="marca-bytenova"
+                    aria-label="Ir al inicio de ByteNova"
+                >
+                    <span
+                        class="marca-icono"
+                        aria-hidden="true"
+                    >
+                        &lt;/&gt;
+                    </span>
+
+                    <span class="marca-texto">
+                        ByteNova
+                    </span>
+                </a>
+
+                <p>
+                    Aprende tecnología desde cero con artículos, rutas,
+                    retos, guías y recursos gratuitos.
+                </p>
+
+            </div>
+
+            <nav
+                class="footer-enlaces"
+                aria-label="Enlaces de aprendizaje del pie de página"
+            >
+                <h3>Aprender</h3>
+
+                <a href="../index.html#tecnologias">
+                    Tecnologías
+                </a>
+
+                <a href="rutas.html">
+                    Rutas
+                </a>
+
+                <a href="retos.html">
+                    Retos
+                </a>
+
+                <a
+                    href="material.html"
+                    aria-current="page"
+                >
+                    Guías
+                </a>
+
+                <a href="articulos.html">
+                    Artículos
+                </a>
+
+                <a href="glosario.html">
+                    Glosario
+                </a>
+            </nav>
+
+            <nav
+                class="footer-enlaces"
+                aria-label="Enlaces informativos del pie de página"
+            >
+                <h3>ByteNova</h3>
+
+                <a href="sobre.html">
+                    Sobre ByteNova
+                </a>
+
+                <a href="../index.html#contacto">
+                    Contacto
+                </a>
+
+                <a href="privacidad.html">
+                    Privacidad
+                </a>
+
+                <a href="terminos.html">
+                    Términos
+                </a>
+
+                <a href="cookies.html">
+                    Cookies
+                </a>
+            </nav>
+
+            <address class="footer-social">
+
+                <h3>Contacto</h3>
+
+                <p>
+                    Preguntas, sugerencias o comentarios sobre nuestros
+                    contenidos educativos.
+                </p>
+
+                <a href="mailto:bytenova339@gmail.com">
+                    bytenova339@gmail.com
+                </a>
+
+            </address>
+
+        </div>
+
+        <div class="footer-copy">
+
+            <p>
+                © 2026 ByteNova. Todos los derechos reservados.
+            </p>
+
+            <p>
+                Creado por Dylan Estrada.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

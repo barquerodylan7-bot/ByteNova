@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   ¿Qué es el rendimiento web y cómo mejorar la velocidad? | ByteNova
+  </title>
+  <meta content="Aprende qué es el rendimiento web, por qué una página puede cargar lentamente y cómo optimizar imágenes, código, caché, hosting y recursos." name="description"/>
+  <meta content="ByteNova" name="author"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
+  <meta content="#0f172a" media="(prefers-color-scheme: dark)" name="theme-color"/>
+  <meta content="article" property="og:type"/>
+  <meta content="es_CR" property="og:locale"/>
+  <meta content="ByteNova" property="og:site_name"/>
+  <meta content="¿Qué es el rendimiento web y cómo mejorar la velocidad?" property="og:title"/>
+  <meta content="Aprende qué es el rendimiento web, por qué una página puede cargar lentamente y cómo optimizar imágenes, código, caché, hosting y recursos." property="og:description"/>
+  <meta content="https://bytenova.app/pages/que-es-rendimiento-web.html" property="og:url"/>
+  <meta content="2026-07-17" property="article:published_time"/>
+  <meta content="2026-07-21" property="article:modified_time"/>
+  <meta content="Desarrollo y optimización web" property="article:section"/>
+  <meta content="summary" name="twitter:card"/>
+  <meta content="¿Qué es el rendimiento web y cómo mejorar la velocidad?" name="twitter:title"/>
+  <meta content="Aprende a optimizar imágenes, código, caché, fuentes y hosting para mejorar la velocidad de una página." name="twitter:description"/>
+  <link href="https://bytenova.app/pages/que-es-rendimiento-web.html" rel="canonical"/>
+  <link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="../css/style.css" rel="stylesheet"/>
+  <script type="application/ld+json">
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "@id": "https://bytenova.app/pages/que-es-rendimiento-web.html#article",
+            "headline": "¿Qué es el rendimiento web y cómo mejorar la velocidad?",
+            "description": "Aprende qué es el rendimiento web, por qué una página puede cargar lentamente y cómo optimizar imágenes, código, caché, hosting y recursos.",
+            "url": "https://bytenova.app/pages/que-es-rendimiento-web.html",
+            "datePublished": "2026-07-17",
+            "dateModified": "2026-07-21",
+            "inLanguage": "es",
+            "articleSection": "Desarrollo y optimización web",
+            "isAccessibleForFree": true,
+            "author": {
+                "@type": "Organization",
+                "name": "ByteNova",
+                "url": "https://bytenova.app/pages/sobre.html"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "ByteNova",
+                "url": "https://bytenova.app/"
+            },
+            "isPartOf": {
+                "@id": "https://bytenova.app/#website"
+            },
+            "mainEntityOfPage": {
+                "@id": "https://bytenova.app/pages/que-es-rendimiento-web.html#webpage"
+            },
+            "about": [
+                {
+                    "@type": "Thing",
+                    "name": "Rendimiento web"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "Optimización web"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "Velocidad de carga"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "Experiencia de usuario"
+                }
+            ]
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://bytenova.app/pages/que-es-rendimiento-web.html#webpage",
+            "url": "https://bytenova.app/pages/que-es-rendimiento-web.html",
+            "name": "¿Qué es el rendimiento web y cómo mejorar la velocidad?",
+            "description": "Aprende qué es el rendimiento web, por qué una página puede cargar lentamente y cómo optimizar imágenes, código, caché, hosting y recursos.",
+            "inLanguage": "es",
+            "datePublished": "2026-07-17",
+            "dateModified": "2026-07-21",
+            "isPartOf": {
+                "@id": "https://bytenova.app/#website"
+            },
+            "breadcrumb": {
+                "@id": "https://bytenova.app/pages/que-es-rendimiento-web.html#breadcrumb"
+            },
+            "mainEntity": {
+                "@id": "https://bytenova.app/pages/que-es-rendimiento-web.html#article"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://bytenova.app/pages/que-es-rendimiento-web.html#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Inicio",
+                    "item": "https://bytenova.app/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Artículos",
+                    "item": "https://bytenova.app/pages/articulos.html"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Rendimiento web",
+                    "item": "https://bytenova.app/pages/que-es-rendimiento-web.html"
+                }
+            ]
+        },
+        {
+            "@type": "FAQPage",
+            "@id": "https://bytenova.app/pages/que-es-rendimiento-web.html#faq",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "¿Una página con poco contenido siempre es rápida?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. Puede cargar scripts, fuentes, videos o\n                                imágenes pesadas aunque tenga poco texto."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Todas las imágenes deben usar loading=\"lazy\"?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. Se recomienda principalmente para imágenes\n                                que no aparecen inmediatamente al abrir la página."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿JavaScript vuelve lenta una página?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No necesariamente. El problema aparece cuando\n                                se carga o ejecuta más código del necesario."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿El hosting afecta la velocidad?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Sí. La capacidad, configuración, ubicación y\n                                disponibilidad del servidor pueden influir."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Debo eliminar todas las animaciones?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. Deben utilizarse con moderación y comprobar\n                                que no afecten la lectura ni la respuesta."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Una página rápida garantiza un buen SEO?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. También necesita contenido útil, estructura,\n                                enlaces correctos y una buena experiencia general."
+                    }
+                }
+            ]
+        }
+    ]
+}
+  </script>
+ </head>
+ <body>
+  <a class="saltar-contenido" href="#contenido-principal">
+   Saltar al contenido principal
+  </a>
+  <header>
+   <a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio">
+    <span aria-hidden="true" class="marca-icono">
+     &lt;/&gt;
+    </span>
+    <span class="marca-texto">
+     ByteNova
+    </span>
+   </a>
+   <button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle" type="button">
+    <span aria-hidden="true">
+     ☰
+    </span>
+   </button>
+   <nav aria-label="Navegación principal" id="menu-principal">
+    <a href="../index.html#inicio">
+     Inicio
+    </a>
+    <a href="sobre.html">
+     Sobre
+    </a>
+    <a href="../index.html#tecnologias">
+     Aprender
+    </a>
+    <a href="rutas.html">
+     Rutas
+    </a>
+    <a href="retos.html">
+     Retos
+    </a>
+    <a href="material.html">
+     Guías
+    </a>
+    <a aria-current="page" href="articulos.html">
+     Artículos
+    </a>
+    <a href="glosario.html">
+     Glosario
+    </a>
+    <a href="../index.html#contacto">
+     Contacto
+    </a>
+    <button aria-label="Activar modo oscuro" class="btn-modo" id="btn-modo" type="button">
+     <span aria-hidden="true">
+      🌙
+     </span>
+    </button>
+   </nav>
+  </header>
+  <main class="sobre articulo" id="contenido-principal">
+   <article aria-labelledby="titulo-que-es-rendimiento-web" class="sobre-contenido">
+    <nav aria-label="Ruta de navegación" class="migas-navegacion">
+     <a href="../index.html">
+      Inicio
+     </a>
+     <span aria-hidden="true">
+      ›
+     </span>
+     <a href="articulos.html">
+      Artículos
+     </a>
+     <span aria-hidden="true">
+      ›
+     </span>
+     <span aria-current="page">
+      Rendimiento web
+     </span>
+    </nav>
+    <span class="seccion-etiqueta">
+     <span aria-hidden="true">
+      ⚡
+     </span>
+     Desarrollo y optimización web
+    </span>
+    <h1 id="titulo-que-es-rendimiento-web">
+     ¿Qué es el rendimiento web y cómo mejorar la velocidad?
+     <span aria-hidden="true">
+      ⚡
+     </span>
+    </h1>
+    <p class="articulo-meta">
+     Publicado por ByteNova ·
+     <time datetime="2026-07-17">
+      17 de julio de 2026
+     </time>
+     · Actualizado el
+     <time datetime="2026-07-21">
+      21 de julio de 2026
+     </time>
+    </p>
+    <div class="articulo-resumen">
+     <strong>
+      En este artículo aprenderás:
+     </strong>
+     <p>
+      Qué es el rendimiento web, qué elementos pueden volver lenta
+                    una página y cómo optimizar imágenes, código, fuentes,
+                    caché, hosting y recursos externos.
+     </p>
+    </div>
+    <div class="articulo-layout">
+     <details class="indice-articulo">
+      <summary>
+       <span aria-hidden="true">
+        📑
+       </span>
+       Contenido del artículo
+      </summary>
+      <nav aria-label="Contenido del artículo">
+       <a href="#que-es">
+        1. ¿Qué es el rendimiento web?
+       </a>
+       <a href="#importancia">
+        2. ¿Por qué es importante?
+       </a>
+       <a href="#carga">
+        3. ¿Cómo carga una página?
+       </a>
+       <a href="#problemas">
+        4. ¿Qué puede volverla lenta?
+       </a>
+       <a href="#imagenes">
+        5. Optimización de imágenes
+       </a>
+       <a href="#html-css-js">
+        6. HTML, CSS y JavaScript
+       </a>
+       <a href="#fuentes">
+        7. Fuentes y elementos visuales
+       </a>
+       <a href="#cache">
+        8. Caché del navegador
+       </a>
+       <a href="#servidor">
+        9. Servidor, hosting y CDN
+       </a>
+       <a href="#medicion">
+        10. Cómo medir el rendimiento
+       </a>
+       <a href="#mejorar">
+        11. Pasos para mejorar una página
+       </a>
+       <a href="#errores">
+        12. Errores frecuentes
+       </a>
+       <a href="#preguntas">
+        13. Preguntas frecuentes
+       </a>
+       <a href="#conclusion">
+        14. Conclusión
+       </a>
+      </nav>
+     </details>
+     <div aria-label="Contenido principal del artículo" class="articulo-cuerpo">
+      <p class="articulo-introduccion">
+       El rendimiento web describe qué tan rápido responde,
+                        carga y funciona una página cuando una persona intenta
+                        utilizarla.
+      </p>
+      <p>
+       No se trata únicamente de mostrar el contenido pronto.
+                        También importa que los botones respondan, que el diseño
+                        no cambie inesperadamente y que la navegación se sienta
+                        fluida.
+      </p>
+      <h2 id="que-es">
+       ¿Qué es el rendimiento web?
+      </h2>
+      <p>
+       El rendimiento web es el conjunto de características
+                        que determinan la rapidez y estabilidad de una página
+                        dentro del navegador.
+      </p>
+      <p>
+       Incluye el tiempo necesario para:
+      </p>
+      <ul class="lista-articulo">
+       <li>
+        Conectarse con el servidor.
+       </li>
+       <li>
+        Descargar el documento HTML.
+       </li>
+       <li>
+        Cargar hojas de estilo CSS.
+       </li>
+       <li>
+        Descargar imágenes y fuentes.
+       </li>
+       <li>
+        Ejecutar JavaScript.
+       </li>
+       <li>
+        Mostrar el contenido principal.
+       </li>
+       <li>
+        Responder a botones y formularios.
+       </li>
+      </ul>
+      <div class="recuadro-ejemplo">
+       <strong>
+        Ejemplo sencillo
+       </strong>
+       <p>
+        Una página puede mostrar su fondo rápidamente,
+                            pero seguir bloqueada durante varios segundos
+                            mientras carga imágenes o ejecuta demasiado
+                            JavaScript.
+       </p>
+      </div>
+      <h2 id="importancia">
+       ¿Por qué es importante la velocidad?
+      </h2>
+      <p>
+       Las personas esperan que una página responda rápidamente.
+                        Cuando deben esperar demasiado, pueden abandonar el
+                        sitio antes de conocer su contenido.
+      </p>
+      <ul class="lista-articulo lista-ventajas">
+       <li>
+        Mejora la experiencia de los visitantes.
+       </li>
+       <li>
+        Facilita la navegación desde celulares.
+       </li>
+       <li>
+        Reduce el consumo innecesario de datos.
+       </li>
+       <li>
+        Permite utilizar mejor conexiones lentas.
+       </li>
+       <li>
+        Mejora la respuesta de botones y formularios.
+       </li>
+       <li>
+        Puede reducir el abandono de la página.
+       </li>
+       <li>
+        Favorece la accesibilidad del contenido.
+       </li>
+       <li>
+        Contribuye a una mejor experiencia para SEO.
+       </li>
+       <li>
+        Transmite una imagen más profesional.
+       </li>
+      </ul>
+      <div class="recuadro-consejo">
+       <strong>
+        Una página sencilla también puede ser profesional
+       </strong>
+       <p>
+        Agregar demasiadas animaciones, imágenes o efectos
+                            no garantiza un mejor diseño. Cada elemento debe
+                            aportar valor real.
+       </p>
+      </div>
+      <h2 id="carga">
+       ¿Cómo carga una página web?
+      </h2>
+      <p>
+       Cuando una persona abre una URL, el navegador realiza
+                        varias operaciones para mostrar el contenido.
+      </p>
+      <div class="pasos-articulo" role="list">
+       <div class="paso-articulo" role="listitem">
+        <span>
+         1
+        </span>
+        <div>
+         <h3>
+          Localiza el servidor
+         </h3>
+         <p>
+          El navegador utiliza el DNS para encontrar
+                                    la dirección relacionada con el dominio.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         2
+        </span>
+        <div>
+         <h3>
+          Establece la conexión
+         </h3>
+         <p>
+          Se comunica con el servidor mediante
+                                    protocolos como HTTPS.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         3
+        </span>
+        <div>
+         <h3>
+          Solicita el HTML
+         </h3>
+         <p>
+          El servidor entrega el documento principal
+                                    de la página.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         4
+        </span>
+        <div>
+         <h3>
+          Descubre otros archivos
+         </h3>
+         <p>
+          El HTML puede solicitar CSS, JavaScript,
+                                    imágenes, videos y fuentes.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         5
+        </span>
+        <div>
+         <h3>
+          Construye la página
+         </h3>
+         <p>
+          El navegador interpreta los archivos y
+                                    organiza los elementos en pantalla.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         6
+        </span>
+        <div>
+         <h3>
+          Activa las interacciones
+         </h3>
+         <p>
+          JavaScript puede controlar menús, botones,
+                                    formularios y otros componentes.
+         </p>
+        </div>
+       </div>
+      </div>
+      <p>
+       Puedes comprender mejor este proceso en el artículo
+                        sobre
+       <a href="que-es-un-navegador-web.html">
+        cómo funciona un navegador web
+       </a>
+       .
+      </p>
+      <h2 id="problemas">
+       ¿Qué puede volver lenta una página?
+      </h2>
+      <div class="lista-tarjetas-articulo">
+       <div>
+        <strong>
+         Imágenes pesadas
+        </strong>
+        <p>
+         Fotografías con dimensiones y peso superiores
+                                a lo necesario.
+        </p>
+       </div>
+       <div>
+        <strong>
+         Demasiado JavaScript
+        </strong>
+        <p>
+         Scripts grandes o innecesarios pueden bloquear
+                                la interacción.
+        </p>
+       </div>
+       <div>
+        <strong>
+         Recursos externos
+        </strong>
+        <p>
+         Cada servicio adicional puede agregar solicitudes
+                                y tiempos de espera.
+        </p>
+       </div>
+       <div>
+        <strong>
+         Videos automáticos
+        </strong>
+        <p>
+         Pueden consumir muchos datos y recursos desde
+                                el inicio.
+        </p>
+       </div>
+       <div>
+        <strong>
+         Hosting lento
+        </strong>
+        <p>
+         Un servidor saturado o lejano puede tardar en
+                                responder.
+        </p>
+       </div>
+       <div>
+        <strong>
+         Fuentes innecesarias
+        </strong>
+        <p>
+         Muchas familias y variaciones aumentan la
+                                cantidad de archivos descargados.
+        </p>
+       </div>
+       <div>
+        <strong>
+         Errores de código
+        </strong>
+        <p>
+         Archivos inexistentes o scripts con fallos pueden
+                                generar solicitudes y bloqueos innecesarios.
+        </p>
+       </div>
+       <div>
+        <strong>
+         Falta de caché
+        </strong>
+        <p>
+         El navegador debe descargar nuevamente recursos
+                                que podrían reutilizarse.
+        </p>
+       </div>
+      </div>
+      <h2 id="imagenes">
+       Optimización de imágenes
+      </h2>
+      <p>
+       Las imágenes suelen representar una parte importante
+                        del peso total de una página.
+      </p>
+      <p>
+       Para optimizarlas debes considerar:
+      </p>
+      <ul class="lista-articulo lista-ventajas">
+       <li>
+        Utilizar dimensiones adecuadas.
+       </li>
+       <li>
+        Comprimir los archivos.
+       </li>
+       <li>
+        Elegir un formato apropiado.
+       </li>
+       <li>
+        Evitar imágenes duplicadas.
+       </li>
+       <li>
+        Cargar después las imágenes alejadas de la pantalla.
+       </li>
+       <li>
+        Conservar una calidad visual razonable.
+       </li>
+       <li>
+        No deformarlas mediante CSS.
+       </li>
+      </ul>
+      <h3>
+       Carga diferida
+      </h3>
+      <p>
+       El atributo
+       <code>
+        loading="lazy"
+       </code>
+       permite retrasar
+                        la carga de imágenes que todavía no están cerca de la
+                        zona visible.
+      </p>
+      <div class="recuadro-ejemplo">
+       <strong>
+        Ejemplo
+       </strong>
+       <pre><code>&lt;img
+    src="../images/articulo.webp"
+    alt="Descripción de la imagen"
+    width="900"
+    height="600"
+    loading="lazy"
+&gt;</code></pre>
+      </div>
+      <div class="recuadro-aviso">
+       <strong>
+        No utilices lazy loading en todo
+       </strong>
+       <p>
+        La imagen principal visible al abrir la página
+                            debería cargarse sin retrasos innecesarios.
+       </p>
+      </div>
+      <h3>
+       Indicar ancho y alto
+      </h3>
+      <p>
+       Los atributos
+       <code>
+        width
+       </code>
+       y
+       <code>
+        height
+       </code>
+       ayudan al navegador a reservar el espacio antes de
+                        descargar la imagen.
+      </p>
+      <p>
+       Esto reduce movimientos inesperados del contenido.
+      </p>
+      <h3>
+       CSS adaptable para imágenes
+      </h3>
+      <pre><code>img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}</code></pre>
+      <p>
+       Este código evita que una imagen supere su contenedor
+                        y conserva su proporción.
+      </p>
+      <p>
+       Esta práctica también forma parte del
+       <a href="que-es-diseno-responsive.html">
+        diseño responsive
+       </a>
+       .
+      </p>
+      <h2 id="html-css-js">
+       Optimizar HTML, CSS y JavaScript
+      </h2>
+      <p>
+       El código limpio ayuda a reducir errores y facilita
+                        que el navegador procese la página.
+      </p>
+      <h3>
+       Buenas prácticas con HTML
+      </h3>
+      <ul class="lista-articulo lista-ventajas">
+       <li>
+        Utilizar una estructura clara.
+       </li>
+       <li>
+        Eliminar elementos duplicados.
+       </li>
+       <li>
+        Evitar contenido oculto innecesario.
+       </li>
+       <li>
+        Utilizar HTML semántico.
+       </li>
+       <li>
+        Corregir enlaces y rutas incorrectas.
+       </li>
+       <li>
+        Incluir solamente recursos necesarios.
+       </li>
+      </ul>
+      <h3>
+       Buenas prácticas con CSS
+      </h3>
+      <ul class="lista-articulo lista-ventajas">
+       <li>
+        Eliminar reglas que ya no se utilizan.
+       </li>
+       <li>
+        Evitar repetir estilos innecesariamente.
+       </li>
+       <li>
+        Agrupar componentes relacionados.
+       </li>
+       <li>
+        Reducir animaciones demasiado complejas.
+       </li>
+       <li>
+        Evitar archivos de estilos duplicados.
+       </li>
+       <li>
+        Utilizar diseños flexibles.
+       </li>
+      </ul>
+      <div class="recuadro-aviso">
+       <strong>
+        Las animaciones también consumen recursos
+       </strong>
+       <p>
+        Efectos permanentes, sombras grandes y movimientos
+                            continuos pueden afectar especialmente a teléfonos
+                            con menor capacidad.
+       </p>
+      </div>
+      <h3>
+       Buenas prácticas con JavaScript
+      </h3>
+      <ul class="lista-articulo lista-ventajas">
+       <li>
+        Cargar solamente scripts necesarios.
+       </li>
+       <li>
+        Evitar funciones duplicadas.
+       </li>
+       <li>
+        Corregir errores de consola.
+       </li>
+       <li>
+        No ejecutar cálculos constantes sin necesidad.
+       </li>
+       <li>
+        Reducir bibliotecas innecesarias.
+       </li>
+       <li>
+        Colocar scripts al final o utilizar defer.
+       </li>
+       <li>
+        Dividir funciones grandes en partes claras.
+       </li>
+      </ul>
+      <h3>
+       Uso de defer
+      </h3>
+      <p>
+       El atributo
+       <code>
+        defer
+       </code>
+       permite descargar un
+                        script sin detener completamente el análisis del HTML.
+      </p>
+      <div class="recuadro-ejemplo">
+       <strong>
+        Ejemplo
+       </strong>
+       <pre><code>&lt;script
+    src="../js/script.js"
+    defer
+&gt;&lt;/script&gt;</code></pre>
+      </div>
+      <p>
+       No todos los scripts deben cargarse de la misma manera.
+                        Debes comprobar que el comportamiento de la página
+                        continúe funcionando correctamente.
+      </p>
+      <p>
+       Aprende más sobre este lenguaje en el artículo
+       <a href="que-es-javascript.html">
+        qué es JavaScript
+       </a>
+       .
+      </p>
+      <h2 id="fuentes">
+       Fuentes y elementos visuales
+      </h2>
+      <p>
+       Las fuentes personalizadas pueden mejorar el diseño,
+                        pero cada variante puede requerir un archivo adicional.
+      </p>
+      <ul class="lista-articulo lista-ventajas">
+       <li>
+        Utiliza pocas familias tipográficas.
+       </li>
+       <li>
+        Carga únicamente los pesos necesarios.
+       </li>
+       <li>
+        Incluye alternativas del sistema.
+       </li>
+       <li>
+        Evita iconos externos para elementos muy simples.
+       </li>
+       <li>
+        No agregues efectos visuales que no aporten valor.
+       </li>
+      </ul>
+      <div class="recuadro-ejemplo">
+       <strong>
+        Fuente de respaldo
+       </strong>
+       <pre><code>body {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}</code></pre>
+      </div>
+      <p>
+       Las fuentes disponibles en el dispositivo pueden mostrarse
+                        sin descargar archivos tipográficos externos.
+      </p>
+      <h3>
+       Evitar movimientos inesperados
+      </h3>
+      <p>
+       El contenido puede moverse cuando una imagen, anuncio
+                        o fuente aparece después de que la página ya comenzó
+                        a mostrarse.
+      </p>
+      <p>
+       Para reducir este problema:
+      </p>
+      <ul class="lista-articulo lista-ventajas">
+       <li>
+        Reserva espacio para imágenes.
+       </li>
+       <li>
+        Evita insertar contenido encima del texto cargado.
+       </li>
+       <li>
+        Controla el tamaño de anuncios y elementos externos.
+       </li>
+       <li>
+        Utiliza dimensiones estables en tarjetas y botones.
+       </li>
+       <li>
+        Revisa el comportamiento de las fuentes.
+       </li>
+      </ul>
+      <h2 id="cache">
+       ¿Qué es la caché del navegador?
+      </h2>
+      <p>
+       La caché permite guardar temporalmente archivos ya
+                        descargados, como imágenes, CSS y JavaScript.
+      </p>
+      <p>
+       Cuando la persona vuelve a visitar la página, el navegador
+                        puede reutilizar esos recursos en lugar de descargarlos
+                        nuevamente.
+      </p>
+      <div class="recuadro-ejemplo">
+       <strong>
+        Ejemplo
+       </strong>
+       <p>
+        El logo y la hoja de estilos de ByteNova aparecen
+                            en muchas páginas. La caché puede evitar descargar
+                            esos mismos archivos en cada artículo.
+       </p>
+      </div>
+      <div class="recuadro-consejo">
+       <strong>
+        Caché durante el desarrollo
+       </strong>
+       <p>
+        Cuando realizas un cambio y no aparece, utiliza
+        <code>
+         Ctrl + F5
+        </code>
+        para solicitar nuevamente
+                            los archivos.
+       </p>
+      </div>
+      <h2 id="servidor">
+       Servidor, hosting y CDN
+      </h2>
+      <p>
+       La velocidad también depende del lugar desde donde se
+                        entregan los archivos.
+      </p>
+      <div class="lista-tarjetas-articulo">
+       <div>
+        <strong>
+         Servidor
+        </strong>
+        <p>
+         Recibe solicitudes y entrega los recursos de
+                                la página.
+        </p>
+       </div>
+       <div>
+        <strong>
+         Hosting
+        </strong>
+        <p>
+         Es el servicio utilizado para alojar y publicar
+                                los archivos.
+        </p>
+       </div>
+       <div>
+        <strong>
+         CDN
+        </strong>
+        <p>
+         Distribuye copias de los recursos mediante
+                                diferentes ubicaciones.
+        </p>
+       </div>
+      </div>
+      <p>
+       Un CDN puede entregar determinados archivos desde una
+                        ubicación más cercana al visitante y reducir parte del
+                        tiempo de espera.
+      </p>
+      <p>
+       Puedes ampliar estos temas en:
+      </p>
+      <ul class="lista-articulo">
+       <li>
+        <a href="que-es-un-servidor.html">
+         ¿Qué es un servidor?
+        </a>
+       </li>
+       <li>
+        <a href="que-es-dominio-y-hosting.html">
+         ¿Qué son el dominio y el hosting?
+        </a>
+       </li>
+       <li>
+        <a href="que-es-computacion-en-la-nube.html">
+         ¿Qué es la computación en la nube?
+        </a>
+       </li>
+      </ul>
+      <h3>
+       Reducir solicitudes innecesarias
+      </h3>
+      <p>
+       Cada archivo necesita una solicitud. Aunque los
+                        navegadores pueden realizar varias al mismo tiempo,
+                        una página con demasiados recursos puede tardar más.
+      </p>
+      <ul class="lista-articulo lista-riesgos">
+       <li>
+        Archivos CSS repetidos.
+       </li>
+       <li>
+        Scripts que no se utilizan.
+       </li>
+       <li>
+        Imágenes ocultas que igualmente se descargan.
+       </li>
+       <li>
+        Servicios de estadísticas duplicados.
+       </li>
+       <li>
+        Fuentes con demasiadas variantes.
+       </li>
+       <li>
+        Iconos cargados desde varias bibliotecas.
+       </li>
+      </ul>
+      <h2 id="medicion">
+       ¿Cómo medir el rendimiento?
+      </h2>
+      <p>
+       Antes de optimizar, conviene medir la página para
+                        encontrar los problemas reales.
+      </p>
+      <p>
+       Las herramientas del navegador pueden mostrar:
+      </p>
+      <ul class="lista-articulo lista-ventajas">
+       <li>
+        Archivos descargados.
+       </li>
+       <li>
+        Tamaño de cada recurso.
+       </li>
+       <li>
+        Solicitudes que fallaron.
+       </li>
+       <li>
+        Tiempo utilizado por los scripts.
+       </li>
+       <li>
+        Recursos que bloquean la carga.
+       </li>
+       <li>
+        Problemas de imágenes.
+       </li>
+       <li>
+        Errores de JavaScript.
+       </li>
+       <li>
+        Movimientos inesperados del contenido.
+       </li>
+      </ul>
+      <h3>
+       Panel de red del navegador
+      </h3>
+      <div class="pasos-articulo" role="list">
+       <div class="paso-articulo" role="listitem">
+        <span>
+         1
+        </span>
+        <div>
+         <h3>
+          Abre las herramientas de desarrollo
+         </h3>
+         <p>
+          Presiona la opción de inspeccionar dentro
+                                    del navegador.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         2
+        </span>
+        <div>
+         <h3>
+          Abre la sección de red
+         </h3>
+         <p>
+          Esta sección puede aparecer como
+          <em>
+           Network
+          </em>
+          o Red.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         3
+        </span>
+        <div>
+         <h3>
+          Recarga la página
+         </h3>
+         <p>
+          Observa todos los recursos solicitados.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         4
+        </span>
+        <div>
+         <h3>
+          Busca archivos problemáticos
+         </h3>
+         <p>
+          Revisa imágenes grandes, errores y recursos
+                                    que tardan demasiado.
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="recuadro-aviso">
+       <strong>
+        No te concentres únicamente en una puntuación
+       </strong>
+       <p>
+        Las herramientas ofrecen orientación, pero también
+                            debes probar la página desde celulares y conexiones
+                            reales.
+       </p>
+      </div>
+      <h2 id="mejorar">
+       Pasos para mejorar una página lenta
+      </h2>
+      <div class="pasos-articulo" role="list">
+       <div class="paso-articulo" role="listitem">
+        <span>
+         1
+        </span>
+        <div>
+         <h3>
+          Mide la página actual
+         </h3>
+         <p>
+          Guarda un punto de referencia antes de
+                                    modificar el proyecto.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         2
+        </span>
+        <div>
+         <h3>
+          Optimiza las imágenes más pesadas
+         </h3>
+         <p>
+          Ajusta dimensiones, formato y compresión.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         3
+        </span>
+        <div>
+         <h3>
+          Elimina recursos innecesarios
+         </h3>
+         <p>
+          Revisa scripts, estilos, fuentes y servicios
+                                    externos.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         4
+        </span>
+        <div>
+         <h3>
+          Corrige errores
+         </h3>
+         <p>
+          Soluciona rutas incorrectas, archivos faltantes
+                                    y fallos de consola.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         5
+        </span>
+        <div>
+         <h3>
+          Revisa la versión móvil
+         </h3>
+         <p>
+          Comprueba el rendimiento desde una pantalla
+                                    pequeña y una conexión menos rápida.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         6
+        </span>
+        <div>
+         <h3>
+          Vuelve a medir
+         </h3>
+         <p>
+          Compara los resultados después de cada grupo
+                                    de cambios.
+         </p>
+        </div>
+       </div>
+      </div>
+      <h3>
+       Lista rápida de optimización
+      </h3>
+      <ul class="lista-articulo lista-ventajas">
+       <li>
+        Comprimir imágenes grandes.
+       </li>
+       <li>
+        Utilizar dimensiones correctas.
+       </li>
+       <li>
+        Agregar carga diferida cuando corresponda.
+       </li>
+       <li>
+        Eliminar CSS sin uso.
+       </li>
+       <li>
+        Reducir JavaScript innecesario.
+       </li>
+       <li>
+        Corregir errores del navegador.
+       </li>
+       <li>
+        Limitar fuentes externas.
+       </li>
+       <li>
+        Reducir animaciones continuas.
+       </li>
+       <li>
+        Revisar servicios de terceros.
+       </li>
+       <li>
+        Comprobar el hosting.
+       </li>
+       <li>
+        Probar desde celular.
+       </li>
+       <li>
+        Conservar una estructura accesible.
+       </li>
+      </ul>
+      <h2 id="errores">
+       Errores frecuentes
+      </h2>
+      <ul class="lista-articulo lista-riesgos">
+       <li>
+        Subir imágenes directamente desde una cámara.
+       </li>
+       <li>
+        Usar videos pesados como fondo sin optimización.
+       </li>
+       <li>
+        Cargar bibliotecas completas para una sola función.
+       </li>
+       <li>
+        Agregar demasiadas fuentes y estilos.
+       </li>
+       <li>
+        Utilizar animaciones en todos los elementos.
+       </li>
+       <li>
+        Ignorar los errores de consola.
+       </li>
+       <li>
+        Probar únicamente en una computadora rápida.
+       </li>
+       <li>
+        Comprimir tanto las imágenes que pierden calidad.
+       </li>
+       <li>
+        Eliminar funciones importantes solo por una puntuación.
+       </li>
+       <li>
+        No comparar el sitio antes y después.
+       </li>
+      </ul>
+      <div class="recuadro-consejo">
+       <strong>
+        Optimiza primero los problemas más grandes
+       </strong>
+       <p>
+        Reducir una imagen de varios megabytes suele producir
+                            una mejora mayor que modificar pequeños espacios
+                            dentro del código.
+       </p>
+      </div>
+      <h2>
+       Rendimiento, accesibilidad y SEO
+      </h2>
+      <p>
+       Estas áreas están relacionadas porque todas buscan
+                        mejorar la experiencia del visitante.
+      </p>
+      <div class="lista-tarjetas-articulo">
+       <div>
+        <strong>
+         Rendimiento
+        </strong>
+        <p>
+         Permite que el contenido cargue y responda
+                                rápidamente.
+        </p>
+       </div>
+       <div>
+        <strong>
+         Accesibilidad
+        </strong>
+        <p>
+         Permite utilizar la página mediante diferentes
+                                dispositivos y formas de interacción.
+        </p>
+       </div>
+       <div>
+        <strong>
+         SEO
+        </strong>
+        <p>
+         Ayuda a los buscadores a comprender y presentar
+                                el contenido correctamente.
+        </p>
+       </div>
+      </div>
+      <p>
+       Continúa aprendiendo en los artículos sobre
+       <a href="que-es-accesibilidad-web.html">
+        accesibilidad web
+       </a>
+       y
+       <a href="que-es-seo.html">
+        qué es el SEO
+       </a>
+       .
+      </p>
+      <h2 id="preguntas">
+       Preguntas frecuentes
+      </h2>
+      <section aria-labelledby="preguntas" class="faq-articulo">
+       <details>
+        <summary>
+         ¿Una página con poco contenido siempre es rápida?
+        </summary>
+        <p>
+         No. Puede cargar scripts, fuentes, videos o
+                                imágenes pesadas aunque tenga poco texto.
+        </p>
+       </details>
+       <details>
+        <summary>
+         ¿Todas las imágenes deben usar loading="lazy"?
+        </summary>
+        <p>
+         No. Se recomienda principalmente para imágenes
+                                que no aparecen inmediatamente al abrir la página.
+        </p>
+       </details>
+       <details>
+        <summary>
+         ¿JavaScript vuelve lenta una página?
+        </summary>
+        <p>
+         No necesariamente. El problema aparece cuando
+                                se carga o ejecuta más código del necesario.
+        </p>
+       </details>
+       <details>
+        <summary>
+         ¿El hosting afecta la velocidad?
+        </summary>
+        <p>
+         Sí. La capacidad, configuración, ubicación y
+                                disponibilidad del servidor pueden influir.
+        </p>
+       </details>
+       <details>
+        <summary>
+         ¿Debo eliminar todas las animaciones?
+        </summary>
+        <p>
+         No. Deben utilizarse con moderación y comprobar
+                                que no afecten la lectura ni la respuesta.
+        </p>
+       </details>
+       <details>
+        <summary>
+         ¿Una página rápida garantiza un buen SEO?
+        </summary>
+        <p>
+         No. También necesita contenido útil, estructura,
+                                enlaces correctos y una buena experiencia general.
+        </p>
+       </details>
+      </section>
+      <h2 id="conclusion">
+       Conclusión
+      </h2>
+      <p>
+       El rendimiento web determina qué tan rápido carga,
+                        responde y se mantiene estable una página.
+      </p>
+      <p>
+       Las imágenes, el código, las fuentes, la caché, el
+                        servidor y los servicios externos pueden afectar
+                        directamente la velocidad.
+      </p>
+      <p>
+       La mejor estrategia consiste en medir, identificar los
+                        problemas principales, aplicar mejoras progresivas y
+                        probar el resultado en computadoras y celulares reales.
+      </p>
+      <section aria-label="Información del autor" class="autor-articulo">
+       <div aria-hidden="true" class="autor-icono">
+        &lt;/&gt;
+       </div>
+       <div class="autor-informacion">
+        <span>
+         Artículo creado por
+        </span>
+        <h2>
+         ByteNova
+        </h2>
+        <p>
+         Plataforma educativa dedicada a explicar
+                                programación, desarrollo web, inteligencia
+                                artificial y ciberseguridad de manera clara.
+        </p>
+        <a href="sobre.html">
+         Conoce más sobre ByteNova →
+        </a>
+       </div>
+      </section>
+      <aside aria-labelledby="titulo-articulos-relacionados" class="articulos-relacionados">
+       <h2 id="titulo-articulos-relacionados">
+        Continúa aprendiendo
+       </h2>
+       <div class="relacionados-grid">
+        <a href="que-es-un-navegador-web.html">
+         <span aria-hidden="true">
+          🌐
+         </span>
+         <strong>
+          ¿Qué es un navegador web?
+         </strong>
+         <small>
+          Comprende cómo se carga y muestra una página.
+         </small>
+        </a>
+        <a href="que-es-diseno-responsive.html">
+         <span aria-hidden="true">
+          📱
+         </span>
+         <strong>
+          Diseño responsive
+         </strong>
+         <small>
+          Adapta el contenido a diferentes pantallas.
+         </small>
+        </a>
+        <a href="que-es-un-servidor.html">
+         <span aria-hidden="true">
+          🖥️
+         </span>
+         <strong>
+          ¿Qué es un servidor?
+         </strong>
+         <small>
+          Aprende desde dónde se entregan los archivos.
+         </small>
+        </a>
+       </div>
+      </aside>
+     </div>
+    </div>
+   </article>
+  </main>
+  <footer class="footer">
+   <div class="contenedor-footer">
+    <div class="footer-logo">
+     <a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio">
+      <span aria-hidden="true" class="marca-icono">
+       &lt;/&gt;
+      </span>
+      <span class="marca-texto">
+       ByteNova
+      </span>
+     </a>
+     <p>
+      Aprende tecnología desde cero con artículos, rutas,
+                retos, guías y recursos gratuitos.
+     </p>
+    </div>
+    <nav aria-label="Enlaces de aprendizaje del pie de página" class="footer-enlaces">
+     <h3>
+      Aprender
+     </h3>
+     <a href="../index.html#tecnologias">
+      Tecnologías
+     </a>
+     <a href="rutas.html">
+      Rutas
+     </a>
+     <a href="retos.html">
+      Retos
+     </a>
+     <a href="material.html">
+      Guías
+     </a>
+     <a aria-current="page" href="articulos.html">
+      Artículos
+     </a>
+     <a href="glosario.html">
+      Glosario
+     </a>
+    </nav>
+    <nav aria-label="Enlaces informativos del pie de página" class="footer-enlaces">
+     <h3>
+      ByteNova
+     </h3>
+     <a href="sobre.html">
+      Sobre ByteNova
+     </a>
+     <a href="../index.html#contacto">
+      Contacto
+     </a>
+     <a href="privacidad.html">
+      Privacidad
+     </a>
+     <a href="terminos.html">
+      Términos
+     </a>
+     <a href="cookies.html">
+      Cookies
+     </a>
+    </nav>
+    <address class="footer-social">
+     <h3>
+      Contacto
+     </h3>
+     <p>
+      Preguntas, sugerencias o comentarios sobre nuestros
+                contenidos educativos.
+     </p>
+     <a href="mailto:bytenova339@gmail.com">
+      bytenova339@gmail.com
+     </a>
+    </address>
+   </div>
+   <div class="footer-copy">
+    <p>
+     © 2026 ByteNova. Todos los derechos reservados.
+    </p>
+    <p>
+     Creado por Dylan Estrada.
+    </p>
+   </div>
+  </footer>
+  <script src="../js/script.js">
+  </script>
+ </body>
+</html>

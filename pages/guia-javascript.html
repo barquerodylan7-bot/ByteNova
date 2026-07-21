@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Guía de JavaScript para principiantes | ByteNova</title>
+
+    <meta
+        name="description"
+        content="Aprende JavaScript desde cero con ejemplos de variables, condiciones, funciones, eventos, DOM y ejercicios prácticos para principiantes."
+    >
+
+    <meta name="author" content="ByteNova">
+    <meta name="robots" content="index, follow">
+
+    <meta
+        name="theme-color"
+        content="#ffffff"
+        media="(prefers-color-scheme: light)"
+    >
+
+    <meta
+        name="theme-color"
+        content="#0f172a"
+        media="(prefers-color-scheme: dark)"
+    >
+
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="es_CR">
+    <meta property="og:site_name" content="ByteNova">
+
+    <meta
+        property="og:title"
+        content="Guía de JavaScript para principiantes"
+    >
+
+    <meta
+        property="og:description"
+        content="Aprende JavaScript desde cero con variables, condiciones, funciones, eventos, DOM y ejercicios prácticos."
+    >
+
+    <meta
+        property="og:url"
+        content="https://bytenova.app/pages/guia-javascript.html"
+    >
+
+    <meta
+        property="article:published_time"
+        content="2026-07-19"
+    >
+
+    <meta
+        property="article:modified_time"
+        content="2026-07-20"
+    >
+
+    <meta
+        property="article:section"
+        content="Desarrollo web"
+    >
+
+    <meta name="twitter:card" content="summary">
+
+    <meta
+        name="twitter:title"
+        content="Guía de JavaScript para principiantes"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Aprende JavaScript y crea páginas web interactivas desde cero."
+    >
+
+    <link
+        rel="canonical"
+        href="https://bytenova.app/pages/guia-javascript.html"
+    >
+
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="../images/favicon.svg"
+    >
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "LearningResource",
+                "@id": "https://bytenova.app/pages/guia-javascript.html#learning-resource",
+                "name": "Guía de JavaScript para principiantes",
+                "description": "Guía gratuita para aprender los fundamentos de JavaScript mediante explicaciones, ejemplos y prácticas.",
+                "url": "https://bytenova.app/pages/guia-javascript.html",
+                "datePublished": "2026-07-19",
+                "dateModified": "2026-07-20",
+                "inLanguage": "es",
+                "learningResourceType": "Guide",
+                "educationalLevel": "Beginner",
+                "isAccessibleForFree": true,
+                "author": {
+                    "@type": "Organization",
+                    "name": "ByteNova",
+                    "url": "https://bytenova.app/pages/sobre.html"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "ByteNova",
+                    "url": "https://bytenova.app/"
+                },
+                "isPartOf": {
+                    "@id": "https://bytenova.app/#website"
+                },
+                "mainEntityOfPage": {
+                    "@id": "https://bytenova.app/pages/guia-javascript.html#webpage"
+                },
+                "about": [
+                    {
+                        "@type": "Thing",
+                        "name": "JavaScript"
+                    },
+                    {
+                        "@type": "Thing",
+                        "name": "Desarrollo web"
+                    },
+                    {
+                        "@type": "Thing",
+                        "name": "DOM"
+                    },
+                    {
+                        "@type": "Thing",
+                        "name": "Programación"
+                    }
+                ]
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://bytenova.app/pages/guia-javascript.html#webpage",
+                "url": "https://bytenova.app/pages/guia-javascript.html",
+                "name": "Guía de JavaScript para principiantes",
+                "description": "Guía gratuita sobre variables, condiciones, ciclos, funciones, arreglos, objetos, DOM y eventos en JavaScript.",
+                "inLanguage": "es",
+                "datePublished": "2026-07-19",
+                "dateModified": "2026-07-20",
+                "isPartOf": {
+                    "@id": "https://bytenova.app/#website"
+                },
+                "breadcrumb": {
+                    "@id": "https://bytenova.app/pages/guia-javascript.html#breadcrumb"
+                },
+                "mainEntity": {
+                    "@id": "https://bytenova.app/pages/guia-javascript.html#learning-resource"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://bytenova.app/pages/guia-javascript.html#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Inicio",
+                        "item": "https://bytenova.app/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Guías",
+                        "item": "https://bytenova.app/pages/material.html"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "JavaScript para principiantes",
+                        "item": "https://bytenova.app/pages/guia-javascript.html"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+
+</head>
+
+<body>
+
+    <a class="saltar-contenido" href="#contenido-principal">
+        Saltar al contenido principal
+    </a>
+
+    <header>
+
+        <a
+            href="../index.html#inicio"
+            class="marca-bytenova"
+            aria-label="Ir al inicio de ByteNova"
+        >
+
+            <span
+                class="marca-icono"
+                aria-hidden="true"
+            >
+                &lt;/&gt;
+            </span>
+
+            <span class="marca-texto">
+                ByteNova
+            </span>
+
+        </a>
+
+        <button
+            type="button"
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="menu-principal"
+        >
+            <span aria-hidden="true">☰</span>
+        </button>
+
+        <nav
+            id="menu-principal"
+            aria-label="Navegación principal"
+        >
+
+            <a href="../index.html#inicio">Inicio</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="../index.html#tecnologias">Aprender</a>
+            <a href="rutas.html">Rutas</a>
+            <a href="retos.html">Retos</a>
+
+            <a
+                href="material.html"
+                aria-current="page"
+            >
+                Guías
+            </a>
+
+            <a href="articulos.html">Artículos</a>
+            <a href="glosario.html">Glosario</a>
+            <a href="../index.html#contacto">Contacto</a>
+
+            <button
+                type="button"
+                id="btn-modo"
+                class="btn-modo"
+                aria-label="Activar modo oscuro"
+            >
+                <span aria-hidden="true">🌙</span>
+            </button>
+
+        </nav>
+
+    </header>
+
+    <main
+        class="sobre articulo"
+        id="contenido-principal"
+    >
+
+        <article
+            class="sobre-contenido"
+            aria-labelledby="titulo-guia-javascript"
+        >
+
+            <nav
+                class="migas-navegacion"
+                aria-label="Ruta de navegación"
+            >
+
+                <a href="../index.html">Inicio</a>
+                <span aria-hidden="true">›</span>
+
+                <a href="material.html">
+                    Guías
+                </a>
+
+                <span aria-hidden="true">›</span>
+
+                <span aria-current="page">
+                    JavaScript para principiantes
+                </span>
+
+            </nav>
+
+            <span class="seccion-etiqueta">
+                <span aria-hidden="true">⚡</span>
+                Guía de desarrollo web
+            </span>
+
+            <h1 id="titulo-guia-javascript">
+                JavaScript para principiantes: guía desde cero
+                <span aria-hidden="true">⚡</span>
+            </h1>
+
+            <p class="articulo-meta">
+
+                Publicado por ByteNova ·
+
+                <time datetime="2026-07-19">
+                    19 de julio de 2026
+                </time>
+
+                · Actualizado el
+
+                <time datetime="2026-07-20">
+                    20 de julio de 2026
+                </time>
+
+            </p>
+
+            <div class="articulo-resumen">
+
+                <strong>En esta guía aprenderás:</strong>
+
+                <p>
+                    Qué es JavaScript, cómo conectarlo con HTML, cómo utilizar
+                    variables, condiciones, ciclos, funciones, eventos y el DOM
+                    para crear páginas web interactivas.
+                </p>
+
+            </div>
+
+            <div class="articulo-layout">
+
+                <details class="indice-articulo">
+
+                    <summary>
+                        <span aria-hidden="true">📑</span>
+                        Contenido de la guía
+                    </summary>
+
+                    <nav aria-label="Contenido de la guía">
+
+                        <a href="#que-es">
+                            1. ¿Qué es JavaScript?
+                        </a>
+
+                        <a href="#para-que-sirve">
+                            2. ¿Para qué sirve?
+                        </a>
+
+                        <a href="#conectar">
+                            3. Conectar JavaScript con HTML
+                        </a>
+
+                        <a href="#consola">
+                            4. Consola del navegador
+                        </a>
+
+                        <a href="#variables">
+                            5. Variables
+                        </a>
+
+                        <a href="#tipos-datos">
+                            6. Tipos de datos
+                        </a>
+
+                        <a href="#operadores">
+                            7. Operadores
+                        </a>
+
+                        <a href="#condiciones">
+                            8. Condiciones
+                        </a>
+
+                        <a href="#ciclos">
+                            9. Ciclos
+                        </a>
+
+                        <a href="#funciones">
+                            10. Funciones
+                        </a>
+
+                        <a href="#arreglos">
+                            11. Arreglos
+                        </a>
+
+                        <a href="#objetos">
+                            12. Objetos
+                        </a>
+
+                        <a href="#dom">
+                            13. Manipular el DOM
+                        </a>
+
+                        <a href="#eventos">
+                            14. Eventos
+                        </a>
+
+                        <a href="#proyecto">
+                            15. Proyecto práctico
+                        </a>
+
+                        <a href="#errores">
+                            16. Errores frecuentes
+                        </a>
+
+                        <a href="#practicas">
+                            17. Ejercicios
+                        </a>
+
+                        <a href="#conclusion">
+                            18. Conclusión
+                        </a>
+
+                    </nav>
+
+                </details>
+
+                <div
+                    class="articulo-cuerpo"
+                    aria-label="Contenido principal de la guía"
+                >
+
+                    <p class="articulo-introduccion">
+                        JavaScript es el lenguaje que permite agregar
+                        interactividad y comportamiento dinámico a las páginas
+                        web.
+                    </p>
+
+                    <p>
+                        HTML crea la estructura, CSS controla la apariencia y
+                        JavaScript permite responder a las acciones del usuario.
+                    </p>
+
+                    <h2 id="que-es">
+                        ¿Qué es JavaScript?
+                    </h2>
+
+                    <p>
+                        JavaScript es un lenguaje de programación utilizado
+                        principalmente para desarrollar funciones interactivas
+                        dentro de páginas y aplicaciones web.
+                    </p>
+
+                    <p>
+                        Los navegadores modernos pueden ejecutar JavaScript
+                        directamente, sin necesidad de instalar un programa
+                        adicional.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <strong>Primer ejemplo</strong>
+
+                        <pre><code>console.log("Hola desde JavaScript");</code></pre>
+
+                    </div>
+
+                    <p>
+                        Esta instrucción muestra un mensaje dentro de la consola
+                        del navegador.
+                    </p>
+
+                    <h2 id="para-que-sirve">
+                        ¿Para qué sirve JavaScript?
+                    </h2>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+
+                            <strong>Botones interactivos</strong>
+
+                            <p>
+                                Permite realizar acciones cuando una persona
+                                presiona un botón.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Menús móviles</strong>
+
+                            <p>
+                                Puede abrir y cerrar sistemas de navegación.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Formularios</strong>
+
+                            <p>
+                                Permite validar datos antes de enviarlos.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Modo oscuro</strong>
+
+                            <p>
+                                Puede cambiar clases y guardar preferencias.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Contenido dinámico</strong>
+
+                            <p>
+                                Modifica textos, imágenes y otros elementos.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Aplicaciones web</strong>
+
+                            <p>
+                                Permite construir interfaces más completas.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Puedes repasar el concepto general en:
+                        <a href="que-es-javascript.html">
+                            ¿Qué es JavaScript?
+                        </a>
+                    </p>
+
+                    <h2 id="conectar">
+                        Cómo conectar JavaScript con HTML
+                    </h2>
+
+                    <p>
+                        Una práctica recomendada es guardar el código en un
+                        archivo separado.
+                    </p>
+
+                    <p>
+                        Crea un archivo llamado:
+                    </p>
+
+                    <pre><code>script.js</code></pre>
+
+                    <p>
+                        Después conéctalo al final del documento HTML:
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>&lt;script src="script.js"&gt;&lt;/script&gt;</code></pre>
+
+                    </div>
+
+                    <p>
+                        El enlace suele colocarse antes de
+                        <code>&lt;/body&gt;</code> para que el contenido HTML
+                        ya esté disponible cuando JavaScript se ejecute.
+                    </p>
+
+                    <h3>Estructura de archivos</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>mi-proyecto/
+├── index.html
+├── style.css
+└── script.js</code></pre>
+
+                    </div>
+
+                    <h2 id="consola">
+                        Utilizar la consola del navegador
+                    </h2>
+
+                    <p>
+                        La consola permite comprobar resultados y encontrar
+                        errores durante el desarrollo.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>console.log("El archivo funciona");</code></pre>
+
+                    </div>
+
+                    <p>
+                        Para abrirla normalmente puedes usar:
+                    </p>
+
+                    <pre><code>F12</code></pre>
+
+                    <p>
+                        Después selecciona la pestaña llamada
+                        <strong>Consola</strong> o <strong>Console</strong>.
+                    </p>
+
+                    <div class="recuadro-consejo">
+
+                        <strong>
+                            Revisa la consola cuando algo no funcione
+                        </strong>
+
+                        <p>
+                            Los mensajes suelen indicar el archivo, la línea y
+                            el tipo de error.
+                        </p>
+
+                    </div>
+
+                    <h2 id="variables">
+                        Variables en JavaScript
+                    </h2>
+
+                    <p>
+                        Una variable permite guardar información para utilizarla
+                        en diferentes partes del programa.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>const nombre = "ByteNova";
+
+let articulosLeidos = 3;</code></pre>
+
+                    </div>
+
+                    <h3>const</h3>
+
+                    <p>
+                        Se utiliza cuando la variable no será reasignada.
+                    </p>
+
+                    <pre><code>const sitio = "ByteNova";</code></pre>
+
+                    <h3>let</h3>
+
+                    <p>
+                        Se utiliza cuando el valor puede cambiar.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>let puntos = 0;
+
+puntos = puntos + 10;</code></pre>
+
+                    </div>
+
+                    <div class="recuadro-consejo">
+
+                        <strong>
+                            Utiliza const como primera opción
+                        </strong>
+
+                        <p>
+                            Cambia a <code>let</code> solamente cuando necesites
+                            reasignar el valor.
+                        </p>
+
+                    </div>
+
+                    <h2 id="tipos-datos">
+                        Tipos de datos
+                    </h2>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+
+                            <strong>Texto</strong>
+
+                            <pre><code>const nombre = "Ana";</code></pre>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Número</strong>
+
+                            <pre><code>const edad = 20;</code></pre>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Booleano</strong>
+
+                            <pre><code>const activo = true;</code></pre>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Valor vacío</strong>
+
+                            <pre><code>const resultado = null;</code></pre>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Arreglo</strong>
+
+                            <pre><code>const temas = ["HTML", "CSS"];</code></pre>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Objeto</strong>
+
+                            <pre><code>const usuario = {
+    nombre: "Ana",
+    edad: 20
+};</code></pre>
+
+                        </div>
+
+                    </div>
+
+                    <h3>Comprobar el tipo de dato</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>const edad = 20;
+
+console.log(typeof edad);</code></pre>
+
+                    </div>
+
+                    <p>
+                        El resultado será:
+                    </p>
+
+                    <pre><code>number</code></pre>
+
+                    <h2 id="operadores">
+                        Operadores básicos
+                    </h2>
+
+                    <h3>Operadores matemáticos</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>const suma = 10 + 5;
+const resta = 10 - 5;
+const multiplicacion = 10 * 5;
+const division = 10 / 5;</code></pre>
+
+                    </div>
+
+                    <h3>Operadores de comparación</h3>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+                            <strong>===</strong>
+                            <p>Comprueba igualdad estricta.</p>
+                        </div>
+
+                        <div>
+                            <strong>!==</strong>
+                            <p>Comprueba que sean diferentes.</p>
+                        </div>
+
+                        <div>
+                            <strong>&gt;</strong>
+                            <p>Mayor que.</p>
+                        </div>
+
+                        <div>
+                            <strong>&lt;</strong>
+                            <p>Menor que.</p>
+                        </div>
+
+                        <div>
+                            <strong>&gt;=</strong>
+                            <p>Mayor o igual.</p>
+                        </div>
+
+                        <div>
+                            <strong>&lt;=</strong>
+                            <p>Menor o igual.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="recuadro-aviso">
+
+                        <strong>No confundas = con ===</strong>
+
+                        <p>
+                            Un signo igual asigna un valor. Tres signos iguales
+                            comparan el valor y el tipo de dato.
+                        </p>
+
+                    </div>
+
+                    <h2 id="condiciones">
+                        Condiciones
+                    </h2>
+
+                    <p>
+                        Las condiciones permiten ejecutar instrucciones
+                        diferentes según una situación.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>const edad = 20;
+
+if (edad >= 18) {
+
+    console.log("Eres mayor de edad");
+
+} else {
+
+    console.log("Eres menor de edad");
+
+}</code></pre>
+
+                    </div>
+
+                    <h3>Utilizar else if</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>const nota = 85;
+
+if (nota >= 90) {
+
+    console.log("Excelente");
+
+} else if (nota >= 70) {
+
+    console.log("Aprobado");
+
+} else {
+
+    console.log("Debes mejorar");
+
+}</code></pre>
+
+                    </div>
+
+                    <h2 id="ciclos">
+                        Ciclos
+                    </h2>
+
+                    <p>
+                        Los ciclos permiten repetir instrucciones.
+                    </p>
+
+                    <h3>Ciclo for</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>for (let numero = 1; numero &lt;= 5; numero++) {
+
+    console.log(numero);
+
+}</code></pre>
+
+                    </div>
+
+                    <h3>Ciclo for...of</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>const tecnologias = [
+    "HTML",
+    "CSS",
+    "JavaScript"
+];
+
+for (const tecnologia of tecnologias) {
+
+    console.log(tecnologia);
+
+}</code></pre>
+
+                    </div>
+
+                    <h2 id="funciones">
+                        Funciones
+                    </h2>
+
+                    <p>
+                        Una función agrupa instrucciones que pueden reutilizarse.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>function saludar() {
+
+    console.log("Hola desde ByteNova");
+
+}
+
+saludar();</code></pre>
+
+                    </div>
+
+                    <h3>Funciones con parámetros</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>function saludar(nombre) {
+
+    console.log(`Hola, ${nombre}`);
+
+}
+
+saludar("Ana");
+saludar("Carlos");</code></pre>
+
+                    </div>
+
+                    <h3>Devolver un resultado</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>function sumar(numeroUno, numeroDos) {
+
+    return numeroUno + numeroDos;
+
+}
+
+const resultado = sumar(5, 7);
+
+console.log(resultado);</code></pre>
+
+                    </div>
+
+                    <h2 id="arreglos">
+                        Arreglos
+                    </h2>
+
+                    <p>
+                        Un arreglo permite guardar varios valores dentro de una
+                        sola variable.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>const articulos = [
+    "HTML y CSS",
+    "JavaScript",
+    "Python"
+];
+
+console.log(articulos[0]);</code></pre>
+
+                    </div>
+
+                    <p>
+                        Las posiciones comienzan desde cero.
+                    </p>
+
+                    <h3>Agregar un elemento</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>const articulos = ["HTML"];
+
+articulos.push("CSS");
+
+console.log(articulos);</code></pre>
+
+                    </div>
+
+                    <h3>Recorrer un arreglo</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>const temas = [
+    "Programación",
+    "Ciberseguridad",
+    "Inteligencia artificial"
+];
+
+temas.forEach(function (tema) {
+
+    console.log(tema);
+
+});</code></pre>
+
+                    </div>
+
+                    <h2 id="objetos">
+                        Objetos
+                    </h2>
+
+                    <p>
+                        Un objeto permite agrupar información relacionada
+                        mediante propiedades.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>const estudiante = {
+
+    nombre: "Ana",
+    edad: 20,
+    activo: true
+
+};
+
+console.log(estudiante.nombre);</code></pre>
+
+                    </div>
+
+                    <h3>Modificar una propiedad</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>estudiante.edad = 21;
+
+console.log(estudiante.edad);</code></pre>
+
+                    </div>
+
+                    <h2 id="dom">
+                        Manipular el DOM
+                    </h2>
+
+                    <p>
+                        El DOM representa los elementos de una página para que
+                        JavaScript pueda encontrarlos y modificarlos.
+                    </p>
+
+                    <h3>Seleccionar un elemento</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>const titulo = document.getElementById("titulo");</code></pre>
+
+                    </div>
+
+                    <p>
+                        También puedes seleccionar mediante una clase:
+                    </p>
+
+                    <pre><code>const tarjeta = document.querySelector(".tarjeta");</code></pre>
+
+                    <h3>Cambiar un texto</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>const titulo = document.getElementById("titulo");
+
+titulo.textContent = "Nuevo título";</code></pre>
+
+                    </div>
+
+                    <h3>Agregar o quitar una clase</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>const tarjeta = document.querySelector(".tarjeta");
+
+tarjeta.classList.add("activa");
+
+tarjeta.classList.remove("activa");
+
+tarjeta.classList.toggle("activa");</code></pre>
+
+                    </div>
+
+                    <h2 id="eventos">
+                        Eventos
+                    </h2>
+
+                    <p>
+                        Un evento ocurre cuando una persona interactúa con la
+                        página.
+                    </p>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+                            <strong>click</strong>
+                            <p>Al presionar un elemento.</p>
+                        </div>
+
+                        <div>
+                            <strong>input</strong>
+                            <p>Al escribir dentro de un campo.</p>
+                        </div>
+
+                        <div>
+                            <strong>submit</strong>
+                            <p>Al enviar un formulario.</p>
+                        </div>
+
+                        <div>
+                            <strong>keydown</strong>
+                            <p>Al presionar una tecla.</p>
+                        </div>
+
+                    </div>
+
+                    <h3>Evento de clic</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>const boton = document.getElementById("boton");
+
+boton.addEventListener("click", function () {
+
+    console.log("Presionaste el botón");
+
+});</code></pre>
+
+                    </div>
+
+                    <h2 id="proyecto">
+                        Proyecto práctico: contador de clics
+                    </h2>
+
+                    <p>
+                        Construiremos un contador que aumentará cada vez que la
+                        persona presione un botón.
+                    </p>
+
+                    <h3>HTML</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>&lt;main class="contador"&gt;
+
+    &lt;h1&gt;Contador de clics&lt;/h1&gt;
+
+    &lt;p id="resultado"&gt;
+        0
+    &lt;/p&gt;
+
+    &lt;button
+        type="button"
+        id="boton-aumentar"
+    &gt;
+        Aumentar
+    &lt;/button&gt;
+
+    &lt;button
+        type="button"
+        id="boton-reiniciar"
+    &gt;
+        Reiniciar
+    &lt;/button&gt;
+
+&lt;/main&gt;</code></pre>
+
+                    </div>
+
+                    <h3>JavaScript</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>const resultado =
+    document.getElementById("resultado");
+
+const botonAumentar =
+    document.getElementById("boton-aumentar");
+
+const botonReiniciar =
+    document.getElementById("boton-reiniciar");
+
+let contador = 0;
+
+botonAumentar.addEventListener(
+    "click",
+    function () {
+
+        contador = contador + 1;
+
+        resultado.textContent = contador;
+
+    }
+);
+
+botonReiniciar.addEventListener(
+    "click",
+    function () {
+
+        contador = 0;
+
+        resultado.textContent = contador;
+
+    }
+);</code></pre>
+
+                    </div>
+
+                    <h3>Cómo funciona</h3>
+
+                    <div
+                        class="pasos-articulo"
+                        role="list"
+                    >
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+
+                            <span>1</span>
+
+                            <div>
+
+                                <h3>Seleccionamos los elementos</h3>
+
+                                <p>
+                                    JavaScript obtiene el contador y los dos
+                                    botones mediante sus identificadores.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+
+                            <span>2</span>
+
+                            <div>
+
+                                <h3>Creamos una variable</h3>
+
+                                <p>
+                                    La variable <code>contador</code> guarda
+                                    el número actual.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+
+                            <span>3</span>
+
+                            <div>
+
+                                <h3>Escuchamos los clics</h3>
+
+                                <p>
+                                    Cada botón ejecuta una función diferente.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="paso-articulo"
+                            role="listitem"
+                        >
+
+                            <span>4</span>
+
+                            <div>
+
+                                <h3>Actualizamos la página</h3>
+
+                                <p>
+                                    <code>textContent</code> muestra el valor
+                                    nuevo.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <h2 id="errores">
+                        Errores frecuentes
+                    </h2>
+
+                    <ul class="lista-articulo lista-riesgos">
+
+                        <li>
+                            No conectar correctamente el archivo JavaScript.
+                        </li>
+
+                        <li>
+                            Escribir incorrectamente el nombre de una variable.
+                        </li>
+
+                        <li>
+                            Olvidar cerrar paréntesis, llaves o comillas.
+                        </li>
+
+                        <li>
+                            Confundir asignación con comparación.
+                        </li>
+
+                        <li>
+                            Seleccionar un elemento que no existe.
+                        </li>
+
+                        <li>
+                            Ejecutar el código antes de cargar el HTML.
+                        </li>
+
+                        <li>
+                            No revisar la consola del navegador.
+                        </li>
+
+                        <li>
+                            Copiar código sin comprender su funcionamiento.
+                        </li>
+
+                        <li>
+                            Crear variables globales innecesarias.
+                        </li>
+
+                        <li>
+                            No probar diferentes situaciones.
+                        </li>
+
+                    </ul>
+
+                    <h3>Elemento no encontrado</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>const boton =
+    document.getElementById("boton");</code></pre>
+
+                    </div>
+
+                    <p>
+                        Si no existe un elemento con
+                        <code>id="boton"</code>, la variable tendrá el valor
+                        <code>null</code>.
+                    </p>
+
+                    <div class="recuadro-aviso">
+
+                        <strong>
+                            Comprueba el elemento antes de utilizarlo
+                        </strong>
+
+                        <pre><code>if (boton) {
+
+    boton.addEventListener(
+        "click",
+        function () {
+
+            console.log("Botón encontrado");
+
+        }
+    );
+
+}</code></pre>
+
+                    </div>
+
+                    <h2 id="practicas">
+                        Ejercicios para practicar
+                    </h2>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+
+                            <strong>Saludo personalizado</strong>
+
+                            <p>
+                                Solicita un nombre y muestra un mensaje.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Calculadora</strong>
+
+                            <p>
+                                Realiza operaciones con dos números.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Cambio de tema</strong>
+
+                            <p>
+                                Crea un botón para activar modo oscuro.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Lista de tareas</strong>
+
+                            <p>
+                                Permite agregar y eliminar elementos.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Contador</strong>
+
+                            <p>
+                                Agrega botones para aumentar y disminuir.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Validador de formulario</strong>
+
+                            <p>
+                                Comprueba que los campos no estén vacíos.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="recuadro-consejo">
+
+                        <strong>Modifica cada ejemplo</strong>
+
+                        <p>
+                            Cambia nombres, valores, textos y condiciones para
+                            comprobar que entiendes su funcionamiento.
+                        </p>
+
+                    </div>
+
+                    <h2 id="conclusion">
+                        Conclusión
+                    </h2>
+
+                    <p>
+                        JavaScript permite transformar una página estática en
+                        una experiencia interactiva.
+                    </p>
+
+                    <p>
+                        Sus variables, condiciones, ciclos, funciones, eventos
+                        y herramientas para manipular el DOM forman la base del
+                        desarrollo web interactivo.
+                    </p>
+
+                    <p>
+                        Comienza con proyectos pequeños y aumenta gradualmente
+                        la dificultad conforme comprendas cada concepto.
+                    </p>
+
+                    <section
+                        class="autor-articulo"
+                        aria-label="Información del autor"
+                    >
+
+                        <div
+                            class="autor-icono"
+                            aria-hidden="true"
+                        >
+                            &lt;/&gt;
+                        </div>
+
+                        <div class="autor-informacion">
+
+                            <span>
+                                Guía creada por
+                            </span>
+
+                            <h2>
+                                ByteNova
+                            </h2>
+
+                            <p>
+                                Plataforma educativa dedicada a explicar
+                                programación, desarrollo web, inteligencia
+                                artificial y ciberseguridad de manera clara.
+                            </p>
+
+                            <a href="sobre.html">
+                                Conoce más sobre ByteNova →
+                            </a>
+
+                        </div>
+
+                    </section>
+
+                    <aside
+                        class="articulos-relacionados"
+                        aria-labelledby="titulo-articulos-relacionados"
+                    >
+
+                        <h2 id="titulo-articulos-relacionados">
+                            Continúa aprendiendo
+                        </h2>
+
+                        <div class="relacionados-grid">
+
+                            <a href="por-que-aprender-html-css.html">
+
+                                <span aria-hidden="true">🎨</span>
+
+                                <strong>
+                                    HTML y CSS
+                                </strong>
+
+                                <small>
+                                    Aprende la estructura y el diseño visual.
+                                </small>
+
+                            </a>
+
+                            <a href="que-es-javascript.html">
+
+                                <span aria-hidden="true">⚡</span>
+
+                                <strong>
+                                    ¿Qué es JavaScript?
+                                </strong>
+
+                                <small>
+                                    Repasa los conceptos principales.
+                                </small>
+
+                            </a>
+
+                            <a href="que-son-git-y-github.html">
+
+                                <span aria-hidden="true">🔄</span>
+
+                                <strong>
+                                    Git y GitHub
+                                </strong>
+
+                                <small>
+                                    Guarda y organiza tus proyectos.
+                                </small>
+
+                            </a>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="contenedor-footer">
+
+            <div class="footer-logo">
+
+                <a
+                    href="../index.html#inicio"
+                    class="marca-bytenova"
+                    aria-label="Ir al inicio de ByteNova"
+                >
+
+                    <span
+                        class="marca-icono"
+                        aria-hidden="true"
+                    >
+                        &lt;/&gt;
+                    </span>
+
+                    <span class="marca-texto">
+                        ByteNova
+                    </span>
+
+                </a>
+
+                <p>
+                    Aprende tecnología desde cero con artículos, rutas,
+                    retos, guías y recursos gratuitos.
+                </p>
+
+            </div>
+
+            <nav
+                class="footer-enlaces"
+                aria-label="Enlaces de aprendizaje del pie de página"
+            >
+
+                <h3>Aprender</h3>
+
+                <a href="../index.html#tecnologias">
+                    Tecnologías
+                </a>
+
+                <a href="rutas.html">
+                    Rutas
+                </a>
+
+                <a href="retos.html">
+                    Retos
+                </a>
+
+                <a
+                    href="material.html"
+                    aria-current="page"
+                >
+                    Guías
+                </a>
+
+                <a href="articulos.html">
+                    Artículos
+                </a>
+
+                <a href="glosario.html">
+                    Glosario
+                </a>
+
+            </nav>
+
+            <nav
+                class="footer-enlaces"
+                aria-label="Enlaces informativos del pie de página"
+            >
+
+                <h3>ByteNova</h3>
+
+                <a href="sobre.html">
+                    Sobre ByteNova
+                </a>
+
+                <a href="../index.html#contacto">
+                    Contacto
+                </a>
+
+                <a href="privacidad.html">
+                    Privacidad
+                </a>
+
+                <a href="terminos.html">
+                    Términos
+                </a>
+
+                <a href="cookies.html">
+                    Cookies
+                </a>
+
+            </nav>
+
+            <address class="footer-social">
+
+                <h3>Contacto</h3>
+
+                <p>
+                    Preguntas, sugerencias o comentarios sobre nuestros
+                    contenidos educativos.
+                </p>
+
+                <a href="mailto:bytenova339@gmail.com">
+                    bytenova339@gmail.com
+                </a>
+
+            </address>
+
+        </div>
+
+        <div class="footer-copy">
+
+            <p>
+                © 2026 ByteNova. Todos los derechos reservados.
+            </p>
+
+            <p>
+                Creado por Dylan Estrada.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

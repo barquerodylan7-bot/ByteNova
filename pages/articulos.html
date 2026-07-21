@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+>
+
+<meta
+    name="theme-color"
+    content="#ffffff"
+    media="(prefers-color-scheme: light)"
+>
+
+<meta
+    name="theme-color"
+    content="#0f172a"
+    media="(prefers-color-scheme: dark)"
+>
+
+    <title>Artículos de tecnología para principiantes | ByteNova</title>
+
+    <meta
+        name="description"
+        content="Explora artículos gratuitos sobre programación, inteligencia artificial, desarrollo web, SEO, Python y ciberseguridad."
+    >
+
+    <meta name="author" content="ByteNova">
+    <meta name="robots" content="index, follow">
+
+    <link
+        rel="canonical"
+        href="https://bytenova.app/pages/articulos.html"
+    >
+
+    <!-- Open Graph -->
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CR">
+    <meta property="og:site_name" content="ByteNova">
+
+    <meta
+        property="og:title"
+        content="Artículos de tecnología para principiantes | ByteNova"
+    >
+
+    <meta
+        property="og:description"
+        content="Explora artículos gratuitos sobre programación, inteligencia artificial, desarrollo web, SEO, Python y ciberseguridad."
+    >
+
+    <meta
+        property="og:url"
+        content="https://bytenova.app/pages/articulos.html"
+    >
+
+    <!-- Favicon y estilos -->
+
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="../images/favicon.svg"
+    >
+
+    <link rel="stylesheet" href="../css/style.css">
+
+<script type="application/ld+json">
+
+{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Artículos de tecnología para principiantes",
+    "description": "Artículos gratuitos sobre programación, inteligencia artificial, desarrollo web, SEO, Python y ciberseguridad.",
+    "url": "https://bytenova.app/pages/articulos.html",
+    "isPartOf": {
+        "@id": "https://bytenova.app/#website"
+    },
+    "publisher": {
+        "@id": "https://bytenova.app/#organization"
+    }
+}
+
+</script>
+
+</head>
+
+<body>
+
+    <a
+    class="saltar-contenido"
+    href="#contenido-principal"
+>
+    Saltar al contenido principal
+</a>
+
+    <header>
+
+        <a href="../index.html#inicio" class="marca-bytenova">
+
+            <span class="marca-icono">&lt;/&gt;</span>
+            <span class="marca-texto">ByteNova</span>
+
+        </a>
+
+        <button
+            type="button"
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="menu-principal"
+        >
+    <span aria-hidden="true">☰</span>
+
+</button>
+
+        <nav id="menu-principal" aria-label="Navegación principal">
+
+    <a href="../index.html#inicio">Inicio</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="../index.html#tecnologias">Aprender</a>
+    <a href="rutas.html">Rutas</a>
+    <a href="retos.html">Retos</a>
+    <a href="material.html">Guías</a>
+    <a href="articulos.html">Artículos</a>
+    <a href="glosario.html">Glosario</a>
+    <a href="../index.html#contacto">Contacto</a>
+
+    <button
+        type="button"
+        id="btn-modo"
+        class="btn-modo"
+        aria-label="Activar modo oscuro"
+    >
+    <span aria-hidden="true">🌙</span>
+</button>
+
+</nav>
+
+    </header>
+
+
+    <main
+    class="articulos pagina-articulos"
+    id="contenido-principal"
+>
+
+        <span class="seccion-etiqueta">
+            📚 Biblioteca de artículos
+        </span>
+
+        <h1>Artículos para aprender tecnología desde cero</h1>
+
+        <p>
+            Encuentra explicaciones claras y recursos gratuitos sobre
+            programación, desarrollo web, inteligencia artificial,
+            ciberseguridad y posicionamiento web.
+        </p>
+
+
+
+        <section
+    class="herramientas-articulos"
+    role="search"
+    aria-label="Buscar y filtrar artículos"
+>
+    <div class="buscador-articulos">
+
+                <label for="buscador-articulos">
+                    Buscar un artículo
+                </label>
+
+                <div class="campo-busqueda-articulos">
+
+                    <span aria-hidden="true">🔎</span>
+
+            <input
+                  type="search"
+                  id="buscador-articulos"
+                  placeholder="Ejemplo: Python, seguridad o redes"
+                 autocomplete="off"
+                  aria-controls="lista-articulos"
+                 aria-describedby="contador-articulos"
+             >
+
+                </div>
+
+            </div>
+
+            <div
+                class="filtros-articulos"
+                role="group"
+                aria-label="Filtrar artículos por categoría"
+            >
+
+                <button
+                    type="button"
+                    class="filtro-articulo activo"
+                    data-filtro="todos"
+                    aria-pressed="true"
+                    aria-controls="lista-articulos"
+                >
+                    Todos
+                </button>
+
+                <button
+                    type="button"
+                    class="filtro-articulo"
+                    data-filtro="desarrollo-web"
+                    aria-pressed="false"
+                    aria-controls="lista-articulos"
+                >
+                    Desarrollo web
+                </button>
+
+                <button
+                    type="button"
+                    class="filtro-articulo"
+                    data-filtro="programacion"
+                    aria-pressed="false"
+                    aria-controls="lista-articulos"
+                >
+                    Programación
+                </button>
+
+                <button
+                    type="button"
+                    class="filtro-articulo"
+                    data-filtro="ciberseguridad"
+                    aria-pressed="false"
+                    aria-controls="lista-articulos"
+                >
+                    Ciberseguridad
+                </button>
+
+                <button
+                    type="button"
+                    class="filtro-articulo"
+                    data-filtro="ia-datos"
+                    aria-pressed="false"
+                    aria-controls="lista-articulos"
+                >
+                    IA y datos
+                </button>
+
+                <button
+                    type="button"
+                    class="filtro-articulo"
+                    data-filtro="redes-sistemas"
+                    aria-pressed="false"
+                    aria-controls="lista-articulos"
+                >
+                    Redes y sistemas
+                </button>
+
+                <button
+                    type="button"
+                    class="filtro-articulo"
+                    data-filtro="seo"
+                    aria-pressed="false"
+                    aria-controls="lista-articulos"
+                >
+                    SEO
+                </button>
+
+            </div>
+
+            <p
+                class="contador-articulos"
+                id="contador-articulos"
+                aria-live="polite"
+                aria-atomic="true"
+            >
+                40 artículos disponibles
+            </p>
+
+        </section>
+
+        <h2 id="titulo-lista-articulos">
+         Explora todos los artículos
+        </h2>
+
+        <div
+         class="contenedor-articulos"
+         id="lista-articulos"
+         role="region"
+         aria-labelledby="titulo-lista-articulos"
+     >
+
+            <div class="tarjeta-articulo" role="article" data-categoria="ia-datos">
+
+                <span aria-hidden="true">🤖</span>
+
+                <small class="categoria-tarjeta">IA y datos</small>
+
+                <h3>¿Qué es la inteligencia artificial y cómo funciona?</h3>
+
+                <p>
+                    Comprende qué es la IA, cómo aprende de los datos y
+                    cómo se utiliza para automatizar diferentes tareas.
+                </p>
+
+                <a
+                   href="que-es-inteligencia-artificial.html"
+                  aria-label="Leer artículo: ¿Qué es la inteligencia artificial y cómo funciona?"
+                 >
+                  Leer artículo
+                 </a>
+
+            </div>
+
+
+            <div class="tarjeta-articulo" role="article" data-categoria="desarrollo-web programacion">
+
+                <span aria-hidden="true">🌐</span>
+
+                <small class="categoria-tarjeta">Desarrollo web</small>
+
+                <h3>¿Qué son HTML y CSS y para qué sirven?</h3>
+
+                <p>
+                    Descubre cómo se crea la estructura y el diseño
+                    visual de una página web.
+                </p>
+
+                <a href="por-que-aprender-html-css.html">
+                    Leer artículo
+                </a>
+
+            </div>
+
+
+            <div class="tarjeta-articulo" role="article" data-categoria="ciberseguridad">
+
+                <span aria-hidden="true">🛡️</span>
+
+                <small class="categoria-tarjeta">Ciberseguridad</small>
+
+                <h3>Consejos básicos para protegerte en Internet</h3>
+
+                <p>
+                    Aprende a proteger tus cuentas, contraseñas,
+                    dispositivos e información personal.
+                </p>
+
+                <a href="ciberseguridad-estudiantes.html">
+                    Leer artículo
+                </a>
+
+            </div>
+
+
+            <div class="tarjeta-articulo" role="article" data-categoria="programacion">
+
+                <span aria-hidden="true">🐍</span>
+
+                <small class="categoria-tarjeta">Programación</small>
+
+                <h3>¿Qué es Python y por qué es ideal para principiantes?</h3>
+
+                <p>
+                    Conoce las características de Python y por qué es
+                    una buena opción para empezar a programar.
+                </p>
+
+                <a href="python-para-principiantes.html">
+                    Leer artículo
+                </a>
+
+            </div>
+
+
+            <div class="tarjeta-articulo" role="article" data-categoria="desarrollo-web">
+
+                <span aria-hidden="true">🌍</span>
+
+                <small class="categoria-tarjeta">Desarrollo web</small>
+
+                <h3>¿Qué es una página web y cómo funciona?</h3>
+
+                <p>
+                    Descubre qué elementos forman una página web y
+                    cómo funciona cuando la visitas desde Internet.
+                </p>
+
+                <a href="que-es-una-pagina-web.html">
+                    Leer artículo
+                </a>
+
+            </div>
+
+
+            <div class="tarjeta-articulo" role="article" data-categoria="seo desarrollo-web">
+
+                <span aria-hidden="true">🔎</span>
+
+                <small class="categoria-tarjeta">SEO</small>
+
+                <h3>¿Qué es SEO y cómo ayuda a una página web?</h3>
+
+                <p>
+                    Aprende cómo funciona el posicionamiento web y
+                    cómo mejorar la visibilidad en Google.
+                </p>
+
+                <a href="que-es-seo.html">
+                    Leer artículo
+                </a>
+
+            </div>
+
+            <div class="tarjeta-articulo" role="article" data-categoria="programacion">
+
+    <span aria-hidden="true">💻</span>
+
+                <small class="categoria-tarjeta">Programación</small>
+
+    <h3>¿Qué es la programación y para qué sirve?</h3>
+
+    <p>
+        Comprende cómo funciona un programa, qué son los algoritmos
+        y cuáles son los primeros pasos para comenzar.
+    </p>
+
+    <a href="que-es-programacion.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="programacion desarrollo-web">
+
+    <span aria-hidden="true">🟨</span>
+
+                <small class="categoria-tarjeta">Programación</small>
+
+    <h3>¿Qué es JavaScript y para qué sirve?</h3>
+
+    <p>
+        Aprende cómo JavaScript agrega interactividad a las páginas
+        web y conoce sus principales conceptos.
+    </p>
+
+    <a href="que-es-javascript.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="desarrollo-web programacion">
+
+    <span aria-hidden="true">🌐</span>
+
+                <small class="categoria-tarjeta">Desarrollo web</small>
+
+    <h3>Frontend y backend: ¿qué son y en qué se diferencian?</h3>
+
+    <p>
+        Comprende qué función cumple cada parte y cómo trabajan
+        juntas para construir una aplicación web.
+    </p>
+
+    <a href="frontend-y-backend.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="desarrollo-web programacion">
+
+    <span aria-hidden="true">🔗</span>
+
+                <small class="categoria-tarjeta">Desarrollo web</small>
+
+    <h3>¿Qué es una API y cómo funciona?</h3>
+
+    <p>
+        Aprende cómo se comunican diferentes aplicaciones mediante
+        solicitudes, respuestas y datos.
+    </p>
+
+    <a href="que-es-una-api.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="programacion ia-datos">
+
+    <span aria-hidden="true">🗄️</span>
+
+                <small class="categoria-tarjeta">IA y datos</small>
+
+    <h3>¿Qué es una base de datos y cómo funciona?</h3>
+
+    <p>
+        Aprende cómo se almacena y organiza la información
+        utilizada por páginas y aplicaciones.
+    </p>
+
+    <a href="que-es-una-base-de-datos.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="ciberseguridad">
+
+    <span aria-hidden="true">🎣</span>
+
+                <small class="categoria-tarjeta">Ciberseguridad</small>
+
+    <h3>¿Qué es el phishing y cómo protegerte?</h3>
+
+    <p>
+        Aprende a reconocer mensajes, enlaces y páginas falsas
+        diseñadas para robar información.
+    </p>
+
+    <a href="que-es-phishing.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="ia-datos programacion">
+
+    <span aria-hidden="true">🤖</span>
+
+                <small class="categoria-tarjeta">IA y datos</small>
+
+    <h3>¿Qué es machine learning y cómo funciona?</h3>
+
+    <p>
+        Aprende cómo los modelos encuentran patrones en los datos
+        y realizan predicciones.
+    </p>
+
+    <a href="que-es-machine-learning.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="programacion">
+
+    <span aria-hidden="true">🧩</span>
+
+                <small class="categoria-tarjeta">Programación</small>
+
+    <h3>¿Qué son Git y GitHub y para qué sirven?</h3>
+
+    <p>
+        Aprende a guardar versiones, proteger proyectos y colaborar
+        con otras personas mediante repositorios.
+    </p>
+
+    <a href="que-son-git-y-github.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="desarrollo-web redes-sistemas">
+
+    <span aria-hidden="true">🌍</span>
+
+                <small class="categoria-tarjeta">Desarrollo web</small>
+
+    <h3>¿Qué son un dominio y un hosting web?</h3>
+
+    <p>
+        Aprende qué necesitas para publicar una página y hacerla
+        accesible mediante una dirección en Internet.
+    </p>
+
+    <a href="que-es-dominio-y-hosting.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="desarrollo-web redes-sistemas ciberseguridad">
+
+    <span aria-hidden="true">🔒</span>
+
+                <small class="categoria-tarjeta">Redes y sistemas</small>
+
+    <h3>¿Qué son HTTP y HTTPS y cómo funcionan?</h3>
+
+    <p>
+        Aprende cómo se comunican el navegador y el servidor
+        y por qué HTTPS protege la conexión.
+    </p>
+
+    <a href="que-son-http-y-https.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="redes-sistemas ia-datos">
+
+    <span aria-hidden="true">☁️</span>
+
+                <small class="categoria-tarjeta">Redes y sistemas</small>
+
+    <h3>¿Qué es la computación en la nube?</h3>
+
+    <p>
+        Aprende cómo funcionan los servicios en la nube,
+        sus ventajas, tipos y medidas de seguridad.
+    </p>
+
+    <a href="que-es-computacion-en-la-nube.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="ciberseguridad">
+
+    <span aria-hidden="true">🔐</span>
+
+                <small class="categoria-tarjeta">Ciberseguridad</small>
+
+    <h3>¿Qué es la autenticación de dos factores?</h3>
+
+    <p>
+        Aprende cómo una segunda verificación protege tus cuentas
+        aunque alguien descubra tu contraseña.
+    </p>
+
+    <a href="que-es-autenticacion-dos-factores.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="ciberseguridad redes-sistemas">
+
+    <span aria-hidden="true">🛡️</span>
+
+                <small class="categoria-tarjeta">Ciberseguridad</small>
+
+    <h3>¿Qué es una VPN y cómo funciona?</h3>
+
+    <p>
+        Aprende cómo una VPN protege la conexión, oculta la
+        dirección IP y cuáles son sus limitaciones.
+    </p>
+
+    <a href="que-es-una-vpn.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="ciberseguridad">
+
+    <span aria-hidden="true">🦠</span>
+
+                <small class="categoria-tarjeta">Ciberseguridad</small>
+
+    <h3>¿Qué es el malware y cómo protegerte?</h3>
+
+    <p>
+        Conoce los principales tipos de programas maliciosos,
+        sus señales y cómo proteger tus dispositivos.
+    </p>
+
+    <a href="que-es-malware.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="ciberseguridad">
+
+    <span aria-hidden="true">🔒</span>
+
+                <small class="categoria-tarjeta">Ciberseguridad</small>
+
+    <h3>¿Qué es el ransomware y cómo protegerte?</h3>
+
+    <p>
+        Aprende cómo este ataque bloquea o cifra archivos
+        y qué medidas ayudan a prevenirlo.
+    </p>
+
+    <a href="que-es-ransomware.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="ciberseguridad redes-sistemas">
+
+    <span aria-hidden="true">🧱</span>
+
+                <small class="categoria-tarjeta">Ciberseguridad</small>
+
+    <h3>¿Qué es un firewall y cómo funciona?</h3>
+
+    <p>
+        Aprende cómo un firewall controla las conexiones
+        y protege dispositivos y redes.
+    </p>
+
+    <a href="que-es-un-firewall.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="ciberseguridad">
+
+    <span aria-hidden="true">🔑</span>
+
+                <small class="categoria-tarjeta">Ciberseguridad</small>
+
+    <h3>¿Cómo crear contraseñas seguras?</h3>
+
+    <p>
+        Aprende a crear claves resistentes, evitar su reutilización
+        y proteger correctamente tus cuentas.
+    </p>
+
+    <a href="como-crear-contrasenas-seguras.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="redes-sistemas">
+
+    <span aria-hidden="true">🌐</span>
+
+                <small class="categoria-tarjeta">Redes y sistemas</small>
+
+    <h3>¿Qué es una dirección IP?</h3>
+
+    <p>
+        Aprende cómo se identifican los dispositivos y las
+        diferencias entre IP pública, privada, IPv4 e IPv6.
+    </p>
+
+    <a href="que-es-una-direccion-ip.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="redes-sistemas desarrollo-web">
+
+    <span aria-hidden="true">🌍</span>
+
+                <small class="categoria-tarjeta">Redes y sistemas</small>
+
+    <h3>¿Qué es el DNS y cómo funciona?</h3>
+
+    <p>
+        Aprende cómo los dominios se convierten en direcciones IP
+        y qué registros permiten conectar servicios.
+    </p>
+
+    <a href="que-es-dns.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="redes-sistemas">
+
+    <span aria-hidden="true">🖧</span>
+
+                <small class="categoria-tarjeta">Redes y sistemas</small>
+
+    <h3>¿Qué es una red informática?</h3>
+
+    <p>
+        Aprende cómo se conectan los dispositivos y qué función
+        cumplen routers, switches y protocolos.
+    </p>
+
+    <a href="que-es-una-red-informatica.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="redes-sistemas desarrollo-web">
+
+    <span aria-hidden="true">🖥️</span>
+
+                <small class="categoria-tarjeta">Redes y sistemas</small>
+
+    <h3>¿Qué es un servidor y cómo funciona?</h3>
+
+    <p>
+        Aprende cómo los servidores entregan páginas, archivos,
+        aplicaciones y otros servicios mediante una red.
+    </p>
+
+    <a href="que-es-un-servidor.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="redes-sistemas">
+
+    <span aria-hidden="true">📡</span>
+
+                <small class="categoria-tarjeta">Redes y sistemas</small>
+
+    <h3>¿Qué es TCP/IP y cómo funciona?</h3>
+
+    <p>
+        Aprende cómo los dispositivos intercambian paquetes
+        mediante direcciones, puertos y protocolos.
+    </p>
+
+    <a href="que-es-tcp-ip.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="desarrollo-web redes-sistemas">
+
+    <span aria-hidden="true">🔗</span>
+
+                <small class="categoria-tarjeta">Desarrollo web</small>
+
+    <h3>¿Qué es una URL y cuáles son sus partes?</h3>
+
+    <p>
+        Aprende cómo se forman las direcciones web y qué función
+        cumplen el dominio, la ruta y los parámetros.
+    </p>
+
+    <a href="que-es-una-url.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="desarrollo-web ciberseguridad">
+
+    <span aria-hidden="true">🍪</span>
+
+                <small class="categoria-tarjeta">Desarrollo web</small>
+
+    <h3>¿Qué son las cookies y cómo funcionan?</h3>
+
+    <p>
+        Aprende cómo las páginas recuerdan sesiones,
+        preferencias y otros datos del navegador.
+    </p>
+
+    <a href="que-son-las-cookies.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="desarrollo-web">
+
+    <span aria-hidden="true">🌐</span>
+
+                <small class="categoria-tarjeta">Desarrollo web</small>
+
+    <h3>¿Qué es un navegador web?</h3>
+
+    <p>
+        Aprende cómo el navegador carga páginas, interpreta
+        HTML, CSS y JavaScript y protege la navegación.
+    </p>
+
+    <a href="que-es-un-navegador-web.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="desarrollo-web">
+
+    <span aria-hidden="true">📱</span>
+
+                <small class="categoria-tarjeta">Desarrollo web</small>
+
+    <h3>¿Qué es el diseño responsive?</h3>
+
+    <p>
+        Aprende a crear páginas que se adapten correctamente
+        a celulares, tabletas y computadoras.
+    </p>
+
+    <a href="que-es-diseno-responsive.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="desarrollo-web">
+
+    <span aria-hidden="true">♿</span>
+
+                <small class="categoria-tarjeta">Desarrollo web</small>
+
+    <h3>¿Qué es la accesibilidad web?</h3>
+
+    <p>
+        Aprende a crear páginas fáciles de utilizar mediante
+        teclado, lectores de pantalla y diferentes dispositivos.
+    </p>
+
+    <a href="que-es-accesibilidad-web.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="desarrollo-web">
+
+    <span aria-hidden="true">⚡</span>
+
+                <small class="categoria-tarjeta">Desarrollo web</small>
+
+    <h3>¿Qué es el rendimiento web?</h3>
+
+    <p>
+        Aprende cómo mejorar la velocidad de una página
+        optimizando imágenes, código, caché y hosting.
+    </p>
+
+    <a href="que-es-rendimiento-web.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="redes-sistemas">
+
+    <span aria-hidden="true">💻</span>
+
+                <small class="categoria-tarjeta">Redes y sistemas</small>
+
+    <h3>¿Qué es un sistema operativo?</h3>
+
+    <p>
+        Aprende cómo administra programas, memoria, archivos,
+        usuarios y dispositivos de una computadora.
+    </p>
+
+    <a href="que-es-un-sistema-operativo.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="redes-sistemas programacion">
+
+    <span aria-hidden="true">🐧</span>
+
+                <small class="categoria-tarjeta">Redes y sistemas</small>
+
+    <h3>¿Qué es Linux y para qué sirve?</h3>
+
+    <p>
+        Aprende cómo funciona Linux y por qué se utiliza
+        en computadoras, servidores y programación.
+    </p>
+
+    <a href="que-es-linux.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="programacion">
+
+    <span aria-hidden="true">🔓</span>
+
+                <small class="categoria-tarjeta">Programación</small>
+
+    <h3>¿Qué es el software libre?</h3>
+
+    <p>
+        Aprende qué significa código abierto, cómo funcionan
+        sus licencias y qué libertades ofrece.
+    </p>
+
+    <a href="que-es-software-libre-codigo-abierto.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="programacion desarrollo-web">
+
+    <span aria-hidden="true">🧩</span>
+
+                <small class="categoria-tarjeta">Programación</small>
+
+    <h3>¿Qué son las librerías y frameworks?</h3>
+
+    <p>
+        Aprende cómo estas herramientas ayudan a crear
+        programas y aplicaciones de manera organizada.
+    </p>
+
+    <a href="que-son-librerias-y-frameworks.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="ia-datos">
+
+    <span aria-hidden="true">📊</span>
+
+                <small class="categoria-tarjeta">IA y datos</small>
+
+    <h3>¿Qué es Big Data y para qué sirve?</h3>
+
+    <p>
+        Aprende cómo se almacenan y analizan grandes cantidades
+        de datos para encontrar patrones y tomar decisiones.
+    </p>
+
+    <a href="que-es-big-data.html">
+        Leer artículo
+    </a>
+
+</div>
+
+<div class="tarjeta-articulo" role="article" data-categoria="ia-datos">
+
+    <span aria-hidden="true">🧠</span>
+
+                <small class="categoria-tarjeta">IA y datos</small>
+
+    <h3>¿Qué son las redes neuronales?</h3>
+
+    <p>
+        Aprende cómo estos modelos procesan datos,
+        ajustan sus conexiones y realizan predicciones.
+    </p>
+
+    <a href="que-son-redes-neuronales.html">
+        Leer artículo
+    </a>
+
+</div>
+
+        </div>
+
+        <div
+            class="sin-resultados-articulos"
+            id="sin-resultados-articulos"
+            role="status"
+            aria-atomic="true"
+            hidden
+        >
+
+            <span aria-hidden="true">🔍</span>
+            <h2>No encontramos artículos</h2>
+            <p>
+                Prueba con otra palabra o selecciona una categoría diferente.
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+
+    <div class="contenedor-footer">
+
+        <div class="footer-logo">
+
+            <a
+    href="../index.html#inicio"
+    class="marca-bytenova"
+    aria-label="Ir al inicio de ByteNova"
+>
+
+                <span class="marca-icono" aria-hidden="true">
+                    &lt;/&gt;
+                </span>
+
+                <span class="marca-texto">
+                    ByteNova
+                </span>
+
+            </a>
+
+            <p>
+                Aprende tecnología desde cero con artículos, rutas,
+                retos, guías y recursos gratuitos.
+            </p>
+
+        </div>
+
+        <nav
+    class="footer-enlaces"
+    aria-label="Enlaces principales del pie de página"
+>
+
+    <h3>Enlaces</h3>
+
+    <a href="../index.html#tecnologias">Tecnologías</a>
+    <a href="rutas.html">Rutas</a>
+    <a href="retos.html">Retos</a>
+    <a href="material.html">Guías</a>
+    <a href="articulos.html" aria-current="page">Artículos</a>
+    <a href="glosario.html">Glosario</a>
+
+</nav>
+
+        <nav
+    class="footer-enlaces"
+    aria-label="Enlaces informativos del pie de página"
+>
+
+    <h3>ByteNova</h3>
+
+    <a href="sobre.html">Sobre ByteNova</a>
+    <a href="../index.html#contacto">Contacto</a>
+    <a href="privacidad.html">Privacidad</a>
+    <a href="terminos.html">Términos</a>
+    <a href="cookies.html">Cookies</a>
+
+</nav>
+
+
+        <address class="footer-social">
+
+    <h3>Contacto</h3>
+
+    <p>
+        Preguntas, sugerencias o comentarios sobre nuestros
+        contenidos educativos.
+    </p>
+
+    <a href="mailto:bytenova339@gmail.com">
+        bytenova339@gmail.com
+    </a>
+
+</address>
+
+    </div>
+
+
+    <div class="footer-copy">
+
+        <p>
+            © 2026 ByteNova. Todos los derechos reservados.
+        </p>
+
+        <p>
+            Creado por Dylan Estrada.
+        </p>
+
+    </div>
+
+</footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
+

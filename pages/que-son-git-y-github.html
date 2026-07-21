@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   ¿Qué son Git y GitHub y para qué sirven? | ByteNova
+  </title>
+  <meta content="Aprende qué son Git y GitHub, cuáles son sus diferencias y cómo ayudan a guardar versiones, colaborar y proteger proyectos de programación." name="description"/>
+  <meta content="ByteNova" name="author"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
+  <meta content="#0f172a" media="(prefers-color-scheme: dark)" name="theme-color"/>
+  <meta content="article" property="og:type"/>
+  <meta content="es_CR" property="og:locale"/>
+  <meta content="ByteNova" property="og:site_name"/>
+  <meta content="¿Qué son Git y GitHub y para qué sirven?" property="og:title"/>
+  <meta content="Aprende qué son Git y GitHub, cuáles son sus diferencias y cómo ayudan a guardar versiones, colaborar y proteger proyectos de programación." property="og:description"/>
+  <meta content="https://bytenova.app/pages/que-son-git-y-github.html" property="og:url"/>
+  <meta content="2026-07-17" property="article:published_time"/>
+  <meta content="2026-07-21" property="article:modified_time"/>
+  <meta content="Herramientas de programación" property="article:section"/>
+  <meta content="summary" name="twitter:card"/>
+  <meta content="¿Qué son Git y GitHub y para qué sirven?" name="twitter:title"/>
+  <meta content="Descubre qué son Git y GitHub, cómo permiten controlar versiones, guardar repositorios y colaborar en proyectos de programación." name="twitter:description"/>
+  <link href="https://bytenova.app/pages/que-son-git-y-github.html" rel="canonical"/>
+  <link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="../css/style.css" rel="stylesheet"/>
+  <script type="application/ld+json">
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "@id": "https://bytenova.app/pages/que-son-git-y-github.html#article",
+            "headline": "¿Qué son Git y GitHub y para qué sirven?",
+            "description": "Aprende qué son Git y GitHub, cuáles son sus diferencias y cómo ayudan a guardar versiones, colaborar y proteger proyectos de programación.",
+            "url": "https://bytenova.app/pages/que-son-git-y-github.html",
+            "datePublished": "2026-07-17",
+            "dateModified": "2026-07-21",
+            "inLanguage": "es",
+            "articleSection": "Herramientas de programación",
+            "isAccessibleForFree": true,
+            "author": {
+                "@type": "Organization",
+                "name": "ByteNova",
+                "url": "https://bytenova.app/pages/sobre.html"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "ByteNova",
+                "url": "https://bytenova.app/"
+            },
+            "isPartOf": {
+                "@id": "https://bytenova.app/#website"
+            },
+            "mainEntityOfPage": {
+                "@id": "https://bytenova.app/pages/que-son-git-y-github.html#webpage"
+            },
+            "about": [
+                {
+                    "@type": "Thing",
+                    "name": "Git"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "GitHub"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "Control de versiones"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "Repositorios"
+                }
+            ]
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://bytenova.app/pages/que-son-git-y-github.html#webpage",
+            "url": "https://bytenova.app/pages/que-son-git-y-github.html",
+            "name": "¿Qué son Git y GitHub y para qué sirven?",
+            "description": "Aprende qué son Git y GitHub, cuáles son sus diferencias y cómo ayudan a guardar versiones, colaborar y proteger proyectos de programación.",
+            "inLanguage": "es",
+            "datePublished": "2026-07-17",
+            "dateModified": "2026-07-21",
+            "isPartOf": {
+                "@id": "https://bytenova.app/#website"
+            },
+            "breadcrumb": {
+                "@id": "https://bytenova.app/pages/que-son-git-y-github.html#breadcrumb"
+            },
+            "mainEntity": {
+                "@id": "https://bytenova.app/pages/que-son-git-y-github.html#article"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://bytenova.app/pages/que-son-git-y-github.html#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Inicio",
+                    "item": "https://bytenova.app/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Artículos",
+                    "item": "https://bytenova.app/pages/articulos.html"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Git y GitHub",
+                    "item": "https://bytenova.app/pages/que-son-git-y-github.html"
+                }
+            ]
+        },
+        {
+            "@type": "FAQPage",
+            "@id": "https://bytenova.app/pages/que-son-git-y-github.html#faq",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "¿Necesito GitHub para utilizar Git?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. Git puede utilizarse únicamente dentro de tu computadora. GitHub es una plataforma adicional para alojar repositorios en línea."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿GitHub es gratuito?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "GitHub ofrece opciones gratuitas y otros planes. Para proyectos personales y aprendizaje, las funciones gratuitas suelen ser suficientes."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Puedo recuperar un archivo eliminado?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Puede recuperarse cuando estaba incluido en una versión anterior registrada mediante Git."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Debo crear un commit por cada línea?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. Lo recomendable es crear commits que agrupen cambios relacionados y completos."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Git sirve solamente para programación?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. Puede controlar versiones de diferentes archivos de texto, aunque es especialmente útil dentro del desarrollo de software."
+                    }
+                }
+            ]
+        }
+    ]
+}
+  </script>
+ </head>
+ <body>
+  <a class="saltar-contenido" href="#contenido-principal">
+   Saltar al contenido principal
+  </a>
+  <header>
+   <a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio">
+    <span aria-hidden="true" class="marca-icono">
+     &lt;/&gt;
+    </span>
+    <span class="marca-texto">
+     ByteNova
+    </span>
+   </a>
+   <button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle" type="button">
+    <span aria-hidden="true">
+     ☰
+    </span>
+   </button>
+   <nav aria-label="Navegación principal" id="menu-principal">
+    <a href="../index.html#inicio">
+     Inicio
+    </a>
+    <a href="sobre.html">
+     Sobre
+    </a>
+    <a href="../index.html#tecnologias">
+     Aprender
+    </a>
+    <a href="rutas.html">
+     Rutas
+    </a>
+    <a href="retos.html">
+     Retos
+    </a>
+    <a href="material.html">
+     Guías
+    </a>
+    <a aria-current="page" href="articulos.html">
+     Artículos
+    </a>
+    <a href="glosario.html">
+     Glosario
+    </a>
+    <a href="../index.html#contacto">
+     Contacto
+    </a>
+    <button aria-label="Activar modo oscuro" class="btn-modo" id="btn-modo" type="button">
+     <span aria-hidden="true">
+      🌙
+     </span>
+    </button>
+   </nav>
+  </header>
+  <main class="sobre articulo" id="contenido-principal">
+   <article aria-labelledby="titulo-que-son-git-y-github" class="sobre-contenido">
+    <nav aria-label="Ruta de navegación" class="migas-navegacion">
+     <a href="../index.html">
+      Inicio
+     </a>
+     <span aria-hidden="true">
+      ›
+     </span>
+     <a href="articulos.html">
+      Artículos
+     </a>
+     <span aria-hidden="true">
+      ›
+     </span>
+     <span aria-current="page">
+      Git y GitHub
+     </span>
+    </nav>
+    <span class="seccion-etiqueta">
+     <span aria-hidden="true">
+      🧩
+     </span>
+     Herramientas de programación
+    </span>
+    <h1 id="titulo-que-son-git-y-github">
+     ¿Qué son Git y GitHub y para qué sirven?
+     <span aria-hidden="true">
+      🧩
+     </span>
+    </h1>
+    <p class="articulo-meta">
+     Publicado por ByteNova ·
+     <time datetime="2026-07-17">
+      17 de julio de 2026
+     </time>
+     · Actualizado el
+     <time datetime="2026-07-21">
+      21 de julio de 2026
+     </time>
+    </p>
+    <div class="articulo-resumen">
+     <strong>
+      En este artículo aprenderás:
+     </strong>
+     <p>
+      Qué es Git, qué es GitHub, cuáles son sus diferencias,
+                    cómo permiten guardar versiones de un proyecto y cuáles
+                    son los comandos básicos para comenzar.
+     </p>
+    </div>
+    <div class="articulo-layout">
+     <details class="indice-articulo">
+      <summary>
+       <span aria-hidden="true">
+        📑
+       </span>
+       Contenido del artículo
+      </summary>
+      <nav aria-label="Contenido del artículo">
+       <a href="#que-es-git">
+        1. ¿Qué es Git?
+       </a>
+       <a href="#que-es-github">
+        2. ¿Qué es GitHub?
+       </a>
+       <a href="#diferencias">
+        3. Diferencias
+       </a>
+       <a href="#control-versiones">
+        4. Control de versiones
+       </a>
+       <a href="#repositorio">
+        5. ¿Qué es un repositorio?
+       </a>
+       <a href="#flujo">
+        6. Flujo básico
+       </a>
+       <a href="#comandos">
+        7. Comandos principales
+       </a>
+       <a href="#ramas">
+        8. Ramas
+       </a>
+       <a href="#colaboracion">
+        9. Trabajo colaborativo
+       </a>
+       <a href="#errores">
+        10. Errores frecuentes
+       </a>
+       <a href="#preguntas">
+        11. Preguntas frecuentes
+       </a>
+       <a href="#conclusion">
+        12. Conclusión
+       </a>
+      </nav>
+     </details>
+     <div aria-label="Contenido principal del artículo" class="articulo-cuerpo">
+      <p class="articulo-introduccion">
+       Git y GitHub son herramientas muy utilizadas para guardar,
+                        organizar y compartir proyectos de programación, pero no
+                        significan exactamente lo mismo.
+      </p>
+      <p>
+       Git controla las versiones de los archivos dentro de un
+                        proyecto. GitHub permite alojar repositorios en Internet
+                        y colaborar con otras personas.
+      </p>
+      <h2 id="que-es-git">
+       ¿Qué es Git?
+      </h2>
+      <p>
+       Git es un sistema de control de versiones. Permite registrar
+                        los cambios realizados en los archivos de un proyecto.
+      </p>
+      <p>
+       Cada conjunto importante de cambios puede guardarse como
+                        una versión. Esto permite consultar el historial y recuperar
+                        estados anteriores cuando sea necesario.
+      </p>
+      <div class="recuadro-ejemplo">
+       <strong>
+        Ejemplo sencillo
+       </strong>
+       <p>
+        Imagina que modificas el diseño de una página y algo
+                            deja de funcionar. Si guardaste versiones anteriores
+                            con Git, puedes revisar qué cambió y recuperar una
+                            versión estable.
+       </p>
+      </div>
+      <h2 id="que-es-github">
+       ¿Qué es GitHub?
+      </h2>
+      <p>
+       GitHub es una plataforma en línea utilizada para alojar
+                        repositorios que emplean Git.
+      </p>
+      <p>
+       Permite guardar una copia remota del proyecto, compartir
+                        código, colaborar, revisar cambios y mostrar trabajos
+                        dentro de un portafolio.
+      </p>
+      <ul class="lista-articulo lista-ventajas">
+       <li>
+        Guardar proyectos en Internet.
+       </li>
+       <li>
+        Compartir repositorios con otras personas.
+       </li>
+       <li>
+        Colaborar en proyectos de programación.
+       </li>
+       <li>
+        Revisar cambios antes de incorporarlos.
+       </li>
+       <li>
+        Registrar errores y tareas pendientes.
+       </li>
+       <li>
+        Mostrar proyectos en un portafolio.
+       </li>
+       <li>
+        Mantener una copia remota del código.
+       </li>
+      </ul>
+      <h2 id="diferencias">
+       Diferencia entre Git y GitHub
+      </h2>
+      <div class="lista-tarjetas-articulo">
+       <div>
+        <strong>
+         Git
+        </strong>
+        <p>
+         Es el sistema que registra las versiones y
+                                cambios del proyecto.
+        </p>
+       </div>
+       <div>
+        <strong>
+         GitHub
+        </strong>
+        <p>
+         Es una plataforma que permite alojar y compartir
+                                repositorios Git en Internet.
+        </p>
+       </div>
+      </div>
+      <div class="recuadro-consejo">
+       <strong>
+        Comparación sencilla
+       </strong>
+       <p>
+        Git sería la herramienta que organiza las versiones
+                            de un documento. GitHub sería el lugar en Internet
+                            donde guardas y compartes ese historial.
+       </p>
+      </div>
+      <h2 id="control-versiones">
+       ¿Qué es el control de versiones?
+      </h2>
+      <p>
+       El control de versiones es un sistema que registra cómo
+                        cambian los archivos de un proyecto con el tiempo.
+      </p>
+      <p>
+       Esto permite:
+      </p>
+      <ul class="lista-articulo">
+       <li>
+        Saber qué archivos fueron modificados.
+       </li>
+       <li>
+        Identificar quién realizó un cambio.
+       </li>
+       <li>
+        Consultar cuándo se hizo una modificación.
+       </li>
+       <li>
+        Comparar versiones anteriores y actuales.
+       </li>
+       <li>
+        Recuperar archivos eliminados o dañados.
+       </li>
+       <li>
+        Trabajar sin sobrescribir el trabajo de otras personas.
+       </li>
+      </ul>
+      <div class="recuadro-aviso">
+       <strong>
+        Git no reemplaza todos los respaldos
+       </strong>
+       <p>
+        Es recomendable guardar también una copia remota del
+                            repositorio y proteger archivos importantes mediante
+                            respaldos adicionales.
+       </p>
+      </div>
+      <h2 id="repositorio">
+       ¿Qué es un repositorio?
+      </h2>
+      <p>
+       Un repositorio es la carpeta de un proyecto administrada
+                        por Git.
+      </p>
+      <p>
+       Contiene los archivos del proyecto y la información
+                        necesaria para registrar su historial de cambios.
+      </p>
+      <div class="lista-tarjetas-articulo">
+       <div>
+        <strong>
+         Repositorio local
+        </strong>
+        <p>
+         Está almacenado dentro de tu computadora.
+        </p>
+       </div>
+       <div>
+        <strong>
+         Repositorio remoto
+        </strong>
+        <p>
+         Está alojado en una plataforma en línea como GitHub.
+        </p>
+       </div>
+      </div>
+      <h2 id="flujo">
+       Flujo básico de trabajo con Git
+      </h2>
+      <div class="pasos-articulo" role="list">
+       <div class="paso-articulo" role="listitem">
+        <span>
+         1
+        </span>
+        <div>
+         <h3>
+          Modificar archivos
+         </h3>
+         <p>
+          Trabajas normalmente dentro del proyecto y
+                                    realizas cambios.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         2
+        </span>
+        <div>
+         <h3>
+          Seleccionar cambios
+         </h3>
+         <p>
+          Indicas qué archivos deseas incluir en la
+                                    siguiente versión.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         3
+        </span>
+        <div>
+         <h3>
+          Crear un commit
+         </h3>
+         <p>
+          Guardas una versión acompañada de un mensaje
+                                    que explica el cambio realizado.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         4
+        </span>
+        <div>
+         <h3>
+          Enviar a GitHub
+         </h3>
+         <p>
+          Subes las nuevas versiones al repositorio remoto.
+         </p>
+        </div>
+       </div>
+      </div>
+      <h2 id="comandos">
+       Comandos básicos de Git
+      </h2>
+      <h3>
+       Iniciar un repositorio
+      </h3>
+      <pre><code>git init</code></pre>
+      <p>
+       Convierte la carpeta actual en un repositorio Git.
+      </p>
+      <h3>
+       Revisar el estado
+      </h3>
+      <pre><code>git status</code></pre>
+      <p>
+       Muestra qué archivos fueron modificados, agregados o
+                        todavía no están siendo controlados.
+      </p>
+      <h3>
+       Seleccionar archivos
+      </h3>
+      <pre><code>git add .</code></pre>
+      <p>
+       Prepara los cambios de la carpeta para incluirlos en el
+                        siguiente commit.
+      </p>
+      <h3>
+       Guardar una versión
+      </h3>
+      <pre><code>git commit -m "Agrega el artículo de Git y GitHub"</code></pre>
+      <p>
+       Guarda una nueva versión acompañada de un mensaje.
+      </p>
+      <h3>
+       Consultar el historial
+      </h3>
+      <pre><code>git log</code></pre>
+      <p>
+       Muestra los commits realizados dentro del proyecto.
+      </p>
+      <h3>
+       Enviar cambios al repositorio remoto
+      </h3>
+      <pre><code>git push</code></pre>
+      <p>
+       Envía los commits locales al repositorio alojado en GitHub.
+      </p>
+      <h3>
+       Descargar cambios recientes
+      </h3>
+      <pre><code>git pull</code></pre>
+      <p>
+       Descarga e incorpora los cambios del repositorio remoto.
+      </p>
+      <h2 id="ramas">
+       ¿Qué son las ramas?
+      </h2>
+      <p>
+       Una rama permite trabajar en una función o modificación
+                        sin alterar inmediatamente la versión principal del proyecto.
+      </p>
+      <div class="recuadro-ejemplo">
+       <strong>
+        Ejemplo
+       </strong>
+       <p>
+        Puedes crear una rama para diseñar un nuevo menú.
+                            Mientras trabajas en ella, la versión principal del
+                            sitio puede permanecer estable.
+       </p>
+      </div>
+      <p>
+       Cuando la nueva función está lista y revisada, sus cambios
+                        pueden combinarse con la rama principal.
+      </p>
+      <pre><code>git switch -c nuevo-menu</code></pre>
+      <p>
+       Este comando crea una nueva rama llamada
+       <code>
+        nuevo-menu
+       </code>
+       y cambia hacia ella.
+      </p>
+      <h2 id="colaboracion">
+       ¿Cómo ayuda GitHub a trabajar en equipo?
+      </h2>
+      <p>
+       GitHub permite que varias personas colaboren sin modificar
+                        directamente los mismos archivos al mismo tiempo.
+      </p>
+      <ul class="lista-articulo lista-ventajas">
+       <li>
+        Crear ramas separadas.
+       </li>
+       <li>
+        Proponer cambios mediante solicitudes de incorporación.
+       </li>
+       <li>
+        Revisar el código de otras personas.
+       </li>
+       <li>
+        Comentar modificaciones específicas.
+       </li>
+       <li>
+        Registrar errores mediante incidencias.
+       </li>
+       <li>
+        Organizar tareas y mejoras pendientes.
+       </li>
+       <li>
+        Consultar el historial completo del proyecto.
+       </li>
+      </ul>
+      <div class="recuadro-consejo">
+       <strong>
+        Escribe mensajes claros
+       </strong>
+       <p>
+        Un mensaje como “Corrige el menú móvil” explica mejor
+                            el cambio que mensajes generales como “cambios” o
+                            “actualización”.
+       </p>
+      </div>
+      <h2>
+       ¿Qué archivos no deberían subirse?
+      </h2>
+      <p>
+       Algunos archivos contienen información privada, temporal
+                        o innecesaria. Para excluirlos puede utilizarse un archivo
+                        llamado
+       <code>
+        .gitignore
+       </code>
+       .
+      </p>
+      <pre><code>.env
+node_modules/
+archivos-temporales/
+*.log</code></pre>
+      <div class="recuadro-aviso">
+       <strong>
+        No publiques contraseñas ni claves privadas
+       </strong>
+       <p>
+        Antes de subir un proyecto, revisa que no incluya
+                            credenciales, tokens, claves de API ni información
+                            personal.
+       </p>
+      </div>
+      <h2 id="errores">
+       Errores frecuentes al comenzar
+      </h2>
+      <ul class="lista-articulo lista-riesgos">
+       <li>
+        Crear commits sin mensajes claros.
+       </li>
+       <li>
+        Guardar demasiados cambios diferentes en un solo commit.
+       </li>
+       <li>
+        Subir contraseñas o claves privadas.
+       </li>
+       <li>
+        No revisar el estado antes de crear un commit.
+       </li>
+       <li>
+        Trabajar directamente sobre la rama principal.
+       </li>
+       <li>
+        No descargar los cambios realizados por el equipo.
+       </li>
+       <li>
+        Eliminar archivos sin revisar qué está preparado.
+       </li>
+       <li>
+        Confundir Git con GitHub.
+       </li>
+      </ul>
+      <h2 id="preguntas">
+       Preguntas frecuentes
+      </h2>
+      <section aria-labelledby="preguntas" class="faq-articulo">
+       <details>
+        <summary>
+         ¿Necesito GitHub para utilizar Git?
+        </summary>
+        <p>
+         No. Git puede utilizarse únicamente dentro de tu
+                                computadora. GitHub es una plataforma adicional
+                                para alojar repositorios en línea.
+        </p>
+       </details>
+       <details>
+        <summary>
+         ¿GitHub es gratuito?
+        </summary>
+        <p>
+         GitHub ofrece opciones gratuitas y otros planes.
+                                Para proyectos personales y aprendizaje, las
+                                funciones gratuitas suelen ser suficientes.
+        </p>
+       </details>
+       <details>
+        <summary>
+         ¿Puedo recuperar un archivo eliminado?
+        </summary>
+        <p>
+         Puede recuperarse cuando estaba incluido en una
+                                versión anterior registrada mediante Git.
+        </p>
+       </details>
+       <details>
+        <summary>
+         ¿Debo crear un commit por cada línea?
+        </summary>
+        <p>
+         No. Lo recomendable es crear commits que agrupen
+                                cambios relacionados y completos.
+        </p>
+       </details>
+       <details>
+        <summary>
+         ¿Git sirve solamente para programación?
+        </summary>
+        <p>
+         No. Puede controlar versiones de diferentes
+                                archivos de texto, aunque es especialmente útil
+                                dentro del desarrollo de software.
+        </p>
+       </details>
+      </section>
+      <h2 id="conclusion">
+       Conclusión
+      </h2>
+      <p>
+       Git permite registrar y organizar las versiones de un
+                        proyecto, mientras que GitHub permite alojar repositorios
+                        y colaborar mediante Internet.
+      </p>
+      <p>
+       Aprender comandos como
+       <code>
+        git status
+       </code>
+       ,
+       <code>
+        git add
+       </code>
+       ,
+       <code>
+        git commit
+       </code>
+       y
+       <code>
+        git push
+       </code>
+       facilita proteger y compartir el trabajo.
+      </p>
+      <p>
+       Utilizar control de versiones desde proyectos pequeños
+                        ayuda a desarrollar mejores hábitos de programación.
+      </p>
+      <section aria-label="Información del autor" class="autor-articulo">
+       <div aria-hidden="true" class="autor-icono">
+        &lt;/&gt;
+       </div>
+       <div class="autor-informacion">
+        <span>
+         Artículo creado por
+        </span>
+        <h2>
+         ByteNova
+        </h2>
+        <p>
+         Plataforma educativa dedicada a explicar
+                                programación, desarrollo web, inteligencia
+                                artificial y ciberseguridad de manera clara.
+        </p>
+        <a href="sobre.html">
+         Conoce más sobre ByteNova →
+        </a>
+       </div>
+      </section>
+      <aside aria-labelledby="titulo-articulos-relacionados" class="articulos-relacionados">
+       <h2 id="titulo-articulos-relacionados">
+        Continúa aprendiendo
+       </h2>
+       <div class="relacionados-grid">
+        <a href="que-es-programacion.html">
+         <span aria-hidden="true">
+          💻
+         </span>
+         <strong>
+          ¿Qué es la programación?
+         </strong>
+         <small>
+          Comprende cómo se crean instrucciones y programas.
+         </small>
+        </a>
+        <a href="que-es-javascript.html">
+         <span aria-hidden="true">
+          🟨
+         </span>
+         <strong>
+          ¿Qué es JavaScript?
+         </strong>
+         <small>
+          Conoce uno de los lenguajes más utilizados en web.
+         </small>
+        </a>
+        <a href="frontend-y-backend.html">
+         <span aria-hidden="true">
+          🌐
+         </span>
+         <strong>
+          Frontend y backend
+         </strong>
+         <small>
+          Descubre cómo se construye una aplicación web.
+         </small>
+        </a>
+       </div>
+      </aside>
+     </div>
+    </div>
+   </article>
+  </main>
+  <footer class="footer">
+   <div class="contenedor-footer">
+    <div class="footer-logo">
+     <a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio">
+      <span aria-hidden="true" class="marca-icono">
+       &lt;/&gt;
+      </span>
+      <span class="marca-texto">
+       ByteNova
+      </span>
+     </a>
+     <p>
+      Aprende tecnología desde cero con artículos, rutas,
+                retos, guías y recursos gratuitos.
+     </p>
+    </div>
+    <nav aria-label="Enlaces de aprendizaje del pie de página" class="footer-enlaces">
+     <h3>
+      Aprender
+     </h3>
+     <a href="../index.html#tecnologias">
+      Tecnologías
+     </a>
+     <a href="rutas.html">
+      Rutas
+     </a>
+     <a href="retos.html">
+      Retos
+     </a>
+     <a href="material.html">
+      Guías
+     </a>
+     <a aria-current="page" href="articulos.html">
+      Artículos
+     </a>
+     <a href="glosario.html">
+      Glosario
+     </a>
+    </nav>
+    <nav aria-label="Enlaces informativos del pie de página" class="footer-enlaces">
+     <h3>
+      ByteNova
+     </h3>
+     <a href="sobre.html">
+      Sobre ByteNova
+     </a>
+     <a href="../index.html#contacto">
+      Contacto
+     </a>
+     <a href="privacidad.html">
+      Privacidad
+     </a>
+     <a href="terminos.html">
+      Términos
+     </a>
+     <a href="cookies.html">
+      Cookies
+     </a>
+    </nav>
+    <address class="footer-social">
+     <h3>
+      Contacto
+     </h3>
+     <p>
+      Preguntas, sugerencias o comentarios sobre nuestros
+                contenidos educativos.
+     </p>
+     <a href="mailto:bytenova339@gmail.com">
+      bytenova339@gmail.com
+     </a>
+    </address>
+   </div>
+   <div class="footer-copy">
+    <p>
+     © 2026 ByteNova. Todos los derechos reservados.
+    </p>
+    <p>
+     Creado por Dylan Estrada.
+    </p>
+   </div>
+  </footer>
+  <script src="../js/script.js">
+  </script>
+ </body>
+</html>

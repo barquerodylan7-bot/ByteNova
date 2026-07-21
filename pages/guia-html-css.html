@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Guía de HTML y CSS para principiantes | ByteNova</title>
+
+    <meta
+        name="description"
+        content="Aprende HTML y CSS desde cero con ejemplos prácticos. Conoce etiquetas, selectores, Flexbox, diseño responsive y crea tu primera página web."
+    >
+
+    <meta name="author" content="ByteNova">
+    <meta name="robots" content="index, follow">
+
+    <meta
+        name="theme-color"
+        content="#ffffff"
+        media="(prefers-color-scheme: light)"
+    >
+
+    <meta
+        name="theme-color"
+        content="#0f172a"
+        media="(prefers-color-scheme: dark)"
+    >
+
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="es_CR">
+    <meta property="og:site_name" content="ByteNova">
+
+    <meta
+        property="og:title"
+        content="Guía de HTML y CSS para principiantes"
+    >
+
+    <meta
+        property="og:description"
+        content="Aprende HTML y CSS desde cero con ejemplos sobre etiquetas, selectores, modelo de caja, Flexbox y diseño responsive."
+    >
+
+    <meta
+        property="og:url"
+        content="https://bytenova.app/pages/guia-html-css.html"
+    >
+
+    <meta
+        property="article:published_time"
+        content="2026-07-19"
+    >
+
+    <meta
+        property="article:modified_time"
+        content="2026-07-20"
+    >
+
+    <meta
+        property="article:section"
+        content="Desarrollo web"
+    >
+
+    <meta name="twitter:card" content="summary">
+
+    <meta
+        name="twitter:title"
+        content="Guía de HTML y CSS para principiantes"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Aprende a crear y diseñar páginas web con HTML y CSS desde cero."
+    >
+
+    <link
+        rel="canonical"
+        href="https://bytenova.app/pages/guia-html-css.html"
+    >
+
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="../images/favicon.svg"
+    >
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "LearningResource",
+                "@id": "https://bytenova.app/pages/guia-html-css.html#learning-resource",
+                "name": "Guía de HTML y CSS para principiantes",
+                "description": "Guía gratuita para aprender a crear y diseñar páginas web utilizando HTML y CSS.",
+                "url": "https://bytenova.app/pages/guia-html-css.html",
+                "datePublished": "2026-07-19",
+                "dateModified": "2026-07-20",
+                "inLanguage": "es",
+                "learningResourceType": "Guide",
+                "educationalLevel": "Beginner",
+                "isAccessibleForFree": true,
+                "author": {
+                    "@type": "Organization",
+                    "name": "ByteNova",
+                    "url": "https://bytenova.app/pages/sobre.html"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "ByteNova",
+                    "url": "https://bytenova.app/"
+                },
+                "isPartOf": {
+                    "@id": "https://bytenova.app/#website"
+                },
+                "mainEntityOfPage": {
+                    "@id": "https://bytenova.app/pages/guia-html-css.html#webpage"
+                },
+                "about": [
+                    {
+                        "@type": "Thing",
+                        "name": "HTML"
+                    },
+                    {
+                        "@type": "Thing",
+                        "name": "CSS"
+                    },
+                    {
+                        "@type": "Thing",
+                        "name": "Desarrollo web"
+                    }
+                ]
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://bytenova.app/pages/guia-html-css.html#webpage",
+                "url": "https://bytenova.app/pages/guia-html-css.html",
+                "name": "Guía de HTML y CSS para principiantes",
+                "description": "Guía gratuita sobre estructura HTML, etiquetas semánticas, selectores CSS, modelo de caja, Flexbox y diseño responsive.",
+                "inLanguage": "es",
+                "datePublished": "2026-07-19",
+                "dateModified": "2026-07-20",
+                "isPartOf": {
+                    "@id": "https://bytenova.app/#website"
+                },
+                "breadcrumb": {
+                    "@id": "https://bytenova.app/pages/guia-html-css.html#breadcrumb"
+                },
+                "mainEntity": {
+                    "@id": "https://bytenova.app/pages/guia-html-css.html#learning-resource"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://bytenova.app/pages/guia-html-css.html#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Inicio",
+                        "item": "https://bytenova.app/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Guías",
+                        "item": "https://bytenova.app/pages/material.html"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "HTML y CSS",
+                        "item": "https://bytenova.app/pages/guia-html-css.html"
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://bytenova.app/pages/guia-html-css.html#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "¿HTML es un lenguaje de programación?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. HTML es un lenguaje de marcado utilizado para estructurar contenido."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿CSS es un lenguaje de programación?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "CSS es un lenguaje de estilos utilizado para definir la presentación visual."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Debo aprender HTML antes que CSS?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Es recomendable comprender primero la estructura básica de HTML y después aplicar estilos con CSS."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Necesito instalar programas especiales?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Solamente necesitas un editor de código y un navegador para comenzar."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Cuánto tiempo se necesita para aprender HTML y CSS?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Las bases pueden aprenderse rápidamente, pero crear diseños profesionales requiere práctica constante."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Qué debo aprender después de HTML y CSS?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Después de HTML y CSS puedes aprender JavaScript para agregar interactividad."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+
+</head>
+
+<body>
+
+    <a class="saltar-contenido" href="#contenido-principal">
+        Saltar al contenido principal
+    </a>
+
+    <header>
+
+        <a
+            href="../index.html#inicio"
+            class="marca-bytenova"
+            aria-label="Ir al inicio de ByteNova"
+        >
+            <span
+                class="marca-icono"
+                aria-hidden="true"
+            >
+                &lt;/&gt;
+            </span>
+
+            <span class="marca-texto">
+                ByteNova
+            </span>
+        </a>
+
+        <button
+            type="button"
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="menu-principal"
+        >
+            <span aria-hidden="true">☰</span>
+        </button>
+
+        <nav
+            id="menu-principal"
+            aria-label="Navegación principal"
+        >
+            <a href="../index.html#inicio">Inicio</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="../index.html#tecnologias">Aprender</a>
+            <a href="rutas.html">Rutas</a>
+            <a href="retos.html">Retos</a>
+
+            <a
+                href="material.html"
+                aria-current="page"
+            >
+                Guías
+            </a>
+
+            <a href="articulos.html">Artículos</a>
+            <a href="glosario.html">Glosario</a>
+            <a href="../index.html#contacto">Contacto</a>
+
+            <button
+                type="button"
+                id="btn-modo"
+                class="btn-modo"
+                aria-label="Activar modo oscuro"
+            >
+                <span aria-hidden="true">🌙</span>
+            </button>
+
+        </nav>
+
+    </header>
+
+    <main
+        class="sobre articulo"
+        id="contenido-principal"
+    >
+
+        <article
+            class="sobre-contenido"
+            aria-labelledby="titulo-guia-html-css"
+        >
+
+            <nav
+                class="migas-navegacion"
+                aria-label="Ruta de navegación"
+            >
+                <a href="../index.html">Inicio</a>
+                <span aria-hidden="true">›</span>
+
+                <a href="material.html">
+                    Guías
+                </a>
+
+                <span aria-hidden="true">›</span>
+
+                <span aria-current="page">
+                    HTML y CSS
+                </span>
+            </nav>
+
+            <span class="seccion-etiqueta">
+                <span aria-hidden="true">🌐</span>
+                Guía de desarrollo web
+            </span>
+
+            <h1 id="titulo-guia-html-css">
+                HTML y CSS para principiantes: guía desde cero
+                <span aria-hidden="true">📘</span>
+            </h1>
+
+            <p class="articulo-meta">
+                Publicado por ByteNova ·
+
+                <time datetime="2026-07-19">
+                    19 de julio de 2026
+                </time>
+
+                · Actualizado el
+
+                <time datetime="2026-07-20">
+                    20 de julio de 2026
+                </time>
+            </p>
+
+            <div class="articulo-resumen">
+
+                <strong>En esta guía aprenderás:</strong>
+
+                <p>
+                    Cómo crear la estructura de una página con HTML, darle
+                    diseño con CSS, organizar elementos, utilizar Flexbox y
+                    adaptar el contenido a celulares.
+                </p>
+
+            </div>
+
+            <div class="articulo-layout">
+
+                <details class="indice-articulo">
+
+                    <summary>
+                        <span aria-hidden="true">📑</span>
+                        Contenido de la guía
+                    </summary>
+
+                    <nav aria-label="Contenido de la guía">
+                        <a href="#html-css">1. ¿Qué son HTML y CSS?</a>
+                        <a href="#estructura-html">2. Estructura de HTML</a>
+                        <a href="#etiquetas">3. Etiquetas principales</a>
+                        <a href="#html-semantico">4. HTML semántico</a>
+                        <a href="#enlaces-imagenes">5. Enlaces e imágenes</a>
+                        <a href="#formularios">6. Formularios</a>
+                        <a href="#conectar-css">7. Conectar CSS</a>
+                        <a href="#selectores">8. Selectores CSS</a>
+                        <a href="#modelo-caja">9. Modelo de caja</a>
+                        <a href="#flexbox">10. Flexbox</a>
+                        <a href="#responsive">11. Diseño responsive</a>
+                        <a href="#proyecto">12. Proyecto práctico</a>
+                        <a href="#errores">13. Errores frecuentes</a>
+                        <a href="#practicas">14. Ejercicios</a>
+                        <a href="#preguntas">15. Preguntas frecuentes</a>
+                        <a href="#conclusion">16. Conclusión</a>
+                    </nav>
+
+                </details>
+
+                <div
+                    class="articulo-cuerpo"
+                    aria-label="Contenido principal de la guía"
+                >
+
+                    <p class="articulo-introduccion">
+                        HTML y CSS son las dos tecnologías fundamentales para
+                        construir páginas web. HTML crea la estructura y CSS
+                        controla la presentación visual.
+                    </p>
+
+                    <p>
+                        Al trabajar juntas permiten crear sitios organizados,
+                        atractivos y adaptables a computadoras, tabletas y
+                        teléfonos.
+                    </p>
+
+                    <h2 id="html-css">
+                        ¿Qué son HTML y CSS?
+                    </h2>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+                            <strong>HTML</strong>
+
+                            <p>
+                                Organiza el contenido mediante títulos,
+                                párrafos, imágenes, enlaces, botones y
+                                secciones.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>CSS</strong>
+
+                            <p>
+                                Controla colores, tamaños, espacios, posiciones,
+                                sombras, bordes y adaptación a pantallas.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="recuadro-ejemplo">
+
+                        <strong>Comparación sencilla</strong>
+
+                        <p>
+                            HTML es la estructura de una casa. CSS representa
+                            la pintura, la decoración y la distribución visual.
+                        </p>
+
+                    </div>
+
+                    <p>
+                        Puedes ampliar este tema en:
+                        <a href="por-que-aprender-html-css.html">
+                            ¿Por qué aprender HTML y CSS?
+                        </a>
+                    </p>
+
+                    <h2 id="estructura-html">
+                        Estructura básica de un documento HTML
+                    </h2>
+
+                    <p>
+                        Una página HTML comienza con una estructura que informa
+                        al navegador cómo debe interpretar el documento.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+
+&lt;head&gt;
+
+    &lt;meta charset="UTF-8"&gt;
+
+    &lt;meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    &gt;
+
+    &lt;title&gt;Mi primera página&lt;/title&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;Hola, mundo&lt;/h1&gt;
+
+    &lt;p&gt;
+        Esta es mi primera página web.
+    &lt;/p&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+
+                    </div>
+
+                    <h3>DOCTYPE</h3>
+
+                    <p>
+                        Indica que el documento utiliza HTML moderno.
+                    </p>
+
+                    <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+
+                    <h3>Elemento html</h3>
+
+                    <p>
+                        Contiene todo el documento.
+                    </p>
+
+                    <pre><code>&lt;html lang="es"&gt;</code></pre>
+
+                    <h3>Elemento head</h3>
+
+                    <p>
+                        Guarda información que normalmente no aparece dentro
+                        del contenido visible, como el título, los metadatos y
+                        los archivos CSS.
+                    </p>
+
+                    <h3>Elemento body</h3>
+
+                    <p>
+                        Contiene todos los elementos que se muestran dentro de
+                        la página.
+                    </p>
+
+                    <p>
+                        Continúa con:
+                        <a href="que-es-una-pagina-web.html">
+                            ¿Qué es una página web?
+                        </a>
+                    </p>
+
+                    <h2 id="etiquetas">
+                        Etiquetas principales de HTML
+                    </h2>
+
+                    <h3>Títulos</h3>
+
+                    <p>
+                        HTML incluye títulos desde <code>h1</code> hasta
+                        <code>h6</code>.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>&lt;h1&gt;Título principal&lt;/h1&gt;
+
+&lt;h2&gt;Título de sección&lt;/h2&gt;
+
+&lt;h3&gt;Subtema&lt;/h3&gt;</code></pre>
+
+                    </div>
+
+                    <div class="recuadro-consejo">
+
+                        <strong>Utiliza un h1 principal</strong>
+
+                        <p>
+                            El título principal debe describir claramente el
+                            contenido más importante de la página.
+                        </p>
+
+                    </div>
+
+                    <h3>Párrafos</h3>
+
+                    <pre><code>&lt;p&gt;
+    Este es un párrafo de ejemplo.
+&lt;/p&gt;</code></pre>
+
+                    <h3>Texto importante</h3>
+
+                    <pre><code>&lt;strong&gt;Texto importante&lt;/strong&gt;</code></pre>
+
+                    <h3>Listas</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>&lt;ul&gt;
+
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+
+&lt;/ul&gt;</code></pre>
+
+                    </div>
+
+                    <h3>Botones</h3>
+
+                    <pre><code>&lt;button type="button"&gt;
+    Presiona aquí
+&lt;/button&gt;</code></pre>
+
+                    <h2 id="html-semantico">
+                        ¿Qué es HTML semántico?
+                    </h2>
+
+                    <p>
+                        HTML semántico utiliza etiquetas que explican la función
+                        del contenido.
+                    </p>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+                            <strong>header</strong>
+
+                            <p>
+                                Representa el encabezado de una página o sección.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>nav</strong>
+
+                            <p>
+                                Contiene enlaces de navegación.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>main</strong>
+
+                            <p>
+                                Contiene el contenido principal.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>section</strong>
+
+                            <p>
+                                Agrupa contenido relacionado.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>article</strong>
+
+                            <p>
+                                Representa contenido independiente.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>footer</strong>
+
+                            <p>
+                                Representa el pie de página.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>&lt;header&gt;
+    &lt;nav&gt;
+        &lt;a href="#inicio"&gt;Inicio&lt;/a&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+
+    &lt;section&gt;
+
+        &lt;h1&gt;Bienvenido&lt;/h1&gt;
+
+        &lt;p&gt;
+            Aprende desarrollo web.
+        &lt;/p&gt;
+
+    &lt;/section&gt;
+
+&lt;/main&gt;
+
+&lt;footer&gt;
+    &lt;p&gt;Mi página web&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+
+                    </div>
+
+                    <h2 id="enlaces-imagenes">
+                        Enlaces e imágenes
+                    </h2>
+
+                    <h3>Crear un enlace</h3>
+
+                    <pre><code>&lt;a href="https://example.com"&gt;
+    Visitar página
+&lt;/a&gt;</code></pre>
+
+                    <h3>Crear un enlace interno</h3>
+
+                    <pre><code>&lt;a href="contacto.html"&gt;
+    Contacto
+&lt;/a&gt;</code></pre>
+
+                    <h3>Agregar una imagen</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>&lt;img
+    src="images/pagina-web.jpg"
+    alt="Computadora mostrando una página web"
+&gt;</code></pre>
+
+                    </div>
+
+                    <div class="recuadro-consejo">
+
+                        <strong>Escribe un buen texto alternativo</strong>
+
+                        <p>
+                            El atributo <code>alt</code> debe explicar el
+                            contenido o la función de una imagen importante.
+                        </p>
+
+                    </div>
+
+                    <h2 id="formularios">
+                        Formularios HTML
+                    </h2>
+
+                    <p>
+                        Los formularios permiten recibir información del
+                        usuario.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>&lt;form&gt;
+
+    &lt;label for="nombre"&gt;
+        Nombre
+    &lt;/label&gt;
+
+    &lt;input
+        type="text"
+        id="nombre"
+        name="nombre"
+        required
+    &gt;
+
+    &lt;label for="correo"&gt;
+        Correo
+    &lt;/label&gt;
+
+    &lt;input
+        type="email"
+        id="correo"
+        name="correo"
+        required
+    &gt;
+
+    &lt;button type="submit"&gt;
+        Enviar
+    &lt;/button&gt;
+
+&lt;/form&gt;</code></pre>
+
+                    </div>
+
+                    <p>
+                        Algunos tipos de entrada son:
+                    </p>
+
+                    <ul class="lista-articulo">
+                        <li><code>text</code>: texto corto.</li>
+                        <li><code>email</code>: dirección de correo.</li>
+                        <li><code>password</code>: contraseña.</li>
+                        <li><code>number</code>: números.</li>
+                        <li><code>date</code>: fecha.</li>
+                        <li><code>checkbox</code>: selección múltiple.</li>
+                    </ul>
+
+                    <h2 id="conectar-css">
+                        Cómo conectar CSS con HTML
+                    </h2>
+
+                    <p>
+                        Crea un archivo llamado:
+                    </p>
+
+                    <pre><code>style.css</code></pre>
+
+                    <p>
+                        Después agrégalo dentro del elemento
+                        <code>head</code>:
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+
+                    </div>
+
+                    <div class="recuadro-aviso">
+
+                        <strong>Revisa la ruta</strong>
+
+                        <p>
+                            Si el archivo CSS está dentro de una carpeta,
+                            debes indicar correctamente su ubicación.
+                        </p>
+
+                    </div>
+
+                    <h2 id="selectores">
+                        Selectores CSS
+                    </h2>
+
+                    <p>
+                        Un selector indica qué elementos recibirán determinados
+                        estilos.
+                    </p>
+
+                    <h3>Selector por etiqueta</h3>
+
+                    <pre><code>p{
+    color:#475569;
+    font-size:18px;
+}</code></pre>
+
+                    <h3>Selector por clase</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>.tarjeta{
+    background:#ffffff;
+    padding:24px;
+    border-radius:16px;
+}</code></pre>
+
+                    </div>
+
+                    <p>
+                        La clase se agrega en HTML:
+                    </p>
+
+                    <pre><code>&lt;div class="tarjeta"&gt;
+    Contenido
+&lt;/div&gt;</code></pre>
+
+                    <h3>Selector por identificador</h3>
+
+                    <pre><code>#contacto{
+    padding:80px 20px;
+}</code></pre>
+
+                    <div class="recuadro-consejo">
+
+                        <strong>Utiliza clases para estilos reutilizables</strong>
+
+                        <p>
+                            Una misma clase puede aplicarse a varios elementos.
+                        </p>
+
+                    </div>
+
+                    <h2 id="modelo-caja">
+                        El modelo de caja de CSS
+                    </h2>
+
+                    <p>
+                        Todos los elementos HTML pueden entenderse como cajas
+                        formadas por varias capas.
+                    </p>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+                            <strong>Content</strong>
+
+                            <p>
+                                Es el contenido del elemento.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>Padding</strong>
+
+                            <p>
+                                Espacio entre el contenido y el borde.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>Border</strong>
+
+                            <p>
+                                Línea que rodea la caja.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>Margin</strong>
+
+                            <p>
+                                Espacio exterior entre elementos.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>.tarjeta{
+    width:300px;
+    padding:24px;
+    margin:20px;
+    border:1px solid #e2e8f0;
+    border-radius:18px;
+}</code></pre>
+
+                    </div>
+
+                    <h3>box-sizing</h3>
+
+                    <p>
+                        Esta regla ayuda a controlar el tamaño real de los
+                        elementos:
+                    </p>
+
+                    <pre><code>*{
+    box-sizing:border-box;
+}</code></pre>
+
+                    <h2 id="flexbox">
+                        Organizar elementos con Flexbox
+                    </h2>
+
+                    <p>
+                        Flexbox permite alinear y distribuir elementos dentro
+                        de un contenedor.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>.contenedor{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}</code></pre>
+
+                    </div>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+                            <strong>display:flex</strong>
+
+                            <p>
+                                Activa Flexbox.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>justify-content</strong>
+
+                            <p>
+                                Controla la alineación principal.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>align-items</strong>
+
+                            <p>
+                                Controla la alineación secundaria.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>gap</strong>
+
+                            <p>
+                                Crea espacio entre elementos.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <h2 id="responsive">
+                        Diseño responsive
+                    </h2>
+
+                    <p>
+                        Una página responsive adapta su diseño al tamaño de la
+                        pantalla.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>.contenedor{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:24px;
+}
+
+@media(max-width:768px){
+
+    .contenedor{
+        grid-template-columns:1fr;
+    }
+
+}</code></pre>
+
+                    </div>
+
+                    <p>
+                        En pantallas grandes aparecen tres columnas. En
+                        pantallas pequeñas se muestra una sola columna.
+                    </p>
+
+                    <p>
+                        Continúa con:
+                        <a href="que-es-diseno-responsive.html">
+                            ¿Qué es el diseño responsive?
+                        </a>
+                    </p>
+
+                    <h2 id="proyecto">
+                        Proyecto práctico: crear una tarjeta
+                    </h2>
+
+                    <h3>HTML</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>&lt;article class="tarjeta-curso"&gt;
+
+    &lt;span&gt;🌐&lt;/span&gt;
+
+    &lt;h2&gt;
+        Desarrollo web
+    &lt;/h2&gt;
+
+    &lt;p&gt;
+        Aprende HTML y CSS desde cero.
+    &lt;/p&gt;
+
+    &lt;a href="#"&gt;
+        Comenzar
+    &lt;/a&gt;
+
+&lt;/article&gt;</code></pre>
+
+                    </div>
+
+                    <h3>CSS</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>.tarjeta-curso{
+    max-width:360px;
+    padding:30px;
+    background:#ffffff;
+    border:1px solid #e2e8f0;
+    border-radius:22px;
+    box-shadow:0 15px 40px rgba(15, 23, 42, .10);
+    text-align:center;
+}
+
+.tarjeta-curso span{
+    display:block;
+    margin-bottom:18px;
+    font-size:44px;
+}
+
+.tarjeta-curso h2{
+    margin-bottom:14px;
+    color:#1e293b;
+}
+
+.tarjeta-curso p{
+    margin-bottom:24px;
+    color:#64748b;
+}
+
+.tarjeta-curso a{
+    display:inline-block;
+    padding:12px 24px;
+    background:#4f46e5;
+    color:#ffffff;
+    text-decoration:none;
+    border-radius:999px;
+    font-weight:bold;
+}</code></pre>
+
+                    </div>
+
+                    <div class="recuadro-consejo">
+
+                        <strong>Modifica el ejemplo</strong>
+
+                        <p>
+                            Cambia los textos, colores, espacios y bordes para
+                            comprender cómo afecta cada propiedad.
+                        </p>
+
+                    </div>
+
+                    <h2 id="errores">
+                        Errores frecuentes
+                    </h2>
+
+                    <ul class="lista-articulo lista-riesgos">
+                        <li>No cerrar correctamente las etiquetas.</li>
+                        <li>Escribir incorrectamente el nombre de una clase.</li>
+                        <li>Utilizar una ruta equivocada para CSS o imágenes.</li>
+                        <li>Olvidar guardar los archivos.</li>
+                        <li>Crear varios elementos h1 sin necesidad.</li>
+                        <li>No utilizar texto alternativo en imágenes.</li>
+                        <li>Usar espacios excesivos para posicionar elementos.</li>
+                        <li>No comprobar el diseño en celulares.</li>
+                        <li>Repetir estilos que podrían compartir una clase.</li>
+                        <li>Utilizar colores con poco contraste.</li>
+                    </ul>
+
+                    <h3>El CSS no aparece</h3>
+
+                    <p>
+                        Comprueba que el enlace dentro del
+                        <code>head</code> tenga una ruta correcta:
+                    </p>
+
+                    <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+
+                    <h3>Una imagen no aparece</h3>
+
+                    <p>
+                        Revisa el nombre, la extensión y la carpeta:
+                    </p>
+
+                    <pre><code>&lt;img src="images/foto.jpg" alt="Descripción"&gt;</code></pre>
+
+                    <h2 id="practicas">
+                        Ejercicios para practicar
+                    </h2>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+                            <strong>Página personal</strong>
+
+                            <p>
+                                Crea un título, descripción y lista de
+                                habilidades.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>Tarjeta profesional</strong>
+
+                            <p>
+                                Diseña una tarjeta con icono, título, texto y
+                                botón.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>Menú de navegación</strong>
+
+                            <p>
+                                Crea enlaces para Inicio, Servicios y Contacto.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>Formulario</strong>
+
+                            <p>
+                                Agrega campos para nombre, correo y mensaje.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>Galería responsive</strong>
+
+                            <p>
+                                Crea una cuadrícula que se adapte al celular.
+                            </p>
+                        </div>
+
+                        <div>
+                            <strong>Modo oscuro</strong>
+
+                            <p>
+                                Diseña una segunda combinación de colores.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <p>
+                        También puedes descargar los ejercicios desde la
+                        sección de:
+                        <a href="material.html">
+                            guías y materiales gratuitos
+                        </a>.
+                    </p>
+
+                    <h2 id="preguntas">
+                        Preguntas frecuentes
+                    </h2>
+
+                    <section
+                        class="faq-articulo"
+                        aria-labelledby="preguntas"
+                    >
+
+                        <details>
+                            <summary>
+                                ¿HTML es un lenguaje de programación?
+                            </summary>
+
+                            <p>
+                                No. HTML es un lenguaje de marcado utilizado
+                                para estructurar contenido.
+                            </p>
+                        </details>
+
+                        <details>
+                            <summary>
+                                ¿CSS es un lenguaje de programación?
+                            </summary>
+
+                            <p>
+                                CSS es un lenguaje de estilos utilizado para
+                                definir la presentación visual.
+                            </p>
+                        </details>
+
+                        <details>
+                            <summary>
+                                ¿Debo aprender HTML antes que CSS?
+                            </summary>
+
+                            <p>
+                                Es recomendable comprender primero la estructura
+                                básica de HTML y después aplicar estilos con CSS.
+                            </p>
+                        </details>
+
+                        <details>
+                            <summary>
+                                ¿Necesito instalar programas especiales?
+                            </summary>
+
+                            <p>
+                                Solamente necesitas un editor de código y un
+                                navegador para comenzar.
+                            </p>
+                        </details>
+
+                        <details>
+                            <summary>
+                                ¿Cuánto tiempo se necesita para aprender?
+                            </summary>
+
+                            <p>
+                                Las bases pueden aprenderse rápidamente, pero
+                                crear diseños profesionales requiere práctica
+                                constante.
+                            </p>
+                        </details>
+
+                        <details>
+                            <summary>
+                                ¿Qué debo aprender después?
+                            </summary>
+
+                            <p>
+                                Después de HTML y CSS puedes aprender JavaScript
+                                para agregar interactividad.
+                            </p>
+                        </details>
+
+                    </section>
+
+                    <h2 id="conclusion">
+                        Conclusión
+                    </h2>
+
+                    <p>
+                        HTML permite construir la estructura de una página y
+                        CSS transforma esa estructura en un diseño visual.
+                    </p>
+
+                    <p>
+                        Aprender etiquetas, clases, modelo de caja, Flexbox y
+                        diseño responsive proporciona una base sólida para
+                        comenzar en desarrollo web.
+                    </p>
+
+                    <p>
+                        Practica creando proyectos pequeños y mejora
+                        progresivamente su organización, accesibilidad y diseño.
+                    </p>
+
+                    <section
+                        class="autor-articulo"
+                        aria-label="Información del autor"
+                    >
+
+                        <div
+                            class="autor-icono"
+                            aria-hidden="true"
+                        >
+                            &lt;/&gt;
+                        </div>
+
+                        <div class="autor-informacion">
+
+                            <span>
+                                Guía creada por
+                            </span>
+
+                            <h2>
+                                ByteNova
+                            </h2>
+
+                            <p>
+                                Plataforma educativa dedicada a explicar
+                                programación, desarrollo web, inteligencia
+                                artificial y ciberseguridad de manera clara.
+                            </p>
+
+                            <a href="sobre.html">
+                                Conoce más sobre ByteNova →
+                            </a>
+
+                        </div>
+
+                    </section>
+
+                    <aside
+                        class="articulos-relacionados"
+                        aria-labelledby="titulo-articulos-relacionados"
+                    >
+
+                        <h2 id="titulo-articulos-relacionados">
+                            Continúa aprendiendo
+                        </h2>
+
+                        <div class="relacionados-grid">
+
+                            <a href="por-que-aprender-html-css.html">
+                                <span aria-hidden="true">🌐</span>
+
+                                <strong>
+                                    ¿Por qué aprender HTML y CSS?
+                                </strong>
+
+                                <small>
+                                    Descubre por qué son esenciales.
+                                </small>
+                            </a>
+
+                            <a href="que-es-diseno-responsive.html">
+                                <span aria-hidden="true">📱</span>
+
+                                <strong>
+                                    Diseño responsive
+                                </strong>
+
+                                <small>
+                                    Adapta tus páginas a cualquier pantalla.
+                                </small>
+                            </a>
+
+                            <a href="guia-javascript.html">
+                                <span aria-hidden="true">⚡</span>
+
+                                <strong>
+                                    JavaScript para principiantes
+                                </strong>
+
+                                <small>
+                                    Agrega interacción a tus páginas.
+                                </small>
+                            </a>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="contenedor-footer">
+
+            <div class="footer-logo">
+
+                <a
+                    href="../index.html#inicio"
+                    class="marca-bytenova"
+                    aria-label="Ir al inicio de ByteNova"
+                >
+                    <span
+                        class="marca-icono"
+                        aria-hidden="true"
+                    >
+                        &lt;/&gt;
+                    </span>
+
+                    <span class="marca-texto">
+                        ByteNova
+                    </span>
+                </a>
+
+                <p>
+                    Aprende tecnología desde cero con artículos, rutas,
+                    retos, guías y recursos gratuitos.
+                </p>
+
+            </div>
+
+            <nav
+                class="footer-enlaces"
+                aria-label="Enlaces de aprendizaje del pie de página"
+            >
+                <h3>Aprender</h3>
+
+                <a href="../index.html#tecnologias">
+                    Tecnologías
+                </a>
+
+                <a href="rutas.html">
+                    Rutas
+                </a>
+
+                <a href="retos.html">
+                    Retos
+                </a>
+
+                <a
+                    href="material.html"
+                    aria-current="page"
+                >
+                    Guías
+                </a>
+
+                <a href="articulos.html">
+                    Artículos
+                </a>
+
+                <a href="glosario.html">
+                    Glosario
+                </a>
+            </nav>
+
+            <nav
+                class="footer-enlaces"
+                aria-label="Enlaces informativos del pie de página"
+            >
+                <h3>ByteNova</h3>
+
+                <a href="sobre.html">
+                    Sobre ByteNova
+                </a>
+
+                <a href="../index.html#contacto">
+                    Contacto
+                </a>
+
+                <a href="privacidad.html">
+                    Privacidad
+                </a>
+
+                <a href="terminos.html">
+                    Términos
+                </a>
+
+                <a href="cookies.html">
+                    Cookies
+                </a>
+            </nav>
+
+            <address class="footer-social">
+
+                <h3>Contacto</h3>
+
+                <p>
+                    Preguntas, sugerencias o comentarios sobre nuestros
+                    contenidos educativos.
+                </p>
+
+                <a href="mailto:bytenova339@gmail.com">
+                    bytenova339@gmail.com
+                </a>
+
+            </address>
+
+        </div>
+
+        <div class="footer-copy">
+
+            <p>
+                © 2026 ByteNova. Todos los derechos reservados.
+            </p>
+
+            <p>
+                Creado por Dylan Estrada.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

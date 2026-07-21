@@ -1,0 +1,1889 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Guía de Linux para principiantes | ByteNova</title>
+
+    <meta
+        name="description"
+        content="Aprende Linux desde cero: distribuciones, terminal, sistema de archivos, comandos básicos, permisos, instalación de programas, procesos, redes y seguridad."
+    >
+
+    <meta name="author" content="ByteNova">
+    <meta name="robots" content="index, follow">
+
+    <meta
+        name="theme-color"
+        content="#ffffff"
+        media="(prefers-color-scheme: light)"
+    >
+
+    <meta
+        name="theme-color"
+        content="#0f172a"
+        media="(prefers-color-scheme: dark)"
+    >
+
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="es_CR">
+    <meta property="og:site_name" content="ByteNova">
+
+    <meta
+        property="og:title"
+        content="Guía de Linux para principiantes"
+    >
+
+    <meta
+        property="og:description"
+        content="Aprende Linux desde cero: distribuciones, terminal, archivos, permisos, programas, procesos, redes y seguridad."
+    >
+
+    <meta
+        property="og:url"
+        content="https://bytenova.app/pages/guia-linux.html"
+    >
+
+    <meta
+        property="article:published_time"
+        content="2026-07-19"
+    >
+
+    <meta
+        property="article:modified_time"
+        content="2026-07-20"
+    >
+
+    <meta
+        property="article:section"
+        content="Sistemas operativos"
+    >
+
+    <meta name="twitter:card" content="summary">
+
+    <meta
+        name="twitter:title"
+        content="Guía de Linux para principiantes"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Aprende los fundamentos de Linux y sus comandos principales desde cero."
+    >
+
+    <link
+        rel="canonical"
+        href="https://bytenova.app/pages/guia-linux.html"
+    >
+
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="../images/favicon.svg"
+    >
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "LearningResource",
+                "@id": "https://bytenova.app/pages/guia-linux.html#learning-resource",
+                "name": "Guía de Linux para principiantes",
+                "description": "Guía gratuita para aprender los fundamentos de Linux, utilizar la terminal y comprender sus comandos principales.",
+                "url": "https://bytenova.app/pages/guia-linux.html",
+                "datePublished": "2026-07-19",
+                "dateModified": "2026-07-20",
+                "inLanguage": "es",
+                "learningResourceType": "Guide",
+                "educationalLevel": "Beginner",
+                "isAccessibleForFree": true,
+                "author": {
+                    "@type": "Organization",
+                    "name": "ByteNova",
+                    "url": "https://bytenova.app/pages/sobre.html"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "ByteNova",
+                    "url": "https://bytenova.app/"
+                },
+                "isPartOf": {
+                    "@id": "https://bytenova.app/#website"
+                },
+                "mainEntityOfPage": {
+                    "@id": "https://bytenova.app/pages/guia-linux.html#webpage"
+                },
+                "about": [
+                    {
+                        "@type": "Thing",
+                        "name": "Linux"
+                    },
+                    {
+                        "@type": "Thing",
+                        "name": "GNU/Linux"
+                    },
+                    {
+                        "@type": "Thing",
+                        "name": "Sistemas operativos"
+                    },
+                    {
+                        "@type": "Thing",
+                        "name": "Terminal"
+                    }
+                ]
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://bytenova.app/pages/guia-linux.html#webpage",
+                "url": "https://bytenova.app/pages/guia-linux.html",
+                "name": "Guía de Linux para principiantes",
+                "description": "Guía sobre distribuciones Linux, terminal, sistema de archivos, comandos, permisos, programas, procesos, redes y seguridad.",
+                "inLanguage": "es",
+                "datePublished": "2026-07-19",
+                "dateModified": "2026-07-20",
+                "isPartOf": {
+                    "@id": "https://bytenova.app/#website"
+                },
+                "breadcrumb": {
+                    "@id": "https://bytenova.app/pages/guia-linux.html#breadcrumb"
+                },
+                "mainEntity": {
+                    "@id": "https://bytenova.app/pages/guia-linux.html#learning-resource"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://bytenova.app/pages/guia-linux.html#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Inicio",
+                        "item": "https://bytenova.app/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Guías",
+                        "item": "https://bytenova.app/pages/material.html"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Linux para principiantes",
+                        "item": "https://bytenova.app/pages/guia-linux.html"
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://bytenova.app/pages/guia-linux.html#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "¿Linux es difícil de utilizar?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Las tareas básicas mediante una interfaz gráfica pueden ser sencillas. La terminal requiere práctica progresiva."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Linux es gratuito?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Muchas distribuciones pueden descargarse y utilizarse gratuitamente."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Necesito borrar mi sistema actual?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. Puedes comenzar mediante una máquina virtual o una memoria USB en modo live."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Linux sirve para programar?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sí. Incluye o permite instalar numerosas herramientas de programación y desarrollo."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Todos los programas funcionan en Linux?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No todos cuentan con una versión para Linux, aunque existen alternativas y herramientas de compatibilidad."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Debo memorizar todos los comandos?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. Aprende los comandos más frecuentes y consulta documentación cuando necesites otros."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+
+</head>
+
+<body>
+
+    <a
+        class="saltar-contenido"
+        href="#contenido-principal"
+    >
+        Saltar al contenido principal
+    </a>
+
+    <header>
+
+        <a
+            href="../index.html#inicio"
+            class="marca-bytenova"
+            aria-label="Ir al inicio de ByteNova"
+        >
+
+            <span
+                class="marca-icono"
+                aria-hidden="true"
+            >
+                &lt;/&gt;
+            </span>
+
+            <span class="marca-texto">
+                ByteNova
+            </span>
+
+        </a>
+
+        <button
+            type="button"
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="menu-principal"
+        >
+            <span aria-hidden="true">☰</span>
+        </button>
+
+        <nav
+            id="menu-principal"
+            aria-label="Navegación principal"
+        >
+
+            <a href="../index.html#inicio">Inicio</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="../index.html#tecnologias">Aprender</a>
+            <a href="rutas.html">Rutas</a>
+            <a href="retos.html">Retos</a>
+
+            <a
+                href="material.html"
+                aria-current="page"
+            >
+                Guías
+            </a>
+
+            <a href="articulos.html">Artículos</a>
+            <a href="glosario.html">Glosario</a>
+            <a href="../index.html#contacto">Contacto</a>
+
+            <button
+                type="button"
+                id="btn-modo"
+                class="btn-modo"
+                aria-label="Activar modo oscuro"
+            >
+                <span aria-hidden="true">🌙</span>
+            </button>
+
+        </nav>
+
+    </header>
+
+    <main
+        class="sobre articulo"
+        id="contenido-principal"
+    >
+
+        <article
+            class="sobre-contenido"
+            aria-labelledby="titulo-guia-linux"
+        >
+
+            <nav
+                class="migas-navegacion"
+                aria-label="Ruta de navegación"
+            >
+
+                <a href="../index.html">Inicio</a>
+                <span aria-hidden="true">›</span>
+
+                <a href="material.html">
+                    Guías
+                </a>
+
+                <span aria-hidden="true">›</span>
+
+                <span aria-current="page">
+                    Linux para principiantes
+                </span>
+
+            </nav>
+
+            <span class="seccion-etiqueta">
+                <span aria-hidden="true">🐧</span>
+                Guía de sistemas operativos
+            </span>
+
+            <h1 id="titulo-guia-linux">
+                Linux para principiantes: guía desde cero
+                <span aria-hidden="true">🐧</span>
+            </h1>
+
+            <p class="articulo-meta">
+
+                Publicado por ByteNova ·
+
+                <time datetime="2026-07-19">
+                    19 de julio de 2026
+                </time>
+
+                · Actualizado el
+
+                <time datetime="2026-07-20">
+                    20 de julio de 2026
+                </time>
+
+            </p>
+
+            <div class="articulo-resumen">
+
+                <strong>En esta guía aprenderás:</strong>
+
+                <p>
+                    Qué es Linux, cómo se organiza su sistema de archivos,
+                    cuáles son sus distribuciones y cómo utilizar comandos
+                    básicos para administrar archivos, programas, permisos,
+                    procesos y conexiones.
+                </p>
+
+            </div>
+
+            <div class="articulo-layout">
+
+                <details class="indice-articulo">
+
+                    <summary>
+                        <span aria-hidden="true">📑</span>
+                        Contenido de la guía
+                    </summary>
+
+                    <nav aria-label="Contenido de la guía">
+
+                        <a href="#que-es">
+                            1. ¿Qué es Linux?
+                        </a>
+
+                        <a href="#ventajas">
+                            2. Ventajas de utilizar Linux
+                        </a>
+
+                        <a href="#distribuciones">
+                            3. Distribuciones
+                        </a>
+
+                        <a href="#instalacion">
+                            4. Formas de probar Linux
+                        </a>
+
+                        <a href="#escritorio-terminal">
+                            5. Escritorio y terminal
+                        </a>
+
+                        <a href="#sistema-archivos">
+                            6. Sistema de archivos
+                        </a>
+
+                        <a href="#navegacion">
+                            7. Comandos de navegación
+                        </a>
+
+                        <a href="#archivos">
+                            8. Archivos y carpetas
+                        </a>
+
+                        <a href="#visualizar">
+                            9. Visualizar contenido
+                        </a>
+
+                        <a href="#permisos">
+                            10. Usuarios y permisos
+                        </a>
+
+                        <a href="#programas">
+                            11. Instalar programas
+                        </a>
+
+                        <a href="#procesos">
+                            12. Procesos y recursos
+                        </a>
+
+                        <a href="#redes">
+                            13. Comandos de red
+                        </a>
+
+                        <a href="#seguridad">
+                            14. Seguridad básica
+                        </a>
+
+                        <a href="#practicas">
+                            15. Ejercicios
+                        </a>
+
+                        <a href="#preguntas">
+                            16. Preguntas frecuentes
+                        </a>
+
+                        <a href="#conclusion">
+                            17. Conclusión
+                        </a>
+
+                    </nav>
+
+                </details>
+
+                <div
+                    class="articulo-cuerpo"
+                    aria-label="Contenido principal de la guía"
+                >
+
+                    <p class="articulo-introduccion">
+                        Linux es una familia de sistemas operativos utilizada
+                        en computadoras personales, servidores, dispositivos,
+                        sistemas de desarrollo y servicios de Internet.
+                    </p>
+
+                    <p>
+                        Puede utilizarse mediante una interfaz gráfica similar
+                        a otros sistemas, pero también ofrece una terminal muy
+                        potente para ejecutar tareas mediante comandos.
+                    </p>
+
+                    <h2 id="que-es">
+                        ¿Qué es Linux?
+                    </h2>
+
+                    <p>
+                        Linux es el núcleo utilizado por diferentes sistemas
+                        operativos conocidos como distribuciones.
+                    </p>
+
+                    <p>
+                        Una distribución combina el núcleo Linux con programas,
+                        herramientas, una interfaz gráfica y un sistema para
+                        instalar aplicaciones.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <strong>Explicación sencilla</strong>
+
+                        <p>
+                            Linux administra el funcionamiento básico del equipo,
+                            mientras la distribución agrega las herramientas que
+                            permiten utilizarlo diariamente.
+                        </p>
+
+                    </div>
+
+                    <p>
+                        Puedes ampliar este tema en:
+                        <a href="que-es-linux.html">
+                            ¿Qué es Linux?
+                        </a>
+                    </p>
+
+                    <h3>Linux y GNU/Linux</h3>
+
+                    <p>
+                        Técnicamente, Linux es el núcleo. Muchas distribuciones
+                        combinan ese núcleo con herramientas del proyecto GNU y
+                        otros programas.
+                    </p>
+
+                    <p>
+                        Por esta razón también puedes encontrar el nombre
+                        <strong>GNU/Linux</strong>.
+                    </p>
+
+                    <h2 id="ventajas">
+                        Ventajas de utilizar Linux
+                    </h2>
+
+                    <ul class="lista-articulo lista-ventajas">
+
+                        <li>Cuenta con numerosas distribuciones gratuitas.</li>
+                        <li>Puede funcionar en equipos con diferentes capacidades.</li>
+                        <li>Permite personalizar gran parte del sistema.</li>
+                        <li>Es muy utilizado en servidores.</li>
+                        <li>Incluye herramientas útiles para programación.</li>
+                        <li>Cuenta con una comunidad amplia.</li>
+                        <li>Permite administrar tareas desde la terminal.</li>
+                        <li>Ofrece modelos de permisos sólidos.</li>
+                        <li>Es importante en computación en la nube.</li>
+                        <li>Favorece el aprendizaje sobre sistemas operativos.</li>
+
+                    </ul>
+
+                    <div class="recuadro-consejo">
+
+                        <strong>No necesitas utilizar solamente la terminal</strong>
+
+                        <p>
+                            Las distribuciones modernas incluyen escritorios,
+                            ventanas, menús y tiendas de aplicaciones.
+                        </p>
+
+                    </div>
+
+                    <h2 id="distribuciones">
+                        ¿Qué es una distribución de Linux?
+                    </h2>
+
+                    <p>
+                        Una distribución es una versión completa del sistema
+                        preparada para diferentes necesidades.
+                    </p>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+
+                            <strong>Ubuntu</strong>
+
+                            <p>
+                                Distribución popular con abundante documentación
+                                y herramientas para principiantes.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Linux Mint</strong>
+
+                            <p>
+                                Ofrece un escritorio familiar y una experiencia
+                                sencilla para comenzar.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Debian</strong>
+
+                            <p>
+                                Es reconocida por su estabilidad y sirve como
+                                base para otras distribuciones.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Fedora</strong>
+
+                            <p>
+                                Integra tecnologías modernas y herramientas
+                                orientadas al desarrollo.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Arch Linux</strong>
+
+                            <p>
+                                Ofrece mucha personalización, pero requiere más
+                                conocimientos técnicos.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Raspberry Pi OS</strong>
+
+                            <p>
+                                Está diseñada principalmente para dispositivos
+                                Raspberry Pi.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="recuadro-consejo">
+
+                        <strong>Recomendación para comenzar</strong>
+
+                        <p>
+                            Ubuntu o Linux Mint suelen ser opciones accesibles
+                            para una primera experiencia.
+                        </p>
+
+                    </div>
+
+                    <h2 id="instalacion">
+                        Formas de probar Linux
+                    </h2>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+
+                            <strong>Máquina virtual</strong>
+
+                            <p>
+                                Ejecuta Linux dentro de otro sistema sin
+                                reemplazarlo.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>USB en modo live</strong>
+
+                            <p>
+                                Permite iniciar Linux desde una memoria USB
+                                antes de instalarlo.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Instalación junto a otro sistema</strong>
+
+                            <p>
+                                Permite elegir qué sistema utilizar al encender
+                                el equipo.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Equipo dedicado</strong>
+
+                            <p>
+                                Instala Linux como sistema principal en una
+                                computadora.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="recuadro-aviso">
+
+                        <strong>Crea una copia de seguridad</strong>
+
+                        <p>
+                            Antes de modificar particiones o instalar un sistema,
+                            guarda tus archivos importantes en otra ubicación.
+                        </p>
+
+                    </div>
+
+                    <h2 id="escritorio-terminal">
+                        Escritorio y terminal
+                    </h2>
+
+                    <p>
+                        Linux puede utilizarse mediante una interfaz gráfica o
+                        mediante una terminal.
+                    </p>
+
+                    <h3>Entorno de escritorio</h3>
+
+                    <p>
+                        El entorno de escritorio incluye ventanas, paneles,
+                        iconos, menús y aplicaciones gráficas.
+                    </p>
+
+                    <p>
+                        Algunos entornos conocidos son:
+                    </p>
+
+                    <ul class="lista-articulo">
+
+                        <li>GNOME.</li>
+                        <li>KDE Plasma.</li>
+                        <li>Cinnamon.</li>
+                        <li>XFCE.</li>
+                        <li>MATE.</li>
+
+                    </ul>
+
+                    <h3>Terminal</h3>
+
+                    <p>
+                        La terminal permite escribir instrucciones para navegar,
+                        administrar archivos y ejecutar programas.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>echo "Hola desde Linux"</code></pre>
+
+                    </div>
+
+                    <p>
+                        Este comando muestra un mensaje en la terminal.
+                    </p>
+
+                    <div class="recuadro-aviso">
+
+                        <strong>No ejecutes comandos que no comprendas</strong>
+
+                        <p>
+                            Una instrucción incorrecta puede modificar o eliminar
+                            archivos importantes.
+                        </p>
+
+                    </div>
+
+                    <h2 id="sistema-archivos">
+                        Cómo se organiza el sistema de archivos
+                    </h2>
+
+                    <p>
+                        Linux organiza los archivos a partir de una carpeta
+                        principal llamada raíz.
+                    </p>
+
+                    <pre><code>/</code></pre>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+
+                            <strong>/home</strong>
+
+                            <p>
+                                Contiene las carpetas personales de los usuarios.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>/etc</strong>
+
+                            <p>
+                                Contiene numerosos archivos de configuración.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>/var</strong>
+
+                            <p>
+                                Guarda datos que cambian, como registros y
+                                archivos de servicios.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>/usr</strong>
+
+                            <p>
+                                Contiene programas, bibliotecas y recursos del
+                                sistema.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>/tmp</strong>
+
+                            <p>
+                                Se utiliza para archivos temporales.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>/media</strong>
+
+                            <p>
+                                Puede utilizarse para montar dispositivos
+                                extraíbles.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <h3>Carpeta personal</h3>
+
+                    <p>
+                        Cada usuario suele tener una carpeta dentro de
+                        <code>/home</code>.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>/home/ana</code></pre>
+
+                    </div>
+
+                    <p>
+                        El símbolo siguiente representa normalmente la carpeta
+                        personal del usuario actual:
+                    </p>
+
+                    <pre><code>~</code></pre>
+
+                    <h2 id="navegacion">
+                        Comandos básicos de navegación
+                    </h2>
+
+                    <h3>pwd</h3>
+
+                    <p>
+                        Muestra la ubicación actual.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>pwd</code></pre>
+
+                    </div>
+
+                    <h3>ls</h3>
+
+                    <p>
+                        Muestra los archivos y carpetas de la ubicación actual.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>ls</code></pre>
+
+                    </div>
+
+                    <p>
+                        Para mostrar más detalles:
+                    </p>
+
+                    <pre><code>ls -l</code></pre>
+
+                    <p>
+                        Para incluir archivos ocultos:
+                    </p>
+
+                    <pre><code>ls -a</code></pre>
+
+                    <h3>cd</h3>
+
+                    <p>
+                        Permite cambiar de carpeta.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>cd Documentos</code></pre>
+
+                    </div>
+
+                    <p>
+                        Para regresar a la carpeta anterior:
+                    </p>
+
+                    <pre><code>cd ..</code></pre>
+
+                    <p>
+                        Para volver a la carpeta personal:
+                    </p>
+
+                    <pre><code>cd ~</code></pre>
+
+                    <h3>clear</h3>
+
+                    <p>
+                        Limpia visualmente la terminal.
+                    </p>
+
+                    <pre><code>clear</code></pre>
+
+                    <h2 id="archivos">
+                        Crear y administrar archivos y carpetas
+                    </h2>
+
+                    <h3>mkdir</h3>
+
+                    <p>
+                        Crea una carpeta nueva.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>mkdir proyecto</code></pre>
+
+                    </div>
+
+                    <h3>touch</h3>
+
+                    <p>
+                        Puede utilizarse para crear un archivo vacío.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>touch notas.txt</code></pre>
+
+                    </div>
+
+                    <h3>cp</h3>
+
+                    <p>
+                        Copia un archivo.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>cp notas.txt copia-notas.txt</code></pre>
+
+                    </div>
+
+                    <p>
+                        Para copiar una carpeta con su contenido:
+                    </p>
+
+                    <pre><code>cp -r proyecto copia-proyecto</code></pre>
+
+                    <h3>mv</h3>
+
+                    <p>
+                        Permite mover o cambiar el nombre de un archivo.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>mv notas.txt apuntes.txt</code></pre>
+
+                    </div>
+
+                    <p>
+                        Para moverlo hacia otra carpeta:
+                    </p>
+
+                    <pre><code>mv apuntes.txt Documentos/</code></pre>
+
+                    <h3>rm</h3>
+
+                    <p>
+                        Elimina archivos.
+                    </p>
+
+                    <div class="recuadro-aviso">
+
+                        <strong>Utiliza rm con mucho cuidado</strong>
+
+                        <p>
+                            Los archivos eliminados desde la terminal pueden no
+                            pasar por la papelera.
+                        </p>
+
+                    </div>
+
+                    <pre><code>rm archivo.txt</code></pre>
+
+                    <p>
+                        Para eliminar una carpeta vacía:
+                    </p>
+
+                    <pre><code>rmdir carpeta-vacia</code></pre>
+
+                    <div class="recuadro-aviso">
+
+                        <strong>Evita copiar comandos destructivos</strong>
+
+                        <p>
+                            No utilices opciones recursivas o forzadas sin
+                            comprender exactamente qué archivos afectarán.
+                        </p>
+
+                    </div>
+
+                    <h2 id="visualizar">
+                        Visualizar y buscar contenido
+                    </h2>
+
+                    <h3>cat</h3>
+
+                    <p>
+                        Muestra el contenido de un archivo pequeño.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>cat notas.txt</code></pre>
+
+                    </div>
+
+                    <h3>less</h3>
+
+                    <p>
+                        Permite leer archivos largos de forma progresiva.
+                    </p>
+
+                    <pre><code>less registro.txt</code></pre>
+
+                    <h3>head</h3>
+
+                    <p>
+                        Muestra las primeras líneas.
+                    </p>
+
+                    <pre><code>head archivo.txt</code></pre>
+
+                    <h3>tail</h3>
+
+                    <p>
+                        Muestra las últimas líneas.
+                    </p>
+
+                    <pre><code>tail archivo.txt</code></pre>
+
+                    <h3>grep</h3>
+
+                    <p>
+                        Busca texto dentro de un archivo.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>grep "Linux" notas.txt</code></pre>
+
+                    </div>
+
+                    <h3>find</h3>
+
+                    <p>
+                        Busca archivos y carpetas.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>find . -name "notas.txt"</code></pre>
+
+                    </div>
+
+                    <p>
+                        El punto indica que la búsqueda comienza desde la carpeta
+                        actual.
+                    </p>
+
+                    <h2 id="permisos">
+                        Usuarios y permisos
+                    </h2>
+
+                    <p>
+                        Linux controla quién puede leer, modificar o ejecutar
+                        archivos.
+                    </p>
+
+                    <p>
+                        Los permisos básicos son:
+                    </p>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+
+                            <strong>r</strong>
+
+                            <p>
+                                Permiso de lectura.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>w</strong>
+
+                            <p>
+                                Permiso de escritura.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>x</strong>
+
+                            <p>
+                                Permiso de ejecución.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <h3>Consultar permisos</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>ls -l</code></pre>
+
+                    </div>
+
+                    <p>
+                        El resultado puede incluir una estructura similar a:
+                    </p>
+
+                    <pre><code>-rw-r--r--</code></pre>
+
+                    <h3>chmod</h3>
+
+                    <p>
+                        Permite modificar permisos.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>chmod +x script.sh</code></pre>
+
+                    </div>
+
+                    <p>
+                        Este ejemplo agrega permiso de ejecución.
+                    </p>
+
+                    <h3>sudo</h3>
+
+                    <p>
+                        Permite ejecutar determinadas acciones con privilegios
+                        administrativos.
+                    </p>
+
+                    <div class="recuadro-aviso">
+
+                        <strong>No utilices sudo sin necesidad</strong>
+
+                        <p>
+                            Los privilegios administrativos permiten modificar
+                            partes importantes del sistema.
+                        </p>
+
+                    </div>
+
+                    <h2 id="programas">
+                        Instalar y actualizar programas
+                    </h2>
+
+                    <p>
+                        Las distribuciones utilizan administradores de paquetes
+                        para instalar, actualizar y eliminar programas.
+                    </p>
+
+                    <h3>Ubuntu, Debian y Linux Mint</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <strong>Actualizar la lista de paquetes</strong>
+
+                        <pre><code>sudo apt update</code></pre>
+
+                    </div>
+
+                    <div class="recuadro-ejemplo">
+
+                        <strong>Instalar actualizaciones</strong>
+
+                        <pre><code>sudo apt upgrade</code></pre>
+
+                    </div>
+
+                    <div class="recuadro-ejemplo">
+
+                        <strong>Instalar un programa</strong>
+
+                        <pre><code>sudo apt install nombre-paquete</code></pre>
+
+                    </div>
+
+                    <div class="recuadro-ejemplo">
+
+                        <strong>Eliminar un programa</strong>
+
+                        <pre><code>sudo apt remove nombre-paquete</code></pre>
+
+                    </div>
+
+                    <h3>Fedora</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>sudo dnf install nombre-paquete</code></pre>
+
+                    </div>
+
+                    <div class="recuadro-consejo">
+
+                        <strong>Utiliza repositorios confiables</strong>
+
+                        <p>
+                            Instala programas desde los repositorios oficiales o
+                            desde fuentes reconocidas.
+                        </p>
+
+                    </div>
+
+                    <h2 id="procesos">
+                        Procesos y recursos del sistema
+                    </h2>
+
+                    <p>
+                        Un proceso es un programa que se está ejecutando.
+                    </p>
+
+                    <h3>ps</h3>
+
+                    <p>
+                        Muestra información sobre procesos.
+                    </p>
+
+                    <pre><code>ps</code></pre>
+
+                    <h3>top</h3>
+
+                    <p>
+                        Muestra procesos y consumo de recursos en tiempo real.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>top</code></pre>
+
+                    </div>
+
+                    <h3>free</h3>
+
+                    <p>
+                        Muestra información sobre memoria.
+                    </p>
+
+                    <pre><code>free -h</code></pre>
+
+                    <h3>df</h3>
+
+                    <p>
+                        Muestra el espacio disponible en los sistemas de
+                        archivos.
+                    </p>
+
+                    <pre><code>df -h</code></pre>
+
+                    <h3>kill</h3>
+
+                    <p>
+                        Envía una señal a un proceso.
+                    </p>
+
+                    <div class="recuadro-aviso">
+
+                        <strong>Identifica correctamente el proceso</strong>
+
+                        <p>
+                            Detener un proceso importante puede afectar el
+                            sistema o provocar pérdida de información.
+                        </p>
+
+                    </div>
+
+                    <h2 id="redes">
+                        Comandos básicos de red
+                    </h2>
+
+                    <h3>ip address</h3>
+
+                    <p>
+                        Muestra las interfaces y direcciones de red.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>ip address</code></pre>
+
+                    </div>
+
+                    <h3>ping</h3>
+
+                    <p>
+                        Comprueba si existe comunicación con otro destino.
+                    </p>
+
+                    <pre><code>ping bytenova.app</code></pre>
+
+                    <p>
+                        Para detenerlo normalmente puedes presionar:
+                    </p>
+
+                    <pre><code>Ctrl + C</code></pre>
+
+                    <h3>curl</h3>
+
+                    <p>
+                        Permite realizar solicitudes y consultar recursos desde
+                        la terminal.
+                    </p>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>curl https://bytenova.app/</code></pre>
+
+                    </div>
+
+                    <h3>hostname</h3>
+
+                    <p>
+                        Muestra el nombre del equipo.
+                    </p>
+
+                    <pre><code>hostname</code></pre>
+
+                    <p>
+                        Continúa aprendiendo con:
+                        <a href="guia-internet-redes.html">
+                            Guía de Internet y redes
+                        </a>
+                    </p>
+
+                    <h2 id="seguridad">
+                        Seguridad básica en Linux
+                    </h2>
+
+                    <ul class="lista-articulo lista-ventajas">
+
+                        <li>Mantén el sistema actualizado.</li>
+                        <li>Utiliza una contraseña segura.</li>
+                        <li>No trabajes siempre como administrador.</li>
+                        <li>Instala programas desde fuentes confiables.</li>
+                        <li>Revisa los comandos antes de ejecutarlos.</li>
+                        <li>Crea copias de seguridad.</li>
+                        <li>Elimina servicios que no necesites.</li>
+                        <li>Protege las claves de acceso remoto.</li>
+                        <li>Revisa los permisos de archivos importantes.</li>
+                        <li>Bloquea la pantalla cuando te alejes.</li>
+
+                    </ul>
+
+                    <div class="recuadro-consejo">
+
+                        <strong>Linux también requiere buenas prácticas</strong>
+
+                        <p>
+                            Ningún sistema operativo elimina por completo los
+                            riesgos de errores, programas maliciosos o accesos
+                            no autorizados.
+                        </p>
+
+                    </div>
+
+                    <h3>Software libre y código abierto</h3>
+
+                    <p>
+                        Muchas herramientas de Linux se desarrollan bajo
+                        licencias abiertas.
+                    </p>
+
+                    <p>
+                        Amplía el tema en:
+                        <a href="que-es-software-libre-codigo-abierto.html">
+                            software libre y código abierto
+                        </a>.
+                    </p>
+
+                    <h2 id="practicas">
+                        Ejercicios para practicar
+                    </h2>
+
+                    <div class="lista-tarjetas-articulo">
+
+                        <div>
+
+                            <strong>Explora tu ubicación</strong>
+
+                            <p>
+                                Utiliza <code>pwd</code> y
+                                <code>ls</code>.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Crea una estructura</strong>
+
+                            <p>
+                                Crea una carpeta con varios archivos de prueba.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Copia y mueve archivos</strong>
+
+                            <p>
+                                Practica <code>cp</code> y
+                                <code>mv</code>.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Busca información</strong>
+
+                            <p>
+                                Utiliza <code>grep</code> dentro de un archivo.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Consulta recursos</strong>
+
+                            <p>
+                                Revisa memoria y almacenamiento disponibles.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Consulta la red</strong>
+
+                            <p>
+                                Utiliza <code>ip address</code> sin publicar
+                                información privada.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <h3>Práctica guiada</h3>
+
+                    <div class="recuadro-ejemplo">
+
+                        <pre><code>mkdir practica-linux
+
+cd practica-linux
+
+touch notas.txt
+
+echo "Estoy aprendiendo Linux" &gt; notas.txt
+
+cat notas.txt
+
+cp notas.txt copia.txt
+
+ls -l</code></pre>
+
+                    </div>
+
+                    <p>
+                        Este ejercicio crea una carpeta, genera un archivo,
+                        escribe una frase, copia el archivo y muestra el
+                        resultado.
+                    </p>
+
+                    <div class="recuadro-aviso">
+
+                        <strong>Practica dentro de una carpeta de prueba</strong>
+
+                        <p>
+                            Evita experimentar con carpetas o archivos importantes
+                            del sistema.
+                        </p>
+
+                    </div>
+
+                    <h2 id="preguntas">
+                        Preguntas frecuentes
+                    </h2>
+
+                    <section
+                        class="faq-articulo"
+                        aria-labelledby="preguntas"
+                    >
+
+                        <details>
+
+                            <summary>
+                                ¿Linux es difícil de utilizar?
+                            </summary>
+
+                            <p>
+                                Las tareas básicas mediante una interfaz gráfica
+                                pueden ser sencillas. La terminal requiere práctica
+                                progresiva.
+                            </p>
+
+                        </details>
+
+                        <details>
+
+                            <summary>
+                                ¿Linux es gratuito?
+                            </summary>
+
+                            <p>
+                                Muchas distribuciones pueden descargarse y
+                                utilizarse gratuitamente.
+                            </p>
+
+                        </details>
+
+                        <details>
+
+                            <summary>
+                                ¿Necesito borrar mi sistema actual?
+                            </summary>
+
+                            <p>
+                                No. Puedes comenzar mediante una máquina virtual
+                                o una memoria USB en modo live.
+                            </p>
+
+                        </details>
+
+                        <details>
+
+                            <summary>
+                                ¿Linux sirve para programar?
+                            </summary>
+
+                            <p>
+                                Sí. Incluye o permite instalar numerosas
+                                herramientas de programación y desarrollo.
+                            </p>
+
+                        </details>
+
+                        <details>
+
+                            <summary>
+                                ¿Todos los programas funcionan en Linux?
+                            </summary>
+
+                            <p>
+                                No todos cuentan con una versión para Linux,
+                                aunque existen alternativas y herramientas de
+                                compatibilidad.
+                            </p>
+
+                        </details>
+
+                        <details>
+
+                            <summary>
+                                ¿Debo memorizar todos los comandos?
+                            </summary>
+
+                            <p>
+                                No. Aprende los comandos más frecuentes y consulta
+                                documentación cuando necesites otros.
+                            </p>
+
+                        </details>
+
+                    </section>
+
+                    <h2 id="conclusion">
+                        Conclusión
+                    </h2>
+
+                    <p>
+                        Linux es un sistema flexible y muy importante dentro de
+                        la programación, los servidores, las redes y la
+                        infraestructura tecnológica.
+                    </p>
+
+                    <p>
+                        Aprender a navegar por sus carpetas, administrar archivos,
+                        instalar programas y consultar recursos proporciona una
+                        base sólida para continuar estudiando tecnología.
+                    </p>
+
+                    <p>
+                        Comienza con comandos sencillos, practica dentro de
+                        carpetas de prueba y aumenta gradualmente la dificultad.
+                    </p>
+
+                    <section
+                        class="autor-articulo"
+                        aria-label="Información del autor"
+                    >
+
+                        <div
+                            class="autor-icono"
+                            aria-hidden="true"
+                        >
+                            &lt;/&gt;
+                        </div>
+
+                        <div class="autor-informacion">
+
+                            <span>
+                                Guía creada por
+                            </span>
+
+                            <h2>
+                                ByteNova
+                            </h2>
+
+                            <p>
+                                Plataforma educativa dedicada a explicar
+                                programación, desarrollo web, inteligencia
+                                artificial y ciberseguridad de manera clara.
+                            </p>
+
+                            <a href="sobre.html">
+                                Conoce más sobre ByteNova →
+                            </a>
+
+                        </div>
+
+                    </section>
+
+                    <aside
+                        class="articulos-relacionados"
+                        aria-labelledby="titulo-articulos-relacionados"
+                    >
+
+                        <h2 id="titulo-articulos-relacionados">
+                            Continúa aprendiendo
+                        </h2>
+
+                        <div class="relacionados-grid">
+
+                            <a href="que-es-un-sistema-operativo.html">
+
+                                <span aria-hidden="true">💻</span>
+
+                                <strong>
+                                    Sistemas operativos
+                                </strong>
+
+                                <small>
+                                    Comprende cómo se administra una computadora.
+                                </small>
+
+                            </a>
+
+                            <a href="que-es-linux.html">
+
+                                <span aria-hidden="true">🐧</span>
+
+                                <strong>
+                                    ¿Qué es Linux?
+                                </strong>
+
+                                <small>
+                                    Repasa sus características principales.
+                                </small>
+
+                            </a>
+
+                            <a href="que-son-git-y-github.html">
+
+                                <span aria-hidden="true">🔄</span>
+
+                                <strong>
+                                    Git y GitHub
+                                </strong>
+
+                                <small>
+                                    Organiza tus proyectos desde Linux.
+                                </small>
+
+                            </a>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="contenedor-footer">
+
+            <div class="footer-logo">
+
+                <a
+                    href="../index.html#inicio"
+                    class="marca-bytenova"
+                    aria-label="Ir al inicio de ByteNova"
+                >
+                    <span
+                        class="marca-icono"
+                        aria-hidden="true"
+                    >
+                        &lt;/&gt;
+                    </span>
+
+                    <span class="marca-texto">
+                        ByteNova
+                    </span>
+                </a>
+
+                <p>
+                    Aprende tecnología desde cero con artículos, rutas,
+                    retos, guías y recursos gratuitos.
+                </p>
+
+            </div>
+
+            <nav
+                class="footer-enlaces"
+                aria-label="Enlaces de aprendizaje del pie de página"
+            >
+                <h3>Aprender</h3>
+
+                <a href="../index.html#tecnologias">
+                    Tecnologías
+                </a>
+
+                <a href="rutas.html">
+                    Rutas
+                </a>
+
+                <a href="retos.html">
+                    Retos
+                </a>
+
+                <a
+                    href="material.html"
+                    aria-current="page"
+                >
+                    Guías
+                </a>
+
+                <a href="articulos.html">
+                    Artículos
+                </a>
+
+                <a href="glosario.html">
+                    Glosario
+                </a>
+            </nav>
+
+            <nav
+                class="footer-enlaces"
+                aria-label="Enlaces informativos del pie de página"
+            >
+                <h3>ByteNova</h3>
+
+                <a href="sobre.html">
+                    Sobre ByteNova
+                </a>
+
+                <a href="../index.html#contacto">
+                    Contacto
+                </a>
+
+                <a href="privacidad.html">
+                    Privacidad
+                </a>
+
+                <a href="terminos.html">
+                    Términos
+                </a>
+
+                <a href="cookies.html">
+                    Cookies
+                </a>
+            </nav>
+
+            <address class="footer-social">
+
+                <h3>Contacto</h3>
+
+                <p>
+                    Preguntas, sugerencias o comentarios sobre nuestros
+                    contenidos educativos.
+                </p>
+
+                <a href="mailto:bytenova339@gmail.com">
+                    bytenova339@gmail.com
+                </a>
+
+            </address>
+
+        </div>
+
+        <div class="footer-copy">
+
+            <p>
+                © 2026 ByteNova. Todos los derechos reservados.
+            </p>
+
+            <p>
+                Creado por Dylan Estrada.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

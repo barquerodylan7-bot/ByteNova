@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   ¿Qué es JavaScript y para qué sirve? | ByteNova
+  </title>
+  <meta content="Aprende qué es JavaScript, para qué sirve, cómo agrega interactividad a una página web y cuáles son sus conceptos básicos." name="description"/>
+  <meta content="ByteNova" name="author"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
+  <meta content="#0f172a" media="(prefers-color-scheme: dark)" name="theme-color"/>
+  <meta content="article" property="og:type"/>
+  <meta content="es_CR" property="og:locale"/>
+  <meta content="ByteNova" property="og:site_name"/>
+  <meta content="¿Qué es JavaScript y para qué sirve?" property="og:title"/>
+  <meta content="Aprende qué es JavaScript, para qué sirve, cómo agrega interactividad a una página web y cuáles son sus conceptos básicos." property="og:description"/>
+  <meta content="https://bytenova.app/pages/que-es-javascript.html" property="og:url"/>
+  <meta content="2026-07-17" property="article:published_time"/>
+  <meta content="2026-07-21" property="article:modified_time"/>
+  <meta content="Desarrollo web" property="article:section"/>
+  <meta content="summary" name="twitter:card"/>
+  <meta content="¿Qué es JavaScript y para qué sirve?" name="twitter:title"/>
+  <meta content="Aprende qué es JavaScript, cómo agrega interactividad a las páginas web y cuáles son sus conceptos fundamentales." name="twitter:description"/>
+  <link href="https://bytenova.app/pages/que-es-javascript.html" rel="canonical"/>
+  <link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="../css/style.css" rel="stylesheet"/>
+  <script type="application/ld+json">
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "@id": "https://bytenova.app/pages/que-es-javascript.html#article",
+            "headline": "¿Qué es JavaScript y para qué sirve?",
+            "description": "Aprende qué es JavaScript, para qué sirve, cómo agrega interactividad a una página web y cuáles son sus conceptos básicos.",
+            "url": "https://bytenova.app/pages/que-es-javascript.html",
+            "datePublished": "2026-07-17",
+            "dateModified": "2026-07-21",
+            "inLanguage": "es",
+            "articleSection": "Desarrollo web",
+            "isAccessibleForFree": true,
+            "author": {
+                "@type": "Organization",
+                "name": "ByteNova",
+                "url": "https://bytenova.app/pages/sobre.html"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "ByteNova",
+                "url": "https://bytenova.app/"
+            },
+            "isPartOf": {
+                "@id": "https://bytenova.app/#website"
+            },
+            "mainEntityOfPage": {
+                "@id": "https://bytenova.app/pages/que-es-javascript.html#webpage"
+            },
+            "about": [
+                {
+                    "@type": "Thing",
+                    "name": "JavaScript"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "Programación web"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "Desarrollo frontend"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "DOM"
+                }
+            ]
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://bytenova.app/pages/que-es-javascript.html#webpage",
+            "url": "https://bytenova.app/pages/que-es-javascript.html",
+            "name": "¿Qué es JavaScript y para qué sirve?",
+            "description": "Aprende qué es JavaScript, para qué sirve, cómo agrega interactividad a una página web y cuáles son sus conceptos básicos.",
+            "inLanguage": "es",
+            "datePublished": "2026-07-17",
+            "dateModified": "2026-07-21",
+            "isPartOf": {
+                "@id": "https://bytenova.app/#website"
+            },
+            "breadcrumb": {
+                "@id": "https://bytenova.app/pages/que-es-javascript.html#breadcrumb"
+            },
+            "mainEntity": {
+                "@id": "https://bytenova.app/pages/que-es-javascript.html#article"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://bytenova.app/pages/que-es-javascript.html#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Inicio",
+                    "item": "https://bytenova.app/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Artículos",
+                    "item": "https://bytenova.app/pages/articulos.html"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "JavaScript",
+                    "item": "https://bytenova.app/pages/que-es-javascript.html"
+                }
+            ]
+        },
+        {
+            "@type": "FAQPage",
+            "@id": "https://bytenova.app/pages/que-es-javascript.html#faq",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "¿JavaScript y Java son lo mismo?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. Son lenguajes diferentes, con características, usos y formas de funcionamiento distintas."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Necesito instalar JavaScript?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Para comenzar en desarrollo web normalmente no. Los navegadores modernos ya pueden ejecutar JavaScript."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿JavaScript sirve solamente para páginas web?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. También puede utilizarse para crear servidores, aplicaciones móviles, programas de escritorio, herramientas y videojuegos."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Es difícil aprender JavaScript?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Sus fundamentos pueden aprenderse gradualmente. Algunas partes avanzadas requieren más práctica, pero es posible comenzar con proyectos sencillos."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿JavaScript es un lenguaje de programación?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Sí. Permite trabajar con datos, decisiones, funciones, objetos, eventos y muchas otras características propias de la programación."
+                    }
+                }
+            ]
+        }
+    ]
+}
+  </script>
+ </head>
+ <body>
+  <a class="saltar-contenido" href="#contenido-principal">
+   Saltar al contenido principal
+  </a>
+  <header>
+   <a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio">
+    <span aria-hidden="true" class="marca-icono">
+     &lt;/&gt;
+    </span>
+    <span class="marca-texto">
+     ByteNova
+    </span>
+   </a>
+   <button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle" type="button">
+    <span aria-hidden="true">
+     ☰
+    </span>
+   </button>
+   <nav aria-label="Navegación principal" id="menu-principal">
+    <a href="../index.html#inicio">
+     Inicio
+    </a>
+    <a href="sobre.html">
+     Sobre
+    </a>
+    <a href="../index.html#tecnologias">
+     Aprender
+    </a>
+    <a href="rutas.html">
+     Rutas
+    </a>
+    <a href="retos.html">
+     Retos
+    </a>
+    <a href="material.html">
+     Guías
+    </a>
+    <a aria-current="page" href="articulos.html">
+     Artículos
+    </a>
+    <a href="glosario.html">
+     Glosario
+    </a>
+    <a href="../index.html#contacto">
+     Contacto
+    </a>
+    <button aria-label="Activar modo oscuro" class="btn-modo" id="btn-modo" type="button">
+     <span aria-hidden="true">
+      🌙
+     </span>
+    </button>
+   </nav>
+  </header>
+  <main class="sobre articulo" id="contenido-principal">
+   <article aria-labelledby="titulo-que-es-javascript" class="sobre-contenido">
+    <nav aria-label="Ruta de navegación" class="migas-navegacion">
+     <a href="../index.html">
+      Inicio
+     </a>
+     <span aria-hidden="true">
+      ›
+     </span>
+     <a href="articulos.html">
+      Artículos
+     </a>
+     <span aria-hidden="true">
+      ›
+     </span>
+     <span aria-current="page">
+      JavaScript
+     </span>
+    </nav>
+    <span class="seccion-etiqueta">
+     <span aria-hidden="true">
+      🟨
+     </span>
+     Desarrollo web
+    </span>
+    <h1 id="titulo-que-es-javascript">
+     ¿Qué es JavaScript y para qué sirve?
+     <span aria-hidden="true">
+      🟨
+     </span>
+    </h1>
+    <p class="articulo-meta">
+     Publicado por ByteNova ·
+     <time datetime="2026-07-17">
+      17 de julio de 2026
+     </time>
+     · Actualizado el
+     <time datetime="2026-07-21">
+      21 de julio de 2026
+     </time>
+    </p>
+    <div class="articulo-resumen">
+     <strong>
+      En este artículo aprenderás:
+     </strong>
+     <p>
+      Qué es JavaScript, cómo funciona dentro de una página web,
+                    cuáles son sus conceptos principales y qué puedes crear
+                    con este lenguaje de programación.
+     </p>
+    </div>
+    <div class="articulo-layout">
+     <details class="indice-articulo">
+      <summary>
+       <span aria-hidden="true">
+        📑
+       </span>
+       Contenido del artículo
+      </summary>
+      <nav aria-label="Contenido del artículo">
+       <a href="#que-es">
+        1. ¿Qué es JavaScript?
+       </a>
+       <a href="#para-que-sirve">
+        2. ¿Para qué sirve?
+       </a>
+       <a href="#html-css-javascript">
+        3. HTML, CSS y JavaScript
+       </a>
+       <a href="#como-funciona">
+        4. ¿Cómo funciona?
+       </a>
+       <a href="#conceptos">
+        5. Conceptos básicos
+       </a>
+       <a href="#dom">
+        6. El DOM
+       </a>
+       <a href="#navegador-servidor">
+        7. Navegador y servidor
+       </a>
+       <a href="#ejemplo">
+        8. Ejemplo básico
+       </a>
+       <a href="#aprender">
+        9. Cómo aprender JavaScript
+       </a>
+       <a href="#errores">
+        10. Errores frecuentes
+       </a>
+       <a href="#preguntas">
+        11. Preguntas frecuentes
+       </a>
+       <a href="#conclusion">
+        12. Conclusión
+       </a>
+      </nav>
+     </details>
+     <div aria-label="Contenido principal del artículo" class="articulo-cuerpo">
+      <p class="articulo-introduccion">
+       JavaScript es un lenguaje de programación utilizado
+                        principalmente para agregar interactividad, comportamiento
+                        y funciones dinámicas a las páginas web.
+      </p>
+      <p>
+       Gracias a JavaScript, una página puede responder a los
+                        clics del usuario, validar formularios, cambiar contenido,
+                        crear animaciones, mostrar mensajes y comunicarse con
+                        otros servicios.
+      </p>
+      <h2 id="que-es">
+       ¿Qué es JavaScript?
+      </h2>
+      <p>
+       JavaScript es un lenguaje de programación que permite
+                        crear instrucciones para controlar el comportamiento de
+                        una página web o una aplicación.
+      </p>
+      <p>
+       Se ejecuta principalmente en los navegadores, aunque
+                        también puede utilizarse fuera de ellos para desarrollar
+                        servidores, aplicaciones móviles y herramientas.
+      </p>
+      <div class="recuadro-ejemplo">
+       <strong>
+        Ejemplo sencillo
+       </strong>
+       <p>
+        Cuando presionas un botón y aparece una ventana,
+                            cambia un texto o se abre un menú, normalmente hay
+                            código JavaScript controlando esa acción.
+       </p>
+      </div>
+      <h2 id="para-que-sirve">
+       ¿Para qué sirve JavaScript?
+      </h2>
+      <p>
+       JavaScript puede utilizarse para crear experiencias
+                        interactivas y desarrollar diferentes tipos de programas.
+      </p>
+      <ul class="lista-articulo lista-ventajas">
+       <li>
+        Abrir y cerrar menús de navegación.
+       </li>
+       <li>
+        Validar formularios antes de enviarlos.
+       </li>
+       <li>
+        Crear galerías y carruseles de imágenes.
+       </li>
+       <li>
+        Actualizar contenido sin recargar toda la página.
+       </li>
+       <li>
+        Desarrollar juegos que funcionan en el navegador.
+       </li>
+       <li>
+        Crear aplicaciones web completas.
+       </li>
+       <li>
+        Construir servidores y servicios digitales.
+       </li>
+       <li>
+        Desarrollar aplicaciones móviles y de escritorio.
+       </li>
+      </ul>
+      <h2 id="html-css-javascript">
+       Diferencia entre HTML, CSS y JavaScript
+      </h2>
+      <p>
+       HTML, CSS y JavaScript cumplen funciones diferentes,
+                        pero trabajan juntos para construir una página web.
+      </p>
+      <div class="lista-tarjetas-articulo">
+       <div>
+        <strong>
+         HTML
+        </strong>
+        <p>
+         Crea la estructura y organiza elementos como
+                                títulos, párrafos, imágenes, botones y enlaces.
+        </p>
+       </div>
+       <div>
+        <strong>
+         CSS
+        </strong>
+        <p>
+         Controla colores, tamaños, espacios, posiciones,
+                                animaciones y adaptación a diferentes pantallas.
+        </p>
+       </div>
+       <div>
+        <strong>
+         JavaScript
+        </strong>
+        <p>
+         Agrega comportamiento, decisiones, interactividad
+                                y cambios dinámicos dentro de la página.
+        </p>
+       </div>
+      </div>
+      <div class="recuadro-ejemplo">
+       <strong>
+        Comparación sencilla
+       </strong>
+       <p>
+        En una casa, HTML sería la estructura, CSS sería la
+                            decoración y JavaScript sería el sistema que permite
+                            encender luces, abrir puertas automáticas o controlar
+                            diferentes funciones.
+       </p>
+      </div>
+      <p>
+       Puedes ampliar este tema en el artículo sobre
+       <a href="por-que-aprender-html-css.html">
+        qué son HTML y CSS
+       </a>
+       .
+      </p>
+      <h2 id="como-funciona">
+       ¿Cómo funciona JavaScript?
+      </h2>
+      <p>
+       El navegador puede leer el código JavaScript y ejecutar
+                        sus instrucciones mientras una persona utiliza la página.
+      </p>
+      <div class="pasos-articulo" role="list">
+       <div class="paso-articulo" role="listitem">
+        <span>
+         1
+        </span>
+        <div>
+         <h3>
+          La página se carga
+         </h3>
+         <p>
+          El navegador obtiene los archivos HTML,
+                                    CSS y JavaScript del sitio.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         2
+        </span>
+        <div>
+         <h3>
+          JavaScript se ejecuta
+         </h3>
+         <p>
+          El navegador interpreta las instrucciones
+                                    escritas dentro del archivo JavaScript.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         3
+        </span>
+        <div>
+         <h3>
+          La página responde
+         </h3>
+         <p>
+          El código puede reaccionar a clics, teclas,
+                                    movimientos, formularios u otros eventos.
+         </p>
+        </div>
+       </div>
+      </div>
+      <h2 id="conceptos">
+       Conceptos básicos de JavaScript
+      </h2>
+      <h3>
+       Variables
+      </h3>
+      <p>
+       Las variables permiten guardar información para
+                        utilizarla posteriormente.
+      </p>
+      <pre><code>let nombre = "ByteNova";
+let articulos = 8;</code></pre>
+      <h3>
+       Condiciones
+      </h3>
+      <p>
+       Las condiciones permiten ejecutar diferentes acciones
+                        dependiendo de si algo es verdadero o falso.
+      </p>
+      <pre><code>let edad = 18;
+
+if (edad &gt;= 18) {
+    console.log("Acceso permitido");
+} else {
+    console.log("Acceso restringido");
+}</code></pre>
+      <h3>
+       Funciones
+      </h3>
+      <p>
+       Las funciones agrupan instrucciones que pueden
+                        utilizarse varias veces.
+      </p>
+      <pre><code>function saludar(nombre) {
+    return "Hola, " + nombre;
+}
+
+console.log(saludar("ByteNova"));</code></pre>
+      <h3>
+       Eventos
+      </h3>
+      <p>
+       Los eventos permiten detectar acciones realizadas por
+                        el usuario, como hacer clic en un botón.
+      </p>
+      <pre><code>const boton = document.querySelector("#mi-boton");
+
+boton.addEventListener("click", function () {
+    alert("Botón presionado");
+});</code></pre>
+      <h3>
+       Bucles
+      </h3>
+      <p>
+       Los bucles permiten repetir instrucciones sin escribir
+                        el mismo código varias veces.
+      </p>
+      <pre><code>for (let numero = 1; numero &lt;= 5; numero++) {
+    console.log(numero);
+}</code></pre>
+      <h2 id="dom">
+       ¿Qué es el DOM?
+      </h2>
+      <p>
+       El DOM es una representación de los elementos que
+                        forman una página web. JavaScript puede utilizarlo para
+                        localizar, modificar, agregar o eliminar contenido.
+      </p>
+      <p>
+       Por ejemplo, puede encontrar un título mediante su
+                        identificador y cambiar su texto.
+      </p>
+      <pre><code>const titulo = document.querySelector("#titulo");
+
+titulo.textContent = "Aprende JavaScript con ByteNova";</code></pre>
+      <div class="recuadro-consejo">
+       <strong>
+        Idea importante
+       </strong>
+       <p>
+        JavaScript no modifica directamente el archivo HTML
+                            guardado. Cambia la representación que el navegador
+                            muestra durante la visita del usuario.
+       </p>
+      </div>
+      <h2 id="navegador-servidor">
+       JavaScript en el navegador y en el servidor
+      </h2>
+      <h3>
+       En el navegador
+      </h3>
+      <p>
+       Se utiliza para controlar elementos visuales, formularios,
+                        menús, mensajes, animaciones y otras funciones de la
+                        interfaz.
+      </p>
+      <h3>
+       En el servidor
+      </h3>
+      <p>
+       JavaScript también puede ejecutarse en servidores mediante
+                        entornos como Node.js. Esto permite gestionar usuarios,
+                        procesar datos, conectarse con bases de datos y responder
+                        solicitudes.
+      </p>
+      <p>
+       Por esta razón, JavaScript puede utilizarse tanto en la
+                        parte visible de una aplicación como en su funcionamiento
+                        interno.
+      </p>
+      <h2 id="ejemplo">
+       Ejemplo básico con HTML y JavaScript
+      </h2>
+      <p>
+       El siguiente ejemplo cambia un texto cuando el usuario
+                        presiona un botón:
+      </p>
+      <pre><code>&lt;h2 id="mensaje"&gt;
+    Bienvenido a ByteNova
+&lt;/h2&gt;
+
+&lt;button id="boton"&gt;
+    Cambiar mensaje
+&lt;/button&gt;
+
+&lt;script&gt;
+
+    const mensaje = document.querySelector("#mensaje");
+    const boton = document.querySelector("#boton");
+
+    boton.addEventListener("click", function () {
+        mensaje.textContent = "¡Estás aprendiendo JavaScript!";
+    });
+
+&lt;/script&gt;</code></pre>
+      <p>
+       Primero se seleccionan el texto y el botón. Después se
+                        detecta el clic y se cambia el contenido mostrado.
+      </p>
+      <h2 id="aprender">
+       ¿Cómo comenzar a aprender JavaScript?
+      </h2>
+      <div class="pasos-articulo" role="list">
+       <div class="paso-articulo" role="listitem">
+        <span>
+         1
+        </span>
+        <div>
+         <h3>
+          Aprende HTML y CSS
+         </h3>
+         <p>
+          Comprender la estructura y el diseño web
+                                    facilita el aprendizaje de JavaScript.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         2
+        </span>
+        <div>
+         <h3>
+          Estudia los fundamentos
+         </h3>
+         <p>
+          Practica variables, condiciones, funciones,
+                                    bucles, arreglos y objetos.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         3
+        </span>
+        <div>
+         <h3>
+          Aprende a usar el DOM
+         </h3>
+         <p>
+          Practica cómo seleccionar y modificar
+                                    elementos de una página.
+         </p>
+        </div>
+       </div>
+       <div class="paso-articulo" role="listitem">
+        <span>
+         4
+        </span>
+        <div>
+         <h3>
+          Crea proyectos pequeños
+         </h3>
+         <p>
+          Construye una calculadora, una lista de tareas,
+                                    un menú móvil o un formulario interactivo.
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="recuadro-consejo">
+       <strong>
+        Consejo para principiantes
+       </strong>
+       <p>
+        Escribe el código por tu cuenta y modifica los
+                            ejemplos. Aprenderás más experimentando que copiando
+                            soluciones completas sin analizarlas.
+       </p>
+      </div>
+      <h2 id="errores">
+       Errores frecuentes al aprender JavaScript
+      </h2>
+      <ul class="lista-articulo lista-riesgos">
+       <li>
+        Copiar código sin entender cada instrucción.
+       </li>
+       <li>
+        Intentar aprender librerías antes de los fundamentos.
+       </li>
+       <li>
+        No revisar los errores de la consola del navegador.
+       </li>
+       <li>
+        Usar nombres poco claros para variables y funciones.
+       </li>
+       <li>
+        Crear proyectos demasiado complicados al comenzar.
+       </li>
+       <li>
+        No practicar la manipulación del DOM.
+       </li>
+       <li>
+        Abandonar cuando aparece un error.
+       </li>
+      </ul>
+      <h2 id="preguntas">
+       Preguntas frecuentes
+      </h2>
+      <section aria-labelledby="preguntas" class="faq-articulo">
+       <details>
+        <summary>
+         ¿JavaScript y Java son lo mismo?
+        </summary>
+        <p>
+         No. Son lenguajes diferentes, con características,
+                                usos y formas de funcionamiento distintas.
+        </p>
+       </details>
+       <details>
+        <summary>
+         ¿Necesito instalar JavaScript?
+        </summary>
+        <p>
+         Para comenzar en desarrollo web normalmente no.
+                                Los navegadores modernos ya pueden ejecutar
+                                JavaScript.
+        </p>
+       </details>
+       <details>
+        <summary>
+         ¿JavaScript sirve solamente para páginas web?
+        </summary>
+        <p>
+         No. También puede utilizarse para crear servidores,
+                                aplicaciones móviles, programas de escritorio,
+                                herramientas y videojuegos.
+        </p>
+       </details>
+       <details>
+        <summary>
+         ¿Es difícil aprender JavaScript?
+        </summary>
+        <p>
+         Sus fundamentos pueden aprenderse gradualmente.
+                                Algunas partes avanzadas requieren más práctica,
+                                pero es posible comenzar con proyectos sencillos.
+        </p>
+       </details>
+       <details>
+        <summary>
+         ¿JavaScript es un lenguaje de programación?
+        </summary>
+        <p>
+         Sí. Permite trabajar con datos, decisiones,
+                                funciones, objetos, eventos y muchas otras
+                                características propias de la programación.
+        </p>
+       </details>
+      </section>
+      <h2 id="conclusion">
+       Conclusión
+      </h2>
+      <p>
+       JavaScript es un lenguaje de programación fundamental
+                        para crear páginas web interactivas y aplicaciones
+                        modernas.
+      </p>
+      <p>
+       Trabaja junto con HTML y CSS para controlar el
+                        comportamiento de elementos, responder a eventos y
+                        modificar contenido.
+      </p>
+      <p>
+       Para aprenderlo correctamente conviene comenzar con sus
+                        fundamentos, practicar con el DOM y construir proyectos
+                        pequeños antes de utilizar herramientas más avanzadas.
+      </p>
+      <section aria-label="Información del autor" class="autor-articulo">
+       <div aria-hidden="true" class="autor-icono">
+        &lt;/&gt;
+       </div>
+       <div class="autor-informacion">
+        <span>
+         Artículo creado por
+        </span>
+        <h2>
+         ByteNova
+        </h2>
+        <p>
+         Plataforma educativa dedicada a explicar
+                                programación, desarrollo web, inteligencia
+                                artificial y ciberseguridad de manera clara.
+        </p>
+        <a href="sobre.html">
+         Conoce más sobre ByteNova →
+        </a>
+       </div>
+      </section>
+      <aside aria-labelledby="titulo-articulos-relacionados" class="articulos-relacionados">
+       <h2 id="titulo-articulos-relacionados">
+        Continúa aprendiendo
+       </h2>
+       <div class="relacionados-grid">
+        <a href="que-es-programacion.html">
+         <span aria-hidden="true">
+          💻
+         </span>
+         <strong>
+          ¿Qué es la programación?
+         </strong>
+         <small>
+          Comprende cómo se crean instrucciones y programas.
+         </small>
+        </a>
+        <a href="por-que-aprender-html-css.html">
+         <span aria-hidden="true">
+          🌐
+         </span>
+         <strong>
+          ¿Qué son HTML y CSS?
+         </strong>
+         <small>
+          Aprende las bases de la estructura y el diseño web.
+         </small>
+        </a>
+        <a href="que-es-una-pagina-web.html">
+         <span aria-hidden="true">
+          🌍
+         </span>
+         <strong>
+          ¿Qué es una página web?
+         </strong>
+         <small>
+          Descubre cómo funciona una página en Internet.
+         </small>
+        </a>
+       </div>
+      </aside>
+     </div>
+    </div>
+   </article>
+  </main>
+  <footer class="footer">
+   <div class="contenedor-footer">
+    <div class="footer-logo">
+     <a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio">
+      <span aria-hidden="true" class="marca-icono">
+       &lt;/&gt;
+      </span>
+      <span class="marca-texto">
+       ByteNova
+      </span>
+     </a>
+     <p>
+      Aprende tecnología desde cero con artículos, rutas,
+                retos, guías y recursos gratuitos.
+     </p>
+    </div>
+    <nav aria-label="Enlaces de aprendizaje del pie de página" class="footer-enlaces">
+     <h3>
+      Aprender
+     </h3>
+     <a href="../index.html#tecnologias">
+      Tecnologías
+     </a>
+     <a href="rutas.html">
+      Rutas
+     </a>
+     <a href="retos.html">
+      Retos
+     </a>
+     <a href="material.html">
+      Guías
+     </a>
+     <a aria-current="page" href="articulos.html">
+      Artículos
+     </a>
+     <a href="glosario.html">
+      Glosario
+     </a>
+    </nav>
+    <nav aria-label="Enlaces informativos del pie de página" class="footer-enlaces">
+     <h3>
+      ByteNova
+     </h3>
+     <a href="sobre.html">
+      Sobre ByteNova
+     </a>
+     <a href="../index.html#contacto">
+      Contacto
+     </a>
+     <a href="privacidad.html">
+      Privacidad
+     </a>
+     <a href="terminos.html">
+      Términos
+     </a>
+     <a href="cookies.html">
+      Cookies
+     </a>
+    </nav>
+    <address class="footer-social">
+     <h3>
+      Contacto
+     </h3>
+     <p>
+      Preguntas, sugerencias o comentarios sobre nuestros
+                contenidos educativos.
+     </p>
+     <a href="mailto:bytenova339@gmail.com">
+      bytenova339@gmail.com
+     </a>
+    </address>
+   </div>
+   <div class="footer-copy">
+    <p>
+     © 2026 ByteNova. Todos los derechos reservados.
+    </p>
+    <p>
+     Creado por Dylan Estrada.
+    </p>
+   </div>
+  </footer>
+  <script src="../js/script.js">
+  </script>
+ </body>
+</html>
