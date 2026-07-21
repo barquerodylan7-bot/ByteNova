@@ -7089,3 +7089,37 @@ li code{
         color:#e2e8f0 !important;
     }
 }
+/* =========================================
+   CONTRASTE FINAL DEL FOOTER
+========================================= */
+
+footer.footer{
+    background-color:#020617 !important;
+    color:#ffffff !important;
+}
+
+footer.footer .footer-social h3{
+    color:#ffffff !important;
+    -webkit-text-fill-color:#ffffff !important;
+    opacity:1 !important;
+}
+
+footer.footer .footer-social p{
+    color:#f1f5f9 !important;
+    -webkit-text-fill-color:#f1f5f9 !important;
+    opacity:1 !important;
+}
+
+footer.footer .footer-social a{
+    color:#dbeafe !important;
+    -webkit-text-fill-color:#dbeafe !important;
+    font-weight:700 !important;
+    text-decoration:underline;
+    opacity:1 !important;
+}
+
+footer.footer .footer-copy p{
+    color:#f1f5f9 !important;
+    -webkit-text-fill-color:#f1f5f9 !important;
+    opacity:1 !important;
+}
