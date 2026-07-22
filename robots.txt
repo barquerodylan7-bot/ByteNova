@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /pages/gracias.html
 
 Sitemap: https://bytenova.app/sitemap.xml
