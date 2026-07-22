@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>CSS Flexbox: guía para alinear y distribuir elementos | ByteNova</title><meta content="Aprende cómo Flexbox alinea y distribuye elementos en filas o columnas adaptables." name="description"/><meta content="ByteNova" name="author"/><meta content="index, follow" name="robots"/><meta content="#fff" media="(prefers-color-scheme:light)" name="theme-color"/><meta content="#0f172a" media="(prefers-color-scheme:dark)" name="theme-color"/><link href="https://bytenova.app/pages/css-flexbox.html" rel="canonical"/><link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/><link href="../css/style.css" rel="stylesheet"/><meta content="article" property="og:type"/><meta content="es_CR" property="og:locale"/><meta content="ByteNova" property="og:site_name"/><meta content="CSS Flexbox: guía para alinear y distribuir elementos" property="og:title"/><meta content="Aprende cómo Flexbox alinea y distribuye elementos en filas o columnas adaptables." property="og:description"/><meta content="https://bytenova.app/pages/css-flexbox.html" property="og:url"/><meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="image/jpeg" property="og:image:type"/><meta content="2026-07-22" property="article:published_time"/><meta content="2026-07-22" property="article:modified_time"/><meta content="Desarrollo web" property="article:section"/><meta content="summary_large_image" name="twitter:card"/><meta content="CSS Flexbox: guía para alinear y distribuir elementos" name="twitter:title"/><meta content="Aprende cómo Flexbox alinea y distribuye elementos en filas o columnas adaptables." name="twitter:description"/><meta content="https://bytenova.app/images/bytenova-social.jpg" name="twitter:image"/><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://bytenova.app/pages/css-flexbox.html#article",
+      "headline": "CSS Flexbox: guía para alinear y distribuir elementos",
+      "description": "Aprende cómo Flexbox alinea y distribuye elementos en filas o columnas adaptables.",
+      "url": "https://bytenova.app/pages/css-flexbox.html",
+      "datePublished": "2026-07-22",
+      "dateModified": "2026-07-22",
+      "inLanguage": "es",
+      "articleSection": "Desarrollo web",
+      "isAccessibleForFree": true,
+      "author": {
+        "@type": "Organization",
+        "name": "ByteNova",
+        "url": "https://bytenova.app/pages/sobre.html"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ByteNova",
+        "url": "https://bytenova.app/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://bytenova.app/images/bytenova-social.jpg",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "mainEntityOfPage": {
+        "@id": "https://bytenova.app/pages/css-flexbox.html#webpage"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://bytenova.app/images/bytenova-social.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://bytenova.app/pages/css-flexbox.html#webpage",
+      "url": "https://bytenova.app/pages/css-flexbox.html",
+      "name": "CSS Flexbox: guía para alinear y distribuir elementos",
+      "description": "Aprende cómo Flexbox alinea y distribuye elementos en filas o columnas adaptables.",
+      "inLanguage": "es",
+      "datePublished": "2026-07-22",
+      "dateModified": "2026-07-22",
+      "breadcrumb": {
+        "@id": "https://bytenova.app/pages/css-flexbox.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bytenova.app/pages/css-flexbox.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://bytenova.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Artículos",
+          "item": "https://bytenova.app/pages/articulos.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "CSS Flexbox",
+          "item": "https://bytenova.app/pages/css-flexbox.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bytenova.app/pages/css-flexbox.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Sirve para filas y columnas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, trabaja un eje principal por vez."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿justify y align?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Actúan en ejes distintos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuándo wrap?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cuando los elementos pueden pasar a otra línea."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Reemplaza Grid?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, se complementan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué hace flex:1?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Permite compartir el espacio disponible."
+          }
+        }
+      ]
+    }
+  ]
+}</script></head><body><a class="saltar-contenido" href="#contenido-principal">Saltar al contenido principal</a>
+<header><a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio"><span aria-hidden="true" class="marca-icono">&lt;/&gt;</span><span class="marca-texto">ByteNova</span></a><button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle" type="button"><span aria-hidden="true">☰</span></button><nav aria-label="Navegación principal" id="menu-principal"><a href="../index.html#inicio">Inicio</a><a href="sobre.html">Sobre</a><a href="../index.html#tecnologias">Aprender</a><a href="rutas.html">Rutas</a><a href="retos.html">Retos</a><a href="material.html">Guías</a><a href="articulos.html">Artículos</a><a href="glosario.html">Glosario</a><a href="../index.html#contacto">Contacto</a><button aria-label="Activar modo oscuro" class="btn-modo" id="btn-modo" type="button"><span aria-hidden="true">🌙</span></button></nav></header><main class="sobre articulo" id="contenido-principal"><article aria-labelledby="titulo-articulo" class="sobre-contenido"><nav aria-label="Ruta de navegación" class="migas-navegacion"><a href="../index.html">Inicio</a><span aria-hidden="true">›</span><a href="articulos.html">Artículos</a><span aria-hidden="true">›</span><span aria-current="page">CSS Flexbox</span></nav><span class="seccion-etiqueta"><span aria-hidden="true">↔️</span> Desarrollo web</span><h1 id="titulo-articulo">CSS Flexbox: guía para alinear y distribuir elementos</h1><p class="articulo-meta">Publicado por ByteNova · <time datetime="2026-07-22">22 de julio de 2026</time></p><div class="articulo-resumen"><strong>En este artículo aprenderás:</strong><p>Aprende cómo Flexbox alinea y distribuye elementos en filas o columnas adaptables.</p></div><div class="articulo-layout"><details class="indice-articulo"><summary>📑 Contenido del artículo</summary><nav aria-label="Contenido del artículo"><a href="#definicion">1. Definición</a><a href="#importancia">2. Importancia</a><a href="#conceptos">3. Conceptos</a><a href="#proceso">4. Paso a paso</a><a href="#ejemplo">5. Ejemplo</a><a href="#usos">6. Usos</a><a href="#practicas">7. Buenas prácticas</a><a href="#errores">8. Errores</a><a href="#profundiza">9. Profundiza</a><a href="#practica-guiada">10. Práctica guiada</a><a href="#empezar">11. Cómo empezar</a><a href="#preguntas">12. Preguntas</a><a href="#conclusion">13. Conclusión</a></nav></details><div class="articulo-cuerpo"><p class="articulo-introduccion">Flexbox simplifica la alineación de menús, botones y tarjetas a lo largo de un eje principal.</p><h2 id="definicion">¿Qué es?</h2><p>Es un sistema de diseño unidimensional de CSS donde un contenedor controla dirección, alineación, separación y tamaño de sus hijos.</p><div class="recuadro-ejemplo"><strong>Idea clave</strong><p>Aprende cómo Flexbox alinea y distribuye elementos en filas o columnas adaptables.</p></div><h2 id="importancia">¿Por qué es importante?</h2><p>Reduce reglas frágiles y se adapta a diferentes anchos, por lo que resulta ideal para componentes de interfaz.</p><p>Comprender este fundamento permite tomar mejores decisiones, reconocer límites y relacionar la teoría con situaciones reales. La práctica debe centrarse en problemas pequeños antes de aumentar la complejidad.</p><h2 id="conceptos">Conceptos principales</h2><div class="lista-tarjetas-articulo"><div><strong>Contenedor</strong><p>Se activa con display:flex.</p></div><div><strong>Eje principal</strong><p>Depende de flex-direction.</p></div><div><strong>Eje transversal</strong><p>Es perpendicular al principal.</p></div><div><strong>justify-content</strong><p>Distribuye en el eje principal.</p></div><div><strong>align-items</strong><p>Alinea en el transversal.</p></div><div><strong>gap</strong><p>Crea separación uniforme.</p></div></div><h2 id="proceso">Cómo aplicarlo paso a paso</h2><div class="pasos-articulo" role="list"><div class="paso-articulo" role="listitem"><span>1</span><div><h3>Selecciona</h3><p>Aplica flex al contenedor.</p></div></div><div class="paso-articulo" role="listitem"><span>2</span><div><h3>Define dirección</h3><p>row o column.</p></div></div><div class="paso-articulo" role="listitem"><span>3</span><div><h3>Alinea</h3><p>Configura justify-content y align-items.</p></div></div><div class="paso-articulo" role="listitem"><span>4</span><div><h3>Permite salto</h3><p>Usa flex-wrap.</p></div></div><div class="paso-articulo" role="listitem"><span>5</span><div><h3>Ajusta tamaño</h3><p>Controla crecimiento y base.</p></div></div></div><h2 id="ejemplo">Barra flexible</h2><div class="recuadro-ejemplo"><pre><code>.navegacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}</code></pre><p>Puede distribuir elementos y saltar de línea.</p></div><h2 id="usos">¿Dónde se utiliza?</h2><ul class="lista-articulo lista-ventajas"><li>Navegación</li><li>Botones</li><li>Tarjetas</li><li>Centramiento</li><li>Diseño móvil</li></ul><p>En proyectos reales suele combinarse con otros conceptos. Conviene observar qué problema resuelve, qué datos necesita y cómo comprobar que el resultado es correcto.</p><h2 id="practicas">Buenas prácticas</h2><ul class="lista-articulo lista-ventajas"><li>Usa gap.</li><li>Permite wrap.</li><li>Evita anchos rígidos.</li><li>Prueba textos largos.</li><li>Mantén el orden lógico.</li></ul><div class="recuadro-aviso"><strong>Practica con criterio</strong><p>No memorices reglas aisladas. Comprende el propósito, prueba casos distintos y revisa el resultado antes de usarlo con información importante.</p></div><h2 id="errores">Errores frecuentes</h2><ul class="lista-articulo lista-riesgos"><li>Aplicar propiedades al hijo equivocado.</li><li>Confundir ejes.</li><li>Provocar desbordamiento.</li><li>Fijar todos los anchos.</li><li>Cambiar orden visual sin considerar accesibilidad.</li></ul>
+<h2 id="profundiza">Eje principal, eje transversal y espacio disponible</h2>
+<p>Flexbox organiza elementos en una dimensión. La propiedad <code>flex-direction</code> define el eje principal; <code>justify-content</code> distribuye espacio en ese eje y <code>align-items</code> alinea en el eje transversal. Comprender estos ejes evita probar propiedades sin saber por qué funcionan.</p>
+<p>Los elementos también pueden crecer, encogerse o partir de un tamaño base mediante <code>flex-grow</code>, <code>flex-shrink</code> y <code>flex-basis</code>. La abreviatura <code>flex</code> combina esas decisiones. Para interfaces adaptables suele ser útil permitir salto de línea con <code>flex-wrap</code> y definir un ancho base razonable.</p>
+<div class="recuadro-ejemplo"><pre><code>.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tarjeta {
+  flex: 1 1 260px;
+}</code></pre><p>Cada tarjeta intenta partir de 260 píxeles, puede crecer y baja de fila cuando no queda espacio.</p></div>
+<h2 id="practica-guiada">Práctica guiada: barra y tarjetas</h2>
+<p>Crea una barra con logotipo, enlaces y botón. En pantallas amplias deben permanecer en una fila; en pantallas pequeñas, los enlaces pueden ocupar otra línea. Después construye cuatro tarjetas con la misma altura visual aunque tengan distinta cantidad de texto.</p>
+<ul class="lista-articulo"><li>Prueba <code>justify-content: space-between</code> en la barra.</li><li>Usa <code>gap</code> en lugar de márgenes individuales.</li><li>Evita alturas fijas para el texto.</li><li>Reduce la ventana lentamente y observa el punto exacto donde el diseño deja de funcionar.</li></ul>
+<h2 id="empezar">Cómo empezar a practicar</h2><ol class="lista-articulo"><li>Crea una fila.</li><li>Centra un bloque.</li><li>Activa wrap.</li><li>Cambia a columna.</li><li>Prueba flex:1.</li></ol><p>Conserva cada ejercicio y escribe una breve nota sobre la decisión que tomaste. Después crea una segunda versión más clara o más resistente a errores.</p><h2 id="preguntas">Preguntas frecuentes</h2><section aria-labelledby="preguntas" class="faq-articulo"><details><summary>¿Sirve para filas y columnas?</summary><p>Sí, trabaja un eje principal por vez.</p></details><details><summary>¿justify y align?</summary><p>Actúan en ejes distintos.</p></details><details><summary>¿Cuándo wrap?</summary><p>Cuando los elementos pueden pasar a otra línea.</p></details><details><summary>¿Reemplaza Grid?</summary><p>No, se complementan.</p></details><details><summary>¿Qué hace flex:1?</summary><p>Permite compartir el espacio disponible.</p></details></section><h2 id="conclusion">Conclusión</h2><p>Es un sistema de diseño unidimensional de CSS donde un contenedor controla dirección, alineación, separación y tamaño de sus hijos.</p><p>Reduce reglas frágiles y se adapta a diferentes anchos, por lo que resulta ideal para componentes de interfaz.</p><p>El siguiente paso es realizar un reto relacionado y continuar con los contenidos recomendados.</p><section aria-label="Información del autor" class="autor-articulo"><div aria-hidden="true" class="autor-icono">&lt;/&gt;</div><div class="autor-informacion"><span>Artículo creado por</span><h2>ByteNova</h2><p>Plataforma educativa dedicada a explicar tecnología de manera clara, práctica y accesible.</p><a href="sobre.html">Conoce más sobre ByteNova →</a></div></section><aside aria-labelledby="relacionados" class="articulos-relacionados"><h2 id="relacionados">Continúa aprendiendo</h2><div class="relacionados-grid"><a href="css-grid.html"><span aria-hidden="true">📘</span><strong>CSS Grid</strong><small>Amplía el tema con esta explicación relacionada.</small></a><a href="que-es-diseno-responsive.html"><span aria-hidden="true">📘</span><strong>Diseño responsive</strong><small>Amplía el tema con esta explicación relacionada.</small></a><a href="por-que-aprender-html-css.html"><span aria-hidden="true">📘</span><strong>HTML y CSS</strong><small>Amplía el tema con esta explicación relacionada.</small></a></div></aside></div></div></article></main><footer class="footer"><div class="contenedor-footer"><div class="footer-logo"><a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio"><span aria-hidden="true" class="marca-icono">&lt;/&gt;</span><span class="marca-texto">ByteNova</span></a><p>Aprende tecnología desde cero con artículos, rutas, retos, guías y recursos gratuitos.</p></div><nav aria-label="Enlaces de aprendizaje del pie de página" class="footer-enlaces"><h3>Aprender</h3><a href="../index.html#tecnologias">Tecnologías</a><a href="rutas.html">Rutas</a><a href="retos.html">Retos</a><a href="material.html">Guías</a><a href="articulos.html">Artículos</a><a href="glosario.html">Glosario</a></nav><nav aria-label="Enlaces informativos del pie de página" class="footer-enlaces"><h3>ByteNova</h3><a href="sobre.html">Sobre ByteNova</a><a href="../index.html#contacto">Contacto</a><a href="privacidad.html">Privacidad</a><a href="terminos.html">Términos</a><a href="cookies.html">Cookies</a></nav><address class="footer-social"><h3>Contacto</h3><p>Preguntas, sugerencias o comentarios sobre nuestros contenidos educativos.</p><a href="mailto:bytenova339@gmail.com">bytenova339@gmail.com</a></address></div><div class="footer-copy"><p>© 2026 ByteNova. Todos los derechos reservados.</p><p>Creado por Dylan Estrada.</p></div></footer><script src="../js/script.js"></script></body></html>

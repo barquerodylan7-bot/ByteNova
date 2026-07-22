@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>¿Qué es el DOM y cómo JavaScript modifica una página? | ByteNova</title><meta content="Comprende cómo el DOM representa el HTML y permite que JavaScript modifique una página." name="description"/><meta content="ByteNova" name="author"/><meta content="index, follow" name="robots"/><meta content="#fff" media="(prefers-color-scheme:light)" name="theme-color"/><meta content="#0f172a" media="(prefers-color-scheme:dark)" name="theme-color"/><link href="https://bytenova.app/pages/que-es-el-dom.html" rel="canonical"/><link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/><link href="../css/style.css" rel="stylesheet"/><meta content="article" property="og:type"/><meta content="es_CR" property="og:locale"/><meta content="ByteNova" property="og:site_name"/><meta content="¿Qué es el DOM y cómo JavaScript modifica una página?" property="og:title"/><meta content="Comprende cómo el DOM representa el HTML y permite que JavaScript modifique una página." property="og:description"/><meta content="https://bytenova.app/pages/que-es-el-dom.html" property="og:url"/><meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="image/jpeg" property="og:image:type"/><meta content="2026-07-22" property="article:published_time"/><meta content="2026-07-22" property="article:modified_time"/><meta content="Desarrollo web" property="article:section"/><meta content="summary_large_image" name="twitter:card"/><meta content="¿Qué es el DOM y cómo JavaScript modifica una página?" name="twitter:title"/><meta content="Comprende cómo el DOM representa el HTML y permite que JavaScript modifique una página." name="twitter:description"/><meta content="https://bytenova.app/images/bytenova-social.jpg" name="twitter:image"/><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://bytenova.app/pages/que-es-el-dom.html#article",
+      "headline": "¿Qué es el DOM y cómo JavaScript modifica una página?",
+      "description": "Comprende cómo el DOM representa el HTML y permite que JavaScript modifique una página.",
+      "url": "https://bytenova.app/pages/que-es-el-dom.html",
+      "datePublished": "2026-07-22",
+      "dateModified": "2026-07-22",
+      "inLanguage": "es",
+      "articleSection": "Desarrollo web",
+      "isAccessibleForFree": true,
+      "author": {
+        "@type": "Organization",
+        "name": "ByteNova",
+        "url": "https://bytenova.app/pages/sobre.html"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ByteNova",
+        "url": "https://bytenova.app/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://bytenova.app/images/bytenova-social.jpg",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "mainEntityOfPage": {
+        "@id": "https://bytenova.app/pages/que-es-el-dom.html#webpage"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://bytenova.app/images/bytenova-social.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://bytenova.app/pages/que-es-el-dom.html#webpage",
+      "url": "https://bytenova.app/pages/que-es-el-dom.html",
+      "name": "¿Qué es el DOM y cómo JavaScript modifica una página?",
+      "description": "Comprende cómo el DOM representa el HTML y permite que JavaScript modifique una página.",
+      "inLanguage": "es",
+      "datePublished": "2026-07-22",
+      "dateModified": "2026-07-22",
+      "breadcrumb": {
+        "@id": "https://bytenova.app/pages/que-es-el-dom.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bytenova.app/pages/que-es-el-dom.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://bytenova.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Artículos",
+          "item": "https://bytenova.app/pages/articulos.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "¿Qué es el DOM?",
+          "item": "https://bytenova.app/pages/que-es-el-dom.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bytenova.app/pages/que-es-el-dom.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Es lo mismo que HTML?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. HTML es el texto; DOM es la representación."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué hace querySelector?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Devuelve el primer elemento coincidente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿textContent o innerHTML?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "textContent es más seguro para texto."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué es un evento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Una acción detectada por el navegador."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Afecta rendimiento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Muchos cambios grandes pueden hacerlo."
+          }
+        }
+      ]
+    }
+  ]
+}</script></head><body><a class="saltar-contenido" href="#contenido-principal">Saltar al contenido principal</a>
+<header><a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio"><span aria-hidden="true" class="marca-icono">&lt;/&gt;</span><span class="marca-texto">ByteNova</span></a><button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle" type="button"><span aria-hidden="true">☰</span></button><nav aria-label="Navegación principal" id="menu-principal"><a href="../index.html#inicio">Inicio</a><a href="sobre.html">Sobre</a><a href="../index.html#tecnologias">Aprender</a><a href="rutas.html">Rutas</a><a href="retos.html">Retos</a><a href="material.html">Guías</a><a href="articulos.html">Artículos</a><a href="glosario.html">Glosario</a><a href="../index.html#contacto">Contacto</a><button aria-label="Activar modo oscuro" class="btn-modo" id="btn-modo" type="button"><span aria-hidden="true">🌙</span></button></nav></header><main class="sobre articulo" id="contenido-principal"><article aria-labelledby="titulo-articulo" class="sobre-contenido"><nav aria-label="Ruta de navegación" class="migas-navegacion"><a href="../index.html">Inicio</a><span aria-hidden="true">›</span><a href="articulos.html">Artículos</a><span aria-hidden="true">›</span><span aria-current="page">¿Qué es el DOM?</span></nav><span class="seccion-etiqueta"><span aria-hidden="true">🌳</span> Desarrollo web</span><h1 id="titulo-articulo">¿Qué es el DOM y cómo JavaScript modifica una página?</h1><p class="articulo-meta">Publicado por ByteNova · <time datetime="2026-07-22">22 de julio de 2026</time></p><div class="articulo-resumen"><strong>En este artículo aprenderás:</strong><p>Comprende cómo el DOM representa el HTML y permite que JavaScript modifique una página.</p></div><div class="articulo-layout"><details class="indice-articulo"><summary>📑 Contenido del artículo</summary><nav aria-label="Contenido del artículo"><a href="#definicion">1. Definición</a><a href="#importancia">2. Importancia</a><a href="#conceptos">3. Conceptos</a><a href="#proceso">4. Paso a paso</a><a href="#ejemplo">5. Ejemplo</a><a href="#usos">6. Usos</a><a href="#practicas">7. Buenas prácticas</a><a href="#errores">8. Errores</a><a href="#profundiza">9. Profundiza</a><a href="#practica-guiada">10. Práctica guiada</a><a href="#empezar">11. Cómo empezar</a><a href="#preguntas">12. Preguntas</a><a href="#conclusion">13. Conclusión</a></nav></details><div class="articulo-cuerpo"><p class="articulo-introduccion">El navegador convierte el HTML en una representación que JavaScript puede consultar y cambiar para crear menús, filtros y validaciones.</p><h2 id="definicion">¿Qué es?</h2><p>El DOM es un árbol de nodos que representa elementos, atributos y textos como objetos accesibles desde JavaScript.</p><div class="recuadro-ejemplo"><strong>Idea clave</strong><p>Comprende cómo el DOM representa el HTML y permite que JavaScript modifique una página.</p></div><h2 id="importancia">¿Por qué es importante?</h2><p>Conecta la estructura HTML con el comportamiento de la interfaz y ayuda a crear interacción sin recargar toda la página.</p><p>Comprender este fundamento permite tomar mejores decisiones, reconocer límites y relacionar la teoría con situaciones reales. La práctica debe centrarse en problemas pequeños antes de aumentar la complejidad.</p><h2 id="conceptos">Conceptos principales</h2><div class="lista-tarjetas-articulo"><div><strong>Documento</strong><p>Punto de entrada principal.</p></div><div><strong>Nodo</strong><p>Elemento, texto o comentario.</p></div><div><strong>Selector</strong><p>Localiza elementos.</p></div><div><strong>Atributo</strong><p>Información declarada en HTML.</p></div><div><strong>Evento</strong><p>Señal como click o submit.</p></div></div><h2 id="proceso">Cómo aplicarlo paso a paso</h2><div class="pasos-articulo" role="list"><div class="paso-articulo" role="listitem"><span>1</span><div><h3>Selecciona</h3><p>Usa querySelector.</p></div></div><div class="paso-articulo" role="listitem"><span>2</span><div><h3>Lee</h3><p>Consulta texto, clases o valores.</p></div></div><div class="paso-articulo" role="listitem"><span>3</span><div><h3>Escucha</h3><p>Registra un evento.</p></div></div><div class="paso-articulo" role="listitem"><span>4</span><div><h3>Actualiza</h3><p>Cambia solo lo necesario.</p></div></div><div class="paso-articulo" role="listitem"><span>5</span><div><h3>Mantén accesibilidad</h3><p>Sincroniza foco y ARIA.</p></div></div></div><h2 id="ejemplo">Cambiar un mensaje</h2><div class="recuadro-ejemplo"><pre><code>const boton = document.querySelector("#saludar");
+const mensaje = document.querySelector("#mensaje");
+boton.addEventListener("click", () =&gt; {
+  mensaje.textContent = "¡Hola!";
+});</code></pre><p>El evento actualiza únicamente el texto.</p></div><h2 id="usos">¿Dónde se utiliza?</h2><ul class="lista-articulo lista-ventajas"><li>Menús</li><li>Formularios</li><li>Filtros</li><li>Acordeones</li><li>Contadores</li></ul><p>En proyectos reales suele combinarse con otros conceptos. Conviene observar qué problema resuelve, qué datos necesita y cómo comprobar que el resultado es correcto.</p><h2 id="practicas">Buenas prácticas</h2><ul class="lista-articulo lista-ventajas"><li>Usa selectores estables.</li><li>Evita eventos inline.</li><li>Actualiza poco DOM.</li><li>Sincroniza ARIA.</li><li>Conserva foco visible.</li></ul><div class="recuadro-aviso"><strong>Practica con criterio</strong><p>No memorices reglas aisladas. Comprende el propósito, prueba casos distintos y revisa el resultado antes de usarlo con información importante.</p></div><h2 id="errores">Errores frecuentes</h2><ul class="lista-articulo lista-riesgos"><li>Ejecutar antes de cargar.</li><li>Usar innerHTML con datos no confiables.</li><li>Duplicar escuchadores.</li><li>Modificar estilos uno a uno.</li><li>Olvidar teclado.</li></ul>
+<h2 id="profundiza">Nodos, selección y eventos</h2>
+<p>Cuando el navegador interpreta HTML crea una estructura de nodos. JavaScript puede buscar nodos con métodos como <code>querySelector</code>, leer o cambiar propiedades y responder a eventos. El DOM no es el archivo HTML original: es la representación activa que existe en memoria y puede cambiar mientras la página está abierta.</p>
+<p>Modificar el DOM debe hacerse con cuidado. Repetir búsquedas dentro de un bucle, reconstruir grandes secciones sin necesidad o insertar texto de origen desconocido como HTML puede afectar rendimiento o seguridad. Para texto proporcionado por una persona, <code>textContent</code> suele ser más seguro que <code>innerHTML</code>.</p>
+<div class="recuadro-ejemplo"><pre><code>const boton = document.querySelector("#mostrar");
+const mensaje = document.querySelector("#mensaje");
+
+boton.addEventListener("click", () =&gt; {
+  mensaje.textContent = "Contenido actualizado";
+  mensaje.hidden = false;
+});</code></pre></div>
+<h2 id="practica-guiada">Práctica guiada: lista interactiva</h2>
+<p>Crea un formulario con un campo y un botón. Al enviarlo, agrega un elemento a una lista sin recargar la página. Impide valores vacíos, limpia el campo y permite eliminar cada elemento. Usa un único escuchador en la lista para practicar delegación de eventos.</p>
+<ul class="lista-articulo"><li>Selecciona los elementos una vez y guarda las referencias.</li><li>Usa <code>createElement</code> y <code>textContent</code>.</li><li>Prueba el formulario con teclado, incluida la tecla Enter.</li><li>Muestra un mensaje cuando la lista esté vacía.</li></ul>
+<h2 id="empezar">Cómo empezar a practicar</h2><ol class="lista-articulo"><li>Selecciona un título.</li><li>Cambia una clase.</li><li>Escucha un clic.</li><li>Crea una lista.</li><li>Valida un formulario.</li></ol><p>Conserva cada ejercicio y escribe una breve nota sobre la decisión que tomaste. Después crea una segunda versión más clara o más resistente a errores.</p><h2 id="preguntas">Preguntas frecuentes</h2><section aria-labelledby="preguntas" class="faq-articulo"><details><summary>¿Es lo mismo que HTML?</summary><p>No. HTML es el texto; DOM es la representación.</p></details><details><summary>¿Qué hace querySelector?</summary><p>Devuelve el primer elemento coincidente.</p></details><details><summary>¿textContent o innerHTML?</summary><p>textContent es más seguro para texto.</p></details><details><summary>¿Qué es un evento?</summary><p>Una acción detectada por el navegador.</p></details><details><summary>¿Afecta rendimiento?</summary><p>Muchos cambios grandes pueden hacerlo.</p></details></section><h2 id="conclusion">Conclusión</h2><p>El DOM es un árbol de nodos que representa elementos, atributos y textos como objetos accesibles desde JavaScript.</p><p>Conecta la estructura HTML con el comportamiento de la interfaz y ayuda a crear interacción sin recargar toda la página.</p><p>El siguiente paso es realizar un reto relacionado y continuar con los contenidos recomendados.</p><section aria-label="Información del autor" class="autor-articulo"><div aria-hidden="true" class="autor-icono">&lt;/&gt;</div><div class="autor-informacion"><span>Artículo creado por</span><h2>ByteNova</h2><p>Plataforma educativa dedicada a explicar tecnología de manera clara, práctica y accesible.</p><a href="sobre.html">Conoce más sobre ByteNova →</a></div></section><aside aria-labelledby="relacionados" class="articulos-relacionados"><h2 id="relacionados">Continúa aprendiendo</h2><div class="relacionados-grid"><a href="que-es-javascript.html"><span aria-hidden="true">📘</span><strong>JavaScript</strong><small>Amplía el tema con esta explicación relacionada.</small></a><a href="html-semantico.html"><span aria-hidden="true">📘</span><strong>HTML semántico</strong><small>Amplía el tema con esta explicación relacionada.</small></a><a href="formularios-html-validacion.html"><span aria-hidden="true">📘</span><strong>Formularios</strong><small>Amplía el tema con esta explicación relacionada.</small></a></div></aside></div></div></article></main><footer class="footer"><div class="contenedor-footer"><div class="footer-logo"><a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio"><span aria-hidden="true" class="marca-icono">&lt;/&gt;</span><span class="marca-texto">ByteNova</span></a><p>Aprende tecnología desde cero con artículos, rutas, retos, guías y recursos gratuitos.</p></div><nav aria-label="Enlaces de aprendizaje del pie de página" class="footer-enlaces"><h3>Aprender</h3><a href="../index.html#tecnologias">Tecnologías</a><a href="rutas.html">Rutas</a><a href="retos.html">Retos</a><a href="material.html">Guías</a><a href="articulos.html">Artículos</a><a href="glosario.html">Glosario</a></nav><nav aria-label="Enlaces informativos del pie de página" class="footer-enlaces"><h3>ByteNova</h3><a href="sobre.html">Sobre ByteNova</a><a href="../index.html#contacto">Contacto</a><a href="privacidad.html">Privacidad</a><a href="terminos.html">Términos</a><a href="cookies.html">Cookies</a></nav><address class="footer-social"><h3>Contacto</h3><p>Preguntas, sugerencias o comentarios sobre nuestros contenidos educativos.</p><a href="mailto:bytenova339@gmail.com">bytenova339@gmail.com</a></address></div><div class="footer-copy"><p>© 2026 ByteNova. Todos los derechos reservados.</p><p>Creado por Dylan Estrada.</p></div></footer><script src="../js/script.js"></script></body></html>
