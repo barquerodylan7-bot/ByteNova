@@ -7016,20 +7016,10 @@ li code{
     content-visibility:auto;
     contain-intrinsic-size:auto 800px;
 }
-
-.footer{
-    content-visibility:auto;
-    contain-intrinsic-size:auto 460px;
-}
-
 @media(max-width:768px){
 
     .rendimiento-diferido{
         contain-intrinsic-size:auto 1000px;
-    }
-
-    .footer{
-        contain-intrinsic-size:auto 700px;
     }
 }
 /* =========================================
