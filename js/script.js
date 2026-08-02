@@ -275,6 +275,8 @@ if (
                 coincideBusqueda;
 
             tarjeta.hidden = !mostrar;
+            tarjeta.classList.toggle("articulo-oculto", !mostrar);
+            tarjeta.setAttribute("aria-hidden", mostrar ? "false" : "true");
 
             if (mostrar) {
                 visibles += 1;
@@ -286,8 +288,12 @@ if (
                 ? "1 artículo encontrado"
                 : `${visibles} artículos encontrados`;
 
-        sinResultadosArticulos.hidden =
-            visibles !== 0;
+        sinResultadosArticulos.hidden = visibles !== 0;
+
+        // Fuerza a Safari móvil a recalcular la cuadrícula después de filtrar.
+        listaArticulos.style.display = "none";
+        void listaArticulos.offsetHeight;
+        listaArticulos.style.display = "";
     }
 
     buscadorArticulos.addEventListener(
