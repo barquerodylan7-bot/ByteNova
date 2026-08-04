@@ -4,10 +4,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>
-   HTTP y HTTPS: qué son, diferencias y seguridad | ByteNova
-  </title>
-<meta content="Entiende qué son HTTP y HTTPS, cómo funciona una solicitud web, qué protege TLS y por qué el candado no garantiza que un sitio sea legítimo." name="description"/>
+<title>HTTP y HTTPS: qué son, diferencias y seguridad | ByteNova</title>
+<meta content="Aprende qué son HTTP y HTTPS, cómo funciona una solicitud web y por qué TLS protege la comunicación entre navegador y servidor." name="description"/>
 <meta content="ByteNova" name="author"/>
 <meta content="index, follow" name="robots"/>
 <meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
@@ -16,183 +14,181 @@
 <meta content="es_CR" property="og:locale"/>
 <meta content="ByteNova" property="og:site_name"/>
 <meta content="HTTP y HTTPS: qué son, diferencias y seguridad" property="og:title"/>
-<meta content="Entiende qué son HTTP y HTTPS, cómo funciona una solicitud web, qué protege TLS y por qué el candado no garantiza que un sitio sea legítimo." property="og:description"/>
+<meta content="Aprende qué son HTTP y HTTPS, cómo funciona una solicitud web y por qué TLS protege la comunicación entre navegador y servidor." property="og:description"/>
 <meta content="https://bytenova.app/pages/que-son-http-y-https.html" property="og:url"/><meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image"/><meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image:secure_url"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="image/jpeg" property="og:image:type"/><meta content="¿Qué son HTTP y HTTPS y cómo funcionan? | ByteNova" property="og:image:alt"/><meta content="https://bytenova.app/images/bytenova-social.jpg" name="twitter:image"/><meta content="¿Qué son HTTP y HTTPS y cómo funcionan? | ByteNova" name="twitter:image:alt"/>
 <meta content="2026-07-17" property="article:published_time"/>
 <meta content="2026-08-03" property="article:modified_time"/>
 <meta content="Internet y seguridad web" property="article:section"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="HTTP y HTTPS: qué son, diferencias y seguridad" name="twitter:title"/>
-<meta content="Entiende qué son HTTP y HTTPS, cómo funciona una solicitud web, qué protege TLS y por qué el candado no garantiza que un sitio sea legítimo." name="twitter:description"/>
+<meta content="Aprende qué son HTTP y HTTPS, cómo funciona una solicitud web y por qué TLS protege la comunicación entre navegador y servidor." name="twitter:description"/>
 <link href="https://bytenova.app/pages/que-son-http-y-https.html" rel="canonical"/>
 <link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="../css/style.css" rel="stylesheet"/>
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@graph": [
-        {
-            "@type": "Article",
-            "@id": "https://bytenova.app/pages/que-son-http-y-https.html#article",
-            "headline": "HTTP y HTTPS: qué son, diferencias y seguridad",
-            "description": "Entiende qué son HTTP y HTTPS, cómo funciona una solicitud web, qué protege TLS y por qué el candado no garantiza que un sitio sea legítimo.",
-            "url": "https://bytenova.app/pages/que-son-http-y-https.html",
-            "datePublished": "2026-07-17",
-            "dateModified": "2026-08-03",
-            "inLanguage": "es",
-            "articleSection": "Internet y seguridad web",
-            "isAccessibleForFree": true,
-            "author": {
-                "@type": "Organization",
-                "name": "ByteNova",
-                "url": "https://bytenova.app/pages/sobre.html",
-                "image": {
-                    "@type": "ImageObject",
-                    "url": "https://bytenova.app/images/bytenova-social.jpg",
-                    "width": 1200,
-                    "height": 630
-                }
-            },
-            "publisher": {
-                "@type": "Organization",
-                "name": "ByteNova",
-                "url": "https://bytenova.app/",
-                "image": {
-                    "@type": "ImageObject",
-                    "url": "https://bytenova.app/images/bytenova-social.jpg",
-                    "width": 1200,
-                    "height": 630
-                }
-            },
-            "isPartOf": {
-                "@id": "https://bytenova.app/#website"
-            },
-            "mainEntityOfPage": {
-                "@id": "https://bytenova.app/pages/que-son-http-y-https.html#webpage"
-            },
-            "about": [
-                {
-                    "@type": "Thing",
-                    "name": "HTTP"
-                },
-                {
-                    "@type": "Thing",
-                    "name": "HTTPS"
-                },
-                {
-                    "@type": "Thing",
-                    "name": "Protocolos web"
-                },
-                {
-                    "@type": "Thing",
-                    "name": "Seguridad web"
-                }
-            ],
-            "image": {
-                "@type": "ImageObject",
-                "url": "https://bytenova.app/images/bytenova-social.jpg",
-                "width": 1200,
-                "height": 630
-            }
-        },
-        {
-            "@type": "WebPage",
-            "@id": "https://bytenova.app/pages/que-son-http-y-https.html#webpage",
-            "url": "https://bytenova.app/pages/que-son-http-y-https.html",
-            "name": "HTTP y HTTPS: qué son, diferencias y seguridad",
-            "description": "Aprende qué son HTTP y HTTPS, cómo se comunican el navegador y el servidor y por qué el cifrado es importante para una página web.",
-            "inLanguage": "es",
-            "datePublished": "2026-07-17",
-            "dateModified": "2026-08-03",
-            "isPartOf": {
-                "@id": "https://bytenova.app/#website"
-            },
-            "breadcrumb": {
-                "@id": "https://bytenova.app/pages/que-son-http-y-https.html#breadcrumb"
-            },
-            "mainEntity": {
-                "@id": "https://bytenova.app/pages/que-son-http-y-https.html#article"
-            },
-            "image": {
-                "@type": "ImageObject",
-                "url": "https://bytenova.app/images/bytenova-social.jpg",
-                "width": 1200,
-                "height": 630
-            }
-        },
-        {
-            "@type": "BreadcrumbList",
-            "@id": "https://bytenova.app/pages/que-son-http-y-https.html#breadcrumb",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Inicio",
-                    "item": "https://bytenova.app/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Artículos",
-                    "item": "https://bytenova.app/pages/articulos.html"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "HTTP y HTTPS",
-                    "item": "https://bytenova.app/pages/que-son-http-y-https.html"
-                }
-            ]
-        },
-        {
-            "@type": "FAQPage",
-            "@id": "https://bytenova.app/pages/que-son-http-y-https.html#faq",
-            "mainEntity": [
-                {
-                    "@type": "Question",
-                    "name": "¿HTTP y HTTPS son lenguajes de programación?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "No. Son protocolos de comunicación utilizados para intercambiar información en la web."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "¿HTTPS hace que una página sea completamente segura?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "No. Protege la transmisión de información, pero la página también necesita código seguro, actualizaciones, permisos y buenas prácticas."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "¿Un certificado SSL es gratuito?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Existen certificados gratuitos y de pago. Muchos servicios de hosting incluyen certificados automáticos sin costo adicional."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "¿Qué significa el error 404?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Significa que el servidor no encontró el recurso solicitado en esa dirección."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "¿Qué significa el error 500?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Indica que ocurrió un problema interno en el servidor al intentar procesar la solicitud."
-                    }
-                }
-            ]
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://bytenova.app/pages/que-son-http-y-https.html#article",
+      "headline": "HTTP y HTTPS: qué son, diferencias y seguridad",
+      "description": "Aprende qué son HTTP y HTTPS, cómo funciona una solicitud web y por qué TLS protege la comunicación entre navegador y servidor.",
+      "url": "https://bytenova.app/pages/que-son-http-y-https.html",
+      "datePublished": "2026-07-17",
+      "dateModified": "2026-08-03",
+      "inLanguage": "es",
+      "articleSection": "Internet y seguridad web",
+      "isAccessibleForFree": true,
+      "author": {
+        "@type": "Organization",
+        "name": "ByteNova",
+        "url": "https://bytenova.app/pages/sobre.html",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://bytenova.app/images/bytenova-social.jpg",
+          "width": 1200,
+          "height": 630
         }
-    ]
-}
-</script>
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ByteNova",
+        "url": "https://bytenova.app/",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://bytenova.app/images/bytenova-social.jpg",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "isPartOf": {
+        "@id": "https://bytenova.app/#website"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://bytenova.app/pages/que-son-http-y-https.html#webpage"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "HTTP"
+        },
+        {
+          "@type": "Thing",
+          "name": "HTTPS"
+        },
+        {
+          "@type": "Thing",
+          "name": "Protocolos web"
+        },
+        {
+          "@type": "Thing",
+          "name": "Seguridad web"
+        }
+      ],
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://bytenova.app/images/bytenova-social.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://bytenova.app/pages/que-son-http-y-https.html#webpage",
+      "url": "https://bytenova.app/pages/que-son-http-y-https.html",
+      "name": "¿Qué son HTTP y HTTPS y cómo funcionan?",
+      "description": "Aprende qué son HTTP y HTTPS, cómo se comunican el navegador y el servidor y por qué el cifrado es importante para una página web.",
+      "inLanguage": "es",
+      "datePublished": "2026-07-17",
+      "dateModified": "2026-08-03",
+      "isPartOf": {
+        "@id": "https://bytenova.app/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://bytenova.app/pages/que-son-http-y-https.html#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://bytenova.app/pages/que-son-http-y-https.html#article"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://bytenova.app/images/bytenova-social.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bytenova.app/pages/que-son-http-y-https.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://bytenova.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Artículos",
+          "item": "https://bytenova.app/pages/articulos.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "HTTP y HTTPS",
+          "item": "https://bytenova.app/pages/que-son-http-y-https.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bytenova.app/pages/que-son-http-y-https.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿HTTP y HTTPS son lenguajes de programación?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Son protocolos de comunicación utilizados para intercambiar información en la web."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿HTTPS hace que una página sea completamente segura?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Protege la transmisión de información, pero la página también necesita código seguro, actualizaciones, permisos y buenas prácticas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Un certificado SSL es gratuito?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Existen certificados gratuitos y de pago. Muchos servicios de hosting incluyen certificados automáticos sin costo adicional."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué significa el error 404?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Significa que el servidor no encontró el recurso solicitado en esa dirección."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué significa el error 500?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Indica que ocurrió un problema interno en el servidor al intentar procesar la solicitud."
+          }
+        }
+      ]
+    }
+  ]
+}</script>
 <meta content="ca-pub-5369456672603969" name="google-adsense-account"/>
 <script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5369456672603969">
 </script>
@@ -288,7 +284,7 @@
      </time>
      · Actualizado el
      <time datetime="2026-08-03">3 de agosto de 2026</time>
-</p>
+ · 10 min de lectura</p>
 <div class="articulo-resumen">
 <strong>
       En este artículo aprenderás:
@@ -338,7 +334,7 @@
 <a href="#errores">
         10. Errores frecuentes
        </a>
-<a href="#aplicacion-practica">Aplicación práctica y errores frecuentes</a><a href="#preguntas">
+<a href="#conexion-https">13. Qué protege HTTPS y qué no protege</a><a href="#preguntas">
         11. Preguntas frecuentes
        </a>
 <a href="#conclusion">
@@ -875,15 +871,10 @@ https://ejemplo.com</code></pre>
         Enviar contraseñas mediante conexiones inseguras.
        </li>
 </ul>
-<section class="seccion-alto-valor" id="aplicacion-practica">
-<h2>Qué protege HTTPS y qué no protege</h2>
-<p>HTTPS cifra la comunicación entre navegador y servidor, ayuda a verificar la identidad del dominio y protege la integridad de los datos durante el transporte.</p><p>El candado no garantiza que el contenido sea honesto. Un sitio malicioso también puede tener certificado; por eso siempre debes comprobar el dominio y el contexto.</p>
-<div class="recuadro-ejemplo"><strong>✅ Lista de comprobación</strong><ul class="lista-articulo"><li>Verifica el dominio antes de introducir datos.</li><li>Mantén actualizado el navegador.</li><li>No ignores advertencias de certificado.</li></ul></div>
-<div class="recuadro-alerta"><strong>⚠️ Errores frecuentes</strong><ul class="lista-articulo"><li>Pensar que HTTPS elimina todos los riesgos.</li><li>Confundir cifrado de transporte con cifrado de los datos almacenados.</li></ul></div>
-<h3>Continúa aprendiendo</h3>
-<p>Relaciona este concepto con los siguientes recursos de ByteNova:</p>
-<ul class="lista-articulo"><li><a href="que-es-una-url.html">URLs</a></li><li><a href="que-es-dns.html">DNS</a></li><li><a href="que-es-un-servidor.html">servidores</a></li><li><a href="que-es-tcp-ip.html">TCP/IP</a></li></ul>
-</section><h2 id="preguntas">
+<section aria-labelledby="conexion-https" class="seccion-ampliada"><h2 id="conexion-https">Qué protege HTTPS y qué no protege</h2><p>HTTPS combina HTTP con TLS para cifrar la comunicación y autenticar el servidor mediante un certificado digital.</p>
+<h3>HTTPS ayuda a proteger</h3><ul><li>El contenido transmitido frente a observadores en la red.</li><li>Credenciales y formularios durante el trayecto.</li><li>La integridad de la respuesta para evitar modificaciones silenciosas.</li><li>La identidad del dominio cuando el certificado es válido.</li></ul>
+<h3>HTTPS no garantiza</h3><ul><li>Que el sitio sea honesto o tenga contenido seguro.</li><li>Que una aplicación no tenga vulnerabilidades.</li><li>Que el dispositivo del usuario esté libre de malware.</li><li>Que una contraseña débil sea suficiente.</li></ul>
+<div class="recuadro-ejemplo"><strong>Regla práctica</strong><p>El candado indica una conexión cifrada con ese dominio, no una aprobación general del contenido o del negocio.</p></div></section><h2 id="preguntas">
        Preguntas frecuentes
       </h2>
 <section aria-labelledby="preguntas" class="faq-articulo">

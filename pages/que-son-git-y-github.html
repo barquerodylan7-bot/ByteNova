@@ -4,10 +4,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>
-   ¿Qué son Git y GitHub? Diferencias y flujo básico | ByteNova
-  </title>
-<meta content="Aprende qué son Git y GitHub, en qué se diferencian y cómo usar commits, ramas y repositorios para controlar versiones y colaborar." name="description"/>
+<title>Git y GitHub: qué son, diferencias y flujo básico | ByteNova</title>
+<meta content="Aprende qué son Git y GitHub, en qué se diferencian y cómo usar commits, ramas, repositorios remotos y pull requests." name="description"/>
 <meta content="ByteNova" name="author"/>
 <meta content="index, follow" name="robots"/>
 <meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
@@ -15,184 +13,182 @@
 <meta content="article" property="og:type"/>
 <meta content="es_CR" property="og:locale"/>
 <meta content="ByteNova" property="og:site_name"/>
-<meta content="¿Qué son Git y GitHub? Diferencias y flujo básico" property="og:title"/>
-<meta content="Aprende qué son Git y GitHub, en qué se diferencian y cómo usar commits, ramas y repositorios para controlar versiones y colaborar." property="og:description"/>
+<meta content="Git y GitHub: qué son, diferencias y flujo básico" property="og:title"/>
+<meta content="Aprende qué son Git y GitHub, en qué se diferencian y cómo usar commits, ramas, repositorios remotos y pull requests." property="og:description"/>
 <meta content="https://bytenova.app/pages/que-son-git-y-github.html" property="og:url"/><meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image"/><meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image:secure_url"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="image/jpeg" property="og:image:type"/><meta content="¿Qué son Git y GitHub y para qué sirven? | ByteNova" property="og:image:alt"/><meta content="https://bytenova.app/images/bytenova-social.jpg" name="twitter:image"/><meta content="¿Qué son Git y GitHub y para qué sirven? | ByteNova" name="twitter:image:alt"/>
 <meta content="2026-07-17" property="article:published_time"/>
 <meta content="2026-08-03" property="article:modified_time"/>
 <meta content="Herramientas de programación" property="article:section"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="¿Qué son Git y GitHub? Diferencias y flujo básico" name="twitter:title"/>
-<meta content="Aprende qué son Git y GitHub, en qué se diferencian y cómo usar commits, ramas y repositorios para controlar versiones y colaborar." name="twitter:description"/>
+<meta content="Git y GitHub: qué son, diferencias y flujo básico" name="twitter:title"/>
+<meta content="Aprende qué son Git y GitHub, en qué se diferencian y cómo usar commits, ramas, repositorios remotos y pull requests." name="twitter:description"/>
 <link href="https://bytenova.app/pages/que-son-git-y-github.html" rel="canonical"/>
 <link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="../css/style.css" rel="stylesheet"/>
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@graph": [
-        {
-            "@type": "Article",
-            "@id": "https://bytenova.app/pages/que-son-git-y-github.html#article",
-            "headline": "¿Qué son Git y GitHub? Diferencias y flujo básico",
-            "description": "Aprende qué son Git y GitHub, en qué se diferencian y cómo usar commits, ramas y repositorios para controlar versiones y colaborar.",
-            "url": "https://bytenova.app/pages/que-son-git-y-github.html",
-            "datePublished": "2026-07-17",
-            "dateModified": "2026-08-03",
-            "inLanguage": "es",
-            "articleSection": "Herramientas de programación",
-            "isAccessibleForFree": true,
-            "author": {
-                "@type": "Organization",
-                "name": "ByteNova",
-                "url": "https://bytenova.app/pages/sobre.html",
-                "image": {
-                    "@type": "ImageObject",
-                    "url": "https://bytenova.app/images/bytenova-social.jpg",
-                    "width": 1200,
-                    "height": 630
-                }
-            },
-            "publisher": {
-                "@type": "Organization",
-                "name": "ByteNova",
-                "url": "https://bytenova.app/",
-                "image": {
-                    "@type": "ImageObject",
-                    "url": "https://bytenova.app/images/bytenova-social.jpg",
-                    "width": 1200,
-                    "height": 630
-                }
-            },
-            "isPartOf": {
-                "@id": "https://bytenova.app/#website"
-            },
-            "mainEntityOfPage": {
-                "@id": "https://bytenova.app/pages/que-son-git-y-github.html#webpage"
-            },
-            "about": [
-                {
-                    "@type": "Thing",
-                    "name": "Git"
-                },
-                {
-                    "@type": "Thing",
-                    "name": "GitHub"
-                },
-                {
-                    "@type": "Thing",
-                    "name": "Control de versiones"
-                },
-                {
-                    "@type": "Thing",
-                    "name": "Repositorios"
-                }
-            ],
-            "image": {
-                "@type": "ImageObject",
-                "url": "https://bytenova.app/images/bytenova-social.jpg",
-                "width": 1200,
-                "height": 630
-            }
-        },
-        {
-            "@type": "WebPage",
-            "@id": "https://bytenova.app/pages/que-son-git-y-github.html#webpage",
-            "url": "https://bytenova.app/pages/que-son-git-y-github.html",
-            "name": "¿Qué son Git y GitHub? Diferencias y flujo básico",
-            "description": "Aprende qué son Git y GitHub, cuáles son sus diferencias y cómo ayudan a guardar versiones, colaborar y proteger proyectos de programación.",
-            "inLanguage": "es",
-            "datePublished": "2026-07-17",
-            "dateModified": "2026-08-03",
-            "isPartOf": {
-                "@id": "https://bytenova.app/#website"
-            },
-            "breadcrumb": {
-                "@id": "https://bytenova.app/pages/que-son-git-y-github.html#breadcrumb"
-            },
-            "mainEntity": {
-                "@id": "https://bytenova.app/pages/que-son-git-y-github.html#article"
-            },
-            "image": {
-                "@type": "ImageObject",
-                "url": "https://bytenova.app/images/bytenova-social.jpg",
-                "width": 1200,
-                "height": 630
-            }
-        },
-        {
-            "@type": "BreadcrumbList",
-            "@id": "https://bytenova.app/pages/que-son-git-y-github.html#breadcrumb",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Inicio",
-                    "item": "https://bytenova.app/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Artículos",
-                    "item": "https://bytenova.app/pages/articulos.html"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "Git y GitHub",
-                    "item": "https://bytenova.app/pages/que-son-git-y-github.html"
-                }
-            ]
-        },
-        {
-            "@type": "FAQPage",
-            "@id": "https://bytenova.app/pages/que-son-git-y-github.html#faq",
-            "mainEntity": [
-                {
-                    "@type": "Question",
-                    "name": "¿Necesito GitHub para utilizar Git?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "No. Git puede utilizarse únicamente dentro de tu computadora. GitHub es una plataforma adicional para alojar repositorios en línea."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "¿GitHub es gratuito?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "GitHub ofrece opciones gratuitas y otros planes. Para proyectos personales y aprendizaje, las funciones gratuitas suelen ser suficientes."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "¿Puedo recuperar un archivo eliminado?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Puede recuperarse cuando estaba incluido en una versión anterior registrada mediante Git."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "¿Debo crear un commit por cada línea?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "No. Lo recomendable es crear commits que agrupen cambios relacionados y completos."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "¿Git sirve solamente para programación?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "No. Puede controlar versiones de diferentes archivos de texto, aunque es especialmente útil dentro del desarrollo de software."
-                    }
-                }
-            ]
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://bytenova.app/pages/que-son-git-y-github.html#article",
+      "headline": "Git y GitHub: qué son, diferencias y flujo básico",
+      "description": "Aprende qué son Git y GitHub, en qué se diferencian y cómo usar commits, ramas, repositorios remotos y pull requests.",
+      "url": "https://bytenova.app/pages/que-son-git-y-github.html",
+      "datePublished": "2026-07-17",
+      "dateModified": "2026-08-03",
+      "inLanguage": "es",
+      "articleSection": "Herramientas de programación",
+      "isAccessibleForFree": true,
+      "author": {
+        "@type": "Organization",
+        "name": "ByteNova",
+        "url": "https://bytenova.app/pages/sobre.html",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://bytenova.app/images/bytenova-social.jpg",
+          "width": 1200,
+          "height": 630
         }
-    ]
-}
-</script>
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ByteNova",
+        "url": "https://bytenova.app/",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://bytenova.app/images/bytenova-social.jpg",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "isPartOf": {
+        "@id": "https://bytenova.app/#website"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://bytenova.app/pages/que-son-git-y-github.html#webpage"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Git"
+        },
+        {
+          "@type": "Thing",
+          "name": "GitHub"
+        },
+        {
+          "@type": "Thing",
+          "name": "Control de versiones"
+        },
+        {
+          "@type": "Thing",
+          "name": "Repositorios"
+        }
+      ],
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://bytenova.app/images/bytenova-social.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://bytenova.app/pages/que-son-git-y-github.html#webpage",
+      "url": "https://bytenova.app/pages/que-son-git-y-github.html",
+      "name": "¿Qué son Git y GitHub y para qué sirven?",
+      "description": "Aprende qué son Git y GitHub, cuáles son sus diferencias y cómo ayudan a guardar versiones, colaborar y proteger proyectos de programación.",
+      "inLanguage": "es",
+      "datePublished": "2026-07-17",
+      "dateModified": "2026-08-03",
+      "isPartOf": {
+        "@id": "https://bytenova.app/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://bytenova.app/pages/que-son-git-y-github.html#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://bytenova.app/pages/que-son-git-y-github.html#article"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://bytenova.app/images/bytenova-social.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bytenova.app/pages/que-son-git-y-github.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://bytenova.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Artículos",
+          "item": "https://bytenova.app/pages/articulos.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Git y GitHub",
+          "item": "https://bytenova.app/pages/que-son-git-y-github.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bytenova.app/pages/que-son-git-y-github.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Necesito GitHub para utilizar Git?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Git puede utilizarse únicamente dentro de tu computadora. GitHub es una plataforma adicional para alojar repositorios en línea."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿GitHub es gratuito?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GitHub ofrece opciones gratuitas y otros planes. Para proyectos personales y aprendizaje, las funciones gratuitas suelen ser suficientes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo recuperar un archivo eliminado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Puede recuperarse cuando estaba incluido en una versión anterior registrada mediante Git."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Debo crear un commit por cada línea?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Lo recomendable es crear commits que agrupen cambios relacionados y completos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Git sirve solamente para programación?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Puede controlar versiones de diferentes archivos de texto, aunque es especialmente útil dentro del desarrollo de software."
+          }
+        }
+      ]
+    }
+  ]
+}</script>
 <meta content="ca-pub-5369456672603969" name="google-adsense-account"/>
 <script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5369456672603969">
 </script>
@@ -288,7 +284,7 @@
      </time>
      · Actualizado el
      <time datetime="2026-08-03">3 de agosto de 2026</time>
-</p>
+ · 10 min de lectura</p>
 <div class="articulo-resumen">
 <strong>
       En este artículo aprenderás:
@@ -338,7 +334,7 @@
 <a href="#errores">
         10. Errores frecuentes
        </a>
-<a href="#aplicacion-practica">Aplicación práctica y errores frecuentes</a><a href="#preguntas">
+<a href="#flujo-git">13. Flujo de trabajo básico con Git y GitHub</a><a href="#preguntas">
         11. Preguntas frecuentes
        </a>
 <a href="#conclusion">
@@ -755,15 +751,13 @@ archivos-temporales/
         Confundir Git con GitHub.
        </li>
 </ul>
-<section class="seccion-alto-valor" id="aplicacion-practica">
-<h2>Flujo de trabajo básico con Git y GitHub</h2>
-<p>Git registra cambios localmente mediante commits. GitHub aloja repositorios remotos y facilita colaboración, revisión de código y respaldo. Puedes usar Git sin GitHub, y GitHub también ofrece funciones adicionales alrededor de Git.</p><p>Un flujo sencillo consiste en actualizar el repositorio, crear una rama, realizar cambios pequeños, comprobarlos, hacer un commit descriptivo y subir la rama para revisión.</p>
-<div class="recuadro-ejemplo"><strong>✅ Lista de comprobación</strong><ul class="lista-articulo"><li>Escribe commits pequeños y con mensajes claros.</li><li>No subas contraseñas, tokens ni archivos con secretos.</li><li>Actualiza tu rama antes de combinar cambios.</li></ul></div>
-<div class="recuadro-alerta"><strong>⚠️ Errores frecuentes</strong><ul class="lista-articulo"><li>Usar “Git” y “GitHub” como sinónimos.</li><li>Hacer un único commit enorme con cambios sin relación.</li></ul></div>
-<h3>Continúa aprendiendo</h3>
-<p>Relaciona este concepto con los siguientes recursos de ByteNova:</p>
-<ul class="lista-articulo"><li><a href="guia-git-github.html">guía práctica de Git y GitHub</a></li><li><a href="que-es-programacion.html">programación</a></li><li><a href="frontend-y-backend.html">frontend y backend</a></li><li><a href="que-es-software-libre-codigo-abierto.html">código abierto</a></li></ul>
-</section><h2 id="preguntas">
+<section aria-labelledby="flujo-git" class="seccion-ampliada"><h2 id="flujo-git">Flujo de trabajo básico con Git y GitHub</h2><p>Git registra la historia en tu equipo; GitHub aloja una copia remota y facilita la colaboración. Un flujo sencillo puede verse así:</p>
+<pre><code>git status
+git add .
+git commit -m "Describir el cambio"
+git push</code></pre>
+<ol><li><code>git status</code> muestra qué archivos cambiaron.</li><li><code>git add</code> prepara lo que formará parte del próximo commit.</li><li><code>git commit</code> crea un punto identificable en la historia.</li><li><code>git push</code> envía los commits al repositorio remoto.</li></ol>
+<h3>Buenas prácticas</h3><ul><li>Hacer commits pequeños y con mensajes claros.</li><li>No subir contraseñas, claves ni archivos secretos.</li><li>Crear ramas para cambios grandes.</li><li>Revisar diferencias antes de confirmar.</li><li>Mantener un archivo README con instrucciones del proyecto.</li></ul></section><h2 id="preguntas">
        Preguntas frecuentes
       </h2>
 <section aria-labelledby="preguntas" class="faq-articulo">

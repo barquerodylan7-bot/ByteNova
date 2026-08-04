@@ -4,10 +4,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>
-   ¿Qué es TCP/IP? Capas, funciones y ejemplo sencillo | ByteNova
-  </title>
-<meta content="Aprende qué es TCP/IP, cómo organiza la comunicación en Internet, qué función cumplen sus capas y cómo viajan los datos entre dispositivos." name="description"/>
+<title>¿Qué es TCP/IP? Capas, funcionamiento y ejemplo | ByteNova</title>
+<meta content="Comprende qué es TCP/IP, cómo organiza la comunicación en Internet y qué función cumplen IP, TCP y los protocolos de aplicación." name="description"/>
 <meta content="ByteNova" name="author"/>
 <meta content="index, follow" name="robots"/>
 <meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
@@ -15,184 +13,182 @@
 <meta content="article" property="og:type"/>
 <meta content="es_CR" property="og:locale"/>
 <meta content="ByteNova" property="og:site_name"/>
-<meta content="¿Qué es TCP/IP? Capas, funciones y ejemplo sencillo" property="og:title"/>
-<meta content="Aprende qué es TCP/IP, cómo organiza la comunicación en Internet, qué función cumplen sus capas y cómo viajan los datos entre dispositivos." property="og:description"/>
+<meta content="¿Qué es TCP/IP? Capas, funcionamiento y ejemplo" property="og:title"/>
+<meta content="Comprende qué es TCP/IP, cómo organiza la comunicación en Internet y qué función cumplen IP, TCP y los protocolos de aplicación." property="og:description"/>
 <meta content="https://bytenova.app/pages/que-es-tcp-ip.html" property="og:url"/><meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image"/><meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image:secure_url"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="image/jpeg" property="og:image:type"/><meta content="¿Qué es TCP/IP y cómo funciona? | ByteNova" property="og:image:alt"/><meta content="https://bytenova.app/images/bytenova-social.jpg" name="twitter:image"/><meta content="¿Qué es TCP/IP y cómo funciona? | ByteNova" name="twitter:image:alt"/>
 <meta content="2026-07-17" property="article:published_time"/>
 <meta content="2026-08-03" property="article:modified_time"/>
 <meta content="Redes e Internet" property="article:section"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="¿Qué es TCP/IP? Capas, funciones y ejemplo sencillo" name="twitter:title"/>
-<meta content="Aprende qué es TCP/IP, cómo organiza la comunicación en Internet, qué función cumplen sus capas y cómo viajan los datos entre dispositivos." name="twitter:description"/>
+<meta content="¿Qué es TCP/IP? Capas, funcionamiento y ejemplo" name="twitter:title"/>
+<meta content="Comprende qué es TCP/IP, cómo organiza la comunicación en Internet y qué función cumplen IP, TCP y los protocolos de aplicación." name="twitter:description"/>
 <link href="https://bytenova.app/pages/que-es-tcp-ip.html" rel="canonical"/>
 <link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="../css/style.css" rel="stylesheet"/>
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@graph": [
-        {
-            "@type": "Article",
-            "@id": "https://bytenova.app/pages/que-es-tcp-ip.html#article",
-            "headline": "¿Qué es TCP/IP? Capas, funciones y ejemplo sencillo",
-            "description": "Aprende qué es TCP/IP, cómo organiza la comunicación en Internet, qué función cumplen sus capas y cómo viajan los datos entre dispositivos.",
-            "url": "https://bytenova.app/pages/que-es-tcp-ip.html",
-            "datePublished": "2026-07-17",
-            "dateModified": "2026-08-03",
-            "inLanguage": "es",
-            "articleSection": "Redes e Internet",
-            "isAccessibleForFree": true,
-            "author": {
-                "@type": "Organization",
-                "name": "ByteNova",
-                "url": "https://bytenova.app/pages/sobre.html",
-                "image": {
-                    "@type": "ImageObject",
-                    "url": "https://bytenova.app/images/bytenova-social.jpg",
-                    "width": 1200,
-                    "height": 630
-                }
-            },
-            "publisher": {
-                "@type": "Organization",
-                "name": "ByteNova",
-                "url": "https://bytenova.app/",
-                "image": {
-                    "@type": "ImageObject",
-                    "url": "https://bytenova.app/images/bytenova-social.jpg",
-                    "width": 1200,
-                    "height": 630
-                }
-            },
-            "isPartOf": {
-                "@id": "https://bytenova.app/#website"
-            },
-            "mainEntityOfPage": {
-                "@id": "https://bytenova.app/pages/que-es-tcp-ip.html#webpage"
-            },
-            "about": [
-                {
-                    "@type": "Thing",
-                    "name": "TCP/IP"
-                },
-                {
-                    "@type": "Thing",
-                    "name": "Protocolo TCP"
-                },
-                {
-                    "@type": "Thing",
-                    "name": "Protocolo IP"
-                },
-                {
-                    "@type": "Thing",
-                    "name": "Redes informáticas"
-                }
-            ],
-            "image": {
-                "@type": "ImageObject",
-                "url": "https://bytenova.app/images/bytenova-social.jpg",
-                "width": 1200,
-                "height": 630
-            }
-        },
-        {
-            "@type": "WebPage",
-            "@id": "https://bytenova.app/pages/que-es-tcp-ip.html#webpage",
-            "url": "https://bytenova.app/pages/que-es-tcp-ip.html",
-            "name": "¿Qué es TCP/IP? Capas, funciones y ejemplo sencillo",
-            "description": "Artículo sobre TCP/IP, sus capas, los protocolos TCP e IP, los paquetes, los puertos y la seguridad de redes.",
-            "inLanguage": "es",
-            "datePublished": "2026-07-17",
-            "dateModified": "2026-08-03",
-            "isPartOf": {
-                "@id": "https://bytenova.app/#website"
-            },
-            "breadcrumb": {
-                "@id": "https://bytenova.app/pages/que-es-tcp-ip.html#breadcrumb"
-            },
-            "mainEntity": {
-                "@id": "https://bytenova.app/pages/que-es-tcp-ip.html#article"
-            },
-            "image": {
-                "@type": "ImageObject",
-                "url": "https://bytenova.app/images/bytenova-social.jpg",
-                "width": 1200,
-                "height": 630
-            }
-        },
-        {
-            "@type": "BreadcrumbList",
-            "@id": "https://bytenova.app/pages/que-es-tcp-ip.html#breadcrumb",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Inicio",
-                    "item": "https://bytenova.app/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Artículos",
-                    "item": "https://bytenova.app/pages/articulos.html"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "TCP/IP",
-                    "item": "https://bytenova.app/pages/que-es-tcp-ip.html"
-                }
-            ]
-        },
-        {
-            "@type": "FAQPage",
-            "@id": "https://bytenova.app/pages/que-es-tcp-ip.html#faq",
-            "mainEntity": [
-                {
-                    "@type": "Question",
-                    "name": "¿TCP/IP es un único protocolo?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "No. Es un conjunto de protocolos organizados para permitir la comunicación entre dispositivos y aplicaciones."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "¿TCP e IP cumplen la misma función?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "No. TCP administra la entrega ordenada y confiable, mientras IP dirige los paquetes hacia su destino."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "¿Internet funciona sin TCP?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Algunas aplicaciones utilizan otros protocolos de transporte, como UDP. Sin embargo, TCP se utiliza ampliamente en muchos servicios."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "¿Qué ocurre cuando se pierde un paquete?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Cuando se utiliza TCP, el sistema puede detectar la pérdida y solicitar nuevamente la información."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "¿TCP/IP cifra la información?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "No necesariamente. El cifrado puede proporcionarse mediante otros protocolos, como TLS utilizado por HTTPS."
-                    }
-                }
-            ]
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://bytenova.app/pages/que-es-tcp-ip.html#article",
+      "headline": "¿Qué es TCP/IP? Capas, funcionamiento y ejemplo",
+      "description": "Comprende qué es TCP/IP, cómo organiza la comunicación en Internet y qué función cumplen IP, TCP y los protocolos de aplicación.",
+      "url": "https://bytenova.app/pages/que-es-tcp-ip.html",
+      "datePublished": "2026-07-17",
+      "dateModified": "2026-08-03",
+      "inLanguage": "es",
+      "articleSection": "Redes e Internet",
+      "isAccessibleForFree": true,
+      "author": {
+        "@type": "Organization",
+        "name": "ByteNova",
+        "url": "https://bytenova.app/pages/sobre.html",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://bytenova.app/images/bytenova-social.jpg",
+          "width": 1200,
+          "height": 630
         }
-    ]
-}
-</script>
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ByteNova",
+        "url": "https://bytenova.app/",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://bytenova.app/images/bytenova-social.jpg",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "isPartOf": {
+        "@id": "https://bytenova.app/#website"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://bytenova.app/pages/que-es-tcp-ip.html#webpage"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "TCP/IP"
+        },
+        {
+          "@type": "Thing",
+          "name": "Protocolo TCP"
+        },
+        {
+          "@type": "Thing",
+          "name": "Protocolo IP"
+        },
+        {
+          "@type": "Thing",
+          "name": "Redes informáticas"
+        }
+      ],
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://bytenova.app/images/bytenova-social.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://bytenova.app/pages/que-es-tcp-ip.html#webpage",
+      "url": "https://bytenova.app/pages/que-es-tcp-ip.html",
+      "name": "¿Qué es TCP/IP y cómo funciona?",
+      "description": "Artículo sobre TCP/IP, sus capas, los protocolos TCP e IP, los paquetes, los puertos y la seguridad de redes.",
+      "inLanguage": "es",
+      "datePublished": "2026-07-17",
+      "dateModified": "2026-08-03",
+      "isPartOf": {
+        "@id": "https://bytenova.app/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://bytenova.app/pages/que-es-tcp-ip.html#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://bytenova.app/pages/que-es-tcp-ip.html#article"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://bytenova.app/images/bytenova-social.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bytenova.app/pages/que-es-tcp-ip.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://bytenova.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Artículos",
+          "item": "https://bytenova.app/pages/articulos.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "TCP/IP",
+          "item": "https://bytenova.app/pages/que-es-tcp-ip.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bytenova.app/pages/que-es-tcp-ip.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿TCP/IP es un único protocolo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Es un conjunto de protocolos organizados para permitir la comunicación entre dispositivos y aplicaciones."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿TCP e IP cumplen la misma función?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. TCP administra la entrega ordenada y confiable, mientras IP dirige los paquetes hacia su destino."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Internet funciona sin TCP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Algunas aplicaciones utilizan otros protocolos de transporte, como UDP. Sin embargo, TCP se utiliza ampliamente en muchos servicios."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué ocurre cuando se pierde un paquete?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cuando se utiliza TCP, el sistema puede detectar la pérdida y solicitar nuevamente la información."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿TCP/IP cifra la información?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No necesariamente. El cifrado puede proporcionarse mediante otros protocolos, como TLS utilizado por HTTPS."
+          }
+        }
+      ]
+    }
+  ]
+}</script>
 <meta content="ca-pub-5369456672603969" name="google-adsense-account"/>
 <script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5369456672603969">
 </script>
@@ -288,7 +284,7 @@
      </time>
      · Actualizado el
      <time datetime="2026-08-03">3 de agosto de 2026</time>
-</p>
+ · 10 min de lectura</p>
 <div class="articulo-resumen">
 <strong>
       En este artículo aprenderás:
@@ -338,7 +334,7 @@
 <a href="#seguridad">
         10. TCP/IP y seguridad
        </a>
-<a href="#aplicacion-practica">Aplicación práctica y errores frecuentes</a><a href="#preguntas">
+<a href="#viaje-paquete">13. El viaje simplificado de un paquete por Internet</a><a href="#preguntas">
         11. Preguntas frecuentes
        </a>
 <a href="#conclusion">
@@ -1106,15 +1102,9 @@ Acceso a la red</code></pre>
         Programas maliciosos que se comunican por la red.
        </li>
 </ul>
-<section class="seccion-alto-valor" id="aplicacion-practica">
-<h2>Cómo viaja un mensaje usando TCP/IP</h2>
-<p>Una aplicación genera datos; la capa de transporte los divide y controla la entrega; la capa de Internet añade direcciones IP; y la capa de acceso los adapta al medio físico o inalámbrico. En el destino, el proceso se realiza en sentido inverso.</p><p>TCP prioriza la entrega ordenada y confiable. IP se encarga del direccionamiento y el encaminamiento, pero por sí solo no garantiza que los paquetes lleguen.</p>
-<div class="recuadro-ejemplo"><strong>✅ Lista de comprobación</strong><ul class="lista-articulo"><li>Distingue dirección IP, puerto y protocolo de aplicación.</li><li>Recuerda que TCP e IP cumplen funciones diferentes.</li><li>Relaciona DNS, HTTP y TCP/IP como partes de un mismo proceso.</li></ul></div>
-<div class="recuadro-alerta"><strong>⚠️ Errores frecuentes</strong><ul class="lista-articulo"><li>Pensar que TCP/IP es un único protocolo.</li><li>Confundir una dirección IP con una dirección web.</li></ul></div>
-<h3>Continúa aprendiendo</h3>
-<p>Relaciona este concepto con los siguientes recursos de ByteNova:</p>
-<ul class="lista-articulo"><li><a href="que-es-una-direccion-ip.html">direcciones IP</a></li><li><a href="que-es-dns.html">DNS</a></li><li><a href="que-son-http-y-https.html">HTTP y HTTPS</a></li><li><a href="que-es-una-red-informatica.html">redes informáticas</a></li></ul>
-</section><h2 id="preguntas">
+<section aria-labelledby="viaje-paquete" class="seccion-ampliada"><h2 id="viaje-paquete">El viaje simplificado de un paquete por Internet</h2><p>Cuando una aplicación envía información, cada capa añade datos necesarios para que el mensaje llegue al destino y pueda reconstruirse.</p>
+<ol><li>La aplicación genera datos, por ejemplo una solicitud HTTP.</li><li>TCP divide la información, numera segmentos y controla la entrega.</li><li>IP añade direcciones de origen y destino para encaminar los paquetes.</li><li>La interfaz de red transmite la información por Wi‑Fi, cable o fibra.</li><li>Routers intermedios consultan el destino y reenvían cada paquete.</li><li>En el receptor, las capas eliminan encabezados y entregan los datos a la aplicación.</li></ol>
+<h3>TCP y UDP no son lo mismo</h3><div class="lista-tarjetas-articulo"><div><strong>TCP</strong><p>Prioriza entrega ordenada y confirmada. Se usa en web, correo y transferencia de archivos.</p></div><div><strong>UDP</strong><p>Reduce controles para ganar velocidad. Es común en streaming, juegos y consultas DNS.</p></div></div></section><h2 id="preguntas">
        Preguntas frecuentes
       </h2>
 <section aria-labelledby="preguntas" class="faq-articulo">
