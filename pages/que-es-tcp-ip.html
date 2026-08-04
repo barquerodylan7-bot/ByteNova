@@ -4,10 +4,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>
-   ¿Qué es TCP/IP y cómo funciona? | ByteNova
-  </title>
-<meta content="Aprende qué es TCP/IP, cómo permite la comunicación entre dispositivos, cuáles son sus capas y qué función cumplen TCP, IP, puertos y paquetes." name="description"/>
+<title>¿Qué es TCP/IP? Cómo funciona Internet paso a paso | ByteNova</title>
+<meta content="Descubre qué es TCP/IP, cómo se dividen y transportan los datos por Internet, y comprende sus capas con un ejemplo práctico." name="description"/>
 <meta content="ByteNova" name="author"/>
 <meta content="index, follow" name="robots"/>
 <meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
@@ -15,15 +13,15 @@
 <meta content="article" property="og:type"/>
 <meta content="es_CR" property="og:locale"/>
 <meta content="ByteNova" property="og:site_name"/>
-<meta content="¿Qué es TCP/IP y cómo funciona?" property="og:title"/>
-<meta content="Aprende qué es TCP/IP, cómo permite la comunicación entre dispositivos, cuáles son sus capas y qué función cumplen TCP, IP, puertos y paquetes." property="og:description"/>
+<meta content="¿Qué es TCP/IP? Cómo funciona Internet paso a paso" property="og:title"/>
+<meta content="Descubre qué es TCP/IP, cómo se dividen y transportan los datos por Internet, y comprende sus capas con un ejemplo práctico." property="og:description"/>
 <meta content="https://bytenova.app/pages/que-es-tcp-ip.html" property="og:url"/><meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image"/><meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image:secure_url"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="image/jpeg" property="og:image:type"/><meta content="¿Qué es TCP/IP y cómo funciona? | ByteNova" property="og:image:alt"/><meta content="https://bytenova.app/images/bytenova-social.jpg" name="twitter:image"/><meta content="¿Qué es TCP/IP y cómo funciona? | ByteNova" name="twitter:image:alt"/>
 <meta content="2026-07-17" property="article:published_time"/>
-<meta content="2026-07-21" property="article:modified_time"/>
+<meta content="2026-08-03" property="article:modified_time"/>
 <meta content="Redes e Internet" property="article:section"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="¿Qué es TCP/IP y cómo funciona?" name="twitter:title"/>
-<meta content="Aprende cómo TCP/IP permite la comunicación entre dispositivos mediante capas, paquetes, direcciones y puertos." name="twitter:description"/>
+<meta content="¿Qué es TCP/IP? Cómo funciona Internet paso a paso" name="twitter:title"/>
+<meta content="Descubre qué es TCP/IP, cómo se dividen y transportan los datos por Internet, y comprende sus capas con un ejemplo práctico." name="twitter:description"/>
 <link href="https://bytenova.app/pages/que-es-tcp-ip.html" rel="canonical"/>
 <link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="../css/style.css" rel="stylesheet"/>
@@ -38,7 +36,7 @@
             "description": "Aprende qué es TCP/IP, cómo permite la comunicación entre dispositivos, cuáles son sus capas y qué función cumplen TCP, IP, puertos y paquetes.",
             "url": "https://bytenova.app/pages/que-es-tcp-ip.html",
             "datePublished": "2026-07-17",
-            "dateModified": "2026-07-21",
+            "dateModified": "2026-08-03",
             "inLanguage": "es",
             "articleSection": "Redes e Internet",
             "isAccessibleForFree": true,
@@ -103,7 +101,7 @@
             "description": "Artículo sobre TCP/IP, sus capas, los protocolos TCP e IP, los paquetes, los puertos y la seguridad de redes.",
             "inLanguage": "es",
             "datePublished": "2026-07-17",
-            "dateModified": "2026-07-21",
+            "dateModified": "2026-08-03",
             "isPartOf": {
                 "@id": "https://bytenova.app/#website"
             },
@@ -1108,6 +1106,11 @@ Acceso a la red</code></pre>
         Programas maliciosos que se comunican por la red.
        </li>
 </ul>
+
+<section aria-labelledby="viaje-paquete"><h2 id="viaje-paquete">El viaje de un dato por Internet</h2><p>Cuando visitas una página, el contenido se divide en paquetes. TCP organiza la comunicación y controla que los datos lleguen completos; IP se encarga de dirigir cada paquete hacia la dirección correcta. Al llegar, TCP vuelve a ordenar las piezas.</p>
+<h3>Ejemplo simplificado</h3><ol><li>El navegador prepara una solicitud.</li><li>TCP la divide en segmentos y añade información de control.</li><li>IP agrega direcciones de origen y destino.</li><li>Routers encaminan los paquetes por distintas redes.</li><li>El servidor responde y el proceso se repite.</li><li>TCP verifica el orden y solicita nuevamente lo que falte.</li></ol>
+<h2>TCP y UDP no son lo mismo</h2><p>TCP prioriza entrega ordenada y confiable. UDP reduce controles para obtener menor latencia. Por eso TCP suele utilizarse en páginas web y archivos, mientras UDP puede ser útil en videollamadas, juegos o transmisiones en tiempo real.</p></section>
+
 <h2 id="preguntas">
        Preguntas frecuentes
       </h2>
