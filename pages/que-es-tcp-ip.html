@@ -5,9 +5,9 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>
-   ¿Qué es TCP/IP? Cómo funciona Internet paso a paso | ByteNova
+   ¿Qué es TCP/IP? Capas, funciones y ejemplo sencillo | ByteNova
   </title>
-<meta content="Aprende qué es TCP/IP, sus capas, cómo viajan los datos, diferencias entre TCP y UDP y un ejemplo al visitar una página web." name="description"/>
+<meta content="Aprende qué es TCP/IP, cómo organiza la comunicación en Internet, qué función cumplen sus capas y cómo viajan los datos entre dispositivos." name="description"/>
 <meta content="ByteNova" name="author"/>
 <meta content="index, follow" name="robots"/>
 <meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
@@ -15,15 +15,15 @@
 <meta content="article" property="og:type"/>
 <meta content="es_CR" property="og:locale"/>
 <meta content="ByteNova" property="og:site_name"/>
-<meta content="¿Qué es TCP/IP? Cómo funciona Internet paso a paso" property="og:title"/>
-<meta content="Aprende qué es TCP/IP, sus capas, cómo viajan los datos, diferencias entre TCP y UDP y un ejemplo al visitar una página web." property="og:description"/>
+<meta content="¿Qué es TCP/IP? Capas, funciones y ejemplo sencillo" property="og:title"/>
+<meta content="Aprende qué es TCP/IP, cómo organiza la comunicación en Internet, qué función cumplen sus capas y cómo viajan los datos entre dispositivos." property="og:description"/>
 <meta content="https://bytenova.app/pages/que-es-tcp-ip.html" property="og:url"/><meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image"/><meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image:secure_url"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="image/jpeg" property="og:image:type"/><meta content="¿Qué es TCP/IP y cómo funciona? | ByteNova" property="og:image:alt"/><meta content="https://bytenova.app/images/bytenova-social.jpg" name="twitter:image"/><meta content="¿Qué es TCP/IP y cómo funciona? | ByteNova" name="twitter:image:alt"/>
 <meta content="2026-07-17" property="article:published_time"/>
 <meta content="2026-08-03" property="article:modified_time"/>
 <meta content="Redes e Internet" property="article:section"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="¿Qué es TCP/IP? Cómo funciona Internet paso a paso" name="twitter:title"/>
-<meta content="Aprende qué es TCP/IP, sus capas, cómo viajan los datos, diferencias entre TCP y UDP y un ejemplo al visitar una página web." name="twitter:description"/>
+<meta content="¿Qué es TCP/IP? Capas, funciones y ejemplo sencillo" name="twitter:title"/>
+<meta content="Aprende qué es TCP/IP, cómo organiza la comunicación en Internet, qué función cumplen sus capas y cómo viajan los datos entre dispositivos." name="twitter:description"/>
 <link href="https://bytenova.app/pages/que-es-tcp-ip.html" rel="canonical"/>
 <link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="../css/style.css" rel="stylesheet"/>
@@ -34,8 +34,8 @@
         {
             "@type": "Article",
             "@id": "https://bytenova.app/pages/que-es-tcp-ip.html#article",
-            "headline": "¿Qué es TCP/IP? Cómo funciona Internet paso a paso",
-            "description": "Aprende qué es TCP/IP, sus capas, cómo viajan los datos, diferencias entre TCP y UDP y un ejemplo al visitar una página web.",
+            "headline": "¿Qué es TCP/IP? Capas, funciones y ejemplo sencillo",
+            "description": "Aprende qué es TCP/IP, cómo organiza la comunicación en Internet, qué función cumplen sus capas y cómo viajan los datos entre dispositivos.",
             "url": "https://bytenova.app/pages/que-es-tcp-ip.html",
             "datePublished": "2026-07-17",
             "dateModified": "2026-08-03",
@@ -99,8 +99,8 @@
             "@type": "WebPage",
             "@id": "https://bytenova.app/pages/que-es-tcp-ip.html#webpage",
             "url": "https://bytenova.app/pages/que-es-tcp-ip.html",
-            "name": "¿Qué es TCP/IP y cómo funciona?",
-            "description": "Aprende qué es TCP/IP, sus capas, cómo viajan los datos, diferencias entre TCP y UDP y un ejemplo al visitar una página web.",
+            "name": "¿Qué es TCP/IP? Capas, funciones y ejemplo sencillo",
+            "description": "Artículo sobre TCP/IP, sus capas, los protocolos TCP e IP, los paquetes, los puertos y la seguridad de redes.",
             "inLanguage": "es",
             "datePublished": "2026-07-17",
             "dateModified": "2026-08-03",
@@ -287,10 +287,8 @@
       17 de julio de 2026
      </time>
      · Actualizado el
-     <time datetime="2026-08-03">
-      3 de agosto de 2026
-     </time>
- · <span>10 min de lectura</span></p>
+     <time datetime="2026-08-03">3 de agosto de 2026</time>
+</p>
 <div class="articulo-resumen">
 <strong>
       En este artículo aprenderás:
@@ -310,18 +308,42 @@
        Contenido del artículo
       </summary>
 <nav aria-label="Contenido del artículo">
-<a href="#que-es">1. ¿Qué es TCP/IP?</a>
-<a href="#para-que-sirve">2. ¿Para qué sirve?</a>
-<a href="#como-funciona">3. ¿Cómo funciona?</a>
-<a href="#tcp">4. ¿Qué es TCP?</a>
-<a href="#ip">5. ¿Qué es IP?</a>
-<a href="#capas">6. Capas del modelo TCP/IP</a>
-<a href="#paquetes">7. Paquetes de datos</a>
-<a href="#puertos">8. Puertos de red</a>
-<a href="#tcp-udp">9. TCP y UDP</a>
-<a href="#seguridad">10. TCP/IP y seguridad</a>
-<a href="#viaje-dato">11. Viaje de un dato por TCP/IP</a><a href="#preguntas">12. Preguntas frecuentes</a>
-<a href="#conclusion">13. Conclusión</a>
+<a href="#que-es">
+        1. ¿Qué es TCP/IP?
+       </a>
+<a href="#para-que-sirve">
+        2. ¿Para qué sirve?
+       </a>
+<a href="#como-funciona">
+        3. ¿Cómo funciona?
+       </a>
+<a href="#tcp">
+        4. ¿Qué es TCP?
+       </a>
+<a href="#ip">
+        5. ¿Qué es IP?
+       </a>
+<a href="#capas">
+        6. Capas del modelo TCP/IP
+       </a>
+<a href="#paquetes">
+        7. Paquetes de datos
+       </a>
+<a href="#puertos">
+        8. Puertos de red
+       </a>
+<a href="#tcp-udp">
+        9. TCP y UDP
+       </a>
+<a href="#seguridad">
+        10. TCP/IP y seguridad
+       </a>
+<a href="#aplicacion-practica">Aplicación práctica y errores frecuentes</a><a href="#preguntas">
+        11. Preguntas frecuentes
+       </a>
+<a href="#conclusion">
+        12. Conclusión
+       </a>
 </nav>
 </details>
 <div aria-label="Contenido principal del artículo" class="articulo-cuerpo">
@@ -329,7 +351,7 @@
        TCP/IP es el conjunto de reglas que permite que
                         computadoras, teléfonos, servidores y otros dispositivos
                         se comuniquen dentro de una red y mediante Internet.
-      </p><p class="articulo-actualizacion">Contenido revisado y ampliado por ByteNova el 3 de agosto de 2026.</p>
+      </p>
 <p>
        Gracias a estos protocolos, la información puede
                         dividirse, enviarse hacia un destino y reconstruirse
@@ -1084,10 +1106,15 @@ Acceso a la red</code></pre>
         Programas maliciosos que se comunican por la red.
        </li>
 </ul>
-<h2 id="viaje-dato">El viaje de un dato mediante TCP/IP</h2><p>Cuando un navegador solicita una página, la información se divide en unidades que atraviesan distintas capas. Cada capa agrega datos de control para que el contenido pueda llegar al destino correcto.</p>
-<div class="lista-tarjetas-articulo"><div><strong>Aplicación</strong><p>Protocolos como HTTP describen la solicitud y la respuesta.</p></div><div><strong>Transporte</strong><p>TCP organiza la comunicación, controla errores y mantiene el orden.</p></div><div><strong>Internet</strong><p>IP identifica origen y destino y permite enrutar los paquetes.</p></div><div><strong>Acceso a red</strong><p>Ethernet o Wi‑Fi transportan la información por el medio físico.</p></div></div>
-<h3>TCP y UDP no compiten: resuelven necesidades diferentes</h3><p>TCP prioriza entrega fiable y ordenada, por lo que se utiliza en páginas web, correo y transferencia de archivos. UDP reduce controles para disminuir latencia y resulta útil en llamadas, video en tiempo real, videojuegos o consultas breves.</p>
-<div class="recuadro-ejemplo"><strong>Error común</strong><p>Creer que una dirección IP identifica permanentemente a una persona. Una IP identifica una interfaz o conexión en un contexto determinado y puede cambiar, compartirse o traducirse mediante NAT.</p></div><h2 id="preguntas">
+<section class="seccion-alto-valor" id="aplicacion-practica">
+<h2>Cómo viaja un mensaje usando TCP/IP</h2>
+<p>Una aplicación genera datos; la capa de transporte los divide y controla la entrega; la capa de Internet añade direcciones IP; y la capa de acceso los adapta al medio físico o inalámbrico. En el destino, el proceso se realiza en sentido inverso.</p><p>TCP prioriza la entrega ordenada y confiable. IP se encarga del direccionamiento y el encaminamiento, pero por sí solo no garantiza que los paquetes lleguen.</p>
+<div class="recuadro-ejemplo"><strong>✅ Lista de comprobación</strong><ul class="lista-articulo"><li>Distingue dirección IP, puerto y protocolo de aplicación.</li><li>Recuerda que TCP e IP cumplen funciones diferentes.</li><li>Relaciona DNS, HTTP y TCP/IP como partes de un mismo proceso.</li></ul></div>
+<div class="recuadro-alerta"><strong>⚠️ Errores frecuentes</strong><ul class="lista-articulo"><li>Pensar que TCP/IP es un único protocolo.</li><li>Confundir una dirección IP con una dirección web.</li></ul></div>
+<h3>Continúa aprendiendo</h3>
+<p>Relaciona este concepto con los siguientes recursos de ByteNova:</p>
+<ul class="lista-articulo"><li><a href="que-es-una-direccion-ip.html">direcciones IP</a></li><li><a href="que-es-dns.html">DNS</a></li><li><a href="que-son-http-y-https.html">HTTP y HTTPS</a></li><li><a href="que-es-una-red-informatica.html">redes informáticas</a></li></ul>
+</section><h2 id="preguntas">
        Preguntas frecuentes
       </h2>
 <section aria-labelledby="preguntas" class="faq-articulo">

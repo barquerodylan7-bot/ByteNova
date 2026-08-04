@@ -4,8 +4,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>¿Qué es DNS? Cómo traduce dominios en direcciones IP | ByteNova</title>
-<meta content="Comprende qué es DNS, cómo convierte dominios en IP, qué registros existen y qué ocurre desde que escribes una dirección web." name="description"/>
+<title>
+   ¿Qué es DNS? Cómo traduce dominios a direcciones IP | ByteNova
+  </title>
+<meta content="Descubre qué es DNS, cómo convierte dominios en direcciones IP, qué registros utiliza y qué ocurre cuando escribes una web en el navegador." name="description"/>
 <meta content="ByteNova" name="author"/>
 <meta content="index, follow" name="robots"/>
 <meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
@@ -13,15 +15,15 @@
 <meta content="article" property="og:type"/>
 <meta content="es_CR" property="og:locale"/>
 <meta content="ByteNova" property="og:site_name"/>
-<meta content="¿Qué es DNS? Cómo traduce dominios en direcciones IP" property="og:title"/>
-<meta content="Comprende qué es DNS, cómo convierte dominios en IP, qué registros existen y qué ocurre desde que escribes una dirección web." property="og:description"/>
+<meta content="¿Qué es DNS? Cómo traduce dominios a direcciones IP" property="og:title"/>
+<meta content="Descubre qué es DNS, cómo convierte dominios en direcciones IP, qué registros utiliza y qué ocurre cuando escribes una web en el navegador." property="og:description"/>
 <meta content="https://bytenova.app/pages/que-es-dns.html" property="og:url"/><meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image"/><meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image:secure_url"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="image/jpeg" property="og:image:type"/><meta content="¿Qué es el DNS y cómo funciona? | ByteNova" property="og:image:alt"/><meta content="https://bytenova.app/images/bytenova-social.jpg" name="twitter:image"/><meta content="¿Qué es el DNS y cómo funciona? | ByteNova" name="twitter:image:alt"/>
 <meta content="2026-07-17" property="article:published_time"/>
 <meta content="2026-08-03" property="article:modified_time"/>
 <meta content="Redes e Internet" property="article:section"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="¿Qué es DNS? Cómo traduce dominios en direcciones IP" name="twitter:title"/>
-<meta content="Comprende qué es DNS, cómo convierte dominios en IP, qué registros existen y qué ocurre desde que escribes una dirección web." name="twitter:description"/>
+<meta content="¿Qué es DNS? Cómo traduce dominios a direcciones IP" name="twitter:title"/>
+<meta content="Descubre qué es DNS, cómo convierte dominios en direcciones IP, qué registros utiliza y qué ocurre cuando escribes una web en el navegador." name="twitter:description"/>
 <link href="https://bytenova.app/pages/que-es-dns.html" rel="canonical"/>
 <link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="../css/style.css" rel="stylesheet"/>
@@ -32,8 +34,8 @@
         {
             "@type": "Article",
             "@id": "https://bytenova.app/pages/que-es-dns.html#article",
-            "headline": "¿Qué es el DNS y cómo funciona?",
-            "description": "Aprende qué es el DNS, cómo convierte dominios en direcciones IP, qué tipos de registros existen y por qué es importante para Internet.",
+            "headline": "¿Qué es DNS? Cómo traduce dominios a direcciones IP",
+            "description": "Descubre qué es DNS, cómo convierte dominios en direcciones IP, qué registros utiliza y qué ocurre cuando escribes una web en el navegador.",
             "url": "https://bytenova.app/pages/que-es-dns.html",
             "datePublished": "2026-07-17",
             "dateModified": "2026-08-03",
@@ -97,7 +99,7 @@
             "@type": "WebPage",
             "@id": "https://bytenova.app/pages/que-es-dns.html#webpage",
             "url": "https://bytenova.app/pages/que-es-dns.html",
-            "name": "¿Qué es el DNS y cómo funciona?",
+            "name": "¿Qué es DNS? Cómo traduce dominios a direcciones IP",
             "description": "Artículo sobre el funcionamiento del DNS, sus servidores, registros, caché, propagación y medidas de seguridad.",
             "inLanguage": "es",
             "datePublished": "2026-07-17",
@@ -285,9 +287,7 @@
       17 de julio de 2026
      </time>
      · Actualizado el
-     <time datetime="2026-07-21">
-      21 de julio de 2026
-     </time>
+     <time datetime="2026-08-03">3 de agosto de 2026</time>
 </p>
 <div class="articulo-resumen">
 <strong>
@@ -338,7 +338,7 @@
 <a href="#problemas">
         10. Problemas frecuentes
        </a>
-<a href="#preguntas">
+<a href="#aplicacion-practica">Aplicación práctica y errores frecuentes</a><a href="#preguntas">
         11. Preguntas frecuentes
        </a>
 <a href="#conclusion">
@@ -982,12 +982,15 @@ Valor: bytenova.app</code></pre>
 </div>
 </div>
 </div>
-
-<section aria-labelledby="resolucion-dns"><h2 id="resolucion-dns">Qué ocurre al escribir un dominio</h2><ol><li>El navegador revisa su caché.</li><li>El sistema operativo consulta su resolvedor DNS.</li><li>Si no conoce la respuesta, consulta servidores jerárquicos.</li><li>El servidor autoritativo devuelve el registro correspondiente.</li><li>La dirección se guarda temporalmente según su TTL.</li><li>El navegador se conecta al servidor indicado.</li></ol>
-<h2>Registros DNS frecuentes</h2><ul><li><strong>A:</strong> relaciona un nombre con una dirección IPv4.</li><li><strong>AAAA:</strong> utiliza una dirección IPv6.</li><li><strong>CNAME:</strong> crea un alias hacia otro nombre.</li><li><strong>MX:</strong> indica servidores de correo.</li><li><strong>TXT:</strong> publica verificaciones y políticas.</li><li><strong>NS:</strong> define servidores autoritativos.</li></ul>
-<h2>Por qué los cambios DNS tardan</h2><p>Los resolutores almacenan respuestas durante el tiempo definido por el TTL. Mientras expira esa caché, distintas redes pueden ver valores diferentes. Por eso conviene evitar cambios repetidos durante una propagación.</p></section>
-
-<h2 id="preguntas">
+<section class="seccion-alto-valor" id="aplicacion-practica">
+<h2>Qué ocurre durante una consulta DNS</h2>
+<p>El dispositivo consulta un resolvedor. Si la respuesta no está en caché, el resolvedor recorre la jerarquía DNS hasta encontrar el servidor autorizado para el dominio y obtiene el registro correspondiente.</p><p>La caché acelera las consultas, pero también explica por qué un cambio de DNS puede tardar en verse desde algunas redes. Cada registro tiene un tiempo de vida o TTL.</p>
+<div class="recuadro-ejemplo"><strong>✅ Lista de comprobación</strong><ul class="lista-articulo"><li>Comprueba los nameservers autorizados antes de cambiar registros.</li><li>Reduce el TTL con anticipación cuando planifiques una migración.</li><li>No elimines registros de correo o verificación sin conocer su función.</li></ul></div>
+<div class="recuadro-alerta"><strong>⚠️ Errores frecuentes</strong><ul class="lista-articulo"><li>Confundir registrar, hosting y proveedor DNS.</li><li>Cambiar varios elementos a la vez durante una migración.</li></ul></div>
+<h3>Continúa aprendiendo</h3>
+<p>Relaciona este concepto con los siguientes recursos de ByteNova:</p>
+<ul class="lista-articulo"><li><a href="que-es-una-direccion-ip.html">direcciones IP</a></li><li><a href="que-es-una-url.html">URLs</a></li><li><a href="que-es-dominio-y-hosting.html">dominio y hosting</a></li><li><a href="que-es-un-servidor.html">servidores</a></li></ul>
+</section><h2 id="preguntas">
        Preguntas frecuentes
       </h2>
 <section aria-labelledby="preguntas" class="faq-articulo">
