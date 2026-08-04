@@ -4,10 +4,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>
-   ¿Qué son las redes neuronales y cómo funcionan? | ByteNova
-  </title>
-<meta content="Aprende qué son las redes neuronales artificiales, cómo aprenden con datos, qué función cumplen sus capas y cómo se utilizan en inteligencia artificial." name="description"/>
+<title>¿Qué son las redes neuronales? Capas y aprendizaje | ByteNova</title>
+<meta content="Aprende qué son las redes neuronales artificiales, cómo funcionan sus capas, cómo aprenden y en qué aplicaciones se utilizan, con un ejemplo sencillo." name="description"/>
 <meta content="ByteNova" name="author"/>
 <meta content="index, follow" name="robots"/>
 <meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
@@ -297,7 +295,16 @@
       🧠
      </span>
 </h1>
-<p class="articulo-meta">Publicado por ByteNova · 17 de julio de 2026 · Actualizado el 3 de agosto de 2026</p>
+<p class="articulo-meta">
+     Publicado por ByteNova ·
+     <time datetime="2026-07-17">
+      17 de julio de 2026
+     </time>
+     · Actualizado el
+     <time datetime="2026-08-03">
+      3 de agosto de 2026
+     </time>
+</p>
 <div class="articulo-resumen">
 <strong>
       En este artículo aprenderás:
@@ -356,6 +363,9 @@
        </a>
 <a href="#riesgos">
         13. Limitaciones y riesgos
+       </a>
+<a href="#aplicacion-practica">
+        Aplicación práctica
        </a>
 <a href="#preguntas">
         14. Preguntas frecuentes
@@ -1465,9 +1475,19 @@ Deep learning</code></pre>
        </a>
        .
       </p>
-<section id="aplicacion-practica"><h2>Cómo se entrena una red neuronal en un caso sencillo</h2><p>El entrenamiento consiste en mostrar ejemplos, calcular el error de las predicciones y ajustar los parámetros internos para reducir ese error. El proceso se repite muchas veces hasta alcanzar un resultado aceptable.</p><div class="recuadro-ejemplo"><h3>Flujo simplificado</h3><ol><li>Preparar y dividir los datos en entrenamiento, validación y prueba.</li><li>Elegir una arquitectura adecuada al problema.</li><li>Realizar predicciones y medir el error con una función de pérdida.</li><li>Ajustar pesos mediante retropropagación y volver a evaluar.</li></ol></div><div class="recuadro-consejo"><h3>⚠️ Error común</h3><p>Suponer que una red más grande siempre será mejor. Sin datos suficientes, controles adecuados y evaluación independiente, puede memorizar el entrenamiento y fallar con ejemplos nuevos.</p></div><div class="recuadro-ejemplo"><h3>🧪 Practica ahora</h3><p>Piensa en un clasificador de correos. Anota qué datos usarías como entrada, qué salida esperas y cómo comprobarías que el modelo funciona con mensajes que nunca vio.</p></div></section><h2 id="preguntas">
+<h2 id="preguntas">
        Preguntas frecuentes
       </h2>
+
+<section aria-labelledby="aplicacion-practica" class="seccion-articulo">
+<h2 id="aplicacion-practica">Ejemplo conceptual: cómo una red neuronal reconoce una imagen</h2>
+<p>Cuando una red neuronal analiza una imagen, no la observa como una persona. Recibe una matriz de números que representa los colores o la intensidad de cada píxel. Las primeras capas pueden detectar bordes; las siguientes combinan esos bordes en formas, y las capas finales calculan qué categoría es más probable.</p>
+<div class="articulo-resumen">
+<strong>Proceso simplificado:</strong>
+<p>píxeles → bordes → formas → características → probabilidad de cada categoría.</p>
+</div>
+<p>Durante el entrenamiento, la red compara su predicción con la respuesta correcta. El error se utiliza para ajustar los pesos internos poco a poco. Este proceso se repite muchas veces hasta que el modelo mejora, aunque nunca garantiza resultados perfectos.</p>
+</section>
 <section aria-labelledby="preguntas" class="faq-articulo">
 <details>
 <summary>
