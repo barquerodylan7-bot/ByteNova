@@ -4,8 +4,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Git y GitHub: qué son, diferencias y flujo de trabajo | ByteNova</title>
-<meta content="Aprende qué son Git y GitHub, en qué se diferencian y cómo usar commits, ramas y repositorios en un flujo de trabajo práctico." name="description"/>
+<title>
+   Git y GitHub: qué son, diferencias y flujo básico | ByteNova
+  </title>
+<meta content="Aprende qué son Git y GitHub, en qué se diferencian, cómo registrar cambios, trabajar con ramas y publicar un proyecto paso a paso." name="description"/>
 <meta content="ByteNova" name="author"/>
 <meta content="index, follow" name="robots"/>
 <meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
@@ -13,15 +15,15 @@
 <meta content="article" property="og:type"/>
 <meta content="es_CR" property="og:locale"/>
 <meta content="ByteNova" property="og:site_name"/>
-<meta content="Git y GitHub: qué son, diferencias y flujo de trabajo" property="og:title"/>
-<meta content="Aprende qué son Git y GitHub, en qué se diferencian y cómo usar commits, ramas y repositorios en un flujo de trabajo práctico." property="og:description"/>
+<meta content="Git y GitHub: qué son, diferencias y flujo básico" property="og:title"/>
+<meta content="Aprende qué son Git y GitHub, en qué se diferencian, cómo registrar cambios, trabajar con ramas y publicar un proyecto paso a paso." property="og:description"/>
 <meta content="https://bytenova.app/pages/que-son-git-y-github.html" property="og:url"/><meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image"/><meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image:secure_url"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="image/jpeg" property="og:image:type"/><meta content="¿Qué son Git y GitHub y para qué sirven? | ByteNova" property="og:image:alt"/><meta content="https://bytenova.app/images/bytenova-social.jpg" name="twitter:image"/><meta content="¿Qué son Git y GitHub y para qué sirven? | ByteNova" name="twitter:image:alt"/>
 <meta content="2026-07-17" property="article:published_time"/>
 <meta content="2026-08-03" property="article:modified_time"/>
 <meta content="Herramientas de programación" property="article:section"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="Git y GitHub: qué son, diferencias y flujo de trabajo" name="twitter:title"/>
-<meta content="Aprende qué son Git y GitHub, en qué se diferencian y cómo usar commits, ramas y repositorios en un flujo de trabajo práctico." name="twitter:description"/>
+<meta content="Git y GitHub: qué son, diferencias y flujo básico" name="twitter:title"/>
+<meta content="Aprende qué son Git y GitHub, en qué se diferencian, cómo registrar cambios, trabajar con ramas y publicar un proyecto paso a paso." name="twitter:description"/>
 <link href="https://bytenova.app/pages/que-son-git-y-github.html" rel="canonical"/>
 <link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="../css/style.css" rel="stylesheet"/>
@@ -32,8 +34,8 @@
         {
             "@type": "Article",
             "@id": "https://bytenova.app/pages/que-son-git-y-github.html#article",
-            "headline": "¿Qué son Git y GitHub y para qué sirven?",
-            "description": "Aprende qué son Git y GitHub, cuáles son sus diferencias y cómo ayudan a guardar versiones, colaborar y proteger proyectos de programación.",
+            "headline": "Git y GitHub: qué son, diferencias y flujo básico",
+            "description": "Aprende qué son Git y GitHub, en qué se diferencian, cómo registrar cambios, trabajar con ramas y publicar un proyecto paso a paso.",
             "url": "https://bytenova.app/pages/que-son-git-y-github.html",
             "datePublished": "2026-07-17",
             "dateModified": "2026-08-03",
@@ -98,7 +100,7 @@
             "@id": "https://bytenova.app/pages/que-son-git-y-github.html#webpage",
             "url": "https://bytenova.app/pages/que-son-git-y-github.html",
             "name": "¿Qué son Git y GitHub y para qué sirven?",
-            "description": "Aprende qué son Git y GitHub, cuáles son sus diferencias y cómo ayudan a guardar versiones, colaborar y proteger proyectos de programación.",
+            "description": "Aprende qué son Git y GitHub, en qué se diferencian, cómo registrar cambios, trabajar con ramas y publicar un proyecto paso a paso.",
             "inLanguage": "es",
             "datePublished": "2026-07-17",
             "dateModified": "2026-08-03",
@@ -285,10 +287,10 @@
       17 de julio de 2026
      </time>
      · Actualizado el
-     <time datetime="2026-07-21">
-      21 de julio de 2026
+     <time datetime="2026-08-03">
+      3 de agosto de 2026
      </time>
-</p>
+ · <span>10 min de lectura</span></p>
 <div class="articulo-resumen">
 <strong>
       En este artículo aprenderás:
@@ -308,42 +310,18 @@
        Contenido del artículo
       </summary>
 <nav aria-label="Contenido del artículo">
-<a href="#que-es-git">
-        1. ¿Qué es Git?
-       </a>
-<a href="#que-es-github">
-        2. ¿Qué es GitHub?
-       </a>
-<a href="#diferencias">
-        3. Diferencias
-       </a>
-<a href="#control-versiones">
-        4. Control de versiones
-       </a>
-<a href="#repositorio">
-        5. ¿Qué es un repositorio?
-       </a>
-<a href="#flujo">
-        6. Flujo básico
-       </a>
-<a href="#comandos">
-        7. Comandos principales
-       </a>
-<a href="#ramas">
-        8. Ramas
-       </a>
-<a href="#colaboracion">
-        9. Trabajo colaborativo
-       </a>
-<a href="#errores">
-        10. Errores frecuentes
-       </a>
-<a href="#preguntas">
-        11. Preguntas frecuentes
-       </a>
-<a href="#conclusion">
-        12. Conclusión
-       </a>
+<a href="#que-es-git">1. ¿Qué es Git?</a>
+<a href="#que-es-github">2. ¿Qué es GitHub?</a>
+<a href="#diferencias">3. Diferencias</a>
+<a href="#control-versiones">4. Control de versiones</a>
+<a href="#repositorio">5. ¿Qué es un repositorio?</a>
+<a href="#flujo">6. Flujo básico</a>
+<a href="#comandos">7. Comandos principales</a>
+<a href="#ramas">8. Ramas</a>
+<a href="#colaboracion">9. Trabajo colaborativo</a>
+<a href="#errores">10. Errores frecuentes</a>
+<a href="#flujo-git">11. Flujo real de trabajo con Git</a><a href="#preguntas">12. Preguntas frecuentes</a>
+<a href="#conclusion">13. Conclusión</a>
 </nav>
 </details>
 <div aria-label="Contenido principal del artículo" class="articulo-cuerpo">
@@ -351,7 +329,7 @@
        Git y GitHub son herramientas muy utilizadas para guardar,
                         organizar y compartir proyectos de programación, pero no
                         significan exactamente lo mismo.
-      </p>
+      </p><p class="articulo-actualizacion">Contenido revisado y ampliado por ByteNova el 3 de agosto de 2026.</p>
 <p>
        Git controla las versiones de los archivos dentro de un
                         proyecto. GitHub permite alojar repositorios en Internet
@@ -755,19 +733,15 @@ archivos-temporales/
         Confundir Git con GitHub.
        </li>
 </ul>
-
-<section aria-labelledby="flujo-git"><h2 id="flujo-git">Flujo básico de trabajo con Git y GitHub</h2><pre><code>git status
+<h2 id="flujo-git">Flujo real de trabajo con Git</h2><p>Git registra la historia del proyecto mediante confirmaciones llamadas <em>commits</em>. Cada commit debería representar un cambio claro y verificable, no una mezcla de tareas sin relación.</p>
+<div class="recuadro-ejemplo"><pre><code>git status
 git add .
-git commit -m "Describir el cambio"
-git push</code></pre><p>Este flujo revisa los cambios, los prepara, crea un punto en el historial y los envía al repositorio remoto. Antes de usarlo, el proyecto debe estar conectado correctamente a GitHub.</p>
-<h2>Ejemplo con una rama</h2><pre><code>git switch -c mejorar-menu
-# realizar cambios
-git add .
-git commit -m "Mejorar menú móvil"
-git push -u origin mejorar-menu</code></pre>
-<h2>Buenas prácticas</h2><ul><li>Crear commits pequeños y con mensajes claros.</li><li>No subir contraseñas, tokens ni archivos privados.</li><li>Actualizar la rama antes de comenzar cambios grandes.</li><li>Revisar diferencias antes de confirmar.</li><li>Usar ramas para funciones o correcciones independientes.</li></ul></section>
-
-<h2 id="preguntas">
+git commit -m "Mejorar navegación móvil"
+git push</code></pre></div>
+<ul class="lista-articulo"><li><code>git status</code> muestra qué cambió.</li><li><code>git add</code> prepara los archivos para el siguiente commit.</li><li><code>git commit</code> registra el cambio localmente con un mensaje.</li><li><code>git push</code> envía la historia al repositorio remoto.</li></ul>
+<h3>Por qué se utilizan ramas</h3><p>Una rama permite desarrollar una función sin alterar inmediatamente la versión principal. Después de revisar y probar el trabajo, los cambios pueden integrarse mediante una fusión o una solicitud de cambios.</p>
+<div class="recuadro-ejemplo"><strong>Error común</strong><p>Confundir Git con GitHub. Git funciona en la computadora sin Internet; GitHub es una plataforma remota para almacenar repositorios, colaborar y automatizar procesos.</p></div>
+<h3>Buenas prácticas</h3><ul class="lista-articulo lista-ventajas"><li>Realiza commits pequeños y con mensajes descriptivos.</li><li>No publiques contraseñas, claves ni archivos privados.</li><li>Usa un archivo <code>.gitignore</code> para excluir contenido innecesario.</li><li>Actualiza tu rama antes de integrar cambios de otras personas.</li></ul><h2 id="preguntas">
        Preguntas frecuentes
       </h2>
 <section aria-labelledby="preguntas" class="faq-articulo">
