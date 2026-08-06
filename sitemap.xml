@@ -319,14 +319,14 @@
         <loc>https://bytenova.app/pages/rutas.html</loc>
         <lastmod>2026-07-20</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.70</priority>
+        <priority>0.80</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/retos.html</loc>
         <lastmod>2026-07-20</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.70</priority>
+        <priority>0.80</priority>
     </url>
 
 
@@ -336,129 +336,139 @@
         <loc>https://bytenova.app/pages/guia-javascript.html</loc>
         <lastmod>2026-07-20</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.70</priority>
+        <priority>0.80</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/guia-internet-redes.html</loc>
         <lastmod>2026-07-20</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.70</priority>
+        <priority>0.75</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/guia-linux.html</loc>
         <lastmod>2026-07-20</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.70</priority>
+        <priority>0.75</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/guia-git-github.html</loc>
         <lastmod>2026-07-20</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.70</priority>
+        <priority>0.80</priority>
     </url>
 
   <url><loc>https://bytenova.app/pages/que-son-variables.html</loc>
   <lastmod>2026-08-05</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.70</priority>
+  <priority>0.8</priority>
   </url>
 
   <url><loc>https://bytenova.app/pages/que-son-operadores.html</loc>
   <lastmod>2026-08-05</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.70</priority>
+  <priority>0.8</priority>
   </url>
 
   <url><loc>https://bytenova.app/pages/que-son-condicionales.html</loc>
   <lastmod>2026-08-05</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.70</priority>
+  priority>0.8</priority>
   </url>
-
-  <url><loc>https://bytenova.app/pages/que-son-bucles.html</loc>
-  <lastmod>2026-08-05</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.70</priority>
-  </url>
-
-  <url><loc>https://bytenova.app/pages/que-son-funciones.html</loc>
-  <lastmod>2026-08-05</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.70</priority>
-  </url>
+  
+  <url><loc>https://bytenova.app/pages/que-son-bucles.html</loc><lastmod>2026-08-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bytenova.app/pages/que-son-funciones.html</loc><lastmod>2026-08-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <url><loc>https://bytenova.app/pages/que-es-ingenieria-social.html</loc>
   <lastmod>2026-08-05</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.70</priority>
   </url>
-
   <url><loc>https://bytenova.app/pages/que-son-arrays-listas.html</loc>
   <lastmod>2026-08-05</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.70</priority>
   </url>
-
   <url><loc>https://bytenova.app/pages/que-son-objetos-programacion.html</loc>
   <lastmod>2026-08-05</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.70</priority>
   </url>
-
   <url><loc>https://bytenova.app/pages/que-son-clases-programacion.html</loc>
   <lastmod>2026-08-05</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.70</priority>
   </url>
-
   <url><loc>https://bytenova.app/pages/que-es-poo.html</loc>
   <lastmod>2026-08-05</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.70</priority>
   </url>
-
   <url><loc>https://bytenova.app/pages/que-es-debugging.html</loc>
   <lastmod>2026-08-05</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.70</priority>
   </url>
-
   <url>
     <loc>https://bytenova.app/pages/que-es-un-llm.html</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
-
   <url>
     <loc>https://bytenova.app/pages/que-es-deep-learning.html</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
-
   <url>
     <loc>https://bytenova.app/pages/que-es-ia-generativa.html</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
-
   <url>
     <loc>https://bytenova.app/pages/que-es-prompt-engineering.html</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
-
   <url>
     <loc>https://bytenova.app/pages/que-es-nlp.html</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
-  
+  <url>
+    <loc>https://bytenova.app/pages/que-es-vision-por-computadora.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://bytenova.app/pages/que-son-agentes-de-ia.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://bytenova.app/pages/que-es-fine-tuning.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://bytenova.app/pages/que-son-embeddings.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://bytenova.app/pages/que-es-ia-responsable.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
 </urlset>
