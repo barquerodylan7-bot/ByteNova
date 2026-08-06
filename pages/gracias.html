@@ -39,6 +39,11 @@
 
 </head>
 <body>
+
+     <a class="saltar-contenido" href="#contenido-principal">
+    Saltar al contenido principal
+</a>
+
 <header>
 <a class="marca-bytenova" href="../index.html#inicio">
 <span class="marca-icono">
@@ -48,10 +53,17 @@
      ByteNova
     </span>
 </a>
-<button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle">
-    ☰
-   </button>
-<nav id="menu-principal">
+<button
+    aria-controls="menu-principal"
+    aria-expanded="false"
+    aria-label="Abrir menú"
+    class="menu-toggle"
+    id="menu-toggle"
+    type="button"
+>
+    <span aria-hidden="true">☰</span>
+</button>
+<nav aria-label="Navegación principal" id="menu-principal">
 <a href="../index.html#inicio">
      Inicio
     </a>
@@ -79,31 +91,48 @@
 <a href="../index.html#contacto">
      Contacto
     </a>
-<button aria-label="Activar modo oscuro" class="btn-modo" id="btn-modo">
-     🌙
-    </button>
+<button
+    aria-label="Activar modo oscuro"
+    class="btn-modo"
+    id="btn-modo"
+    type="button"
+>
+    <span aria-hidden="true">🌙</span>
+</button>
 </nav>
 </header>
 <!-- ==========================
          MENSAJE ENVIADO
     ========================== -->
-<main class="sobre">
-<div class="sobre-contenido">
-<h1>
-     Mensaje enviado correctamente ✅
-    </h1>
-<p>
-     Gracias por contactar con ByteNova. Tu mensaje fue enviado y será
-                revisado lo antes posible.
-    </p>
-<p>
-     Apreciamos tus preguntas, sugerencias o comentarios para seguir
-                mejorando este espacio de tecnología y conocimiento digital.
-    </p>
-<a class="btn-explorar" href="../index.html">
-     Volver al inicio
-    </a>
-</div>
+<main class="sobre" id="contenido-principal">
+    <div class="sobre-contenido">
+        <span class="seccion-etiqueta">
+            <span aria-hidden="true">✅</span>
+            Mensaje recibido
+        </span>
+
+        <h1>Mensaje enviado correctamente</h1>
+
+        <p>
+            Gracias por contactar con ByteNova. Tu mensaje fue enviado
+            correctamente y será revisado lo antes posible.
+        </p>
+
+        <p>
+            Apreciamos tus preguntas, sugerencias y comentarios, ya que nos
+            ayudan a seguir mejorando nuestros contenidos y recursos educativos.
+        </p>
+
+        <div class="hero-botones">
+            <a class="btn-principal" href="../index.html">
+                Volver al inicio
+            </a>
+
+            <a class="btn-secundario" href="articulos.html">
+                Explorar artículos
+            </a>
+        </div>
+    </div>
 </main>
 <!-- ==========================
          FOOTER
@@ -124,7 +153,7 @@
                 retos, guías y recursos gratuitos.
      </p>
 </div>
-<div class="footer-enlaces">
+<nav class="footer-enlaces" aria-label="Enlaces de aprendizaje del pie de página">
 <h3>
       Aprender
      </h3>
@@ -146,8 +175,8 @@
 <a href="glosario.html">
       Glosario
      </a>
-</div>
-<div class="footer-enlaces">
+</nav>
+<nav class="footer-enlaces" aria-label="Enlaces informativos del pie de página">
 <h3>
       ByteNova
      </h3>
@@ -166,8 +195,8 @@
 <a href="cookies.html">
       Cookies
      </a>
-</div>
-<div class="footer-social">
+</nav>
+<address class="footer-social">
 <h3>
       Contacto
      </h3>
@@ -178,7 +207,7 @@
 <a href="mailto:bytenova339@gmail.com">
       bytenova339@gmail.com
      </a>
-</div>
+</address>
 </div>
 <div class="footer-copy">
 <p>

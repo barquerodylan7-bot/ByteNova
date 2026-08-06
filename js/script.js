@@ -84,6 +84,7 @@ function cerrarMenu() {
     }
 
     menuPrincipal.classList.remove("menu-abierto");
+    document.body.classList.remove("menu-activo");
 
     actualizarIconoMenu("☰");
 
@@ -99,6 +100,11 @@ if (menuToggle && menuPrincipal) {
 
         const menuAbierto =
             menuPrincipal.classList.contains("menu-abierto");
+
+          document.body.classList.toggle(
+    "menu-activo",
+    menuAbierto
+);  
 
         actualizarIconoMenu(menuAbierto ? "✕" : "☰");
 

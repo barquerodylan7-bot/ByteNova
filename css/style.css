@@ -4427,7 +4427,7 @@ body.modo-oscuro .pagina-articulos h1{
 }
 
 .filtro-articulo{
-    min-height:42px;
+    min-height:44px;
     padding:9px 17px;
     border:1px solid #cbd5e1;
     border-radius:999px;
@@ -7220,3 +7220,39 @@ footer.footer .footer-copy p{
         width: 100%;
     }
 }
+/* =====================================
+   BLOQUEAR SCROLL CUANDO EL MENÚ ESTÁ ABIERTO
+===================================== */
+
+body.menu-activo{
+    overflow:hidden;
+}
+
+@media (min-width:1181px){
+    body.menu-activo{
+        overflow:auto;
+    }
+}
+/* =====================================
+   NOTA DE RECURSOS GRATUITOS
+===================================== */
+
+.nota-recursos-gratuitos{
+    max-width:760px;
+    margin:35px auto 0;
+    padding:16px 20px;
+    border:1px solid #bfdbfe;
+    border-radius:14px;
+    background:#eff6ff;
+    color:#1e40af;
+    font-size:16px;
+    font-weight:700;
+    text-align:center;
+}
+
+body.modo-oscuro .nota-recursos-gratuitos{
+    border-color:#1d4ed8;
+    background:#172554;
+    color:#bfdbfe;
+}
+
