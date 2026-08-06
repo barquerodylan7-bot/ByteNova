@@ -387,7 +387,8 @@
   <url><loc>https://bytenova.app/pages/que-son-funciones.html</loc>
   <lastmod>2026-08-05</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.70</priority></url>
+  <priority>0.70</priority>
+  </url>
 
   <url><loc>https://bytenova.app/pages/que-es-ingenieria-social.html</loc>
   <lastmod>2026-08-05</lastmod>
@@ -406,19 +407,58 @@
   <changefreq>monthly</changefreq>
   <priority>0.70</priority>
   </url>
+
   <url><loc>https://bytenova.app/pages/que-son-clases-programacion.html</loc>
   <lastmod>2026-08-05</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.70</priority>
   </url>
+
   <url><loc>https://bytenova.app/pages/que-es-poo.html</loc>
   <lastmod>2026-08-05</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.70</priority>
   </url>
+
   <url><loc>https://bytenova.app/pages/que-es-debugging.html</loc>
   <lastmod>2026-08-05</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.70</priority>
   </url>
+
+  <url>
+    <loc>https://bytenova.app/pages/que-es-un-llm.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://bytenova.app/pages/que-es-deep-learning.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://bytenova.app/pages/que-es-ia-generativa.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://bytenova.app/pages/que-es-prompt-engineering.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://bytenova.app/pages/que-es-nlp.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  
 </urlset>
