@@ -360,33 +360,40 @@
         <priority>0.80</priority>
     </url>
 
-  <url><loc>https://bytenova.app/pages/que-son-variables.html</loc>
-  <lastmod>2026-08-05</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-  </url>
+  <url><loc>https://bytenova.app/pages/que-son-variables.html</loc><lastmod>2026-08-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bytenova.app/pages/que-son-operadores.html</loc><lastmod>2026-08-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bytenova.app/pages/que-son-condicionales.html</loc><lastmod>2026-08-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bytenova.app/pages/que-son-bucles.html</loc><lastmod>2026-08-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bytenova.app/pages/que-son-funciones.html</loc><lastmod>2026-08-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
-  <url><loc>https://bytenova.app/pages/que-son-operadores.html</loc>
+  <url><loc>https://bytenova.app/pages/que-es-ingenieria-social.html</loc>
   <lastmod>2026-08-05</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
+  <priority>0.70</priority>
   </url>
-
-  <url><loc>https://bytenova.app/pages/que-son-condicionales.html</loc>
+  <url><loc>https://bytenova.app/pages/que-son-arrays-listas.html</loc>
   <lastmod>2026-08-05</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
+  <priority>0.70</priority>
   </url>
-
-  <url><loc>https://bytenova.app/pages/que-son-bucles.html</loc>
+  <url><loc>https://bytenova.app/pages/que-son-objetos-programacion.html</loc>
   <lastmod>2026-08-05</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
+  <priority>0.70</priority>
   </url>
-
-  <url><loc>https://bytenova.app/pages/que-son-funciones.html</loc>
+  <url><loc>https://bytenova.app/pages/que-son-clases-programacion.html</loc>
   <lastmod>2026-08-05</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
+  <priority>0.70</priority>
+  </url>
+  <url><loc>https://bytenova.app/pages/que-es-poo.html</loc>
+  <lastmod>2026-08-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+  </url>
+  <url><loc>https://bytenova.app/pages/que-es-debugging.html</loc>
+  <lastmod>2026-08-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
   </url>
 </urlset>
