@@ -992,7 +992,58 @@
        Un proveedor de hosting puede utilizar muchos servidores
                         para alojar los proyectos de sus clientes.
       </p>
-<section id="aplicacion-practica"><h2>Qué ocurre cuando visitas una página web</h2><p>Cada vez que escribes una dirección en el navegador, varios servicios colaboran para localizar el servidor correcto y devolverte los archivos de la página.</p><div class="recuadro-ejemplo"><strong>En la práctica</strong><ol><li>El navegador consulta el DNS para obtener la dirección IP del dominio.</li><li>Se establece una conexión con el servidor mediante protocolos de red.</li><li>El servidor procesa la solicitud y localiza los recursos necesarios.</li><li>Envía HTML, CSS, JavaScript e imágenes para que el navegador construya la página.</li></ol></div><div class="recuadro-advertencia"><strong>Error común</strong><p>Creer que un servidor siempre es una máquina enorme. También puede ser una computadora común, una máquina virtual o un servicio administrado en la nube.</p></div><h3>Continúa aprendiendo</h3><ul><li><a href="que-es-dns.html">Qué es DNS</a></li><li><a href="que-es-una-direccion-ip.html">Qué es una dirección IP</a></li><li><a href="que-son-http-y-https.html">HTTP y HTTPS</a></li></ul></section><h2 id="preguntas">
+<section id="aplicacion-practica">
+  <h2>Ejemplo real: cómo un servidor entrega ByteNova</h2>
+
+  <p>
+    ByteNova está alojada en Netlify. Cuando una persona escribe
+    <strong>bytenova.app</strong> en su navegador, diferentes servicios
+    trabajan juntos para localizar el sitio y entregar sus archivos.
+  </p>
+
+  <div class="recuadro-ejemplo">
+    <strong>En la práctica</strong>
+    <ol>
+      <li>El navegador solicita la dirección IP asociada a bytenova.app.</li>
+      <li>El sistema DNS dirige la solicitud hacia la infraestructura de Netlify.</li>
+      <li>El servidor localiza los archivos publicados de ByteNova.</li>
+      <li>Envía el HTML, CSS, JavaScript y las imágenes al navegador.</li>
+      <li>El navegador procesa esos recursos y muestra la página al usuario.</li>
+    </ol>
+  </div>
+
+  <p>
+    Este proceso ocurre en pocos segundos y demuestra que un servidor no
+    solamente almacena archivos: también recibe solicitudes, busca recursos
+    y entrega respuestas mediante protocolos de Internet.
+  </p>
+
+  <div class="recuadro-advertencia">
+    <strong>Error común</strong>
+    <p>
+      Pensar que un servidor siempre es una computadora física enorme.
+      ByteNova utiliza infraestructura distribuida en la nube, donde varios
+      sistemas pueden colaborar para entregar el sitio de forma rápida y segura.
+    </p>
+  </div>
+
+  <h3>Compruébalo tú mismo</h3>
+  <ol>
+    <li>Abre bytenova.app en el navegador.</li>
+    <li>Presiona F12 y entra en la pestaña “Red” o “Network”.</li>
+    <li>Recarga la página.</li>
+    <li>Observa las solicitudes de HTML, CSS, JavaScript e imágenes.</li>
+  </ol>
+
+  <h3>Continúa aprendiendo</h3>
+  <ul>
+    <li><a href="que-es-dns.html">¿Qué es DNS?</a></li>
+    <li><a href="que-es-una-direccion-ip.html">¿Qué es una dirección IP?</a></li>
+    <li><a href="que-son-http-y-https.html">¿Qué son HTTP y HTTPS?</a></li>
+    <li><a href="que-es-computacion-en-la-nube.html">¿Qué es la computación en la nube?</a></li>
+  </ul>
+</section>
+       <h2 id="preguntas">
        Preguntas frecuentes
       </h2>
 <section aria-labelledby="preguntas" class="faq-articulo">
