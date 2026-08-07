@@ -685,14 +685,44 @@ ByteNova reúne artículos, rutas de aprendizaje, retos prácticos y recursos gr
     ByteNova y crear recursos que realmente te ayuden a aprender.
 </p>
 <div class="contenedor-contacto">
-<form action="/pages/gracias.html" class="formulario-contacto" data-netlify="true" method="POST" name="contacto-bytenova" netlify-honeypot="bot-field">
-<input name="form-name" type="hidden" value="contacto-bytenova"/>
-<p style="display:none;">
-<label>
-            No llenar este campo:
-            <input name="bot-field"/>
-</label>
-</p>
+
+<form
+    action="https://api.web3forms.com/submit"
+    class="formulario-contacto"
+    method="POST"
+>
+
+    <input
+        type="hidden"
+        name="access_key"
+        value="c4ace6e1-9943-459c-a8d1-7ed1ed956ab9"
+    >
+
+    <input
+        type="hidden"
+        name="subject"
+        value="Nuevo mensaje desde ByteNova"
+    >
+
+    <input
+        type="hidden"
+        name="from_name"
+        value="ByteNova"
+    >
+
+    <input
+        type="hidden"
+        name="redirect"
+        value="https://bytenova.app/pages/gracias.html"
+    >
+
+    <input
+        type="checkbox"
+        name="botcheck"
+        style="display:none;"
+        tabindex="-1"
+        autocomplete="off"
+    >
 <label for="nombre">
         Nombre
     </label>
