@@ -29,8 +29,22 @@
 <!-- FAVICON -->
 <link href="images/favicon.svg" rel="icon" type="image/svg+xml"/>
 <!-- PRECARGA DE LA IMAGEN PRINCIPAL -->
-<link as="image" fetchpriority="high" href="images/hero.webp" rel="preload" type="image/webp"/>
-<!-- ESTILOS -->
+<link
+    rel="preload"
+    as="image"
+    href="images/hero.webp"
+    imagesrcset="
+        images/hero-mobile.webp 560w,
+        images/hero.webp 1122w
+    "
+    imagesizes="
+        (max-width: 480px) 270px,
+        (max-width: 768px) 310px,
+        500px
+    "
+    fetchpriority="high"
+    type="image/webp"
+><!-- ESTILOS -->
 <link href="css/style.css" rel="stylesheet"/>
 <!-- DATOS ESTRUCTURADOS DE BYTENOVA -->
 <script type="application/ld+json">
@@ -134,8 +148,24 @@ ByteNova reúne artículos, rutas de aprendizaje, retos prácticos y recursos gr
 </div>
 </div>
 <div class="hero-imagen">
-<img alt="Espacio de aprendizaje tecnológico de ByteNova" decoding="async" fetchpriority="high" height="1402" loading="eager" src="images/hero.webp" width="1122"/>
-</div>
+<img
+    src="images/hero.webp"
+    srcset="
+        images/hero-mobile.webp 560w,
+        images/hero.webp 1122w
+    "
+    sizes="
+        (max-width: 480px) 270px,
+        (max-width: 768px) 310px,
+        500px
+    "
+    alt="Espacio de aprendizaje tecnológico de ByteNova"
+    width="1122"
+    height="1402"
+    loading="eager"
+    fetchpriority="high"
+    decoding="async"
+></div>
 </section>
 <!-- ==========================
      SOBRE BYTENOVA PREMIUM
