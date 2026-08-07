@@ -6867,20 +6867,6 @@ li code{
 
 }
 /* =====================================
-   ARTÍCULOS DE LA PORTADA EN CELULAR
-   Solo afecta la portada, no articulos.html
-===================================== */
-
-@media(max-width:600px){
-
-    body:not(:has(.pagina-articulos))
-    .articulos .contenedor-articulos >
-    .tarjeta-articulo:nth-of-type(n + 4){
-        display:none;
-    }
-
-}
-/* =====================================
    FOOTER RESPONSIVE DE BYTENOVA
 ===================================== */
 
@@ -7256,5 +7242,51 @@ body.modo-oscuro .nota-recursos-gratuitos{
     border-color:#1d4ed8;
     background:#172554;
     color:#bfdbfe;
+}
+/* =====================================
+   CORRECCIÓN DEFINITIVA ARTÍCULOS MÓVIL
+===================================== */
+
+/* En la portada solo mostramos 3 artículos */
+@media (max-width:600px){
+
+    .articulos:not(.pagina-articulos)
+    .contenedor-articulos >
+    .tarjeta-articulo:nth-of-type(n + 4){
+        display:none;
+    }
+
+}
+
+/* En articulos.html deben mostrarse TODOS
+   los artículos que permita el filtro */
+@media (max-width:650px){
+
+    .pagina-articulos .contenedor-articulos{
+        display:grid !important;
+        grid-template-columns:1fr !important;
+        width:100% !important;
+        height:auto !important;
+        max-height:none !important;
+        overflow:visible !important;
+    }
+
+    .pagina-articulos
+    .tarjeta-articulo:not([hidden]){
+        display:flex !important;
+        width:100% !important;
+        max-width:none !important;
+        height:auto !important;
+        max-height:none !important;
+        min-height:0 !important;
+    }
+
+    .pagina-articulos
+    .tarjeta-articulo[hidden],
+    .pagina-articulos
+    .tarjeta-articulo.articulo-oculto{
+        display:none !important;
+    }
+
 }
 
