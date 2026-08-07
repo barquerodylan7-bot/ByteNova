@@ -7289,4 +7289,20 @@ body.modo-oscuro .nota-recursos-gratuitos{
     }
 
 }
+/* =========================================
+   CORRECCIÓN ETIQUETA HERO - MODO OSCURO
+========================================= */
+
+body.modo-oscuro .hero .etiqueta {
+    color: #ffffff;
+}
+/* =========================================
+   ETIQUETA HERO - MODO OSCURO DEFINITIVO
+========================================= */
+
+body.modo-oscuro .hero .etiqueta{
+    background:#1e3a8a !important;
+    color:#ffffff !important;
+    -webkit-text-fill-color:#ffffff !important;
+}
 
