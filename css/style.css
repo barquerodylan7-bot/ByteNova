@@ -7305,4 +7305,9 @@ body.modo-oscuro .hero .etiqueta{
     color:#ffffff !important;
     -webkit-text-fill-color:#ffffff !important;
 }
-
+@media (max-width: 768px) {
+    .hero::before,
+    .hero::after {
+        filter: none;
+    }
+}
