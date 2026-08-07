@@ -6868,10 +6868,12 @@ li code{
 }
 /* =====================================
    ARTÍCULOS DE LA PORTADA EN CELULAR
+   Solo afecta la portada, no articulos.html
 ===================================== */
 
 @media(max-width:600px){
 
+    body:not(:has(.pagina-articulos))
     .articulos .contenedor-articulos >
     .tarjeta-articulo:nth-of-type(n + 4){
         display:none;
