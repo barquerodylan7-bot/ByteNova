@@ -6,6 +6,7 @@
 
     <url>
         <loc>https://bytenova.app/</loc>
+        <lastmod>2026-08-06</lastmod>
         <priority>1.00</priority>
     </url>
 
@@ -18,14 +19,14 @@
 
     <url>
         <loc>https://bytenova.app/pages/material.html</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-08-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/glosario.html</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-08-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.80</priority>
     </url>
@@ -35,7 +36,7 @@
 
     <url>
         <loc>https://bytenova.app/pages/guia-html-css.html</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-08-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.80</priority>
     </url>
@@ -49,14 +50,14 @@
 
     <url>
         <loc>https://bytenova.app/pages/conceptos-ciberseguridad.html</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-08-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.80</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/herramientas-ia.html</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-08-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.80</priority>
     </url>
@@ -66,249 +67,282 @@
 
     <url>
         <loc>https://bytenova.app/pages/que-es-inteligencia-artificial.html</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-08-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-una-pagina-web.html</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-08-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/por-que-aprender-html-css.html</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-08-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/ciberseguridad-estudiantes.html</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-08-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/python-para-principiantes.html</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-08-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/privacidad.html</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-08-05</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.50</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/terminos.html</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-08-05</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.50</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/cookies.html</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-08-05</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.50</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-seo.html</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-08-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/articulos.html</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-08-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-programacion.html</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-08-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-javascript.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/frontend-y-backend.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-una-api.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-una-base-de-datos.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-phishing.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-machine-learning.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-son-git-y-github.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-dominio-y-hosting.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-son-http-y-https.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-computacion-en-la-nube.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-autenticacion-dos-factores.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-una-vpn.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-malware.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-ransomware.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-un-firewall.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/como-crear-contrasenas-seguras.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-una-direccion-ip.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-dns.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-una-red-informatica.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-un-servidor.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-tcp-ip.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-una-url.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-son-las-cookies.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-un-navegador-web.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-diseno-responsive.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-accesibilidad-web.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-rendimiento-web.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-un-sistema-operativo.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-linux.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-software-libre-codigo-abierto.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-son-librerias-y-frameworks.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-es-big-data.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/que-son-redes-neuronales.html</loc>
+        <lastmod>2026-08-03</lastmod>
         <priority>0.70</priority>
     </url>
 
     <url>
     <loc>https://bytenova.app/pages/que-es-un-algoritmo.html</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
 </url>
@@ -317,14 +351,14 @@
 
     <url>
         <loc>https://bytenova.app/pages/rutas.html</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-08-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/retos.html</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-08-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.70</priority>
     </url>
@@ -334,28 +368,28 @@
 
     <url>
         <loc>https://bytenova.app/pages/guia-javascript.html</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-08-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/guia-internet-redes.html</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-08-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/guia-linux.html</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-08-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.70</priority>
     </url>
 
     <url>
         <loc>https://bytenova.app/pages/guia-git-github.html</loc>
-        <lastmod>2026-07-20</lastmod>
+        <lastmod>2026-08-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.70</priority>
     </url>
@@ -391,7 +425,7 @@
   </url>
 
   <url><loc>https://bytenova.app/pages/que-es-ingenieria-social.html</loc>
-  <lastmod>2026-08-05</lastmod>
+  <lastmod>2026-08-03</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.70</priority>
   </url>
