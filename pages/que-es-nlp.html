@@ -1,37 +1,1382 @@
 <!DOCTYPE html>
-<html lang="es"><head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-41QWQ3DC33"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<html lang="es">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-41QWQ3DC33"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-41QWQ3DC33');
+  </script>
 
-      gtag('config', 'G-41QWQ3DC33');
-    </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>¿Qué es NLP? Procesamiento del lenguaje natural y ejemplos | ByteNova</title><meta content="Descubre qué es NLP o procesamiento del lenguaje natural, cómo analiza texto y voz, cuáles son sus tareas principales, aplicaciones y limitaciones." name="description"/><meta content="ByteNova" name="author"/><meta content="index, follow" name="robots"/>
-<meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/><meta content="#0f172a" media="(prefers-color-scheme: dark)" name="theme-color"/>
-<meta content="article" property="og:type"/><meta content="es_CR" property="og:locale"/><meta content="ByteNova" property="og:site_name"/><meta content="¿Qué es el procesamiento del lenguaje natural (NLP)?" property="og:title"/><meta content="Descubre qué es NLP o procesamiento del lenguaje natural, cómo analiza texto y voz, cuáles son sus tareas principales, aplicaciones y limitaciones." property="og:description"/><meta content="https://bytenova.app/pages/que-es-nlp" property="og:url"/><meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image"/><meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image:secure_url"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="image/jpeg" property="og:image:type"/><meta content="¿Qué es el procesamiento del lenguaje natural (NLP)? | ByteNova" property="og:image:alt"/>
-<meta content="summary_large_image" name="twitter:card"/><meta content="¿Qué es el procesamiento del lenguaje natural (NLP)?" name="twitter:title"/><meta content="Descubre qué es NLP o procesamiento del lenguaje natural, cómo analiza texto y voz, cuáles son sus tareas principales, aplicaciones y limitaciones." name="twitter:description"/><meta content="https://bytenova.app/images/bytenova-social.jpg" name="twitter:image"/><meta content="¿Qué es el procesamiento del lenguaje natural (NLP)? | ByteNova" name="twitter:image:alt"/>
-<meta content="2026-08-05" property="article:published_time"/><meta content="2026-08-05" property="article:modified_time"/><meta content="Inteligencia artificial" property="article:section"/>
-<link href="https://bytenova.app/pages/que-es-nlp" rel="canonical"/><link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/><link href="../css/style.min.css" rel="stylesheet"/>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://bytenova.app/pages/que-es-nlp#article","headline":"¿Qué es el procesamiento del lenguaje natural (NLP)?","description":"Descubre qué es NLP o procesamiento del lenguaje natural, cómo analiza texto y voz, cuáles son sus tareas principales, aplicaciones y limitaciones.","url":"https://bytenova.app/pages/que-es-nlp","datePublished":"2026-08-05","dateModified":"2026-08-05","inLanguage":"es","articleSection":"Inteligencia artificial","isAccessibleForFree":true,"author":{"@type":"Organization","name":"ByteNova","url":"https://bytenova.app/pages/sobre"},"publisher":{"@type":"Organization","name":"ByteNova","url":"https://bytenova.app/","image":{"@type":"ImageObject","url":"https://bytenova.app/images/bytenova-social.jpg","width":1200,"height":630}},"mainEntityOfPage":{"@id":"https://bytenova.app/pages/que-es-nlp#webpage"},"image":{"@type":"ImageObject","url":"https://bytenova.app/images/bytenova-social.jpg","width":1200,"height":630}},{"@type":"WebPage","@id":"https://bytenova.app/pages/que-es-nlp#webpage","url":"https://bytenova.app/pages/que-es-nlp","name":"¿Qué es el procesamiento del lenguaje natural (NLP)?","description":"Descubre qué es NLP o procesamiento del lenguaje natural, cómo analiza texto y voz, cuáles son sus tareas principales, aplicaciones y limitaciones.","inLanguage":"es","datePublished":"2026-08-05","dateModified":"2026-08-05","mainEntity":{"@id":"https://bytenova.app/pages/que-es-nlp#article"}},{"@type":"FAQPage","@id":"https://bytenova.app/pages/que-es-nlp#faq","mainEntity":[{"@type":"Question","name":"¿NLP y un LLM son lo mismo?","acceptedAnswer":{"@type":"Answer","text":"No. NLP es el campo de trabajo con lenguaje. Un LLM es un tipo de modelo que puede utilizarse para muchas tareas de NLP."}},{"@type":"Question","name":"¿NLP funciona solamente con texto?","acceptedAnswer":{"@type":"Answer","text":"No. También se relaciona con voz, transcripción, síntesis y sistemas que combinan texto con otros formatos."}},{"@type":"Question","name":"¿Puede detectar emociones con precisión?","acceptedAnswer":{"@type":"Answer","text":"Puede estimar patrones en el lenguaje, pero no conoce con certeza el estado emocional real de una persona."}},{"@type":"Question","name":"¿Por qué es difícil procesar lenguaje?","acceptedAnswer":{"@type":"Answer","text":"Porque el significado depende de contexto, cultura, intención, conocimiento previo y ambigüedad."}}]}]}</script>
-<meta content="ca-pub-5369456672603969" name="google-adsense-account"/><script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5369456672603969"></script>
-</head><body><a class="saltar-contenido" href="#contenido-principal">Saltar al contenido principal</a><header><a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index#inicio"><span aria-hidden="true" class="marca-icono">&lt;/&gt;</span><span class="marca-texto">ByteNova</span></a><button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle" type="button"><span aria-hidden="true">☰</span></button><nav aria-label="Navegación principal" id="menu-principal"><a href="../index#inicio">Inicio</a><a href="sobre">Sobre</a><a href="../index#tecnologias">Aprender</a><a href="rutas">Rutas</a><a href="retos">Retos</a><a href="material">Guías</a><a aria-current="page" href="articulos">Artículos</a><a href="glosario">Glosario</a><a href="../index#contacto">Contacto</a><button aria-label="Activar modo oscuro" class="btn-modo" id="btn-modo" type="button"><span aria-hidden="true">🌙</span></button></nav></header>
-<main class="sobre articulo" id="contenido-principal"><article aria-labelledby="titulo-que-es-nlp" class="sobre-contenido">
-<nav aria-label="Ruta de navegación" class="migas-navegacion"><a href="../index">Inicio</a><span aria-hidden="true">›</span><a href="articulos">Artículos</a><span aria-hidden="true">›</span><span aria-current="page">NLP</span></nav>
-<span class="seccion-etiqueta"><span aria-hidden="true">🗣️</span> Inteligencia artificial</span><h1 id="titulo-que-es-nlp">¿Qué es el procesamiento del lenguaje natural (NLP)? <span aria-hidden="true">🗣️</span></h1>
-<p class="articulo-meta">Publicado por ByteNova · <time datetime="2026-08-05">5 de agosto de 2026</time> · Actualizado el <time datetime="2026-08-05">5 de agosto de 2026</time></p>
-<div class="articulo-resumen"><strong>En este artículo aprenderás:</strong><p>Descubre qué es NLP o procesamiento del lenguaje natural, cómo analiza texto y voz, cuáles son sus tareas principales, aplicaciones y limitaciones.</p></div>
-<div class="articulo-layout"><aside class="articulo-sidebar"><details class="indice-articulo" open><summary><span aria-hidden="true">📑</span> Contenido del artículo</summary><nav aria-label="Contenido del artículo"><a href="#que-es">1. ¿Qué es NLP?</a><a href="#tareas">2. Tareas principales</a><a href="#como-funciona">3. ¿Cómo funciona?</a><a href="#usos">4. Aplicaciones reales</a><a href="#desafios">5. Desafíos del lenguaje</a><a href="#privacidad">6. Privacidad y uso responsable</a><a href="#ejemplo">7. Ejemplo práctico</a><a href="#errores">8. Errores comunes</a><a href="#aplicacion-practica">9. Compruébalo tú mismo</a><a href="#preguntas">10. Preguntas frecuentes</a><a href="#conclusion">11. Conclusión</a></nav></details></aside>
-<div class="articulo-cuerpo"><p class="articulo-introduccion">El procesamiento del lenguaje natural, conocido como NLP por sus siglas en inglés, reúne técnicas que permiten a las computadoras trabajar con texto y lenguaje hablado.</p><h2 id="que-es">¿Qué es NLP?</h2><p>NLP significa <em>Natural Language Processing</em>. Su objetivo es representar, analizar, transformar o generar lenguaje humano mediante sistemas informáticos.</p><p>Combina lingüística, programación, estadística, machine learning y deep learning.</p><h2 id="tareas">Tareas principales</h2><p>Incluye clasificación de textos, extracción de entidades, traducción, resumen, búsqueda semántica, respuesta a preguntas, análisis de sentimientos y reconocimiento de voz.</p><p>Cada tarea necesita datos, métricas y evaluación específicas. Comprender palabras no basta: también importan contexto, intención, ironía y ambigüedad.</p><h2 id="como-funciona">¿Cómo funciona?</h2><p>El texto se divide y transforma en representaciones numéricas. Después un modelo identifica patrones o genera una salida según la tarea.</p><p>Los sistemas modernos pueden utilizar embeddings y modelos de lenguaje para relacionar palabras y frases según su contexto.</p><h2 id="usos">Aplicaciones reales</h2><p>NLP se utiliza en asistentes, chatbots, filtros de correo, buscadores, subtítulos, traducción, análisis de opiniones, moderación y organización de documentos.</p><p>También ayuda a extraer información de contratos, expedientes o formularios, siempre con controles adecuados.</p><h2 id="desafios">Desafíos del lenguaje</h2><p>Una frase puede tener varios significados. El idioma cambia según región, cultura y situación.</p><p>Los modelos pueden fallar con sarcasmo, dialectos, términos nuevos, mensajes incompletos o grupos poco representados en los datos.</p><h2 id="privacidad">Privacidad y uso responsable</h2><p>Los textos pueden contener nombres, correos, información médica o datos comerciales. Deben aplicarse minimización, permisos y protección.</p><p>Un sistema automático no debería tomar decisiones importantes sin evaluación, transparencia y posibilidad de revisión humana.</p>
-<section aria-labelledby="ejemplo" class="seccion-articulo"><h2 id="ejemplo">Ejemplo: clasificar opiniones</h2><div class="recuadro-ejemplo"><strong>En la práctica</strong><p>Una tienda puede analizar comentarios para separarlos en positivos, negativos o neutrales. Sin embargo, la frase “genial, llegó roto” contiene sarcasmo y podría clasificarse mal si el modelo interpreta únicamente palabras aisladas.</p></div></section>
-<section aria-labelledby="errores" class="seccion-articulo"><h2 id="errores">Errores comunes</h2><ul class="lista-articulo lista-riesgos"><li>Creer que identificar palabras equivale a comprender intención.</li><li>Evaluar solo con ejemplos fáciles y bien escritos.</li><li>Ignorar variaciones regionales y contextos culturales.</li><li>Procesar datos sensibles sin controles de privacidad.</li></ul></section>
-<section aria-labelledby="aplicacion-practica" class="seccion-articulo"><h2 id="aplicacion-practica">Compruébalo tú mismo</h2><p>Escribe cinco frases: positiva, negativa, neutral, ambigua y sarcástica. Intenta clasificarlas manualmente y explica por qué las dos últimas son difíciles para un sistema automático.</p><div class="recuadro-consejo"><strong>Consejo</strong><p>Documenta lo que observas y distingue claramente entre un resultado útil, una suposición y un dato que necesita verificación.</p></div></section>
-<h2 id="preguntas">Preguntas frecuentes</h2><section aria-labelledby="preguntas" class="faq-articulo"><details><summary>¿NLP y un LLM son lo mismo?</summary><p>No. NLP es el campo de trabajo con lenguaje. Un LLM es un tipo de modelo que puede utilizarse para muchas tareas de NLP.</p></details><details><summary>¿NLP funciona solamente con texto?</summary><p>No. También se relaciona con voz, transcripción, síntesis y sistemas que combinan texto con otros formatos.</p></details><details><summary>¿Puede detectar emociones con precisión?</summary><p>Puede estimar patrones en el lenguaje, pero no conoce con certeza el estado emocional real de una persona.</p></details><details><summary>¿Por qué es difícil procesar lenguaje?</summary><p>Porque el significado depende de contexto, cultura, intención, conocimiento previo y ambigüedad.</p></details></section>
-<h2 id="conclusion">Conclusión</h2><p>¿Qué es el procesamiento del lenguaje natural (NLP)? es un concepto importante dentro de la inteligencia artificial moderna. Comprender su funcionamiento, sus usos y sus límites permite utilizar estas herramientas con mejores criterios y mayor responsabilidad.</p>
-<section aria-label="Información del autor" class="autor-articulo"><div aria-hidden="true" class="autor-icono">&lt;/&gt;</div><div class="autor-informacion"><span>Artículo creado por</span><h2>ByteNova</h2><p>Plataforma educativa dedicada a explicar programación, desarrollo web, inteligencia artificial y ciberseguridad de manera clara.</p><a href="sobre">Conoce más sobre ByteNova →</a></div></section>
-<aside aria-labelledby="titulo-articulos-relacionados" class="articulos-relacionados"><h2 id="titulo-articulos-relacionados">Continúa aprendiendo</h2><div class="relacionados-grid"><a href="que-es-un-llm"><span aria-hidden="true">🤖</span><strong>¿Qué es un LLM?</strong><small>Conoce un tipo de modelo de lenguaje.</small></a><a href="que-es-deep-learning"><span aria-hidden="true">🧠</span><strong>¿Qué es deep learning?</strong><small>Aprende la técnica detrás de muchos sistemas.</small></a><a href="que-es-machine-learning"><span aria-hidden="true">📊</span><strong>¿Qué es machine learning?</strong><small>Comprende cómo aprenden los modelos.</small></a></div></aside>
-</div></div></article></main><footer class="footer"><div class="contenedor-footer"><div class="footer-logo"><a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index#inicio"><span aria-hidden="true" class="marca-icono">&lt;/&gt;</span><span class="marca-texto">ByteNova</span></a><p>Aprende tecnología desde cero con artículos, rutas, retos, guías y recursos gratuitos.</p></div><nav aria-label="Enlaces de aprendizaje del pie de página" class="footer-enlaces"><h3>Aprender</h3><a href="../index#tecnologias">Tecnologías</a><a href="rutas">Rutas</a><a href="retos">Retos</a><a href="material">Guías</a><a href="articulos">Artículos</a><a href="glosario">Glosario</a></nav><nav aria-label="Enlaces informativos del pie de página" class="footer-enlaces"><h3>ByteNova</h3><a href="sobre">Sobre ByteNova</a><a href="../index#contacto">Contacto</a><a href="privacidad">Privacidad</a><a href="terminos">Términos</a><a href="cookies">Cookies</a></nav><address class="footer-social"><h3>Contacto</h3><p>Preguntas, sugerencias o comentarios sobre nuestros contenidos educativos.</p><a href="mailto:bytenova339@gmail.com">bytenova339@gmail.com</a></address></div><div class="footer-copy"><p>© 2026 ByteNova. Todos los derechos reservados.</p><p>Creado por Dylan Estrada.</p></div></footer><script src="../js/script.js"></script></body></html>
+  <title>¿Qué es NLP? Procesamiento del lenguaje natural y ejemplos | ByteNova</title>
+
+  <meta
+    name="description"
+    content="Descubre qué es NLP o procesamiento del lenguaje natural, cómo analiza texto y voz, qué tareas realiza, cómo se entrena y cuáles son sus usos, desafíos y limitaciones."
+  >
+
+  <meta name="author" content="ByteNova">
+  <meta name="robots" content="index, follow">
+
+  <meta
+    name="theme-color"
+    content="#ffffff"
+    media="(prefers-color-scheme: light)"
+  >
+
+  <meta
+    name="theme-color"
+    content="#0f172a"
+    media="(prefers-color-scheme: dark)"
+  >
+
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_CR">
+  <meta property="og:site_name" content="ByteNova">
+
+  <meta
+    property="og:title"
+    content="¿Qué es el procesamiento del lenguaje natural (NLP)?"
+  >
+
+  <meta
+    property="og:description"
+    content="Aprende cómo las computadoras procesan texto y voz mediante técnicas de NLP, machine learning y modelos de lenguaje."
+  >
+
+  <meta
+    property="og:url"
+    content="https://bytenova.app/pages/que-es-nlp"
+  >
+
+  <meta
+    property="og:image"
+    content="https://bytenova.app/images/bytenova-social.jpg"
+  >
+
+  <meta
+    property="og:image:secure_url"
+    content="https://bytenova.app/images/bytenova-social.jpg"
+  >
+
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
+
+  <meta
+    property="og:image:alt"
+    content="¿Qué es el procesamiento del lenguaje natural (NLP)? | ByteNova"
+  >
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="¿Qué es el procesamiento del lenguaje natural (NLP)?"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Aprende tokenización, embeddings, clasificación, entidades, traducción, resumen y otros fundamentos de NLP."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://bytenova.app/images/bytenova-social.jpg"
+  >
+
+  <meta
+    name="twitter:image:alt"
+    content="¿Qué es el procesamiento del lenguaje natural (NLP)? | ByteNova"
+  >
+
+  <meta property="article:published_time" content="2026-08-05">
+  <meta property="article:modified_time" content="2026-08-17">
+  <meta property="article:section" content="Inteligencia artificial">
+
+  <link
+    rel="canonical"
+    href="https://bytenova.app/pages/que-es-nlp"
+  >
+
+  <link
+    rel="icon"
+    href="../images/favicon.svg"
+    type="image/svg+xml"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../css/style.min.css"
+  >
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://bytenova.app/pages/que-es-nlp#article",
+        "headline": "¿Qué es el procesamiento del lenguaje natural (NLP)?",
+        "description": "Descubre qué es NLP o procesamiento del lenguaje natural, cómo analiza texto y voz, qué tareas realiza, cómo se entrena y cuáles son sus usos, desafíos y limitaciones.",
+        "url": "https://bytenova.app/pages/que-es-nlp",
+        "datePublished": "2026-08-05",
+        "dateModified": "2026-08-17",
+        "inLanguage": "es",
+        "articleSection": "Inteligencia artificial",
+        "isAccessibleForFree": true,
+        "author": {
+          "@type": "Organization",
+          "name": "ByteNova",
+          "url": "https://bytenova.app/pages/sobre"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "ByteNova",
+          "url": "https://bytenova.app/",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://bytenova.app/images/bytenova-social.jpg",
+            "width": 1200,
+            "height": 630
+          }
+        },
+        "mainEntityOfPage": {
+          "@id": "https://bytenova.app/pages/que-es-nlp#webpage"
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://bytenova.app/images/bytenova-social.jpg",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://bytenova.app/pages/que-es-nlp#webpage",
+        "url": "https://bytenova.app/pages/que-es-nlp",
+        "name": "¿Qué es el procesamiento del lenguaje natural (NLP)?",
+        "description": "Descubre qué es NLP o procesamiento del lenguaje natural, cómo analiza texto y voz, qué tareas realiza, cómo se entrena y cuáles son sus usos, desafíos y limitaciones.",
+        "inLanguage": "es",
+        "datePublished": "2026-08-05",
+        "dateModified": "2026-08-17",
+        "mainEntity": {
+          "@id": "https://bytenova.app/pages/que-es-nlp#article"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://bytenova.app/pages/que-es-nlp#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿NLP y un LLM son lo mismo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. NLP es el campo dedicado al procesamiento del lenguaje. Un LLM es un tipo de modelo que puede utilizarse para realizar muchas tareas de NLP."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿NLP funciona solamente con texto?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. También se relaciona con voz, transcripción, síntesis y sistemas multimodales que combinan lenguaje con otros tipos de información."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puede detectar emociones con precisión?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Puede estimar patrones asociados con tono o sentimiento, pero no conoce con certeza el estado emocional real de una persona."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Por qué es difícil procesar lenguaje?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Porque el significado depende del contexto, la cultura, la intención, la ambigüedad, el conocimiento previo y la forma concreta de expresarse."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <meta
+    name="google-adsense-account"
+    content="ca-pub-5369456672603969"
+  >
+
+  <script
+    async
+    crossorigin="anonymous"
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5369456672603969">
+  </script>
+</head>
+
+<body>
+
+<a class="saltar-contenido" href="#contenido-principal">
+  Saltar al contenido principal
+</a>
+
+<header>
+
+  <a
+    class="marca-bytenova"
+    href="../index#inicio"
+    aria-label="Ir al inicio de ByteNova"
+  >
+    <span class="marca-icono" aria-hidden="true">&lt;/&gt;</span>
+    <span class="marca-texto">ByteNova</span>
+  </a>
+
+  <button
+    class="menu-toggle"
+    id="menu-toggle"
+    type="button"
+    aria-controls="menu-principal"
+    aria-expanded="false"
+    aria-label="Abrir menú"
+  >
+    <span aria-hidden="true">☰</span>
+  </button>
+
+  <nav id="menu-principal" aria-label="Navegación principal">
+    <a href="../index#inicio">Inicio</a>
+    <a href="sobre">Sobre</a>
+    <a href="../index#tecnologias">Aprender</a>
+    <a href="rutas">Rutas</a>
+    <a href="retos">Retos</a>
+    <a href="material">Guías</a>
+    <a href="articulos" aria-current="page">Artículos</a>
+    <a href="glosario">Glosario</a>
+    <a href="../index#contacto">Contacto</a>
+
+    <button
+      class="btn-modo"
+      id="btn-modo"
+      type="button"
+      aria-label="Activar modo oscuro"
+    >
+      <span aria-hidden="true">🌙</span>
+    </button>
+  </nav>
+
+</header>
+
+<main class="sobre articulo" id="contenido-principal">
+
+  <article
+    class="sobre-contenido"
+    aria-labelledby="titulo-que-es-nlp"
+  >
+
+    <nav class="migas-navegacion" aria-label="Ruta de navegación">
+      <a href="../index">Inicio</a>
+      <span aria-hidden="true">›</span>
+      <a href="articulos">Artículos</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">NLP</span>
+    </nav>
+
+    <span class="seccion-etiqueta">
+      <span aria-hidden="true">🗣️</span>
+      Inteligencia artificial
+    </span>
+
+    <h1 id="titulo-que-es-nlp">
+      ¿Qué es el procesamiento del lenguaje natural (NLP)?
+      <span aria-hidden="true">🗣️</span>
+    </h1>
+
+    <p class="articulo-meta">
+      Publicado por ByteNova ·
+      <time datetime="2026-08-05">5 de agosto de 2026</time>
+      · Actualizado el
+      <time datetime="2026-08-17">17 de agosto de 2026</time>
+    </p>
+
+    <div class="articulo-resumen">
+      <strong>En este artículo aprenderás:</strong>
+      <p>
+        Qué es NLP, cómo se transforma el lenguaje en datos que una computadora
+        puede procesar, cuáles son sus tareas principales y por qué comprender
+        contexto, intención y ambigüedad sigue siendo un desafío.
+      </p>
+    </div>
+
+    <div class="articulo-layout">
+
+      <aside class="articulo-sidebar">
+
+        <details class="indice-articulo" open>
+
+          <summary>
+            <span aria-hidden="true">📑</span>
+            Contenido del artículo
+          </summary>
+
+          <nav aria-label="Contenido del artículo">
+            <a href="#que-es">1. ¿Qué es NLP?</a>
+            <a href="#por-que">2. ¿Por qué es difícil?</a>
+            <a href="#flujo">3. Flujo general</a>
+            <a href="#tokenizacion">4. Tokenización</a>
+            <a href="#normalizacion">5. Normalización</a>
+            <a href="#representaciones">6. Representaciones numéricas</a>
+            <a href="#clasificacion">7. Clasificación de texto</a>
+            <a href="#entidades">8. Entidades nombradas</a>
+            <a href="#sentimiento">9. Análisis de sentimiento</a>
+            <a href="#traduccion">10. Traducción</a>
+            <a href="#resumen">11. Resumen automático</a>
+            <a href="#busqueda">12. Búsqueda semántica</a>
+            <a href="#preguntas">13. Respuesta a preguntas</a>
+            <a href="#voz">14. Voz y transcripción</a>
+            <a href="#llm">15. NLP vs LLM</a>
+            <a href="#datos">16. Datos y entrenamiento</a>
+            <a href="#metricas">17. Evaluación</a>
+            <a href="#ambiguedad">18. Ambigüedad y contexto</a>
+            <a href="#sesgos">19. Sesgos y dialectos</a>
+            <a href="#privacidad">20. Privacidad</a>
+            <a href="#ejemplo">21. Ejemplo completo</a>
+            <a href="#errores">22. Errores comunes</a>
+            <a href="#practica">23. Compruébalo tú mismo</a>
+            <a href="#faq">24. Preguntas frecuentes</a>
+            <a href="#conclusion">25. Conclusión</a>
+          </nav>
+
+        </details>
+
+      </aside>
+
+      <div class="articulo-cuerpo">
+
+        <p class="articulo-introduccion">
+          Las personas utilizan lenguaje de una forma extremadamente flexible:
+          una misma palabra puede significar cosas distintas según el contexto,
+          una frase puede contener ironía y dos personas pueden expresar la
+          misma idea con palabras completamente diferentes. El procesamiento
+          del lenguaje natural busca desarrollar sistemas capaces de trabajar
+          con esa complejidad.
+        </p>
+
+        <h2 id="que-es">¿Qué es NLP?</h2>
+
+        <p>
+          <strong>NLP</strong> significa
+          <em>Natural Language Processing</em>, o
+          <strong>procesamiento del lenguaje natural</strong>.
+        </p>
+
+        <p>
+          Es un campo de la informática y la inteligencia artificial dedicado a
+          desarrollar métodos que permitan a las computadoras analizar,
+          transformar y generar lenguaje humano.
+        </p>
+
+        <p>
+          El campo combina conocimientos y técnicas relacionadas con:
+        </p>
+
+        <ul class="lista-articulo">
+          <li>Lingüística.</li>
+          <li>Programación.</li>
+          <li>Estadística.</li>
+          <li>Machine learning.</li>
+          <li>Deep learning.</li>
+          <li>Modelos de lenguaje.</li>
+        </ul>
+
+        <p>
+          Dependiendo de la tarea, el sistema puede trabajar con una palabra,
+          una frase, un documento completo o una secuencia de voz.
+        </p>
+
+        <h2 id="por-que">¿Por qué procesar lenguaje es difícil?</h2>
+
+        <p>
+          El lenguaje no funciona como una lista simple de definiciones.
+        </p>
+
+        <p>
+          El significado puede cambiar según:
+        </p>
+
+        <ul class="lista-articulo">
+          <li>El contexto.</li>
+          <li>La región.</li>
+          <li>La cultura.</li>
+          <li>La intención.</li>
+          <li>El tono.</li>
+          <li>El conocimiento previo.</li>
+        </ul>
+
+        <p>Observa esta frase:</p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>"El banco está cerrado."</code></pre>
+        </div>
+
+        <p>
+          La palabra <code>banco</code> podría referirse a una entidad
+          financiera o a otro significado dependiendo del contexto.
+        </p>
+
+        <p>Ahora observa:</p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>"Qué excelente servicio,
+esperé solamente tres horas."</code></pre>
+        </div>
+
+        <p>
+          Las palabras “excelente servicio” parecen positivas, pero el mensaje
+          puede ser sarcástico.
+        </p>
+
+        <div class="recuadro-consejo">
+          <strong>Procesar palabras no es suficiente</strong>
+          <p>
+            Un buen sistema necesita tener en cuenta relaciones entre palabras,
+            contexto y patrones de uso.
+          </p>
+        </div>
+
+        <h2 id="flujo">Flujo general de un sistema NLP</h2>
+
+        <p>
+          No existe un único proceso para todas las tareas, pero podemos
+          imaginar un flujo general:
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>Texto o voz
+    ↓
+Preparación
+    ↓
+Representación numérica
+    ↓
+Modelo
+    ↓
+Predicción o generación
+    ↓
+Resultado</code></pre>
+        </div>
+
+        <p>
+          Cada etapa puede cambiar según si queremos clasificar, traducir,
+          resumir, extraer información o generar una respuesta.
+        </p>
+
+        <h2 id="tokenizacion">Tokenización</h2>
+
+        <p>
+          Antes de procesar texto, muchos sistemas lo dividen en unidades
+          llamadas <strong>tokens</strong>.
+        </p>
+
+        <p>
+          Un token puede ser una palabra, parte de una palabra, un signo o una
+          combinación frecuente.
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>Texto:
+"Aprender programación"
+
+Posible representación conceptual:
+"Aprender"
+" programación"</code></pre>
+        </div>
+
+        <p>
+          El método exacto depende del tokenizador utilizado.
+        </p>
+
+        <p>
+          En modelos modernos, la tokenización es importante porque determina
+          qué unidades procesa el sistema.
+        </p>
+
+        <h2 id="normalizacion">Normalización del texto</h2>
+
+        <p>
+          En determinados sistemas también se realizan transformaciones para
+          preparar el texto.
+        </p>
+
+        <p>Pueden incluir:</p>
+
+        <ul class="lista-articulo">
+          <li>Conversión entre mayúsculas y minúsculas.</li>
+          <li>Tratamiento de espacios.</li>
+          <li>Eliminación o conservación de signos.</li>
+          <li>Corrección de determinados formatos.</li>
+          <li>Separación de palabras.</li>
+        </ul>
+
+        <p>
+          Sin embargo, normalizar demasiado puede eliminar información útil.
+        </p>
+
+        <p>
+          Por ejemplo, en una tarea de análisis de tono, los signos de
+          exclamación pueden aportar información.
+        </p>
+
+        <h2 id="representaciones">Representaciones numéricas</h2>
+
+        <p>
+          Las computadoras necesitan transformar el lenguaje en números para
+          procesarlo.
+        </p>
+
+        <p>
+          Históricamente se han utilizado diferentes métodos para representar
+          palabras y documentos.
+        </p>
+
+        <p>
+          Los sistemas modernos suelen trabajar con representaciones
+          vectoriales que pueden capturar relaciones entre elementos.
+        </p>
+
+        <p>
+          Los <a href="que-son-embeddings">embeddings</a> son un ejemplo
+          importante.
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>Texto:
+"contraseña segura"
+
+      ↓
+
+Representación vectorial:
+[0.17, -0.32, 0.81, ...]</code></pre>
+        </div>
+
+        <p>
+          Estas representaciones pueden utilizarse para comparar textos,
+          clasificar información o buscar contenido relacionado.
+        </p>
+
+        <h2 id="clasificacion">Clasificación de texto</h2>
+
+        <p>
+          La clasificación asigna una categoría a un texto.
+        </p>
+
+        <p>Por ejemplo:</p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>Mensaje:
+"No puedo iniciar sesión"
+
+Categoría:
+soporte técnico</code></pre>
+        </div>
+
+        <p>
+          Otros ejemplos incluyen:
+        </p>
+
+        <ul class="lista-articulo">
+          <li>Spam o no spam.</li>
+          <li>Queja o consulta.</li>
+          <li>Noticias por categoría.</li>
+          <li>Prioridad de tickets.</li>
+        </ul>
+
+        <p>
+          Un buen sistema necesita evaluarse con ejemplos representativos del
+          entorno donde se utilizará.
+        </p>
+
+        <h2 id="entidades">Reconocimiento de entidades nombradas</h2>
+
+        <p>
+          El reconocimiento de entidades intenta identificar elementos
+          específicos dentro de un texto.
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>"Ana viajará a San José el lunes."
+
+Persona:
+Ana
+
+Lugar:
+San José
+
+Fecha:
+lunes</code></pre>
+        </div>
+
+        <p>
+          Dependiendo de la aplicación también pueden buscarse organizaciones,
+          productos, cantidades, monedas u otros tipos de entidades.
+        </p>
+
+        <h2 id="sentimiento">Análisis de sentimiento</h2>
+
+        <p>
+          El análisis de sentimiento intenta estimar si un texto expresa una
+          valoración positiva, negativa o neutral.
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>"Me encantó el producto."
+→ positivo
+
+"El paquete llegó."
+→ neutral
+
+"No volvería a comprarlo."
+→ negativo</code></pre>
+        </div>
+
+        <p>
+          Esta tarea parece sencilla hasta que aparecen frases ambiguas.
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>"Perfecto, otra actualización
+que rompió todo."</code></pre>
+        </div>
+
+        <p>
+          Aunque contiene la palabra “perfecto”, el sentimiento probablemente
+          sea negativo.
+        </p>
+
+        <div class="recuadro-consejo">
+          <strong>Sentimiento no equivale a emoción real</strong>
+          <p>
+            Un sistema puede estimar patrones lingüísticos, pero no puede saber
+            con certeza qué siente una persona.
+          </p>
+        </div>
+
+        <h2 id="traduccion">Traducción automática</h2>
+
+        <p>
+          La traducción automática transforma contenido de un idioma a otro.
+        </p>
+
+        <p>
+          Una traducción útil debe intentar conservar:
+        </p>
+
+        <ul class="lista-articulo">
+          <li>Significado.</li>
+          <li>Tono.</li>
+          <li>Contexto.</li>
+          <li>Terminología.</li>
+        </ul>
+
+        <p>
+          Las expresiones idiomáticas, palabras con varios significados y
+          referencias culturales pueden dificultar la tarea.
+        </p>
+
+        <h2 id="resumen">Resumen automático</h2>
+
+        <p>
+          El resumen automático busca reducir un texto conservando su
+          información principal.
+        </p>
+
+        <p>
+          Podemos distinguir de forma general entre dos enfoques.
+        </p>
+
+        <h3>Resumen extractivo</h3>
+
+        <p>
+          Selecciona partes importantes del texto original.
+        </p>
+
+        <h3>Resumen generativo</h3>
+
+        <p>
+          Produce una nueva redacción basada en el contenido.
+        </p>
+
+        <p>
+          En el segundo caso existe mayor riesgo de que el sistema introduzca
+          una interpretación incorrecta, por lo que conviene revisar el
+          resultado.
+        </p>
+
+        <h2 id="busqueda">Búsqueda semántica</h2>
+
+        <p>
+          La búsqueda semántica intenta localizar contenido relacionado con el
+          significado de una consulta, no solamente con palabras idénticas.
+        </p>
+
+        <p>Consulta:</p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>"cómo evitar que entren a mi cuenta"</code></pre>
+        </div>
+
+        <p>
+          Un sistema podría recuperar contenido sobre:
+        </p>
+
+        <ul class="lista-articulo">
+          <li>Contraseñas seguras.</li>
+          <li>Autenticación en dos pasos.</li>
+          <li>Protección de cuentas.</li>
+        </ul>
+
+        <p>
+          Aunque esos documentos no utilicen exactamente las mismas palabras.
+        </p>
+
+        <h2 id="preguntas">Respuesta a preguntas</h2>
+
+        <p>
+          Los sistemas NLP también pueden responder preguntas a partir de
+          documentos o conocimiento aprendido.
+        </p>
+
+        <p>Por ejemplo:</p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>Documento:
+"Python fue creado por Guido van Rossum."
+
+Pregunta:
+"¿Quién creó Python?"
+
+Respuesta:
+"Guido van Rossum"</code></pre>
+        </div>
+
+        <p>
+          En sistemas modernos esta tarea puede combinar búsqueda, modelos de
+          lenguaje y recuperación de información.
+        </p>
+
+        <h2 id="voz">NLP, voz y transcripción</h2>
+
+        <p>
+          El procesamiento del lenguaje también se relaciona con sistemas de
+          voz.
+        </p>
+
+        <h3>Reconocimiento automático del habla</h3>
+
+        <p>
+          Convierte audio en texto.
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>Audio:
+"Buenos días"
+
+    ↓
+
+Texto:
+Buenos días</code></pre>
+        </div>
+
+        <h3>Síntesis de voz</h3>
+
+        <p>
+          Realiza el proceso contrario: convierte texto en audio hablado.
+        </p>
+
+        <p>
+          En aplicaciones conversacionales pueden combinarse reconocimiento de
+          voz, NLP y síntesis para permitir interacción hablada.
+        </p>
+
+        <h2 id="llm">¿NLP y LLM son lo mismo?</h2>
+
+        <p>
+          No.
+        </p>
+
+        <p>
+          <strong>NLP</strong> es el campo general dedicado al procesamiento
+          computacional del lenguaje.
+        </p>
+
+        <p>
+          Un <strong>LLM</strong> es un tipo de modelo que puede utilizarse
+          para realizar muchas tareas de NLP.
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>NLP
+│
+├── clasificación
+├── traducción
+├── extracción de entidades
+├── análisis de sentimiento
+├── resumen
+└── modelos de lenguaje
+      └── LLM</code></pre>
+        </div>
+
+        <p>
+          Si quieres profundizar en este tema, consulta
+          <a href="que-es-un-llm">qué es un LLM</a>.
+        </p>
+
+        <h2 id="datos">Datos y entrenamiento</h2>
+
+        <p>
+          La calidad de un sistema NLP depende en gran medida de los datos
+          utilizados.
+        </p>
+
+        <p>
+          Para una tarea supervisada podemos necesitar ejemplos etiquetados.
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>"Excelente atención" → positivo
+"Servicio normal" → neutral
+"Muy mala experiencia" → negativo</code></pre>
+        </div>
+
+        <p>
+          Si el conjunto de datos contiene principalmente ejemplos muy
+          sencillos, el modelo puede fallar con lenguaje real más complejo.
+        </p>
+
+        <h3>Datos representativos</h3>
+
+        <p>
+          Deben reflejar las situaciones que aparecerán durante el uso real:
+        </p>
+
+        <ul class="lista-articulo">
+          <li>Diferentes estilos de escritura.</li>
+          <li>Errores ortográficos.</li>
+          <li>Expresiones regionales.</li>
+          <li>Mensajes cortos y largos.</li>
+          <li>Casos ambiguos.</li>
+        </ul>
+
+        <h2 id="metricas">¿Cómo se evalúa un sistema NLP?</h2>
+
+        <p>
+          La métrica depende de la tarea.
+        </p>
+
+        <h3>Clasificación</h3>
+
+        <p>
+          Podemos analizar cuántas predicciones son correctas, pero también
+          distinguir falsos positivos y falsos negativos.
+        </p>
+
+        <h3>Extracción de información</h3>
+
+        <p>
+          Podemos medir si las entidades encontradas coinciden con las
+          etiquetas esperadas.
+        </p>
+
+        <h3>Traducción y generación</h3>
+
+        <p>
+          La evaluación puede combinar métricas automáticas y revisión humana.
+        </p>
+
+        <p>
+          En lenguaje, dos respuestas distintas pueden ser correctas, por lo
+          que medir calidad puede ser más complejo que comparar un único valor.
+        </p>
+
+        <h2 id="ambiguedad">Ambigüedad, ironía y contexto</h2>
+
+        <p>
+          Estos son algunos de los desafíos más importantes.
+        </p>
+
+        <h3>Ambigüedad</h3>
+
+        <div class="recuadro-ejemplo">
+<pre><code>"Vi al hombre con el telescopio."</code></pre>
+        </div>
+
+        <p>
+          ¿Quién tenía el telescopio? La frase admite diferentes
+          interpretaciones.
+        </p>
+
+        <h3>Ironía</h3>
+
+        <div class="recuadro-ejemplo">
+<pre><code>"Fantástico, se volvió a caer
+el sistema."</code></pre>
+        </div>
+
+        <p>
+          Una clasificación basada solamente en palabras positivas podría
+          equivocarse.
+        </p>
+
+        <h3>Contexto</h3>
+
+        <p>
+          La misma frase puede significar algo diferente según lo que ocurrió
+          anteriormente en una conversación.
+        </p>
+
+        <h2 id="sesgos">Sesgos, dialectos y variaciones regionales</h2>
+
+        <p>
+          El lenguaje varía entre países, regiones y comunidades.
+        </p>
+
+        <p>
+          Una expresión perfectamente normal en un lugar puede no aparecer con
+          frecuencia en los datos utilizados para entrenar un sistema.
+        </p>
+
+        <p>
+          Esto puede causar diferencias de rendimiento.
+        </p>
+
+        <p>
+          Por eso la evaluación debería incluir una variedad adecuada de
+          formas de expresión cuando el sistema vaya a utilizarse con públicos
+          diversos.
+        </p>
+
+        <h2 id="privacidad">Privacidad y uso responsable</h2>
+
+        <p>
+          Los textos procesados por sistemas NLP pueden contener datos
+          sensibles.
+        </p>
+
+        <p>Por ejemplo:</p>
+
+        <ul class="lista-articulo">
+          <li>Nombres.</li>
+          <li>Correos electrónicos.</li>
+          <li>Números de identificación.</li>
+          <li>Información médica.</li>
+          <li>Conversaciones privadas.</li>
+          <li>Datos empresariales.</li>
+        </ul>
+
+        <p>
+          Antes de recopilar o procesar esa información deben considerarse
+          permisos, finalidad, almacenamiento y protección.
+        </p>
+
+        <p>
+          Además, un sistema automático no debería utilizarse como única base
+          para decisiones importantes sin controles adecuados.
+        </p>
+
+        <h2 id="ejemplo">Ejemplo completo: clasificar comentarios</h2>
+
+        <p>
+          Imagina una tienda que quiere clasificar opiniones como positivas,
+          neutrales o negativas.
+        </p>
+
+        <h3>Paso 1: definir categorías</h3>
+
+        <div class="recuadro-ejemplo">
+<pre><code>positivo
+neutral
+negativo</code></pre>
+        </div>
+
+        <h3>Paso 2: recopilar ejemplos</h3>
+
+        <div class="recuadro-ejemplo">
+<pre><code>"Excelente producto"
+"El paquete llegó hoy"
+"No funciona correctamente"</code></pre>
+        </div>
+
+        <h3>Paso 3: etiquetar</h3>
+
+        <div class="recuadro-ejemplo">
+<pre><code>"Excelente producto" → positivo
+
+"El paquete llegó hoy" → neutral
+
+"No funciona correctamente"
+→ negativo</code></pre>
+        </div>
+
+        <h3>Paso 4: entrenar o configurar el sistema</h3>
+
+        <p>
+          Dependiendo de la solución elegida, puede entrenarse un modelo o
+          utilizarse un modelo previamente desarrollado.
+        </p>
+
+        <h3>Paso 5: probar con ejemplos nuevos</h3>
+
+        <div class="recuadro-ejemplo">
+<pre><code>"Genial, llegó roto."</code></pre>
+        </div>
+
+        <p>
+          Este ejemplo revela una dificultad: contiene una palabra positiva,
+          pero la intención general es negativa.
+        </p>
+
+        <h3>Paso 6: analizar errores</h3>
+
+        <p>
+          Si el sistema falla especialmente con sarcasmo, mensajes regionales o
+          faltas ortográficas, debemos incluir esos escenarios en la
+          evaluación.
+        </p>
+
+        <h3>Paso 7: supervisar el uso real</h3>
+
+        <p>
+          El lenguaje cambia con el tiempo, por lo que puede ser necesario
+          revisar el sistema periódicamente.
+        </p>
+
+        <h2 id="errores">Errores comunes al trabajar con NLP</h2>
+
+        <h3>Creer que detectar palabras equivale a comprender</h3>
+
+        <p>
+          Las palabras individuales no siempre reflejan la intención completa.
+        </p>
+
+        <h3>Probar solamente ejemplos fáciles</h3>
+
+        <p>
+          Los datos reales suelen contener errores, abreviaturas, sarcasmo y
+          frases incompletas.
+        </p>
+
+        <h3>Ignorar variaciones regionales</h3>
+
+        <p>
+          Un sistema probado con una única forma de español puede comportarse
+          diferente con vocabulario regional.
+        </p>
+
+        <h3>Usar una métrica incorrecta</h3>
+
+        <p>
+          Una alta exactitud general puede ocultar errores importantes en una
+          categoría minoritaria.
+        </p>
+
+        <h3>Procesar datos sensibles sin controles</h3>
+
+        <p>
+          La información lingüística puede revelar mucho sobre una persona u
+          organización.
+        </p>
+
+        <section
+          class="seccion-articulo"
+          aria-labelledby="practica"
+        >
+
+          <h2 id="practica">Compruébalo tú mismo</h2>
+
+          <p>
+            Intenta clasificar manualmente estas cinco frases:
+          </p>
+
+          <ol class="lista-articulo">
+            <li>“Me encantó el servicio.”</li>
+            <li>“El pedido llegó el martes.”</li>
+            <li>“No volvería a comprar aquí.”</li>
+            <li>“Está bien, supongo.”</li>
+            <li>“Excelente, otra vez se dañó.”</li>
+          </ol>
+
+          <p>
+            Utiliza las categorías:
+          </p>
+
+          <ul class="lista-articulo">
+            <li>Positivo.</li>
+            <li>Neutral.</li>
+            <li>Negativo.</li>
+            <li>Ambiguo.</li>
+          </ul>
+
+          <details class="recuadro-ejemplo">
+
+            <summary>
+              <strong>Ver una posible interpretación</strong>
+            </summary>
+
+            <p>
+              La primera parece positiva, la segunda neutral y la tercera
+              negativa.
+            </p>
+
+            <p>
+              “Está bien, supongo” puede depender mucho del contexto y podría
+              considerarse neutral o ligeramente negativo.
+            </p>
+
+            <p>
+              “Excelente, otra vez se dañó” es un ejemplo de sarcasmo: la
+              palabra “excelente” parece positiva, pero el mensaje general es
+              negativo.
+            </p>
+
+          </details>
+
+          <div class="recuadro-consejo">
+            <strong>Reto adicional</strong>
+            <p>
+              Escribe cinco frases propias utilizando expresiones de tu región
+              y piensa si un sistema entrenado con otro dialecto del español
+              podría interpretarlas correctamente.
+            </p>
+          </div>
+
+        </section>
+
+        <h2 id="faq">Preguntas frecuentes</h2>
+
+        <section class="faq-articulo" aria-labelledby="faq">
+
+          <details>
+            <summary>¿NLP y un LLM son lo mismo?</summary>
+
+            <p>
+              No. NLP es el campo dedicado al procesamiento del lenguaje. Un
+              LLM es un tipo de modelo que puede utilizarse para realizar
+              muchas tareas de NLP.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿NLP funciona solamente con texto?</summary>
+
+            <p>
+              No. También se relaciona con voz, transcripción, síntesis y
+              sistemas multimodales que combinan lenguaje con otros tipos de
+              información.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Puede detectar emociones con precisión?</summary>
+
+            <p>
+              Puede estimar patrones asociados con tono o sentimiento, pero no
+              conoce con certeza el estado emocional real de una persona.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Por qué es difícil procesar lenguaje?</summary>
+
+            <p>
+              Porque el significado depende del contexto, la cultura, la
+              intención, la ambigüedad, el conocimiento previo y la forma
+              concreta de expresarse.
+            </p>
+          </details>
+
+        </section>
+
+        <h2 id="conclusion">Conclusión</h2>
+
+        <p>
+          El procesamiento del lenguaje natural permite desarrollar sistemas
+          capaces de trabajar con texto y voz para realizar tareas como
+          clasificación, extracción de información, traducción, resumen y
+          búsqueda semántica.
+        </p>
+
+        <p>
+          Para lograrlo, el lenguaje debe convertirse en representaciones que
+          una computadora pueda procesar. Técnicas como tokenización,
+          embeddings, machine learning y modelos de lenguaje forman parte de
+          muchas soluciones modernas.
+        </p>
+
+        <p>
+          Sin embargo, el lenguaje humano contiene ambigüedad, sarcasmo,
+          contexto cultural y variaciones regionales que hacen difícil obtener
+          resultados perfectos.
+        </p>
+
+        <p>
+          Por eso un sistema NLP debe evaluarse con datos representativos,
+          métricas apropiadas y controles de privacidad, especialmente cuando
+          sus resultados pueden influir en decisiones importantes.
+        </p>
+
+        <section
+          class="autor-articulo"
+          aria-label="Información del autor"
+        >
+
+          <div class="autor-icono" aria-hidden="true">
+            &lt;/&gt;
+          </div>
+
+          <div class="autor-informacion">
+
+            <span>Artículo creado por</span>
+            <h2>ByteNova</h2>
+
+            <p>
+              Plataforma educativa dedicada a explicar programación,
+              desarrollo web, inteligencia artificial y ciberseguridad de
+              manera clara.
+            </p>
+
+            <a href="sobre">
+              Conoce más sobre ByteNova →
+            </a>
+
+          </div>
+
+        </section>
+
+        <aside
+          class="articulos-relacionados"
+          aria-labelledby="titulo-articulos-relacionados"
+        >
+
+          <h2 id="titulo-articulos-relacionados">
+            Continúa aprendiendo
+          </h2>
+
+          <div class="relacionados-grid">
+
+            <a href="que-es-un-llm">
+              <span aria-hidden="true">🤖</span>
+              <strong>¿Qué es un LLM?</strong>
+              <small>
+                Comprende cómo funcionan los grandes modelos de lenguaje.
+              </small>
+            </a>
+
+            <a href="que-son-embeddings">
+              <span aria-hidden="true">🧭</span>
+              <strong>Embeddings</strong>
+              <small>
+                Aprende cómo representar significado mediante vectores.
+              </small>
+            </a>
+
+            <a href="que-es-deep-learning">
+              <span aria-hidden="true">🧠</span>
+              <strong>¿Qué es deep learning?</strong>
+              <small>
+                Conoce una de las técnicas utilizadas en sistemas modernos de
+                lenguaje.
+              </small>
+            </a>
+
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+
+  </article>
+
+</main>
+
+<footer class="footer">
+
+  <div class="contenedor-footer">
+
+    <div class="footer-logo">
+
+      <a
+        class="marca-bytenova"
+        href="../index#inicio"
+        aria-label="Ir al inicio de ByteNova"
+      >
+        <span class="marca-icono" aria-hidden="true">&lt;/&gt;</span>
+        <span class="marca-texto">ByteNova</span>
+      </a>
+
+      <p>
+        Aprende tecnología desde cero con artículos, rutas, retos,
+        guías y recursos gratuitos.
+      </p>
+
+    </div>
+
+    <nav
+      class="footer-enlaces"
+      aria-label="Enlaces de aprendizaje del pie de página"
+    >
+      <h3>Aprender</h3>
+      <a href="../index#tecnologias">Tecnologías</a>
+      <a href="rutas">Rutas</a>
+      <a href="retos">Retos</a>
+      <a href="material">Guías</a>
+      <a href="articulos">Artículos</a>
+      <a href="glosario">Glosario</a>
+    </nav>
+
+    <nav
+      class="footer-enlaces"
+      aria-label="Enlaces informativos del pie de página"
+    >
+      <h3>ByteNova</h3>
+      <a href="sobre">Sobre ByteNova</a>
+      <a href="../index#contacto">Contacto</a>
+      <a href="privacidad">Privacidad</a>
+      <a href="terminos">Términos</a>
+      <a href="cookies">Cookies</a>
+    </nav>
+
+    <address class="footer-social">
+
+      <h3>Contacto</h3>
+
+      <p>
+        Preguntas, sugerencias o comentarios sobre nuestros
+        contenidos educativos.
+      </p>
+
+      <a href="mailto:bytenova339@gmail.com">
+        bytenova339@gmail.com
+      </a>
+
+    </address>
+
+  </div>
+
+  <div class="footer-copy">
+    <p>© 2026 ByteNova. Todos los derechos reservados.</p>
+    <p>Creado por Dylan Estrada.</p>
+  </div>
+
+</footer>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

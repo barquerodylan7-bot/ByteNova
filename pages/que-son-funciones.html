@@ -1,16 +1,1163 @@
 <!DOCTYPE html>
-<html lang="es"><head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-41QWQ3DC33"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<html lang="es">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-41QWQ3DC33"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-41QWQ3DC33');
+  </script>
 
-      gtag('config', 'G-41QWQ3DC33');
-    </script>
-<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Funciones en programación: parámetros, retorno y ejemplos | ByteNova</title><meta content="Aprende qué son las funciones, para qué sirven, cómo utilizan parámetros y valores de retorno, y cómo ayudan a organizar el código." name="description"/><meta content="ByteNova" name="author"/><meta content="index, follow" name="robots"/><meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/><meta content="#0f172a" media="(prefers-color-scheme: dark)" name="theme-color"/><meta content="article" property="og:type"/><meta content="es_CR" property="og:locale"/><meta content="ByteNova" property="og:site_name"/><meta content="¿Qué son las funciones en programación?" property="og:title"/><meta content="Aprende qué son las funciones, para qué sirven, cómo utilizan parámetros y valores de retorno, y cómo ayudan a organizar el código." property="og:description"/><meta content="https://bytenova.app/pages/que-son-funciones" property="og:url"/><meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="¿Qué son las funciones en programación?" name="twitter:title"/><meta content="Aprende qué son las funciones, para qué sirven, cómo utilizan parámetros y valores de retorno, y cómo ayudan a organizar el código." name="twitter:description"/><meta content="https://bytenova.app/images/bytenova-social.jpg" name="twitter:image"/><meta content="2026-08-05" property="article:published_time"/><meta content="2026-08-05" property="article:modified_time"/><meta content="Programación" property="article:section"/><link href="https://bytenova.app/pages/que-son-funciones" rel="canonical"/><link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/><link href="../css/style.min.css" rel="stylesheet"/><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://bytenova.app/pages/que-son-funciones#article","headline":"¿Qué son las funciones en programación?","description":"Aprende qué son las funciones, para qué sirven, cómo utilizan parámetros y valores de retorno, y cómo ayudan a organizar el código.","url":"https://bytenova.app/pages/que-son-funciones","datePublished":"2026-08-05","dateModified":"2026-08-05","inLanguage":"es","articleSection":"Programación","isAccessibleForFree":true,"author":{"@type":"Organization","name":"ByteNova","url":"https://bytenova.app/pages/sobre"},"publisher":{"@type":"Organization","name":"ByteNova","url":"https://bytenova.app/"},"mainEntityOfPage":{"@id":"https://bytenova.app/pages/que-son-funciones#webpage"},"image":{"@type":"ImageObject","url":"https://bytenova.app/images/bytenova-social.jpg","width":1200,"height":630}},{"@type":"FAQPage","@id":"https://bytenova.app/pages/que-son-funciones#faq","mainEntity":[{"@type":"Question","name":"¿Necesito memorizar todo sobre las funciones?","acceptedAnswer":{"@type":"Answer","text":"No. Lo importante es comprender el concepto y practicarlo en proyectos pequeños."}},{"@type":"Question","name":"¿Puedo aprenderlo utilizando Python?","acceptedAnswer":{"@type":"Answer","text":"Sí. Python ofrece una sintaxis clara y es adecuado para practicar estos fundamentos."}},{"@type":"Question","name":"¿Cuál es el error más común al comenzar?","acceptedAnswer":{"@type":"Answer","text":"Copiar código sin analizar qué hace cada parte. Conviene modificar ejemplos y comprobar los resultados."}}]}]}</script><meta content="ca-pub-5369456672603969" name="google-adsense-account"/><script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5369456672603969"></script></head><body><a class="saltar-contenido" href="#contenido-principal">Saltar al contenido principal</a><header><a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index#inicio"><span aria-hidden="true" class="marca-icono">&lt;/&gt;</span><span class="marca-texto">ByteNova</span></a><button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle" type="button"><span aria-hidden="true">☰</span></button><nav aria-label="Navegación principal" id="menu-principal"><a href="../index#inicio">Inicio</a><a href="sobre">Sobre</a><a href="../index#tecnologias">Aprender</a><a href="rutas">Rutas</a><a href="retos">Retos</a><a href="material">Guías</a><a aria-current="page" href="articulos">Artículos</a><a href="glosario">Glosario</a><a href="../index#contacto">Contacto</a><button aria-label="Activar modo oscuro" class="btn-modo" id="btn-modo" type="button"><span aria-hidden="true">🌙</span></button></nav></header><main class="sobre articulo" id="contenido-principal"><article aria-labelledby="titulo-que-son-funciones" class="sobre-contenido"><nav aria-label="Ruta de navegación" class="migas-navegacion"><a href="../index">Inicio</a><span aria-hidden="true">›</span><a href="articulos">Artículos</a><span aria-hidden="true">›</span><span aria-current="page">Qué son las funciones en programación</span></nav><span class="seccion-etiqueta"><span aria-hidden="true">🧰</span> Programación</span><h1 id="titulo-que-son-funciones">¿Qué son las funciones en programación? <span aria-hidden="true">🧰</span></h1><p class="articulo-meta">Publicado por ByteNova · <time datetime="2026-08-05">5 de agosto de 2026</time> · Actualizado el <time datetime="2026-08-05">5 de agosto de 2026</time></p><div class="articulo-resumen"><strong>En este artículo aprenderás:</strong><p>Cómo agrupar instrucciones reutilizables mediante funciones, parámetros, argumentos y valores de retorno.</p></div><div class="articulo-layout"><aside class="articulo-sidebar"><details class="indice-articulo" open><summary><span aria-hidden="true">📑</span> Contenido del artículo</summary><nav aria-label="Contenido del artículo"><a href="#que-es">1. ¿Qué es una función?</a><a href="#ventajas">2. ¿Por qué utilizar funciones?</a><a href="#parametros">3. Parámetros y argumentos</a><a href="#retorno">4. Valores de retorno</a><a href="#alcance">5. Alcance de las variables</a><a href="#buenas-practicas">6. Buenas prácticas</a><a href="#aplicacion-practica">7. Aplicación práctica</a><a href="#preguntas">8. Preguntas frecuentes</a><a href="#conclusion">9. Conclusión</a></nav></details></aside><div class="articulo-cuerpo"><p class="articulo-introduccion">Aprende qué son las funciones, para qué sirven, cómo utilizan parámetros y valores de retorno, y cómo ayudan a organizar el código.</p><h2 id="que-es">¿Qué es una función?</h2><p>Una función es un bloque de instrucciones con un nombre que realiza una tarea específica.</p><p>Puede ejecutarse cada vez que el programa la necesite.</p><h2 id="ventajas">¿Por qué utilizar funciones?</h2><ul class="lista-articulo"><li>Evitan repetir código.</li><li>Facilitan probar y corregir partes pequeñas del programa.</li><li>Permiten dividir problemas grandes en tareas sencillas.</li></ul><h2 id="parametros">Parámetros y argumentos</h2><p>Los parámetros son nombres definidos por la función para recibir información.</p><p>Los argumentos son los valores concretos enviados cuando se llama a la función.</p><h2 id="retorno">Valores de retorno</h2><p>Una función puede devolver un resultado mediante return.</p><p>Ese resultado puede guardarse en una variable o utilizarse en otra operación.</p><h2 id="alcance">Alcance de las variables</h2><p>Las variables creadas dentro de una función suelen ser locales.</p><p>Esto reduce conflictos y ayuda a controlar dónde puede modificarse cada dato.</p><h2 id="buenas-practicas">Buenas prácticas</h2><ul class="lista-articulo"><li>Cada función debería cumplir una responsabilidad clara.</li><li>Utiliza nombres descriptivos y evita funciones demasiado largas.</li><li>Documenta entradas, salidas y comportamientos importantes.</li></ul><h2>Ejemplo en Python</h2><div class="recuadro-ejemplo"><pre><code>def calcular_total(precio, cantidad):
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Funciones en programación: parámetros, retorno y ejemplos | ByteNova</title>
+
+  <meta
+    name="description"
+    content="Aprende qué son las funciones, para qué sirven, cómo utilizan parámetros, argumentos y valores de retorno, y cómo ayudan a organizar el código con ejemplos en Python."
+  >
+
+  <meta name="author" content="ByteNova">
+  <meta name="robots" content="index, follow">
+
+  <meta
+    name="theme-color"
+    content="#ffffff"
+    media="(prefers-color-scheme: light)"
+  >
+
+  <meta
+    name="theme-color"
+    content="#0f172a"
+    media="(prefers-color-scheme: dark)"
+  >
+
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_CR">
+  <meta property="og:site_name" content="ByteNova">
+
+  <meta
+    property="og:title"
+    content="¿Qué son las funciones en programación?"
+  >
+
+  <meta
+    property="og:description"
+    content="Aprende qué son las funciones, cómo reciben información, devuelven resultados y ayudan a organizar programas."
+  >
+
+  <meta
+    property="og:url"
+    content="https://bytenova.app/pages/que-son-funciones"
+  >
+
+  <meta
+    property="og:image"
+    content="https://bytenova.app/images/bytenova-social.jpg"
+  >
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="¿Qué son las funciones en programación?"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Aprende funciones, parámetros y return desde cero con ejemplos prácticos en Python."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://bytenova.app/images/bytenova-social.jpg"
+  >
+
+  <meta property="article:published_time" content="2026-08-05">
+  <meta property="article:modified_time" content="2026-08-17">
+  <meta property="article:section" content="Programación">
+
+  <link
+    rel="canonical"
+    href="https://bytenova.app/pages/que-son-funciones"
+  >
+
+  <link
+    rel="icon"
+    href="../images/favicon.svg"
+    type="image/svg+xml"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../css/style.min.css"
+  >
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://bytenova.app/pages/que-son-funciones#article",
+        "headline": "¿Qué son las funciones en programación?",
+        "description": "Aprende qué son las funciones, para qué sirven, cómo utilizan parámetros, argumentos y valores de retorno, y cómo ayudan a organizar el código con ejemplos en Python.",
+        "url": "https://bytenova.app/pages/que-son-funciones",
+        "datePublished": "2026-08-05",
+        "dateModified": "2026-08-17",
+        "inLanguage": "es",
+        "articleSection": "Programación",
+        "isAccessibleForFree": true,
+        "author": {
+          "@type": "Organization",
+          "name": "ByteNova",
+          "url": "https://bytenova.app/pages/sobre"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "ByteNova",
+          "url": "https://bytenova.app/"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://bytenova.app/pages/que-son-funciones#webpage"
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://bytenova.app/images/bytenova-social.jpg",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://bytenova.app/pages/que-son-funciones#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuál es la diferencia entre parámetro y argumento?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Un parámetro es el nombre definido en la función para recibir información. Un argumento es el valor concreto que se envía al llamar la función."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Una función siempre necesita return?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Una función puede realizar acciones sin devolver un resultado, aunque return permite entregar un valor para utilizarlo en otras partes del programa."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Por qué conviene utilizar funciones?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ayudan a evitar repetición de código, separar responsabilidades y reutilizar soluciones en diferentes partes de un programa."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <meta
+    name="google-adsense-account"
+    content="ca-pub-5369456672603969"
+  >
+
+  <script
+    async
+    crossorigin="anonymous"
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5369456672603969">
+  </script>
+</head>
+
+<body>
+
+<a class="saltar-contenido" href="#contenido-principal">
+  Saltar al contenido principal
+</a>
+
+<header>
+
+  <a
+    class="marca-bytenova"
+    href="../index#inicio"
+    aria-label="Ir al inicio de ByteNova"
+  >
+    <span class="marca-icono" aria-hidden="true">&lt;/&gt;</span>
+    <span class="marca-texto">ByteNova</span>
+  </a>
+
+  <button
+    class="menu-toggle"
+    id="menu-toggle"
+    type="button"
+    aria-controls="menu-principal"
+    aria-expanded="false"
+    aria-label="Abrir menú"
+  >
+    <span aria-hidden="true">☰</span>
+  </button>
+
+  <nav id="menu-principal" aria-label="Navegación principal">
+    <a href="../index#inicio">Inicio</a>
+    <a href="sobre">Sobre</a>
+    <a href="../index#tecnologias">Aprender</a>
+    <a href="rutas">Rutas</a>
+    <a href="retos">Retos</a>
+    <a href="material">Guías</a>
+    <a href="articulos" aria-current="page">Artículos</a>
+    <a href="glosario">Glosario</a>
+    <a href="../index#contacto">Contacto</a>
+
+    <button
+      class="btn-modo"
+      id="btn-modo"
+      type="button"
+      aria-label="Activar modo oscuro"
+    >
+      <span aria-hidden="true">🌙</span>
+    </button>
+  </nav>
+
+</header>
+
+<main class="sobre articulo" id="contenido-principal">
+
+  <article
+    class="sobre-contenido"
+    aria-labelledby="titulo-que-son-funciones"
+  >
+
+    <nav
+      class="migas-navegacion"
+      aria-label="Ruta de navegación"
+    >
+      <a href="../index">Inicio</a>
+      <span aria-hidden="true">›</span>
+      <a href="articulos">Artículos</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">Funciones</span>
+    </nav>
+
+    <span class="seccion-etiqueta">
+      <span aria-hidden="true">🧰</span>
+      Programación
+    </span>
+
+    <h1 id="titulo-que-son-funciones">
+      ¿Qué son las funciones en programación?
+      <span aria-hidden="true">🧰</span>
+    </h1>
+
+    <p class="articulo-meta">
+      Publicado por ByteNova ·
+      <time datetime="2026-08-05">5 de agosto de 2026</time>
+      · Actualizado el
+      <time datetime="2026-08-17">17 de agosto de 2026</time>
+    </p>
+
+    <div class="articulo-resumen">
+      <strong>En este artículo aprenderás:</strong>
+      <p>
+        Cómo crear funciones reutilizables, trabajar con parámetros y
+        argumentos, devolver resultados con <code>return</code> y organizar
+        programas en tareas más pequeñas.
+      </p>
+    </div>
+
+    <div class="articulo-layout">
+
+      <aside class="articulo-sidebar">
+
+        <details class="indice-articulo" open>
+
+          <summary>
+            <span aria-hidden="true">📑</span>
+            Contenido del artículo
+          </summary>
+
+          <nav aria-label="Contenido del artículo">
+            <a href="#que-es">1. ¿Qué es una función?</a>
+            <a href="#por-que">2. ¿Por qué usar funciones?</a>
+            <a href="#crear">3. Crear una función en Python</a>
+            <a href="#llamar">4. Cómo llamar una función</a>
+            <a href="#parametros">5. Parámetros y argumentos</a>
+            <a href="#retorno">6. return y valores de retorno</a>
+            <a href="#print-return">7. print() vs return</a>
+            <a href="#alcance">8. Alcance de variables</a>
+            <a href="#predeterminados">9. Parámetros predeterminados</a>
+            <a href="#ejemplo">10. Ejemplo práctico</a>
+            <a href="#errores">11. Errores comunes</a>
+            <a href="#buenas-practicas">12. Buenas prácticas</a>
+            <a href="#practica">13. Ejercicio práctico</a>
+            <a href="#preguntas">14. Preguntas frecuentes</a>
+            <a href="#conclusion">15. Conclusión</a>
+          </nav>
+
+        </details>
+
+      </aside>
+
+      <div class="articulo-cuerpo">
+
+        <p class="articulo-introduccion">
+          A medida que un programa crece, repetir las mismas instrucciones en
+          distintas partes hace que el código sea más difícil de mantener.
+          Las funciones permiten agrupar una tarea bajo un nombre y ejecutarla
+          cada vez que sea necesaria.
+        </p>
+
+        <h2 id="que-es">
+          ¿Qué es una función?
+        </h2>
+
+        <p>
+          Una <strong>función</strong> es un bloque de código diseñado para
+          realizar una tarea específica.
+        </p>
+
+        <p>
+          Una vez definida, podemos ejecutar esa función tantas veces como
+          necesitemos sin volver a escribir todas sus instrucciones.
+        </p>
+
+        <div class="recuadro-ejemplo">
+          <p>
+            Imagina una tienda que necesita calcular el total de muchos
+            productos. En lugar de repetir la fórmula cada vez, podemos crear
+            una función llamada <code>calcular_total()</code>.
+          </p>
+        </div>
+
+        <p>
+          Las funciones permiten dividir un problema grande en tareas más
+          pequeñas y fáciles de comprender.
+        </p>
+
+        <h2 id="por-que">
+          ¿Por qué utilizar funciones?
+        </h2>
+
+        <p>
+          Las funciones aportan varias ventajas.
+        </p>
+
+        <ul class="lista-articulo">
+          <li>
+            <strong>Reutilización:</strong> una misma función puede ejecutarse
+            muchas veces.
+          </li>
+          <li>
+            <strong>Organización:</strong> permiten dividir el programa en
+            tareas concretas.
+          </li>
+          <li>
+            <strong>Mantenimiento:</strong> si una regla cambia, podemos
+            modificarla en un solo lugar.
+          </li>
+          <li>
+            <strong>Pruebas:</strong> una función pequeña suele ser más fácil
+            de comprobar.
+          </li>
+          <li>
+            <strong>Lectura:</strong> un buen nombre puede explicar qué hace
+            una parte del programa.
+          </li>
+        </ul>
+
+        <p>
+          Supongamos que necesitamos calcular el precio final en diez lugares
+          diferentes.
+        </p>
+
+        <p>
+          Si copiamos la fórmula diez veces y después cambia la regla,
+          tendremos que modificar diez fragmentos.
+        </p>
+
+        <p>
+          Con una función podemos cambiar la lógica una sola vez.
+        </p>
+
+        <h2 id="crear">
+          Cómo crear una función en Python
+        </h2>
+
+        <p>
+          En Python utilizamos la palabra <code>def</code> para definir una
+          función.
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>def saludar():
+    print("Hola desde ByteNova")</code></pre>
+        </div>
+
+        <p>
+          Aquí:
+        </p>
+
+        <ul class="lista-articulo">
+          <li>
+            <code>def</code> indica que estamos definiendo una función.
+          </li>
+          <li>
+            <code>saludar</code> es el nombre de la función.
+          </li>
+          <li>
+            Los paréntesis forman parte de la definición.
+          </li>
+          <li>
+            Los dos puntos <code>:</code> indican el inicio del bloque.
+          </li>
+          <li>
+            El código indentado pertenece a la función.
+          </li>
+        </ul>
+
+        <h2 id="llamar">
+          Cómo llamar una función
+        </h2>
+
+        <p>
+          Definir una función no significa que se ejecute automáticamente.
+          Para utilizarla debemos <strong>llamarla</strong>.
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>def saludar():
+    print("Hola desde ByteNova")
+
+
+saludar()</code></pre>
+        </div>
+
+        <p>
+          El resultado será:
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>Hola desde ByteNova</code></pre>
+        </div>
+
+        <p>
+          Podemos llamarla varias veces:
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>saludar()
+saludar()
+saludar()</code></pre>
+        </div>
+
+        <p>
+          La misma función se ejecutará tres veces.
+        </p>
+
+        <h2 id="parametros">
+          Parámetros y argumentos
+        </h2>
+
+        <p>
+          Muchas funciones necesitan recibir información para poder realizar
+          su trabajo.
+        </p>
+
+        <p>
+          Los <strong>parámetros</strong> son los nombres que definimos para
+          recibir esos datos.
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>def saludar(nombre):
+    print(f"Hola, {nombre}")</code></pre>
+        </div>
+
+        <p>
+          En este caso <code>nombre</code> es un parámetro.
+        </p>
+
+        <p>
+          Cuando llamamos la función enviamos un valor:
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>saludar("Ana")</code></pre>
+        </div>
+
+        <p>
+          <code>"Ana"</code> es el <strong>argumento</strong>.
+        </p>
+
+        <div class="recuadro-consejo">
+          <strong>Diferencia rápida</strong>
+          <p>
+            El parámetro aparece en la definición de la función.
+            El argumento es el valor concreto enviado cuando la llamamos.
+          </p>
+        </div>
+
+        <h3>
+          Utilizar varios parámetros
+        </h3>
+
+        <div class="recuadro-ejemplo">
+<pre><code>def mostrar_producto(nombre, precio):
+    print(f"{nombre}: ₡{precio}")
+
+
+mostrar_producto("Teclado", 15000)</code></pre>
+        </div>
+
+        <p>
+          Aquí la función recibe dos datos diferentes.
+        </p>
+
+        <h2 id="retorno">
+          Valores de retorno
+        </h2>
+
+        <p>
+          Una función puede devolver un valor utilizando
+          <code>return</code>.
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>def sumar(a, b):
+    return a + b
+
+
+resultado = sumar(5, 3)
+
+print(resultado)</code></pre>
+        </div>
+
+        <p>
+          La función calcula <code>5 + 3</code> y devuelve el resultado.
+        </p>
+
+        <p>
+          Ese valor puede guardarse:
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>resultado = sumar(5, 3)</code></pre>
+        </div>
+
+        <p>
+          También podemos utilizarlo directamente en otra operación:
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>total = sumar(5, 3) * 2
+
+print(total)</code></pre>
+        </div>
+
+        <h2 id="print-return">
+          Diferencia entre print() y return
+        </h2>
+
+        <p>
+          Uno de los errores más comunes al aprender funciones es pensar que
+          <code>print()</code> y <code>return</code> hacen lo mismo.
+        </p>
+
+        <p>
+          No es así.
+        </p>
+
+        <h3>
+          print() muestra información
+        </h3>
+
+        <div class="recuadro-ejemplo">
+<pre><code>def sumar(a, b):
+    print(a + b)
+
+
+sumar(5, 3)</code></pre>
+        </div>
+
+        <p>
+          El número se muestra en pantalla, pero no obtenemos ese resultado
+          para utilizarlo fácilmente después.
+        </p>
+
+        <h3>
+          return devuelve información
+        </h3>
+
+        <div class="recuadro-ejemplo">
+<pre><code>def sumar(a, b):
+    return a + b
+
+
+resultado = sumar(5, 3)
+
+print(resultado)</code></pre>
+        </div>
+
+        <p>
+          Ahora el valor devuelto puede guardarse, compararse, enviarse a otra
+          función o utilizarse en un cálculo.
+        </p>
+
+        <div class="recuadro-consejo">
+          <strong>Regla práctica</strong>
+          <p>
+            Utiliza <code>print()</code> cuando quieras mostrar información.
+            Utiliza <code>return</code> cuando quieras entregar un resultado a
+            otra parte del programa.
+          </p>
+        </div>
+
+        <h2 id="alcance">
+          Alcance de las variables
+        </h2>
+
+        <p>
+          Las variables creadas dentro de una función normalmente tienen un
+          alcance local.
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>def calcular():
+    resultado = 10 + 5
+    print(resultado)
+
+
+calcular()</code></pre>
+        </div>
+
+        <p>
+          <code>resultado</code> pertenece al contexto de la función.
+        </p>
+
+        <p>
+          Intentar utilizarla directamente fuera puede producir un error:
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>print(resultado)</code></pre>
+        </div>
+
+        <p>
+          Mantener variables locales ayuda a reducir conflictos entre
+          diferentes partes del programa.
+        </p>
+
+        <h3>
+          Variables externas
+        </h3>
+
+        <p>
+          Una función también puede leer determinados valores definidos fuera,
+          aunque conviene evitar depender excesivamente de datos globales.
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>impuesto = 0.13
+
+def calcular_impuesto(precio):
+    return precio * impuesto</code></pre>
+        </div>
+
+        <p>
+          En programas pequeños esto puede funcionar, pero pasar datos mediante
+          parámetros suele hacer que las funciones sean más fáciles de
+          reutilizar y probar.
+        </p>
+
+        <h2 id="predeterminados">
+          Parámetros con valores predeterminados
+        </h2>
+
+        <p>
+          Python permite asignar un valor predeterminado a un parámetro.
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>def saludar(nombre, mensaje="Hola"):
+    print(f"{mensaje}, {nombre}")
+
+
+saludar("Ana")
+saludar("Carlos", "Buenos días")</code></pre>
+        </div>
+
+        <p>
+          En la primera llamada no enviamos un mensaje, por lo que Python
+          utiliza <code>"Hola"</code>.
+        </p>
+
+        <p>
+          En la segunda llamada enviamos un valor diferente.
+        </p>
+
+        <p>
+          Esto resulta útil cuando existe un comportamiento común pero queremos
+          permitir que sea personalizado.
+        </p>
+
+        <h2 id="ejemplo">
+          Ejemplo práctico: calcular el total de una compra
+        </h2>
+
+        <p>
+          Vamos a crear una función que reciba el precio de un producto y la
+          cantidad comprada.
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>def calcular_total(precio, cantidad):
     return precio * cantidad
 
-total = calcular_total(5000, 4)
-print(total)</code></pre></div><section aria-labelledby="aplicacion-practica" class="seccion-articulo"><h2 id="aplicacion-practica">Aplicación práctica</h2><p>Crea una función llamada calcular_promedio que reciba tres notas y devuelva su promedio.</p><div class="recuadro-consejo"><strong>Consejo</strong><p>Escribe el ejemplo, ejecútalo y cambia los valores. Aprenderás más experimentando que copiando sin modificar.</p></div></section><h2 id="preguntas">Preguntas frecuentes</h2><section aria-labelledby="preguntas" class="faq-articulo"><details><summary>¿Necesito memorizar todo sobre las funciones?</summary><p>No. Lo importante es comprender el concepto y practicarlo en proyectos pequeños.</p></details><details><summary>¿Puedo aprenderlo utilizando Python?</summary><p>Sí. Python ofrece una sintaxis clara y es adecuado para practicar estos fundamentos.</p></details><details><summary>¿Cuál es el error más común al comenzar?</summary><p>Copiar código sin analizar qué hace cada parte. Conviene modificar ejemplos y comprobar los resultados.</p></details></section><h2 id="conclusion">Conclusión</h2><p>Qué son las funciones en programación es un fundamento importante para construir programas claros y resolver problemas de forma organizada. La mejor forma de dominarlo es practicar con ejemplos pequeños y comprender cada resultado.</p><section aria-label="Información del autor" class="autor-articulo"><div aria-hidden="true" class="autor-icono">&lt;/&gt;</div><div class="autor-informacion"><span>Artículo creado por</span><h2>ByteNova</h2><p>Plataforma educativa dedicada a explicar programación, desarrollo web, inteligencia artificial y ciberseguridad de manera clara.</p><a href="sobre">Conoce más sobre ByteNova →</a></div></section><aside aria-labelledby="titulo-articulos-relacionados" class="articulos-relacionados"><h2 id="titulo-articulos-relacionados">Continúa aprendiendo</h2><div class="relacionados-grid"><a href="que-son-variables"><span aria-hidden="true">📘</span><strong>Variables</strong><small>Continúa con este concepto relacionado.</small></a><a href="que-son-bucles"><span aria-hidden="true">📘</span><strong>Bucles</strong><small>Continúa con este concepto relacionado.</small></a><a href="que-es-un-algoritmo"><span aria-hidden="true">📘</span><strong>Algoritmos</strong><small>Continúa con este concepto relacionado.</small></a></div></aside></div></div></article></main><footer class="footer"><div class="contenedor-footer"><div class="footer-logo"><a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index#inicio"><span aria-hidden="true" class="marca-icono">&lt;/&gt;</span><span class="marca-texto">ByteNova</span></a><p>Aprende tecnología desde cero con artículos, rutas, retos, guías y recursos gratuitos.</p></div><nav aria-label="Enlaces de aprendizaje del pie de página" class="footer-enlaces"><h3>Aprender</h3><a href="../index#tecnologias">Tecnologías</a><a href="rutas">Rutas</a><a href="retos">Retos</a><a href="material">Guías</a><a href="articulos">Artículos</a><a href="glosario">Glosario</a></nav><nav aria-label="Enlaces informativos del pie de página" class="footer-enlaces"><h3>ByteNova</h3><a href="sobre">Sobre ByteNova</a><a href="../index#contacto">Contacto</a><a href="privacidad">Privacidad</a><a href="terminos">Términos</a><a href="cookies">Cookies</a></nav><address class="footer-social"><h3>Contacto</h3><p>Preguntas, sugerencias o comentarios sobre nuestros contenidos educativos.</p><a href="mailto:bytenova339@gmail.com">bytenova339@gmail.com</a></address></div><div class="footer-copy"><p>© 2026 ByteNova. Todos los derechos reservados.</p><p>Creado por Dylan Estrada.</p></div></footer><script src="../js/script.js"></script></body></html>
+
+total_teclados = calcular_total(15000, 2)
+total_mouse = calcular_total(8000, 3)
+
+print(f"Teclados: ₡{total_teclados}")
+print(f"Mouse: ₡{total_mouse}")</code></pre>
+        </div>
+
+        <p>
+          La misma función se utiliza para productos diferentes.
+        </p>
+
+        <p>
+          Para los teclados:
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>15000 * 2 = 30000</code></pre>
+        </div>
+
+        <p>
+          Para los mouse:
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>8000 * 3 = 24000</code></pre>
+        </div>
+
+        <p>
+          No necesitamos duplicar la lógica de multiplicación.
+        </p>
+
+        <h3>
+          Mejorar la función
+        </h3>
+
+        <p>
+          Podemos agregar validaciones:
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>def calcular_total(precio, cantidad):
+    if precio < 0 or cantidad < 0:
+        return None
+
+    return precio * cantidad</code></pre>
+        </div>
+
+        <p>
+          Ahora la función evita calcular un total cuando recibe valores
+          negativos.
+        </p>
+
+        <h2 id="errores">
+          Errores comunes al trabajar con funciones
+        </h2>
+
+        <h3>
+          Definir una función y olvidar llamarla
+        </h3>
+
+        <p>
+          Una función no se ejecuta solo porque exista.
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>def mostrar_mensaje():
+    print("Hola")</code></pre>
+        </div>
+
+        <p>
+          Necesitamos:
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>mostrar_mensaje()</code></pre>
+        </div>
+
+        <h3>
+          Enviar una cantidad incorrecta de argumentos
+        </h3>
+
+        <div class="recuadro-ejemplo">
+<pre><code>def sumar(a, b):
+    return a + b
+
+
+sumar(5)</code></pre>
+        </div>
+
+        <p>
+          La función espera dos argumentos, pero solamente recibió uno.
+        </p>
+
+        <h3>
+          Confundir print con return
+        </h3>
+
+        <p>
+          Mostrar un valor no significa devolverlo.
+        </p>
+
+        <h3>
+          Crear funciones demasiado grandes
+        </h3>
+
+        <p>
+          Si una función valida usuarios, calcula precios, envía correos y
+          genera reportes al mismo tiempo, probablemente tenga demasiadas
+          responsabilidades.
+        </p>
+
+        <h3>
+          Utilizar nombres poco claros
+        </h3>
+
+        <p>
+          Un nombre como <code>f1()</code> dice muy poco sobre su propósito.
+        </p>
+
+        <p>
+          Un nombre como <code>calcular_promedio()</code> explica mucho mejor
+          qué tarea realiza.
+        </p>
+
+        <h2 id="buenas-practicas">
+          Buenas prácticas al crear funciones
+        </h2>
+
+        <ul class="lista-articulo">
+          <li>
+            Utiliza nombres que describan la tarea.
+          </li>
+          <li>
+            Procura que cada función tenga una responsabilidad clara.
+          </li>
+          <li>
+            Evita funciones innecesariamente largas.
+          </li>
+          <li>
+            Utiliza parámetros para recibir la información necesaria.
+          </li>
+          <li>
+            Devuelve resultados cuando otra parte del programa deba
+            utilizarlos.
+          </li>
+          <li>
+            Valida los datos cuando una entrada incorrecta pueda provocar
+            problemas.
+          </li>
+          <li>
+            Divide tareas complejas en funciones más pequeñas cuando mejore la
+            claridad.
+          </li>
+        </ul>
+
+        <div class="recuadro-consejo">
+          <strong>Una pregunta útil</strong>
+          <p>
+            Si necesitas copiar el mismo bloque de código varias veces,
+            pregúntate si podría convertirse en una función reutilizable.
+          </p>
+        </div>
+
+        <section
+          class="seccion-articulo"
+          aria-labelledby="practica"
+        >
+
+          <h2 id="practica">
+            Compruébalo tú mismo
+          </h2>
+
+          <p>
+            Crea una función llamada <code>calcular_promedio()</code> que
+            reciba tres notas y devuelva el promedio.
+          </p>
+
+          <p>
+            Después guarda el resultado en una variable y muéstralo.
+          </p>
+
+          <p>
+            Intenta resolverlo antes de ver la solución.
+          </p>
+
+          <details class="recuadro-ejemplo">
+
+            <summary>
+              <strong>Ver una posible solución</strong>
+            </summary>
+
+<pre><code>def calcular_promedio(nota1, nota2, nota3):
+    suma = nota1 + nota2 + nota3
+    return suma / 3
+
+
+promedio = calcular_promedio(
+    80,
+    90,
+    70
+)
+
+print(f"Promedio: {promedio}")</code></pre>
+
+            <p>
+              La función recibe tres valores, calcula la suma y devuelve el
+              promedio.
+            </p>
+
+            <p>
+              El resultado será:
+            </p>
+
+<pre><code>Promedio: 80.0</code></pre>
+
+          </details>
+
+          <div class="recuadro-consejo">
+            <strong>Reto adicional</strong>
+            <p>
+              Crea otra función llamada <code>aprobo()</code> que reciba el
+              promedio y devuelva <code>True</code> cuando sea 70 o superior.
+            </p>
+          </div>
+
+        </section>
+
+        <h2 id="preguntas">
+          Preguntas frecuentes
+        </h2>
+
+        <section
+          class="faq-articulo"
+          aria-labelledby="preguntas"
+        >
+
+          <details>
+            <summary>
+              ¿Cuál es la diferencia entre parámetro y argumento?
+            </summary>
+            <p>
+              Un parámetro es el nombre definido en la función para recibir
+              información. Un argumento es el valor concreto que enviamos
+              cuando llamamos la función.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              ¿Una función siempre necesita return?
+            </summary>
+            <p>
+              No. Una función puede realizar acciones sin devolver un
+              resultado. Sin embargo, <code>return</code> permite entregar un
+              valor para utilizarlo posteriormente.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              ¿Por qué conviene utilizar funciones?
+            </summary>
+            <p>
+              Ayudan a evitar repetición de código, separar responsabilidades,
+              reutilizar soluciones y hacer que los programas sean más fáciles
+              de mantener.
+            </p>
+          </details>
+
+        </section>
+
+        <h2 id="conclusion">
+          Conclusión
+        </h2>
+
+        <p>
+          Las funciones permiten agrupar instrucciones bajo un nombre y
+          reutilizarlas siempre que el programa las necesite.
+        </p>
+
+        <p>
+          Los parámetros permiten recibir datos, mientras que
+          <code>return</code> permite devolver resultados para utilizarlos en
+          otras partes del programa.
+        </p>
+
+        <p>
+          Comprender bien las funciones es fundamental porque después podrás
+          combinarlas con variables, condicionales, bucles, listas y objetos
+          para construir programas mucho más organizados.
+        </p>
+
+        <section
+          class="autor-articulo"
+          aria-label="Información del autor"
+        >
+
+          <div
+            class="autor-icono"
+            aria-hidden="true"
+          >
+            &lt;/&gt;
+          </div>
+
+          <div class="autor-informacion">
+            <span>Artículo creado por</span>
+            <h2>ByteNova</h2>
+
+            <p>
+              Plataforma educativa dedicada a explicar programación,
+              desarrollo web, inteligencia artificial y ciberseguridad de
+              manera clara.
+            </p>
+
+            <a href="sobre">
+              Conoce más sobre ByteNova →
+            </a>
+          </div>
+
+        </section>
+
+        <aside
+          class="articulos-relacionados"
+          aria-labelledby="titulo-articulos-relacionados"
+        >
+
+          <h2 id="titulo-articulos-relacionados">
+            Continúa aprendiendo
+          </h2>
+
+          <div class="relacionados-grid">
+
+            <a href="que-son-variables">
+              <span aria-hidden="true">📘</span>
+              <strong>Variables</strong>
+              <small>
+                Aprende cómo almacenar datos que después puedes utilizar en
+                funciones.
+              </small>
+            </a>
+
+            <a href="que-son-bucles">
+              <span aria-hidden="true">📘</span>
+              <strong>Bucles</strong>
+              <small>
+                Aprende cómo combinar funciones con tareas repetitivas.
+              </small>
+            </a>
+
+            <a href="que-es-un-algoritmo">
+              <span aria-hidden="true">📘</span>
+              <strong>Algoritmos</strong>
+              <small>
+                Aprende a dividir problemas en pasos claros y organizados.
+              </small>
+            </a>
+
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+
+  </article>
+
+</main>
+
+<footer class="footer">
+
+  <div class="contenedor-footer">
+
+    <div class="footer-logo">
+
+      <a
+        class="marca-bytenova"
+        href="../index#inicio"
+        aria-label="Ir al inicio de ByteNova"
+      >
+        <span class="marca-icono" aria-hidden="true">&lt;/&gt;</span>
+        <span class="marca-texto">ByteNova</span>
+      </a>
+
+      <p>
+        Aprende tecnología desde cero con artículos, rutas, retos,
+        guías y recursos gratuitos.
+      </p>
+
+    </div>
+
+    <nav
+      class="footer-enlaces"
+      aria-label="Enlaces de aprendizaje del pie de página"
+    >
+      <h3>Aprender</h3>
+      <a href="../index#tecnologias">Tecnologías</a>
+      <a href="rutas">Rutas</a>
+      <a href="retos">Retos</a>
+      <a href="material">Guías</a>
+      <a href="articulos">Artículos</a>
+      <a href="glosario">Glosario</a>
+    </nav>
+
+    <nav
+      class="footer-enlaces"
+      aria-label="Enlaces informativos del pie de página"
+    >
+      <h3>ByteNova</h3>
+      <a href="sobre">Sobre ByteNova</a>
+      <a href="../index#contacto">Contacto</a>
+      <a href="privacidad">Privacidad</a>
+      <a href="terminos">Términos</a>
+      <a href="cookies">Cookies</a>
+    </nav>
+
+    <address class="footer-social">
+      <h3>Contacto</h3>
+      <p>
+        Preguntas, sugerencias o comentarios sobre nuestros
+        contenidos educativos.
+      </p>
+
+      <a href="mailto:bytenova339@gmail.com">
+        bytenova339@gmail.com
+      </a>
+    </address>
+
+  </div>
+
+  <div class="footer-copy">
+    <p>© 2026 ByteNova. Todos los derechos reservados.</p>
+    <p>Creado por Dylan Estrada.</p>
+  </div>
+
+</footer>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

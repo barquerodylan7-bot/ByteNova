@@ -1,16 +1,1079 @@
-<!DOCTYPE html><html lang="es"><head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-41QWQ3DC33"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-41QWQ3DC33"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-41QWQ3DC33');
+  </script>
 
-      gtag('config', 'G-41QWQ3DC33');
-    </script>
-<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>¿Qué es el debugging o depuración de código? | ByteNova</title><meta content="Aprende qué es el debugging, cómo encontrar errores en un programa y qué técnicas utilizar para corregirlos de forma ordenada." name="description"/><meta content="ByteNova" name="author"/><meta content="index, follow" name="robots"/><meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/><meta content="#0f172a" media="(prefers-color-scheme: dark)" name="theme-color"/><meta content="article" property="og:type"/><meta content="es_CR" property="og:locale"/><meta content="ByteNova" property="og:site_name"/><meta content="¿Qué es el debugging o depuración de código?" property="og:title"/><meta content="Aprende qué es el debugging, cómo encontrar errores en un programa y qué técnicas utilizar para corregirlos de forma ordenada." property="og:description"/><meta content="https://bytenova.app/pages/que-es-debugging" property="og:url"/><meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="¿Qué es el debugging o depuración de código?" name="twitter:title"/><meta content="Aprende qué es el debugging, cómo encontrar errores en un programa y qué técnicas utilizar para corregirlos de forma ordenada." name="twitter:description"/><meta content="https://bytenova.app/images/bytenova-social.jpg" name="twitter:image"/><meta content="2026-08-05" property="article:published_time"/><meta content="2026-08-05" property="article:modified_time"/><meta content="Programación" property="article:section"/><link href="https://bytenova.app/pages/que-es-debugging" rel="canonical"/><link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/><link href="../css/style.min.css" rel="stylesheet"/><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://bytenova.app/pages/que-es-debugging#article","headline":"¿Qué es el debugging o depuración de código?","description":"Aprende qué es el debugging, cómo encontrar errores en un programa y qué técnicas utilizar para corregirlos de forma ordenada.","url":"https://bytenova.app/pages/que-es-debugging","datePublished":"2026-08-05","dateModified":"2026-08-05","inLanguage":"es","articleSection":"Programación","isAccessibleForFree":true,"author":{"@type":"Organization","name":"ByteNova","url":"https://bytenova.app/pages/sobre"},"publisher":{"@type":"Organization","name":"ByteNova","url":"https://bytenova.app/"},"mainEntityOfPage":{"@id":"https://bytenova.app/pages/que-es-debugging#webpage"},"image":{"@type":"ImageObject","url":"https://bytenova.app/images/bytenova-social.jpg","width":1200,"height":630}},{"@type":"FAQPage","@id":"https://bytenova.app/pages/que-es-debugging#faq","mainEntity":[{"@type":"Question","name":"¿Debugging significa solo corregir errores de sintaxis?","acceptedAnswer":{"@type":"Answer","text":"No. También incluye errores de lógica, datos, rendimiento e integración."}},{"@type":"Question","name":"¿Usar print es una técnica válida?","acceptedAnswer":{"@type":"Answer","text":"Sí, especialmente al comenzar, aunque los depuradores ofrecen herramientas más precisas."}},{"@type":"Question","name":"¿Cómo evito que un error vuelva?","acceptedAnswer":{"@type":"Answer","text":"Añade una prueba que reproduzca el fallo y compruebe el comportamiento corregido."}}]}]}</script><meta content="ca-pub-5369456672603969" name="google-adsense-account"/><script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5369456672603969"></script></head><body><a class="saltar-contenido" href="#contenido-principal">Saltar al contenido principal</a><header><a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index#inicio"><span aria-hidden="true" class="marca-icono">&lt;/&gt;</span><span class="marca-texto">ByteNova</span></a><button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle" type="button"><span aria-hidden="true">☰</span></button><nav aria-label="Navegación principal" id="menu-principal"><a href="../index#inicio">Inicio</a><a href="sobre">Sobre</a><a href="../index#tecnologias">Aprender</a><a href="rutas">Rutas</a><a href="retos">Retos</a><a href="material">Guías</a><a aria-current="page" href="articulos">Artículos</a><a href="glosario">Glosario</a><a href="../index#contacto">Contacto</a><button aria-label="Activar modo oscuro" class="btn-modo" id="btn-modo" type="button"><span aria-hidden="true">🌙</span></button></nav></header><main class="sobre articulo" id="contenido-principal"><article aria-labelledby="titulo-que-es-debugging" class="sobre-contenido"><nav aria-label="Ruta de navegación" class="migas-navegacion"><a href="../index">Inicio</a><span aria-hidden="true">›</span><a href="articulos">Artículos</a><span aria-hidden="true">›</span><span aria-current="page">Debugging</span></nav><span class="seccion-etiqueta"><span aria-hidden="true">🐞</span> Programación</span><h1 id="titulo-que-es-debugging">¿Qué es el debugging o depuración de código? <span aria-hidden="true">🐞</span></h1><p class="articulo-meta">Publicado por ByteNova · <time datetime="2026-08-05">5 de agosto de 2026</time> · Actualizado el <time datetime="2026-08-05">5 de agosto de 2026</time></p><div class="articulo-resumen"><strong>En este artículo aprenderás:</strong><p>Aprende qué es el debugging, cómo encontrar errores en un programa y qué técnicas utilizar para corregirlos de forma ordenada.</p></div><div class="articulo-layout"><aside class="articulo-sidebar"><details class="indice-articulo" open><summary><span aria-hidden="true">📑</span> Contenido del artículo</summary><nav aria-label="Contenido del artículo"><a href="#que-es">1. ¿Qué es el debugging?</a><a href="#tipos">2. Tipos de errores</a><a href="#proceso">3. Proceso de depuración</a><a href="#herramientas">4. Herramientas útiles</a><a href="#mundo-real">5. ¿Cómo se utiliza en proyectos reales?</a><a href="#errores">6. Errores comunes al depurar</a><a href="#aplicacion-practica">7. Aplicación práctica</a><a href="#preguntas">8. Preguntas frecuentes</a><a href="#conclusion">9. Conclusión</a></nav></details></aside><div class="articulo-cuerpo"><p class="articulo-introduccion">Aprende qué es el debugging, cómo encontrar errores en un programa y qué técnicas utilizar para corregirlos de forma ordenada.</p><h2 id="que-es">¿Qué es el debugging?</h2><p>El debugging o depuración es el proceso de localizar, comprender y corregir errores en un programa.</p><h2 id="tipos">Tipos de errores</h2><p>Los errores pueden ser de sintaxis, ejecución, lógica, datos, integración o rendimiento.</p><h2 id="proceso">Proceso de depuración</h2><p>Conviene reproducir el problema, aislar la causa, formular una hipótesis, probar una corrección y verificar que no aparezcan efectos secundarios.</p><h2 id="herramientas">Herramientas útiles</h2><p>Los mensajes de error, registros, puntos de interrupción, consola, pruebas automatizadas y herramientas del navegador ayudan a investigar.</p><h2 id="mundo-real">¿Cómo se utiliza en proyectos reales?</h2><p>Los equipos registran incidentes, reproducen fallos, revisan cambios recientes y documentan la solución para evitar que el error regrese.</p><h2 id="errores">Errores comunes al depurar</h2><p>Cambiar muchas cosas a la vez, ignorar el mensaje de error, asumir sin comprobar y corregir el síntoma sin entender la causa.</p><h2>Ejemplo en Python</h2><div class="recuadro-ejemplo"><pre><code>def dividir(a, b):
-    if b == 0:
-        return "No se puede dividir entre cero"
-    return a / b
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-print(dividir(10, 0))</code></pre></div><section aria-labelledby="aplicacion-practica" class="seccion-articulo"><h2 id="aplicacion-practica">Compruébalo tú mismo</h2><p>Crea un programa con un error intencional. Lee el mensaje, identifica la línea, corrígelo y explica qué causaba el problema.</p><div class="recuadro-consejo"><strong>Consejo</strong><p>Haz cambios pequeños, ejecuta el código después de cada cambio y explica con tus propias palabras qué ocurrió.</p></div></section><h2 id="preguntas">Preguntas frecuentes</h2><section aria-labelledby="preguntas" class="faq-articulo"><details><summary>¿Debugging significa solo corregir errores de sintaxis?</summary><p>No. También incluye errores de lógica, datos, rendimiento e integración.</p></details><details><summary>¿Usar print es una técnica válida?</summary><p>Sí, especialmente al comenzar, aunque los depuradores ofrecen herramientas más precisas.</p></details><details><summary>¿Cómo evito que un error vuelva?</summary><p>Añade una prueba que reproduzca el fallo y compruebe el comportamiento corregido.</p></details></section><h2 id="conclusion">Conclusión</h2><p>Debugging es un concepto fundamental para escribir programas más claros y organizados. Comprenderlo mediante ejemplos pequeños facilita aplicarlo después en proyectos reales.</p><section aria-label="Información del autor" class="autor-articulo"><div aria-hidden="true" class="autor-icono">&lt;/&gt;</div><div class="autor-informacion"><span>Artículo creado por</span><h2>ByteNova</h2><p>Plataforma educativa dedicada a explicar programación, desarrollo web, inteligencia artificial y ciberseguridad de manera clara.</p><a href="sobre">Conoce más sobre ByteNova →</a></div></section><aside aria-labelledby="titulo-articulos-relacionados" class="articulos-relacionados"><h2 id="titulo-articulos-relacionados">Continúa aprendiendo</h2><div class="relacionados-grid"><a href="que-es-un-algoritmo"><span aria-hidden="true">📘</span><strong>¿Qué es un algoritmo?</strong><small>Continúa con este concepto relacionado.</small></a><a href="que-son-condicionales"><span aria-hidden="true">📘</span><strong>¿Qué son los condicionales?</strong><small>Continúa con este concepto relacionado.</small></a><a href="que-son-funciones"><span aria-hidden="true">📘</span><strong>¿Qué son las funciones?</strong><small>Continúa con este concepto relacionado.</small></a></div></aside></div></div></article></main><footer class="footer"><div class="contenedor-footer"><div class="footer-logo"><a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index#inicio"><span aria-hidden="true" class="marca-icono">&lt;/&gt;</span><span class="marca-texto">ByteNova</span></a><p>Aprende tecnología desde cero con artículos, rutas, retos, guías y recursos gratuitos.</p></div><nav aria-label="Enlaces de aprendizaje del pie de página" class="footer-enlaces"><h3>Aprender</h3><a href="../index#tecnologias">Tecnologías</a><a href="rutas">Rutas</a><a href="retos">Retos</a><a href="material">Guías</a><a href="articulos">Artículos</a><a href="glosario">Glosario</a></nav><nav aria-label="Enlaces informativos del pie de página" class="footer-enlaces"><h3>ByteNova</h3><a href="sobre">Sobre ByteNova</a><a href="../index#contacto">Contacto</a><a href="privacidad">Privacidad</a><a href="terminos">Términos</a><a href="cookies">Cookies</a></nav><address class="footer-social"><h3>Contacto</h3><p>Preguntas, sugerencias o comentarios sobre nuestros contenidos educativos.</p><a href="mailto:bytenova339@gmail.com">bytenova339@gmail.com</a></address></div><div class="footer-copy"><p>© 2026 ByteNova. Todos los derechos reservados.</p><p>Creado por Dylan Estrada.</p></div></footer><script src="../js/script.js"></script></body></html>
+  <title>¿Qué es el debugging o depuración de código? | ByteNova</title>
+
+  <meta
+    name="description"
+    content="Aprende qué es el debugging, cómo encontrar errores en un programa y qué técnicas utilizar para corregirlos de forma ordenada."
+  >
+
+  <meta name="author" content="ByteNova">
+  <meta name="robots" content="index, follow">
+
+  <meta
+    name="theme-color"
+    content="#ffffff"
+    media="(prefers-color-scheme: light)"
+  >
+
+  <meta
+    name="theme-color"
+    content="#0f172a"
+    media="(prefers-color-scheme: dark)"
+  >
+
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_CR">
+  <meta property="og:site_name" content="ByteNova">
+
+  <meta
+    property="og:title"
+    content="¿Qué es el debugging o depuración de código?"
+  >
+
+  <meta
+    property="og:description"
+    content="Aprende qué es el debugging, cómo encontrar errores en un programa y qué técnicas utilizar para corregirlos de forma ordenada."
+  >
+
+  <meta
+    property="og:url"
+    content="https://bytenova.app/pages/que-es-debugging"
+  >
+
+  <meta
+    property="og:image"
+    content="https://bytenova.app/images/bytenova-social.jpg"
+  >
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="¿Qué es el debugging o depuración de código?"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Aprende qué es el debugging, cómo encontrar errores en un programa y qué técnicas utilizar para corregirlos de forma ordenada."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://bytenova.app/images/bytenova-social.jpg"
+  >
+
+  <meta property="article:published_time" content="2026-08-05">
+  <meta property="article:modified_time" content="2026-08-17">
+  <meta property="article:section" content="Programación">
+
+  <link
+    rel="canonical"
+    href="https://bytenova.app/pages/que-es-debugging"
+  >
+
+  <link
+    rel="icon"
+    href="../images/favicon.svg"
+    type="image/svg+xml"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../css/style.min.css"
+  >
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://bytenova.app/pages/que-es-debugging#article",
+        "headline": "¿Qué es el debugging o depuración de código?",
+        "description": "Aprende qué es el debugging, cómo encontrar errores en un programa y qué técnicas utilizar para corregirlos de forma ordenada.",
+        "url": "https://bytenova.app/pages/que-es-debugging",
+        "datePublished": "2026-08-05",
+        "dateModified": "2026-08-17",
+        "inLanguage": "es",
+        "articleSection": "Programación",
+        "isAccessibleForFree": true,
+        "author": {
+          "@type": "Organization",
+          "name": "ByteNova",
+          "url": "https://bytenova.app/pages/sobre"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "ByteNova",
+          "url": "https://bytenova.app/"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://bytenova.app/pages/que-es-debugging#webpage"
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://bytenova.app/images/bytenova-social.jpg",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://bytenova.app/pages/que-es-debugging#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Debugging significa solo corregir errores de sintaxis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. También incluye errores de lógica, datos, rendimiento e integración."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Usar print es una técnica válida?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, especialmente al comenzar, aunque los depuradores ofrecen herramientas más precisas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo evito que un error vuelva?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Añade una prueba que reproduzca el fallo y compruebe el comportamiento corregido."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <meta
+    name="google-adsense-account"
+    content="ca-pub-5369456672603969"
+  >
+
+  <script
+    async
+    crossorigin="anonymous"
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5369456672603969">
+  </script>
+</head>
+
+<body>
+
+<a class="saltar-contenido" href="#contenido-principal">
+  Saltar al contenido principal
+</a>
+
+<header>
+
+  <a
+    class="marca-bytenova"
+    href="../index#inicio"
+    aria-label="Ir al inicio de ByteNova"
+  >
+    <span class="marca-icono" aria-hidden="true">&lt;/&gt;</span>
+    <span class="marca-texto">ByteNova</span>
+  </a>
+
+  <button
+    class="menu-toggle"
+    id="menu-toggle"
+    type="button"
+    aria-controls="menu-principal"
+    aria-expanded="false"
+    aria-label="Abrir menú"
+  >
+    <span aria-hidden="true">☰</span>
+  </button>
+
+  <nav id="menu-principal" aria-label="Navegación principal">
+    <a href="../index#inicio">Inicio</a>
+    <a href="sobre">Sobre</a>
+    <a href="../index#tecnologias">Aprender</a>
+    <a href="rutas">Rutas</a>
+    <a href="retos">Retos</a>
+    <a href="material">Guías</a>
+    <a href="articulos" aria-current="page">Artículos</a>
+    <a href="glosario">Glosario</a>
+    <a href="../index#contacto">Contacto</a>
+
+    <button
+      class="btn-modo"
+      id="btn-modo"
+      type="button"
+      aria-label="Activar modo oscuro"
+    >
+      <span aria-hidden="true">🌙</span>
+    </button>
+  </nav>
+
+</header>
+
+<main class="sobre articulo" id="contenido-principal">
+
+  <article
+    class="sobre-contenido"
+    aria-labelledby="titulo-que-es-debugging"
+  >
+
+    <nav
+      class="migas-navegacion"
+      aria-label="Ruta de navegación"
+    >
+      <a href="../index">Inicio</a>
+      <span aria-hidden="true">›</span>
+      <a href="articulos">Artículos</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">Debugging</span>
+    </nav>
+
+    <span class="seccion-etiqueta">
+      <span aria-hidden="true">🐞</span>
+      Programación
+    </span>
+
+    <h1 id="titulo-que-es-debugging">
+      ¿Qué es el debugging o depuración de código?
+      <span aria-hidden="true">🐞</span>
+    </h1>
+
+    <p class="articulo-meta">
+      Publicado por ByteNova ·
+      <time datetime="2026-08-05">5 de agosto de 2026</time>
+      · Actualizado el
+      <time datetime="2026-08-17">17 de agosto de 2026</time>
+    </p>
+
+    <div class="articulo-resumen">
+      <strong>En este artículo aprenderás:</strong>
+      <p>
+        Qué es el debugging, cuáles son los errores más comunes,
+        cómo interpretar mensajes de error y cómo investigar un
+        problema paso a paso hasta encontrar su causa.
+      </p>
+    </div>
+
+    <div class="articulo-layout">
+
+      <aside class="articulo-sidebar">
+
+        <details class="indice-articulo" open>
+
+          <summary>
+            <span aria-hidden="true">📑</span>
+            Contenido del artículo
+          </summary>
+
+          <nav aria-label="Contenido del artículo">
+            <a href="#que-es">1. ¿Qué es el debugging?</a>
+            <a href="#tipos">2. Tipos de errores</a>
+            <a href="#mensajes">3. Leer mensajes de error</a>
+            <a href="#proceso">4. Proceso de depuración</a>
+            <a href="#print">5. Depurar con print()</a>
+            <a href="#depurador">6. Utilizar un depurador</a>
+            <a href="#ejemplo">7. Ejemplo paso a paso</a>
+            <a href="#mundo-real">8. Debugging en proyectos reales</a>
+            <a href="#errores">9. Errores al depurar</a>
+            <a href="#practica">10. Ejercicio práctico</a>
+            <a href="#preguntas">11. Preguntas frecuentes</a>
+            <a href="#conclusion">12. Conclusión</a>
+          </nav>
+
+        </details>
+
+      </aside>
+
+      <div class="articulo-cuerpo">
+
+        <p class="articulo-introduccion">
+          Encontrar errores forma parte normal de programar. Incluso un
+          programa que parece sencillo puede producir resultados inesperados.
+          El debugging consiste en investigar esos problemas de forma
+          ordenada hasta comprender qué ocurre y corregir su causa.
+        </p>
+
+        <h2 id="que-es">
+          ¿Qué es el debugging?
+        </h2>
+
+        <p>
+          El <strong>debugging</strong>, también llamado
+          <strong>depuración de código</strong>, es el proceso de localizar,
+          analizar y corregir errores en un programa.
+        </p>
+
+        <p>
+          Depurar no significa simplemente cambiar código hasta que el error
+          desaparezca. El objetivo es entender:
+        </p>
+
+        <ul class="lista-articulo">
+          <li>Qué comportamiento esperábamos.</li>
+          <li>Qué comportamiento ocurrió realmente.</li>
+          <li>En qué parte del programa aparece la diferencia.</li>
+          <li>Cuál es la causa del problema.</li>
+          <li>Qué cambio puede solucionarlo sin provocar otro error.</li>
+        </ul>
+
+        <div class="recuadro-consejo">
+          <strong>Idea importante</strong>
+          <p>
+            Un buen proceso de depuración intenta encontrar la causa del
+            problema, no solamente ocultar el síntoma.
+          </p>
+        </div>
+
+        <h2 id="tipos">
+          Tipos de errores que podemos encontrar
+        </h2>
+
+        <p>
+          No todos los errores se comportan de la misma manera.
+          Algunos impiden ejecutar el programa y otros permiten que continúe,
+          pero producen resultados incorrectos.
+        </p>
+
+        <h3>Error de sintaxis</h3>
+
+        <p>
+          Ocurre cuando escribimos código que no respeta las reglas
+          sintácticas del lenguaje.
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>if edad >= 18
+    print("Mayor de edad")</code></pre>
+        </div>
+
+        <p>
+          En Python falta <code>:</code> después de la condición.
+          El programa no puede interpretar correctamente la instrucción.
+        </p>
+
+        <h3>Error durante la ejecución</h3>
+
+        <p>
+          El código puede estar escrito correctamente, pero aparece un
+          problema mientras se ejecuta.
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>numero = 10
+resultado = numero / 0
+
+print(resultado)</code></pre>
+        </div>
+
+        <p>
+          La sintaxis es válida, pero Python no puede realizar una división
+          entre cero.
+        </p>
+
+        <h3>Error lógico</h3>
+
+        <p>
+          Este tipo de error puede ser más difícil de encontrar porque el
+          programa se ejecuta sin detenerse, pero produce un resultado
+          incorrecto.
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>precio = 10000
+descuento = 10
+
+precio_final = precio - descuento
+
+print(precio_final)</code></pre>
+        </div>
+
+        <p>
+          Si <code>descuento</code> representa un 10 %, restar simplemente
+          <code>10</code> no realiza el cálculo esperado.
+        </p>
+
+        <p>
+          Una posible corrección sería:
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>precio = 10000
+descuento = 10
+
+precio_final = precio - (precio * descuento / 100)
+
+print(precio_final)</code></pre>
+        </div>
+
+        <h3>Errores relacionados con datos</h3>
+
+        <p>
+          Un programa también puede fallar cuando recibe información que no
+          esperaba.
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>edad = int(input("Escribe tu edad: "))</code></pre>
+        </div>
+
+        <p>
+          Si el usuario escribe una palabra en lugar de un número, la
+          conversión puede generar un error.
+        </p>
+
+        <h2 id="mensajes">
+          Aprende a leer los mensajes de error
+        </h2>
+
+        <p>
+          Cuando Python encuentra determinados problemas, muestra información
+          que puede ayudarnos a localizar la causa.
+        </p>
+
+        <p>
+          Supongamos que ejecutamos:
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>numero = 10
+resultado = numero / 0</code></pre>
+        </div>
+
+        <p>
+          Python puede mostrar un mensaje que termina de forma similar a:
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>ZeroDivisionError: division by zero</code></pre>
+        </div>
+
+        <p>
+          En lugar de ignorarlo, debemos utilizarlo como una pista.
+          El mensaje indica el tipo de error y normalmente también muestra
+          información sobre la línea relacionada con el problema.
+        </p>
+
+        <div class="recuadro-consejo">
+          <strong>Cuando aparezca un error</strong>
+          <p>
+            Lee primero el mensaje completo. Busca el tipo de error, revisa
+            las líneas indicadas y analiza los valores que intervienen antes
+            de comenzar a cambiar código.
+          </p>
+        </div>
+
+        <h2 id="proceso">
+          Un proceso ordenado para depurar
+        </h2>
+
+        <p>
+          Cuando algo falla, seguir un proceso reduce las modificaciones
+          innecesarias.
+        </p>
+
+        <h3>1. Reproduce el problema</h3>
+
+        <p>
+          Primero necesitamos saber exactamente qué acciones o datos hacen
+          aparecer el fallo.
+        </p>
+
+        <p>
+          Si el problema solamente aparece cuando un usuario introduce
+          <code>0</code>, ese dato es una pista importante.
+        </p>
+
+        <h3>2. Define qué debería ocurrir</h3>
+
+        <p>
+          Antes de corregir algo debemos saber cuál es el comportamiento
+          esperado.
+        </p>
+
+        <h3>3. Reduce el área de búsqueda</h3>
+
+        <p>
+          Identifica qué función, condición o conjunto de instrucciones está
+          relacionado con el resultado incorrecto.
+        </p>
+
+        <h3>4. Formula una hipótesis</h3>
+
+        <p>
+          Por ejemplo:
+        </p>
+
+        <div class="recuadro-ejemplo">
+          <p>
+            “Creo que el error ocurre porque esta variable contiene texto
+            cuando el programa espera un número”.
+          </p>
+        </div>
+
+        <h3>5. Comprueba la hipótesis</h3>
+
+        <p>
+          Inspecciona el valor de la variable o realiza un cambio pequeño que
+          permita confirmar si realmente esa es la causa.
+        </p>
+
+        <h3>6. Corrige y vuelve a probar</h3>
+
+        <p>
+          Después de aplicar la solución, prueba nuevamente el caso que
+          producía el error y otros casos relacionados.
+        </p>
+
+        <h2 id="print">
+          Utilizar print() para investigar un problema
+        </h2>
+
+        <p>
+          Cuando estás comenzando, <code>print()</code> puede ser una
+          herramienta sencilla para observar qué valores tiene el programa
+          durante la ejecución.
+        </p>
+
+        <p>
+          Supongamos que este cálculo devuelve un resultado inesperado:
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>precio = 50000
+descuento = 20
+
+precio_final = precio - descuento
+
+print(precio_final)</code></pre>
+        </div>
+
+        <p>
+          Podemos inspeccionar los valores:
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>print("Precio:", precio)
+print("Descuento:", descuento)
+print("Resultado:", precio_final)</code></pre>
+        </div>
+
+        <p>
+          Esto ayuda a comprobar qué información está utilizando realmente el
+          programa.
+        </p>
+
+        <p>
+          Después de comprender el problema, podemos corregir el cálculo:
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>precio_final = precio - (precio * descuento / 100)</code></pre>
+        </div>
+
+        <p>
+          En proyectos más grandes existen herramientas más potentes, pero
+          aprender a observar valores y comprobar hipótesis sigue siendo una
+          habilidad fundamental.
+        </p>
+
+        <h2 id="depurador">
+          ¿Qué es un depurador?
+        </h2>
+
+        <p>
+          Un <strong>depurador</strong> o debugger es una herramienta que
+          permite controlar la ejecución de un programa para analizar qué
+          ocurre internamente.
+        </p>
+
+        <p>
+          Dependiendo del entorno de desarrollo, un depurador puede permitir:
+        </p>
+
+        <ul class="lista-articulo">
+          <li>Detener el programa en una línea concreta.</li>
+          <li>Ejecutar el código línea por línea.</li>
+          <li>Consultar el valor actual de variables.</li>
+          <li>Observar cómo cambian los datos.</li>
+          <li>Seguir llamadas entre funciones.</li>
+        </ul>
+
+        <h3>Puntos de interrupción</h3>
+
+        <p>
+          Un punto de interrupción o <em>breakpoint</em> indica al depurador
+          que detenga temporalmente la ejecución en una determinada línea.
+        </p>
+
+        <p>
+          Esto permite inspeccionar el estado del programa exactamente antes
+          o después de una operación importante.
+        </p>
+
+        <div class="recuadro-consejo">
+          <strong>En VS Code</strong>
+          <p>
+            Al trabajar con un lenguaje compatible y su configuración de
+            depuración, puedes utilizar puntos de interrupción para observar
+            el programa mientras se ejecuta, en lugar de depender únicamente
+            de mensajes con <code>print()</code>.
+          </p>
+        </div>
+
+        <h2 id="ejemplo">
+          Ejemplo de debugging paso a paso
+        </h2>
+
+        <p>
+          Imagina que queremos calcular el promedio de tres notas:
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>nota1 = 80
+nota2 = 90
+nota3 = 70
+
+promedio = nota1 + nota2 + nota3 / 3
+
+print(promedio)</code></pre>
+        </div>
+
+        <p>
+          Esperamos obtener <code>80</code>, pero el resultado no coincide.
+        </p>
+
+        <h3>Paso 1: comprobar los datos</h3>
+
+        <p>
+          Las notas son 80, 90 y 70. Esos valores parecen correctos.
+        </p>
+
+        <h3>Paso 2: revisar el cálculo</h3>
+
+        <p>
+          La expresión utilizada es:
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>nota1 + nota2 + nota3 / 3</code></pre>
+        </div>
+
+        <p>
+          La división se realiza antes que las sumas debido al orden de las
+          operaciones.
+        </p>
+
+        <h3>Paso 3: corregir la causa</h3>
+
+        <p>
+          Necesitamos sumar las tres notas antes de dividir:
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>promedio = (nota1 + nota2 + nota3) / 3</code></pre>
+        </div>
+
+        <h3>Paso 4: comprobar el resultado</h3>
+
+        <div class="recuadro-ejemplo">
+<pre><code>print(promedio)</code></pre>
+        </div>
+
+        <p>
+          Ahora obtenemos:
+        </p>
+
+        <div class="recuadro-ejemplo">
+<pre><code>80.0</code></pre>
+        </div>
+
+        <p>
+          Este ejemplo muestra una idea importante: el programa no tenía un
+          error de sintaxis. El problema estaba en la lógica de la expresión.
+        </p>
+
+        <h2 id="mundo-real">
+          ¿Cómo se utiliza el debugging en proyectos reales?
+        </h2>
+
+        <p>
+          En un proyecto real, un fallo puede depender de muchas partes:
+          datos recibidos, funciones, servicios externos, navegador, servidor
+          o cambios recientes en el código.
+        </p>
+
+        <p>
+          Un proceso de investigación puede incluir:
+        </p>
+
+        <ul class="lista-articulo">
+          <li>Reproducir el problema.</li>
+          <li>Revisar mensajes de error y registros.</li>
+          <li>Identificar qué parte del sistema está involucrada.</li>
+          <li>Comprobar cambios recientes.</li>
+          <li>Inspeccionar variables y datos de entrada.</li>
+          <li>Aplicar una corrección pequeña.</li>
+          <li>Verificar que el problema desapareció.</li>
+          <li>Comprobar que otras funciones siguen trabajando.</li>
+        </ul>
+
+        <p>
+          Cuando es posible, también puede añadirse una prueba que reproduzca
+          el fallo. Así se puede detectar si el mismo problema vuelve a
+          introducirse posteriormente.
+        </p>
+
+        <h2 id="errores">
+          Errores comunes al depurar
+        </h2>
+
+        <h3>Cambiar muchas cosas al mismo tiempo</h3>
+
+        <p>
+          Si modificas cinco partes del programa simultáneamente y el problema
+          desaparece, será más difícil saber cuál de los cambios lo solucionó.
+        </p>
+
+        <p>
+          Es preferible realizar cambios pequeños y comprobar el resultado.
+        </p>
+
+        <h3>Ignorar el mensaje de error</h3>
+
+        <p>
+          Copiar y modificar código sin leer primero el error puede hacerte
+          perder una de las pistas más importantes.
+        </p>
+
+        <h3>Asumir valores sin comprobarlos</h3>
+
+        <p>
+          Puedes pensar que una variable contiene <code>10</code>, cuando en
+          realidad contiene <code>"10"</code> como texto.
+        </p>
+
+        <p>
+          Comprobar los datos reales evita investigar una hipótesis incorrecta.
+        </p>
+
+        <h3>Corregir solamente el síntoma</h3>
+
+        <p>
+          Si una aplicación falla porque recibe datos inválidos, esconder el
+          mensaje de error no necesariamente soluciona el problema.
+        </p>
+
+        <p>
+          Puede ser necesario validar los datos antes de utilizarlos.
+        </p>
+
+        <h3>No volver a probar después de corregir</h3>
+
+        <p>
+          Una modificación puede solucionar un caso y afectar otro.
+          Por eso debemos comprobar tanto el escenario que fallaba como otros
+          comportamientos relacionados.
+        </p>
+
+        <section
+          class="seccion-articulo"
+          aria-labelledby="practica"
+        >
+
+          <h2 id="practica">
+            Compruébalo tú mismo
+          </h2>
+
+          <p>
+            El siguiente programa intenta calcular el precio final después de
+            aplicar un descuento del 15 %, pero contiene un error lógico:
+          </p>
+
+          <div class="recuadro-ejemplo">
+<pre><code>precio = 20000
+descuento = 15
+
+precio_final = precio - descuento
+
+print(f"Precio final: ₡{precio_final}")</code></pre>
+          </div>
+
+          <p>
+            Antes de ver la solución:
+          </p>
+
+          <ul class="lista-articulo">
+            <li>Calcula cuál debería ser el resultado.</li>
+            <li>Ejecuta mentalmente cada línea.</li>
+            <li>Identifica por qué el cálculo es incorrecto.</li>
+            <li>Corrige únicamente la línea necesaria.</li>
+          </ul>
+
+          <details class="recuadro-ejemplo">
+
+            <summary>
+              <strong>Ver una posible solución</strong>
+            </summary>
+
+<pre><code>precio = 20000
+descuento = 15
+
+precio_final = precio - (precio * descuento / 100)
+
+print(f"Precio final: ₡{precio_final}")</code></pre>
+
+            <p>
+              El problema era interpretar <code>15</code> como una cantidad
+              fija en lugar de utilizarlo como porcentaje.
+            </p>
+
+            <p>
+              El descuento es ₡3.000, por lo que el precio final es
+              ₡17.000.
+            </p>
+
+          </details>
+
+          <div class="recuadro-consejo">
+            <strong>Reto adicional</strong>
+            <p>
+              Modifica el programa para comprobar que el porcentaje de
+              descuento esté entre 0 y 100 antes de realizar el cálculo.
+            </p>
+          </div>
+
+        </section>
+
+        <h2 id="preguntas">
+          Preguntas frecuentes
+        </h2>
+
+        <section
+          class="faq-articulo"
+          aria-labelledby="preguntas"
+        >
+
+          <details>
+            <summary>
+              ¿Debugging significa solo corregir errores de sintaxis?
+            </summary>
+            <p>
+              No. También incluye errores de lógica, datos, rendimiento e
+              integración. Algunos de los problemas más difíciles aparecen
+              cuando el programa funciona, pero produce un resultado
+              incorrecto.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              ¿Usar print es una técnica válida?
+            </summary>
+            <p>
+              Sí. Es una forma sencilla de comprobar valores y entender el
+              recorrido del programa, especialmente al comenzar. Para
+              investigaciones más complejas, un depurador ofrece herramientas
+              adicionales.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              ¿Cómo evito que un error vuelva?
+            </summary>
+            <p>
+              Cuando sea posible, añade una prueba que reproduzca el fallo y
+              compruebe el comportamiento corregido. También conviene
+              documentar la causa cuando sea relevante.
+            </p>
+          </details>
+
+        </section>
+
+        <h2 id="conclusion">
+          Conclusión
+        </h2>
+
+        <p>
+          El debugging es una parte fundamental del desarrollo de software.
+          No consiste en probar cambios al azar, sino en investigar de manera
+          ordenada qué diferencia existe entre el comportamiento esperado y
+          el comportamiento real.
+        </p>
+
+        <p>
+          Aprender a leer mensajes de error, comprobar variables, aislar
+          problemas y formular hipótesis te ayudará a resolver fallos con
+          mayor precisión.
+        </p>
+
+        <p>
+          Con la práctica, encontrar errores deja de ser solamente un
+          obstáculo y se convierte en una oportunidad para comprender mejor
+          cómo funciona el código que estás escribiendo.
+        </p>
+
+        <section
+          class="autor-articulo"
+          aria-label="Información del autor"
+        >
+
+          <div
+            class="autor-icono"
+            aria-hidden="true"
+          >
+            &lt;/&gt;
+          </div>
+
+          <div class="autor-informacion">
+            <span>Artículo creado por</span>
+            <h2>ByteNova</h2>
+            <p>
+              Plataforma educativa dedicada a explicar programación,
+              desarrollo web, inteligencia artificial y ciberseguridad de
+              manera clara.
+            </p>
+            <a href="sobre">
+              Conoce más sobre ByteNova →
+            </a>
+          </div>
+
+        </section>
+
+        <aside
+          class="articulos-relacionados"
+          aria-labelledby="titulo-articulos-relacionados"
+        >
+
+          <h2 id="titulo-articulos-relacionados">
+            Continúa aprendiendo
+          </h2>
+
+          <div class="relacionados-grid">
+
+            <a href="que-es-un-algoritmo">
+              <span aria-hidden="true">📘</span>
+              <strong>¿Qué es un algoritmo?</strong>
+              <small>
+                Aprende cómo organizar una solución paso a paso.
+              </small>
+            </a>
+
+            <a href="que-son-condicionales">
+              <span aria-hidden="true">📘</span>
+              <strong>¿Qué son los condicionales?</strong>
+              <small>
+                Comprende cómo un programa toma decisiones.
+              </small>
+            </a>
+
+            <a href="que-son-funciones">
+              <span aria-hidden="true">📘</span>
+              <strong>¿Qué son las funciones?</strong>
+              <small>
+                Aprende a organizar y reutilizar bloques de código.
+              </small>
+            </a>
+
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+
+  </article>
+
+</main>
+
+<footer class="footer">
+
+  <div class="contenedor-footer">
+
+    <div class="footer-logo">
+
+      <a
+        class="marca-bytenova"
+        href="../index#inicio"
+        aria-label="Ir al inicio de ByteNova"
+      >
+        <span class="marca-icono" aria-hidden="true">
+          &lt;/&gt;
+        </span>
+        <span class="marca-texto">ByteNova</span>
+      </a>
+
+      <p>
+        Aprende tecnología desde cero con artículos, rutas, retos,
+        guías y recursos gratuitos.
+      </p>
+
+    </div>
+
+    <nav
+      class="footer-enlaces"
+      aria-label="Enlaces de aprendizaje del pie de página"
+    >
+      <h3>Aprender</h3>
+      <a href="../index#tecnologias">Tecnologías</a>
+      <a href="rutas">Rutas</a>
+      <a href="retos">Retos</a>
+      <a href="material">Guías</a>
+      <a href="articulos">Artículos</a>
+      <a href="glosario">Glosario</a>
+    </nav>
+
+    <nav
+      class="footer-enlaces"
+      aria-label="Enlaces informativos del pie de página"
+    >
+      <h3>ByteNova</h3>
+      <a href="sobre">Sobre ByteNova</a>
+      <a href="../index#contacto">Contacto</a>
+      <a href="privacidad">Privacidad</a>
+      <a href="terminos">Términos</a>
+      <a href="cookies">Cookies</a>
+    </nav>
+
+    <address class="footer-social">
+      <h3>Contacto</h3>
+      <p>
+        Preguntas, sugerencias o comentarios sobre nuestros
+        contenidos educativos.
+      </p>
+      <a href="mailto:bytenova339@gmail.com">
+        bytenova339@gmail.com
+      </a>
+    </address>
+
+  </div>
+
+  <div class="footer-copy">
+    <p>© 2026 ByteNova. Todos los derechos reservados.</p>
+    <p>Creado por Dylan Estrada.</p>
+  </div>
+
+</footer>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>
