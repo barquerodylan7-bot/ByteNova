@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-41QWQ3DC33"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-41QWQ3DC33');
+    </script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>¿Qué es JSON y para qué sirve? | ByteNova</title>
+<meta content="Aprende qué es JSON, cómo representa datos, cuál es su sintaxis y por qué se utiliza en APIs, JavaScript, configuraciones y aplicaciones web." name="description"/>
+<meta content="ByteNova" name="author"/>
+<meta content="index, follow" name="robots"/>
+<meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
+<meta content="#0f172a" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<meta content="article" property="og:type"/>
+<meta content="es_CR" property="og:locale"/>
+<meta content="ByteNova" property="og:site_name"/>
+<meta content="¿Qué es JSON y para qué sirve?" property="og:title"/>
+<meta content="Aprende qué es JSON, cómo representa datos, cuál es su sintaxis y por qué se utiliza en APIs, JavaScript, configuraciones y aplicaciones web." property="og:description"/>
+<meta content="https://bytenova.app/pages/que-es-json" property="og:url"/>
+<meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image"/>
+<meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image:secure_url"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="image/jpeg" property="og:image:type"/>
+<meta content="¿Qué es JSON y para qué sirve? | ByteNova" property="og:image:alt"/>
+<meta content="2026-08-17" property="article:published_time"/>
+<meta content="2026-08-17" property="article:modified_time"/>
+<meta content="Desarrollo web" property="article:section"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="¿Qué es JSON y para qué sirve?" name="twitter:title"/>
+<meta content="Aprende qué es JSON, cómo representa datos, cuál es su sintaxis y por qué se utiliza en APIs, JavaScript, configuraciones y aplicaciones web." name="twitter:description"/>
+<meta content="https://bytenova.app/images/bytenova-social.jpg" name="twitter:image"/>
+<meta content="¿Qué es JSON y para qué sirve? | ByteNova" name="twitter:image:alt"/>
+<link href="https://bytenova.app/pages/que-es-json" rel="canonical"/>
+<link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../css/style.min.css" rel="stylesheet"/>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://bytenova.app/pages/que-es-json#article",
+      "headline": "¿Qué es JSON y para qué sirve?",
+      "description": "Aprende qué es JSON, cómo representa datos, cuál es su sintaxis y por qué se utiliza en APIs, JavaScript, configuraciones y aplicaciones web.",
+      "url": "https://bytenova.app/pages/que-es-json",
+      "datePublished": "2026-08-17",
+      "dateModified": "2026-08-17",
+      "inLanguage": "es",
+      "articleSection": "Desarrollo web",
+      "isAccessibleForFree": true,
+      "author": {
+        "@type": "Organization",
+        "name": "ByteNova",
+        "url": "https://bytenova.app/pages/sobre"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ByteNova",
+        "url": "https://bytenova.app/",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://bytenova.app/images/bytenova-social.jpg",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "mainEntityOfPage": {
+        "@id": "https://bytenova.app/pages/que-es-json#webpage"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://bytenova.app/pages/que-es-json#webpage",
+      "url": "https://bytenova.app/pages/que-es-json",
+      "name": "¿Qué es JSON y para qué sirve?",
+      "description": "Aprende qué es JSON, cómo representa datos, cuál es su sintaxis y por qué se utiliza en APIs, JavaScript, configuraciones y aplicaciones web.",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bytenova.app/pages/que-es-json#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://bytenova.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Artículos",
+          "item": "https://bytenova.app/pages/articulos"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "JSON",
+          "item": "https://bytenova.app/pages/que-es-json"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bytenova.app/pages/que-es-json#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿JSON es un lenguaje de programación?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Es un formato de datos. No contiene instrucciones para ejecutar lógica."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿JSON pertenece solo a JavaScript?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Su sintaxis se inspiró en JavaScript, pero puede utilizarse desde muchos lenguajes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo escribir comentarios dentro de JSON?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El estándar JSON no admite comentarios."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Una API siempre usa JSON?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Puede utilizar otros formatos, aunque JSON es muy común en APIs web."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿JSON puede contener imágenes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No como tipo nativo. Puede contener texto que represente una URL o datos codificados, aunque eso no siempre es la mejor opción."
+          }
+        }
+      ]
+    }
+  ]
+}</script>
+<meta content="ca-pub-5369456672603969" name="google-adsense-account"/>
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5369456672603969">
+</script>
+</head>
+<body>
+<a class="saltar-contenido" href="#contenido-principal">
+        Saltar al contenido principal
+    </a>
+<header>
+<a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index#inicio">
+<span aria-hidden="true" class="marca-icono">&lt;/&gt;</span>
+<span class="marca-texto">ByteNova</span>
+</a>
+<button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle" type="button">
+<span aria-hidden="true">☰</span>
+</button>
+<nav aria-label="Navegación principal" id="menu-principal">
+<a href="../index#inicio">Inicio</a>
+<a href="sobre">Sobre</a>
+<a href="../index#tecnologias">Aprender</a>
+<a href="rutas">Rutas</a>
+<a href="retos">Retos</a>
+<a href="material">Guías</a>
+<a aria-current="page" href="articulos">Artículos</a>
+<a href="glosario">Glosario</a>
+<a href="../index#contacto">Contacto</a>
+<button aria-label="Activar modo oscuro" class="btn-modo" id="btn-modo" type="button">
+<span aria-hidden="true">🌙</span>
+</button>
+</nav>
+</header>
+<main class="sobre articulo" id="contenido-principal">
+<article aria-labelledby="titulo-que-es-json" class="sobre-contenido">
+<nav aria-label="Ruta de navegación" class="migas-navegacion">
+<a href="../index">Inicio</a>
+<span aria-hidden="true">›</span>
+<a href="articulos">Artículos</a>
+<span aria-hidden="true">›</span>
+<span aria-current="page">JSON</span>
+</nav>
+<span class="seccion-etiqueta"><span aria-hidden="true">🧩</span>
+                Desarrollo web</span>
+<h1 id="titulo-que-es-json">¿Qué es JSON y para qué sirve? <span aria-hidden="true">🧩</span></h1>
+<p class="articulo-meta">Publicado por ByteNova · <time datetime="2026-08-17">17 de agosto de 2026</time></p>
+<div class="articulo-resumen">
+<strong>En este artículo aprenderás:</strong>
+<p>Qué es JSON, cómo se organiza con objetos y arrays, cuáles son sus reglas de sintaxis y por qué es tan utilizado para intercambiar información entre aplicaciones y APIs.</p>
+</div>
+<div class="articulo-layout">
+<details class="indice-articulo">
+<summary>
+<span aria-hidden="true">📑</span>
+                        Contenido del artículo
+                    </summary>
+<nav aria-label="Contenido del artículo"><a href="#que-es">1. ¿Qué es JSON?</a><a href="#para-que">2. ¿Para qué sirve JSON?</a><a href="#estructura">3. Estructura básica</a><a href="#tipos">4. Tipos de valores permitidos</a><a href="#objetos">5. Objetos JSON</a><a href="#arrays">6. Arrays en JSON</a><a href="#anidacion">7. Datos anidados</a><a href="#reglas">8. Reglas de sintaxis importantes</a><a href="#json-js">9. JSON y JavaScript</a><a href="#apis">10. JSON y las APIs</a><a href="#headers">11. Content-Type</a><a href="#json-vs-xml">12. JSON vs. XML</a><a href="#config">13. JSON en archivos de configuración</a><a href="#validar">14. Cómo validar JSON</a><a href="#seguridad">15. JSON y seguridad</a><a href="#errores">16. Errores frecuentes</a><a href="#practica">17. Ejercicio práctico</a><a href="#json-valid">18. JSON válido vs. JSON bien diseñado</a><a href="#fechas">19. ¿Cómo se representan fechas?</a><a href="#numeros">20. Números y precisión</a><a href="#schema">21. JSON Schema</a><a href="#api-ejemplo">22. Ejemplo de respuesta de una API</a><a href="#errores-api">23. Manejo de errores con JSON</a><a href="#serializacion">24. Serialización y deserialización</a><a href="#preguntas">25. Preguntas frecuentes</a><a href="#conclusion">26. Conclusión</a></nav>
+</details>
+<div aria-label="Contenido principal del artículo" class="articulo-cuerpo"><p class="articulo-introduccion">JSON es un formato de texto utilizado para representar información estructurada. Es común en APIs, archivos de configuración y aplicaciones web porque puede expresar objetos, listas, números, textos, valores booleanos y datos nulos de una forma relativamente legible.</p><h2 id="que-es">¿Qué es JSON?</h2><p>JSON significa JavaScript Object Notation. Aunque su sintaxis se inspiró en JavaScript, es un formato independiente que puede utilizarse desde muchos lenguajes.</p><p>Su función principal es representar datos, no ejecutar lógica.</p><h2 id="para-que">¿Para qué sirve JSON?</h2><p>JSON se utiliza para intercambiar información entre sistemas, guardar configuraciones y representar estructuras de datos de forma portable.</p><p>Una API puede enviar información de usuarios, productos o clima en JSON para que una aplicación la procese.</p><h2 id="estructura">Estructura básica</h2><p>JSON utiliza objetos y arrays. Un objeto agrupa pares clave-valor entre llaves y un array organiza valores entre corchetes.</p><p>Las claves de un objeto se escriben como cadenas de texto entre comillas dobles.</p><div class="recuadro-ejemplo"><pre><code>{
+  "nombre": "ByteNova",
+  "activo": true,
+  "temas": ["programación", "IA", "ciberseguridad"]
+}</code></pre></div><h2 id="tipos">Tipos de valores permitidos</h2><p>JSON admite cadenas de texto, números, objetos, arrays, valores booleanos y null.</p><p>No admite directamente funciones, comentarios, fechas como tipo especial ni valores undefined.</p><h2 id="objetos">Objetos JSON</h2><p>Un objeto representa propiedades relacionadas. Cada clave debe ir entre comillas dobles y se separa del valor mediante dos puntos.</p><p>Las propiedades se separan con comas.</p><div class="recuadro-ejemplo"><pre><code>{
+  "id": 7,
+  "titulo": "Introducción a JSON",
+  "publicado": true
+}</code></pre></div><h2 id="arrays">Arrays en JSON</h2><p>Un array permite guardar varios valores en orden. Puede contener números, textos, objetos u otros arrays.</p><p>Es común que una API devuelva una lista de registros como un array de objetos.</p><div class="recuadro-ejemplo"><pre><code>[
+  {"id": 1, "nombre": "HTML"},
+  {"id": 2, "nombre": "CSS"},
+  {"id": 3, "nombre": "JavaScript"}
+]</code></pre></div><h2 id="anidacion">Datos anidados</h2><p>Los objetos y arrays pueden combinarse para representar estructuras más complejas. Un usuario puede tener una dirección como objeto y una lista de roles como array.</p><p>Demasiada anidación puede dificultar el consumo, por lo que el diseño del formato también importa.</p><h2 id="reglas">Reglas de sintaxis importantes</h2><p>Las cadenas usan comillas dobles, no se permiten comas finales y las claves de objetos deben escribirse entre comillas.</p><p>Un pequeño error de sintaxis puede hacer que todo el documento sea inválido.</p><h2 id="json-js">JSON y JavaScript</h2><p>JavaScript incluye JSON.parse para convertir texto JSON en valores del lenguaje y JSON.stringify para convertir valores compatibles a texto JSON.</p><p>Esto facilita guardar o enviar información, pero parsear datos no significa que debas confiar automáticamente en su contenido.</p><div class="recuadro-ejemplo"><pre><code>const texto = '{"nombre":"ByteNova"}';
+const datos = JSON.parse(texto);
+
+console.log(datos.nombre);</code></pre></div><h2 id="apis">JSON y las APIs</h2><p>Muchas APIs web utilizan JSON como formato de solicitud y respuesta. El cliente envía o recibe texto JSON a través de HTTP y lo convierte en estructuras que el lenguaje puede utilizar.</p><p>Una API no está obligada a usar JSON, pero es una de las opciones más comunes.</p><h2 id="headers">Content-Type</h2><p>Cuando un servidor envía JSON por HTTP, suele indicar Content-Type: application/json. Esto comunica al cliente qué tipo de contenido contiene la respuesta.</p><p>Los encabezados forman parte del protocolo HTTP y ayudan a interpretar correctamente los datos.</p><h2 id="json-vs-xml">JSON vs. XML</h2><p>JSON y XML son formatos diferentes para representar información estructurada. JSON suele ser más compacto para muchos casos web, mientras XML ofrece características propias y sigue utilizándose en determinados sistemas.</p><p>No existe una regla universal que haga que uno sea siempre mejor.</p><h2 id="config">JSON en archivos de configuración</h2><p>Muchas herramientas utilizan archivos JSON para guardar configuración. package.json en proyectos JavaScript es un ejemplo conocido.</p><p>Como estos archivos pueden controlar herramientas y dependencias, un error de sintaxis puede impedir que el proyecto funcione.</p><h2 id="validar">Cómo validar JSON</h2><p>Antes de utilizar un documento externo conviene verificar que tenga sintaxis válida y después validar que su estructura sea la esperada.</p><p>Una respuesta puede ser JSON válido y aun así contener campos faltantes, tipos incorrectos o datos inesperados.</p><h2 id="seguridad">JSON y seguridad</h2><p>JSON es solo un formato; no vuelve seguros los datos. Las aplicaciones deben validar información recibida y escapar contenido cuando lo muestran en contextos donde podría interpretarse como código o HTML.</p><p>Nunca confíes en datos solo porque llegaron en JSON.</p><h2 id="errores">Errores frecuentes</h2><p>Usar comillas simples, dejar una coma al final, escribir comentarios o asumir que cualquier objeto de JavaScript puede convertirse sin problemas son errores comunes.</p><p>También es frecuente confundir JSON con un objeto ya procesado por el lenguaje.</p><h2 id="practica">Ejercicio práctico</h2><p>Crea un objeto JSON que represente un curso con título, duración, nivel y una lista de temas. Después añade un objeto autor y un valor booleano que indique si está disponible.</p><p>Valídalo y luego intenta leerlo desde JavaScript con JSON.parse.</p><h2 id="json-valid">JSON válido vs. JSON bien diseñado</h2><p>Un documento puede ser sintácticamente válido y aun así estar mal diseñado para una aplicación. Nombres ambiguos, estructuras excesivamente profundas o tipos inconsistentes dificultan el consumo.</p><p>Un buen formato mantiene nombres claros, tipos previsibles y una estructura estable que los clientes puedan interpretar.</p><h2 id="fechas">¿Cómo se representan fechas?</h2><p>JSON no tiene un tipo fecha nativo. Las fechas suelen enviarse como cadenas, por ejemplo en formatos basados en ISO 8601.</p><p>El consumidor debe interpretar esa cadena y considerar zona horaria y formato para evitar errores.</p><h2 id="numeros">Números y precisión</h2><p>JSON representa números de forma genérica, pero el lenguaje que los procesa puede tener límites de precisión. Identificadores muy grandes, cantidades financieras o valores científicos pueden requerir tratamiento especial.</p><p>Por eso algunas APIs envían ciertos identificadores como texto aunque visualmente parezcan números.</p><h2 id="schema">JSON Schema</h2><p>JSON Schema es una especificación que permite describir la estructura esperada de un documento JSON: campos obligatorios, tipos, rangos y otras reglas.</p><p>Puede utilizarse para validar datos antes de procesarlos y documentar contratos entre sistemas.</p><h2 id="api-ejemplo">Ejemplo de respuesta de una API</h2><p>Una API podría devolver un objeto con información del usuario y una lista de artículos. El cliente procesa esa estructura y decide cómo mostrarla.</p><p>El formato debe ser estable y documentado para que distintas aplicaciones puedan utilizarlo sin adivinar qué significa cada campo.</p><div class="recuadro-ejemplo"><pre><code>{
+  "usuario": {
+    "id": 25,
+    "nombre": "Dylan"
+  },
+  "articulos": [
+    {"id": 1, "titulo": "¿Qué es JSON?"}
+  ]
+}</code></pre></div><h2 id="errores-api">Manejo de errores con JSON</h2><p>Muchas APIs devuelven errores en JSON con campos como código, mensaje y detalles. Esto permite que una aplicación muestre información útil o tome decisiones según el tipo de problema.</p><p>El cliente debe considerar que una respuesta puede tener una estructura distinta cuando ocurre un error.</p><h2 id="serializacion">Serialización y deserialización</h2><p>Convertir una estructura del programa a JSON se conoce como serialización. Hacer el proceso inverso para obtener objetos o valores se conoce como deserialización.</p><p>Los nombres pueden variar entre bibliotecas, pero la idea aparece constantemente en comunicación entre sistemas.</p><h2 id="preguntas">Preguntas frecuentes</h2><section aria-labelledby="preguntas" class="faq-articulo"><details><summary>¿JSON es un lenguaje de programación?</summary><p>No. Es un formato de datos. No contiene instrucciones para ejecutar lógica.</p></details><details><summary>¿JSON pertenece solo a JavaScript?</summary><p>No. Su sintaxis se inspiró en JavaScript, pero puede utilizarse desde muchos lenguajes.</p></details><details><summary>¿Puedo escribir comentarios dentro de JSON?</summary><p>El estándar JSON no admite comentarios.</p></details><details><summary>¿Una API siempre usa JSON?</summary><p>No. Puede utilizar otros formatos, aunque JSON es muy común en APIs web.</p></details><details><summary>¿JSON puede contener imágenes?</summary><p>No como tipo nativo. Puede contener texto que represente una URL o datos codificados, aunque eso no siempre es la mejor opción.</p></details></section><h2 id="conclusion">Conclusión</h2><p>JSON se convirtió en un formato fundamental de la Web porque representa datos estructurados de forma sencilla y portable. Comprender objetos, arrays, tipos y reglas de sintaxis facilita trabajar con JavaScript, APIs y configuraciones.</p><nav aria-label="Navegación entre artículos" class="navegacion-articulos"><a class="nav-anterior" href="articulos"><span class="nav-etiqueta">← Ver artículos</span><strong>Explora todos los artículos</strong></a><a class="nav-siguiente" href="que-es-una-api"><span class="nav-etiqueta">Siguiente lectura →</span><strong>¿Qué es una API?</strong></a></nav><section aria-label="Información del autor" class="autor-articulo"><div aria-hidden="true" class="autor-icono">&lt;/&gt;</div><div class="autor-informacion"><span>Artículo creado por</span><h2>ByteNova</h2><p>Proyecto educativo creado por Dylan Estrada. ByteNova publica contenido sobre programación, desarrollo web, inteligencia artificial y ciberseguridad con un enfoque claro para principiantes y revisión editorial continua.</p><a href="sobre">Conoce más sobre ByteNova →</a></div></section><aside aria-labelledby="titulo-articulos-relacionados" class="articulos-relacionados"><h2 id="titulo-articulos-relacionados">Continúa aprendiendo</h2><div class="relacionados-grid"><a href="que-es-una-api"><span aria-hidden="true">🔌</span><strong>¿Qué es una API?</strong><small>Descubre dónde se utiliza JSON para intercambiar información.</small></a><a href="que-es-javascript"><span aria-hidden="true">⚡</span><strong>¿Qué es JavaScript?</strong><small>Aprende a procesar JSON dentro del navegador.</small></a><a href="que-son-http-y-https"><span aria-hidden="true">🌐</span><strong>HTTP y HTTPS</strong><small>Comprende cómo viajan datos JSON por la Web.</small></a></div></aside></div>
+</div>
+</article>
+</main>
+<footer class="footer">
+<div class="contenedor-footer">
+<div class="footer-logo">
+<a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index#inicio">
+<span aria-hidden="true" class="marca-icono">
+                        &lt;/&gt;
+                    </span>
+<span class="marca-texto">ByteNova</span>
+</a>
+<p>
+                    Aprende tecnología desde cero con artículos, rutas,
+                    retos, guías y recursos gratuitos.
+                </p>
+</div>
+<nav aria-label="Enlaces de aprendizaje del pie de página" class="footer-enlaces">
+<h3>Aprender</h3>
+<a href="../index#tecnologias">Tecnologías</a>
+<a href="rutas">Rutas</a>
+<a href="retos">Retos</a>
+<a href="material">Guías</a>
+<a aria-current="page" href="articulos">Artículos</a>
+<a href="glosario">Glosario</a>
+</nav>
+<nav aria-label="Enlaces informativos del pie de página" class="footer-enlaces">
+<h3>ByteNova</h3>
+<a href="sobre">Sobre ByteNova</a>
+<a href="../index#contacto">Contacto</a>
+<a href="privacidad">Privacidad</a>
+<a href="terminos">Términos</a>
+<a href="cookies">Cookies</a>
+</nav>
+<address class="footer-social">
+<h3>Contacto</h3>
+<p>
+                    Preguntas, sugerencias o comentarios sobre nuestros
+                    contenidos educativos.
+                </p>
+<a href="mailto:bytenova339@gmail.com">
+                    bytenova339@gmail.com
+                </a>
+<a aria-label="TikTok de ByteNova" href="https://www.tiktok.com/@bytenova.app" rel="noopener noreferrer" target="_blank">
+        TikTok · @bytenova.app
+      </a>
+</address>
+</div>
+<div class="footer-copy">
+<p>
+                © 2026 ByteNova. Todos los derechos reservados.
+            </p>
+<p>
+                Creado por Dylan Estrada.
+            </p>
+</div>
+</footer>
+<script src="../js/script.js"></script>
+</body>
+</html>

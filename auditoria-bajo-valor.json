@@ -1,0 +1,258 @@
+{
+  "note": "Priorización interna. Los umbrales de palabras NO son requisitos de Google AdSense.",
+  "pages_analyzed": 79,
+  "median_words": 1484,
+  "average_words": 1542,
+  "priority_pages": [
+    {
+      "file": "material.html",
+      "title": "Guías y materiales gratuitos para aprender tecnología",
+      "words": 527,
+      "h2": 4,
+      "signals": 2,
+      "support": 1,
+      "risk": 6,
+      "reasons": "527 palabras, 4 H2, 2 señales prácticas"
+    },
+    {
+      "file": "glosario.html",
+      "title": "Conceptos tecnológicos explicados de forma simple",
+      "words": 581,
+      "h2": 2,
+      "signals": 2,
+      "support": 1,
+      "risk": 6,
+      "reasons": "581 palabras, 2 H2, 2 señales prácticas"
+    },
+    {
+      "file": "terminos.html",
+      "title": "Términos y Condiciones",
+      "words": 645,
+      "h2": 13,
+      "signals": 2,
+      "support": 0,
+      "risk": 6,
+      "reasons": "645 palabras, 2 señales prácticas, sin elementos de apoyo"
+    },
+    {
+      "file": "cookies.html",
+      "title": "Política de Cookies",
+      "words": 427,
+      "h2": 9,
+      "signals": 0,
+      "support": 1,
+      "risk": 5,
+      "reasons": "427 palabras, 0 señales prácticas"
+    },
+    {
+      "file": "privacidad.html",
+      "title": "Política de Privacidad",
+      "words": 592,
+      "h2": 10,
+      "signals": 1,
+      "support": 1,
+      "risk": 5,
+      "reasons": "592 palabras, 1 señales prácticas"
+    },
+    {
+      "file": "articulos.html",
+      "title": "Artículos para aprender tecnología desde cero",
+      "words": 1735,
+      "h2": 2,
+      "signals": 3,
+      "support": 0,
+      "risk": 3,
+      "reasons": "2 H2, 3 señales prácticas, sin elementos de apoyo"
+    },
+    {
+      "file": "sobre.html",
+      "title": "Sobre ByteNova",
+      "words": 802,
+      "h2": 10,
+      "signals": 5,
+      "support": 1,
+      "risk": 2,
+      "reasons": "802 palabras"
+    },
+    {
+      "file": "retos.html",
+      "title": "Pon a prueba lo aprendido con retos prácticos",
+      "words": 1116,
+      "h2": 5,
+      "signals": 4,
+      "support": 30,
+      "risk": 2,
+      "reasons": "1116 palabras, 4 señales prácticas"
+    },
+    {
+      "file": "guia-javascript.html",
+      "title": "JavaScript para principiantes: guía desde cero ⚡",
+      "words": 1251,
+      "h2": 19,
+      "signals": 4,
+      "support": 87,
+      "risk": 2,
+      "reasons": "1251 palabras, 4 señales prácticas"
+    },
+    {
+      "file": "rutas.html",
+      "title": "Elige una ruta y aprende tecnología paso a paso",
+      "words": 1255,
+      "h2": 7,
+      "signals": 3,
+      "support": 6,
+      "risk": 2,
+      "reasons": "1255 palabras, 3 señales prácticas"
+    },
+    {
+      "file": "que-es-programacion.html",
+      "title": "¿Qué es la programación y para qué sirve? 💻",
+      "words": 1268,
+      "h2": 13,
+      "signals": 6,
+      "support": 6,
+      "risk": 1,
+      "reasons": "1268 palabras"
+    },
+    {
+      "file": "que-es-ransomware.html",
+      "title": "¿Qué es el ransomware y cómo protegerte? 🔒",
+      "words": 1392,
+      "h2": 15,
+      "signals": 4,
+      "support": 8,
+      "risk": 1,
+      "reasons": "4 señales prácticas"
+    },
+    {
+      "file": "que-es-malware.html",
+      "title": "¿Qué es el malware y cómo protegerte? 🦠",
+      "words": 1403,
+      "h2": 15,
+      "signals": 4,
+      "support": 8,
+      "risk": 1,
+      "reasons": "4 señales prácticas"
+    },
+    {
+      "file": "guia-internet-redes.html",
+      "title": "Internet y redes para principiantes 🌐",
+      "words": 1449,
+      "h2": 17,
+      "signals": 4,
+      "support": 21,
+      "risk": 1,
+      "reasons": "4 señales prácticas"
+    },
+    {
+      "file": "guia-linux.html",
+      "title": "Linux para principiantes: guía desde cero 🐧",
+      "words": 1587,
+      "h2": 18,
+      "signals": 4,
+      "support": 102,
+      "risk": 1,
+      "reasons": "4 señales prácticas"
+    },
+    {
+      "file": "que-es-diseno-responsive.html",
+      "title": "¿Qué es el diseño responsive y cómo funciona? 📱",
+      "words": 1662,
+      "h2": 17,
+      "signals": 4,
+      "support": 33,
+      "risk": 1,
+      "reasons": "4 señales prácticas"
+    },
+    {
+      "file": "que-es-ia-responsable.html",
+      "title": "¿Qué es la inteligencia artificial responsable? ⚖️",
+      "words": 1765,
+      "h2": 23,
+      "signals": 4,
+      "support": 19,
+      "risk": 1,
+      "reasons": "4 señales prácticas"
+    },
+    {
+      "file": "que-es-accesibilidad-web.html",
+      "title": "¿Qué es la accesibilidad web y por qué es importante? ♿",
+      "words": 1879,
+      "h2": 18,
+      "signals": 4,
+      "support": 47,
+      "risk": 1,
+      "reasons": "4 señales prácticas"
+    },
+    {
+      "file": "que-son-embeddings.html",
+      "title": "¿Qué son los embeddings en inteligencia artificial? 🧭",
+      "words": 1923,
+      "h2": 16,
+      "signals": 4,
+      "support": 33,
+      "risk": 1,
+      "reasons": "4 señales prácticas"
+    },
+    {
+      "file": "que-es-una-vpn.html",
+      "title": "¿Qué es una VPN y cómo funciona? 🛡️",
+      "words": 1331,
+      "h2": 15,
+      "signals": 5,
+      "support": 9,
+      "risk": 0,
+      "reasons": ""
+    },
+    {
+      "file": "que-es-una-api.html",
+      "title": "¿Qué es una API y cómo funciona? 🔗",
+      "words": 1335,
+      "h2": 15,
+      "signals": 5,
+      "support": 16,
+      "risk": 0,
+      "reasons": ""
+    },
+    {
+      "file": "que-son-clases-programacion.html",
+      "title": "¿Qué son las clases en programación? 🏗️",
+      "words": 1347,
+      "h2": 14,
+      "signals": 5,
+      "support": 35,
+      "risk": 0,
+      "reasons": ""
+    },
+    {
+      "file": "guia-html-css.html",
+      "title": "HTML y CSS para principiantes: guía desde cero 📘",
+      "words": 1354,
+      "h2": 17,
+      "signals": 5,
+      "support": 72,
+      "risk": 0,
+      "reasons": ""
+    },
+    {
+      "file": "que-son-condicionales.html",
+      "title": "¿Qué son las estructuras condicionales? 🔀",
+      "words": 1361,
+      "h2": 14,
+      "signals": 5,
+      "support": 91,
+      "risk": 0,
+      "reasons": ""
+    },
+    {
+      "file": "que-es-inteligencia-artificial.html",
+      "title": "¿Qué es la inteligencia artificial y cómo funciona? 🤖",
+      "words": 1365,
+      "h2": 15,
+      "signals": 6,
+      "support": 6,
+      "risk": 0,
+      "reasons": ""
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-41QWQ3DC33"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-41QWQ3DC33');
+    </script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>¿Qué es un compilador y qué es un intérprete? | ByteNova</title>
+<meta content="Aprende la diferencia entre compilador e intérprete, cómo transforman código fuente y por qué distintos lenguajes utilizan modelos de ejecución diferentes." name="description"/>
+<meta content="ByteNova" name="author"/>
+<meta content="index, follow" name="robots"/>
+<meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
+<meta content="#0f172a" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<meta content="article" property="og:type"/>
+<meta content="es_CR" property="og:locale"/>
+<meta content="ByteNova" property="og:site_name"/>
+<meta content="¿Qué es un compilador y qué es un intérprete?" property="og:title"/>
+<meta content="Aprende la diferencia entre compilador e intérprete, cómo transforman código fuente y por qué distintos lenguajes utilizan modelos de ejecución diferentes." property="og:description"/>
+<meta content="https://bytenova.app/pages/que-es-un-compilador-y-un-interprete" property="og:url"/>
+<meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image"/>
+<meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image:secure_url"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="image/jpeg" property="og:image:type"/>
+<meta content="¿Qué es un compilador y qué es un intérprete? | ByteNova" property="og:image:alt"/>
+<meta content="2026-08-17" property="article:published_time"/>
+<meta content="2026-08-17" property="article:modified_time"/>
+<meta content="Programación" property="article:section"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="¿Qué es un compilador y qué es un intérprete?" name="twitter:title"/>
+<meta content="Aprende la diferencia entre compilador e intérprete, cómo transforman código fuente y por qué distintos lenguajes utilizan modelos de ejecución diferentes." name="twitter:description"/>
+<meta content="https://bytenova.app/images/bytenova-social.jpg" name="twitter:image"/>
+<meta content="¿Qué es un compilador y qué es un intérprete? | ByteNova" name="twitter:image:alt"/>
+<link href="https://bytenova.app/pages/que-es-un-compilador-y-un-interprete" rel="canonical"/>
+<link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../css/style.min.css" rel="stylesheet"/>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://bytenova.app/pages/que-es-un-compilador-y-un-interprete#article",
+      "headline": "¿Qué es un compilador y qué es un intérprete?",
+      "description": "Aprende la diferencia entre compilador e intérprete, cómo transforman código fuente y por qué distintos lenguajes utilizan modelos de ejecución diferentes.",
+      "url": "https://bytenova.app/pages/que-es-un-compilador-y-un-interprete",
+      "datePublished": "2026-08-17",
+      "dateModified": "2026-08-17",
+      "inLanguage": "es",
+      "articleSection": "Programación",
+      "isAccessibleForFree": true,
+      "author": {
+        "@type": "Organization",
+        "name": "ByteNova",
+        "url": "https://bytenova.app/pages/sobre"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ByteNova",
+        "url": "https://bytenova.app/",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://bytenova.app/images/bytenova-social.jpg",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "mainEntityOfPage": {
+        "@id": "https://bytenova.app/pages/que-es-un-compilador-y-un-interprete#webpage"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://bytenova.app/pages/que-es-un-compilador-y-un-interprete#webpage",
+      "url": "https://bytenova.app/pages/que-es-un-compilador-y-un-interprete",
+      "name": "¿Qué es un compilador y qué es un intérprete?",
+      "description": "Aprende la diferencia entre compilador e intérprete, cómo transforman código fuente y por qué distintos lenguajes utilizan modelos de ejecución diferentes.",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bytenova.app/pages/que-es-un-compilador-y-un-interprete#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://bytenova.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Artículos",
+          "item": "https://bytenova.app/pages/articulos"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Compiladores e intérpretes",
+          "item": "https://bytenova.app/pages/que-es-un-compilador-y-un-interprete"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bytenova.app/pages/que-es-un-compilador-y-un-interprete#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Python es compilado o interpretado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Suele describirse como interpretado, pero implementaciones como CPython compilan el código a bytecode antes de ejecutarlo en una máquina virtual."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Java es compilado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Java normalmente compila código fuente a bytecode, que después ejecuta la JVM y puede utilizar JIT."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Un compilador siempre produce un .exe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Puede producir código máquina, bytecode, objetos, bibliotecas u otras representaciones."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Interpretado significa más lento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No necesariamente. JIT, optimizaciones y el tipo de tarea influyen en el rendimiento real."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Necesito conocer esto para empezar a programar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No en profundidad, pero entender la idea ayuda a interpretar errores y a comprender cómo se ejecuta tu código."
+          }
+        }
+      ]
+    }
+  ]
+}</script>
+<meta content="ca-pub-5369456672603969" name="google-adsense-account"/>
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5369456672603969">
+</script>
+</head>
+<body>
+<a class="saltar-contenido" href="#contenido-principal">
+        Saltar al contenido principal
+    </a>
+<header>
+<a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index#inicio">
+<span aria-hidden="true" class="marca-icono">&lt;/&gt;</span>
+<span class="marca-texto">ByteNova</span>
+</a>
+<button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle" type="button">
+<span aria-hidden="true">☰</span>
+</button>
+<nav aria-label="Navegación principal" id="menu-principal">
+<a href="../index#inicio">Inicio</a>
+<a href="sobre">Sobre</a>
+<a href="../index#tecnologias">Aprender</a>
+<a href="rutas">Rutas</a>
+<a href="retos">Retos</a>
+<a href="material">Guías</a>
+<a aria-current="page" href="articulos">Artículos</a>
+<a href="glosario">Glosario</a>
+<a href="../index#contacto">Contacto</a>
+<button aria-label="Activar modo oscuro" class="btn-modo" id="btn-modo" type="button">
+<span aria-hidden="true">🌙</span>
+</button>
+</nav>
+</header>
+<main class="sobre articulo" id="contenido-principal">
+<article aria-labelledby="titulo-que-es-un-compilador-y-un-interprete" class="sobre-contenido">
+<nav aria-label="Ruta de navegación" class="migas-navegacion">
+<a href="../index">Inicio</a>
+<span aria-hidden="true">›</span>
+<a href="articulos">Artículos</a>
+<span aria-hidden="true">›</span>
+<span aria-current="page">Compiladores e intérpretes</span>
+</nav>
+<span class="seccion-etiqueta"><span aria-hidden="true">⚙️</span>
+                Programación</span>
+<h1 id="titulo-que-es-un-compilador-y-un-interprete">¿Qué es un compilador y qué es un intérprete? <span aria-hidden="true">⚙️</span></h1>
+<p class="articulo-meta">Publicado por ByteNova · <time datetime="2026-08-17">17 de agosto de 2026</time></p>
+<div class="articulo-resumen">
+<strong>En este artículo aprenderás:</strong>
+<p>Qué hace un compilador, qué hace un intérprete, cómo se transforma el código fuente y por qué la diferencia entre compilación e interpretación no siempre es absoluta.</p>
+</div>
+<div class="articulo-layout">
+<details class="indice-articulo">
+<summary>
+<span aria-hidden="true">📑</span>
+                        Contenido del artículo
+                    </summary>
+<nav aria-label="Contenido del artículo"><a href="#codigo-fuente">1. ¿Qué es el código fuente?</a><a href="#compilador">2. ¿Qué es un compilador?</a><a href="#proceso-compilacion">3. Etapas de una compilación</a><a href="#interprete">4. ¿Qué es un intérprete?</a><a href="#diferencias">5. Compilador vs. intérprete</a><a href="#ejemplos">6. Ejemplos conocidos</a><a href="#bytecode">7. ¿Qué es bytecode?</a><a href="#maquina-virtual">8. Máquinas virtuales</a><a href="#jit">9. Compilación JIT</a><a href="#errores">10. Errores de compilación y de ejecución</a><a href="#rendimiento">11. Rendimiento</a><a href="#portabilidad">12. Portabilidad</a><a href="#distribucion">13. Distribución de programas</a><a href="#herramientas">14. Compiladores dentro de un entorno de desarrollo</a><a href="#transpilador">15. ¿Qué es un transpilador?</a><a href="#errores-comunes">16. Confusiones frecuentes</a><a href="#practica">17. Ejercicio práctico</a><a href="#lexer">18. Análisis léxico</a><a href="#parser">19. Análisis sintáctico</a><a href="#semantica">20. Análisis semántico</a><a href="#optimizacion">21. Optimización</a><a href="#linker">22. ¿Qué hace el enlazador?</a><a href="#runtime">23. ¿Qué es el runtime?</a><a href="#repl">24. REPL e interpretación interactiva</a><a href="#build">25. Sistemas de construcción</a><a href="#preguntas">26. Preguntas frecuentes</a><a href="#conclusion">27. Conclusión</a></nav>
+</details>
+<div aria-label="Contenido principal del artículo" class="articulo-cuerpo"><p class="articulo-introduccion">Cuando escribes código, la computadora necesita algún mecanismo para transformarlo o ejecutarlo. Los compiladores y los intérpretes son dos ideas fundamentales para comprender cómo un programa escrito por una persona llega a ejecutarse en una máquina.</p><h2 id="codigo-fuente">¿Qué es el código fuente?</h2><p>El código fuente es el texto que escriben los desarrolladores utilizando un lenguaje de programación. Está diseñado para que las personas puedan expresar algoritmos y estructuras con una sintaxis definida.</p><p>La computadora no ejecuta necesariamente ese texto de forma directa.</p><h2 id="compilador">¿Qué es un compilador?</h2><p>Un compilador analiza el código fuente y lo transforma a otra representación antes de ejecutar el programa. En algunos lenguajes genera código máquina o un ejecutable; en otros produce bytecode u otra forma intermedia.</p><p>La compilación también puede detectar errores de sintaxis y ciertos problemas antes de ejecutar.</p><h2 id="proceso-compilacion">Etapas de una compilación</h2><p>Una explicación simplificada incluye análisis léxico, análisis sintáctico, comprobaciones semánticas, optimización y generación de código.</p><p>Los compiladores reales pueden tener muchas más etapas, pero esta secuencia ayuda a comprender que la transformación no ocurre en un solo paso.</p><h2 id="interprete">¿Qué es un intérprete?</h2><p>Un intérprete ejecuta instrucciones mediante un programa que lee y procesa el código o una representación intermedia durante la ejecución.</p><p>Desde la perspectiva del usuario, esto puede permitir ejecutar código sin generar primero un ejecutable independiente.</p><h2 id="diferencias">Compilador vs. intérprete</h2><p>La comparación tradicional dice que un compilador traduce antes de ejecutar y un intérprete procesa durante la ejecución. Es una simplificación útil para empezar.</p><p>Los sistemas modernos pueden combinar ambas ideas, por lo que la frontera no siempre es absoluta.</p><h2 id="ejemplos">Ejemplos conocidos</h2><p>C y C++ suelen asociarse con compilación a código máquina. Python suele describirse como interpretado, aunque sus implementaciones pueden compilar a bytecode. Java compila a bytecode que ejecuta la JVM.</p><p>Estos ejemplos muestran por qué es mejor hablar de implementaciones y modelos de ejecución que usar etiquetas rígidas.</p><h2 id="bytecode">¿Qué es bytecode?</h2><p>El bytecode es una representación intermedia diseñada para una máquina virtual, no necesariamente para el procesador físico.</p><p>Java y Python utilizan formas de bytecode en implementaciones comunes, aunque su ejecución posterior difiere.</p><h2 id="maquina-virtual">Máquinas virtuales</h2><p>Una máquina virtual de lenguaje ofrece un entorno que ejecuta una representación intermedia. Esto ayuda a separar el programa de detalles específicos del hardware.</p><p>La JVM es un ejemplo conocido.</p><h2 id="jit">Compilación JIT</h2><p>JIT significa Just-In-Time. Un sistema JIT puede compilar partes del programa durante la ejecución cuando detecta que conviene hacerlo.</p><p>Este enfoque permite combinar flexibilidad con optimizaciones basadas en el comportamiento real del programa.</p><h2 id="errores">Errores de compilación y de ejecución</h2><p>Un error de compilación impide completar la transformación del programa. Un error de ejecución aparece cuando el programa ya está funcionando y ocurre una condición problemática.</p><p>Distinguirlos ayuda a depurar con más precisión.</p><h2 id="rendimiento">Rendimiento</h2><p>Los programas compilados a código máquina pueden evitar parte del trabajo de traducción durante la ejecución, pero eso no significa que siempre sean más rápidos en todos los escenarios.</p><p>JIT, optimizaciones, bibliotecas, algoritmos y hardware también influyen.</p><h2 id="portabilidad">Portabilidad</h2><p>Un ejecutable nativo puede depender del sistema operativo y arquitectura para los que fue compilado. Las máquinas virtuales pueden facilitar portabilidad si existe un entorno compatible.</p><p>La portabilidad también depende de bibliotecas, APIs y comportamiento del programa.</p><h2 id="distribucion">Distribución de programas</h2><p>Un lenguaje compilado puede distribuir ejecutables, mientras otros proyectos distribuyen código fuente que requiere un entorno o intérprete instalado.</p><p>Cada enfoque tiene ventajas relacionadas con tamaño, instalación, actualizaciones y compatibilidad.</p><h2 id="herramientas">Compiladores dentro de un entorno de desarrollo</h2><p>Los IDE y sistemas de construcción pueden ejecutar compiladores automáticamente. Por eso un principiante puede compilar sin escribir comandos manualmente.</p><p>Comprender qué herramienta está detrás ayuda a interpretar mensajes de error y configurar proyectos.</p><h2 id="transpilador">¿Qué es un transpilador?</h2><p>Un transpilador transforma código de un lenguaje o versión a otro código fuente. TypeScript, por ejemplo, se transforma a JavaScript para ejecutarse en entornos compatibles.</p><p>El término se relaciona con compilación, pero enfatiza que la salida sigue siendo código fuente de alto nivel.</p><h2 id="errores-comunes">Confusiones frecuentes</h2><p>Decir que un lenguaje es absolutamente compilado o interpretado puede ocultar detalles de su implementación. También es incorrecto asumir que compilado significa rápido e interpretado significa lento.</p><p>El rendimiento debe medirse en el contexto real.</p><h2 id="practica">Ejercicio práctico</h2><p>Escribe un programa pequeño en Python y otro en un lenguaje que genere un ejecutable. Observa qué archivos se crean y qué herramientas necesitas para ejecutar cada uno.</p><p>Después compara qué errores aparecen antes de ejecutar y cuáles solo se descubren durante la ejecución.</p><h2 id="lexer">Análisis léxico</h2><p>El análisis léxico divide el código fuente en unidades llamadas tokens, como palabras clave, identificadores, operadores y literales.</p><p>Esta etapa transforma una secuencia de caracteres en elementos que las siguientes fases del compilador pueden comprender.</p><h2 id="parser">Análisis sintáctico</h2><p>El parser verifica que los tokens sigan la gramática del lenguaje y construye una representación estructurada, como un árbol de sintaxis.</p><p>Si falta un paréntesis o una estructura está incompleta, muchos errores de sintaxis se detectan aquí.</p><h2 id="semantica">Análisis semántico</h2><p>Una instrucción puede tener sintaxis válida y aun así ser incorrecta. El análisis semántico revisa aspectos como tipos, nombres definidos y reglas del lenguaje.</p><p>Por ejemplo, usar una variable que no existe puede ser un problema semántico aunque la línea tenga una forma gramatical correcta.</p><h2 id="optimizacion">Optimización</h2><p>Los compiladores pueden transformar el programa para reducir operaciones, mejorar uso de memoria o aprovechar mejor el procesador, manteniendo el comportamiento esperado.</p><p>Las optimizaciones modernas son complejas, por lo que escribir código más corto no siempre significa producir un programa más rápido.</p><h2 id="linker">¿Qué hace el enlazador?</h2><p>En lenguajes compilados es común que distintas partes del programa se conviertan en archivos objeto. El enlazador combina esos componentes y resuelve referencias a funciones o bibliotecas.</p><p>Errores de enlace aparecen cuando una referencia necesaria no puede encontrarse o existen conflictos entre componentes.</p><h2 id="runtime">¿Qué es el runtime?</h2><p>El runtime es el entorno y conjunto de servicios que un programa necesita durante su ejecución. Puede encargarse de memoria, excepciones, bibliotecas y otras funciones.</p><p>Por eso dos lenguajes pueden generar código similar y aun así depender de runtimes diferentes.</p><h2 id="repl">REPL e interpretación interactiva</h2><p>Un REPL permite escribir una expresión, ejecutarla y ver el resultado inmediatamente. Python, JavaScript y otros lenguajes ofrecen entornos interactivos útiles para aprender y probar ideas.</p><p>El REPL facilita experimentar, aunque los proyectos grandes normalmente se organizan en archivos y herramientas adicionales.</p><h2 id="build">Sistemas de construcción</h2><p>Los proyectos reales pueden necesitar compilar múltiples archivos, copiar recursos, ejecutar pruebas y generar artefactos. Los sistemas de construcción automatizan esas tareas.</p><p>Comprender compilación ayuda a entender qué está haciendo una herramienta de build cuando aparece un error.</p><h2 id="preguntas">Preguntas frecuentes</h2><section aria-labelledby="preguntas" class="faq-articulo"><details><summary>¿Python es compilado o interpretado?</summary><p>Suele describirse como interpretado, pero implementaciones como CPython compilan el código a bytecode antes de ejecutarlo en una máquina virtual.</p></details><details><summary>¿Java es compilado?</summary><p>Java normalmente compila código fuente a bytecode, que después ejecuta la JVM y puede utilizar JIT.</p></details><details><summary>¿Un compilador siempre produce un .exe?</summary><p>No. Puede producir código máquina, bytecode, objetos, bibliotecas u otras representaciones.</p></details><details><summary>¿Interpretado significa más lento?</summary><p>No necesariamente. JIT, optimizaciones y el tipo de tarea influyen en el rendimiento real.</p></details><details><summary>¿Necesito conocer esto para empezar a programar?</summary><p>No en profundidad, pero entender la idea ayuda a interpretar errores y a comprender cómo se ejecuta tu código.</p></details></section><h2 id="conclusion">Conclusión</h2><p>Compiladores e intérpretes son mecanismos que conectan el código fuente con su ejecución. Comprender transformación previa, bytecode, máquinas virtuales y JIT permite interpretar mejor cómo funcionan distintos lenguajes sin caer en clasificaciones demasiado simples.</p><nav aria-label="Navegación entre artículos" class="navegacion-articulos"><a class="nav-anterior" href="articulos"><span class="nav-etiqueta">← Ver artículos</span><strong>Explora todos los artículos</strong></a><a class="nav-siguiente" href="que-es-programacion"><span class="nav-etiqueta">Siguiente lectura →</span><strong>¿Qué es la programación?</strong></a></nav><section aria-label="Información del autor" class="autor-articulo"><div aria-hidden="true" class="autor-icono">&lt;/&gt;</div><div class="autor-informacion"><span>Artículo creado por</span><h2>ByteNova</h2><p>Proyecto educativo creado por Dylan Estrada. ByteNova publica contenido sobre programación, desarrollo web, inteligencia artificial y ciberseguridad con un enfoque claro para principiantes y revisión editorial continua.</p><a href="sobre">Conoce más sobre ByteNova →</a></div></section><aside aria-labelledby="titulo-articulos-relacionados" class="articulos-relacionados"><h2 id="titulo-articulos-relacionados">Continúa aprendiendo</h2><div class="relacionados-grid"><a href="que-es-programacion"><span aria-hidden="true">💻</span><strong>¿Qué es la programación?</strong><small>Comprende el proceso general de crear software.</small></a><a href="python-para-principiantes"><span aria-hidden="true">🐍</span><strong>Python para principiantes</strong><small>Observa un lenguaje que utiliza bytecode e interpretación.</small></a><a href="que-es-javascript"><span aria-hidden="true">⚡</span><strong>¿Qué es JavaScript?</strong><small>Descubre un lenguaje moderno con motores y compilación JIT.</small></a></div></aside></div>
+</div>
+</article>
+</main>
+<footer class="footer">
+<div class="contenedor-footer">
+<div class="footer-logo">
+<a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index#inicio">
+<span aria-hidden="true" class="marca-icono">
+                        &lt;/&gt;
+                    </span>
+<span class="marca-texto">ByteNova</span>
+</a>
+<p>
+                    Aprende tecnología desde cero con artículos, rutas,
+                    retos, guías y recursos gratuitos.
+                </p>
+</div>
+<nav aria-label="Enlaces de aprendizaje del pie de página" class="footer-enlaces">
+<h3>Aprender</h3>
+<a href="../index#tecnologias">Tecnologías</a>
+<a href="rutas">Rutas</a>
+<a href="retos">Retos</a>
+<a href="material">Guías</a>
+<a aria-current="page" href="articulos">Artículos</a>
+<a href="glosario">Glosario</a>
+</nav>
+<nav aria-label="Enlaces informativos del pie de página" class="footer-enlaces">
+<h3>ByteNova</h3>
+<a href="sobre">Sobre ByteNova</a>
+<a href="../index#contacto">Contacto</a>
+<a href="privacidad">Privacidad</a>
+<a href="terminos">Términos</a>
+<a href="cookies">Cookies</a>
+</nav>
+<address class="footer-social">
+<h3>Contacto</h3>
+<p>
+                    Preguntas, sugerencias o comentarios sobre nuestros
+                    contenidos educativos.
+                </p>
+<a href="mailto:bytenova339@gmail.com">
+                    bytenova339@gmail.com
+                </a>
+<a aria-label="TikTok de ByteNova" href="https://www.tiktok.com/@bytenova.app" rel="noopener noreferrer" target="_blank">
+        TikTok · @bytenova.app
+      </a>
+</address>
+</div>
+<div class="footer-copy">
+<p>
+                © 2026 ByteNova. Todos los derechos reservados.
+            </p>
+<p>
+                Creado por Dylan Estrada.
+            </p>
+</div>
+</footer>
+<script src="../js/script.js"></script>
+</body>
+</html>
