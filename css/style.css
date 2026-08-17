@@ -7440,3 +7440,35 @@ body.modo-oscuro .glosario-consejo{
   }
   .glosario-consejo-icono{margin:0 auto}
 }
+
+
+/* ===== Índice largo de artículos: scroll interno en escritorio ===== */
+@media (min-width: 901px){
+  .articulo-layout .indice-articulo{
+    align-self: start;
+    max-height: calc(100vh - 135px);
+    overflow: hidden;
+  }
+
+  .articulo-layout .indice-articulo > nav{
+    max-height: calc(100vh - 215px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+    padding-right: 14px;
+  }
+
+  .articulo-layout .indice-articulo > nav::-webkit-scrollbar{
+    width: 6px;
+  }
+
+  .articulo-layout .indice-articulo > nav::-webkit-scrollbar-thumb{
+    border-radius: 999px;
+    background: rgba(37, 99, 235, .35);
+  }
+
+  .articulo-layout .indice-articulo > nav a{
+    flex: 0 0 auto;
+  }
+}
