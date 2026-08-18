@@ -7640,6 +7640,8 @@ body.dark-mode .material-ruta-referencia>h2,
   .ruta-item{padding:4px 0 14px}
 }
 
+
+
 /* ===== Material: corrección responsive categorías móviles ===== */
 @media (max-width: 650px){
   .indice-rapido-material{
@@ -7669,5 +7671,13 @@ body.dark-mode .material-ruta-referencia>h2,
     text-align:center!important;
     white-space:normal!important;
     overflow-wrap:anywhere!important;
+  }
+
+  body.modo-oscuro .indice-rapido-material a,
+  body.dark-mode .indice-rapido-material a,
+  [data-theme="dark"] .indice-rapido-material a{
+    background:rgba(99,102,241,.10)!important;
+    border-color:rgba(129,140,248,.22)!important;
+    color:#e5e7eb!important;
   }
 }
