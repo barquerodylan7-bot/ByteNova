@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Errores comunes de programación y web | ByteNova</title>
+<meta content="Diccionario práctico de errores comunes en web, JavaScript, servidores y Git." name="description"/>
+<meta content="index,follow" name="robots"/>
+<link href="https://bytenova.app/pages/errores-comunes.html" rel="canonical"/>
+<link href="../css/style.min.css?v=20260818-mockup3" rel="stylesheet"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Errores comunes de programación y web", "description": "Diccionario práctico de errores comunes en web, JavaScript, servidores y Git.", "url": "https://bytenova.app/pages/errores-comunes.html", "inLanguage": "es", "isPartOf": {"@id": "https://bytenova.app/#website"}}</script>
+</head>
+<body class="bnx-errores-page">
+<a class="saltar-contenido" href="#contenido-principal">Saltar al contenido principal</a>
+<header>
+<a class="marca-bytenova" href="../index.html#inicio">
+<span class="marca-icono">&lt;/&gt;</span>
+<span class="marca-texto">ByteNova</span>
+</a>
+<button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle" type="button">
+<span aria-hidden="true">☰</span>
+</button>
+<nav aria-label="Navegación principal" id="menu-principal">
+<a href="../index.html#inicio">Inicio</a>
+<a href="sobre.html">Sobre</a>
+<a aria-current="page" href="../index.html#tecnologias">Aprender</a>
+<a href="rutas.html">Rutas</a>
+<a href="retos.html">Retos</a>
+<a href="material.html">Guías</a>
+<a href="articulos.html">Artículos</a>
+<a href="glosario.html">Glosario</a>
+<a href="../index.html#contacto">Contacto</a>
+<button aria-label="Activar modo oscuro" class="btn-modo" id="btn-modo" type="button">
+<span aria-hidden="true">🌙</span>
+</button>
+</nav>
+</header>
+<main class="bnx-page" id="contenido-principal">
+<section class="bnx-hero">
+<div class="bnx-wrap">
+<p class="bnx-breadcrumbs"><a href="../index.html">Inicio</a> › Aprender › Errores comunes y cómo interpretarlos</p>
+<span class="bnx-eyebrow">📚 DICCIONARIO DE ERRORES</span>
+<h1>Errores comunes y cómo interpretarlos</h1>
+<p class="bnx-lead">Guía rápida para entender mensajes de error frecuentes antes de buscar una solución.</p>
+</div>
+</section>
+<div class="bnx-wrap bnx-content">
+<section class="bnx-section"><div class="bnx-section-head"><span>📚 ERRORES COMUNES</span><h2>Entiende el mensaje antes de intentar arreglarlo</h2><p>Un error es información. Aprende a leer qué capa está fallando: navegador, código, servidor, red o Git.</p></div><div class="bnx-grid"><article class="bnx-card"><span class="bnx-error-code">404 Not Found</span><h3>404 Not Found</h3><p>La ruta solicitada no existe en el servidor.</p><div class="bnx-fix">✅ Revisa la URL, enlaces internos y nombres de archivo.</div></article><article class="bnx-card"><span class="bnx-error-code">403 Forbidden</span><h3>403 Forbidden</h3><p>El servidor entendió la solicitud pero no permite el acceso.</p><div class="bnx-fix">✅ Revisa permisos, autenticación y reglas del servidor.</div></article><article class="bnx-card"><span class="bnx-error-code">500 Internal Server Error</span><h3>500 Internal Server Error</h3><p>Ocurrió un fallo inesperado en el servidor.</p><div class="bnx-fix">✅ Busca logs y prueba el flujo que genera el error.</div></article><article class="bnx-card"><span class="bnx-error-code">CORS</span><h3>CORS</h3><p>El navegador bloquea una solicitud entre orígenes por políticas de seguridad.</p><div class="bnx-fix">✅ Configura correctamente los encabezados CORS en el servidor.</div></article><article class="bnx-card"><span class="bnx-error-code">Cannot GET /ruta</span><h3>Cannot GET /ruta</h3><p>El servidor de desarrollo no encuentra esa ruta.</p><div class="bnx-fix">✅ En sitios estáticos locales usa rutas a archivos reales como .html.</div></article><article class="bnx-card"><span class="bnx-error-code">ReferenceError</span><h3>ReferenceError</h3><p>JavaScript intenta usar una variable o identificador que no existe.</p><div class="bnx-fix">✅ Revisa nombre, alcance y orden de ejecución.</div></article><article class="bnx-card"><span class="bnx-error-code">TypeError</span><h3>TypeError</h3><p>Una operación se intenta sobre un valor de tipo incompatible.</p><div class="bnx-fix">✅ Comprueba el valor real antes de llamar métodos o acceder propiedades.</div></article><article class="bnx-card"><span class="bnx-error-code">SyntaxError</span><h3>SyntaxError</h3><p>El código no cumple la sintaxis esperada.</p><div class="bnx-fix">✅ Revisa paréntesis, llaves, comillas y estructura.</div></article><article class="bnx-card"><span class="bnx-error-code">Module not found</span><h3>Module not found</h3><p>La herramienta no encuentra un módulo o archivo importado.</p><div class="bnx-fix">✅ Verifica instalación, ruta y nombre exacto.</div></article><article class="bnx-card"><span class="bnx-error-code">git non-fast-forward</span><h3>git non-fast-forward</h3><p>Tu rama local y la remota no están en una línea de historial que permita avanzar directamente.</p><div class="bnx-fix">✅ Haz fetch y compara historiales antes de pull, rebase o force.</div></article><article class="bnx-card"><span class="bnx-error-code">Merge conflict</span><h3>Merge conflict</h3><p>Git no puede decidir automáticamente qué versión conservar.</p><div class="bnx-fix">✅ Abre los archivos en conflicto, decide el contenido correcto y marca la resolución.</div></article><article class="bnx-card"><span class="bnx-error-code">Permission denied</span><h3>Permission denied</h3><p>El sistema bloquea una operación por permisos insuficientes.</p><div class="bnx-fix">✅ Comprueba propietario, permisos y contexto antes de usar privilegios elevados.</div></article></div></section>
+</div>
+</main>
+<footer class="footer footer-v2">
+<div class="footer-v2-shell">
+<div class="footer-v2-grid">
+<div class="footer-v2-brand">
+<a aria-label="Ir al inicio de ByteNova" class="footer-v2-logo" href="../index.html#inicio">
+<span aria-hidden="true" class="footer-v2-logo-icon">&lt;/&gt;</span>
+<span class="footer-v2-logo-text">Byte<span>Nova</span></span>
+</a>
+<p>Aprende tecnología desde cero con artículos, rutas, retos, guías y recursos gratuitos.</p>
+<div class="footer-v2-social">
+<a aria-label="TikTok de ByteNova" href="https://www.tiktok.com/@bytenova.app" rel="noopener noreferrer" target="_blank">♪</a>
+<a aria-label="Correo de ByteNova" href="mailto:bytenova339@gmail.com">✉</a>
+<a aria-label="Sitio web de ByteNova" href="../index.html#inicio">◎</a>
+</div>
+</div>
+<nav aria-label="Enlaces de aprendizaje" class="footer-v2-col">
+<h3>Aprender</h3>
+<a href="../index.html#tecnologias"><span aria-hidden="true">▣</span>Tecnologías</a>
+<a href="rutas.html"><span aria-hidden="true">↗</span>Rutas</a>
+<a href="retos.html"><span aria-hidden="true">🎯</span>Retos</a>
+<a href="material.html"><span aria-hidden="true">▤</span>Guías</a>
+<a href="articulos.html"><span aria-hidden="true">▧</span>Artículos</a>
+<a href="glosario.html"><span aria-hidden="true">▥</span>Glosario</a>
+</nav>
+<nav aria-label="Enlaces de ByteNova" class="footer-v2-col">
+<h3>ByteNova</h3>
+<a href="sobre.html"><span aria-hidden="true">♙</span>Sobre ByteNova</a>
+<a href="../index.html#contacto"><span aria-hidden="true">✉</span>Contacto</a>
+<a href="privacidad.html"><span aria-hidden="true">♢</span>Privacidad</a>
+<a href="terminos.html"><span aria-hidden="true">▤</span>Términos</a>
+<a href="cookies.html"><span aria-hidden="true">◌</span>Cookies</a>
+</nav>
+<div class="footer-v2-contact">
+<h3>Conecta con ByteNova</h3>
+<p>Preguntas, sugerencias o comentarios sobre nuestros contenidos educativos.</p>
+<a href="mailto:bytenova339@gmail.com"><span aria-hidden="true">✉</span>bytenova339@gmail.com</a>
+<a href="https://www.tiktok.com/@bytenova.app" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">♪</span>TikTok · @bytenova.app</a>
+</div>
+</div>
+<div class="footer-v2-bottom">
+<p>© 2026 <strong>ByteNova</strong>. Todos los derechos reservados.</p>
+<p>Creado por Dylan Estrada.</p>
+</div>
+</div>
+</footer>
+<script src="../js/script.js"></script>
+</body>
+</html>

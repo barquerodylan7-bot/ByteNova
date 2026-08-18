@@ -1,102 +1,41 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-41QWQ3DC33"></script>
-  <script>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-41QWQ3DC33"></script>
+<script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-41QWQ3DC33');
   </script>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Arrays y listas en programación: guía con ejemplos | ByteNova</title>
-
-  <meta
-    name="description"
-    content="Aprende qué son los arrays y listas, cómo acceder a sus elementos, modificar datos, agregar y eliminar valores y recorrer colecciones con ejemplos prácticos en Python."
-  >
-
-  <meta name="author" content="ByteNova">
-  <meta name="robots" content="index, follow">
-
-  <meta
-    name="theme-color"
-    content="#ffffff"
-    media="(prefers-color-scheme: light)"
-  >
-
-  <meta
-    name="theme-color"
-    content="#0f172a"
-    media="(prefers-color-scheme: dark)"
-  >
-
-  <meta property="og:type" content="article">
-  <meta property="og:locale" content="es_CR">
-  <meta property="og:site_name" content="ByteNova">
-
-  <meta
-    property="og:title"
-    content="¿Qué son los arrays o listas en programación?"
-  >
-
-  <meta
-    property="og:description"
-    content="Aprende cómo almacenar, consultar, modificar y recorrer varios valores utilizando listas con ejemplos prácticos."
-  >
-
-  <meta
-    property="og:url"
-    content="https://bytenova.app/pages/que-son-arrays-listas"
-  >
-
-  <meta
-    property="og:image"
-    content="https://bytenova.app/images/bytenova-social.jpg"
-  >
-
-  <meta name="twitter:card" content="summary_large_image">
-
-  <meta
-    name="twitter:title"
-    content="¿Qué son los arrays o listas en programación?"
-  >
-
-  <meta
-    name="twitter:description"
-    content="Aprende listas, índices y operaciones fundamentales con ejemplos prácticos en Python."
-  >
-
-  <meta
-    name="twitter:image"
-    content="https://bytenova.app/images/bytenova-social.jpg"
-  >
-
-  <meta property="article:published_time" content="2026-08-05">
-  <meta property="article:modified_time" content="2026-08-17">
-  <meta property="article:section" content="Programación">
-
-  <link
-    rel="canonical"
-    href="https://bytenova.app/pages/que-son-arrays-listas"
-  >
-
-  <link
-    rel="icon"
-    href="../images/favicon.svg"
-    type="image/svg+xml"
-  >
-
-  <link
-    rel="stylesheet"
-    href="../css/style.min.css"
-  >
-
-  <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Arrays y listas en programación: guía con ejemplos | ByteNova</title>
+<meta content="Aprende qué son los arrays y listas, cómo acceder a sus elementos, modificar datos, agregar y eliminar valores y recorrer colecciones con ejemplos prácticos en Python." name="description"/>
+<meta content="ByteNova" name="author"/>
+<meta content="index, follow" name="robots"/>
+<meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
+<meta content="#0f172a" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<meta content="article" property="og:type"/>
+<meta content="es_CR" property="og:locale"/>
+<meta content="ByteNova" property="og:site_name"/>
+<meta content="¿Qué son los arrays o listas en programación?" property="og:title"/>
+<meta content="Aprende cómo almacenar, consultar, modificar y recorrer varios valores utilizando listas con ejemplos prácticos." property="og:description"/>
+<meta content="https://bytenova.app/pages/que-son-arrays-listas" property="og:url"/>
+<meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="¿Qué son los arrays o listas en programación?" name="twitter:title"/>
+<meta content="Aprende listas, índices y operaciones fundamentales con ejemplos prácticos en Python." name="twitter:description"/>
+<meta content="https://bytenova.app/images/bytenova-social.jpg" name="twitter:image"/>
+<meta content="2026-08-05" property="article:published_time"/>
+<meta content="2026-08-17" property="article:modified_time"/>
+<meta content="Programación" property="article:section"/>
+<link href="https://bytenova.app/pages/que-son-arrays-listas" rel="canonical"/>
+<link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../css/style.min.css?v=20260818-center2" rel="stylesheet"/>
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
@@ -164,185 +103,127 @@
     ]
   }
   </script>
-
-  <meta
-    name="google-adsense-account"
-    content="ca-pub-5369456672603969"
-  >
-
-  <script
-    async
-    crossorigin="anonymous"
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5369456672603969">
-  </script>
+<meta content="ca-pub-5369456672603969" name="google-adsense-account"/>
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5369456672603969">
+</script>
 </head>
-
 <body>
-
 <a class="saltar-contenido" href="#contenido-principal">
   Saltar al contenido principal
 </a>
-
 <header>
-
-  <a
-    class="marca-bytenova"
-    href="../index#inicio"
-    aria-label="Ir al inicio de ByteNova"
-  >
-    <span class="marca-icono" aria-hidden="true">&lt;/&gt;</span>
-    <span class="marca-texto">ByteNova</span>
-  </a>
-
-  <button
-    class="menu-toggle"
-    id="menu-toggle"
-    type="button"
-    aria-controls="menu-principal"
-    aria-expanded="false"
-    aria-label="Abrir menú"
-  >
-    <span aria-hidden="true">☰</span>
-  </button>
-
-  <nav id="menu-principal" aria-label="Navegación principal">
-    <a href="../index#inicio">Inicio</a>
-    <a href="sobre">Sobre</a>
-    <a href="../index#tecnologias">Aprender</a>
-    <a href="rutas">Rutas</a>
-    <a href="retos">Retos</a>
-    <a href="material">Guías</a>
-    <a href="articulos" aria-current="page">Artículos</a>
-    <a href="glosario">Glosario</a>
-    <a href="../index#contacto">Contacto</a>
-
-    <button
-      class="btn-modo"
-      id="btn-modo"
-      type="button"
-      aria-label="Activar modo oscuro"
-    >
-      <span aria-hidden="true">🌙</span>
-    </button>
-  </nav>
-
+<a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio">
+<span aria-hidden="true" class="marca-icono">&lt;/&gt;</span>
+<span class="marca-texto">ByteNova</span>
+</a>
+<button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle" type="button">
+<span aria-hidden="true">☰</span>
+</button>
+<nav aria-label="Navegación principal" id="menu-principal">
+<a href="../index.html#inicio">Inicio</a>
+<a href="sobre.html">Sobre</a>
+<a href="../index.html#tecnologias">Aprender</a>
+<a href="rutas.html">Rutas</a>
+<a href="retos.html">Retos</a>
+<a href="material.html">Guías</a>
+<a aria-current="page" href="articulos.html">Artículos</a>
+<a href="glosario.html">Glosario</a>
+<a href="../index.html#contacto">Contacto</a>
+<button aria-label="Activar modo oscuro" class="btn-modo" id="btn-modo" type="button">
+<span aria-hidden="true">🌙</span>
+</button>
+</nav>
 </header>
-
 <main class="sobre articulo" id="contenido-principal">
-
-  <article
-    class="sobre-contenido"
-    aria-labelledby="titulo-que-son-arrays-listas"
-  >
-
-    <nav class="migas-navegacion" aria-label="Ruta de navegación">
-      <a href="../index">Inicio</a>
-      <span aria-hidden="true">›</span>
-      <a href="articulos">Artículos</a>
-      <span aria-hidden="true">›</span>
-      <span aria-current="page">Arrays y listas</span>
-    </nav>
-
-    <span class="seccion-etiqueta">
-      <span aria-hidden="true">📚</span>
+<article aria-labelledby="titulo-que-son-arrays-listas" class="sobre-contenido">
+<nav aria-label="Ruta de navegación" class="migas-navegacion">
+<a href="../index.html">Inicio</a>
+<span aria-hidden="true">›</span>
+<a href="articulos.html">Artículos</a>
+<span aria-hidden="true">›</span>
+<span aria-current="page">Arrays y listas</span>
+</nav>
+<span class="seccion-etiqueta">
+<span aria-hidden="true">📚</span>
       Programación
     </span>
-
-    <h1 id="titulo-que-son-arrays-listas">
+<h1 id="titulo-que-son-arrays-listas">
       ¿Qué son los arrays o listas en programación?
       <span aria-hidden="true">📚</span>
-    </h1>
-
-    <p class="articulo-meta">
+</h1>
+<p class="articulo-meta">
       Publicado por ByteNova ·
       <time datetime="2026-08-05">5 de agosto de 2026</time>
       · Actualizado el
       <time datetime="2026-08-17">17 de agosto de 2026</time>
-    </p>
-
-    <div class="articulo-resumen">
-      <strong>En este artículo aprenderás:</strong>
-      <p>
+</p>
+<div class="articulo-resumen">
+<strong>En este artículo aprenderás:</strong>
+<p>
         Qué son las listas y arrays, cómo funcionan los índices, cómo acceder,
         modificar, agregar y eliminar elementos y cómo recorrer colecciones
         mediante bucles.
       </p>
-    </div>
-
-    <div class="articulo-layout">
-
-      <aside class="articulo-sidebar">
-
-        <details class="indice-articulo" open>
-
-          <summary>
-            <span aria-hidden="true">📑</span>
+</div>
+<div class="articulo-layout">
+<aside class="articulo-sidebar">
+<details class="indice-articulo" open="">
+<summary>
+<span aria-hidden="true">📑</span>
             Contenido del artículo
           </summary>
-
-          <nav aria-label="Contenido del artículo">
-            <a href="#que-es">1. ¿Qué son arrays y listas?</a>
-            <a href="#diferencias">2. Array vs lista</a>
-            <a href="#crear">3. Crear una lista</a>
-            <a href="#indices">4. Índices y posiciones</a>
-            <a href="#negativos">5. Índices negativos</a>
-            <a href="#modificar">6. Modificar elementos</a>
-            <a href="#agregar">7. Agregar elementos</a>
-            <a href="#eliminar">8. Eliminar elementos</a>
-            <a href="#recorrer">9. Recorrer una lista</a>
-            <a href="#buscar">10. Buscar elementos</a>
-            <a href="#longitud">11. Longitud de una lista</a>
-            <a href="#anidadas">12. Listas anidadas</a>
-            <a href="#ejemplo">13. Ejemplo práctico</a>
-            <a href="#errores">14. Errores comunes</a>
-            <a href="#practica">15. Ejercicio práctico</a>
-            <a href="#preguntas">16. Preguntas frecuentes</a>
-            <a href="#conclusion">17. Conclusión</a>
-          </nav>
-
-        </details>
-
-      </aside>
-
-      <div class="articulo-cuerpo">
-
-        <p class="articulo-introduccion">
+<nav aria-label="Contenido del artículo">
+<a href="#que-es">1. ¿Qué son arrays y listas?</a>
+<a href="#diferencias">2. Array vs lista</a>
+<a href="#crear">3. Crear una lista</a>
+<a href="#indices">4. Índices y posiciones</a>
+<a href="#negativos">5. Índices negativos</a>
+<a href="#modificar">6. Modificar elementos</a>
+<a href="#agregar">7. Agregar elementos</a>
+<a href="#eliminar">8. Eliminar elementos</a>
+<a href="#recorrer">9. Recorrer una lista</a>
+<a href="#buscar">10. Buscar elementos</a>
+<a href="#longitud">11. Longitud de una lista</a>
+<a href="#anidadas">12. Listas anidadas</a>
+<a href="#ejemplo">13. Ejemplo práctico</a>
+<a href="#errores">14. Errores comunes</a>
+<a href="#practica">15. Ejercicio práctico</a>
+<a href="#preguntas">16. Preguntas frecuentes</a>
+<a href="#conclusion">17. Conclusión</a>
+</nav>
+</details>
+</aside>
+<div class="articulo-cuerpo">
+<p class="articulo-introduccion">
           Cuando un programa necesita trabajar con muchos valores relacionados,
           crear una variable diferente para cada elemento puede resultar
           incómodo. Las listas y otras estructuras similares permiten agrupar
           varios datos dentro de una misma colección y trabajar con ellos de
           manera organizada.
         </p>
-
-        <h2 id="que-es">¿Qué son los arrays o listas?</h2>
-
-        <p>
+<h2 id="que-es">¿Qué son los arrays o listas?</h2>
+<p>
           Un <strong>array</strong> o una <strong>lista</strong> es una
           estructura que permite almacenar varios valores relacionados dentro
           de una colección.
         </p>
-
-        <p>
+<p>
           Imagina que necesitas guardar cinco nombres. Podrías crear:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>nombre1 = "Ana"
 nombre2 = "Carlos"
 nombre3 = "Laura"
 nombre4 = "Pedro"
 nombre5 = "Sofía"</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Esto funciona, pero resulta poco práctico cuando la cantidad aumenta.
         </p>
-
-        <p>
+<p>
           Utilizando una lista en Python podemos escribir:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>nombres = [
     "Ana",
     "Carlos",
@@ -350,151 +231,119 @@ nombre5 = "Sofía"</code></pre>
     "Pedro",
     "Sofía"
 ]</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Ahora todos los nombres forman parte de una sola colección y podemos
           trabajar con ellos de manera mucho más sencilla.
         </p>
-
-        <h2 id="diferencias">¿Array y lista son exactamente lo mismo?</h2>
-
-        <p>
+<h2 id="diferencias">¿Array y lista son exactamente lo mismo?</h2>
+<p>
           No necesariamente. La terminología depende del lenguaje de
           programación.
         </p>
-
-        <p>
+<p>
           En muchos lenguajes, un <strong>array</strong> suele almacenar
           elementos siguiendo reglas más estrictas. Por ejemplo, puede tener
           un tamaño fijo o requerir que todos sus elementos sean del mismo tipo.
         </p>
-
-        <p>
+<p>
           Las <strong>listas de Python</strong> son más flexibles:
         </p>
-
-        <ul class="lista-articulo">
-          <li>Pueden aumentar o disminuir de tamaño.</li>
-          <li>Permiten agregar y eliminar elementos.</li>
-          <li>Pueden almacenar diferentes tipos de datos.</li>
-        </ul>
-
-        <div class="recuadro-consejo">
-          <strong>Para este artículo</strong>
-          <p>
+<ul class="lista-articulo">
+<li>Pueden aumentar o disminuir de tamaño.</li>
+<li>Permiten agregar y eliminar elementos.</li>
+<li>Pueden almacenar diferentes tipos de datos.</li>
+</ul>
+<div class="recuadro-consejo">
+<strong>Para este artículo</strong>
+<p>
             Utilizaremos principalmente las listas de Python para explicar los
             conceptos fundamentales de colecciones e índices.
           </p>
-        </div>
-
-        <h2 id="crear">Cómo crear una lista en Python</h2>
-
-        <p>
+</div>
+<h2 id="crear">Cómo crear una lista en Python</h2>
+<p>
           Para crear una lista utilizamos corchetes
           <code>[]</code>.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>tecnologias = [
     "HTML",
     "CSS",
     "JavaScript",
     "Python"
 ]</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Cada elemento está separado mediante una coma.
         </p>
-
-        <h3>Una lista puede estar vacía</h3>
-
-        <div class="recuadro-ejemplo">
+<h3>Una lista puede estar vacía</h3>
+<div class="recuadro-ejemplo">
 <pre><code>productos = []</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Después podemos agregar elementos cuando sea necesario.
         </p>
-
-        <h3>Diferentes tipos de datos</h3>
-
-        <p>
+<h3>Diferentes tipos de datos</h3>
+<p>
           Python permite algo como:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>datos = [
     "Ana",
     25,
     True,
     1.65
 ]</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Aunque es válido, normalmente conviene que una colección represente
           una idea clara y mantenga datos relacionados.
         </p>
-
-        <h2 id="indices">Índices y posiciones</h2>
-
-        <p>
+<h2 id="indices">Índices y posiciones</h2>
+<p>
           Cada elemento de una lista ocupa una posición identificada mediante
           un <strong>índice</strong>.
         </p>
-
-        <p>
+<p>
           En Python, el primer índice es <code>0</code>.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>lenguajes = [
     "Python",
     "JavaScript",
     "Java"
 ]</code></pre>
-        </div>
-
-        <p>Las posiciones son:</p>
-
-        <ul class="lista-articulo">
-          <li><code>lenguajes[0]</code> → Python</li>
-          <li><code>lenguajes[1]</code> → JavaScript</li>
-          <li><code>lenguajes[2]</code> → Java</li>
-        </ul>
-
-        <p>
+</div>
+<p>Las posiciones son:</p>
+<ul class="lista-articulo">
+<li><code>lenguajes[0]</code> → Python</li>
+<li><code>lenguajes[1]</code> → JavaScript</li>
+<li><code>lenguajes[2]</code> → Java</li>
+</ul>
+<p>
           Para acceder al primer elemento:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>print(lenguajes[0])</code></pre>
-        </div>
-
-        <p>El resultado será:</p>
-
-        <div class="recuadro-ejemplo">
+</div>
+<p>El resultado será:</p>
+<div class="recuadro-ejemplo">
 <pre><code>Python</code></pre>
-        </div>
-
-        <div class="recuadro-consejo">
-          <strong>Recuerda</strong>
-          <p>
+</div>
+<div class="recuadro-consejo">
+<strong>Recuerda</strong>
+<p>
             En una lista con tres elementos, los índices válidos son
             <code>0</code>, <code>1</code> y <code>2</code>.
           </p>
-        </div>
-
-        <h2 id="negativos">Índices negativos</h2>
-
-        <p>
+</div>
+<h2 id="negativos">Índices negativos</h2>
+<p>
           Python permite acceder a elementos comenzando desde el final mediante
           índices negativos.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>lenguajes = [
     "Python",
     "JavaScript",
@@ -502,27 +351,21 @@ nombre5 = "Sofía"</code></pre>
 ]
 
 print(lenguajes[-1])</code></pre>
-        </div>
-
-        <p>El resultado será:</p>
-
-        <div class="recuadro-ejemplo">
+</div>
+<p>El resultado será:</p>
+<div class="recuadro-ejemplo">
 <pre><code>Java</code></pre>
-        </div>
-
-        <p>
-          <code>-1</code> representa el último elemento,
+</div>
+<p>
+<code>-1</code> representa el último elemento,
           <code>-2</code> el penúltimo y así sucesivamente.
         </p>
-
-        <h2 id="modificar">Modificar elementos</h2>
-
-        <p>
+<h2 id="modificar">Modificar elementos</h2>
+<p>
           Las listas de Python son mutables, lo que significa que podemos
           cambiar sus elementos después de crearlas.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>frutas = [
     "Manzana",
     "Pera",
@@ -532,32 +375,24 @@ print(lenguajes[-1])</code></pre>
 frutas[1] = "Mango"
 
 print(frutas)</code></pre>
-        </div>
-
-        <p>El resultado será:</p>
-
-        <div class="recuadro-ejemplo">
+</div>
+<p>El resultado será:</p>
+<div class="recuadro-ejemplo">
 <pre><code>["Manzana", "Mango", "Uva"]</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           La posición 1 anteriormente contenía <code>"Pera"</code> y ahora
           contiene <code>"Mango"</code>.
         </p>
-
-        <h2 id="agregar">Agregar elementos</h2>
-
-        <p>
+<h2 id="agregar">Agregar elementos</h2>
+<p>
           Existen diferentes formas de añadir elementos a una lista.
         </p>
-
-        <h3>append()</h3>
-
-        <p>
-          <code>append()</code> agrega un elemento al final.
+<h3>append()</h3>
+<p>
+<code>append()</code> agrega un elemento al final.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>productos = [
     "Teclado",
     "Mouse"
@@ -566,41 +401,31 @@ print(frutas)</code></pre>
 productos.append("Monitor")
 
 print(productos)</code></pre>
-        </div>
-
-        <p>Resultado:</p>
-
-        <div class="recuadro-ejemplo">
+</div>
+<p>Resultado:</p>
+<div class="recuadro-ejemplo">
 <pre><code>["Teclado", "Mouse", "Monitor"]</code></pre>
-        </div>
-
-        <h3>insert()</h3>
-
-        <p>
-          <code>insert()</code> permite elegir la posición.
+</div>
+<h3>insert()</h3>
+<p>
+<code>insert()</code> permite elegir la posición.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>productos.insert(
     1,
     "Audífonos"
 )</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           El nuevo elemento se coloca en la posición 1 y los demás se
           desplazan.
         </p>
-
-        <h2 id="eliminar">Eliminar elementos</h2>
-
-        <h3>remove()</h3>
-
-        <p>
+<h2 id="eliminar">Eliminar elementos</h2>
+<h3>remove()</h3>
+<p>
           Elimina un elemento utilizando su valor.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>productos = [
     "Teclado",
     "Mouse",
@@ -610,16 +435,13 @@ print(productos)</code></pre>
 productos.remove("Mouse")
 
 print(productos)</code></pre>
-        </div>
-
-        <h3>pop()</h3>
-
-        <p>
-          <code>pop()</code> elimina un elemento utilizando su posición y
+</div>
+<h3>pop()</h3>
+<p>
+<code>pop()</code> elimina un elemento utilizando su posición y
           además devuelve el elemento eliminado.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>productos = [
     "Teclado",
     "Mouse",
@@ -630,31 +452,24 @@ eliminado = productos.pop(1)
 
 print(eliminado)
 print(productos)</code></pre>
-        </div>
-
-        <p>
-          <code>eliminado</code> contendrá <code>"Mouse"</code>.
+</div>
+<p>
+<code>eliminado</code> contendrá <code>"Mouse"</code>.
         </p>
-
-        <h3>del</h3>
-
-        <div class="recuadro-ejemplo">
+<h3>del</h3>
+<div class="recuadro-ejemplo">
 <pre><code>del productos[0]</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Esto elimina directamente el elemento situado en la posición
           indicada.
         </p>
-
-        <h2 id="recorrer">Recorrer una lista con for</h2>
-
-        <p>
+<h2 id="recorrer">Recorrer una lista con for</h2>
+<p>
           Una de las operaciones más habituales consiste en procesar todos los
           elementos de una lista.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>tecnologias = [
     "HTML",
     "CSS",
@@ -664,36 +479,29 @@ print(productos)</code></pre>
 
 for tecnologia in tecnologias:
     print(tecnologia)</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           En cada iteración, la variable <code>tecnologia</code> representa un
           elemento diferente.
         </p>
-
-        <p>
+<p>
           El resultado será:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>HTML
 CSS
 JavaScript
 Python</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Este patrón resulta mucho más práctico que acceder manualmente a cada
           posición.
         </p>
-
-        <h3>Recorrer utilizando índices</h3>
-
-        <p>
+<h3>Recorrer utilizando índices</h3>
+<p>
           En algunos casos también necesitamos conocer la posición.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>lenguajes = [
     "Python",
     "JavaScript",
@@ -705,25 +513,20 @@ for indice in range(len(lenguajes)):
         indice,
         lenguajes[indice]
     )</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Sin embargo, cuando necesitas posición y valor, Python ofrece una
           opción más clara: <code>enumerate()</code>.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>for indice, lenguaje in enumerate(lenguajes):
     print(indice, lenguaje)</code></pre>
-        </div>
-
-        <h2 id="buscar">Comprobar si un elemento existe</h2>
-
-        <p>
+</div>
+<h2 id="buscar">Comprobar si un elemento existe</h2>
+<p>
           Podemos utilizar el operador <code>in</code>.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>productos = [
     "Teclado",
     "Mouse",
@@ -732,24 +535,19 @@ for indice in range(len(lenguajes)):
 
 if "Mouse" in productos:
     print("Producto encontrado")</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           También podemos comprobar que un elemento no exista:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>if "Laptop" not in productos:
     print("Producto no registrado")</code></pre>
-        </div>
-
-        <h2 id="longitud">Obtener la longitud de una lista</h2>
-
-        <p>
+</div>
+<h2 id="longitud">Obtener la longitud de una lista</h2>
+<p>
           La función <code>len()</code> devuelve la cantidad de elementos.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>productos = [
     "Teclado",
     "Mouse",
@@ -759,65 +557,50 @@ if "Mouse" in productos:
 cantidad = len(productos)
 
 print(cantidad)</code></pre>
-        </div>
-
-        <p>El resultado será:</p>
-
-        <div class="recuadro-ejemplo">
+</div>
+<p>El resultado será:</p>
+<div class="recuadro-ejemplo">
 <pre><code>3</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Esto puede utilizarse para validar colecciones, calcular cantidades o
           controlar otros procesos.
         </p>
-
-        <h2 id="anidadas">Listas anidadas</h2>
-
-        <p>
+<h2 id="anidadas">Listas anidadas</h2>
+<p>
           Una lista puede contener otras listas.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>usuarios = [
     ["Ana", 25],
     ["Carlos", 32],
     ["Laura", 28]
 ]</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Cada elemento principal es otra lista.
         </p>
-
-        <p>
+<p>
           Para obtener el nombre del primer usuario:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>print(usuarios[0][0])</code></pre>
-        </div>
-
-        <p>El resultado será:</p>
-
-        <div class="recuadro-ejemplo">
+</div>
+<p>El resultado será:</p>
+<div class="recuadro-ejemplo">
 <pre><code>Ana</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Este tipo de estructura puede representar datos tabulares simples,
           aunque para aplicaciones más complejas pueden existir alternativas
           más claras, como diccionarios u objetos.
         </p>
-
-        <h2 id="ejemplo">Ejemplo práctico: carrito de compra</h2>
-
-        <p>
+<h2 id="ejemplo">Ejemplo práctico: carrito de compra</h2>
+<p>
           Vamos a utilizar una lista para almacenar los precios de varios
           productos y calcular el total.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>precios = [
     15000,
     8000,
@@ -832,136 +615,101 @@ for precio in precios:
 
 print(f"Productos: {len(precios)}")
 print(f"Total: ₡{total}")</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           El programa utiliza:
         </p>
-
-        <ul class="lista-articulo">
-          <li>Una lista para almacenar precios.</li>
-          <li>Un bucle para recorrerlos.</li>
-          <li>Una variable acumuladora para calcular el total.</li>
-          <li><code>len()</code> para contar los productos.</li>
-        </ul>
-
-        <p>
+<ul class="lista-articulo">
+<li>Una lista para almacenar precios.</li>
+<li>Un bucle para recorrerlos.</li>
+<li>Una variable acumuladora para calcular el total.</li>
+<li><code>len()</code> para contar los productos.</li>
+</ul>
+<p>
           El resultado será:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>Productos: 4
 Total: ₡53000</code></pre>
-        </div>
-
-        <h3>Agregar un producto</h3>
-
-        <div class="recuadro-ejemplo">
+</div>
+<h3>Agregar un producto</h3>
+<div class="recuadro-ejemplo">
 <pre><code>precios.append(12000)</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Ahora la lista tendrá cinco elementos.
         </p>
-
-        <h2 id="errores">Errores comunes al trabajar con listas</h2>
-
-        <h3>Intentar acceder a un índice inexistente</h3>
-
-        <div class="recuadro-ejemplo">
+<h2 id="errores">Errores comunes al trabajar con listas</h2>
+<h3>Intentar acceder a un índice inexistente</h3>
+<div class="recuadro-ejemplo">
 <pre><code>nombres = [
     "Ana",
     "Carlos"
 ]
 
 print(nombres[2])</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           La lista solamente tiene los índices 0 y 1. Intentar acceder al 2
           provoca un error.
         </p>
-
-        <h3>Olvidar que el primer índice es cero</h3>
-
-        <p>
+<h3>Olvidar que el primer índice es cero</h3>
+<p>
           Si quieres acceder al primer elemento debes utilizar
           <code>lista[0]</code>, no <code>lista[1]</code>.
         </p>
-
-        <h3>Eliminar un valor que no existe</h3>
-
-        <div class="recuadro-ejemplo">
+<h3>Eliminar un valor que no existe</h3>
+<div class="recuadro-ejemplo">
 <pre><code>productos.remove("Laptop")</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Si <code>"Laptop"</code> no está en la lista,
           <code>remove()</code> puede generar un error.
         </p>
-
-        <p>
+<p>
           Podemos comprobar primero:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>if "Laptop" in productos:
     productos.remove("Laptop")</code></pre>
-        </div>
-
-        <h3>Modificar una lista mientras la recorres</h3>
-
-        <p>
+</div>
+<h3>Modificar una lista mientras la recorres</h3>
+<p>
           Agregar o eliminar elementos mientras un bucle recorre la misma lista
           puede producir resultados difíciles de anticipar.
         </p>
-
-        <p>
+<p>
           Conviene analizar bien la operación o trabajar con una copia cuando
           corresponda.
         </p>
-
-        <h3>Utilizar una lista cuando otra estructura sería más clara</h3>
-
-        <p>
+<h3>Utilizar una lista cuando otra estructura sería más clara</h3>
+<p>
           Una lista es ideal para colecciones ordenadas, pero si necesitas
           relacionar claves con valores, un diccionario puede ser más
           apropiado.
         </p>
-
-        <section
-          class="seccion-articulo"
-          aria-labelledby="practica"
-        >
-
-          <h2 id="practica">
+<section aria-labelledby="practica" class="seccion-articulo">
+<h2 id="practica">
             Compruébalo tú mismo
           </h2>
-
-          <p>
+<p>
             Crea una lista llamada <code>notas</code> con cinco calificaciones.
           </p>
-
-          <p>Después:</p>
-
-          <ul class="lista-articulo">
-            <li>Muestra la primera nota.</li>
-            <li>Muestra la última nota.</li>
-            <li>Agrega una nota nueva.</li>
-            <li>Calcula la suma de todas las notas.</li>
-            <li>Calcula el promedio.</li>
-          </ul>
-
-          <p>
+<p>Después:</p>
+<ul class="lista-articulo">
+<li>Muestra la primera nota.</li>
+<li>Muestra la última nota.</li>
+<li>Agrega una nota nueva.</li>
+<li>Calcula la suma de todas las notas.</li>
+<li>Calcula el promedio.</li>
+</ul>
+<p>
             Intenta resolverlo antes de ver la solución.
           </p>
-
-          <details class="recuadro-ejemplo">
-
-            <summary>
-              <strong>Ver una posible solución</strong>
-            </summary>
-
+<details class="recuadro-ejemplo">
+<summary>
+<strong>Ver una posible solución</strong>
+</summary>
 <pre><code>notas = [
     80,
     90,
@@ -984,69 +732,54 @@ promedio = suma / len(notas)
 
 print("Suma:", suma)
 print("Promedio:", promedio)</code></pre>
-
-            <p>
+<p>
               El bucle recorre todas las notas y acumula sus valores. Después
               dividimos la suma entre la cantidad de elementos.
             </p>
-
-          </details>
-
-          <div class="recuadro-consejo">
-            <strong>Reto adicional</strong>
-            <p>
+</details>
+<div class="recuadro-consejo">
+<strong>Reto adicional</strong>
+<p>
               Recorre la lista y muestra únicamente las notas iguales o
               superiores a 80.
             </p>
-          </div>
-
-        </section>
-
-        <h2 id="preguntas">Preguntas frecuentes</h2>
-
-        <section class="faq-articulo" aria-labelledby="preguntas">
-
-          <details>
-            <summary>
+</div>
+</section>
+<h2 id="preguntas">Preguntas frecuentes</h2>
+<section aria-labelledby="preguntas" class="faq-articulo">
+<details>
+<summary>
               ¿Array y lista son exactamente lo mismo?
             </summary>
-
-            <p>
+<p>
               Depende del lenguaje. En Python las listas son colecciones
               dinámicas, mientras que en otros lenguajes un array puede tener
               características diferentes, como tamaño fijo o elementos de un
               mismo tipo.
             </p>
-          </details>
-
-          <details>
-            <summary>
+</details>
+<details>
+<summary>
               ¿Por qué los índices comienzan en cero?
             </summary>
-
-            <p>
+<p>
               Muchos lenguajes utilizan índices basados en cero. Por eso el
               primer elemento ocupa la posición 0, el segundo la posición 1 y
               así sucesivamente.
             </p>
-          </details>
-
-          <details>
-            <summary>
+</details>
+<details>
+<summary>
               ¿Una lista de Python puede guardar diferentes tipos de datos?
             </summary>
-
-            <p>
+<p>
               Sí. Python lo permite, aunque normalmente conviene mantener
               elementos relacionados para que la estructura sea más clara y
               fácil de utilizar.
             </p>
-          </details>
-
-        </section>
-
-        
-<section class="ampliacion-editorial" aria-labelledby="arrays-operaciones">
+</details>
+</section>
+<section aria-labelledby="arrays-operaciones" class="ampliacion-editorial">
 <h2 id="arrays-operaciones">Operaciones habituales con colecciones</h2>
 <p>Además de guardar varios valores, las colecciones permiten recorrer elementos, buscar información, filtrar resultados, ordenar datos y transformar valores. Los nombres de estas operaciones cambian según el lenguaje, pero las ideas aparecen constantemente.</p>
 <div class="recuadro-ejemplo"><strong>Ejemplo</strong><p>Una lista de productos puede filtrarse para mostrar únicamente los disponibles y luego ordenarse por precio. Separar estas operaciones ayuda a comprender cómo los datos se transforman paso a paso.</p></div>
@@ -1055,186 +788,122 @@ print("Promedio:", promedio)</code></pre>
 <h3>¿Array o estructura diferente?</h3>
 <p>No todas las colecciones sirven para lo mismo. Si necesitas búsquedas por clave, valores únicos u otras propiedades, el lenguaje puede ofrecer mapas, conjuntos u otras estructuras más adecuadas.</p></section>
 <h2 id="conclusion">Conclusión</h2>
-
-        <p>
+<p>
           Las listas permiten almacenar varios valores relacionados dentro de
           una sola estructura y acceder a cada elemento mediante su posición.
         </p>
-
-        <p>
+<p>
           Aprender a consultar índices, modificar elementos, agregar y eliminar
           datos y recorrer listas con bucles es fundamental para trabajar con
           colecciones de información.
         </p>
-
-        <p>
+<p>
           Estos conceptos aparecen constantemente en programas reales:
           productos, usuarios, resultados, tareas, archivos, configuraciones y
           prácticamente cualquier situación donde necesites procesar varios
           elementos relacionados.
         </p>
-
-        <nav class="navegacion-articulos" aria-label="Navegación entre artículos">
-          <a class="nav-anterior" href="que-son-funciones">
-            <span class="nav-etiqueta">← Artículo anterior</span>
-            <strong>¿Qué son las funciones en programación?</strong>
-          </a>
-          <a class="nav-siguiente" href="que-es-poo">
-            <span class="nav-etiqueta">Siguiente artículo →</span>
-            <strong>¿Qué es la programación orientada a objetos (POO)?</strong>
-          </a>
-        </nav>
-
-        <section
-          class="autor-articulo"
-          aria-label="Información del autor"
-        >
-
-          <div
-            class="autor-icono"
-            aria-hidden="true"
-          >
+<nav aria-label="Navegación entre artículos" class="navegacion-articulos">
+<a class="nav-anterior" href="que-son-funciones.html">
+<span class="nav-etiqueta">← Artículo anterior</span>
+<strong>¿Qué son las funciones en programación?</strong>
+</a>
+<a class="nav-siguiente" href="que-es-poo.html">
+<span class="nav-etiqueta">Siguiente artículo →</span>
+<strong>¿Qué es la programación orientada a objetos (POO)?</strong>
+</a>
+</nav>
+<section aria-label="Información del autor" class="autor-articulo">
+<div aria-hidden="true" class="autor-icono">
             &lt;/&gt;
           </div>
-
-          <div class="autor-informacion">
-
-            <span>Artículo creado por</span>
-            <h2>ByteNova</h2>
-
-            <p>Proyecto educativo creado por Dylan Estrada. ByteNova publica contenido sobre programación, desarrollo web, inteligencia artificial y ciberseguridad con un enfoque claro para principiantes y revisión editorial continua.</p>
-
-            <a href="sobre">
+<div class="autor-informacion">
+<span>Artículo creado por</span>
+<h2>ByteNova</h2>
+<p>Proyecto educativo creado por Dylan Estrada. ByteNova publica contenido sobre programación, desarrollo web, inteligencia artificial y ciberseguridad con un enfoque claro para principiantes y revisión editorial continua.</p>
+<a href="sobre.html">
               Conoce más sobre ByteNova →
             </a>
-
-          </div>
-
-        </section>
-
-        <aside
-          class="articulos-relacionados"
-          aria-labelledby="titulo-articulos-relacionados"
-        >
-
-          <h2 id="titulo-articulos-relacionados">
+</div>
+</section>
+<aside aria-labelledby="titulo-articulos-relacionados" class="articulos-relacionados">
+<h2 id="titulo-articulos-relacionados">
             Continúa aprendiendo
           </h2>
-
-          <div class="relacionados-grid">
-
-            <a href="que-son-bucles">
-              <span aria-hidden="true">📘</span>
-              <strong>Bucles</strong>
-              <small>
+<div class="relacionados-grid">
+<a href="que-son-bucles.html">
+<span aria-hidden="true">📘</span>
+<strong>Bucles</strong>
+<small>
                 Aprende a recorrer listas y otras colecciones automáticamente.
               </small>
-            </a>
-
-            <a href="que-son-variables">
-              <span aria-hidden="true">📘</span>
-              <strong>Variables</strong>
-              <small>
+</a>
+<a href="que-son-variables.html">
+<span aria-hidden="true">📘</span>
+<strong>Variables</strong>
+<small>
                 Repasa cómo almacenar y utilizar datos dentro de un programa.
               </small>
-            </a>
-
-            <a href="que-son-funciones">
-              <span aria-hidden="true">📘</span>
-              <strong>Funciones</strong>
-              <small>
+</a>
+<a href="que-son-funciones.html">
+<span aria-hidden="true">📘</span>
+<strong>Funciones</strong>
+<small>
                 Aprende a procesar listas mediante bloques de código
                 reutilizables.
               </small>
-            </a>
-
-          </div>
-
-        </aside>
-
-      </div>
-    </div>
-
-  </article>
-
+</a>
+</div>
+</aside>
+</div>
+</div>
+</article>
 </main>
-
-<footer class="footer">
-
-  <div class="contenedor-footer">
-
-    <div class="footer-logo">
-
-      <a
-        class="marca-bytenova"
-        href="../index#inicio"
-        aria-label="Ir al inicio de ByteNova"
-      >
-        <span class="marca-icono" aria-hidden="true">&lt;/&gt;</span>
-        <span class="marca-texto">ByteNova</span>
-      </a>
-
-      <p>
-        Aprende tecnología desde cero con artículos, rutas, retos,
-        guías y recursos gratuitos.
-      </p>
-
-    </div>
-
-    <nav
-      class="footer-enlaces"
-      aria-label="Enlaces de aprendizaje del pie de página"
-    >
-      <h3>Aprender</h3>
-      <a href="../index#tecnologias">Tecnologías</a>
-      <a href="rutas">Rutas</a>
-      <a href="retos">Retos</a>
-      <a href="material">Guías</a>
-      <a href="articulos">Artículos</a>
-      <a href="glosario">Glosario</a>
-    </nav>
-
-    <nav
-      class="footer-enlaces"
-      aria-label="Enlaces informativos del pie de página"
-    >
-      <h3>ByteNova</h3>
-      <a href="sobre">Sobre ByteNova</a>
-      <a href="../index#contacto">Contacto</a>
-      <a href="privacidad">Privacidad</a>
-      <a href="terminos">Términos</a>
-      <a href="cookies">Cookies</a>
-    </nav>
-
-    <address class="footer-social">
-
-      <h3>Contacto</h3>
-
-      <p>
-        Preguntas, sugerencias o comentarios sobre nuestros
-        contenidos educativos.
-      </p>
-
-      <a href="mailto:bytenova339@gmail.com">
-        bytenova339@gmail.com
-      </a>
-
-      <a href="https://www.tiktok.com/@bytenova.app" target="_blank" rel="noopener noreferrer" aria-label="TikTok de ByteNova">
-        TikTok · @bytenova.app
-      </a>
-
-    </address>
-
-  </div>
-
-  <div class="footer-copy">
-    <p>© 2026 ByteNova. Todos los derechos reservados.</p>
-    <p>Creado por Dylan Estrada.</p>
-  </div>
-
+<footer class="footer footer-v2">
+<div class="footer-v2-shell">
+<div class="footer-v2-grid">
+<div class="footer-v2-brand">
+<a aria-label="Ir al inicio de ByteNova" class="footer-v2-logo" href="../index.html#inicio">
+<span aria-hidden="true" class="footer-v2-logo-icon">&lt;/&gt;</span>
+<span class="footer-v2-logo-text">Byte<span>Nova</span></span>
+</a>
+<p>Aprende tecnología desde cero con artículos, rutas, retos, guías y recursos gratuitos.</p>
+<div class="footer-v2-social">
+<a aria-label="TikTok de ByteNova" href="https://www.tiktok.com/@bytenova.app" rel="noopener noreferrer" target="_blank">♪</a>
+<a aria-label="Correo de ByteNova" href="mailto:bytenova339@gmail.com">✉</a>
+<a aria-label="Sitio web de ByteNova" href="../index.html#inicio">◎</a>
+</div>
+</div>
+<nav aria-label="Enlaces de aprendizaje" class="footer-v2-col">
+<h3>Aprender</h3>
+<a href="../index.html#tecnologias"><span aria-hidden="true">▣</span>Tecnologías</a>
+<a href="rutas.html"><span aria-hidden="true">↗</span>Rutas</a>
+<a href="retos.html"><span aria-hidden="true">🎯</span>Retos</a>
+<a href="material.html"><span aria-hidden="true">▤</span>Guías</a>
+<a href="articulos.html"><span aria-hidden="true">▧</span>Artículos</a>
+<a href="glosario.html"><span aria-hidden="true">▥</span>Glosario</a>
+</nav>
+<nav aria-label="Enlaces de ByteNova" class="footer-v2-col">
+<h3>ByteNova</h3>
+<a href="sobre.html"><span aria-hidden="true">♙</span>Sobre ByteNova</a>
+<a href="../index.html#contacto"><span aria-hidden="true">✉</span>Contacto</a>
+<a href="privacidad.html"><span aria-hidden="true">♢</span>Privacidad</a>
+<a href="terminos.html"><span aria-hidden="true">▤</span>Términos</a>
+<a href="cookies.html"><span aria-hidden="true">◌</span>Cookies</a>
+</nav>
+<div class="footer-v2-contact">
+<h3>Conecta con ByteNova</h3>
+<p>Preguntas, sugerencias o comentarios sobre nuestros contenidos educativos.</p>
+<a href="mailto:bytenova339@gmail.com"><span aria-hidden="true">✉</span>bytenova339@gmail.com</a>
+<a href="https://www.tiktok.com/@bytenova.app" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">♪</span>TikTok · @bytenova.app</a>
+</div>
+</div>
+<div class="footer-v2-bottom">
+<p>© 2026 <strong>ByteNova</strong>. Todos los derechos reservados.</p>
+<p>Creado por Dylan Estrada.</p>
+</div>
+</div>
 </footer>
-
 <script src="../js/script.js"></script>
-
 </body>
 </html>

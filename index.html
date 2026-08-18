@@ -2,8 +2,8 @@
 
 <html lang="es">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-41QWQ3DC33"></script>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-41QWQ3DC33"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -11,7 +11,6 @@
 
   gtag('config', 'G-41QWQ3DC33');
 </script>
-
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="ca-pub-5369456672603969" name="google-adsense-account"/>
@@ -39,24 +38,15 @@
 <!-- FAVICON -->
 <link href="images/favicon.svg" rel="icon" type="image/svg+xml"/>
 <!-- PRECARGA DE LA IMAGEN PRINCIPAL -->
-<link
-    rel="preload"
-    as="image"
-    href="images/hero.webp"
-    imagesrcset="
-        images/hero-mobile.webp 560w,
-        images/hero.webp 1122w
-    "
-    imagesizes="
+<link as="image" fetchpriority="high" href="images/hero.webp" imagesizes="
         (max-width: 480px) 270px,
         (max-width: 768px) 310px,
         500px
-    "
-    fetchpriority="high"
-    type="image/webp"
-><!-- ESTILOS -->
-<link href="./css/style.min.css?v=20260806-2" rel="stylesheet"/>
-
+    " imagesrcset="
+        images/hero-mobile.webp 560w,
+        images/hero.webp 1122w
+    " rel="preload" type="image/webp"/><!-- ESTILOS -->
+<link href="css/style.min.css?v=20260818-center2" rel="stylesheet"/>
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -104,12 +94,10 @@
 <script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5369456672603969">
 </script>
 </head>
-<body>
-
+<body class="home-v2">
 <a class="saltar-contenido" href="#contenido-principal">
     Saltar al contenido principal
 </a>
-
 <header>
 <a class="marca-bytenova" href="#inicio">
 <span class="marca-icono">
@@ -120,687 +108,249 @@
         </span>
 </a>
 <button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle" type="button">
-    <span aria-hidden="true">☰</span>
+<span aria-hidden="true">☰</span>
 </button>
 <nav aria-label="Navegación principal" id="menu-principal">
 <a aria-current="page" href="#inicio">Inicio</a>
-<a href="pages/sobre">Sobre</a>
+<a href="pages/sobre.html">Sobre</a>
 <a href="#tecnologias">Aprender</a>
-<a href="pages/rutas">Rutas</a>
-<a href="pages/retos">Retos</a>
-<a href="pages/material">Guías</a>
-<a href="pages/articulos">Artículos</a>
-<a href="pages/glosario">Glosario</a>
+<a href="pages/rutas.html">Rutas</a>
+<a href="pages/retos.html">Retos</a>
+<a href="pages/material.html">Guías</a>
+<a href="pages/articulos.html">Artículos</a>
+<a href="pages/glosario.html">Glosario</a>
 <a href="#contacto">Contacto</a>
 <button aria-label="Activar modo oscuro" class="btn-modo" id="btn-modo" type="button">
 <span aria-hidden="true">🌙</span>
 </button>
 </nav>
 </header>
-<main id="contenido-principal">
-<section class="hero" id="inicio">
-<div class="hero-texto">
-<span class="etiqueta">Aprende tecnología desde cero 🚀</span>
-<h1>
-Aprende programación, inteligencia artificial y tecnología desde cero
-</h1>
-
-<p>
-ByteNova reúne artículos, rutas de aprendizaje, retos prácticos y recursos gratuitos para ayudarte a desarrollar habilidades tecnológicas paso a paso, sin importar tu nivel de experiencia.
-</p>
-<div class="hero-botones">
-<a class="btn-principal" href="#tecnologias">
-     Comenzar a aprender
-     </a>
-<a class="btn-secundario" href="#material">
-     Material gratuito
-     </a>
+<div class="dark-mode-suggestion" id="dark-mode-suggestion" role="status">
+<div class="dark-mode-suggestion-inner">
+<div class="dark-mode-suggestion-copy">
+<span aria-hidden="true" class="dark-mode-suggestion-icon">🌙</span>
+<p><strong>¿Quieres una experiencia más inmersiva?</strong> Prueba ByteNova en modo oscuro.</p>
+</div>
+<div class="dark-mode-suggestion-actions">
+<button id="dark-mode-suggestion-activate" type="button">Activar modo oscuro</button>
+<button aria-label="Cerrar recomendación" id="dark-mode-suggestion-close" type="button">×</button>
 </div>
 </div>
-<div class="hero-imagen">
-<img
-    src="images/hero.webp"
-    srcset="
-        images/hero-mobile.webp 560w,
-        images/hero.webp 1122w
-    "
-    sizes="
-        (max-width: 480px) 270px,
-        (max-width: 768px) 310px,
-        500px
-    "
-    alt="Espacio de aprendizaje tecnológico de ByteNova"
-    width="1122"
-    height="1402"
-    loading="eager"
-    fetchpriority="high"
-    decoding="async"
-></div>
+</div><main id="contenido-principal">
+<section aria-labelledby="homev2-titulo" class="homev2-hero homev2-hero-full" id="inicio">
+<div class="homev2-shell homev2-hero-grid homev2-hero-grid-full homev2-hero-with-card">
+<div class="homev2-hero-copy homev2-hero-copy-full">
+<span class="homev2-kicker">🚀 Aprende · Explora · Construye</span>
+<h1 id="homev2-titulo">Aprende tecnología de forma simple, <span>práctica y gratuita</span></h1>
+<p>Todo lo que necesitas para comprender programación, desarrollo web, inteligencia artificial y ciberseguridad, con explicaciones claras para avanzar desde cero.</p>
+<div class="homev2-actions">
+<a class="homev2-btn homev2-btn-primary" href="pages/rutas.html">Empieza ahora →</a>
+<a class="homev2-btn homev2-btn-secondary" href="#como-funciona">Ver cómo funciona</a>
+</div>
+<div aria-label="Ventajas de ByteNova" class="homev2-trust-mini">
+<span>✓ Contenido gratuito</span>
+<span>✓ Pensado para principiantes</span>
+<span>✓ Aprendizaje práctico</span>
+</div>
+</div>
+<aside aria-label="Mensaje de bienvenida" class="homev2-welcome-card">
+<div class="homev2-welcome-head">
+<span aria-hidden="true" class="homev2-welcome-icon">👋</span>
+<h2>¡Bienvenido a <span>ByteNova!</span></h2>
+</div>
+<blockquote>
+<span aria-hidden="true" class="homev2-quote-mark">“</span>
+<p>La tecnología no es solo el futuro, es el presente que estás construyendo con cada línea de código, cada pregunta y cada paso que das hoy. Sigue aprendiendo, sigue creando, y construye el futuro que imaginas.</p>
+<span aria-hidden="true" class="homev2-quote-mark end">”</span>
+</blockquote>
+<div class="homev2-welcome-bottom">
+<p>🚀 <strong>Tu mejor proyecto comienza ahora.</strong></p>
+<p><span>Estás en el lugar correcto.</span></p>
+</div>
+</aside></div>
+</section><section class="bnx-popular" id="popular-ahora">
+<div class="bnx-popular-head"><span>🔥 POPULAR AHORA</span><h2>Empieza por algo útil</h2><p>Contenido recomendado para aprender, practicar y construir.</p></div>
+<div class="bnx-popular-grid">
+<a href="pages/que-aprender-despues.html"><span>🧭</span><small>Para principiantes</small><strong>¿Qué aprender después?</strong><p>Encuentra tu siguiente paso.</p></a>
+<a href="pages/proyectos-para-practicar.html"><span>💡</span><small>Construye</small><strong>Proyectos para practicar</strong><p>Convierte conceptos en proyectos.</p></a>
+<a href="pages/laboratorio.html"><span>🧪</span><small>Herramientas</small><strong>Laboratorio ByteNova</strong><p>Usa herramientas directamente.</p></a>
+<a href="pages/errores-comunes.html"><span>📚</span><small>Soluciona</small><strong>Errores comunes</strong><p>Entiende qué significa cada error.</p></a>
+</div>
 </section>
-<!-- ==========================
-     SOBRE BYTENOVA PREMIUM
-========================== -->
-<section class="sobre sobre-premium rendimiento-diferido" id="sobre">
-<div class="sobre-contenido-premium">
-<div class="sobre-texto-premium">
-<span class="seccion-etiqueta">
-                🚀 Sobre ByteNova
-            </span>
-<h2>
-                Tecnología explicada de forma clara, moderna y accesible.
-            </h2>
-<p>
-            ByteNova es una plataforma gratuita de aprendizaje tecnológico
-            creada para ayudar a las personas a empezar desde cero mediante
-            rutas, artículos, guías, ejercicios y recursos sobre programación,
-            inteligencia artificial, ciberseguridad e innovación digital.
-           </p>
-<p>
-             Nuestro objetivo es guiar a cada persona paso a paso, conectando
-            explicaciones claras con rutas de aprendizaje, ejercicios,
-            materiales descargables y proyectos prácticos.
-        </p>
-<div class="sobre-estadisticas">
+<section aria-labelledby="homev2-accesos" class="homev2-shortcuts" id="como-funciona">
+<div class="homev2-shell">
+<div class="homev2-shortcut-grid">
+<a class="homev2-shortcut homev2-purple" href="pages/rutas.html"><span>🎓</span><strong>Rutas de aprendizaje</strong><small>Sigue un camino paso a paso</small><b>→</b></a>
+<a class="homev2-shortcut homev2-blue" href="pages/articulos.html"><span>📄</span><strong>Artículos</strong><small>Explicaciones claras y fáciles</small><b>→</b></a>
+<a class="homev2-shortcut homev2-green" href="pages/retos.html"><span>🎯</span><strong>Retos</strong><small>Pon a prueba lo aprendido</small><b>→</b></a>
+<a class="homev2-shortcut homev2-orange" href="pages/material.html"><span>📚</span><strong>Guías gratuitas</strong><small>Descarga material en PDF</small><b>→</b></a>
+<a class="homev2-shortcut homev2-pink" href="pages/glosario.html"><span>📖</span><strong>Glosario</strong><small>Consulta términos rápidamente</small><b>→</b></a>
+<a class="homev2-shortcut homev2-cyan" href="#tecnologias"><span>▦</span><strong>Temas</strong><small>Explora por área tecnológica</small><b>→</b></a>
+</div>
+</div>
+</section>
+<section aria-labelledby="homev2-goals-title" class="homev2-goals" id="tecnologias">
+<div class="homev2-shell">
+<div class="homev2-section-title">
+<span>Encuentra tu camino</span>
+<h2 id="homev2-goals-title">¿Qué quieres <em>aprender hoy?</em></h2>
+<p>Elige tu objetivo y ve directamente al contenido que más te puede ayudar.</p>
+</div>
+<div aria-label="Áreas de aprendizaje" class="homev2-topic-pills">
+<a href="pages/articulos.html">★ Todos</a>
+<a href="pages/rutas.html">⌨ Programación</a>
+<a href="pages/que-es-inteligencia-artificial.html">🧠 Inteligencia artificial</a>
+<a href="pages/conceptos-ciberseguridad.html">🛡 Ciberseguridad</a>
+<a href="pages/por-que-aprender-html-css.html">▣ Desarrollo web</a>
+</div>
+<div class="homev2-goal-grid">
+<article class="homev2-goal-card">
+<span class="homev2-goal-icon">👤</span>
+<h3>Soy principiante</h3>
+<p>Empieza desde cero con conceptos claros y una ruta sencilla.</p>
+<div class="homev2-progress"><i style="width:58%"></i></div>
+<a href="pages/rutas.html">Ver ruta →</a>
+</article>
+<article class="homev2-goal-card">
+<span class="homev2-goal-icon">🖥️</span>
+<h3>Quiero crear páginas web</h3>
+<p>Aprende HTML, CSS, JavaScript y conceptos esenciales de la Web.</p>
+<div class="homev2-progress"><i style="width:72%"></i></div>
+<a href="pages/por-que-aprender-html-css.html">Ver contenido →</a>
+</article>
+<article class="homev2-goal-card">
+<span class="homev2-goal-icon">🧠</span>
+<h3>Me interesa la IA</h3>
+<p>Comprende cómo funciona y conoce modelos, datos y herramientas.</p>
+<div class="homev2-progress"><i style="width:65%"></i></div>
+<a href="pages/que-es-inteligencia-artificial.html">Explorar →</a>
+</article>
+<article class="homev2-goal-card">
+<span class="homev2-goal-icon">🛡️</span>
+<h3>Quiero mejorar mi seguridad</h3>
+<p>Conoce amenazas, buenas prácticas y formas de proteger tus datos.</p>
+<div class="homev2-progress"><i style="width:52%"></i></div>
+<a href="pages/conceptos-ciberseguridad.html">Ver guía →</a>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="homev2-featured-title" class="homev2-featured">
+<div class="homev2-shell">
+<div class="homev2-section-title compact">
+<span>🔥 Temas destacados</span>
+<h2 id="homev2-featured-title">Explora por tecnología</h2>
+</div>
+<div class="homev2-featured-grid">
+<a href="pages/python-para-principiantes.html"><span>🐍</span><div><strong>Python</strong><small>Programación</small></div></a>
+<a href="pages/por-que-aprender-html-css.html"><span>🟧</span><div><strong>HTML &amp; CSS</strong><small>Desarrollo web</small></div></a>
+<a href="pages/que-es-javascript.html"><span>JS</span><div><strong>JavaScript</strong><small>Programación</small></div></a>
+<a href="pages/que-es-inteligencia-artificial.html"><span>🧠</span><div><strong>Inteligencia Artificial</strong><small>IA</small></div></a>
+<a href="pages/conceptos-ciberseguridad.html"><span>🛡</span><div><strong>Ciberseguridad</strong><small>Seguridad digital</small></div></a>
+</div>
+</div>
+</section>
+<section aria-labelledby="homev2-articulos-title" class="homev2-content" id="articulos">
+<div class="homev2-shell">
+<div class="homev2-heading-row">
 <div>
-<strong>PDF</strong>
-<span>Material descargable</span>
+<span>Contenido para seguir avanzando</span>
+<h2 id="homev2-articulos-title">Últimos artículos</h2>
 </div>
+<a href="pages/articulos.html">Ver todos los artículos →</a>
+</div>
+<div class="homev2-article-grid">
+<article class="homev2-article-card">
+<div class="homev2-article-cover cover-ai"><span>🧠</span></div>
+<div class="homev2-article-body">
+<small>Inteligencia artificial</small>
+<h3>¿Qué es la inteligencia artificial?</h3>
+<p>Una introducción clara para comprender qué es, cómo funciona y dónde se utiliza.</p>
+<a href="pages/que-es-inteligencia-artificial.html">Leer artículo →</a>
+</div>
+</article>
+<article class="homev2-article-card">
+<div class="homev2-article-cover cover-web"><span>&lt;/&gt;</span></div>
+<div class="homev2-article-body">
+<small>Desarrollo web</small>
+<h3>¿Por qué aprender HTML y CSS?</h3>
+<p>Conoce la base de la Web y por qué estos dos lenguajes siguen siendo esenciales.</p>
+<a href="pages/por-que-aprender-html-css.html">Leer artículo →</a>
+</div>
+</article>
+<article class="homev2-article-card">
+<div class="homev2-article-cover cover-sec"><span>🔐</span></div>
+<div class="homev2-article-body">
+<small>Ciberseguridad</small>
+<h3>Ciberseguridad para estudiantes</h3>
+<p>Hábitos y conceptos para proteger mejor tus cuentas, dispositivos e información.</p>
+<a href="pages/ciberseguridad-estudiantes.html">Leer artículo →</a>
+</div>
+</article>
+<article class="homev2-article-card">
+<div class="homev2-article-cover cover-python"><span>🐍</span></div>
+<div class="homev2-article-body">
+<small>Programación</small>
+<h3>Python para principiantes</h3>
+<p>Primeros conceptos para comenzar a programar con un lenguaje claro y popular.</p>
+<a href="pages/python-para-principiantes.html">Leer artículo →</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="homev2-resources-title" class="homev2-resources" id="biblioteca">
+<div class="homev2-shell homev2-resource-layout">
+<div class="homev2-resource-panel">
+<div class="homev2-heading-row small">
 <div>
-<strong>Guías</strong>
-<span>Explicaciones paso a paso</span>
+<span>🎁 Biblioteca gratuita</span>
+<h2 id="homev2-resources-title">Guías y recursos</h2>
 </div>
+<a href="pages/material.html">Ver todo →</a>
+</div>
+<div class="homev2-resource-list">
+<a href="docs/guia-html-css.pdf" rel="noopener" target="_blank"><span>📄</span><div><strong>Guía de HTML y CSS</strong><small>PDF · Nivel inicial</small></div><b>↓</b></a>
+<a href="docs/introduccion-python.pdf" rel="noopener" target="_blank"><span>📄</span><div><strong>Introducción a Python</strong><small>PDF · Nivel inicial</small></div><b>↓</b></a>
+<a href="docs/conceptos-ciberseguridad.pdf" rel="noopener" target="_blank"><span>📄</span><div><strong>Conceptos de ciberseguridad</strong><small>PDF · Nivel inicial</small></div><b>↓</b></a>
+<a href="docs/herramientas-ia.pdf" rel="noopener" target="_blank"><span>📄</span><div><strong>Herramientas de IA</strong><small>PDF · Nivel inicial</small></div><b>↓</b></a>
+</div>
+</div>
+<aside aria-labelledby="homev2-glossary-title" class="homev2-glossary-preview">
+<div class="homev2-heading-row small">
 <div>
-<strong>Retos</strong>
-<span>Prácticas para aprender</span>
+<span>🔎 Consulta rápida</span>
+<h2 id="homev2-glossary-title">Glosario</h2>
 </div>
+<a href="pages/glosario.html">Ver glosario →</a>
 </div>
+<div class="homev2-glossary-list">
+<a href="pages/que-es-una-api.html"><span>API</span><p>Interfaz que permite la comunicación entre sistemas.</p><b>›</b></a>
+<a href="pages/que-es-un-algoritmo.html"><span>Algoritmo</span><p>Conjunto ordenado de pasos para resolver un problema.</p><b>›</b></a>
+<a href="pages/que-es-una-base-de-datos.html"><span>Base de datos</span><p>Colección organizada de información estructurada.</p><b>›</b></a>
+<a href="pages/que-son-librerias-y-frameworks.html"><span>Framework</span><p>Estructura y herramientas para desarrollar software.</p><b>›</b></a>
+<a href="pages/que-es-un-llm.html"><span>Token</span><p>Unidad utilizada por modelos para procesar texto.</p><b>›</b></a>
 </div>
-<div class="sobre-panel-premium">
-<div class="sobre-card activa">
-<span>💻</span>
-<h3>Programación</h3>
-<p>Aprende conceptos de desarrollo web y lógica digital.</p>
-</div>
-<div class="sobre-card">
-<span>🤖</span>
-<h3>Inteligencia Artificial</h3>
-<p>Descubre herramientas y conceptos de IA moderna.</p>
-</div>
-<div class="sobre-card">
-<span>🛡️</span>
-<h3>Ciberseguridad</h3>
-<p>Conoce buenas prácticas para proteger información.</p>
-</div>
-</div>
+</aside>
 </div>
 </section>
-<!-- ==========================
-     OBJETIVOS DE APRENDIZAJE
-========================== -->
-<section class="objetivos-aprendizaje rendimiento-diferido" id="tecnologias">
-<div class="objetivos-encabezado">
-<span class="objetivos-etiqueta">
-            🧭 Encuentra tu camino
-        </span>
-<h2>
-            Empieza según tu objetivo
-        </h2>
-<p>
-            Elige qué deseas conseguir y comienza con una guía organizada,
-            clara y pensada para aprender desde cero.
-        </p>
-</div>
-<div class="objetivos-grid">
-<article class="objetivo-card">
-<div class="objetivo-superior">
-<span class="objetivo-icono">
-                    🌐
-                </span>
-<span class="objetivo-numero">
-                    Ruta 01
-                </span>
-</div>
-<h3>
-                Quiero crear páginas web
-            </h3>
-<p>
-                Aprende a construir sitios modernos, organizados y adaptables
-                utilizando HTML, CSS y JavaScript.
-            </p>
-<ul>
-<li>HTML y estructura web</li>
-<li>Diseño profesional con CSS</li>
-<li>Interactividad con JavaScript</li>
-</ul>
-<a class="objetivo-enlace" href="pages/guia-html-css">
-                Comenzar desarrollo web
-                <span aria-hidden="true">→</span>
-</a>
-</article>
-<article class="objetivo-card">
-<div class="objetivo-superior">
-<span class="objetivo-icono">
-                    🐍
-                </span>
-<span class="objetivo-numero">
-                    Ruta 02
-                </span>
-</div>
-<h3>
-                Quiero aprender programación
-            </h3>
-<p>
-                Desarrolla pensamiento lógico y aprende a crear tus primeros
-                programas utilizando Python.
-            </p>
-<ul>
-<li>Variables y tipos de datos</li>
-<li>Condiciones y ciclos</li>
-<li>Funciones y proyectos prácticos</li>
-</ul>
-<a class="objetivo-enlace" href="pages/introduccion-python">
-                Comenzar con Python
-                <span aria-hidden="true">→</span>
-</a>
-</article>
-<article class="objetivo-card">
-<div class="objetivo-superior">
-<span class="objetivo-icono">
-                    🛡️
-                </span>
-<span class="objetivo-numero">
-                    Ruta 03
-                </span>
-</div>
-<h3>
-                Quiero protegerme en Internet
-            </h3>
-<p>
-                Aprende hábitos de seguridad para proteger cuentas,
-                dispositivos, redes e información personal.
-            </p>
-<ul>
-<li>Contraseñas seguras</li>
-<li>Phishing y malware</li>
-<li>Privacidad y protección de datos</li>
-</ul>
-<a class="objetivo-enlace" href="pages/conceptos-ciberseguridad">
-                Aprender ciberseguridad
-                <span aria-hidden="true">→</span>
-</a>
-</article>
-<article class="objetivo-card">
-<div class="objetivo-superior">
-<span class="objetivo-icono">
-                    🤖
-                </span>
-<span class="objetivo-numero">
-                    Ruta 04
-                </span>
-</div>
-<h3>
-                Quiero comprender la inteligencia artificial
-            </h3>
-<p>
-                Descubre cómo funciona la IA y cómo utilizar sus herramientas
-                para aprender, crear y trabajar mejor.
-            </p>
-<ul>
-<li>Conceptos fundamentales</li>
-<li>Herramientas de inteligencia artificial</li>
-<li>Uso responsable y seguro</li>
-</ul>
-<a class="objetivo-enlace" href="pages/herramientas-ia">
-                Explorar inteligencia artificial
-                <span aria-hidden="true">→</span>
-</a>
-</article>
-</div>
-<div class="objetivos-accion">
-<p>
-            ¿Todavía no sabes por dónde comenzar?
-        </p>
-<a class="btn-todas-rutas" href="pages/rutas">
-            Ver todas las rutas de aprendizaje
-            <span aria-hidden="true">→</span>
-</a>
+<section aria-label="Por qué aprender con ByteNova" class="homev2-trust">
+<div class="homev2-shell homev2-trust-grid">
+<div><span>🔒</span><strong>Contenido confiable</strong><small>Revisado y explicado de forma clara.</small></div>
+<div><span>♡</span><strong>100% gratuito</strong><small>Accede sin pagar ni registrarte.</small></div>
+<div><span>👥</span><strong>Para todos</strong><small>Desde principiantes hasta curiosos.</small></div>
+<div><span>🚀</span><strong>En crecimiento</strong><small>Nuevos temas y mejoras constantes.</small></div>
 </div>
 </section>
-<!-- ==========================
-     MÉTODO DE APRENDIZAJE
-========================== -->
-<section class="cursos rendimiento-diferido">
-<h2>Así aprenderás en ByteNova</h2>
-<p>
-        Avanza paso a paso combinando explicaciones, práctica,
-        recursos descargables y proyectos tecnológicos.
-    </p>
-<div class="contenedor-cursos">
-<article class="tarjeta-curso">
-<span>📖</span>
-<h3>Comprende el tema</h3>
-<p>
-                Comienza con artículos claros que explican cada concepto
-                tecnológico desde cero y con ejemplos sencillos.
-            </p>
-<small>
-                Explicaciones paso a paso
-            </small>
-<a class="btn-explorar" href="#articulos">
-                Ver artículos
-            </a>
-</article>
-<article class="tarjeta-curso">
-<span>🧠</span>
-<h3>Refuerza lo aprendido</h3>
-<p>
-                Practica los conceptos mediante ejercicios diseñados
-                para ayudarte a recordar y aplicar cada tema.
-            </p>
-<small>
-                Ejercicios prácticos
-            </small>
-<a class="btn-explorar" href="pages/retos">
-               Ver prácticas
-            </a>
-</article>
-<article class="tarjeta-curso">
-<span>📘</span>
-<h3>Descarga material</h3>
-<p>
-                Utiliza guías, resúmenes y recursos en PDF para estudiar
-                desde tu computadora o teléfono.
-            </p>
-<small>
-                Material gratuito
-            </small>
-<a class="btn-explorar" href="pages/material">
-                Ver material
-            </a>
-</article>
-<article class="tarjeta-curso">
-<span>🚀</span>
-<h3>Aplica tus conocimientos</h3>
-<p>
-                Completa retos y pequeños proyectos para transformar
-                lo aprendido en habilidades reales.
-            </p>
-<small>
-                Retos y proyectos
-            </small>
-<a class="btn-explorar" href="pages/retos">
-             Ver retos
-            </a>
-</article>
+<section aria-labelledby="homev2-cta-title" class="homev2-cta" id="contacto">
+<div class="homev2-shell">
+<div class="homev2-cta-box">
+<div>
+<span>✦ ByteNova</span>
+<h2 id="homev2-cta-title">Tu espacio para aprender tecnología sin límites</h2>
+<p>Empieza por una ruta, consulta un concepto o descubre un tema nuevo a tu propio ritmo.</p>
 </div>
-</section>
-<!-- ==========================
-     RUTAS DE APRENDIZAJE
-========================== -->
-<section class="biblioteca rutas-aprendizaje rendimiento-diferido" id="biblioteca">
-<span class="seccion-etiqueta">
-        📚 Biblioteca práctica
-    </span>
-<h2>Aprende, practica y descarga recursos gratuitos</h2>
-<p>
-        Sigue rutas organizadas, completa retos prácticos y descarga guías
-        para aprender tecnología desde cero y avanzar a tu propio ritmo.
-    </p>
-<div class="contenedor-recursos">
-<!-- RUTAS DE APRENDIZAJE -->
-<article class="tarjeta-recurso">
-<span aria-hidden="true">
-                🧭
-            </span>
-<h3>Rutas de aprendizaje</h3>
-<p>
-                Sigue un orden recomendado de artículos para aprender
-                desarrollo web, Python, ciberseguridad, redes,
-                sistemas e inteligencia artificial.
-            </p>
-<div class="botones-recurso">
-<a class="btn-leer" href="pages/rutas">
-                    Explorar rutas
-                </a>
-</div>
-</article>
-<!-- RETOS PRÁCTICOS -->
-<article class="tarjeta-recurso">
-<span aria-hidden="true">
-                🧩
-            </span>
-<h3>Retos prácticos</h3>
-<p>
-                Pon a prueba tus conocimientos con ejercicios de HTML,
-                CSS, Python y ciberseguridad que incluyen pistas y
-                soluciones orientativas.
-            </p>
-<div class="botones-recurso">
-<a class="btn-leer" href="pages/retos">
-                    Realizar retos
-                </a>
-</div>
-</article>
-<!-- GUÍAS DESCARGABLES -->
-<article class="tarjeta-recurso">
-<span aria-hidden="true">
-                📥
-            </span>
-<h3>Guías descargables</h3>
-<p>
-                Consulta guías completas y descarga ejercicios, prácticas
-                y materiales gratuitos para estudiar incluso sin conexión.
-            </p>
-<div class="botones-recurso">
-<a class="btn-leer" href="pages/material">
-                    Ver guías
-                </a>
-</div>
-</article>
-</div>
-</section>
-<!-- ==========================
-     MATERIAL DE ESTUDIO
-========================== -->
-<section class="material material-cta rendimiento-diferido" id="material">
-<div class="material-cta-contenido">
-<span class="seccion-etiqueta">
-            📂 Biblioteca de recursos
-        </span>
-<h2>
-            Continúa aprendiendo con material tecnológico gratuito
-        </h2>
-<p>
-            Descarga guías, ejercicios, resúmenes y recursos preparados
-            para complementar las rutas de aprendizaje de ByteNova.
-        </p>
-<a class="btn-principal" href="pages/material">
-            Explorar biblioteca de recursos
-        </a>
-</div>
-</section>
-<!-- ==========================
-     ÚLTIMOS ARTÍCULOS
-========================== -->
-<section class="articulos rendimiento-diferido" id="articulos">
-<h2>Aprende con nuestros artículos</h2>
-<p>
-    Encuentra explicaciones claras, tutoriales y respuestas a preguntas
-    reales sobre programación, inteligencia artificial, desarrollo web
-    y ciberseguridad.
-</p>
-<div class="contenedor-articulos">
-<article class="tarjeta-articulo">
-<span>🤖</span>
-<h3>¿Qué es la inteligencia artificial y cómo funciona?</h3>
-<p>
-            Comprende qué es la IA, cómo aprende de los datos y de qué
-            manera se utiliza para crear contenido y automatizar tareas.
-        </p>
-<a href="pages/que-es-inteligencia-artificial">
-            Leer artículo
-        </a>
-</article>
-<article class="tarjeta-articulo">
-<span>🌐</span>
-<h3>¿Qué son HTML y CSS y para qué sirven?</h3>
-<p>
-            Descubre cómo HTML crea la estructura de una página y cómo
-            CSS permite diseñarla y adaptarla a diferentes pantallas.
-        </p>
-<a href="pages/por-que-aprender-html-css">
-            Leer artículo
-        </a>
-</article>
-<article class="tarjeta-articulo">
-<span>🛡️</span>
-<h3>Consejos básicos para protegerte en Internet</h3>
-<p>
-            Aprende a crear contraseñas seguras, reconocer amenazas y
-            proteger tus cuentas, dispositivos e información personal.
-        </p>
-<a href="pages/ciberseguridad-estudiantes">
-            Leer artículo
-        </a>
-</article>
-<article class="tarjeta-articulo">
-<span>🐍</span>
-<h3>¿Qué es Python y por qué es ideal para principiantes?</h3>
-<p>
-            Conoce las características de Python, para qué se utiliza y
-            por qué es uno de los mejores lenguajes para empezar a programar.
-        </p>
-<a href="pages/python-para-principiantes">
-            Leer artículo
-        </a>
-</article>
-<article class="tarjeta-articulo">
-<span>🌐</span>
-<h3>¿Qué es una página web y cómo funciona?</h3>
-<p>
-            Descubre cómo funcionan las páginas web, qué elementos necesitan
-            y cuáles son los primeros pasos para crear una desde cero.
-        </p>
-<a href="pages/que-es-una-pagina-web">
-            Leer artículo
-        </a>
-</article>
-<article class="tarjeta-articulo">
-<span>🔎</span>
-<h3>¿Qué es SEO y cómo ayuda a una página web?</h3>
-<p>
-            Aprende cómo funciona el posicionamiento web y qué prácticas
-            ayudan a mejorar la visibilidad de una página en Google.
-        </p>
-<a href="pages/que-es-seo">
-            Leer artículo
-        </a>
-</article> 
-<div class="acciones-articulos">
-<a class="btn-ver-todos" href="pages/articulos">
-        Ver todos los artículos
-    </a>
-</div>
-</div>
-</section>
-<!-- ==========================
-     GLOSARIO TECNOLÓGICO
-========================== -->
-<section class="glosario rendimiento-diferido" id="glosario">
-<span class="seccion-etiqueta">
-        📖 Glosario tecnológico
-    </span>
-<h2>
-    Comprende los términos tecnológicos más importantes
-</h2>
-<p>
-    Consulta definiciones claras y sencillas sobre programación,
-    inteligencia artificial, desarrollo web, Internet y ciberseguridad.
-</p>
-<div class="glosario-grid">
-<div class="glosario-card">
-<h3>HTML</h3>
-<p>
-                Lenguaje que se usa para crear la estructura de una página web,
-                como títulos, textos, imágenes y botones.
-            </p>
-</div>
-<div class="glosario-card">
-<h3>CSS</h3>
-<p>
-                Tecnología que permite darle diseño a una página web:
-                colores, tamaños, posiciones, sombras y adaptación a celular.
-            </p>
-</div>
-<div class="glosario-card">
-<h3>JavaScript</h3>
-<p>
-                Lenguaje que agrega interacción a las páginas web, como menús,
-                botones dinámicos, animaciones y formularios.
-            </p>
-</div>
-<div class="glosario-card">
-<h3>Python</h3>
-<p>
-                Lenguaje de programación fácil de aprender, usado en automatización,
-                inteligencia artificial, análisis de datos y desarrollo.
-            </p>
-</div>
-<div class="glosario-card">
-<h3>Inteligencia Artificial</h3>
-<p>
-                Tecnología que permite a las computadoras realizar tareas que
-                normalmente requieren inteligencia humana.
-            </p>
-</div>
-<div class="glosario-card">
-<h3>Ciberseguridad</h3>
-<p>
-                Conjunto de prácticas para proteger cuentas, dispositivos,
-                redes, sistemas e información digital.
-            </p>
-</div>
-</div>
-<a class="btn-principal" href="pages/glosario">
-          Ver glosario completo
-         </a>
-</section>
-<!-- ==========================
-     PREGUNTAS FRECUENTES
-========================== -->
-<section class="faq rendimiento-diferido">
-<h2>Preguntas frecuentes</h2>
-<p>
-        Resolvemos las dudas más comunes sobre ByteNova.
-    </p>
-<div class="contenedor-faq">
-<details class="pregunta">
-<summary>
-        ¿Qué es ByteNova?
-    </summary>
-<p>
-        ByteNova es una plataforma gratuita de aprendizaje tecnológico
-        con rutas, artículos, ejercicios, guías y recursos creados para
-        ayudar a las personas a aprender desde cero.
-    </p>
-</details>
-<details class="pregunta">
-<summary>
-            ¿Necesito conocimientos previos para comenzar?
-        </summary>
-<p>
-            No. ByteNova está pensada especialmente para principiantes.
-            Cada tema se explica desde sus fundamentos y avanza paso a paso.
-        </p>
-</details>
-<details class="pregunta">
-<summary>
-            ¿Qué temas puedo aprender en ByteNova?
-        </summary>
-<p>
-            Encontrarás contenido sobre desarrollo web, HTML, CSS, JavaScript,
-            Python, inteligencia artificial, ciberseguridad, Internet
-            y herramientas digitales.
-        </p>
-</details>
-<details class="pregunta">
-<summary>
-            ¿El contenido y los recursos son gratuitos?
-        </summary>
-<p>
-            Sí. Las rutas, artículos, ejercicios, guías y materiales de ByteNova
-            están creados para que cualquier persona pueda aprender tecnología
-            gratuitamente.
-        </p>
-</details>
-</div>
-</section>
-<!-- ==========================
-     CONTACTO
-========================== -->
-<section class="contacto rendimiento-diferido" id="contacto">
-<h2>¿Cómo podemos ayudarte?</h2>
-<p class="contacto-intro">
-  Consultas sobre ByteNova, sugerencias de contenido o reportes de errores son bienvenidos.
-  También puedes escribir directamente a <a href="mailto:bytenova339@gmail.com">bytenova339@gmail.com</a>.
-</p>
-
-<p>
-    Envíanos tus preguntas, sugerencias o ideas para seguir mejorando
-    ByteNova y crear recursos que realmente te ayuden a aprender.
-</p>
-<div class="contenedor-contacto">
-
-<form
-    action="https://api.web3forms.com/submit"
-    class="formulario-contacto"
-    method="POST"
->
-
-    <input
-        type="hidden"
-        name="access_key"
-        value="c4ace6e1-9943-459c-a8d1-7ed1ed956ab9"
-    >
-
-    <input
-        type="hidden"
-        name="subject"
-        value="Nuevo mensaje desde ByteNova"
-    >
-
-    <input
-        type="hidden"
-        name="from_name"
-        value="ByteNova"
-    >
-
-    <input
-        type="hidden"
-        name="redirect"
-        value="https://bytenova.app/pages/gracias"
-    >
-
-    <input
-        type="checkbox"
-        name="botcheck"
-        style="display:none;"
-        tabindex="-1"
-        autocomplete="off"
-    >
-<label for="nombre">
-        Nombre
-    </label>
-<input autocomplete="name" id="nombre" name="nombre" placeholder="Tu nombre" required="" type="text"/>
-<label for="email">
-        Correo electrónico
-    </label>
-<input autocomplete="email" id="email" name="email" placeholder="Tu correo electrónico" required="" type="email"/>
-<label for="mensaje">
-        Mensaje
-    </label>
-<textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required="" rows="6"></textarea>
-<button class="btn-enviar" type="submit">
-        Enviar mensaje
-    </button>
-</form>
-<div class="informacion-contacto">
-<h3>
-        ByteNova 🚀
-    </h3>
-<p>
-        Una plataforma gratuita creada para ayudar a las personas
-        a aprender tecnología desde cero de forma clara y práctica.
-    </p>
-<p>
-        🧭 Rutas de aprendizaje organizadas
-    </p>
-<p>
-        📚 Artículos, guías y material gratuito
-    </p>
-<p>
-        🧪 Ejercicios, retos y proyectos prácticos
-    </p>
+<a class="homev2-btn homev2-btn-primary" href="pages/rutas.html">Comenzar ahora →</a>
 </div>
 </div>
 </section>
@@ -808,63 +358,88 @@ ByteNova reúne artículos, rutas de aprendizaje, retos prácticos y recursos gr
 <!-- ==========================
      FOOTER
 ========================== -->
-<footer class="footer">
-<div class="contenedor-footer">
-<div class="footer-logo">
-<a class="marca-bytenova" href="#inicio">
-<span class="marca-icono">
-                    &lt;/&gt;
-                </span>
-<span class="marca-texto">
-                    ByteNova
-                </span>
+<footer class="footer footer-v2">
+<div class="footer-v2-shell">
+<div class="footer-v2-grid">
+<div class="footer-v2-brand">
+<a aria-label="Ir al inicio de ByteNova" class="footer-v2-logo" href="index.html#inicio">
+<span aria-hidden="true" class="footer-v2-logo-icon">&lt;/&gt;</span>
+<span class="footer-v2-logo-text">Byte<span>Nova</span></span>
 </a>
-<p>
-                Aprende tecnología desde cero con artículos, rutas,
-                retos, guías y recursos gratuitos.
-            </p>
+<p>Aprende tecnología desde cero con artículos, rutas, retos, guías y recursos gratuitos.</p>
+<div class="footer-v2-social">
+<a aria-label="TikTok de ByteNova" href="https://www.tiktok.com/@bytenova.app" rel="noopener noreferrer" target="_blank">♪</a>
+<a aria-label="Correo de ByteNova" href="mailto:bytenova339@gmail.com">✉</a>
+<a aria-label="Sitio web de ByteNova" href="index.html#inicio">◎</a>
 </div>
-<nav aria-label="Recursos para aprender" class="footer-enlaces">
+</div>
+<nav aria-label="Enlaces de aprendizaje" class="footer-v2-col">
 <h3>Aprender</h3>
-<a href="#tecnologias">Tecnologías</a>
-<a href="pages/rutas">Rutas</a>
-<a href="pages/retos">Retos</a>
-<a href="pages/material">Guías</a>
-<a href="pages/articulos">Artículos</a>
-<a href="pages/glosario">Glosario</a>
+<a href="index.html#tecnologias"><span aria-hidden="true">▣</span>Tecnologías</a>
+<a href="pages/rutas.html"><span aria-hidden="true">↗</span>Rutas</a>
+<a href="pages/retos.html"><span aria-hidden="true">🎯</span>Retos</a>
+<a href="pages/material.html"><span aria-hidden="true">▤</span>Guías</a>
+<a href="pages/articulos.html"><span aria-hidden="true">▧</span>Artículos</a>
+<a href="pages/glosario.html"><span aria-hidden="true">▥</span>Glosario</a>
 </nav>
-<nav aria-label="Información de ByteNova" class="footer-enlaces">
+<nav aria-label="Enlaces de ByteNova" class="footer-v2-col">
 <h3>ByteNova</h3>
-<a href="pages/sobre">Sobre ByteNova</a>
-<a href="#contacto">Contacto</a>
-<a href="pages/privacidad">Privacidad</a>
-<a href="pages/terminos">Términos</a>
-<a href="pages/cookies">Cookies</a>
+<a href="pages/sobre.html"><span aria-hidden="true">♙</span>Sobre ByteNova</a>
+<a href="index.html#contacto"><span aria-hidden="true">✉</span>Contacto</a>
+<a href="pages/privacidad.html"><span aria-hidden="true">♢</span>Privacidad</a>
+<a href="pages/terminos.html"><span aria-hidden="true">▤</span>Términos</a>
+<a href="pages/cookies.html"><span aria-hidden="true">◌</span>Cookies</a>
 </nav>
-<div class="footer-social">
-<h3>Contacto</h3>
-<p>
-                Preguntas, sugerencias o comentarios sobre nuestros
-                contenidos educativos.
-            </p>
-<a href="mailto:bytenova339@gmail.com">
-                bytenova339@gmail.com
-            </a>
-
-      <a href="https://www.tiktok.com/@bytenova.app" target="_blank" rel="noopener noreferrer" aria-label="TikTok de ByteNova">
-        TikTok · @bytenova.app
-      </a>
+<div class="footer-v2-contact">
+<h3>Conecta con ByteNova</h3>
+<p>Preguntas, sugerencias o comentarios sobre nuestros contenidos educativos.</p>
+<a href="mailto:bytenova339@gmail.com"><span aria-hidden="true">✉</span>bytenova339@gmail.com</a>
+<a href="https://www.tiktok.com/@bytenova.app" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">♪</span>TikTok · @bytenova.app</a>
 </div>
 </div>
-<div class="footer-copy">
-<p>
-            © 2026 ByteNova. Todos los derechos reservados.
-        </p>
-<p>
-            Creado por Dylan Estrada.
-        </p>
+<div class="footer-v2-bottom">
+<p>© 2026 <strong>ByteNova</strong>. Todos los derechos reservados.</p>
+<p>Creado por Dylan Estrada.</p>
+</div>
 </div>
 </footer>
 <script src="js/script.js"></script>
-</body>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const notice = document.getElementById("dark-mode-suggestion");
+  const activate = document.getElementById("dark-mode-suggestion-activate");
+  const close = document.getElementById("dark-mode-suggestion-close");
+  if (!notice || !activate || !close) return;
+
+  const isDark = () =>
+    document.body.classList.contains("modo-oscuro") ||
+    document.body.classList.contains("dark-mode") ||
+    document.documentElement.getAttribute("data-theme") === "dark" ||
+    document.body.getAttribute("data-theme") === "dark";
+
+  function updateNotice() {
+    notice.hidden = isDark();
+  }
+
+  updateNotice();
+
+  activate.addEventListener("click", function () {
+    const themeButton =
+      document.getElementById("btn-modo") ||
+      document.querySelector(".btn-modo") ||
+      document.querySelector('[aria-label*="modo"]');
+
+    if (!isDark() && themeButton) themeButton.click();
+    setTimeout(updateNotice, 30);
+  });
+
+  close.addEventListener("click", function () {
+    notice.hidden = true;
+  });
+
+  const observer = new MutationObserver(updateNotice);
+  observer.observe(document.body, { attributes:true, attributeFilter:["class","data-theme"] });
+  observer.observe(document.documentElement, { attributes:true, attributeFilter:["class","data-theme"] });
+});
+</script></body>
 </html>

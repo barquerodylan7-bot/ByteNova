@@ -1,98 +1,41 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-41QWQ3DC33"></script>
-  <script>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-41QWQ3DC33"></script>
+<script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-41QWQ3DC33');
   </script>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Operadores en programación: tipos y ejemplos | ByteNova</title>
-
-  <meta
-    name="description"
-    content="Aprende qué son los operadores en programación y cómo utilizar operadores aritméticos, de comparación, lógicos, asignación, pertenencia e identidad con ejemplos en Python."
-  >
-
-  <meta name="author" content="ByteNova">
-  <meta name="robots" content="index, follow">
-
-  <meta
-    name="theme-color"
-    content="#ffffff"
-    media="(prefers-color-scheme: light)"
-  >
-
-  <meta
-    name="theme-color"
-    content="#0f172a"
-    media="(prefers-color-scheme: dark)"
-  >
-
-  <meta property="og:type" content="article">
-  <meta property="og:locale" content="es_CR">
-  <meta property="og:site_name" content="ByteNova">
-  <meta property="og:title" content="¿Qué son los operadores en programación?">
-
-  <meta
-    property="og:description"
-    content="Aprende a realizar cálculos, comparaciones y operaciones lógicas utilizando los principales operadores de Python."
-  >
-
-  <meta
-    property="og:url"
-    content="https://bytenova.app/pages/que-son-operadores"
-  >
-
-  <meta
-    property="og:image"
-    content="https://bytenova.app/images/bytenova-social.jpg"
-  >
-
-  <meta name="twitter:card" content="summary_large_image">
-
-  <meta
-    name="twitter:title"
-    content="¿Qué son los operadores en programación?"
-  >
-
-  <meta
-    name="twitter:description"
-    content="Aprende los principales operadores de programación con ejemplos prácticos en Python."
-  >
-
-  <meta
-    name="twitter:image"
-    content="https://bytenova.app/images/bytenova-social.jpg"
-  >
-
-  <meta property="article:published_time" content="2026-08-05">
-  <meta property="article:modified_time" content="2026-08-17">
-  <meta property="article:section" content="Programación">
-
-  <link
-    rel="canonical"
-    href="https://bytenova.app/pages/que-son-operadores"
-  >
-
-  <link
-    rel="icon"
-    href="../images/favicon.svg"
-    type="image/svg+xml"
-  >
-
-  <link
-    rel="stylesheet"
-    href="../css/style.min.css"
-  >
-
-  <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Operadores en programación: tipos y ejemplos | ByteNova</title>
+<meta content="Aprende qué son los operadores en programación y cómo utilizar operadores aritméticos, de comparación, lógicos, asignación, pertenencia e identidad con ejemplos en Python." name="description"/>
+<meta content="ByteNova" name="author"/>
+<meta content="index, follow" name="robots"/>
+<meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
+<meta content="#0f172a" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<meta content="article" property="og:type"/>
+<meta content="es_CR" property="og:locale"/>
+<meta content="ByteNova" property="og:site_name"/>
+<meta content="¿Qué son los operadores en programación?" property="og:title"/>
+<meta content="Aprende a realizar cálculos, comparaciones y operaciones lógicas utilizando los principales operadores de Python." property="og:description"/>
+<meta content="https://bytenova.app/pages/que-son-operadores" property="og:url"/>
+<meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="¿Qué son los operadores en programación?" name="twitter:title"/>
+<meta content="Aprende los principales operadores de programación con ejemplos prácticos en Python." name="twitter:description"/>
+<meta content="https://bytenova.app/images/bytenova-social.jpg" name="twitter:image"/>
+<meta content="2026-08-05" property="article:published_time"/>
+<meta content="2026-08-17" property="article:modified_time"/>
+<meta content="Programación" property="article:section"/>
+<link href="https://bytenova.app/pages/que-son-operadores" rel="canonical"/>
+<link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../css/style.min.css?v=20260818-center2" rel="stylesheet"/>
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
@@ -160,466 +103,340 @@
     ]
   }
   </script>
-
-  <meta
-    name="google-adsense-account"
-    content="ca-pub-5369456672603969"
-  >
-
-  <script
-    async
-    crossorigin="anonymous"
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5369456672603969">
-  </script>
+<meta content="ca-pub-5369456672603969" name="google-adsense-account"/>
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5369456672603969">
+</script>
 </head>
-
 <body>
-
 <a class="saltar-contenido" href="#contenido-principal">
   Saltar al contenido principal
 </a>
-
 <header>
-
-  <a
-    class="marca-bytenova"
-    href="../index#inicio"
-    aria-label="Ir al inicio de ByteNova"
-  >
-    <span class="marca-icono" aria-hidden="true">&lt;/&gt;</span>
-    <span class="marca-texto">ByteNova</span>
-  </a>
-
-  <button
-    class="menu-toggle"
-    id="menu-toggle"
-    type="button"
-    aria-controls="menu-principal"
-    aria-expanded="false"
-    aria-label="Abrir menú"
-  >
-    <span aria-hidden="true">☰</span>
-  </button>
-
-  <nav id="menu-principal" aria-label="Navegación principal">
-    <a href="../index#inicio">Inicio</a>
-    <a href="sobre">Sobre</a>
-    <a href="../index#tecnologias">Aprender</a>
-    <a href="rutas">Rutas</a>
-    <a href="retos">Retos</a>
-    <a href="material">Guías</a>
-    <a href="articulos" aria-current="page">Artículos</a>
-    <a href="glosario">Glosario</a>
-    <a href="../index#contacto">Contacto</a>
-
-    <button
-      class="btn-modo"
-      id="btn-modo"
-      type="button"
-      aria-label="Activar modo oscuro"
-    >
-      <span aria-hidden="true">🌙</span>
-    </button>
-  </nav>
-
+<a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio">
+<span aria-hidden="true" class="marca-icono">&lt;/&gt;</span>
+<span class="marca-texto">ByteNova</span>
+</a>
+<button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle" type="button">
+<span aria-hidden="true">☰</span>
+</button>
+<nav aria-label="Navegación principal" id="menu-principal">
+<a href="../index.html#inicio">Inicio</a>
+<a href="sobre.html">Sobre</a>
+<a href="../index.html#tecnologias">Aprender</a>
+<a href="rutas.html">Rutas</a>
+<a href="retos.html">Retos</a>
+<a href="material.html">Guías</a>
+<a aria-current="page" href="articulos.html">Artículos</a>
+<a href="glosario.html">Glosario</a>
+<a href="../index.html#contacto">Contacto</a>
+<button aria-label="Activar modo oscuro" class="btn-modo" id="btn-modo" type="button">
+<span aria-hidden="true">🌙</span>
+</button>
+</nav>
 </header>
-
 <main class="sobre articulo" id="contenido-principal">
-
-  <article
-    class="sobre-contenido"
-    aria-labelledby="titulo-que-son-operadores"
-  >
-
-    <nav class="migas-navegacion" aria-label="Ruta de navegación">
-      <a href="../index">Inicio</a>
-      <span aria-hidden="true">›</span>
-      <a href="articulos">Artículos</a>
-      <span aria-hidden="true">›</span>
-      <span aria-current="page">Operadores</span>
-    </nav>
-
-    <span class="seccion-etiqueta">
-      <span aria-hidden="true">➕</span>
+<article aria-labelledby="titulo-que-son-operadores" class="sobre-contenido">
+<nav aria-label="Ruta de navegación" class="migas-navegacion">
+<a href="../index.html">Inicio</a>
+<span aria-hidden="true">›</span>
+<a href="articulos.html">Artículos</a>
+<span aria-hidden="true">›</span>
+<span aria-current="page">Operadores</span>
+</nav>
+<span class="seccion-etiqueta">
+<span aria-hidden="true">➕</span>
       Programación
     </span>
-
-    <h1 id="titulo-que-son-operadores">
+<h1 id="titulo-que-son-operadores">
       ¿Qué son los operadores en programación?
       <span aria-hidden="true">➕</span>
-    </h1>
-
-    <p class="articulo-meta">
+</h1>
+<p class="articulo-meta">
       Publicado por ByteNova ·
       <time datetime="2026-08-05">5 de agosto de 2026</time>
       · Actualizado el
       <time datetime="2026-08-17">17 de agosto de 2026</time>
-    </p>
-
-    <div class="articulo-resumen">
-      <strong>En este artículo aprenderás:</strong>
-      <p>
+</p>
+<div class="articulo-resumen">
+<strong>En este artículo aprenderás:</strong>
+<p>
         Cómo utilizar operadores aritméticos, de comparación, lógicos,
         asignación, pertenencia e identidad y cómo controlar el orden
         de las operaciones.
       </p>
-    </div>
-
-    <div class="articulo-layout">
-
-      <aside class="articulo-sidebar">
-
-        <details class="indice-articulo" open>
-          <summary>
-            <span aria-hidden="true">📑</span>
+</div>
+<div class="articulo-layout">
+<aside class="articulo-sidebar">
+<details class="indice-articulo" open="">
+<summary>
+<span aria-hidden="true">📑</span>
             Contenido del artículo
           </summary>
-
-          <nav aria-label="Contenido del artículo">
-            <a href="#que-es">1. ¿Qué es un operador?</a>
-            <a href="#operandos">2. Operadores y operandos</a>
-            <a href="#aritmeticos">3. Operadores aritméticos</a>
-            <a href="#comparacion">4. Operadores de comparación</a>
-            <a href="#logicos">5. Operadores lógicos</a>
-            <a href="#asignacion">6. Operadores de asignación</a>
-            <a href="#pertenencia">7. Operadores de pertenencia</a>
-            <a href="#identidad">8. Operadores de identidad</a>
-            <a href="#prioridad">9. Prioridad de operadores</a>
-            <a href="#ejemplo">10. Ejemplo práctico</a>
-            <a href="#errores">11. Errores comunes</a>
-            <a href="#practica">12. Ejercicio práctico</a>
-            <a href="#preguntas">13. Preguntas frecuentes</a>
-            <a href="#conclusion">14. Conclusión</a>
-          </nav>
-        </details>
-
-      </aside>
-
-      <div class="articulo-cuerpo">
-
-        <p class="articulo-introduccion">
+<nav aria-label="Contenido del artículo">
+<a href="#que-es">1. ¿Qué es un operador?</a>
+<a href="#operandos">2. Operadores y operandos</a>
+<a href="#aritmeticos">3. Operadores aritméticos</a>
+<a href="#comparacion">4. Operadores de comparación</a>
+<a href="#logicos">5. Operadores lógicos</a>
+<a href="#asignacion">6. Operadores de asignación</a>
+<a href="#pertenencia">7. Operadores de pertenencia</a>
+<a href="#identidad">8. Operadores de identidad</a>
+<a href="#prioridad">9. Prioridad de operadores</a>
+<a href="#ejemplo">10. Ejemplo práctico</a>
+<a href="#errores">11. Errores comunes</a>
+<a href="#practica">12. Ejercicio práctico</a>
+<a href="#preguntas">13. Preguntas frecuentes</a>
+<a href="#conclusion">14. Conclusión</a>
+</nav>
+</details>
+</aside>
+<div class="articulo-cuerpo">
+<p class="articulo-introduccion">
           Los operadores aparecen constantemente al programar. Los utilizamos
           para sumar precios, comparar edades, comprobar condiciones, actualizar
           variables y realizar muchas otras operaciones sobre los datos de un
           programa.
         </p>
-
-        <h2 id="que-es">¿Qué es un operador?</h2>
-
-        <p>
+<h2 id="que-es">¿Qué es un operador?</h2>
+<p>
           Un <strong>operador</strong> es un símbolo o palabra que indica al
           programa qué operación debe realizar sobre uno o más valores.
         </p>
-
-        <p>
+<p>
           Por ejemplo:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>10 + 5</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           El símbolo <code>+</code> es el operador. Su función en este caso es
           sumar los valores situados a ambos lados.
         </p>
-
-        <p>
+<p>
           El resultado será:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>15</code></pre>
-        </div>
-
-        <h2 id="operandos">Operadores y operandos</h2>
-
-        <p>
+</div>
+<h2 id="operandos">Operadores y operandos</h2>
+<p>
           Los valores sobre los que actúa un operador reciben el nombre de
           <strong>operandos</strong>.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>precio * cantidad</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           En esta expresión:
         </p>
-
-        <ul class="lista-articulo">
-          <li><code>*</code> es el operador.</li>
-          <li><code>precio</code> es un operando.</li>
-          <li><code>cantidad</code> es otro operando.</li>
-        </ul>
-
-        <p>
+<ul class="lista-articulo">
+<li><code>*</code> es el operador.</li>
+<li><code>precio</code> es un operando.</li>
+<li><code>cantidad</code> es otro operando.</li>
+</ul>
+<p>
           Los operandos pueden ser valores escritos directamente, variables o
           incluso expresiones más complejas.
         </p>
-
-        <h2 id="aritmeticos">Operadores aritméticos</h2>
-
-        <p>
+<h2 id="aritmeticos">Operadores aritméticos</h2>
+<p>
           Los operadores aritméticos permiten realizar cálculos matemáticos.
         </p>
-
-        <ul class="lista-articulo">
-          <li><code>+</code> suma.</li>
-          <li><code>-</code> resta.</li>
-          <li><code>*</code> multiplicación.</li>
-          <li><code>/</code> división.</li>
-          <li><code>//</code> división entera.</li>
-          <li><code>%</code> módulo o residuo.</li>
-          <li><code>**</code> potencia.</li>
-        </ul>
-
-        <h3>Suma, resta y multiplicación</h3>
-
-        <div class="recuadro-ejemplo">
+<ul class="lista-articulo">
+<li><code>+</code> suma.</li>
+<li><code>-</code> resta.</li>
+<li><code>*</code> multiplicación.</li>
+<li><code>/</code> división.</li>
+<li><code>//</code> división entera.</li>
+<li><code>%</code> módulo o residuo.</li>
+<li><code>**</code> potencia.</li>
+</ul>
+<h3>Suma, resta y multiplicación</h3>
+<div class="recuadro-ejemplo">
 <pre><code>print(10 + 5)
 print(10 - 5)
 print(10 * 5)</code></pre>
-        </div>
-
-        <p>Los resultados son:</p>
-
-        <div class="recuadro-ejemplo">
+</div>
+<p>Los resultados son:</p>
+<div class="recuadro-ejemplo">
 <pre><code>15
 5
 50</code></pre>
-        </div>
-
-        <h3>División</h3>
-
-        <div class="recuadro-ejemplo">
+</div>
+<h3>División</h3>
+<div class="recuadro-ejemplo">
 <pre><code>resultado = 10 / 4
 print(resultado)</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           En Python, <code>/</code> realiza una división y devuelve:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>2.5</code></pre>
-        </div>
-
-        <h3>División entera</h3>
-
-        <div class="recuadro-ejemplo">
+</div>
+<h3>División entera</h3>
+<div class="recuadro-ejemplo">
 <pre><code>print(10 // 4)</code></pre>
-        </div>
-
-        <p>El resultado es:</p>
-
-        <div class="recuadro-ejemplo">
+</div>
+<p>El resultado es:</p>
+<div class="recuadro-ejemplo">
 <pre><code>2</code></pre>
-        </div>
-
-        <h3>Módulo</h3>
-
-        <p>
+</div>
+<h3>Módulo</h3>
+<p>
           El operador <code>%</code> permite obtener el residuo de una
           división.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>print(10 % 3)</code></pre>
-        </div>
-
-        <p>El resultado es <code>1</code>.</p>
-
-        <p>
+</div>
+<p>El resultado es <code>1</code>.</p>
+<p>
           Una aplicación habitual consiste en comprobar si un número es par:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>numero = 8
 
 if numero % 2 == 0:
     print("El número es par")</code></pre>
-        </div>
-
-        <h3>Potencia</h3>
-
-        <div class="recuadro-ejemplo">
+</div>
+<h3>Potencia</h3>
+<div class="recuadro-ejemplo">
 <pre><code>print(2 ** 3)</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Esto representa 2 elevado a 3 y devuelve <code>8</code>.
         </p>
-
-        <h2 id="comparacion">Operadores de comparación</h2>
-
-        <p>
+<h2 id="comparacion">Operadores de comparación</h2>
+<p>
           Los operadores de comparación permiten comparar valores.
           El resultado normalmente será <code>True</code> o
           <code>False</code>.
         </p>
-
-        <ul class="lista-articulo">
-          <li><code>==</code> igual a.</li>
-          <li><code>!=</code> diferente de.</li>
-          <li><code>&gt;</code> mayor que.</li>
-          <li><code>&lt;</code> menor que.</li>
-          <li><code>&gt;=</code> mayor o igual que.</li>
-          <li><code>&lt;=</code> menor o igual que.</li>
-        </ul>
-
-        <div class="recuadro-ejemplo">
+<ul class="lista-articulo">
+<li><code>==</code> igual a.</li>
+<li><code>!=</code> diferente de.</li>
+<li><code>&gt;</code> mayor que.</li>
+<li><code>&lt;</code> menor que.</li>
+<li><code>&gt;=</code> mayor o igual que.</li>
+<li><code>&lt;=</code> menor o igual que.</li>
+</ul>
+<div class="recuadro-ejemplo">
 <pre><code>edad = 20
 
-print(edad >= 18)
+print(edad &gt;= 18)
 print(edad == 20)
-print(edad < 18)</code></pre>
-        </div>
-
-        <p>El resultado será:</p>
-
-        <div class="recuadro-ejemplo">
+print(edad &lt; 18)</code></pre>
+</div>
+<p>El resultado será:</p>
+<div class="recuadro-ejemplo">
 <pre><code>True
 True
 False</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Estas comparaciones son fundamentales para construir estructuras
           condicionales.
         </p>
-
-        <h3>Igualdad no es asignación</h3>
-
-        <p>
+<h3>Igualdad no es asignación</h3>
+<p>
           Este es uno de los conceptos más importantes para quien empieza a
           programar.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>edad = 20</code></pre>
-        </div>
-
-        <p>
-          <code>=</code> asigna el valor 20 a la variable.
+</div>
+<p>
+<code>=</code> asigna el valor 20 a la variable.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>edad == 20</code></pre>
-        </div>
-
-        <p>
-          <code>==</code> pregunta si el valor de <code>edad</code> es igual
+</div>
+<p>
+<code>==</code> pregunta si el valor de <code>edad</code> es igual
           a 20.
         </p>
-
-        <h2 id="logicos">Operadores lógicos</h2>
-
-        <p>
+<h2 id="logicos">Operadores lógicos</h2>
+<p>
           Los operadores lógicos permiten trabajar con varias condiciones.
           En Python los principales son <code>and</code>, <code>or</code> y
           <code>not</code>.
         </p>
-
-        <h3>and</h3>
-
-        <p>
+<h3>and</h3>
+<p>
           El resultado será verdadero cuando las condiciones necesarias sean
           verdaderas.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>edad = 20
 tiene_entrada = True
 
-puede_entrar = edad >= 18 and tiene_entrada
+puede_entrar = edad &gt;= 18 and tiene_entrada
 
 print(puede_entrar)</code></pre>
-        </div>
-
-        <p>El resultado es <code>True</code>.</p>
-
-        <h3>or</h3>
-
-        <p>
-          <code>or</code> produce un resultado verdadero cuando al menos una
+</div>
+<p>El resultado es <code>True</code>.</p>
+<h3>or</h3>
+<p>
+<code>or</code> produce un resultado verdadero cuando al menos una
           de las condiciones es verdadera.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>es_admin = False
 es_editor = True
 
 puede_editar = es_admin or es_editor
 
 print(puede_editar)</code></pre>
-        </div>
-
-        <p>El resultado es <code>True</code>.</p>
-
-        <h3>not</h3>
-
-        <p>
-          <code>not</code> invierte un valor booleano.
+</div>
+<p>El resultado es <code>True</code>.</p>
+<h3>not</h3>
+<p>
+<code>not</code> invierte un valor booleano.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>bloqueado = False
 
 print(not bloqueado)</code></pre>
-        </div>
-
-        <p>El resultado será <code>True</code>.</p>
-
-        <h2 id="asignacion">Operadores de asignación</h2>
-
-        <p>
+</div>
+<p>El resultado será <code>True</code>.</p>
+<h2 id="asignacion">Operadores de asignación</h2>
+<p>
           El operador <code>=</code> permite asignar un valor a una variable.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>puntos = 10</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           También existen operadores que realizan una operación y guardan el
           resultado en la misma variable.
         </p>
-
-        <ul class="lista-articulo">
-          <li><code>+=</code> suma y asigna.</li>
-          <li><code>-=</code> resta y asigna.</li>
-          <li><code>*=</code> multiplica y asigna.</li>
-          <li><code>/=</code> divide y asigna.</li>
-        </ul>
-
-        <p>Por ejemplo:</p>
-
-        <div class="recuadro-ejemplo">
+<ul class="lista-articulo">
+<li><code>+=</code> suma y asigna.</li>
+<li><code>-=</code> resta y asigna.</li>
+<li><code>*=</code> multiplica y asigna.</li>
+<li><code>/=</code> divide y asigna.</li>
+</ul>
+<p>Por ejemplo:</p>
+<div class="recuadro-ejemplo">
 <pre><code>puntos = 10
 puntos += 5
 
 print(puntos)</code></pre>
-        </div>
-
-        <p>El resultado será <code>15</code>.</p>
-
-        <p>
+</div>
+<p>El resultado será <code>15</code>.</p>
+<p>
           Es equivalente, en este caso, a escribir:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>puntos = puntos + 5</code></pre>
-        </div>
-
-        <h2 id="pertenencia">Operadores de pertenencia</h2>
-
-        <p>
+</div>
+<h2 id="pertenencia">Operadores de pertenencia</h2>
+<p>
           Python incluye <code>in</code> y <code>not in</code> para comprobar
           si un elemento pertenece o no a una colección.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>lenguajes = [
     "Python",
     "JavaScript",
@@ -628,111 +445,87 @@ print(puntos)</code></pre>
 
 print("Python" in lenguajes)
 print("C++" in lenguajes)</code></pre>
-        </div>
-
-        <p>El resultado será:</p>
-
-        <div class="recuadro-ejemplo">
+</div>
+<p>El resultado será:</p>
+<div class="recuadro-ejemplo">
 <pre><code>True
 False</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           También podemos comprobar que un elemento no esté presente:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>print("C++" not in lenguajes)</code></pre>
-        </div>
-
-        <p>El resultado será <code>True</code>.</p>
-
-        <h2 id="identidad">Operadores de identidad</h2>
-
-        <p>
+</div>
+<p>El resultado será <code>True</code>.</p>
+<h2 id="identidad">Operadores de identidad</h2>
+<p>
           Python dispone de <code>is</code> e <code>is not</code> para
           comprobar identidad.
         </p>
-
-        <p>
+<p>
           Es importante no confundir identidad con igualdad.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>resultado = None
 
 if resultado is None:
     print("No existe un resultado")</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Una aplicación habitual de <code>is</code> consiste precisamente en
           comprobar si un valor es <code>None</code>.
         </p>
-
-        <div class="recuadro-consejo">
-          <strong>== e is no significan lo mismo</strong>
-          <p>
-            <code>==</code> compara valores. <code>is</code> comprueba si dos
+<div class="recuadro-consejo">
+<strong>== e is no significan lo mismo</strong>
+<p>
+<code>==</code> compara valores. <code>is</code> comprueba si dos
             referencias corresponden al mismo objeto. No deben utilizarse
             indistintamente.
           </p>
-        </div>
-
-        <h2 id="prioridad">Prioridad de operadores</h2>
-
-        <p>
+</div>
+<h2 id="prioridad">Prioridad de operadores</h2>
+<p>
           Cuando una expresión contiene varios operadores, Python sigue reglas
           de precedencia para determinar qué operación se realiza primero.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>resultado = 2 + 3 * 4
 
 print(resultado)</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           La multiplicación se realiza antes que la suma:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>3 * 4 = 12
 2 + 12 = 14</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Por lo tanto, el resultado es <code>14</code>.
         </p>
-
-        <h3>Utilizar paréntesis</h3>
-
-        <div class="recuadro-ejemplo">
+<h3>Utilizar paréntesis</h3>
+<div class="recuadro-ejemplo">
 <pre><code>resultado = (2 + 3) * 4</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Ahora primero se calcula <code>2 + 3</code>, por lo que el resultado
           será <code>20</code>.
         </p>
-
-        <div class="recuadro-consejo">
-          <strong>Consejo</strong>
-          <p>
+<div class="recuadro-consejo">
+<strong>Consejo</strong>
+<p>
             Aunque conozcas la precedencia de operadores, utilizar paréntesis
             puede hacer que una expresión compleja sea mucho más fácil de
             entender.
           </p>
-        </div>
-
-        <h2 id="ejemplo">Ejemplo práctico: calcular una compra</h2>
-
-        <p>
+</div>
+<h2 id="ejemplo">Ejemplo práctico: calcular una compra</h2>
+<p>
           Podemos combinar distintos operadores para resolver una situación
           más realista.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>precio = 15000
 cantidad = 3
 descuento = 10
@@ -744,134 +537,101 @@ total = subtotal - monto_descuento
 print(f"Subtotal: ₡{subtotal}")
 print(f"Descuento: ₡{monto_descuento}")
 print(f"Total: ₡{total}")</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Primero utilizamos <code>*</code> para calcular el subtotal:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>15000 * 3 = 45000</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Después calculamos el 10 % de descuento:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>45000 * 10 / 100 = 4500</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Finalmente restamos el descuento:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>45000 - 4500 = 40500</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           El precio final es <strong>₡40.500</strong>.
         </p>
-
-        <h3>Agregar una condición</h3>
-
-        <p>
+<h3>Agregar una condición</h3>
+<p>
           Ahora podemos combinar operadores aritméticos, de comparación y
           lógicos:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>es_cliente = True
 
-if total >= 40000 and es_cliente:
+if total &gt;= 40000 and es_cliente:
     print("Compra elegible para beneficio")</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Aquí utilizamos <code>&gt;=</code> para comparar y
           <code>and</code> para combinar dos condiciones.
         </p>
-
-        <h2 id="errores">Errores comunes con operadores</h2>
-
-        <h3>Confundir = con ==</h3>
-
-        <p>
-          <code>=</code> asigna un valor y <code>==</code> realiza una
+<h2 id="errores">Errores comunes con operadores</h2>
+<h3>Confundir = con ==</h3>
+<p>
+<code>=</code> asigna un valor y <code>==</code> realiza una
           comparación.
         </p>
-
-        <h3>Ignorar la prioridad de las operaciones</h3>
-
-        <p>
+<h3>Ignorar la prioridad de las operaciones</h3>
+<p>
           Una expresión puede producir un resultado diferente al esperado si
           no tenemos en cuenta qué operación se ejecuta primero.
         </p>
-
-        <h3>Confundir and con or</h3>
-
-        <p>
+<h3>Confundir and con or</h3>
+<p>
           Utiliza <code>and</code> cuando necesites que se cumplan varias
           condiciones y <code>or</code> cuando sea suficiente con que se
           cumpla al menos una.
         </p>
-
-        <h3>Utilizar is como reemplazo de ==</h3>
-
-        <p>
+<h3>Utilizar is como reemplazo de ==</h3>
+<p>
           Aunque en ciertos ejemplos parezcan producir el mismo resultado,
           tienen propósitos diferentes. Para comparar valores normalmente
           utilizamos <code>==</code>.
         </p>
-
-        <h3>Dividir entre cero</h3>
-
-        <div class="recuadro-ejemplo">
+<h3>Dividir entre cero</h3>
+<div class="recuadro-ejemplo">
 <pre><code>resultado = 10 / 0</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Esta operación provoca un error. Cuando el divisor proviene de datos
           externos, conviene comprobarlo antes.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>divisor = 0
 
 if divisor != 0:
     resultado = 10 / divisor
 else:
     print("No se puede dividir entre cero")</code></pre>
-        </div>
-
-        <section class="seccion-articulo" aria-labelledby="practica">
-
-          <h2 id="practica">Compruébalo tú mismo</h2>
-
-          <p>
+</div>
+<section aria-labelledby="practica" class="seccion-articulo">
+<h2 id="practica">Compruébalo tú mismo</h2>
+<p>
             Crea un programa con dos variables llamadas <code>numero1</code> y
             <code>numero2</code>.
           </p>
-
-          <p>El programa debe mostrar:</p>
-
-          <ul class="lista-articulo">
-            <li>La suma.</li>
-            <li>La resta.</li>
-            <li>La multiplicación.</li>
-            <li>Si ambos números son iguales.</li>
-            <li>Cuál de los dos es mayor.</li>
-          </ul>
-
-          <p>Intenta resolverlo antes de ver la solución.</p>
-
-          <details class="recuadro-ejemplo">
-
-            <summary>
-              <strong>Ver una posible solución</strong>
-            </summary>
-
+<p>El programa debe mostrar:</p>
+<ul class="lista-articulo">
+<li>La suma.</li>
+<li>La resta.</li>
+<li>La multiplicación.</li>
+<li>Si ambos números son iguales.</li>
+<li>Cuál de los dos es mayor.</li>
+</ul>
+<p>Intenta resolverlo antes de ver la solución.</p>
+<details class="recuadro-ejemplo">
+<summary>
+<strong>Ver una posible solución</strong>
+</summary>
 <pre><code>numero1 = 10
 numero2 = 5
 
@@ -884,59 +644,48 @@ print(
     numero1 == numero2
 )
 
-if numero1 > numero2:
+if numero1 &gt; numero2:
     print("El primer número es mayor")
-elif numero2 > numero1:
+elif numero2 &gt; numero1:
     print("El segundo número es mayor")
 else:
     print("Los números son iguales")</code></pre>
-
-          </details>
-
-          <div class="recuadro-consejo">
-            <strong>Reto adicional</strong>
-            <p>
+</details>
+<div class="recuadro-consejo">
+<strong>Reto adicional</strong>
+<p>
               Añade la división, pero evita que el programa intente dividir
               entre cero.
             </p>
-          </div>
-
-        </section>
-
-        <h2 id="preguntas">Preguntas frecuentes</h2>
-
-        <section class="faq-articulo" aria-labelledby="preguntas">
-
-          <details>
-            <summary>¿Cuál es la diferencia entre = y ==?</summary>
-            <p>
-              <code>=</code> se utiliza para asignar un valor a una variable.
+</div>
+</section>
+<h2 id="preguntas">Preguntas frecuentes</h2>
+<section aria-labelledby="preguntas" class="faq-articulo">
+<details>
+<summary>¿Cuál es la diferencia entre = y ==?</summary>
+<p>
+<code>=</code> se utiliza para asignar un valor a una variable.
               <code>==</code> compara dos valores para comprobar si son
               iguales.
             </p>
-          </details>
-
-          <details>
-            <summary>¿Qué devuelve un operador de comparación?</summary>
-            <p>
+</details>
+<details>
+<summary>¿Qué devuelve un operador de comparación?</summary>
+<p>
               Una comparación produce normalmente un valor booleano:
               <code>True</code> o <code>False</code>.
             </p>
-          </details>
-
-          <details>
-            <summary>¿Para qué sirven los operadores lógicos?</summary>
-            <p>
+</details>
+<details>
+<summary>¿Para qué sirven los operadores lógicos?</summary>
+<p>
               Permiten combinar o modificar condiciones. En Python los
               principales son <code>and</code>, <code>or</code> y
               <code>not</code>.
             </p>
-          </details>
-
-        </section>
-
-        
-<section class="ampliacion-editorial" aria-labelledby="operadores-practica">
+</details>
+</section>
+<section aria-labelledby="operadores-practica" class="ampliacion-editorial">
 <h2 id="operadores-practica">Cómo se combinan los operadores en un programa</h2>
 <p>En programas reales es habitual utilizar varios operadores dentro de una misma expresión. Por ejemplo, una aplicación puede calcular un total con operadores aritméticos y después utilizar operadores de comparación y lógicos para decidir si se cumple una condición.</p>
 <div class="recuadro-ejemplo"><strong>Ejemplo conceptual</strong><p>Una tienda podría comprobar si el total de una compra supera cierto monto y si el usuario tiene una promoción disponible. La operación matemática calcula el total; las comparaciones y operadores lógicos ayudan a tomar la decisión.</p></div>
@@ -947,175 +696,122 @@ else:
 <div class="recuadro-consejo"><strong>Buena práctica</strong><p>Divide una expresión compleja en pasos y guarda resultados intermedios con nombres claros. Un código fácil de leer suele ser también más sencillo de depurar.</p></div>
 </section>
 <h2 id="conclusion">Conclusión</h2>
-
-        <p>
+<p>
           Los operadores permiten realizar cálculos, comparar valores,
           combinar condiciones y modificar datos dentro de un programa.
         </p>
-
-        <p>
+<p>
           Comprender la diferencia entre operadores aritméticos, de
           comparación, lógicos y de asignación es fundamental para construir
           expresiones correctamente.
         </p>
-
-        <p>
+<p>
           También es importante entender la precedencia, los operadores de
           pertenencia y la diferencia entre igualdad e identidad. Estos
           conceptos aparecerán constantemente cuando trabajes con variables,
           condicionales, bucles y funciones.
         </p>
-
-        <nav class="navegacion-articulos" aria-label="Navegación entre artículos">
-          <a class="nav-anterior" href="que-son-variables">
-            <span class="nav-etiqueta">← Artículo anterior</span>
-            <strong>¿Qué son las variables en programación?</strong>
-          </a>
-          <a class="nav-siguiente" href="que-son-condicionales">
-            <span class="nav-etiqueta">Siguiente artículo →</span>
-            <strong>¿Qué son las estructuras condicionales?</strong>
-          </a>
-        </nav>
-
-        <section class="autor-articulo" aria-label="Información del autor">
-
-          <div class="autor-icono" aria-hidden="true">
+<nav aria-label="Navegación entre artículos" class="navegacion-articulos">
+<a class="nav-anterior" href="que-son-variables.html">
+<span class="nav-etiqueta">← Artículo anterior</span>
+<strong>¿Qué son las variables en programación?</strong>
+</a>
+<a class="nav-siguiente" href="que-son-condicionales.html">
+<span class="nav-etiqueta">Siguiente artículo →</span>
+<strong>¿Qué son las estructuras condicionales?</strong>
+</a>
+</nav>
+<section aria-label="Información del autor" class="autor-articulo">
+<div aria-hidden="true" class="autor-icono">
             &lt;/&gt;
           </div>
-
-          <div class="autor-informacion">
-            <span>Artículo creado por</span>
-            <h2>ByteNova</h2>
-
-            <p>Proyecto educativo creado por Dylan Estrada. ByteNova publica contenido sobre programación, desarrollo web, inteligencia artificial y ciberseguridad con un enfoque claro para principiantes y revisión editorial continua.</p>
-
-            <a href="sobre">
+<div class="autor-informacion">
+<span>Artículo creado por</span>
+<h2>ByteNova</h2>
+<p>Proyecto educativo creado por Dylan Estrada. ByteNova publica contenido sobre programación, desarrollo web, inteligencia artificial y ciberseguridad con un enfoque claro para principiantes y revisión editorial continua.</p>
+<a href="sobre.html">
               Conoce más sobre ByteNova →
             </a>
-          </div>
-
-        </section>
-
-        <aside
-          class="articulos-relacionados"
-          aria-labelledby="titulo-articulos-relacionados"
-        >
-
-          <h2 id="titulo-articulos-relacionados">
+</div>
+</section>
+<aside aria-labelledby="titulo-articulos-relacionados" class="articulos-relacionados">
+<h2 id="titulo-articulos-relacionados">
             Continúa aprendiendo
           </h2>
-
-          <div class="relacionados-grid">
-
-            <a href="que-son-variables">
-              <span aria-hidden="true">📘</span>
-              <strong>Variables</strong>
-              <small>
+<div class="relacionados-grid">
+<a href="que-son-variables.html">
+<span aria-hidden="true">📘</span>
+<strong>Variables</strong>
+<small>
                 Aprende dónde se almacenan los valores utilizados por los
                 operadores.
               </small>
-            </a>
-
-            <a href="que-son-condicionales">
-              <span aria-hidden="true">📘</span>
-              <strong>Condicionales</strong>
-              <small>
+</a>
+<a href="que-son-condicionales.html">
+<span aria-hidden="true">📘</span>
+<strong>Condicionales</strong>
+<small>
                 Aprende a utilizar comparaciones para tomar decisiones.
               </small>
-            </a>
-
-            <a href="que-son-funciones">
-              <span aria-hidden="true">📘</span>
-              <strong>Funciones</strong>
-              <small>
+</a>
+<a href="que-son-funciones.html">
+<span aria-hidden="true">📘</span>
+<strong>Funciones</strong>
+<small>
                 Aprende a organizar cálculos y operaciones reutilizables.
               </small>
-            </a>
-
-          </div>
-
-        </aside>
-
-      </div>
-    </div>
-
-  </article>
-
+</a>
+</div>
+</aside>
+</div>
+</div>
+</article>
 </main>
-
-<footer class="footer">
-
-  <div class="contenedor-footer">
-
-    <div class="footer-logo">
-
-      <a
-        class="marca-bytenova"
-        href="../index#inicio"
-        aria-label="Ir al inicio de ByteNova"
-      >
-        <span class="marca-icono" aria-hidden="true">&lt;/&gt;</span>
-        <span class="marca-texto">ByteNova</span>
-      </a>
-
-      <p>
-        Aprende tecnología desde cero con artículos, rutas, retos,
-        guías y recursos gratuitos.
-      </p>
-
-    </div>
-
-    <nav
-      class="footer-enlaces"
-      aria-label="Enlaces de aprendizaje del pie de página"
-    >
-      <h3>Aprender</h3>
-      <a href="../index#tecnologias">Tecnologías</a>
-      <a href="rutas">Rutas</a>
-      <a href="retos">Retos</a>
-      <a href="material">Guías</a>
-      <a href="articulos">Artículos</a>
-      <a href="glosario">Glosario</a>
-    </nav>
-
-    <nav
-      class="footer-enlaces"
-      aria-label="Enlaces informativos del pie de página"
-    >
-      <h3>ByteNova</h3>
-      <a href="sobre">Sobre ByteNova</a>
-      <a href="../index#contacto">Contacto</a>
-      <a href="privacidad">Privacidad</a>
-      <a href="terminos">Términos</a>
-      <a href="cookies">Cookies</a>
-    </nav>
-
-    <address class="footer-social">
-      <h3>Contacto</h3>
-      <p>
-        Preguntas, sugerencias o comentarios sobre nuestros
-        contenidos educativos.
-      </p>
-
-      <a href="mailto:bytenova339@gmail.com">
-        bytenova339@gmail.com
-      </a>
-
-      <a href="https://www.tiktok.com/@bytenova.app" target="_blank" rel="noopener noreferrer" aria-label="TikTok de ByteNova">
-        TikTok · @bytenova.app
-      </a>
-    </address>
-
-  </div>
-
-  <div class="footer-copy">
-    <p>© 2026 ByteNova. Todos los derechos reservados.</p>
-    <p>Creado por Dylan Estrada.</p>
-  </div>
-
+<footer class="footer footer-v2">
+<div class="footer-v2-shell">
+<div class="footer-v2-grid">
+<div class="footer-v2-brand">
+<a aria-label="Ir al inicio de ByteNova" class="footer-v2-logo" href="../index.html#inicio">
+<span aria-hidden="true" class="footer-v2-logo-icon">&lt;/&gt;</span>
+<span class="footer-v2-logo-text">Byte<span>Nova</span></span>
+</a>
+<p>Aprende tecnología desde cero con artículos, rutas, retos, guías y recursos gratuitos.</p>
+<div class="footer-v2-social">
+<a aria-label="TikTok de ByteNova" href="https://www.tiktok.com/@bytenova.app" rel="noopener noreferrer" target="_blank">♪</a>
+<a aria-label="Correo de ByteNova" href="mailto:bytenova339@gmail.com">✉</a>
+<a aria-label="Sitio web de ByteNova" href="../index.html#inicio">◎</a>
+</div>
+</div>
+<nav aria-label="Enlaces de aprendizaje" class="footer-v2-col">
+<h3>Aprender</h3>
+<a href="../index.html#tecnologias"><span aria-hidden="true">▣</span>Tecnologías</a>
+<a href="rutas.html"><span aria-hidden="true">↗</span>Rutas</a>
+<a href="retos.html"><span aria-hidden="true">🎯</span>Retos</a>
+<a href="material.html"><span aria-hidden="true">▤</span>Guías</a>
+<a href="articulos.html"><span aria-hidden="true">▧</span>Artículos</a>
+<a href="glosario.html"><span aria-hidden="true">▥</span>Glosario</a>
+</nav>
+<nav aria-label="Enlaces de ByteNova" class="footer-v2-col">
+<h3>ByteNova</h3>
+<a href="sobre.html"><span aria-hidden="true">♙</span>Sobre ByteNova</a>
+<a href="../index.html#contacto"><span aria-hidden="true">✉</span>Contacto</a>
+<a href="privacidad.html"><span aria-hidden="true">♢</span>Privacidad</a>
+<a href="terminos.html"><span aria-hidden="true">▤</span>Términos</a>
+<a href="cookies.html"><span aria-hidden="true">◌</span>Cookies</a>
+</nav>
+<div class="footer-v2-contact">
+<h3>Conecta con ByteNova</h3>
+<p>Preguntas, sugerencias o comentarios sobre nuestros contenidos educativos.</p>
+<a href="mailto:bytenova339@gmail.com"><span aria-hidden="true">✉</span>bytenova339@gmail.com</a>
+<a href="https://www.tiktok.com/@bytenova.app" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">♪</span>TikTok · @bytenova.app</a>
+</div>
+</div>
+<div class="footer-v2-bottom">
+<p>© 2026 <strong>ByteNova</strong>. Todos los derechos reservados.</p>
+<p>Creado por Dylan Estrada.</p>
+</div>
+</div>
 </footer>
-
 <script src="../js/script.js"></script>
-
 </body>
 </html>

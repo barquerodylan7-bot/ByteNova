@@ -41,7 +41,7 @@
 <meta content="¿Qué es SQL y para qué sirve? | ByteNova" name="twitter:image:alt"/>
 <link href="https://bytenova.app/pages/que-es-sql" rel="canonical"/>
 <link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="../css/style.min.css" rel="stylesheet"/>
+<link href="../css/style.min.css?v=20260818-center2" rel="stylesheet"/>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -165,7 +165,7 @@
         Saltar al contenido principal
     </a>
 <header>
-<a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index#inicio">
+<a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio">
 <span aria-hidden="true" class="marca-icono">&lt;/&gt;</span>
 <span class="marca-texto">ByteNova</span>
 </a>
@@ -173,15 +173,15 @@
 <span aria-hidden="true">☰</span>
 </button>
 <nav aria-label="Navegación principal" id="menu-principal">
-<a href="../index#inicio">Inicio</a>
-<a href="sobre">Sobre</a>
-<a href="../index#tecnologias">Aprender</a>
-<a href="rutas">Rutas</a>
-<a href="retos">Retos</a>
-<a href="material">Guías</a>
-<a aria-current="page" href="articulos">Artículos</a>
-<a href="glosario">Glosario</a>
-<a href="../index#contacto">Contacto</a>
+<a href="../index.html#inicio">Inicio</a>
+<a href="sobre.html">Sobre</a>
+<a href="../index.html#tecnologias">Aprender</a>
+<a href="rutas.html">Rutas</a>
+<a href="retos.html">Retos</a>
+<a href="material.html">Guías</a>
+<a aria-current="page" href="articulos.html">Artículos</a>
+<a href="glosario.html">Glosario</a>
+<a href="../index.html#contacto">Contacto</a>
 <button aria-label="Activar modo oscuro" class="btn-modo" id="btn-modo" type="button">
 <span aria-hidden="true">🌙</span>
 </button>
@@ -190,9 +190,9 @@
 <main class="sobre articulo" id="contenido-principal">
 <article aria-labelledby="titulo-que-es-sql" class="sobre-contenido">
 <nav aria-label="Ruta de navegación" class="migas-navegacion">
-<a href="../index">Inicio</a>
+<a href="../index.html">Inicio</a>
 <span aria-hidden="true">›</span>
-<a href="articulos">Artículos</a>
+<a href="articulos.html">Artículos</a>
 <span aria-hidden="true">›</span>
 <span aria-current="page">SQL</span>
 </nav>
@@ -227,62 +227,53 @@ FROM pedidos
 INNER JOIN clientes
 ON pedidos.cliente_id = clientes.id;</code></pre></div><h2 id="agregaciones">Funciones de agregación</h2><p>COUNT, SUM, AVG, MIN y MAX resumen conjuntos de datos. Una tienda podría contar pedidos, sumar ventas o calcular un precio promedio.</p><p>Estas funciones son especialmente útiles junto con GROUP BY.</p><h2 id="group-by">GROUP BY</h2><p>GROUP BY reúne filas que comparten un valor para aplicar cálculos por grupo. Por ejemplo, permite contar cuántos productos hay por categoría o calcular ventas por mes.</p><div class="recuadro-ejemplo"><pre><code>SELECT categoria_id, COUNT(*) AS cantidad
 FROM productos
-GROUP BY categoria_id;</code></pre></div><h2 id="restricciones">Claves y restricciones</h2><p>SQL también puede definir reglas. PRIMARY KEY identifica registros, FOREIGN KEY establece relaciones y restricciones como NOT NULL o UNIQUE ayudan a mantener datos válidos.</p><p>Estas reglas complementan las validaciones del código y protegen la integridad incluso cuando varias aplicaciones usan la misma base.</p><h2 id="tipos-datos">Tipos de datos</h2><p>Una columna puede almacenar enteros, decimales, texto, fechas, valores booleanos y otros tipos según el gestor.</p><p>Guardar todo como texto parece sencillo, pero dificulta cálculos, comparaciones, ordenamientos y validaciones.</p><h2 id="null">NULL y valores desconocidos</h2><p>NULL representa ausencia o desconocimiento de un valor; no equivale automáticamente a cero ni a una cadena vacía.</p><p>Comprender NULL evita resultados inesperados al filtrar y comparar columnas opcionales.</p><h2 id="indices">Índices y consultas</h2><p>Los índices pueden acelerar búsquedas frecuentes, pero no sustituyen un buen diseño. Una consulta lenta puede deberse a falta de índices, filtros deficientes o a que se solicitan más datos de los necesarios.</p><p>Los gestores incluyen herramientas para analizar planes de ejecución y entender cómo se procesa una consulta.</p><h2 id="transacciones">Transacciones</h2><p>Las transacciones agrupan operaciones relacionadas. Una compra podría crear un pedido, registrar productos y reducir inventario. Si una parte falla, puede ser necesario revertir todo para no dejar el sistema inconsistente.</p><p>Conceptos como COMMIT y ROLLBACK permiten confirmar o deshacer cambios dentro de una transacción.</p><h2 id="seguridad">SQL y seguridad</h2><p>Nunca se deben concatenar directamente entradas del usuario para construir consultas. Las aplicaciones utilizan consultas parametrizadas o mecanismos equivalentes para separar instrucciones de datos.</p><p>Esto ayuda a prevenir inyección SQL. Además, la cuenta usada por una aplicación debe tener únicamente los permisos necesarios.</p><h2 id="orm">SQL y los ORM</h2><p>En proyectos modernos es común utilizar ORM o bibliotecas que generan SQL. Estas herramientas pueden facilitar tareas repetitivas, pero conocer SQL sigue siendo útil para depurar consultas, comprender relaciones y analizar rendimiento.</p><p>Un ORM no elimina conceptos como índices, transacciones o claves: simplemente abstrae parte de la sintaxis.</p><h2 id="practica">Ejercicio práctico</h2><p>Crea mentalmente tablas libros, usuarios y préstamos. Practica insertar registros, consultar libros disponibles, registrar un préstamo y utilizar un JOIN para mostrar el nombre del usuario junto con el título del libro.</p><p>Después añade una restricción para impedir ciertos datos inválidos y observa cómo cambia el diseño.</p><h2 id="errores">Errores comunes al aprender SQL</h2><p>Memorizar sintaxis sin comprender tablas y relaciones suele producir frustración. También es común abusar de SELECT *, olvidar WHERE en cambios, crear relaciones sin claves adecuadas o probar operaciones destructivas sobre datos importantes.</p><p>Conviene empezar con consultas pequeñas, comprobar resultados y aumentar gradualmente la complejidad.</p><h2 id="ddl-dml">DDL y DML: dos grupos de instrucciones</h2><p>Las instrucciones SQL suelen agruparse según su propósito. DDL se relaciona con definir estructuras, por ejemplo crear o modificar tablas. DML se utiliza para manipular datos mediante operaciones como INSERT, UPDATE y DELETE.</p><p>Esta clasificación ayuda a comprender que SQL no sirve únicamente para consultar información: también permite describir la estructura que tendrá una base de datos.</p><h2 id="subconsultas">Subconsultas</h2><p>Una subconsulta utiliza el resultado de una consulta dentro de otra. Puede resolver problemas que requieren varios pasos lógicos, aunque en algunos casos un JOIN resulta más claro.</p><p>Lo importante al principio es construir consultas correctas y legibles; después puedes comparar distintas formas de obtener el mismo resultado.</p><h2 id="vistas">¿Qué es una vista?</h2><p>Una vista es una consulta guardada que puede consultarse como si fuera una tabla virtual. Permite simplificar consultas repetitivas y ocultar parte de la complejidad a determinadas aplicaciones o usuarios.</p><p>Una vista no siempre almacena una copia independiente de los datos; normalmente representa el resultado de una consulta sobre tablas existentes.</p><h2 id="procedimientos">Procedimientos y funciones en la base</h2><p>Algunos gestores permiten crear procedimientos o funciones que ejecutan lógica cerca de los datos. Pueden ser útiles para ciertas reglas, procesos o cálculos.</p><p>No todas las aplicaciones necesitan estas herramientas. Antes de mover lógica a la base conviene considerar mantenimiento, portabilidad y responsabilidades del sistema.</p><h2 id="preguntas">Preguntas frecuentes</h2><section aria-labelledby="preguntas" class="faq-articulo"><details><summary>¿SQL sigue siendo importante?</summary><p>Sí. Las bases relacionales continúan utilizándose ampliamente y SQL sigue siendo una habilidad fundamental en desarrollo y análisis de datos.</p></details><details><summary>¿SQL es difícil?</summary><p>Las consultas básicas son accesibles. La dificultad aumenta con modelos complejos, rendimiento, concurrencia y administración, por lo que conviene avanzar progresivamente.</p></details><details><summary>¿SQL reemplaza a Python o JavaScript?</summary><p>No. SQL se especializa en trabajar con datos relacionales. Un lenguaje de programación suele encargarse de la lógica y utiliza SQL para comunicarse con la base.</p></details><details><summary>¿Qué gestor usar para practicar?</summary><p>SQLite es cómodo para proyectos locales; PostgreSQL y MySQL permiten aprender en entornos similares a muchas aplicaciones reales.</p></details><details><summary>¿Necesito una base de datos para aprender SQL?</summary><p>Sí, pero puede ser local y pequeña. SQLite es una opción sencilla para comenzar sin configurar un servidor completo.</p></details></section><h2 id="conclusion">Conclusión</h2><p>SQL transforma preguntas sobre información en consultas que una base relacional puede ejecutar. Dominar SELECT, filtros, JOIN, agregaciones, restricciones y transacciones proporciona una base práctica para backend, análisis de datos y desarrollo de aplicaciones.</p><nav aria-label="Navegación entre artículos" class="navegacion-articulos"><a class="nav-anterior" href="articulos"><span class="nav-etiqueta">← Ver artículos</span><strong>Explora todos los artículos</strong></a><a class="nav-siguiente" href="que-es-una-base-de-datos"><span class="nav-etiqueta">Siguiente lectura →</span><strong>¿Qué es una base de datos?</strong></a></nav><section aria-label="Información del autor" class="autor-articulo"><div aria-hidden="true" class="autor-icono">&lt;/&gt;</div><div class="autor-informacion"><span>Artículo creado por</span><h2>ByteNova</h2><p>Proyecto educativo creado por Dylan Estrada. ByteNova publica contenido sobre programación, desarrollo web, inteligencia artificial y ciberseguridad con un enfoque claro para principiantes y revisión editorial continua.</p><a href="sobre">Conoce más sobre ByteNova →</a></div></section><aside aria-labelledby="titulo-articulos-relacionados" class="articulos-relacionados"><h2 id="titulo-articulos-relacionados">Continúa aprendiendo</h2><div class="relacionados-grid"><a href="que-es-una-base-de-datos"><span aria-hidden="true">🗄️</span><strong>¿Qué es una base de datos?</strong><small>Comprende tablas, relaciones y almacenamiento de información.</small></a><a href="frontend-y-backend"><span aria-hidden="true">🌐</span><strong>Frontend y backend</strong><small>Conecta SQL con la lógica que procesa las solicitudes.</small></a><a href="python-para-principiantes"><span aria-hidden="true">🐍</span><strong>Python para principiantes</strong><small>Descubre cómo un lenguaje puede trabajar con datos.</small></a></div></aside></div>
+GROUP BY categoria_id;</code></pre></div><h2 id="restricciones">Claves y restricciones</h2><p>SQL también puede definir reglas. PRIMARY KEY identifica registros, FOREIGN KEY establece relaciones y restricciones como NOT NULL o UNIQUE ayudan a mantener datos válidos.</p><p>Estas reglas complementan las validaciones del código y protegen la integridad incluso cuando varias aplicaciones usan la misma base.</p><h2 id="tipos-datos">Tipos de datos</h2><p>Una columna puede almacenar enteros, decimales, texto, fechas, valores booleanos y otros tipos según el gestor.</p><p>Guardar todo como texto parece sencillo, pero dificulta cálculos, comparaciones, ordenamientos y validaciones.</p><h2 id="null">NULL y valores desconocidos</h2><p>NULL representa ausencia o desconocimiento de un valor; no equivale automáticamente a cero ni a una cadena vacía.</p><p>Comprender NULL evita resultados inesperados al filtrar y comparar columnas opcionales.</p><h2 id="indices">Índices y consultas</h2><p>Los índices pueden acelerar búsquedas frecuentes, pero no sustituyen un buen diseño. Una consulta lenta puede deberse a falta de índices, filtros deficientes o a que se solicitan más datos de los necesarios.</p><p>Los gestores incluyen herramientas para analizar planes de ejecución y entender cómo se procesa una consulta.</p><h2 id="transacciones">Transacciones</h2><p>Las transacciones agrupan operaciones relacionadas. Una compra podría crear un pedido, registrar productos y reducir inventario. Si una parte falla, puede ser necesario revertir todo para no dejar el sistema inconsistente.</p><p>Conceptos como COMMIT y ROLLBACK permiten confirmar o deshacer cambios dentro de una transacción.</p><h2 id="seguridad">SQL y seguridad</h2><p>Nunca se deben concatenar directamente entradas del usuario para construir consultas. Las aplicaciones utilizan consultas parametrizadas o mecanismos equivalentes para separar instrucciones de datos.</p><p>Esto ayuda a prevenir inyección SQL. Además, la cuenta usada por una aplicación debe tener únicamente los permisos necesarios.</p><h2 id="orm">SQL y los ORM</h2><p>En proyectos modernos es común utilizar ORM o bibliotecas que generan SQL. Estas herramientas pueden facilitar tareas repetitivas, pero conocer SQL sigue siendo útil para depurar consultas, comprender relaciones y analizar rendimiento.</p><p>Un ORM no elimina conceptos como índices, transacciones o claves: simplemente abstrae parte de la sintaxis.</p><h2 id="practica">Ejercicio práctico</h2><p>Crea mentalmente tablas libros, usuarios y préstamos. Practica insertar registros, consultar libros disponibles, registrar un préstamo y utilizar un JOIN para mostrar el nombre del usuario junto con el título del libro.</p><p>Después añade una restricción para impedir ciertos datos inválidos y observa cómo cambia el diseño.</p><h2 id="errores">Errores comunes al aprender SQL</h2><p>Memorizar sintaxis sin comprender tablas y relaciones suele producir frustración. También es común abusar de SELECT *, olvidar WHERE en cambios, crear relaciones sin claves adecuadas o probar operaciones destructivas sobre datos importantes.</p><p>Conviene empezar con consultas pequeñas, comprobar resultados y aumentar gradualmente la complejidad.</p><h2 id="ddl-dml">DDL y DML: dos grupos de instrucciones</h2><p>Las instrucciones SQL suelen agruparse según su propósito. DDL se relaciona con definir estructuras, por ejemplo crear o modificar tablas. DML se utiliza para manipular datos mediante operaciones como INSERT, UPDATE y DELETE.</p><p>Esta clasificación ayuda a comprender que SQL no sirve únicamente para consultar información: también permite describir la estructura que tendrá una base de datos.</p><h2 id="subconsultas">Subconsultas</h2><p>Una subconsulta utiliza el resultado de una consulta dentro de otra. Puede resolver problemas que requieren varios pasos lógicos, aunque en algunos casos un JOIN resulta más claro.</p><p>Lo importante al principio es construir consultas correctas y legibles; después puedes comparar distintas formas de obtener el mismo resultado.</p><h2 id="vistas">¿Qué es una vista?</h2><p>Una vista es una consulta guardada que puede consultarse como si fuera una tabla virtual. Permite simplificar consultas repetitivas y ocultar parte de la complejidad a determinadas aplicaciones o usuarios.</p><p>Una vista no siempre almacena una copia independiente de los datos; normalmente representa el resultado de una consulta sobre tablas existentes.</p><h2 id="procedimientos">Procedimientos y funciones en la base</h2><p>Algunos gestores permiten crear procedimientos o funciones que ejecutan lógica cerca de los datos. Pueden ser útiles para ciertas reglas, procesos o cálculos.</p><p>No todas las aplicaciones necesitan estas herramientas. Antes de mover lógica a la base conviene considerar mantenimiento, portabilidad y responsabilidades del sistema.</p><h2 id="preguntas">Preguntas frecuentes</h2><section aria-labelledby="preguntas" class="faq-articulo"><details><summary>¿SQL sigue siendo importante?</summary><p>Sí. Las bases relacionales continúan utilizándose ampliamente y SQL sigue siendo una habilidad fundamental en desarrollo y análisis de datos.</p></details><details><summary>¿SQL es difícil?</summary><p>Las consultas básicas son accesibles. La dificultad aumenta con modelos complejos, rendimiento, concurrencia y administración, por lo que conviene avanzar progresivamente.</p></details><details><summary>¿SQL reemplaza a Python o JavaScript?</summary><p>No. SQL se especializa en trabajar con datos relacionales. Un lenguaje de programación suele encargarse de la lógica y utiliza SQL para comunicarse con la base.</p></details><details><summary>¿Qué gestor usar para practicar?</summary><p>SQLite es cómodo para proyectos locales; PostgreSQL y MySQL permiten aprender en entornos similares a muchas aplicaciones reales.</p></details><details><summary>¿Necesito una base de datos para aprender SQL?</summary><p>Sí, pero puede ser local y pequeña. SQLite es una opción sencilla para comenzar sin configurar un servidor completo.</p></details></section><h2 id="conclusion">Conclusión</h2><p>SQL transforma preguntas sobre información en consultas que una base relacional puede ejecutar. Dominar SELECT, filtros, JOIN, agregaciones, restricciones y transacciones proporciona una base práctica para backend, análisis de datos y desarrollo de aplicaciones.</p><nav aria-label="Navegación entre artículos" class="navegacion-articulos"><a class="nav-anterior" href="articulos.html"><span class="nav-etiqueta">← Ver artículos</span><strong>Explora todos los artículos</strong></a><a class="nav-siguiente" href="que-es-una-base-de-datos.html"><span class="nav-etiqueta">Siguiente lectura →</span><strong>¿Qué es una base de datos?</strong></a></nav><section aria-label="Información del autor" class="autor-articulo"><div aria-hidden="true" class="autor-icono">&lt;/&gt;</div><div class="autor-informacion"><span>Artículo creado por</span><h2>ByteNova</h2><p>Proyecto educativo creado por Dylan Estrada. ByteNova publica contenido sobre programación, desarrollo web, inteligencia artificial y ciberseguridad con un enfoque claro para principiantes y revisión editorial continua.</p><a href="sobre.html">Conoce más sobre ByteNova →</a></div></section><aside aria-labelledby="titulo-articulos-relacionados" class="articulos-relacionados"><h2 id="titulo-articulos-relacionados">Continúa aprendiendo</h2><div class="relacionados-grid"><a href="que-es-una-base-de-datos.html"><span aria-hidden="true">🗄️</span><strong>¿Qué es una base de datos?</strong><small>Comprende tablas, relaciones y almacenamiento de información.</small></a><a href="frontend-y-backend.html"><span aria-hidden="true">🌐</span><strong>Frontend y backend</strong><small>Conecta SQL con la lógica que procesa las solicitudes.</small></a><a href="python-para-principiantes.html"><span aria-hidden="true">🐍</span><strong>Python para principiantes</strong><small>Descubre cómo un lenguaje puede trabajar con datos.</small></a></div></aside></div>
 </div>
 </article>
 </main>
-<footer class="footer">
-<div class="contenedor-footer">
-<div class="footer-logo">
-<a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index#inicio">
-<span aria-hidden="true" class="marca-icono">
-                        &lt;/&gt;
-                    </span>
-<span class="marca-texto">ByteNova</span>
+<footer class="footer footer-v2">
+<div class="footer-v2-shell">
+<div class="footer-v2-grid">
+<div class="footer-v2-brand">
+<a aria-label="Ir al inicio de ByteNova" class="footer-v2-logo" href="../index.html#inicio">
+<span aria-hidden="true" class="footer-v2-logo-icon">&lt;/&gt;</span>
+<span class="footer-v2-logo-text">Byte<span>Nova</span></span>
 </a>
-<p>
-                    Aprende tecnología desde cero con artículos, rutas,
-                    retos, guías y recursos gratuitos.
-                </p>
+<p>Aprende tecnología desde cero con artículos, rutas, retos, guías y recursos gratuitos.</p>
+<div class="footer-v2-social">
+<a aria-label="TikTok de ByteNova" href="https://www.tiktok.com/@bytenova.app" rel="noopener noreferrer" target="_blank">♪</a>
+<a aria-label="Correo de ByteNova" href="mailto:bytenova339@gmail.com">✉</a>
+<a aria-label="Sitio web de ByteNova" href="../index.html#inicio">◎</a>
 </div>
-<nav aria-label="Enlaces de aprendizaje del pie de página" class="footer-enlaces">
+</div>
+<nav aria-label="Enlaces de aprendizaje" class="footer-v2-col">
 <h3>Aprender</h3>
-<a href="../index#tecnologias">Tecnologías</a>
-<a href="rutas">Rutas</a>
-<a href="retos">Retos</a>
-<a href="material">Guías</a>
-<a aria-current="page" href="articulos">Artículos</a>
-<a href="glosario">Glosario</a>
+<a href="../index.html#tecnologias"><span aria-hidden="true">▣</span>Tecnologías</a>
+<a href="rutas.html"><span aria-hidden="true">↗</span>Rutas</a>
+<a href="retos.html"><span aria-hidden="true">🎯</span>Retos</a>
+<a href="material.html"><span aria-hidden="true">▤</span>Guías</a>
+<a href="articulos.html"><span aria-hidden="true">▧</span>Artículos</a>
+<a href="glosario.html"><span aria-hidden="true">▥</span>Glosario</a>
 </nav>
-<nav aria-label="Enlaces informativos del pie de página" class="footer-enlaces">
+<nav aria-label="Enlaces de ByteNova" class="footer-v2-col">
 <h3>ByteNova</h3>
-<a href="sobre">Sobre ByteNova</a>
-<a href="../index#contacto">Contacto</a>
-<a href="privacidad">Privacidad</a>
-<a href="terminos">Términos</a>
-<a href="cookies">Cookies</a>
+<a href="sobre.html"><span aria-hidden="true">♙</span>Sobre ByteNova</a>
+<a href="../index.html#contacto"><span aria-hidden="true">✉</span>Contacto</a>
+<a href="privacidad.html"><span aria-hidden="true">♢</span>Privacidad</a>
+<a href="terminos.html"><span aria-hidden="true">▤</span>Términos</a>
+<a href="cookies.html"><span aria-hidden="true">◌</span>Cookies</a>
 </nav>
-<address class="footer-social">
-<h3>Contacto</h3>
-<p>
-                    Preguntas, sugerencias o comentarios sobre nuestros
-                    contenidos educativos.
-                </p>
-<a href="mailto:bytenova339@gmail.com">
-                    bytenova339@gmail.com
-                </a>
-<a aria-label="TikTok de ByteNova" href="https://www.tiktok.com/@bytenova.app" rel="noopener noreferrer" target="_blank">
-        TikTok · @bytenova.app
-      </a>
-</address>
+<div class="footer-v2-contact">
+<h3>Conecta con ByteNova</h3>
+<p>Preguntas, sugerencias o comentarios sobre nuestros contenidos educativos.</p>
+<a href="mailto:bytenova339@gmail.com"><span aria-hidden="true">✉</span>bytenova339@gmail.com</a>
+<a href="https://www.tiktok.com/@bytenova.app" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">♪</span>TikTok · @bytenova.app</a>
 </div>
-<div class="footer-copy">
-<p>
-                © 2026 ByteNova. Todos los derechos reservados.
-            </p>
-<p>
-                Creado por Dylan Estrada.
-            </p>
+</div>
+<div class="footer-v2-bottom">
+<p>© 2026 <strong>ByteNova</strong>. Todos los derechos reservados.</p>
+<p>Creado por Dylan Estrada.</p>
+</div>
 </div>
 </footer>
 <script src="../js/script.js"></script>

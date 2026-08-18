@@ -1,116 +1,46 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-41QWQ3DC33"></script>
-  <script>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-41QWQ3DC33"></script>
+<script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-41QWQ3DC33');
   </script>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>¿Qué es fine-tuning? Ajuste de modelos de IA | ByteNova</title>
-
-  <meta
-    name="description"
-    content="Aprende qué es el fine-tuning, cómo adapta un modelo preentrenado, cómo se preparan los datos, cómo se evalúa y cuándo conviene frente a prompts o RAG."
-  >
-
-  <meta name="author" content="ByteNova">
-  <meta name="robots" content="index, follow">
-
-  <meta
-    name="theme-color"
-    content="#ffffff"
-    media="(prefers-color-scheme: light)"
-  >
-
-  <meta
-    name="theme-color"
-    content="#0f172a"
-    media="(prefers-color-scheme: dark)"
-  >
-
-  <meta property="og:type" content="article">
-  <meta property="og:locale" content="es_CR">
-  <meta property="og:site_name" content="ByteNova">
-
-  <meta
-    property="og:title"
-    content="¿Qué es el fine-tuning en inteligencia artificial?"
-  >
-
-  <meta
-    property="og:description"
-    content="Comprende cómo se adapta un modelo preentrenado mediante datos específicos y cuándo conviene utilizar fine-tuning."
-  >
-
-  <meta
-    property="og:url"
-    content="https://bytenova.app/pages/que-es-fine-tuning"
-  >
-
-  <meta
-    property="og:image"
-    content="https://bytenova.app/images/bytenova-social.jpg"
-  >
-
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:type" content="image/jpeg">
-
-  <meta
-    property="og:image:alt"
-    content="¿Qué es el fine-tuning en inteligencia artificial? | ByteNova"
-  >
-
-  <meta name="twitter:card" content="summary_large_image">
-
-  <meta
-    name="twitter:title"
-    content="¿Qué es el fine-tuning en inteligencia artificial?"
-  >
-
-  <meta
-    name="twitter:description"
-    content="Aprende cómo funciona el ajuste fino de modelos, sus datos, riesgos y diferencias con prompts y RAG."
-  >
-
-  <meta
-    name="twitter:image"
-    content="https://bytenova.app/images/bytenova-social.jpg"
-  >
-
-  <meta
-    name="twitter:image:alt"
-    content="¿Qué es el fine-tuning en inteligencia artificial? | ByteNova"
-  >
-
-  <meta property="article:published_time" content="2026-08-05">
-  <meta property="article:modified_time" content="2026-08-17">
-  <meta property="article:section" content="Inteligencia artificial">
-
-  <link
-    rel="canonical"
-    href="https://bytenova.app/pages/que-es-fine-tuning"
-  >
-
-  <link
-    rel="icon"
-    href="../images/favicon.svg"
-    type="image/svg+xml"
-  >
-
-  <link
-    rel="stylesheet"
-    href="../css/style.min.css"
-  >
-
-  <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>¿Qué es fine-tuning? Ajuste de modelos de IA | ByteNova</title>
+<meta content="Aprende qué es el fine-tuning, cómo adapta un modelo preentrenado, cómo se preparan los datos, cómo se evalúa y cuándo conviene frente a prompts o RAG." name="description"/>
+<meta content="ByteNova" name="author"/>
+<meta content="index, follow" name="robots"/>
+<meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
+<meta content="#0f172a" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<meta content="article" property="og:type"/>
+<meta content="es_CR" property="og:locale"/>
+<meta content="ByteNova" property="og:site_name"/>
+<meta content="¿Qué es el fine-tuning en inteligencia artificial?" property="og:title"/>
+<meta content="Comprende cómo se adapta un modelo preentrenado mediante datos específicos y cuándo conviene utilizar fine-tuning." property="og:description"/>
+<meta content="https://bytenova.app/pages/que-es-fine-tuning" property="og:url"/>
+<meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="image/jpeg" property="og:image:type"/>
+<meta content="¿Qué es el fine-tuning en inteligencia artificial? | ByteNova" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="¿Qué es el fine-tuning en inteligencia artificial?" name="twitter:title"/>
+<meta content="Aprende cómo funciona el ajuste fino de modelos, sus datos, riesgos y diferencias con prompts y RAG." name="twitter:description"/>
+<meta content="https://bytenova.app/images/bytenova-social.jpg" name="twitter:image"/>
+<meta content="¿Qué es el fine-tuning en inteligencia artificial? | ByteNova" name="twitter:image:alt"/>
+<meta content="2026-08-05" property="article:published_time"/>
+<meta content="2026-08-17" property="article:modified_time"/>
+<meta content="Inteligencia artificial" property="article:section"/>
+<link href="https://bytenova.app/pages/que-es-fine-tuning" rel="canonical"/>
+<link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../css/style.min.css?v=20260818-center2" rel="stylesheet"/>
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
@@ -199,203 +129,142 @@
     ]
   }
   </script>
-
-  <meta
-    name="google-adsense-account"
-    content="ca-pub-5369456672603969"
-  >
-
-  <script
-    async
-    crossorigin="anonymous"
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5369456672603969">
-  </script>
+<meta content="ca-pub-5369456672603969" name="google-adsense-account"/>
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5369456672603969">
+</script>
 </head>
-
 <body>
-
 <a class="saltar-contenido" href="#contenido-principal">
   Saltar al contenido principal
 </a>
-
 <header>
-
-  <a
-    class="marca-bytenova"
-    href="../index#inicio"
-    aria-label="Ir al inicio de ByteNova"
-  >
-    <span class="marca-icono" aria-hidden="true">&lt;/&gt;</span>
-    <span class="marca-texto">ByteNova</span>
-  </a>
-
-  <button
-    class="menu-toggle"
-    id="menu-toggle"
-    type="button"
-    aria-controls="menu-principal"
-    aria-expanded="false"
-    aria-label="Abrir menú"
-  >
-    <span aria-hidden="true">☰</span>
-  </button>
-
-  <nav id="menu-principal" aria-label="Navegación principal">
-    <a href="../index#inicio">Inicio</a>
-    <a href="sobre">Sobre</a>
-    <a href="../index#tecnologias">Aprender</a>
-    <a href="rutas">Rutas</a>
-    <a href="retos">Retos</a>
-    <a href="material">Guías</a>
-    <a href="articulos" aria-current="page">Artículos</a>
-    <a href="glosario">Glosario</a>
-    <a href="../index#contacto">Contacto</a>
-
-    <button
-      class="btn-modo"
-      id="btn-modo"
-      type="button"
-      aria-label="Activar modo oscuro"
-    >
-      <span aria-hidden="true">🌙</span>
-    </button>
-  </nav>
-
+<a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio">
+<span aria-hidden="true" class="marca-icono">&lt;/&gt;</span>
+<span class="marca-texto">ByteNova</span>
+</a>
+<button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle" type="button">
+<span aria-hidden="true">☰</span>
+</button>
+<nav aria-label="Navegación principal" id="menu-principal">
+<a href="../index.html#inicio">Inicio</a>
+<a href="sobre.html">Sobre</a>
+<a href="../index.html#tecnologias">Aprender</a>
+<a href="rutas.html">Rutas</a>
+<a href="retos.html">Retos</a>
+<a href="material.html">Guías</a>
+<a aria-current="page" href="articulos.html">Artículos</a>
+<a href="glosario.html">Glosario</a>
+<a href="../index.html#contacto">Contacto</a>
+<button aria-label="Activar modo oscuro" class="btn-modo" id="btn-modo" type="button">
+<span aria-hidden="true">🌙</span>
+</button>
+</nav>
 </header>
-
 <main class="sobre articulo" id="contenido-principal">
-
-  <article
-    class="sobre-contenido"
-    aria-labelledby="titulo-que-es-fine-tuning"
-  >
-
-    <nav class="migas-navegacion" aria-label="Ruta de navegación">
-      <a href="../index">Inicio</a>
-      <span aria-hidden="true">›</span>
-      <a href="articulos">Artículos</a>
-      <span aria-hidden="true">›</span>
-      <span aria-current="page">Fine-tuning</span>
-    </nav>
-
-    <span class="seccion-etiqueta">
-      <span aria-hidden="true">🎛️</span>
+<article aria-labelledby="titulo-que-es-fine-tuning" class="sobre-contenido">
+<nav aria-label="Ruta de navegación" class="migas-navegacion">
+<a href="../index.html">Inicio</a>
+<span aria-hidden="true">›</span>
+<a href="articulos.html">Artículos</a>
+<span aria-hidden="true">›</span>
+<span aria-current="page">Fine-tuning</span>
+</nav>
+<span class="seccion-etiqueta">
+<span aria-hidden="true">🎛️</span>
       Inteligencia artificial
     </span>
-
-    <h1 id="titulo-que-es-fine-tuning">
+<h1 id="titulo-que-es-fine-tuning">
       ¿Qué es el fine-tuning en inteligencia artificial?
       <span aria-hidden="true">🎛️</span>
-    </h1>
-
-    <p class="articulo-meta">
+</h1>
+<p class="articulo-meta">
       Publicado por ByteNova ·
       <time datetime="2026-08-05">5 de agosto de 2026</time>
       · Actualizado el
       <time datetime="2026-08-17">17 de agosto de 2026</time>
-    </p>
-
-    <div class="articulo-resumen">
-      <strong>En este artículo aprenderás:</strong>
-      <p>
+</p>
+<div class="articulo-resumen">
+<strong>En este artículo aprenderás:</strong>
+<p>
         Qué es el fine-tuning, cómo se diferencia del entrenamiento desde cero,
         cómo se preparan los datos, qué riesgos existen y cuándo conviene
         utilizarlo frente a prompts o sistemas RAG.
       </p>
-    </div>
-
-    <div class="articulo-layout">
-
-      <aside class="articulo-sidebar">
-
-        <details class="indice-articulo" open>
-
-          <summary>
-            <span aria-hidden="true">📑</span>
+</div>
+<div class="articulo-layout">
+<aside class="articulo-sidebar">
+<details class="indice-articulo" open="">
+<summary>
+<span aria-hidden="true">📑</span>
             Contenido del artículo
           </summary>
-
-          <nav aria-label="Contenido del artículo">
-            <a href="#que-es">1. ¿Qué es el fine-tuning?</a>
-            <a href="#modelo-base">2. Modelo base vs ajustado</a>
-            <a href="#preentrenamiento">3. Preentrenamiento vs fine-tuning</a>
-            <a href="#como-funciona">4. ¿Cómo funciona?</a>
-            <a href="#datos">5. Preparación de datos</a>
-            <a href="#ejemplos">6. Ejemplos de entrenamiento</a>
-            <a href="#supervisado">7. Ajuste supervisado</a>
-            <a href="#epochs">8. Epochs</a>
-            <a href="#learning-rate">9. Learning rate</a>
-            <a href="#dividir-datos">10. Train, validation y test</a>
-            <a href="#sobreajuste">11. Sobreajuste</a>
-            <a href="#olvido">12. Pérdida de capacidades</a>
-            <a href="#full-vs-peft">13. Ajuste completo vs eficiente</a>
-            <a href="#lora">14. ¿Qué es LoRA?</a>
-            <a href="#evaluacion">15. Evaluar el modelo</a>
-            <a href="#cuando-usarlo">16. ¿Cuándo conviene?</a>
-            <a href="#cuando-no">17. ¿Cuándo no conviene?</a>
-            <a href="#comparacion">18. Prompt vs RAG vs fine-tuning</a>
-            <a href="#costos">19. Costos y recursos</a>
-            <a href="#privacidad">20. Privacidad</a>
-            <a href="#riesgos">21. Riesgos</a>
-            <a href="#ejemplo-completo">22. Ejemplo completo</a>
-            <a href="#errores">23. Errores comunes</a>
-            <a href="#practica">24. Compruébalo tú mismo</a>
-            <a href="#preguntas">25. Preguntas frecuentes</a>
-            <a href="#conclusion">26. Conclusión</a>
-          </nav>
-
-        </details>
-
-      </aside>
-
-      <div class="articulo-cuerpo">
-
-        <p class="articulo-introduccion">
+<nav aria-label="Contenido del artículo">
+<a href="#que-es">1. ¿Qué es el fine-tuning?</a>
+<a href="#modelo-base">2. Modelo base vs ajustado</a>
+<a href="#preentrenamiento">3. Preentrenamiento vs fine-tuning</a>
+<a href="#como-funciona">4. ¿Cómo funciona?</a>
+<a href="#datos">5. Preparación de datos</a>
+<a href="#ejemplos">6. Ejemplos de entrenamiento</a>
+<a href="#supervisado">7. Ajuste supervisado</a>
+<a href="#epochs">8. Epochs</a>
+<a href="#learning-rate">9. Learning rate</a>
+<a href="#dividir-datos">10. Train, validation y test</a>
+<a href="#sobreajuste">11. Sobreajuste</a>
+<a href="#olvido">12. Pérdida de capacidades</a>
+<a href="#full-vs-peft">13. Ajuste completo vs eficiente</a>
+<a href="#lora">14. ¿Qué es LoRA?</a>
+<a href="#evaluacion">15. Evaluar el modelo</a>
+<a href="#cuando-usarlo">16. ¿Cuándo conviene?</a>
+<a href="#cuando-no">17. ¿Cuándo no conviene?</a>
+<a href="#comparacion">18. Prompt vs RAG vs fine-tuning</a>
+<a href="#costos">19. Costos y recursos</a>
+<a href="#privacidad">20. Privacidad</a>
+<a href="#riesgos">21. Riesgos</a>
+<a href="#ejemplo-completo">22. Ejemplo completo</a>
+<a href="#errores">23. Errores comunes</a>
+<a href="#practica">24. Compruébalo tú mismo</a>
+<a href="#preguntas">25. Preguntas frecuentes</a>
+<a href="#conclusion">26. Conclusión</a>
+</nav>
+</details>
+</aside>
+<div class="articulo-cuerpo">
+<p class="articulo-introduccion">
           Entrenar un modelo grande desde cero puede requerir enormes cantidades
           de datos y recursos. El fine-tuning aprovecha un modelo que ya ha
           aprendido patrones generales y continúa su entrenamiento con ejemplos
           más específicos para adaptar su comportamiento a una necesidad
           concreta.
         </p>
-
-        <h2 id="que-es">¿Qué es el fine-tuning?</h2>
-
-        <p>
+<h2 id="que-es">¿Qué es el fine-tuning?</h2>
+<p>
           El <strong>fine-tuning</strong>, o ajuste fino, es un proceso mediante
           el cual continuamos entrenando un modelo preentrenado utilizando un
           conjunto de datos más específico.
         </p>
-
-        <p>
+<p>
           Su objetivo puede ser adaptar:
         </p>
-
-        <ul class="lista-articulo">
-          <li>El formato de las respuestas.</li>
-          <li>El estilo.</li>
-          <li>Una tarea de clasificación.</li>
-          <li>Un vocabulario especializado.</li>
-          <li>Un comportamiento repetitivo.</li>
-        </ul>
-
-        <p>
+<ul class="lista-articulo">
+<li>El formato de las respuestas.</li>
+<li>El estilo.</li>
+<li>Una tarea de clasificación.</li>
+<li>Un vocabulario especializado.</li>
+<li>Un comportamiento repetitivo.</li>
+</ul>
+<p>
           El modelo no comienza desde cero. Ya dispone de parámetros aprendidos
           durante una etapa previa.
         </p>
-
-        <h2 id="modelo-base">Modelo base vs modelo ajustado</h2>
-
-        <p>
+<h2 id="modelo-base">Modelo base vs modelo ajustado</h2>
+<p>
           Podemos imaginar dos etapas.
         </p>
-
-        <h3>Modelo base</h3>
-
-        <p>
+<h3>Modelo base</h3>
+<p>
           Ha sido entrenado para aprender capacidades generales.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>Modelo base
 
 Puede:
@@ -404,52 +273,41 @@ Puede:
 - resumir;
 - clasificar;
 - ayudar con código.</code></pre>
-        </div>
-
-        <h3>Modelo ajustado</h3>
-
-        <p>
+</div>
+<h3>Modelo ajustado</h3>
+<p>
           Parte del modelo base, pero continúa entrenándose con ejemplos
           relacionados con una tarea concreta.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>Modelo ajustado
 
 Objetivo:
 responder siempre con una
 estructura específica para
 tickets de soporte.</code></pre>
-        </div>
-
-        <div class="recuadro-consejo">
-          <strong>Fine-tuning no crea conocimiento desde cero</strong>
-          <p>
+</div>
+<div class="recuadro-consejo">
+<strong>Fine-tuning no crea conocimiento desde cero</strong>
+<p>
             Aprovecha las capacidades ya aprendidas por el modelo base y las
             orienta hacia una necesidad más específica.
           </p>
-        </div>
-
-        <h2 id="preentrenamiento">Preentrenamiento vs fine-tuning</h2>
-
-        <p>
+</div>
+<h2 id="preentrenamiento">Preentrenamiento vs fine-tuning</h2>
+<p>
           Estos conceptos están relacionados, pero no son lo mismo.
         </p>
-
-        <h3>Preentrenamiento</h3>
-
-        <p>
+<h3>Preentrenamiento</h3>
+<p>
           Es la etapa en la que un modelo aprende patrones generales utilizando
           grandes cantidades de datos.
         </p>
-
-        <h3>Fine-tuning</h3>
-
-        <p>
+<h3>Fine-tuning</h3>
+<p>
           Continúa el entrenamiento utilizando datos más específicos.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>Preentrenamiento
       ↓
 Modelo general
@@ -457,63 +315,51 @@ Modelo general
 Fine-tuning
       ↓
 Modelo adaptado</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Normalmente el fine-tuning requiere muchos menos recursos que
           preentrenar un modelo grande desde cero.
         </p>
-
-        <h2 id="como-funciona">¿Cómo funciona el fine-tuning?</h2>
-
-        <p>
+<h2 id="como-funciona">¿Cómo funciona el fine-tuning?</h2>
+<p>
           El proceso puede variar según el modelo, pero de forma conceptual
           podemos dividirlo en varios pasos.
         </p>
-
-        <ol class="lista-articulo">
-          <li>Seleccionar un modelo base.</li>
-          <li>Definir claramente la tarea.</li>
-          <li>Preparar los ejemplos.</li>
-          <li>Separar datos para evaluación.</li>
-          <li>Configurar el entrenamiento.</li>
-          <li>Actualizar parámetros.</li>
-          <li>Evaluar el modelo ajustado.</li>
-          <li>Compararlo con el modelo base.</li>
-        </ol>
-
-        <p>
+<ol class="lista-articulo">
+<li>Seleccionar un modelo base.</li>
+<li>Definir claramente la tarea.</li>
+<li>Preparar los ejemplos.</li>
+<li>Separar datos para evaluación.</li>
+<li>Configurar el entrenamiento.</li>
+<li>Actualizar parámetros.</li>
+<li>Evaluar el modelo ajustado.</li>
+<li>Compararlo con el modelo base.</li>
+</ol>
+<p>
           Si el modelo ajustado no mejora de forma clara, el entrenamiento puede
           no haber valido la pena.
         </p>
-
-        <h2 id="datos">Preparación de los datos</h2>
-
-        <p>
+<h2 id="datos">Preparación de los datos</h2>
+<p>
           La calidad de los datos es una de las partes más importantes.
         </p>
-
-        <p>
+<p>
           Los ejemplos deberían ser:
         </p>
-
-        <ul class="lista-articulo">
-          <li>Correctos.</li>
-          <li>Consistentes.</li>
-          <li>Representativos.</li>
-          <li>Relevantes para la tarea.</li>
-          <li>Legalmente utilizables.</li>
-          <li>Libres de información sensible innecesaria.</li>
-        </ul>
-
-        <p>
+<ul class="lista-articulo">
+<li>Correctos.</li>
+<li>Consistentes.</li>
+<li>Representativos.</li>
+<li>Relevantes para la tarea.</li>
+<li>Legalmente utilizables.</li>
+<li>Libres de información sensible innecesaria.</li>
+</ul>
+<p>
           Un conjunto grande de ejemplos contradictorios puede ser peor que uno
           más pequeño pero cuidadosamente preparado.
         </p>
-
-        <h3>Ejemplos inconsistentes</h3>
-
-        <div class="recuadro-ejemplo">
+<h3>Ejemplos inconsistentes</h3>
+<div class="recuadro-ejemplo">
 <pre><code>Entrada:
 "Quiero devolver el producto"
 
@@ -525,21 +371,17 @@ Respuesta B:
 
 Respuesta C:
 "Categoría: facturación"</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Si situaciones equivalentes reciben etiquetas diferentes sin una razón
           clara, el modelo recibe señales contradictorias.
         </p>
-
-        <h2 id="ejemplos">Ejemplos de entrada y salida</h2>
-
-        <p>
+<h2 id="ejemplos">Ejemplos de entrada y salida</h2>
+<p>
           En muchas tareas de ajuste supervisado cada ejemplo incluye una
           entrada y el resultado esperado.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>Entrada:
 "No puedo iniciar sesión"
 
@@ -548,13 +390,11 @@ Salida esperada:
   "categoria": "soporte_tecnico",
   "prioridad": "media"
 }</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Otro ejemplo:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>Entrada:
 "Me cobraron dos veces"
 
@@ -563,25 +403,20 @@ Salida esperada:
   "categoria": "facturacion",
   "prioridad": "alta"
 }</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           El modelo aprende patrones entre entradas y salidas.
         </p>
-
-        <h2 id="supervisado">Fine-tuning supervisado</h2>
-
-        <p>
+<h2 id="supervisado">Fine-tuning supervisado</h2>
+<p>
           En un ajuste supervisado proporcionamos ejemplos con respuestas o
           etiquetas deseadas.
         </p>
-
-        <p>
+<p>
           El sistema compara sus predicciones con las respuestas esperadas y
           ajusta parámetros para reducir la diferencia.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>Entrada
    ↓
 Modelo
@@ -593,229 +428,177 @@ Comparar con respuesta esperada
 Calcular error
    ↓
 Actualizar parámetros</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Este proceso se repite muchas veces durante el entrenamiento.
         </p>
-
-        <h2 id="epochs">¿Qué es una epoch?</h2>
-
-        <p>
+<h2 id="epochs">¿Qué es una epoch?</h2>
+<p>
           Una <strong>epoch</strong> representa una pasada completa por el
           conjunto de entrenamiento.
         </p>
-
-        <p>
+<p>
           Si tenemos 1.000 ejemplos y entrenamos durante tres epochs, el modelo
           tendrá varias oportunidades de aprender de esos ejemplos.
         </p>
-
-        <p>
+<p>
           Sin embargo, más epochs no significa automáticamente un mejor modelo.
         </p>
-
-        <p>
+<p>
           Entrenar demasiado puede favorecer el
           <strong>sobreajuste</strong>.
         </p>
-
-        <h2 id="learning-rate">¿Qué es el learning rate?</h2>
-
-        <p>
+<h2 id="learning-rate">¿Qué es el learning rate?</h2>
+<p>
           El <strong>learning rate</strong>, o tasa de aprendizaje, controla de
           forma conceptual qué tan grandes son los cambios realizados durante
           la optimización.
         </p>
-
-        <p>
+<p>
           Si es demasiado alto, el entrenamiento puede volverse inestable.
         </p>
-
-        <p>
+<p>
           Si es demasiado bajo, el aprendizaje puede ser muy lento o no avanzar
           suficientemente.
         </p>
-
-        <div class="recuadro-consejo">
-          <strong>No existe un valor universal</strong>
-          <p>
+<div class="recuadro-consejo">
+<strong>No existe un valor universal</strong>
+<p>
             La configuración adecuada depende del modelo, la técnica, el tamaño
             de los datos y la tarea.
           </p>
-        </div>
-
-        <h2 id="dividir-datos">Train, validation y test</h2>
-
-        <p>
+</div>
+<h2 id="dividir-datos">Train, validation y test</h2>
+<p>
           Utilizar todos los ejemplos para entrenar impide evaluar correctamente
           si el modelo generaliza.
         </p>
-
-        <p>
+<p>
           Es habitual separar los datos.
         </p>
-
-        <h3>Train</h3>
-
-        <p>
+<h3>Train</h3>
+<p>
           Se utiliza para actualizar los parámetros.
         </p>
-
-        <h3>Validation</h3>
-
-        <p>
+<h3>Validation</h3>
+<p>
           Ayuda a evaluar decisiones durante el desarrollo.
         </p>
-
-        <h3>Test</h3>
-
-        <p>
+<h3>Test</h3>
+<p>
           Se reserva para medir el rendimiento final sobre ejemplos que el
           modelo no utilizó para entrenar.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>Dataset completo
       ↓
 Train
 Validation
 Test</code></pre>
-        </div>
-
-        <h2 id="sobreajuste">Sobreajuste</h2>
-
-        <p>
+</div>
+<h2 id="sobreajuste">Sobreajuste</h2>
+<p>
           El <strong>sobreajuste</strong> ocurre cuando el modelo aprende
           demasiado específicamente los ejemplos de entrenamiento y funciona
           peor con casos nuevos.
         </p>
-
-        <p>
+<p>
           Un síntoma podría ser:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>Entrenamiento:
 98 % correcto
 
 Datos nuevos:
 72 % correcto</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Esta diferencia puede indicar que el modelo está memorizando patrones
           demasiado específicos.
         </p>
-
-        <h2 id="olvido">Pérdida de capacidades y catastrophic forgetting</h2>
-
-        <p>
+<h2 id="olvido">Pérdida de capacidades y catastrophic forgetting</h2>
+<p>
           Si un ajuste modifica demasiado el modelo, puede perjudicar
           capacidades que anteriormente funcionaban bien.
         </p>
-
-        <p>
+<p>
           Este fenómeno se relaciona con el concepto de
           <strong>catastrophic forgetting</strong>.
         </p>
-
-        <p>
+<p>
           Por ejemplo, un modelo podría mejorar mucho en una tarea especializada
           pero empeorar en instrucciones generales que antes resolvía
           correctamente.
         </p>
-
-        <p>
+<p>
           Por eso conviene evaluar tanto la nueva tarea como capacidades
           importantes del modelo base.
         </p>
-
-        <h2 id="full-vs-peft">Ajuste completo vs métodos eficientes</h2>
-
-        <p>
+<h2 id="full-vs-peft">Ajuste completo vs métodos eficientes</h2>
+<p>
           No siempre es necesario modificar todos los parámetros del modelo.
         </p>
-
-        <h3>Full fine-tuning</h3>
-
-        <p>
+<h3>Full fine-tuning</h3>
+<p>
           Actualiza una gran parte o la totalidad de los parámetros.
         </p>
-
-        <p>
+<p>
           Puede ofrecer mucha flexibilidad, pero suele necesitar más memoria,
           cómputo y almacenamiento.
         </p>
-
-        <h3>Parameter-Efficient Fine-Tuning</h3>
-
-        <p>
+<h3>Parameter-Efficient Fine-Tuning</h3>
+<p>
           Existen técnicas que adaptan solamente una pequeña parte del sistema o
           añaden parámetros adicionales entrenables.
         </p>
-
-        <p>
+<p>
           Esto puede reducir considerablemente los recursos necesarios.
         </p>
-
-        <h2 id="lora">¿Qué es LoRA?</h2>
-
-        <p>
-          <strong>LoRA</strong> significa
+<h2 id="lora">¿Qué es LoRA?</h2>
+<p>
+<strong>LoRA</strong> significa
           <em>Low-Rank Adaptation</em>.
         </p>
-
-        <p>
+<p>
           A nivel introductorio, es una técnica que permite adaptar un modelo
           sin actualizar directamente todos sus parámetros originales.
         </p>
-
-        <p>
+<p>
           En su lugar, introduce componentes entrenables más pequeños.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>Modelo base
    +
 Adaptación pequeña
    ↓
 Modelo adaptado</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Esto puede reducir requisitos de memoria y facilitar mantener varias
           adaptaciones para diferentes tareas.
         </p>
-
-        <h2 id="evaluacion">Cómo evaluar un modelo ajustado</h2>
-
-        <p>
+<h2 id="evaluacion">Cómo evaluar un modelo ajustado</h2>
+<p>
           Después del entrenamiento no basta con comprobar algunos ejemplos
           manualmente.
         </p>
-
-        <p>
+<p>
           Debemos compararlo con una línea base.
         </p>
-
-        <p>Podemos evaluar:</p>
-
-        <ul class="lista-articulo">
-          <li>Exactitud.</li>
-          <li>Consistencia.</li>
-          <li>Formato.</li>
-          <li>Calidad lingüística.</li>
-          <li>Errores críticos.</li>
-          <li>Rendimiento por categoría.</li>
-          <li>Coste y latencia.</li>
-        </ul>
-
-        <p>
+<p>Podemos evaluar:</p>
+<ul class="lista-articulo">
+<li>Exactitud.</li>
+<li>Consistencia.</li>
+<li>Formato.</li>
+<li>Calidad lingüística.</li>
+<li>Errores críticos.</li>
+<li>Rendimiento por categoría.</li>
+<li>Coste y latencia.</li>
+</ul>
+<p>
           También debemos comparar el modelo ajustado con el modelo original.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>Modelo base:
 82 % en la tarea
 
@@ -829,440 +612,324 @@ Modelo base:
 
 Modelo ajustado:
 76 % en capacidad general</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           La mejora especializada podría haber introducido una pérdida
           importante en otras capacidades.
         </p>
-
-        <h2 id="cuando-usarlo">¿Cuándo conviene utilizar fine-tuning?</h2>
-
-        <p>
+<h2 id="cuando-usarlo">¿Cuándo conviene utilizar fine-tuning?</h2>
+<p>
           Puede ser útil cuando necesitamos un comportamiento muy repetible o
           especializado.
         </p>
-
-        <p>Por ejemplo:</p>
-
-        <ul class="lista-articulo">
-          <li>Clasificación con categorías propias.</li>
-          <li>Formatos de salida estrictos.</li>
-          <li>Estilo consistente.</li>
-          <li>Vocabulario especializado.</li>
-          <li>Comportamientos repetitivos.</li>
-        </ul>
-
-        <p>
+<p>Por ejemplo:</p>
+<ul class="lista-articulo">
+<li>Clasificación con categorías propias.</li>
+<li>Formatos de salida estrictos.</li>
+<li>Estilo consistente.</li>
+<li>Vocabulario especializado.</li>
+<li>Comportamientos repetitivos.</li>
+</ul>
+<p>
           También puede ser útil cuando los prompts necesarios para conseguir
           ese comportamiento son demasiado largos o complejos.
         </p>
-
-        <h2 id="cuando-no">¿Cuándo no conviene?</h2>
-
-        <p>
+<h2 id="cuando-no">¿Cuándo no conviene?</h2>
+<p>
           Fine-tuning no debería ser automáticamente la primera solución.
         </p>
-
-        <h3>Información que cambia frecuentemente</h3>
-
-        <p>
+<h3>Información que cambia frecuentemente</h3>
+<p>
           Si necesitas precios actuales, noticias o documentación que cambia,
           es mejor consultar una fuente actualizada.
         </p>
-
-        <h3>Problemas que pueden resolverse con un mejor prompt</h3>
-
-        <p>
+<h3>Problemas que pueden resolverse con un mejor prompt</h3>
+<p>
           Si unas instrucciones claras consiguen el comportamiento deseado, tal
           vez no sea necesario entrenar.
         </p>
-
-        <h3>Pocos ejemplos de baja calidad</h3>
-
-        <p>
+<h3>Pocos ejemplos de baja calidad</h3>
+<p>
           Un dataset débil puede empeorar el modelo.
         </p>
-
-        <h3>Objetivo poco definido</h3>
-
-        <p>
+<h3>Objetivo poco definido</h3>
+<p>
           Si no puedes definir cómo medir la mejora, será difícil saber si el
           fine-tuning funcionó.
         </p>
-
-        <h2 id="comparacion">Prompt vs RAG vs fine-tuning</h2>
-
-        <p>
+<h2 id="comparacion">Prompt vs RAG vs fine-tuning</h2>
+<p>
           Estas técnicas resuelven problemas distintos.
         </p>
-
-        <h3>Prompt</h3>
-
-        <p>
+<h3>Prompt</h3>
+<p>
           Cambia las instrucciones proporcionadas en cada solicitud.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>Problema:
 "La respuesta es demasiado técnica."
 
 Solución posible:
 mejorar la instrucción.</code></pre>
-        </div>
-
-        <h3>RAG</h3>
-
-        <p>
+</div>
+<h3>RAG</h3>
+<p>
           Recupera información externa relevante y la añade al contexto.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>Problema:
 "Necesito responder usando
 documentación actualizada."
 
 Solución posible:
 RAG.</code></pre>
-        </div>
-
-        <h3>Fine-tuning</h3>
-
-        <p>
+</div>
+<h3>Fine-tuning</h3>
+<p>
           Modifica el comportamiento aprendido del modelo.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>Problema:
 "Necesito miles de respuestas
 con el mismo formato especializado."
 
 Solución posible:
 fine-tuning.</code></pre>
-        </div>
-
-        <div class="recuadro-consejo">
-          <strong>Pueden combinarse</strong>
-          <p>
+</div>
+<div class="recuadro-consejo">
+<strong>Pueden combinarse</strong>
+<p>
             Un modelo ajustado puede seguir utilizando prompts y RAG. No son
             técnicas mutuamente excluyentes.
           </p>
-        </div>
-
-        <h2 id="costos">Costos y recursos</h2>
-
-        <p>
+</div>
+<h2 id="costos">Costos y recursos</h2>
+<p>
           El fine-tuning añade costos que no existen al utilizar solamente un
           modelo base.
         </p>
-
-        <p>Pueden incluir:</p>
-
-        <ul class="lista-articulo">
-          <li>Preparación de datos.</li>
-          <li>Etiquetado.</li>
-          <li>Entrenamiento.</li>
-          <li>Evaluación.</li>
-          <li>Almacenamiento.</li>
-          <li>Mantenimiento.</li>
-        </ul>
-
-        <p>
+<p>Pueden incluir:</p>
+<ul class="lista-articulo">
+<li>Preparación de datos.</li>
+<li>Etiquetado.</li>
+<li>Entrenamiento.</li>
+<li>Evaluación.</li>
+<li>Almacenamiento.</li>
+<li>Mantenimiento.</li>
+</ul>
+<p>
           Además, si cambian los requisitos, puede ser necesario volver a
           entrenar o actualizar la adaptación.
         </p>
-
-        <h2 id="privacidad">Privacidad y datos sensibles</h2>
-
-        <p>
+<h2 id="privacidad">Privacidad y datos sensibles</h2>
+<p>
           Los datasets pueden contener información personal, confidencial o
           propietaria.
         </p>
-
-        <p>
+<p>
           Antes de utilizar datos para entrenamiento debemos revisar:
         </p>
-
-        <ul class="lista-articulo">
-          <li>Procedencia.</li>
-          <li>Permisos.</li>
-          <li>Necesidad.</li>
-          <li>Información sensible.</li>
-          <li>Políticas de retención.</li>
-        </ul>
-
-        <p>
+<ul class="lista-articulo">
+<li>Procedencia.</li>
+<li>Permisos.</li>
+<li>Necesidad.</li>
+<li>Información sensible.</li>
+<li>Políticas de retención.</li>
+</ul>
+<p>
           También conviene eliminar datos que no sean necesarios para la tarea.
         </p>
-
-        <h2 id="riesgos">Limitaciones y riesgos</h2>
-
-        <h3>Sobreajuste</h3>
-
-        <p>
+<h2 id="riesgos">Limitaciones y riesgos</h2>
+<h3>Sobreajuste</h3>
+<p>
           El modelo puede funcionar demasiado bien con los ejemplos conocidos
           y peor con entradas nuevas.
         </p>
-
-        <h3>Sesgos</h3>
-
-        <p>
+<h3>Sesgos</h3>
+<p>
           Si los ejemplos están sesgados, el modelo puede aprender esos mismos
           patrones.
         </p>
-
-        <h3>Datos incorrectos</h3>
-
-        <p>
+<h3>Datos incorrectos</h3>
+<p>
           El modelo puede aprender errores presentes en el dataset.
         </p>
-
-        <h3>Pérdida de capacidades</h3>
-
-        <p>
+<h3>Pérdida de capacidades</h3>
+<p>
           Una adaptación demasiado agresiva puede perjudicar otras tareas.
         </p>
-
-        <h3>Memorización</h3>
-
-        <p>
+<h3>Memorización</h3>
+<p>
           En determinadas condiciones puede existir riesgo de memorizar partes
           del dataset.
         </p>
-
-        <h3>Falsa sensación de especialización</h3>
-
-        <p>
+<h3>Falsa sensación de especialización</h3>
+<p>
           Un modelo ajustado puede sonar más especializado sin necesariamente
           ser más correcto.
         </p>
-
-        <h2 id="ejemplo-completo">Ejemplo completo: clasificar tickets</h2>
-
-        <p>
+<h2 id="ejemplo-completo">Ejemplo completo: clasificar tickets</h2>
+<p>
           Imagina que una empresa recibe miles de mensajes y quiere clasificarlos
           en cuatro categorías.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>facturación
 soporte técnico
 devolución
 otra</code></pre>
-        </div>
-
-        <h3>Paso 1: definir la tarea</h3>
-
-        <p>
+</div>
+<h3>Paso 1: definir la tarea</h3>
+<p>
           Cada mensaje debe recibir exactamente una categoría.
         </p>
-
-        <h3>Paso 2: recopilar ejemplos</h3>
-
-        <p>
+<h3>Paso 2: recopilar ejemplos</h3>
+<p>
           Se reúnen tickets reales o ejemplos autorizados y representativos.
         </p>
-
-        <h3>Paso 3: revisar etiquetas</h3>
-
-        <p>
+<h3>Paso 3: revisar etiquetas</h3>
+<p>
           Casos equivalentes deben utilizar criterios consistentes.
         </p>
-
-        <h3>Paso 4: separar los datos</h3>
-
-        <p>
+<h3>Paso 4: separar los datos</h3>
+<p>
           Parte se utiliza para entrenamiento y otra para evaluación.
         </p>
-
-        <h3>Paso 5: medir el modelo base</h3>
-
-        <p>
+<h3>Paso 5: medir el modelo base</h3>
+<p>
           Antes del fine-tuning debemos conocer el rendimiento inicial.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>Modelo base:
 84 % de exactitud</code></pre>
-        </div>
-
-        <h3>Paso 6: entrenar</h3>
-
-        <p>
+</div>
+<h3>Paso 6: entrenar</h3>
+<p>
           Se realiza el ajuste utilizando los datos preparados.
         </p>
-
-        <h3>Paso 7: evaluar</h3>
-
-        <p>
+<h3>Paso 7: evaluar</h3>
+<p>
           Se prueban ejemplos que no fueron utilizados durante el entrenamiento.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>Modelo ajustado:
 92 % de exactitud</code></pre>
-        </div>
-
-        <h3>Paso 8: analizar errores</h3>
-
-        <p>
+</div>
+<h3>Paso 8: analizar errores</h3>
+<p>
           Quizá la categoría “otra” tenga un rendimiento mucho peor.
         </p>
-
-        <p>
+<p>
           Una única métrica general podría ocultarlo.
         </p>
-
-        <h3>Paso 9: comparar costos</h3>
-
-        <p>
+<h3>Paso 9: comparar costos</h3>
+<p>
           Debemos comprobar si la mejora justifica el esfuerzo de entrenamiento
           y mantenimiento.
         </p>
-
-        <h3>Paso 10: monitorear</h3>
-
-        <p>
+<h3>Paso 10: monitorear</h3>
+<p>
           Si aparecen nuevos tipos de solicitudes, el rendimiento puede cambiar
           con el tiempo.
         </p>
-
-        <h2 id="errores">Errores comunes</h2>
-
-        <h3>Usarlo para memorizar información reciente</h3>
-
-        <p>
+<h2 id="errores">Errores comunes</h2>
+<h3>Usarlo para memorizar información reciente</h3>
+<p>
           Si los datos cambian con frecuencia, RAG puede ser una mejor opción.
         </p>
-
-        <h3>No medir el modelo base</h3>
-
-        <p>
+<h3>No medir el modelo base</h3>
+<p>
           Sin una referencia inicial no sabemos si realmente mejoró.
         </p>
-
-        <h3>Usar datos inconsistentes</h3>
-
-        <p>
+<h3>Usar datos inconsistentes</h3>
+<p>
           El entrenamiento reproduce la calidad de los ejemplos.
         </p>
-
-        <h3>Evaluar con los mismos datos del entrenamiento</h3>
-
-        <p>
+<h3>Evaluar con los mismos datos del entrenamiento</h3>
+<p>
           Esto puede dar una impresión exagerada de rendimiento.
         </p>
-
-        <h3>Entrenar sin un objetivo medible</h3>
-
-        <p>
+<h3>Entrenar sin un objetivo medible</h3>
+<p>
           Antes de comenzar debemos saber qué significa “mejor”.
         </p>
-
-        <section
-          class="seccion-articulo"
-          aria-labelledby="practica"
-        >
-
-          <h2 id="practica">Compruébalo tú mismo</h2>
-
-          <p>
+<section aria-labelledby="practica" class="seccion-articulo">
+<h2 id="practica">Compruébalo tú mismo</h2>
+<p>
             Decide qué técnica utilizarías en cada caso:
           </p>
-
-          <ol class="lista-articulo">
-            <li>
+<ol class="lista-articulo">
+<li>
               Necesitas responder utilizando documentación que cambia cada
               semana.
             </li>
-            <li>
+<li>
               El modelo ya responde bien, pero quieres respuestas más sencillas
               para principiantes.
             </li>
-            <li>
+<li>
               Necesitas miles de clasificaciones con categorías internas muy
               específicas.
             </li>
-          </ol>
-
-          <details class="recuadro-ejemplo">
-
-            <summary>
-              <strong>Ver una posible respuesta</strong>
-            </summary>
-
-            <p>
-              <strong>Caso 1:</strong> RAG puede ser adecuado porque la
+</ol>
+<details class="recuadro-ejemplo">
+<summary>
+<strong>Ver una posible respuesta</strong>
+</summary>
+<p>
+<strong>Caso 1:</strong> RAG puede ser adecuado porque la
               información cambia con frecuencia.
             </p>
-
-            <p>
-              <strong>Caso 2:</strong> primero intentaría mejorar el prompt.
+<p>
+<strong>Caso 2:</strong> primero intentaría mejorar el prompt.
             </p>
-
-            <p>
-              <strong>Caso 3:</strong> fine-tuning podría ser razonable si
+<p>
+<strong>Caso 3:</strong> fine-tuning podría ser razonable si
               existen suficientes ejemplos de calidad y una métrica clara.
             </p>
-
-          </details>
-
-          <div class="recuadro-consejo">
-            <strong>Reto adicional</strong>
-            <p>
+</details>
+<div class="recuadro-consejo">
+<strong>Reto adicional</strong>
+<p>
               Piensa en un caso donde combinarías fine-tuning y RAG dentro del
               mismo sistema.
             </p>
-          </div>
-
-        </section>
-
-        <h2 id="preguntas">Preguntas frecuentes</h2>
-
-        <section class="faq-articulo" aria-labelledby="preguntas">
-
-          <details>
-            <summary>¿Fine-tuning significa entrenar desde cero?</summary>
-
-            <p>
+</div>
+</section>
+<h2 id="preguntas">Preguntas frecuentes</h2>
+<section aria-labelledby="preguntas" class="faq-articulo">
+<details>
+<summary>¿Fine-tuning significa entrenar desde cero?</summary>
+<p>
               No. Parte de un modelo que ya fue entrenado y continúa su
               entrenamiento utilizando datos más específicos.
             </p>
-          </details>
-
-          <details>
-            <summary>¿Sirve para agregar información reciente?</summary>
-
-            <p>
+</details>
+<details>
+<summary>¿Sirve para agregar información reciente?</summary>
+<p>
               No suele ser la mejor opción para información que cambia con
               frecuencia. Para esos casos puede ser más apropiado recuperar
               información actualizada mediante RAG u otras fuentes externas.
             </p>
-          </details>
-
-          <details>
-            <summary>¿Necesita muchos datos?</summary>
-
-            <p>
+</details>
+<details>
+<summary>¿Necesita muchos datos?</summary>
+<p>
               Depende del modelo y la tarea. La calidad, consistencia y
               representatividad pueden ser más importantes que acumular grandes
               cantidades de ejemplos.
             </p>
-          </details>
-
-          <details>
-            <summary>¿Puede empeorar el modelo?</summary>
-
-            <p>
+</details>
+<details>
+<summary>¿Puede empeorar el modelo?</summary>
+<p>
               Sí. Datos deficientes, sobreajuste o una configuración inadecuada
               pueden degradar el rendimiento.
             </p>
-          </details>
-
-        </section>
-
-        
-<section class="ampliacion-editorial" aria-labelledby="finetuning-cuando">
+</details>
+</section>
+<section aria-labelledby="finetuning-cuando" class="ampliacion-editorial">
 <h2 id="finetuning-cuando">Fine-tuning no es la solución para todos los problemas</h2>
 <p>Antes de ajustar un modelo conviene comprobar si el objetivo puede resolverse mejorando instrucciones, ejemplos, recuperación de información o el flujo de la aplicación. El fine-tuning tiene costos de preparación, evaluación y mantenimiento.</p>
 <h3>Datos de entrenamiento</h3>
@@ -1271,191 +938,129 @@ otra</code></pre>
 <p>Para saber si el ajuste realmente ayudó, define un conjunto de evaluación y criterios antes de entrenar. Compara el modelo base con la versión ajustada y revisa no solamente casos exitosos, sino también errores y situaciones límite.</p>
 <div class="recuadro-consejo"><strong>Decisión técnica</strong><p>Utiliza fine-tuning cuando exista una necesidad clara y medible. Un modelo personalizado que no se evalúa puede parecer mejor sin serlo realmente.</p></div></section>
 <h2 id="conclusion">Conclusión</h2>
-
-        <p>
+<p>
           El fine-tuning permite adaptar un modelo preentrenado a tareas,
           formatos o comportamientos más específicos sin tener que entrenarlo
           completamente desde cero.
         </p>
-
-        <p>
+<p>
           Su éxito depende en gran medida de la calidad de los datos, la
           configuración del entrenamiento y una evaluación adecuada sobre
           ejemplos que el modelo no utilizó para aprender.
         </p>
-
-        <p>
+<p>
           También es importante compararlo con alternativas más sencillas.
           Mejorar un prompt puede resolver problemas de instrucciones, mientras
           que RAG suele ser más apropiado cuando la necesidad principal es
           trabajar con información externa o actualizada.
         </p>
-
-        <p>
+<p>
           El fine-tuning tiene más sentido cuando existe un objetivo claro,
           ejemplos consistentes y una forma objetiva de demostrar que el modelo
           ajustado mejora frente al modelo base.
         </p>
-
-        <nav class="navegacion-articulos" aria-label="Navegación entre artículos">
-          <a class="nav-anterior" href="que-son-agentes-de-ia">
-            <span class="nav-etiqueta">← Artículo anterior</span>
-            <strong>¿Qué son los agentes de IA y cómo funcionan?</strong>
-          </a>
-          <a class="nav-siguiente" href="que-es-ia-responsable">
-            <span class="nav-etiqueta">Siguiente artículo →</span>
-            <strong>¿Qué es la inteligencia artificial responsable?</strong>
-          </a>
-        </nav>
-
-        <section
-          class="autor-articulo"
-          aria-label="Información del autor"
-        >
-
-          <div class="autor-icono" aria-hidden="true">
+<nav aria-label="Navegación entre artículos" class="navegacion-articulos">
+<a class="nav-anterior" href="que-son-agentes-de-ia.html">
+<span class="nav-etiqueta">← Artículo anterior</span>
+<strong>¿Qué son los agentes de IA y cómo funcionan?</strong>
+</a>
+<a class="nav-siguiente" href="que-es-ia-responsable.html">
+<span class="nav-etiqueta">Siguiente artículo →</span>
+<strong>¿Qué es la inteligencia artificial responsable?</strong>
+</a>
+</nav>
+<section aria-label="Información del autor" class="autor-articulo">
+<div aria-hidden="true" class="autor-icono">
             &lt;/&gt;
           </div>
-
-          <div class="autor-informacion">
-
-            <span>Artículo creado por</span>
-            <h2>ByteNova</h2>
-
-            <p>Proyecto educativo creado por Dylan Estrada. ByteNova publica contenido sobre programación, desarrollo web, inteligencia artificial y ciberseguridad con un enfoque claro para principiantes y revisión editorial continua.</p>
-
-            <a href="sobre">
+<div class="autor-informacion">
+<span>Artículo creado por</span>
+<h2>ByteNova</h2>
+<p>Proyecto educativo creado por Dylan Estrada. ByteNova publica contenido sobre programación, desarrollo web, inteligencia artificial y ciberseguridad con un enfoque claro para principiantes y revisión editorial continua.</p>
+<a href="sobre.html">
               Conoce más sobre ByteNova →
             </a>
-
-          </div>
-
-        </section>
-
-        <aside
-          class="articulos-relacionados"
-          aria-labelledby="titulo-articulos-relacionados"
-        >
-
-          <h2 id="titulo-articulos-relacionados">
+</div>
+</section>
+<aside aria-labelledby="titulo-articulos-relacionados" class="articulos-relacionados">
+<h2 id="titulo-articulos-relacionados">
             Continúa aprendiendo
           </h2>
-
-          <div class="relacionados-grid">
-
-            <a href="que-es-un-llm">
-              <span aria-hidden="true">🤖</span>
-              <strong>¿Qué es un LLM?</strong>
-              <small>
+<div class="relacionados-grid">
+<a href="que-es-un-llm.html">
+<span aria-hidden="true">🤖</span>
+<strong>¿Qué es un LLM?</strong>
+<small>
                 Comprende el tipo de modelo que puede adaptarse mediante
                 fine-tuning.
               </small>
-            </a>
-
-            <a href="que-son-embeddings">
-              <span aria-hidden="true">🧭</span>
-              <strong>Embeddings</strong>
-              <small>
+</a>
+<a href="que-son-embeddings.html">
+<span aria-hidden="true">🧭</span>
+<strong>Embeddings</strong>
+<small>
                 Aprende cómo funcionan las representaciones utilizadas en
                 búsqueda semántica y RAG.
               </small>
-            </a>
-
-            <a href="que-es-machine-learning">
-              <span aria-hidden="true">📊</span>
-              <strong>Machine learning</strong>
-              <small>
+</a>
+<a href="que-es-machine-learning.html">
+<span aria-hidden="true">📊</span>
+<strong>Machine learning</strong>
+<small>
                 Repasa entrenamiento, evaluación y sobreajuste.
               </small>
-            </a>
-
-          </div>
-
-        </aside>
-
-      </div>
-    </div>
-
-  </article>
-
+</a>
+</div>
+</aside>
+</div>
+</div>
+</article>
 </main>
-
-<footer class="footer">
-
-  <div class="contenedor-footer">
-
-    <div class="footer-logo">
-
-      <a
-        class="marca-bytenova"
-        href="../index#inicio"
-        aria-label="Ir al inicio de ByteNova"
-      >
-        <span class="marca-icono" aria-hidden="true">&lt;/&gt;</span>
-        <span class="marca-texto">ByteNova</span>
-      </a>
-
-      <p>
-        Aprende tecnología desde cero con artículos, rutas, retos,
-        guías y recursos gratuitos.
-      </p>
-
-    </div>
-
-    <nav
-      class="footer-enlaces"
-      aria-label="Enlaces de aprendizaje del pie de página"
-    >
-      <h3>Aprender</h3>
-      <a href="../index#tecnologias">Tecnologías</a>
-      <a href="rutas">Rutas</a>
-      <a href="retos">Retos</a>
-      <a href="material">Guías</a>
-      <a href="articulos">Artículos</a>
-      <a href="glosario">Glosario</a>
-    </nav>
-
-    <nav
-      class="footer-enlaces"
-      aria-label="Enlaces informativos del pie de página"
-    >
-      <h3>ByteNova</h3>
-      <a href="sobre">Sobre ByteNova</a>
-      <a href="../index#contacto">Contacto</a>
-      <a href="privacidad">Privacidad</a>
-      <a href="terminos">Términos</a>
-      <a href="cookies">Cookies</a>
-    </nav>
-
-    <address class="footer-social">
-
-      <h3>Contacto</h3>
-
-      <p>
-        Preguntas, sugerencias o comentarios sobre nuestros
-        contenidos educativos.
-      </p>
-
-      <a href="mailto:bytenova339@gmail.com">
-        bytenova339@gmail.com
-      </a>
-
-      <a href="https://www.tiktok.com/@bytenova.app" target="_blank" rel="noopener noreferrer" aria-label="TikTok de ByteNova">
-        TikTok · @bytenova.app
-      </a>
-
-    </address>
-
-  </div>
-
-  <div class="footer-copy">
-    <p>© 2026 ByteNova. Todos los derechos reservados.</p>
-    <p>Creado por Dylan Estrada.</p>
-  </div>
-
+<footer class="footer footer-v2">
+<div class="footer-v2-shell">
+<div class="footer-v2-grid">
+<div class="footer-v2-brand">
+<a aria-label="Ir al inicio de ByteNova" class="footer-v2-logo" href="../index.html#inicio">
+<span aria-hidden="true" class="footer-v2-logo-icon">&lt;/&gt;</span>
+<span class="footer-v2-logo-text">Byte<span>Nova</span></span>
+</a>
+<p>Aprende tecnología desde cero con artículos, rutas, retos, guías y recursos gratuitos.</p>
+<div class="footer-v2-social">
+<a aria-label="TikTok de ByteNova" href="https://www.tiktok.com/@bytenova.app" rel="noopener noreferrer" target="_blank">♪</a>
+<a aria-label="Correo de ByteNova" href="mailto:bytenova339@gmail.com">✉</a>
+<a aria-label="Sitio web de ByteNova" href="../index.html#inicio">◎</a>
+</div>
+</div>
+<nav aria-label="Enlaces de aprendizaje" class="footer-v2-col">
+<h3>Aprender</h3>
+<a href="../index.html#tecnologias"><span aria-hidden="true">▣</span>Tecnologías</a>
+<a href="rutas.html"><span aria-hidden="true">↗</span>Rutas</a>
+<a href="retos.html"><span aria-hidden="true">🎯</span>Retos</a>
+<a href="material.html"><span aria-hidden="true">▤</span>Guías</a>
+<a href="articulos.html"><span aria-hidden="true">▧</span>Artículos</a>
+<a href="glosario.html"><span aria-hidden="true">▥</span>Glosario</a>
+</nav>
+<nav aria-label="Enlaces de ByteNova" class="footer-v2-col">
+<h3>ByteNova</h3>
+<a href="sobre.html"><span aria-hidden="true">♙</span>Sobre ByteNova</a>
+<a href="../index.html#contacto"><span aria-hidden="true">✉</span>Contacto</a>
+<a href="privacidad.html"><span aria-hidden="true">♢</span>Privacidad</a>
+<a href="terminos.html"><span aria-hidden="true">▤</span>Términos</a>
+<a href="cookies.html"><span aria-hidden="true">◌</span>Cookies</a>
+</nav>
+<div class="footer-v2-contact">
+<h3>Conecta con ByteNova</h3>
+<p>Preguntas, sugerencias o comentarios sobre nuestros contenidos educativos.</p>
+<a href="mailto:bytenova339@gmail.com"><span aria-hidden="true">✉</span>bytenova339@gmail.com</a>
+<a href="https://www.tiktok.com/@bytenova.app" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">♪</span>TikTok · @bytenova.app</a>
+</div>
+</div>
+<div class="footer-v2-bottom">
+<p>© 2026 <strong>ByteNova</strong>. Todos los derechos reservados.</p>
+<p>Creado por Dylan Estrada.</p>
+</div>
+</div>
 </footer>
-
 <script src="../js/script.js"></script>
-
 </body>
 </html>

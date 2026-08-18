@@ -1,98 +1,41 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-41QWQ3DC33"></script>
-  <script>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-41QWQ3DC33"></script>
+<script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-41QWQ3DC33');
   </script>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Variables en programación: tipos y ejemplos | ByteNova</title>
-
-  <meta
-    name="description"
-    content="Aprende qué son las variables en programación, cómo almacenar y modificar datos, tipos de datos, reglas para nombrarlas, alcance y ejemplos prácticos en Python."
-  >
-
-  <meta name="author" content="ByteNova">
-  <meta name="robots" content="index, follow">
-
-  <meta
-    name="theme-color"
-    content="#ffffff"
-    media="(prefers-color-scheme: light)"
-  >
-
-  <meta
-    name="theme-color"
-    content="#0f172a"
-    media="(prefers-color-scheme: dark)"
-  >
-
-  <meta property="og:type" content="article">
-  <meta property="og:locale" content="es_CR">
-  <meta property="og:site_name" content="ByteNova">
-  <meta property="og:title" content="¿Qué son las variables en programación?">
-
-  <meta
-    property="og:description"
-    content="Aprende cómo guardar, modificar y utilizar datos mediante variables con ejemplos prácticos en Python."
-  >
-
-  <meta
-    property="og:url"
-    content="https://bytenova.app/pages/que-son-variables"
-  >
-
-  <meta
-    property="og:image"
-    content="https://bytenova.app/images/bytenova-social.jpg"
-  >
-
-  <meta name="twitter:card" content="summary_large_image">
-
-  <meta
-    name="twitter:title"
-    content="¿Qué son las variables en programación?"
-  >
-
-  <meta
-    name="twitter:description"
-    content="Aprende variables y tipos de datos desde cero con ejemplos en Python."
-  >
-
-  <meta
-    name="twitter:image"
-    content="https://bytenova.app/images/bytenova-social.jpg"
-  >
-
-  <meta property="article:published_time" content="2026-08-05">
-  <meta property="article:modified_time" content="2026-08-17">
-  <meta property="article:section" content="Programación">
-
-  <link
-    rel="canonical"
-    href="https://bytenova.app/pages/que-son-variables"
-  >
-
-  <link
-    rel="icon"
-    href="../images/favicon.svg"
-    type="image/svg+xml"
-  >
-
-  <link
-    rel="stylesheet"
-    href="../css/style.min.css"
-  >
-
-  <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Variables en programación: tipos y ejemplos | ByteNova</title>
+<meta content="Aprende qué son las variables en programación, cómo almacenar y modificar datos, tipos de datos, reglas para nombrarlas, alcance y ejemplos prácticos en Python." name="description"/>
+<meta content="ByteNova" name="author"/>
+<meta content="index, follow" name="robots"/>
+<meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
+<meta content="#0f172a" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<meta content="article" property="og:type"/>
+<meta content="es_CR" property="og:locale"/>
+<meta content="ByteNova" property="og:site_name"/>
+<meta content="¿Qué son las variables en programación?" property="og:title"/>
+<meta content="Aprende cómo guardar, modificar y utilizar datos mediante variables con ejemplos prácticos en Python." property="og:description"/>
+<meta content="https://bytenova.app/pages/que-son-variables" property="og:url"/>
+<meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="¿Qué son las variables en programación?" name="twitter:title"/>
+<meta content="Aprende variables y tipos de datos desde cero con ejemplos en Python." name="twitter:description"/>
+<meta content="https://bytenova.app/images/bytenova-social.jpg" name="twitter:image"/>
+<meta content="2026-08-05" property="article:published_time"/>
+<meta content="2026-08-17" property="article:modified_time"/>
+<meta content="Programación" property="article:section"/>
+<link href="https://bytenova.app/pages/que-son-variables" rel="canonical"/>
+<link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../css/style.min.css?v=20260818-center2" rel="stylesheet"/>
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
@@ -160,334 +103,240 @@
     ]
   }
   </script>
-
-  <meta
-    name="google-adsense-account"
-    content="ca-pub-5369456672603969"
-  >
-
-  <script
-    async
-    crossorigin="anonymous"
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5369456672603969">
-  </script>
+<meta content="ca-pub-5369456672603969" name="google-adsense-account"/>
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5369456672603969">
+</script>
 </head>
-
 <body>
-
 <a class="saltar-contenido" href="#contenido-principal">
   Saltar al contenido principal
 </a>
-
 <header>
-
-  <a
-    class="marca-bytenova"
-    href="../index#inicio"
-    aria-label="Ir al inicio de ByteNova"
-  >
-    <span class="marca-icono" aria-hidden="true">&lt;/&gt;</span>
-    <span class="marca-texto">ByteNova</span>
-  </a>
-
-  <button
-    class="menu-toggle"
-    id="menu-toggle"
-    type="button"
-    aria-controls="menu-principal"
-    aria-expanded="false"
-    aria-label="Abrir menú"
-  >
-    <span aria-hidden="true">☰</span>
-  </button>
-
-  <nav id="menu-principal" aria-label="Navegación principal">
-    <a href="../index#inicio">Inicio</a>
-    <a href="sobre">Sobre</a>
-    <a href="../index#tecnologias">Aprender</a>
-    <a href="rutas">Rutas</a>
-    <a href="retos">Retos</a>
-    <a href="material">Guías</a>
-    <a href="articulos" aria-current="page">Artículos</a>
-    <a href="glosario">Glosario</a>
-    <a href="../index#contacto">Contacto</a>
-
-    <button
-      class="btn-modo"
-      id="btn-modo"
-      type="button"
-      aria-label="Activar modo oscuro"
-    >
-      <span aria-hidden="true">🌙</span>
-    </button>
-  </nav>
-
+<a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio">
+<span aria-hidden="true" class="marca-icono">&lt;/&gt;</span>
+<span class="marca-texto">ByteNova</span>
+</a>
+<button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle" type="button">
+<span aria-hidden="true">☰</span>
+</button>
+<nav aria-label="Navegación principal" id="menu-principal">
+<a href="../index.html#inicio">Inicio</a>
+<a href="sobre.html">Sobre</a>
+<a href="../index.html#tecnologias">Aprender</a>
+<a href="rutas.html">Rutas</a>
+<a href="retos.html">Retos</a>
+<a href="material.html">Guías</a>
+<a aria-current="page" href="articulos.html">Artículos</a>
+<a href="glosario.html">Glosario</a>
+<a href="../index.html#contacto">Contacto</a>
+<button aria-label="Activar modo oscuro" class="btn-modo" id="btn-modo" type="button">
+<span aria-hidden="true">🌙</span>
+</button>
+</nav>
 </header>
-
 <main class="sobre articulo" id="contenido-principal">
-
-  <article
-    class="sobre-contenido"
-    aria-labelledby="titulo-que-son-variables"
-  >
-
-    <nav class="migas-navegacion" aria-label="Ruta de navegación">
-      <a href="../index">Inicio</a>
-      <span aria-hidden="true">›</span>
-      <a href="articulos">Artículos</a>
-      <span aria-hidden="true">›</span>
-      <span aria-current="page">Variables</span>
-    </nav>
-
-    <span class="seccion-etiqueta">
-      <span aria-hidden="true">📦</span>
+<article aria-labelledby="titulo-que-son-variables" class="sobre-contenido">
+<nav aria-label="Ruta de navegación" class="migas-navegacion">
+<a href="../index.html">Inicio</a>
+<span aria-hidden="true">›</span>
+<a href="articulos.html">Artículos</a>
+<span aria-hidden="true">›</span>
+<span aria-current="page">Variables</span>
+</nav>
+<span class="seccion-etiqueta">
+<span aria-hidden="true">📦</span>
       Programación
     </span>
-
-    <h1 id="titulo-que-son-variables">
+<h1 id="titulo-que-son-variables">
       ¿Qué son las variables en programación?
       <span aria-hidden="true">📦</span>
-    </h1>
-
-    <p class="articulo-meta">
+</h1>
+<p class="articulo-meta">
       Publicado por ByteNova ·
       <time datetime="2026-08-05">5 de agosto de 2026</time>
       · Actualizado el
       <time datetime="2026-08-17">17 de agosto de 2026</time>
-    </p>
-
-    <div class="articulo-resumen">
-      <strong>En este artículo aprenderás:</strong>
-      <p>
+</p>
+<div class="articulo-resumen">
+<strong>En este artículo aprenderás:</strong>
+<p>
         Qué es una variable, cómo almacenar y modificar información, cuáles
         son los tipos de datos más comunes, cómo elegir buenos nombres y cómo
         funcionan las variables locales y globales.
       </p>
-    </div>
-
-    <div class="articulo-layout">
-
-      <aside class="articulo-sidebar">
-
-        <details class="indice-articulo" open>
-
-          <summary>
-            <span aria-hidden="true">📑</span>
+</div>
+<div class="articulo-layout">
+<aside class="articulo-sidebar">
+<details class="indice-articulo" open="">
+<summary>
+<span aria-hidden="true">📑</span>
             Contenido del artículo
           </summary>
-
-          <nav aria-label="Contenido del artículo">
-            <a href="#que-es">1. ¿Qué es una variable?</a>
-            <a href="#para-que">2. ¿Para qué sirven?</a>
-            <a href="#asignacion">3. Asignar un valor</a>
-            <a href="#tipos">4. Tipos de datos</a>
-            <a href="#tipo">5. Consultar el tipo</a>
-            <a href="#reasignacion">6. Cambiar el valor</a>
-            <a href="#nombres">7. Cómo nombrar variables</a>
-            <a href="#reglas">8. Reglas de nombres</a>
-            <a href="#memoria">9. Variables y memoria</a>
-            <a href="#alcance">10. Alcance</a>
-            <a href="#ejemplo">11. Ejemplo práctico</a>
-            <a href="#errores">12. Errores comunes</a>
-            <a href="#practica">13. Ejercicio práctico</a>
-            <a href="#preguntas">14. Preguntas frecuentes</a>
-            <a href="#conclusion">15. Conclusión</a>
-          </nav>
-
-        </details>
-
-      </aside>
-
-      <div class="articulo-cuerpo">
-
-        <p class="articulo-introduccion">
+<nav aria-label="Contenido del artículo">
+<a href="#que-es">1. ¿Qué es una variable?</a>
+<a href="#para-que">2. ¿Para qué sirven?</a>
+<a href="#asignacion">3. Asignar un valor</a>
+<a href="#tipos">4. Tipos de datos</a>
+<a href="#tipo">5. Consultar el tipo</a>
+<a href="#reasignacion">6. Cambiar el valor</a>
+<a href="#nombres">7. Cómo nombrar variables</a>
+<a href="#reglas">8. Reglas de nombres</a>
+<a href="#memoria">9. Variables y memoria</a>
+<a href="#alcance">10. Alcance</a>
+<a href="#ejemplo">11. Ejemplo práctico</a>
+<a href="#errores">12. Errores comunes</a>
+<a href="#practica">13. Ejercicio práctico</a>
+<a href="#preguntas">14. Preguntas frecuentes</a>
+<a href="#conclusion">15. Conclusión</a>
+</nav>
+</details>
+</aside>
+<div class="articulo-cuerpo">
+<p class="articulo-introduccion">
           Casi todos los programas necesitan guardar información temporalmente.
           Una aplicación puede necesitar recordar el nombre de un usuario, el
           precio de un producto, una nota o si una sesión está activa. Las
           variables permiten asociar nombres claros con esos datos para
           utilizarlos posteriormente.
         </p>
-
-        <h2 id="que-es">¿Qué es una variable?</h2>
-
-        <p>
+<h2 id="que-es">¿Qué es una variable?</h2>
+<p>
           Una <strong>variable</strong> es un nombre que utilizamos dentro de
           un programa para hacer referencia a un valor.
         </p>
-
-        <p>
+<p>
           Por ejemplo:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>edad = 20</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Aquí creamos la variable <code>edad</code> y le asignamos el valor
           <code>20</code>.
         </p>
-
-        <p>
+<p>
           Después podemos utilizarla:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>print(edad)</code></pre>
-        </div>
-
-        <p>El resultado será:</p>
-
-        <div class="recuadro-ejemplo">
+</div>
+<p>El resultado será:</p>
+<div class="recuadro-ejemplo">
 <pre><code>20</code></pre>
-        </div>
-
-        <div class="recuadro-consejo">
-          <strong>Idea sencilla</strong>
-          <p>
+</div>
+<div class="recuadro-consejo">
+<strong>Idea sencilla</strong>
+<p>
             En lugar de recordar un dato únicamente por su valor, le damos un
             nombre que explique qué representa.
           </p>
-        </div>
-
-        <h2 id="para-que">¿Para qué sirven las variables?</h2>
-
-        <p>
+</div>
+<h2 id="para-que">¿Para qué sirven las variables?</h2>
+<p>
           Las variables permiten almacenar datos que necesitamos utilizar en
           otras partes del programa.
         </p>
-
-        <p>Por ejemplo:</p>
-
-        <div class="recuadro-ejemplo">
+<p>Por ejemplo:</p>
+<div class="recuadro-ejemplo">
 <pre><code>precio = 15000
 cantidad = 3
 
 total = precio * cantidad
 
 print(total)</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           En este código utilizamos tres variables:
         </p>
-
-        <ul class="lista-articulo">
-          <li><code>precio</code> guarda el precio individual.</li>
-          <li><code>cantidad</code> guarda la cantidad comprada.</li>
-          <li><code>total</code> guarda el resultado del cálculo.</li>
-        </ul>
-
-        <p>
+<ul class="lista-articulo">
+<li><code>precio</code> guarda el precio individual.</li>
+<li><code>cantidad</code> guarda la cantidad comprada.</li>
+<li><code>total</code> guarda el resultado del cálculo.</li>
+</ul>
+<p>
           Si el precio cambia, solamente necesitamos modificar su valor.
         </p>
-
-        <h2 id="asignacion">Cómo asignar un valor</h2>
-
-        <p>
+<h2 id="asignacion">Cómo asignar un valor</h2>
+<p>
           En Python utilizamos el operador <code>=</code> para asignar un
           valor.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>nombre = "Ana"
 edad = 25
 altura = 1.68
 activo = True</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           El lado izquierdo contiene el nombre de la variable y el lado
           derecho contiene el valor que queremos asociar con ella.
         </p>
-
-        <div class="recuadro-consejo">
-          <strong>No confundas = con ==</strong>
-          <p>
-            <code>=</code> asigna un valor. <code>==</code> compara dos
+<div class="recuadro-consejo">
+<strong>No confundas = con ==</strong>
+<p>
+<code>=</code> asigna un valor. <code>==</code> compara dos
             valores para comprobar si son iguales.
           </p>
-        </div>
-
-        <h2 id="tipos">Tipos de datos comunes</h2>
-
-        <p>
+</div>
+<h2 id="tipos">Tipos de datos comunes</h2>
+<p>
           Las variables pueden hacer referencia a distintos tipos de
           información.
         </p>
-
-        <h3>Números enteros</h3>
-
-        <div class="recuadro-ejemplo">
+<h3>Números enteros</h3>
+<div class="recuadro-ejemplo">
 <pre><code>edad = 25
 cantidad = 10</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           En Python estos valores pertenecen al tipo <code>int</code>.
         </p>
-
-        <h3>Números decimales</h3>
-
-        <div class="recuadro-ejemplo">
+<h3>Números decimales</h3>
+<div class="recuadro-ejemplo">
 <pre><code>altura = 1.68
 precio = 14999.50</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Los números decimales normalmente utilizan el tipo
           <code>float</code>.
         </p>
-
-        <h3>Texto</h3>
-
-        <div class="recuadro-ejemplo">
+<h3>Texto</h3>
+<div class="recuadro-ejemplo">
 <pre><code>nombre = "Ana"
 ciudad = "San José"</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Las cadenas de texto utilizan el tipo <code>str</code>.
         </p>
-
-        <h3>Valores booleanos</h3>
-
-        <div class="recuadro-ejemplo">
+<h3>Valores booleanos</h3>
+<div class="recuadro-ejemplo">
 <pre><code>activo = True
 bloqueado = False</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Los booleanos representan dos estados:
           <code>True</code> o <code>False</code>.
         </p>
-
-        <h3>Colecciones</h3>
-
-        <p>
+<h3>Colecciones</h3>
+<p>
           Una variable también puede referirse a una lista:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>lenguajes = [
     "Python",
     "JavaScript",
     "Java"
 ]</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Las variables no están limitadas a datos simples. También pueden
           referirse a objetos y estructuras más complejas.
         </p>
-
-        <h2 id="tipo">Cómo saber qué tipo tiene un valor</h2>
-
-        <p>
+<h2 id="tipo">Cómo saber qué tipo tiene un valor</h2>
+<p>
           Python incluye la función <code>type()</code>.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>edad = 25
 nombre = "Ana"
 activo = True
@@ -495,20 +344,16 @@ activo = True
 print(type(edad))
 print(type(nombre))
 print(type(activo))</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Esto puede ayudarte a comprender qué tipo de valor está utilizando
           el programa, especialmente durante el aprendizaje o la depuración.
         </p>
-
-        <h2 id="reasignacion">Cambiar el valor de una variable</h2>
-
-        <p>
+<h2 id="reasignacion">Cambiar el valor de una variable</h2>
+<p>
           El valor asociado a una variable puede cambiar.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>puntos = 10
 
 print(puntos)
@@ -516,191 +361,145 @@ print(puntos)
 puntos = 15
 
 print(puntos)</code></pre>
-        </div>
-
-        <p>El resultado será:</p>
-
-        <div class="recuadro-ejemplo">
+</div>
+<p>El resultado será:</p>
+<div class="recuadro-ejemplo">
 <pre><code>10
 15</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           La segunda asignación reemplaza la referencia anterior.
         </p>
-
-        <h3>Actualizar utilizando el valor actual</h3>
-
-        <div class="recuadro-ejemplo">
+<h3>Actualizar utilizando el valor actual</h3>
+<div class="recuadro-ejemplo">
 <pre><code>puntos = 10
 puntos = puntos + 5
 
 print(puntos)</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           El resultado será <code>15</code>.
         </p>
-
-        <p>
+<p>
           Python también permite escribirlo de forma abreviada:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>puntos += 5</code></pre>
-        </div>
-
-        <h3>Python utiliza tipado dinámico</h3>
-
-        <p>
+</div>
+<h3>Python utiliza tipado dinámico</h3>
+<p>
           Una misma variable puede referirse a valores de distintos tipos en
           momentos diferentes.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>dato = 10
 dato = "Hola"</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Python permite hacerlo, pero cambiar de tipo sin una razón clara
           puede hacer que el código sea más difícil de comprender.
         </p>
-
-        <h2 id="nombres">Cómo elegir buenos nombres</h2>
-
-        <p>
+<h2 id="nombres">Cómo elegir buenos nombres</h2>
+<p>
           Un buen nombre debe explicar qué información representa.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>precio_total = 25000
 nombre_usuario = "Ana"
 cantidad_productos = 4</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Estos nombres son mucho más claros que:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>x = 25000
 a = "Ana"
 c = 4</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Los nombres cortos pueden tener sentido en contextos muy concretos,
           pero normalmente debemos priorizar claridad.
         </p>
-
-        <h3>snake_case</h3>
-
-        <p>
+<h3>snake_case</h3>
+<p>
           En Python es habitual utilizar <code>snake_case</code> para nombres
           de variables:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>precio_final = 12000
 nombre_completo = "Ana López"</code></pre>
-        </div>
-
-        <h2 id="reglas">Reglas básicas para nombrar variables</h2>
-
-        <p>
+</div>
+<h2 id="reglas">Reglas básicas para nombrar variables</h2>
+<p>
           En Python existen algunas reglas importantes.
         </p>
-
-        <h3>Puede contener letras, números y guion bajo</h3>
-
-        <div class="recuadro-ejemplo">
+<h3>Puede contener letras, números y guion bajo</h3>
+<div class="recuadro-ejemplo">
 <pre><code>usuario1 = "Ana"
 precio_total = 5000</code></pre>
-        </div>
-
-        <h3>No puede comenzar con un número</h3>
-
-        <div class="recuadro-ejemplo">
+</div>
+<h3>No puede comenzar con un número</h3>
+<div class="recuadro-ejemplo">
 <pre><code>1usuario = "Ana"</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Este nombre no es válido.
         </p>
-
-        <h3>No debe utilizar palabras reservadas</h3>
-
-        <p>
+<h3>No debe utilizar palabras reservadas</h3>
+<p>
           Palabras como <code>if</code>, <code>for</code>,
           <code>while</code> o <code>def</code> forman parte de la sintaxis de
           Python y no pueden utilizarse como nombres normales de variables.
         </p>
-
-        <h3>Python distingue mayúsculas y minúsculas</h3>
-
-        <div class="recuadro-ejemplo">
+<h3>Python distingue mayúsculas y minúsculas</h3>
+<div class="recuadro-ejemplo">
 <pre><code>nombre = "Ana"
 Nombre = "Carlos"</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Estas son dos variables diferentes.
         </p>
-
-        <h2 id="memoria">¿Una variable es una caja en la memoria?</h2>
-
-        <p>
+<h2 id="memoria">¿Una variable es una caja en la memoria?</h2>
+<p>
           Cuando empezamos a programar suele explicarse una variable como una
           “caja” donde guardamos un dato. Esa analogía puede ayudar al inicio,
           pero en Python es más preciso pensar en un nombre que
           <strong>hace referencia a un objeto</strong>.
         </p>
-
-        <p>
+<p>
           Por ejemplo:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>nombre = "Ana"</code></pre>
-        </div>
-
-        <p>
-          <code>nombre</code> es el identificador que nos permite acceder al
+</div>
+<p>
+<code>nombre</code> es el identificador que nos permite acceder al
           objeto de texto <code>"Ana"</code>.
         </p>
-
-        <p>
+<p>
           Esta diferencia se vuelve más importante cuando después trabajas con
           listas y objetos mutables.
         </p>
-
-        <h2 id="alcance">Alcance de las variables</h2>
-
-        <p>
+<h2 id="alcance">Alcance de las variables</h2>
+<p>
           El <strong>alcance</strong> determina desde qué partes del programa
           podemos utilizar una variable.
         </p>
-
-        <h3>Variable local</h3>
-
-        <div class="recuadro-ejemplo">
+<h3>Variable local</h3>
+<div class="recuadro-ejemplo">
 <pre><code>def saludar():
     mensaje = "Hola"
     print(mensaje)
 
 
 saludar()</code></pre>
-        </div>
-
-        <p>
-          <code>mensaje</code> se crea dentro de la función y normalmente
+</div>
+<p>
+<code>mensaje</code> se crea dentro de la función y normalmente
           pertenece a ese contexto.
         </p>
-
-        <h3>Variable global</h3>
-
-        <div class="recuadro-ejemplo">
+<h3>Variable global</h3>
+<div class="recuadro-ejemplo">
 <pre><code>sitio = "ByteNova"
 
 def mostrar_sitio():
@@ -708,28 +507,23 @@ def mostrar_sitio():
 
 
 mostrar_sitio()</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Aquí <code>sitio</code> fue definida fuera de la función.
         </p>
-
-        <div class="recuadro-consejo">
-          <strong>Consejo</strong>
-          <p>
+<div class="recuadro-consejo">
+<strong>Consejo</strong>
+<p>
             Evita depender innecesariamente de muchas variables globales.
             Pasar datos mediante parámetros suele facilitar la comprensión y
             mantenimiento del código.
           </p>
-        </div>
-
-        <h2 id="ejemplo">Ejemplo práctico: calcular una compra</h2>
-
-        <p>
+</div>
+<h2 id="ejemplo">Ejemplo práctico: calcular una compra</h2>
+<p>
           Veamos cómo varias variables trabajan juntas.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>producto = "Teclado"
 precio = 15000
 cantidad = 2
@@ -743,194 +537,147 @@ print(f"Producto: {producto}")
 print(f"Subtotal: ₡{subtotal}")
 print(f"Descuento: ₡{monto_descuento}")
 print(f"Total: ₡{total}")</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Cada variable tiene una responsabilidad clara.
         </p>
-
-        <ul class="lista-articulo">
-          <li><code>producto</code> identifica qué se está comprando.</li>
-          <li><code>precio</code> contiene el precio unitario.</li>
-          <li><code>cantidad</code> indica cuántas unidades.</li>
-          <li><code>descuento</code> contiene el porcentaje.</li>
-          <li><code>subtotal</code> guarda el cálculo inicial.</li>
-          <li><code>total</code> contiene el precio final.</li>
-        </ul>
-
-        <p>
+<ul class="lista-articulo">
+<li><code>producto</code> identifica qué se está comprando.</li>
+<li><code>precio</code> contiene el precio unitario.</li>
+<li><code>cantidad</code> indica cuántas unidades.</li>
+<li><code>descuento</code> contiene el porcentaje.</li>
+<li><code>subtotal</code> guarda el cálculo inicial.</li>
+<li><code>total</code> contiene el precio final.</li>
+</ul>
+<p>
           Esta organización hace que el cálculo sea mucho más fácil de leer
           que si utilizáramos todos los números directamente.
         </p>
-
-        <h2 id="errores">Errores comunes al trabajar con variables</h2>
-
-        <h3>Utilizar una variable antes de crearla</h3>
-
-        <div class="recuadro-ejemplo">
+<h2 id="errores">Errores comunes al trabajar con variables</h2>
+<h3>Utilizar una variable antes de crearla</h3>
+<div class="recuadro-ejemplo">
 <pre><code>print(total)
 
 total = 100</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Cuando se ejecuta el primer <code>print()</code>, la variable todavía
           no existe.
         </p>
-
-        <h3>Confundir asignación con comparación</h3>
-
-        <p>
+<h3>Confundir asignación con comparación</h3>
+<p>
           Recuerda:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>edad = 20
 edad == 20</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           La primera línea asigna. La segunda compara.
         </p>
-
-        <h3>Usar nombres demasiado parecidos</h3>
-
-        <div class="recuadro-ejemplo">
+<h3>Usar nombres demasiado parecidos</h3>
+<div class="recuadro-ejemplo">
 <pre><code>precio = 100
 precios = 200
 precio1 = 300</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Nombres demasiado similares pueden provocar confusiones si
           representan conceptos distintos.
         </p>
-
-        <h3>Cambiar el tipo sin darte cuenta</h3>
-
-        <div class="recuadro-ejemplo">
+<h3>Cambiar el tipo sin darte cuenta</h3>
+<div class="recuadro-ejemplo">
 <pre><code>edad = 20
 edad = "veinte"</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Esto es válido en Python, pero una operación posterior que espere un
           número puede fallar.
         </p>
-
-        <h3>Guardar datos sin un propósito claro</h3>
-
-        <p>
+<h3>Guardar datos sin un propósito claro</h3>
+<p>
           Crear variables innecesarias puede hacer que el programa sea más
           difícil de seguir. Una variable debería representar información que
           realmente necesitamos utilizar.
         </p>
-
-        <section
-          class="seccion-articulo"
-          aria-labelledby="practica"
-        >
-
-          <h2 id="practica">Compruébalo tú mismo</h2>
-
-          <p>
+<section aria-labelledby="practica" class="seccion-articulo">
+<h2 id="practica">Compruébalo tú mismo</h2>
+<p>
             Crea variables para guardar:
           </p>
-
-          <ul class="lista-articulo">
-            <li>Tu nombre.</li>
-            <li>Tu edad.</li>
-            <li>Una nota.</li>
-          </ul>
-
-          <p>
+<ul class="lista-articulo">
+<li>Tu nombre.</li>
+<li>Tu edad.</li>
+<li>Una nota.</li>
+</ul>
+<p>
             Después crea una variable llamada <code>aprobo</code> cuyo valor
             sea el resultado de comprobar si la nota es igual o superior a 70.
           </p>
-
-          <p>
+<p>
             Finalmente muestra toda la información.
           </p>
-
-          <p>
+<p>
             Intenta resolverlo antes de ver la solución.
           </p>
-
-          <details class="recuadro-ejemplo">
-
-            <summary>
-              <strong>Ver una posible solución</strong>
-            </summary>
-
+<details class="recuadro-ejemplo">
+<summary>
+<strong>Ver una posible solución</strong>
+</summary>
 <pre><code>nombre = "Ana"
 edad = 20
 nota = 85
 
-aprobo = nota >= 70
+aprobo = nota &gt;= 70
 
 print(f"Nombre: {nombre}")
 print(f"Edad: {edad}")
 print(f"Nota: {nota}")
 print(f"¿Aprobó?: {aprobo}")</code></pre>
-
-            <p>
+<p>
               La expresión <code>nota &gt;= 70</code> produce un valor
               booleano que guardamos dentro de <code>aprobo</code>.
             </p>
-
-          </details>
-
-          <div class="recuadro-consejo">
-            <strong>Reto adicional</strong>
-            <p>
+</details>
+<div class="recuadro-consejo">
+<strong>Reto adicional</strong>
+<p>
               Cambia la nota varias veces y observa cómo cambia
               automáticamente el valor de <code>aprobo</code> cuando vuelves
               a ejecutar el programa.
             </p>
-          </div>
-
-        </section>
-
-        <h2 id="preguntas">Preguntas frecuentes</h2>
-
-        <section class="faq-articulo" aria-labelledby="preguntas">
-
-          <details>
-            <summary>¿Una variable puede cambiar de valor?</summary>
-
-            <p>
+</div>
+</section>
+<h2 id="preguntas">Preguntas frecuentes</h2>
+<section aria-labelledby="preguntas" class="faq-articulo">
+<details>
+<summary>¿Una variable puede cambiar de valor?</summary>
+<p>
               Sí. Una variable puede recibir un nuevo valor durante la
               ejecución del programa.
             </p>
-          </details>
-
-          <details>
-            <summary>¿Una variable puede cambiar de tipo en Python?</summary>
-
-            <p>
+</details>
+<details>
+<summary>¿Una variable puede cambiar de tipo en Python?</summary>
+<p>
               Sí. Python utiliza tipado dinámico, por lo que una variable puede
               hacer referencia a valores de distintos tipos en diferentes
               momentos. Sin embargo, hacerlo sin una razón clara puede
               dificultar la lectura del código.
             </p>
-          </details>
-
-          <details>
-            <summary>
+</details>
+<details>
+<summary>
               ¿Cuál es la diferencia entre una variable local y una global?
             </summary>
-
-            <p>
+<p>
               Una variable local se define dentro de un contexto como una
               función y normalmente se utiliza allí. Una variable global se
               define fuera de las funciones y tiene un alcance más amplio.
             </p>
-          </details>
-
-        </section>
-
-        
-<section class="ampliacion-editorial" aria-labelledby="variables-diseno">
+</details>
+</section>
+<section aria-labelledby="variables-diseno" class="ampliacion-editorial">
 <h2 id="variables-diseno">Cómo elegir buenas variables</h2>
 <p>Una variable no solamente guarda un valor: su nombre también comunica la intención del programa. Nombres como <code>totalCompra</code> o <code>usuarioActivo</code> suelen explicar mejor el propósito que nombres genéricos como <code>x</code> o <code>dato</code>.</p>
 <div class="recuadro-ejemplo"><strong>Ejemplo conceptual</strong><p>Si un programa calcula el promedio de tres notas, puede guardar cada nota y el resultado en variables distintas. Esto permite leer el procedimiento y modificar los valores sin reescribir toda la expresión.</p></div>
@@ -941,184 +688,120 @@ print(f"¿Aprobó?: {aprobo}")</code></pre>
 <div class="recuadro-consejo"><strong>Buena práctica</strong><p>Declara las variables cerca del lugar donde se necesitan, utiliza nombres claros y evita mantener datos duplicados si pueden calcularse de forma sencilla a partir de una fuente confiable.</p></div>
 </section>
 <h2 id="conclusion">Conclusión</h2>
-
-        <p>
+<p>
           Las variables permiten dar nombres significativos a los datos que
           utiliza un programa.
         </p>
-
-        <p>
+<p>
           Gracias a ellas podemos almacenar información, reutilizarla,
           modificarla y combinarla mediante operaciones.
         </p>
-
-        <p>
+<p>
           Comprender asignación, tipos de datos, nombres, alcance y
           reasignación te dará una base esencial para avanzar hacia
           operadores, condicionales, funciones, bucles y estructuras de datos.
         </p>
-
-        <nav class="navegacion-articulos" aria-label="Navegación entre artículos">
-          <a class="nav-anterior" href="que-es-programacion">
-            <span class="nav-etiqueta">← Artículo anterior</span>
-            <strong>¿Qué es la programación y para qué sirve?</strong>
-          </a>
-          <a class="nav-siguiente" href="que-son-operadores">
-            <span class="nav-etiqueta">Siguiente artículo →</span>
-            <strong>¿Qué son los operadores en programación?</strong>
-          </a>
-        </nav>
-
-        <section
-          class="autor-articulo"
-          aria-label="Información del autor"
-        >
-
-          <div
-            class="autor-icono"
-            aria-hidden="true"
-          >
+<nav aria-label="Navegación entre artículos" class="navegacion-articulos">
+<a class="nav-anterior" href="que-es-programacion.html">
+<span class="nav-etiqueta">← Artículo anterior</span>
+<strong>¿Qué es la programación y para qué sirve?</strong>
+</a>
+<a class="nav-siguiente" href="que-son-operadores.html">
+<span class="nav-etiqueta">Siguiente artículo →</span>
+<strong>¿Qué son los operadores en programación?</strong>
+</a>
+</nav>
+<section aria-label="Información del autor" class="autor-articulo">
+<div aria-hidden="true" class="autor-icono">
             &lt;/&gt;
           </div>
-
-          <div class="autor-informacion">
-
-            <span>Artículo creado por</span>
-            <h2>ByteNova</h2>
-
-            <p>Proyecto educativo creado por Dylan Estrada. ByteNova publica contenido sobre programación, desarrollo web, inteligencia artificial y ciberseguridad con un enfoque claro para principiantes y revisión editorial continua.</p>
-
-            <a href="sobre">
+<div class="autor-informacion">
+<span>Artículo creado por</span>
+<h2>ByteNova</h2>
+<p>Proyecto educativo creado por Dylan Estrada. ByteNova publica contenido sobre programación, desarrollo web, inteligencia artificial y ciberseguridad con un enfoque claro para principiantes y revisión editorial continua.</p>
+<a href="sobre.html">
               Conoce más sobre ByteNova →
             </a>
-
-          </div>
-
-        </section>
-
-        <aside
-          class="articulos-relacionados"
-          aria-labelledby="titulo-articulos-relacionados"
-        >
-
-          <h2 id="titulo-articulos-relacionados">
+</div>
+</section>
+<aside aria-labelledby="titulo-articulos-relacionados" class="articulos-relacionados">
+<h2 id="titulo-articulos-relacionados">
             Continúa aprendiendo
           </h2>
-
-          <div class="relacionados-grid">
-
-            <a href="que-son-operadores">
-              <span aria-hidden="true">📘</span>
-              <strong>Operadores</strong>
-              <small>
+<div class="relacionados-grid">
+<a href="que-son-operadores.html">
+<span aria-hidden="true">📘</span>
+<strong>Operadores</strong>
+<small>
                 Aprende cómo realizar cálculos y comparaciones con variables.
               </small>
-            </a>
-
-            <a href="que-son-condicionales">
-              <span aria-hidden="true">📘</span>
-              <strong>Condicionales</strong>
-              <small>
+</a>
+<a href="que-son-condicionales.html">
+<span aria-hidden="true">📘</span>
+<strong>Condicionales</strong>
+<small>
                 Aprende a utilizar valores y comparaciones para tomar
                 decisiones.
               </small>
-            </a>
-
-            <a href="que-son-arrays-listas">
-              <span aria-hidden="true">📘</span>
-              <strong>Arrays y listas</strong>
-              <small>
+</a>
+<a href="que-son-arrays-listas.html">
+<span aria-hidden="true">📘</span>
+<strong>Arrays y listas</strong>
+<small>
                 Aprende cómo almacenar varios valores dentro de una colección.
               </small>
-            </a>
-
-          </div>
-
-        </aside>
-
-      </div>
-    </div>
-
-  </article>
-
+</a>
+</div>
+</aside>
+</div>
+</div>
+</article>
 </main>
-
-<footer class="footer">
-
-  <div class="contenedor-footer">
-
-    <div class="footer-logo">
-
-      <a
-        class="marca-bytenova"
-        href="../index#inicio"
-        aria-label="Ir al inicio de ByteNova"
-      >
-        <span class="marca-icono" aria-hidden="true">&lt;/&gt;</span>
-        <span class="marca-texto">ByteNova</span>
-      </a>
-
-      <p>
-        Aprende tecnología desde cero con artículos, rutas, retos,
-        guías y recursos gratuitos.
-      </p>
-
-    </div>
-
-    <nav
-      class="footer-enlaces"
-      aria-label="Enlaces de aprendizaje del pie de página"
-    >
-      <h3>Aprender</h3>
-      <a href="../index#tecnologias">Tecnologías</a>
-      <a href="rutas">Rutas</a>
-      <a href="retos">Retos</a>
-      <a href="material">Guías</a>
-      <a href="articulos">Artículos</a>
-      <a href="glosario">Glosario</a>
-    </nav>
-
-    <nav
-      class="footer-enlaces"
-      aria-label="Enlaces informativos del pie de página"
-    >
-      <h3>ByteNova</h3>
-      <a href="sobre">Sobre ByteNova</a>
-      <a href="../index#contacto">Contacto</a>
-      <a href="privacidad">Privacidad</a>
-      <a href="terminos">Términos</a>
-      <a href="cookies">Cookies</a>
-    </nav>
-
-    <address class="footer-social">
-
-      <h3>Contacto</h3>
-
-      <p>
-        Preguntas, sugerencias o comentarios sobre nuestros
-        contenidos educativos.
-      </p>
-
-      <a href="mailto:bytenova339@gmail.com">
-        bytenova339@gmail.com
-      </a>
-
-      <a href="https://www.tiktok.com/@bytenova.app" target="_blank" rel="noopener noreferrer" aria-label="TikTok de ByteNova">
-        TikTok · @bytenova.app
-      </a>
-
-    </address>
-
-  </div>
-
-  <div class="footer-copy">
-    <p>© 2026 ByteNova. Todos los derechos reservados.</p>
-    <p>Creado por Dylan Estrada.</p>
-  </div>
-
+<footer class="footer footer-v2">
+<div class="footer-v2-shell">
+<div class="footer-v2-grid">
+<div class="footer-v2-brand">
+<a aria-label="Ir al inicio de ByteNova" class="footer-v2-logo" href="../index.html#inicio">
+<span aria-hidden="true" class="footer-v2-logo-icon">&lt;/&gt;</span>
+<span class="footer-v2-logo-text">Byte<span>Nova</span></span>
+</a>
+<p>Aprende tecnología desde cero con artículos, rutas, retos, guías y recursos gratuitos.</p>
+<div class="footer-v2-social">
+<a aria-label="TikTok de ByteNova" href="https://www.tiktok.com/@bytenova.app" rel="noopener noreferrer" target="_blank">♪</a>
+<a aria-label="Correo de ByteNova" href="mailto:bytenova339@gmail.com">✉</a>
+<a aria-label="Sitio web de ByteNova" href="../index.html#inicio">◎</a>
+</div>
+</div>
+<nav aria-label="Enlaces de aprendizaje" class="footer-v2-col">
+<h3>Aprender</h3>
+<a href="../index.html#tecnologias"><span aria-hidden="true">▣</span>Tecnologías</a>
+<a href="rutas.html"><span aria-hidden="true">↗</span>Rutas</a>
+<a href="retos.html"><span aria-hidden="true">🎯</span>Retos</a>
+<a href="material.html"><span aria-hidden="true">▤</span>Guías</a>
+<a href="articulos.html"><span aria-hidden="true">▧</span>Artículos</a>
+<a href="glosario.html"><span aria-hidden="true">▥</span>Glosario</a>
+</nav>
+<nav aria-label="Enlaces de ByteNova" class="footer-v2-col">
+<h3>ByteNova</h3>
+<a href="sobre.html"><span aria-hidden="true">♙</span>Sobre ByteNova</a>
+<a href="../index.html#contacto"><span aria-hidden="true">✉</span>Contacto</a>
+<a href="privacidad.html"><span aria-hidden="true">♢</span>Privacidad</a>
+<a href="terminos.html"><span aria-hidden="true">▤</span>Términos</a>
+<a href="cookies.html"><span aria-hidden="true">◌</span>Cookies</a>
+</nav>
+<div class="footer-v2-contact">
+<h3>Conecta con ByteNova</h3>
+<p>Preguntas, sugerencias o comentarios sobre nuestros contenidos educativos.</p>
+<a href="mailto:bytenova339@gmail.com"><span aria-hidden="true">✉</span>bytenova339@gmail.com</a>
+<a href="https://www.tiktok.com/@bytenova.app" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">♪</span>TikTok · @bytenova.app</a>
+</div>
+</div>
+<div class="footer-v2-bottom">
+<p>© 2026 <strong>ByteNova</strong>. Todos los derechos reservados.</p>
+<p>Creado por Dylan Estrada.</p>
+</div>
+</div>
 </footer>
-
 <script src="../js/script.js"></script>
-
 </body>
 </html>

@@ -1,92 +1,41 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-41QWQ3DC33"></script>
-  <script>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-41QWQ3DC33"></script>
+<script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-41QWQ3DC33');
   </script>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Estructuras condicionales: if, elif y else | ByteNova</title>
-
-  <meta
-    name="description"
-    content="Aprende qué son las estructuras condicionales, cómo funcionan if, elif y else, operadores de comparación y condiciones lógicas con ejemplos prácticos en Python."
-  >
-
-  <meta name="author" content="ByteNova">
-  <meta name="robots" content="index, follow">
-
-  <meta
-    name="theme-color"
-    content="#ffffff"
-    media="(prefers-color-scheme: light)"
-  >
-
-  <meta
-    name="theme-color"
-    content="#0f172a"
-    media="(prefers-color-scheme: dark)"
-  >
-
-  <meta property="og:type" content="article">
-  <meta property="og:locale" content="es_CR">
-  <meta property="og:site_name" content="ByteNova">
-  <meta property="og:title" content="¿Qué son las estructuras condicionales?">
-  <meta
-    property="og:description"
-    content="Aprende a tomar decisiones en tus programas utilizando if, elif y else con ejemplos prácticos en Python."
-  >
-  <meta
-    property="og:url"
-    content="https://bytenova.app/pages/que-son-condicionales"
-  >
-  <meta
-    property="og:image"
-    content="https://bytenova.app/images/bytenova-social.jpg"
-  >
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta
-    name="twitter:title"
-    content="¿Qué son las estructuras condicionales?"
-  >
-  <meta
-    name="twitter:description"
-    content="Aprende if, elif y else desde cero con ejemplos claros en Python."
-  >
-  <meta
-    name="twitter:image"
-    content="https://bytenova.app/images/bytenova-social.jpg"
-  >
-
-  <meta property="article:published_time" content="2026-08-05">
-  <meta property="article:modified_time" content="2026-08-17">
-  <meta property="article:section" content="Programación">
-
-  <link
-    rel="canonical"
-    href="https://bytenova.app/pages/que-son-condicionales"
-  >
-
-  <link
-    rel="icon"
-    href="../images/favicon.svg"
-    type="image/svg+xml"
-  >
-
-  <link
-    rel="stylesheet"
-    href="../css/style.min.css"
-  >
-
-  <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Estructuras condicionales: if, elif y else | ByteNova</title>
+<meta content="Aprende qué son las estructuras condicionales, cómo funcionan if, elif y else, operadores de comparación y condiciones lógicas con ejemplos prácticos en Python." name="description"/>
+<meta content="ByteNova" name="author"/>
+<meta content="index, follow" name="robots"/>
+<meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
+<meta content="#0f172a" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<meta content="article" property="og:type"/>
+<meta content="es_CR" property="og:locale"/>
+<meta content="ByteNova" property="og:site_name"/>
+<meta content="¿Qué son las estructuras condicionales?" property="og:title"/>
+<meta content="Aprende a tomar decisiones en tus programas utilizando if, elif y else con ejemplos prácticos en Python." property="og:description"/>
+<meta content="https://bytenova.app/pages/que-son-condicionales" property="og:url"/>
+<meta content="https://bytenova.app/images/bytenova-social.jpg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="¿Qué son las estructuras condicionales?" name="twitter:title"/>
+<meta content="Aprende if, elif y else desde cero con ejemplos claros en Python." name="twitter:description"/>
+<meta content="https://bytenova.app/images/bytenova-social.jpg" name="twitter:image"/>
+<meta content="2026-08-05" property="article:published_time"/>
+<meta content="2026-08-17" property="article:modified_time"/>
+<meta content="Programación" property="article:section"/>
+<link href="https://bytenova.app/pages/que-son-condicionales" rel="canonical"/>
+<link href="../images/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../css/style.min.css?v=20260818-center2" rel="stylesheet"/>
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
@@ -154,527 +103,407 @@
     ]
   }
   </script>
-
-  <meta
-    name="google-adsense-account"
-    content="ca-pub-5369456672603969"
-  >
-
-  <script
-    async
-    crossorigin="anonymous"
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5369456672603969">
-  </script>
+<meta content="ca-pub-5369456672603969" name="google-adsense-account"/>
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5369456672603969">
+</script>
 </head>
-
 <body>
-
 <a class="saltar-contenido" href="#contenido-principal">
   Saltar al contenido principal
 </a>
-
 <header>
-
-  <a
-    class="marca-bytenova"
-    href="../index#inicio"
-    aria-label="Ir al inicio de ByteNova"
-  >
-    <span class="marca-icono" aria-hidden="true">&lt;/&gt;</span>
-    <span class="marca-texto">ByteNova</span>
-  </a>
-
-  <button
-    class="menu-toggle"
-    id="menu-toggle"
-    type="button"
-    aria-controls="menu-principal"
-    aria-expanded="false"
-    aria-label="Abrir menú"
-  >
-    <span aria-hidden="true">☰</span>
-  </button>
-
-  <nav id="menu-principal" aria-label="Navegación principal">
-    <a href="../index#inicio">Inicio</a>
-    <a href="sobre">Sobre</a>
-    <a href="../index#tecnologias">Aprender</a>
-    <a href="rutas">Rutas</a>
-    <a href="retos">Retos</a>
-    <a href="material">Guías</a>
-    <a href="articulos" aria-current="page">Artículos</a>
-    <a href="glosario">Glosario</a>
-    <a href="../index#contacto">Contacto</a>
-
-    <button
-      class="btn-modo"
-      id="btn-modo"
-      type="button"
-      aria-label="Activar modo oscuro"
-    >
-      <span aria-hidden="true">🌙</span>
-    </button>
-  </nav>
-
+<a aria-label="Ir al inicio de ByteNova" class="marca-bytenova" href="../index.html#inicio">
+<span aria-hidden="true" class="marca-icono">&lt;/&gt;</span>
+<span class="marca-texto">ByteNova</span>
+</a>
+<button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle" type="button">
+<span aria-hidden="true">☰</span>
+</button>
+<nav aria-label="Navegación principal" id="menu-principal">
+<a href="../index.html#inicio">Inicio</a>
+<a href="sobre.html">Sobre</a>
+<a href="../index.html#tecnologias">Aprender</a>
+<a href="rutas.html">Rutas</a>
+<a href="retos.html">Retos</a>
+<a href="material.html">Guías</a>
+<a aria-current="page" href="articulos.html">Artículos</a>
+<a href="glosario.html">Glosario</a>
+<a href="../index.html#contacto">Contacto</a>
+<button aria-label="Activar modo oscuro" class="btn-modo" id="btn-modo" type="button">
+<span aria-hidden="true">🌙</span>
+</button>
+</nav>
 </header>
-
 <main class="sobre articulo" id="contenido-principal">
-
-  <article
-    class="sobre-contenido"
-    aria-labelledby="titulo-que-son-condicionales"
-  >
-
-    <nav
-      class="migas-navegacion"
-      aria-label="Ruta de navegación"
-    >
-      <a href="../index">Inicio</a>
-      <span aria-hidden="true">›</span>
-      <a href="articulos">Artículos</a>
-      <span aria-hidden="true">›</span>
-      <span aria-current="page">Estructuras condicionales</span>
-    </nav>
-
-    <span class="seccion-etiqueta">
-      <span aria-hidden="true">🔀</span>
+<article aria-labelledby="titulo-que-son-condicionales" class="sobre-contenido">
+<nav aria-label="Ruta de navegación" class="migas-navegacion">
+<a href="../index.html">Inicio</a>
+<span aria-hidden="true">›</span>
+<a href="articulos.html">Artículos</a>
+<span aria-hidden="true">›</span>
+<span aria-current="page">Estructuras condicionales</span>
+</nav>
+<span class="seccion-etiqueta">
+<span aria-hidden="true">🔀</span>
       Programación
     </span>
-
-    <h1 id="titulo-que-son-condicionales">
+<h1 id="titulo-que-son-condicionales">
       ¿Qué son las estructuras condicionales?
       <span aria-hidden="true">🔀</span>
-    </h1>
-
-    <p class="articulo-meta">
+</h1>
+<p class="articulo-meta">
       Publicado por ByteNova ·
       <time datetime="2026-08-05">5 de agosto de 2026</time>
       · Actualizado el
       <time datetime="2026-08-17">17 de agosto de 2026</time>
-    </p>
-
-    <div class="articulo-resumen">
-      <strong>En este artículo aprenderás:</strong>
-      <p>
+</p>
+<div class="articulo-resumen">
+<strong>En este artículo aprenderás:</strong>
+<p>
         Cómo un programa toma decisiones utilizando
         <code>if</code>, <code>elif</code> y <code>else</code>,
         cómo comparar valores y cómo combinar varias condiciones.
       </p>
-    </div>
-
-    <div class="articulo-layout">
-
-      <aside class="articulo-sidebar">
-
-        <details class="indice-articulo" open>
-          <summary>
-            <span aria-hidden="true">📑</span>
+</div>
+<div class="articulo-layout">
+<aside class="articulo-sidebar">
+<details class="indice-articulo" open="">
+<summary>
+<span aria-hidden="true">📑</span>
             Contenido del artículo
           </summary>
-
-          <nav aria-label="Contenido del artículo">
-            <a href="#que-es">1. ¿Qué es una condición?</a>
-            <a href="#booleanos">2. Verdadero y falso</a>
-            <a href="#if">3. La condición if</a>
-            <a href="#else">4. La alternativa else</a>
-            <a href="#elif">5. Varias opciones con elif</a>
-            <a href="#comparacion">6. Operadores de comparación</a>
-            <a href="#logicos">7. Operadores lógicos</a>
-            <a href="#anidadas">8. Condiciones anidadas</a>
-            <a href="#ejemplo">9. Ejemplo práctico</a>
-            <a href="#errores">10. Errores comunes</a>
-            <a href="#practica">11. Ejercicio práctico</a>
-            <a href="#preguntas">12. Preguntas frecuentes</a>
-            <a href="#conclusion">13. Conclusión</a>
-          </nav>
-        </details>
-
-      </aside>
-
-      <div class="articulo-cuerpo">
-
-        <p class="articulo-introduccion">
+<nav aria-label="Contenido del artículo">
+<a href="#que-es">1. ¿Qué es una condición?</a>
+<a href="#booleanos">2. Verdadero y falso</a>
+<a href="#if">3. La condición if</a>
+<a href="#else">4. La alternativa else</a>
+<a href="#elif">5. Varias opciones con elif</a>
+<a href="#comparacion">6. Operadores de comparación</a>
+<a href="#logicos">7. Operadores lógicos</a>
+<a href="#anidadas">8. Condiciones anidadas</a>
+<a href="#ejemplo">9. Ejemplo práctico</a>
+<a href="#errores">10. Errores comunes</a>
+<a href="#practica">11. Ejercicio práctico</a>
+<a href="#preguntas">12. Preguntas frecuentes</a>
+<a href="#conclusion">13. Conclusión</a>
+</nav>
+</details>
+</aside>
+<div class="articulo-cuerpo">
+<p class="articulo-introduccion">
           Los programas no siempre ejecutan exactamente las mismas
           instrucciones. Muchas veces necesitan analizar información y decidir
           qué hacer según el resultado. Las estructuras condicionales permiten
           crear ese comportamiento.
         </p>
-
-        <h2 id="que-es">
+<h2 id="que-es">
           ¿Qué es una estructura condicional?
         </h2>
-
-        <p>
+<p>
           Una <strong>estructura condicional</strong> permite ejecutar
           diferentes instrucciones dependiendo de si una determinada
           condición se cumple o no.
         </p>
-
-        <p>
+<p>
           Una condición es una expresión cuyo resultado puede interpretarse
           como verdadero o falso.
         </p>
-
-        <div class="recuadro-ejemplo">
-          <p>
+<div class="recuadro-ejemplo">
+<p>
             Imagina una aplicación que solamente permite ingresar a usuarios
             mayores de edad.
           </p>
-
-          <p>
+<p>
             El programa podría preguntar:
             <strong>¿la edad es mayor o igual a 18?</strong>
-          </p>
-
-          <p>
+</p>
+<p>
             Si la respuesta es verdadera, permite el acceso. Si es falsa,
             muestra un mensaje diferente.
           </p>
-        </div>
-
-        <p>
+</div>
+<p>
           Sin condiciones, un programa simplemente ejecutaría instrucciones
           una detrás de otra sin poder reaccionar a los datos que recibe.
         </p>
-
-        <h2 id="booleanos">
+<h2 id="booleanos">
           Verdadero y falso
         </h2>
-
-        <p>
+<p>
           Las decisiones se basan normalmente en valores booleanos:
           <code>True</code> y <code>False</code>.
         </p>
-
-        <p>
+<p>
           Por ejemplo:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>edad = 20
 
-print(edad >= 18)</code></pre>
-        </div>
-
-        <p>
+print(edad &gt;= 18)</code></pre>
+</div>
+<p>
           El resultado será:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>True</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           La comparación <code>edad &gt;= 18</code> produce un valor booleano.
           Ese resultado puede utilizarse después dentro de una condición.
         </p>
-
-        <h2 id="if">
+<h2 id="if">
           La condición if
         </h2>
-
-        <p>
-          <code>if</code> significa “si”. Permite ejecutar un bloque de código
+<p>
+<code>if</code> significa “si”. Permite ejecutar un bloque de código
           únicamente cuando una condición es verdadera.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>edad = 20
 
-if edad >= 18:
+if edad &gt;= 18:
     print("Puedes ingresar")</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Python evalúa la expresión <code>edad &gt;= 18</code>.
           Como el resultado es verdadero, ejecuta el
           <code>print()</code>.
         </p>
-
-        <p>
+<p>
           Si cambiamos la edad:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>edad = 15
 
-if edad >= 18:
+if edad &gt;= 18:
     print("Puedes ingresar")</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           En este caso no aparecerá ningún mensaje porque la condición es
           falsa.
         </p>
-
-        <div class="recuadro-consejo">
-          <strong>Importante en Python</strong>
-          <p>
+<div class="recuadro-consejo">
+<strong>Importante en Python</strong>
+<p>
             Las instrucciones que pertenecen a una condición deben estar
             correctamente indentadas. La indentación indica qué código forma
             parte del bloque.
           </p>
-        </div>
-
-        <h2 id="else">
+</div>
+<h2 id="else">
           La alternativa else
         </h2>
-
-        <p>
-          <code>else</code> permite indicar qué debe ocurrir cuando la
+<p>
+<code>else</code> permite indicar qué debe ocurrir cuando la
           condición del <code>if</code> es falsa.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>edad = 16
 
-if edad >= 18:
+if edad &gt;= 18:
     print("Acceso permitido")
 else:
     print("Acceso restringido")</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Como <code>16 &gt;= 18</code> es falso, el programa ejecuta el
           bloque correspondiente a <code>else</code>.
         </p>
-
-        <p>
-          <code>else</code> no necesita una nueva condición. Representa
+<p>
+<code>else</code> no necesita una nueva condición. Representa
           cualquier caso que no haya cumplido la condición anterior.
         </p>
-
-        <h2 id="elif">
+<h2 id="elif">
           Varias opciones con elif
         </h2>
-
-        <p>
+<p>
           A veces necesitamos comprobar más de dos posibilidades. Para eso
           podemos utilizar <code>elif</code>, que significa
           “si no, si”.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>nota = 85
 
-if nota >= 90:
+if nota &gt;= 90:
     print("Excelente")
-elif nota >= 70:
+elif nota &gt;= 70:
     print("Aprobado")
 else:
     print("Reprobado")</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           El programa evalúa las condiciones en orden.
         </p>
-
-        <p>
+<p>
           La primera condición es falsa porque 85 no es mayor o igual a 90.
           La segunda sí es verdadera, por lo que se muestra:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>Aprobado</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Después de encontrar una condición verdadera, Python no continúa
           evaluando los siguientes bloques de esa misma estructura.
         </p>
-
-        <h2 id="comparacion">
+<h2 id="comparacion">
           Operadores de comparación
         </h2>
-
-        <p>
+<p>
           Para construir condiciones necesitamos comparar valores.
         </p>
-
-        <p>
+<p>
           Algunos operadores habituales en Python son:
         </p>
-
-        <ul class="lista-articulo">
-          <li>
-            <code>==</code> comprueba si dos valores son iguales.
+<ul class="lista-articulo">
+<li>
+<code>==</code> comprueba si dos valores son iguales.
           </li>
-          <li>
-            <code>!=</code> comprueba si son diferentes.
+<li>
+<code>!=</code> comprueba si son diferentes.
           </li>
-          <li>
-            <code>&gt;</code> significa mayor que.
+<li>
+<code>&gt;</code> significa mayor que.
           </li>
-          <li>
-            <code>&lt;</code> significa menor que.
+<li>
+<code>&lt;</code> significa menor que.
           </li>
-          <li>
-            <code>&gt;=</code> significa mayor o igual que.
+<li>
+<code>&gt;=</code> significa mayor o igual que.
           </li>
-          <li>
-            <code>&lt;=</code> significa menor o igual que.
+<li>
+<code>&lt;=</code> significa menor o igual que.
           </li>
-        </ul>
-
-        <div class="recuadro-ejemplo">
+</ul>
+<div class="recuadro-ejemplo">
 <pre><code>temperatura = 30
 
-if temperatura > 25:
+if temperatura &gt; 25:
     print("Hace calor")</code></pre>
-        </div>
-
-        <h3>
+</div>
+<h3>
           == no es lo mismo que =
         </h3>
-
-        <p>
+<p>
           Este es uno de los errores más frecuentes al empezar.
         </p>
-
-        <p>
+<p>
           Un solo signo <code>=</code> se utiliza para asignar un valor:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>edad = 18</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Dos signos <code>==</code> se utilizan para comparar:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>edad == 18</code></pre>
-        </div>
-
-        <h2 id="logicos">
+</div>
+<h2 id="logicos">
           Combinar condiciones con operadores lógicos
         </h2>
-
-        <p>
+<p>
           A veces una decisión depende de más de una condición.
           Python permite combinarlas utilizando
           <code>and</code>, <code>or</code> y <code>not</code>.
         </p>
-
-        <h3>
+<h3>
           and
         </h3>
-
-        <p>
-          <code>and</code> requiere que las dos condiciones sean verdaderas.
+<p>
+<code>and</code> requiere que las dos condiciones sean verdaderas.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>edad = 22
 tiene_entrada = True
 
-if edad >= 18 and tiene_entrada:
+if edad &gt;= 18 and tiene_entrada:
     print("Puedes ingresar")</code></pre>
-        </div>
-
-        <h3>
+</div>
+<h3>
           or
         </h3>
-
-        <p>
-          <code>or</code> necesita que al menos una de las condiciones sea
+<p>
+<code>or</code> necesita que al menos una de las condiciones sea
           verdadera.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>es_admin = False
 es_editor = True
 
 if es_admin or es_editor:
     print("Puedes editar")</code></pre>
-        </div>
-
-        <h3>
+</div>
+<h3>
           not
         </h3>
-
-        <p>
-          <code>not</code> invierte un valor booleano.
+<p>
+<code>not</code> invierte un valor booleano.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>bloqueado = False
 
 if not bloqueado:
     print("Cuenta disponible")</code></pre>
-        </div>
-
-        <div class="recuadro-consejo">
-          <strong>Consejo</strong>
-          <p>
+</div>
+<div class="recuadro-consejo">
+<strong>Consejo</strong>
+<p>
             Si una condición empieza a ser demasiado larga, considera dividirla
             en variables con nombres claros. Eso facilita entender qué está
             evaluando el programa.
           </p>
-        </div>
-
-        <h2 id="anidadas">
+</div>
+<h2 id="anidadas">
           Condiciones anidadas
         </h2>
-
-        <p>
+<p>
           Una condición puede estar dentro de otra condición.
           A esto se le conoce como una condición anidada.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>edad = 20
 tiene_entrada = True
 
-if edad >= 18:
+if edad &gt;= 18:
     if tiene_entrada:
         print("Acceso permitido")
     else:
         print("Necesitas una entrada")
 else:
     print("Debes ser mayor de edad")</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Este código primero verifica la edad y solamente después comprueba si
           existe una entrada válida.
         </p>
-
-        <p>
+<p>
           Las condiciones anidadas son útiles, pero demasiados niveles pueden
           hacer que el código sea difícil de leer.
         </p>
-
-        <p>
+<p>
           En algunos casos podemos simplificar el mismo ejemplo:
         </p>
-
-        <div class="recuadro-ejemplo">
-<pre><code>if edad >= 18 and tiene_entrada:
+<div class="recuadro-ejemplo">
+<pre><code>if edad &gt;= 18 and tiene_entrada:
     print("Acceso permitido")</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           La mejor opción depende de las reglas que necesite representar el
           programa.
         </p>
-
-        <h2 id="ejemplo">
+<h2 id="ejemplo">
           Ejemplo práctico: sistema de descuentos
         </h2>
-
-        <p>
+<p>
           Supongamos que una tienda ofrece diferentes descuentos según el total
           de una compra.
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>total = 65000
 
-if total >= 100000:
+if total &gt;= 100000:
     descuento = 0.20
-elif total >= 50000:
+elif total &gt;= 50000:
     descuento = 0.10
 else:
     descuento = 0
@@ -682,212 +511,167 @@ else:
 precio_final = total - (total * descuento)
 
 print(f"Total final: ₡{precio_final}")</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Si la compra es de ₡65.000, la primera condición no se cumple,
           pero la segunda sí.
         </p>
-
-        <p>
+<p>
           Por lo tanto, el programa aplica un descuento del 10 %.
         </p>
-
-        <p>
+<p>
           Este tipo de lógica aparece constantemente en aplicaciones reales:
           precios, permisos, formularios, videojuegos, sistemas de acceso,
           evaluaciones y muchas otras situaciones.
         </p>
-
-        <h2 id="errores">
+<h2 id="errores">
           Errores comunes con estructuras condicionales
         </h2>
-
-        <h3>
+<h3>
           Confundir asignación y comparación
         </h3>
-
-        <p>
+<p>
           Recuerda que <code>=</code> asigna un valor y
           <code>==</code> compara dos valores.
         </p>
-
-        <h3>
+<h3>
           Ordenar mal las condiciones
         </h3>
-
-        <p>
+<p>
           El orden de los <code>elif</code> puede cambiar completamente el
           resultado.
         </p>
-
-        <p>
+<p>
           Observa este ejemplo incorrecto:
         </p>
-
-        <div class="recuadro-ejemplo">
+<div class="recuadro-ejemplo">
 <pre><code>nota = 95
 
-if nota >= 70:
+if nota &gt;= 70:
     print("Aprobado")
-elif nota >= 90:
+elif nota &gt;= 90:
     print("Excelente")</code></pre>
-        </div>
-
-        <p>
+</div>
+<p>
           Aunque la nota es 95, se mostrará “Aprobado” porque la primera
           condición ya es verdadera.
         </p>
-
-        <p>
+<p>
           Una mejor organización sería:
         </p>
-
-        <div class="recuadro-ejemplo">
-<pre><code>if nota >= 90:
+<div class="recuadro-ejemplo">
+<pre><code>if nota &gt;= 90:
     print("Excelente")
-elif nota >= 70:
+elif nota &gt;= 70:
     print("Aprobado")</code></pre>
-        </div>
-
-        <h3>
+</div>
+<h3>
           No comprobar valores límite
         </h3>
-
-        <p>
+<p>
           Si una regla dice “18 años o más”, utilizar solamente
           <code>&gt; 18</code> dejaría fuera a alguien que tiene exactamente
           18 años.
         </p>
-
-        <p>
+<p>
           Por eso debemos pensar cuidadosamente si necesitamos
           <code>&gt;</code> o <code>&gt;=</code>.
         </p>
-
-        <h3>
+<h3>
           Crear condiciones demasiado complejas
         </h3>
-
-        <p>
+<p>
           Una condición con demasiados operadores puede resultar difícil de
           mantener. En esos casos es mejor separar la lógica en variables o
           funciones más pequeñas.
         </p>
-
-        <section
-          class="seccion-articulo"
-          aria-labelledby="practica"
-        >
-
-          <h2 id="practica">
+<section aria-labelledby="practica" class="seccion-articulo">
+<h2 id="practica">
             Compruébalo tú mismo
           </h2>
-
-          <p>
+<p>
             Crea un programa que utilice una variable llamada
             <code>nota</code>.
           </p>
-
-          <p>
+<p>
             El programa debe mostrar:
           </p>
-
-          <ul class="lista-articulo">
-            <li>
-              <strong>Excelente</strong> si la nota es 90 o superior.
+<ul class="lista-articulo">
+<li>
+<strong>Excelente</strong> si la nota es 90 o superior.
             </li>
-            <li>
-              <strong>Aprobado</strong> si está entre 70 y 89.
+<li>
+<strong>Aprobado</strong> si está entre 70 y 89.
             </li>
-            <li>
-              <strong>Reprobado</strong> si es menor que 70.
+<li>
+<strong>Reprobado</strong> si es menor que 70.
             </li>
-          </ul>
-
-          <p>
+</ul>
+<p>
             Intenta resolverlo antes de ver la solución.
           </p>
-
-          <details class="recuadro-ejemplo">
-
-            <summary>
-              <strong>Ver una posible solución</strong>
-            </summary>
-
+<details class="recuadro-ejemplo">
+<summary>
+<strong>Ver una posible solución</strong>
+</summary>
 <pre><code>nota = 82
 
-if nota >= 90:
+if nota &gt;= 90:
     print("Excelente")
-elif nota >= 70:
+elif nota &gt;= 70:
     print("Aprobado")
 else:
     print("Reprobado")</code></pre>
-
-            <p>
+<p>
               Como 82 no alcanza 90, Python pasa a la siguiente condición.
               Como sí es mayor o igual a 70, muestra
               <strong>Aprobado</strong>.
             </p>
-
-          </details>
-
-          <div class="recuadro-consejo">
-            <strong>Reto adicional</strong>
-            <p>
+</details>
+<div class="recuadro-consejo">
+<strong>Reto adicional</strong>
+<p>
               Añade una validación para mostrar
               <strong>“Nota inválida”</strong> cuando el valor sea menor que 0
               o mayor que 100.
             </p>
-          </div>
-
-        </section>
-
-        <h2 id="preguntas">
+</div>
+</section>
+<h2 id="preguntas">
           Preguntas frecuentes
         </h2>
-
-        <section
-          class="faq-articulo"
-          aria-labelledby="preguntas"
-        >
-
-          <details>
-            <summary>
+<section aria-labelledby="preguntas" class="faq-articulo">
+<details>
+<summary>
               ¿Cuál es la diferencia entre if, elif y else?
             </summary>
-            <p>
-              <code>if</code> evalúa la primera condición,
+<p>
+<code>if</code> evalúa la primera condición,
               <code>elif</code> permite comprobar condiciones adicionales y
               <code>else</code> se ejecuta cuando ninguna condición anterior
               se cumple.
             </p>
-          </details>
-
-          <details>
-            <summary>
+</details>
+<details>
+<summary>
               ¿Se pueden combinar varias condiciones?
             </summary>
-            <p>
+<p>
               Sí. En Python se pueden combinar utilizando operadores lógicos
               como <code>and</code>, <code>or</code> y <code>not</code>.
             </p>
-          </details>
-
-          <details>
-            <summary>
+</details>
+<details>
+<summary>
               ¿Qué ocurre si varias condiciones son verdaderas?
             </summary>
-            <p>
+<p>
               En una estructura <code>if-elif-else</code> se ejecuta
               únicamente el primer bloque cuya condición sea verdadera.
             </p>
-          </details>
-
-        </section>
-
-        
-<section class="ampliacion-editorial" aria-labelledby="condicionales-diseno">
+</details>
+</section>
+<section aria-labelledby="condicionales-diseno" class="ampliacion-editorial">
 <h2 id="condicionales-diseno">Cómo diseñar una condición antes de programarla</h2>
 <p>Antes de escribir un <code>if</code>, conviene expresar la regla con palabras: qué debe cumplirse, qué ocurre cuando se cumple y qué debería pasar en caso contrario. Esta pequeña planificación evita condiciones contradictorias o difíciles de entender.</p>
 <div class="recuadro-ejemplo"><strong>Ejemplo</strong><p>Una aplicación puede permitir una acción solamente cuando el usuario inició sesión y dispone del permiso necesario. Son dos condiciones distintas que deben combinarse de forma clara.</p></div>
@@ -900,179 +684,121 @@ else:
 <h2 id="conclusion">
           Conclusión
         </h2>
-
-        <p>
+<p>
           Las estructuras condicionales permiten que un programa tome
           decisiones en función de los datos que recibe.
         </p>
-
-        <p>
+<p>
           Comprender <code>if</code>, <code>elif</code> y
           <code>else</code>, junto con los operadores de comparación y los
           operadores lógicos, es fundamental para construir programas capaces
           de responder a distintas situaciones.
         </p>
-
-        <p>
+<p>
           Una vez que entiendas este concepto, podrás combinarlo con variables,
           funciones y bucles para desarrollar programas cada vez más
           completos.
         </p>
-
-        <nav class="navegacion-articulos" aria-label="Navegación entre artículos">
-          <a class="nav-anterior" href="que-son-operadores">
-            <span class="nav-etiqueta">← Artículo anterior</span>
-            <strong>¿Qué son los operadores en programación?</strong>
-          </a>
-          <a class="nav-siguiente" href="que-son-bucles">
-            <span class="nav-etiqueta">Siguiente artículo →</span>
-            <strong>¿Qué son los bucles en programación?</strong>
-          </a>
-        </nav>
-
-        <section
-          class="autor-articulo"
-          aria-label="Información del autor"
-        >
-
-          <div
-            class="autor-icono"
-            aria-hidden="true"
-          >
+<nav aria-label="Navegación entre artículos" class="navegacion-articulos">
+<a class="nav-anterior" href="que-son-operadores.html">
+<span class="nav-etiqueta">← Artículo anterior</span>
+<strong>¿Qué son los operadores en programación?</strong>
+</a>
+<a class="nav-siguiente" href="que-son-bucles.html">
+<span class="nav-etiqueta">Siguiente artículo →</span>
+<strong>¿Qué son los bucles en programación?</strong>
+</a>
+</nav>
+<section aria-label="Información del autor" class="autor-articulo">
+<div aria-hidden="true" class="autor-icono">
             &lt;/&gt;
           </div>
-
-          <div class="autor-informacion">
-            <span>Artículo creado por</span>
-            <h2>ByteNova</h2>
-            <p>Proyecto educativo creado por Dylan Estrada. ByteNova publica contenido sobre programación, desarrollo web, inteligencia artificial y ciberseguridad con un enfoque claro para principiantes y revisión editorial continua.</p>
-            <a href="sobre">
+<div class="autor-informacion">
+<span>Artículo creado por</span>
+<h2>ByteNova</h2>
+<p>Proyecto educativo creado por Dylan Estrada. ByteNova publica contenido sobre programación, desarrollo web, inteligencia artificial y ciberseguridad con un enfoque claro para principiantes y revisión editorial continua.</p>
+<a href="sobre.html">
               Conoce más sobre ByteNova →
             </a>
-          </div>
-
-        </section>
-
-        <aside
-          class="articulos-relacionados"
-          aria-labelledby="titulo-articulos-relacionados"
-        >
-
-          <h2 id="titulo-articulos-relacionados">
+</div>
+</section>
+<aside aria-labelledby="titulo-articulos-relacionados" class="articulos-relacionados">
+<h2 id="titulo-articulos-relacionados">
             Continúa aprendiendo
           </h2>
-
-          <div class="relacionados-grid">
-
-            <a href="que-son-operadores">
-              <span aria-hidden="true">📘</span>
-              <strong>¿Qué son los operadores?</strong>
-              <small>
+<div class="relacionados-grid">
+<a href="que-son-operadores.html">
+<span aria-hidden="true">📘</span>
+<strong>¿Qué son los operadores?</strong>
+<small>
                 Aprende cómo comparar y combinar valores.
               </small>
-            </a>
-
-            <a href="que-son-bucles">
-              <span aria-hidden="true">📘</span>
-              <strong>¿Qué son los bucles?</strong>
-              <small>
+</a>
+<a href="que-son-bucles.html">
+<span aria-hidden="true">📘</span>
+<strong>¿Qué son los bucles?</strong>
+<small>
                 Aprende cómo repetir instrucciones de forma automática.
               </small>
-            </a>
-
-            <a href="que-es-programacion">
-              <span aria-hidden="true">📘</span>
-              <strong>¿Qué es la programación?</strong>
-              <small>
+</a>
+<a href="que-es-programacion.html">
+<span aria-hidden="true">📘</span>
+<strong>¿Qué es la programación?</strong>
+<small>
                 Repasa los fundamentos para continuar aprendiendo.
               </small>
-            </a>
-
-          </div>
-
-        </aside>
-
-      </div>
-    </div>
-
-  </article>
-
+</a>
+</div>
+</aside>
+</div>
+</div>
+</article>
 </main>
-
-<footer class="footer">
-
-  <div class="contenedor-footer">
-
-    <div class="footer-logo">
-
-      <a
-        class="marca-bytenova"
-        href="../index#inicio"
-        aria-label="Ir al inicio de ByteNova"
-      >
-        <span class="marca-icono" aria-hidden="true">
-          &lt;/&gt;
-        </span>
-        <span class="marca-texto">ByteNova</span>
-      </a>
-
-      <p>
-        Aprende tecnología desde cero con artículos, rutas, retos,
-        guías y recursos gratuitos.
-      </p>
-
-    </div>
-
-    <nav
-      class="footer-enlaces"
-      aria-label="Enlaces de aprendizaje del pie de página"
-    >
-      <h3>Aprender</h3>
-      <a href="../index#tecnologias">Tecnologías</a>
-      <a href="rutas">Rutas</a>
-      <a href="retos">Retos</a>
-      <a href="material">Guías</a>
-      <a href="articulos">Artículos</a>
-      <a href="glosario">Glosario</a>
-    </nav>
-
-    <nav
-      class="footer-enlaces"
-      aria-label="Enlaces informativos del pie de página"
-    >
-      <h3>ByteNova</h3>
-      <a href="sobre">Sobre ByteNova</a>
-      <a href="../index#contacto">Contacto</a>
-      <a href="privacidad">Privacidad</a>
-      <a href="terminos">Términos</a>
-      <a href="cookies">Cookies</a>
-    </nav>
-
-    <address class="footer-social">
-      <h3>Contacto</h3>
-      <p>
-        Preguntas, sugerencias o comentarios sobre nuestros
-        contenidos educativos.
-      </p>
-      <a href="mailto:bytenova339@gmail.com">
-        bytenova339@gmail.com
-      </a>
-
-      <a href="https://www.tiktok.com/@bytenova.app" target="_blank" rel="noopener noreferrer" aria-label="TikTok de ByteNova">
-        TikTok · @bytenova.app
-      </a>
-    </address>
-
-  </div>
-
-  <div class="footer-copy">
-    <p>© 2026 ByteNova. Todos los derechos reservados.</p>
-    <p>Creado por Dylan Estrada.</p>
-  </div>
-
+<footer class="footer footer-v2">
+<div class="footer-v2-shell">
+<div class="footer-v2-grid">
+<div class="footer-v2-brand">
+<a aria-label="Ir al inicio de ByteNova" class="footer-v2-logo" href="../index.html#inicio">
+<span aria-hidden="true" class="footer-v2-logo-icon">&lt;/&gt;</span>
+<span class="footer-v2-logo-text">Byte<span>Nova</span></span>
+</a>
+<p>Aprende tecnología desde cero con artículos, rutas, retos, guías y recursos gratuitos.</p>
+<div class="footer-v2-social">
+<a aria-label="TikTok de ByteNova" href="https://www.tiktok.com/@bytenova.app" rel="noopener noreferrer" target="_blank">♪</a>
+<a aria-label="Correo de ByteNova" href="mailto:bytenova339@gmail.com">✉</a>
+<a aria-label="Sitio web de ByteNova" href="../index.html#inicio">◎</a>
+</div>
+</div>
+<nav aria-label="Enlaces de aprendizaje" class="footer-v2-col">
+<h3>Aprender</h3>
+<a href="../index.html#tecnologias"><span aria-hidden="true">▣</span>Tecnologías</a>
+<a href="rutas.html"><span aria-hidden="true">↗</span>Rutas</a>
+<a href="retos.html"><span aria-hidden="true">🎯</span>Retos</a>
+<a href="material.html"><span aria-hidden="true">▤</span>Guías</a>
+<a href="articulos.html"><span aria-hidden="true">▧</span>Artículos</a>
+<a href="glosario.html"><span aria-hidden="true">▥</span>Glosario</a>
+</nav>
+<nav aria-label="Enlaces de ByteNova" class="footer-v2-col">
+<h3>ByteNova</h3>
+<a href="sobre.html"><span aria-hidden="true">♙</span>Sobre ByteNova</a>
+<a href="../index.html#contacto"><span aria-hidden="true">✉</span>Contacto</a>
+<a href="privacidad.html"><span aria-hidden="true">♢</span>Privacidad</a>
+<a href="terminos.html"><span aria-hidden="true">▤</span>Términos</a>
+<a href="cookies.html"><span aria-hidden="true">◌</span>Cookies</a>
+</nav>
+<div class="footer-v2-contact">
+<h3>Conecta con ByteNova</h3>
+<p>Preguntas, sugerencias o comentarios sobre nuestros contenidos educativos.</p>
+<a href="mailto:bytenova339@gmail.com"><span aria-hidden="true">✉</span>bytenova339@gmail.com</a>
+<a href="https://www.tiktok.com/@bytenova.app" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">♪</span>TikTok · @bytenova.app</a>
+</div>
+</div>
+<div class="footer-v2-bottom">
+<p>© 2026 <strong>ByteNova</strong>. Todos los derechos reservados.</p>
+<p>Creado por Dylan Estrada.</p>
+</div>
+</div>
 </footer>
-
 <script src="../js/script.js"></script>
-
 </body>
 </html>
